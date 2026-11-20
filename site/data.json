@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T17:23:29Z",
+ "generated": "2026-11-20T18:22:32Z",
  "errors": [],
  "kev": {
   "total_catalog": 1786,
@@ -900,7 +900,7 @@
   ]
  },
  "ransomware": {
-  "count_24h": 18,
+  "count_24h": 17,
   "count_7d": 380,
   "count_30d": 1263,
   "groups_7d": [
@@ -964,7 +964,7 @@
    ],
    [
     "Other",
-    20
+    21
    ],
    [
     "Energy & Utilities",
@@ -974,7 +974,7 @@
   "countries_7d": [
    [
     "US",
-    188
+    187
    ],
    [
     "CA",
@@ -997,12 +997,12 @@
     5
    ],
    [
-    "MX",
+    "IT",
     5
    ],
    [
-    "JP",
-    4
+    "MX",
+    5
    ]
   ],
   "coverage_days": 30.0,
@@ -1125,7 +1125,7 @@
    ],
    [
     "2026-11-20",
-    13
+    14
    ]
   ]
  },
@@ -2455,6 +2455,20 @@
   ]
  },
  "news": [
+  {
+   "date": "2026-11-20T17:30:00Z",
+   "source": "The Record",
+   "title": "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university",
+   "url": "https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day",
+   "summary": "A China-linked threat actor used the open source AI penetration testing tool Cairn to persistently attack two universities, and in one case, possibly discover a zero-day bug, researchers said."
+  },
+  {
+   "date": "2026-11-20T17:30:00Z",
+   "source": "BleepingComputer",
+   "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/",
+   "summary": "Threat actors used the open-source AI penetration-testing framework Cairn to find a previously unknown vulnerability in a medical imaging application. [...]"
+  },
   {
    "date": "2026-11-20T15:58:06Z",
    "source": "BleepingComputer",
