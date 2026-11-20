@@ -1,4 +1,44 @@
 {
+ "Careers360": {
+  "summary": "Have I Been Pwned indexed a dataset attributed to the Indian education platform Careers360 that contains 3.6 million unique email addresses. The data also includes student entrance-exam results and other personal information; the initial access method has not been established.",
+  "attack_chain": ["Initial access and extraction: unknown.", "A dataset attributed to Careers360 appeared on a public forum.", "Have I Been Pwned indexed the affected email addresses."],
+  "open_questions": ["What system or third party was the source?", "How many people, as opposed to unique email addresses, were affected?"],
+  "mitigations": ["Restrict bulk access to student records with least privilege and approval gates.", "Audit large exports and alert on unusual reads of student data.", "Minimize retention of sensitive demographic data and limit access to exam results."],
+  "sources": [{"label": "Have I Been Pwned", "url": "https://haveibeenpwned.com/Breach/Careers360"}],
+  "patterns": ["data-exposure"]
+ },
+ "Too Lost": {
+  "summary": "Have I Been Pwned indexed data attributed to Too Lost containing about 724,000 unique email addresses. Some records contained password hashes, and a smaller subset contained identity verification or partial payment card details.",
+  "attack_chain": ["Initial access and extraction: unknown.", "An unauthorized party claimed to have obtained Too Lost data.", "Have I Been Pwned indexed the email addresses in the dataset."],
+  "open_questions": ["What systems were affected?", "How many people had identity documents or financial details exposed?"],
+  "mitigations": ["Isolate identity verification records and limit retention to required periods.", "Require MFA for administrative access and monitor bulk downloads.", "Revoke exposed credentials and active sessions if the investigation identifies compromised accounts."],
+  "sources": [{"label": "Have I Been Pwned", "url": "https://haveibeenpwned.com/Breach/TooLost"}],
+  "patterns": ["data-exposure"]
+ },
+ "Hackers steal data of 1.6 million SBC Medical Group customers": {
+  "summary": "SBC Medical Group disclosed unauthorized access to website databases in Japan, affecting about 1.6 million people. A separate incident involved clinic administrator accounts at the Tribeau booking platform.",
+  "attack_chain": ["Initial access in both incidents: unknown.", "In one incident, an intruder extracted records from the Japanese subsidiary's website databases.", "In the separate Tribeau incident, unauthorized access to clinic administrator accounts exposed reservation or treatment-related information."],
+  "open_questions": ["How did each intrusion start?", "Which data fields were exposed for each person?"],
+  "mitigations": ["Segment public-facing services from customer records.", "Require phishing-resistant MFA on clinic and third-party administrator accounts.", "Monitor unusual database exports and retain access logs for investigation."],
+  "sources": [{"label": "BleepingComputer reporting on the SEC filing", "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/"}],
+  "patterns": ["data-exposure"]
+ },
+ "Bell Canada says 'agentic' hacker stole enterprise customer data": {
+  "summary": "Bell Canada said an intruder accessed some of its systems on November 17 and stole enterprise customer data. Bell said it contained the incident without disruption to customer services; the number of affected customers was not disclosed.",
+  "attack_chain": ["Initial access and the role of automation: not disclosed.", "The intruder accessed systems including a pre-production circuit-provisioning environment.", "Bell reported theft of some enterprise customer information and said it contained the intrusion."],
+  "open_questions": ["How was initial access gained?", "How many customers were affected and which fields were taken?"],
+  "mitigations": ["Keep real customer information out of pre-production where possible.", "Segment provisioning systems and restrict service accounts to least privilege.", "Log and alert on unusual access and bulk exports."],
+  "sources": [{"label": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/"}],
+  "patterns": ["data-exposure"]
+ },
+ "Bell Canada says ‘agentic’ hacker stole enterprise customer data": {
+  "summary": "Bell Canada said an intruder accessed some of its systems on November 17 and stole enterprise customer data. Bell said it contained the incident without disruption to customer services; the number of affected customers was not disclosed.",
+  "attack_chain": ["Initial access and the role of automation: not disclosed.", "The intruder accessed systems including a pre-production circuit-provisioning environment.", "Bell reported theft of some enterprise customer information and said it contained the intrusion."],
+  "open_questions": ["How was initial access gained?", "How many customers were affected and which fields were taken?"],
+  "mitigations": ["Keep real customer information out of pre-production where possible.", "Segment provisioning systems and restrict service accounts to least privilege.", "Log and alert on unusual access and bulk exports."],
+  "sources": [{"label": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/"}],
+  "patterns": ["data-exposure"]
+ },
  "Fluidkey": {
   "summary": "Unauthorized transactions drained Fluidkey privacy-wallet users across seven chains in roughly 25 minutes. Every drain passed through Fluidkey's own relayer with valid signatures, which points to compromised signing capability rather than an on-chain contract bug.",
   "attack_chain": [
@@ -35,13 +75,13 @@
   "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
   "attack_chain": [
    "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
-   "Attacker uses the deployer key to obtain or mint XMR1.",
+   "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
    "Roughly $13.5M of XMR1 is sold into Hyperliquid liquidity, collapsing the price from about $500 to $1.",
-   "Proceeds are moved out; PeckShield reported about 640 ETH bridged to Hyperliquid by the attacker."
+   "On-chain analysis shows proceeds converted to ETH."
   ],
   "open_questions": [
-   "Which hosting provider was breached",
-   "Whether the deployer key had mint authority by design"
+   "Whether the compromise of the hosting provider exposed the key as the operator reported",
+   "What the final net losses are after any reimbursements"
   ],
   "mitigations": [
    "Keep deployer and mint keys in HSM or multisig, never on hosting infrastructure",
@@ -67,13 +107,13 @@
   "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
   "attack_chain": [
    "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
-   "Attacker uses the deployer key to obtain or mint XMR1.",
+   "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
    "Roughly $13.5M of XMR1 is sold into Hyperliquid liquidity, collapsing the price from about $500 to $1.",
-   "Proceeds are moved out; PeckShield reported about 640 ETH bridged to Hyperliquid by the attacker."
+   "On-chain analysis shows proceeds converted to ETH."
   ],
   "open_questions": [
-   "Which hosting provider was breached",
-   "Whether the deployer key had mint authority by design"
+   "Whether the compromise of the hosting provider exposed the key as the operator reported",
+   "What the final net losses are after any reimbursements"
   ],
   "mitigations": [
    "Keep deployer and mint keys in HSM or multisig, never on hosting infrastructure",

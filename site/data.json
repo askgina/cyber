@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T20:03:13Z",
+ "generated": "2026-11-20T20:23:40Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -1195,7 +1195,7 @@
  },
  "ransomware": {
   "count_24h": 21,
-  "count_7d": 383,
+  "count_7d": 381,
   "count_30d": 1263,
   "groups_7d": [
    [
@@ -1223,12 +1223,12 @@
     19
    ],
    [
-    "incransom",
-    11
-   ],
-   [
     "rhysida",
     10
+   ],
+   [
+    "incransom",
+    9
    ]
   ],
   "sectors_7d": [
@@ -1241,16 +1241,16 @@
     55
    ],
    [
-    "Retail & E-Commerce",
-    39
-   ],
-   [
     "Technology",
     39
    ],
    [
-    "Professional Services",
+    "Retail & E-Commerce",
     38
+   ],
+   [
+    "Professional Services",
+    37
    ],
    [
     "Financial Services",
@@ -1268,7 +1268,7 @@
   "countries_7d": [
    [
     "US",
-    186
+    184
    ],
    [
     "CA",
@@ -4375,15 +4375,51 @@
   }
  ],
  "brief": {
-  "updated": "2026-11-20T20:10:00Z",
-  "headline": "Two confirmed intrusions credited to AI-driven attackers (Bell Canada, and Cairn-assisted attacks on universities); a third-party vendor breach reaching Chase, Visa and Mastercard customers; a $13.5M key-compromise drain at Wagyu (XMR1) on Hyperliquid; and four newly confirmed exploited flaws, led by a VMware vCenter zero-day tied to a China-linked group.",
+  "updated": "2026-11-20T20:22:54Z",
+  "headline": "Have I Been Pwned indexed 3.6 million email addresses in a dataset attributed to Careers360, while SBC Medical Group disclosed a breach affecting about 1.6 million people. Wagyu's XMR1 fell to around $1 after $13.5 million in sales, and CISA added an actively exploited VMware vCenter flaw to its catalog.",
   "incidents": [
    {
-    "org": "Bell Canada",
-    "what": "Says an \"agentic\" threat actor breached its systems on Nov 17 and stole enterprise customer data, including from a circuit-provisioning system.",
-    "scale": "Enterprise customer data",
+    "org": "Careers360",
+    "what": "Have I Been Pwned indexed data attributed to the education platform, including student exam results and contact information; how it was obtained is unknown.",
+    "scale": "3.6M email addresses",
     "patterns": [
-     "ai",
+     "data-exposure"
+    ],
+    "eid": "b-8e8da935"
+   },
+   {
+    "org": "SBC Medical Group",
+    "what": "The company disclosed that an intruder extracted customer and employee information from its Japanese subsidiary's website databases; the entry method remains under investigation.",
+    "scale": "1.6M people",
+    "patterns": [
+     "data-exposure"
+    ],
+    "eid": "n-df29d71a"
+   },
+   {
+    "org": "Wagyu (XMR1)",
+    "what": "Sales from tokens moved out of Wagyu's deployer account drove XMR1 to about $1; the operator attributed the compromise to a hosting breach.",
+    "scale": "$13.5M in sales",
+    "patterns": [
+     "key-compromise",
+     "supply-chain"
+    ],
+    "eid": "c-9e95d8b0"
+   },
+   {
+    "org": "VMware vCenter (Broadcom)",
+    "what": "CISA added CVE-2026-123890 to its catalog after the authentication bypass was reported exploited in attacks.",
+    "scale": "CVSS 9.8",
+    "patterns": [
+     "enterprise-platform"
+    ],
+    "eid": "k-63a14165"
+   },
+   {
+    "org": "Bell Canada",
+    "what": "Bell said an intruder stole enterprise customer data after accessing systems including a circuit-provisioning environment, but did not disclose how the intruder entered.",
+    "scale": "Scope undisclosed",
+    "patterns": [
      "data-exposure"
     ],
     "eid": "n-6c623452"
@@ -4399,14 +4435,13 @@
     "eid": "n-bbc19bb6"
    },
    {
-    "org": "Wagyu (XMR1)",
-    "what": "Deployer signing key taken via a breach of third-party hosting; 5.2M XMR1 moved and sold into Hyperliquid's order book.",
-    "scale": "$13.5M",
+    "org": "Too Lost",
+    "what": "Have I Been Pwned indexed data attributed to the music distributor, including password hashes and identity information in some records.",
+    "scale": "724K email addresses",
     "patterns": [
-     "key-compromise",
-     "supply-chain"
+     "data-exposure"
     ],
-    "eid": "c-9e95d8b0"
+    "eid": "b-cc049559"
    },
    {
     "org": "U.S. Department of Agriculture",
@@ -4418,13 +4453,11 @@
     "eid": "n-755bf327"
    },
    {
-    "org": "Universities (via Cairn AI tool)",
-    "what": "China-linked actor used the open-source AI pentest framework Cairn against two universities, possibly finding a zero-day.",
+    "org": "Two universities in East Asia",
+    "what": "Amazon researchers reported that attackers using an AI tool breached two universities through a previously unpatched flaw in a medical imaging application.",
     "scale": "2 institutions",
     "patterns": [
-     "ai",
-     "state-linked",
-     "enterprise-platform"
+     "ai"
     ],
     "eid": "n-cd038ca0"
    },
@@ -4449,27 +4482,8 @@
     "eid": "n-d9a32515"
    },
    {
-    "org": "Careers360",
-    "what": "Breach added to Have I Been Pwned.",
-    "scale": "3.6M accounts",
-    "patterns": [
-     "data-exposure"
-    ],
-    "eid": "b-8e8da935"
-   },
-   {
-    "org": "VMware vCenter (Broadcom)",
-    "what": "CVE-2026-123890 auth bypass, exploited as a zero-day since September by China-nexus Armory Castle; added to CISA KEV.",
-    "scale": "CVSS 9.8",
-    "patterns": [
-     "enterprise-platform",
-     "state-linked"
-    ],
-    "eid": "k-63a14165"
-   },
-   {
     "org": "Cisco Expressway",
-    "what": "CVE-2026-76466 exploited shortly after a public proof of concept to breach devices and reach an internal network; added to CISA KEV.",
+    "what": "CISA added CVE-2026-76466 to its catalog after researchers reported that attackers used it to compromise devices and reach an internal network.",
     "scale": "Critical",
     "patterns": [
      "edge-device"
@@ -4481,8 +4495,7 @@
  "details": {
   "n-a5a08255": {
    "patterns": [
-    "data-exposure",
-    "ai"
+    "data-exposure"
    ],
    "related": [
     {
@@ -4491,31 +4504,72 @@
      "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
      "date": "2026-11-20T18:51:43Z",
      "score": 0.87,
-     "why": "same pattern: Data exposure and theft, AI systems and agents; terms: canada, bell, agentic"
-    },
-    {
-     "id": "b-e533697f",
-     "kind": "breach",
-     "title": "AfD",
-     "date": "2026-10-27T07:01:06Z",
-     "score": 0.23,
-     "why": "same pattern: Data exposure and theft, AI systems and agents"
+     "why": "same pattern: Data exposure and theft; terms: canada, bell, agentic"
     },
     {
      "id": "n-df29d71a",
      "kind": "news",
      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
      "date": "2026-11-19T22:25:42Z",
-     "score": 0.23,
+     "score": 0.33,
      "why": "same pattern: Data exposure and theft; terms: customer, information"
+    },
+    {
+     "id": "n-2ff5d2ac",
+     "kind": "news",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+     "date": "2026-11-19T17:16:31Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: customer"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: information"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft"
     }
    ],
-   "cluster": "cl-ad5c46"
+   "cluster": "cl-ad5c46",
+   "analysis": {
+    "summary": "Bell Canada said an intruder accessed some of its systems on November 17 and stole enterprise customer data. Bell said it contained the incident without disruption to customer services; the number of affected customers was not disclosed.",
+    "attack_chain": [
+     "Initial access and the role of automation: not disclosed.",
+     "The intruder accessed systems including a pre-production circuit-provisioning environment.",
+     "Bell reported theft of some enterprise customer information and said it contained the intrusion."
+    ],
+    "open_questions": [
+     "How was initial access gained?",
+     "How many customers were affected and which fields were taken?"
+    ],
+    "mitigations": [
+     "Keep real customer information out of pre-production where possible.",
+     "Segment provisioning systems and restrict service accounts to least privilege.",
+     "Log and alert on unusual access and bulk exports."
+    ],
+    "sources": [
+     {
+      "label": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/"
+     }
+    ],
+    "patterns": [
+     "data-exposure"
+    ]
+   }
   },
   "n-6c623452": {
    "patterns": [
-    "data-exposure",
-    "ai"
+    "data-exposure"
    ],
    "related": [
     {
@@ -4524,26 +4578,68 @@
      "title": "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
      "date": "2026-11-20T18:56:50Z",
      "score": 0.87,
-     "why": "same pattern: Data exposure and theft, AI systems and agents; terms: canada, bell, agentic"
+     "why": "same pattern: Data exposure and theft; terms: canada, bell, agentic"
     },
     {
      "id": "n-df29d71a",
      "kind": "news",
      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
      "date": "2026-11-19T22:25:42Z",
-     "score": 0.24,
+     "score": 0.34,
      "why": "same pattern: Data exposure and theft; terms: customer, information"
     },
     {
-     "id": "b-e533697f",
+     "id": "n-2ff5d2ac",
+     "kind": "news",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+     "date": "2026-11-19T17:16:31Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: customer"
+    },
+    {
+     "id": "b-cc049559",
      "kind": "breach",
-     "title": "AfD",
-     "date": "2026-10-27T07:01:06Z",
-     "score": 0.23,
-     "why": "same pattern: Data exposure and theft, AI systems and agents"
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: information"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft"
     }
    ],
-   "cluster": "cl-ad5c46"
+   "cluster": "cl-ad5c46",
+   "analysis": {
+    "summary": "Bell Canada said an intruder accessed some of its systems on November 17 and stole enterprise customer data. Bell said it contained the incident without disruption to customer services; the number of affected customers was not disclosed.",
+    "attack_chain": [
+     "Initial access and the role of automation: not disclosed.",
+     "The intruder accessed systems including a pre-production circuit-provisioning environment.",
+     "Bell reported theft of some enterprise customer information and said it contained the intrusion."
+    ],
+    "open_questions": [
+     "How was initial access gained?",
+     "How many customers were affected and which fields were taken?"
+    ],
+    "mitigations": [
+     "Keep real customer information out of pre-production where possible.",
+     "Segment provisioning systems and restrict service accounts to least privilege.",
+     "Log and alert on unusual access and bulk exports."
+    ],
+    "sources": [
+     {
+      "label": "BleepingComputer",
+      "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/"
+     }
+    ],
+    "patterns": [
+     "data-exposure"
+    ]
+   }
   },
   "n-755bf327": {
    "patterns": [
@@ -4881,6 +4977,22 @@
    ],
    "related": [
     {
+     "id": "n-6c623452",
+     "kind": "news",
+     "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+     "date": "2026-11-20T18:51:43Z",
+     "score": 0.34,
+     "why": "same pattern: Data exposure and theft; terms: customer, information"
+    },
+    {
+     "id": "n-a5a08255",
+     "kind": "news",
+     "title": "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
+     "date": "2026-11-20T18:56:50Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft; terms: customer, information"
+    },
+    {
      "id": "n-19771688",
      "kind": "news",
      "title": "Transport for London breach exposes 265,000 Oyster card users' data",
@@ -4897,30 +5009,40 @@
      "why": "same pattern: Data exposure and theft; terms: customers, customer"
     },
     {
-     "id": "b-8e8da935",
+     "id": "b-cc049559",
      "kind": "breach",
-     "title": "Careers360",
-     "date": "2026-11-20T03:44:54Z",
-     "score": 0.31,
-     "why": "same pattern: Data exposure and theft; terms: exposed"
-    },
-    {
-     "id": "n-6c623452",
-     "kind": "news",
-     "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-     "date": "2026-11-20T18:51:43Z",
-     "score": 0.24,
-     "why": "same pattern: Data exposure and theft; terms: customer, information"
-    },
-    {
-     "id": "n-a5a08255",
-     "kind": "news",
-     "title": "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
-     "date": "2026-11-20T18:56:50Z",
-     "score": 0.23,
-     "why": "same pattern: Data exposure and theft; terms: customer, information"
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: belonging, information, exposed"
     }
-   ]
+   ],
+   "analysis": {
+    "summary": "SBC Medical Group disclosed unauthorized access to website databases in Japan, affecting about 1.6 million people. A separate incident involved clinic administrator accounts at the Tribeau booking platform.",
+    "attack_chain": [
+     "Initial access in both incidents: unknown.",
+     "In one incident, an intruder extracted records from the Japanese subsidiary's website databases.",
+     "In the separate Tribeau incident, unauthorized access to clinic administrator accounts exposed reservation or treatment-related information."
+    ],
+    "open_questions": [
+     "How did each intrusion start?",
+     "Which data fields were exposed for each person?"
+    ],
+    "mitigations": [
+     "Segment public-facing services from customer records.",
+     "Require phishing-resistant MFA on clinic and third-party administrator accounts.",
+     "Monitor unusual database exports and retain access logs for investigation."
+    ],
+    "sources": [
+     {
+      "label": "BleepingComputer reporting on the SEC filing",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/"
+     }
+    ],
+    "patterns": [
+     "data-exposure"
+    ]
+   }
   },
   "n-19771688": {
    "patterns": [
@@ -4934,6 +5056,14 @@
      "date": "2026-11-18T21:08:50Z",
      "score": 0.41,
      "why": "terms: transport, london, oyster"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.34,
+     "why": "same pattern: Data exposure and theft; terms: card, breach, exposed"
     },
     {
      "id": "n-2ff5d2ac",
@@ -4958,14 +5088,6 @@
      "date": "2026-11-20T03:44:54Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: breach, exposed"
-    },
-    {
-     "id": "b-8a5ec5e1",
-     "kind": "breach",
-     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
-     "date": "2026-11-11T01:44:58Z",
-     "score": 0.26,
-     "why": "same pattern: Data exposure and theft; terms: card, details, breach"
     }
    ]
   },
@@ -4983,6 +5105,14 @@
      "why": "same pattern: Data exposure and theft; terms: card, customers"
     },
     {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft; terms: card, numbers"
+    },
+    {
      "id": "n-df29d71a",
      "kind": "news",
      "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
@@ -4991,28 +5121,20 @@
      "why": "same pattern: Data exposure and theft; terms: customers, customer"
     },
     {
+     "id": "n-6c623452",
+     "kind": "news",
+     "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+     "date": "2026-11-20T18:51:43Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: customer"
+    },
+    {
      "id": "b-8e8da935",
      "kind": "breach",
      "title": "Careers360",
      "date": "2026-11-20T03:44:54Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: numbers"
-    },
-    {
-     "id": "n-bbc19bb6",
-     "kind": "news",
-     "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-     "date": "2026-11-20T15:58:06Z",
-     "score": 0.28,
-     "why": "same pattern: Data exposure and theft; terms: visa, mastercard, chase"
-    },
-    {
-     "id": "b-8a5ec5e1",
-     "kind": "breach",
-     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
-     "date": "2026-11-11T01:44:58Z",
-     "score": 0.24,
-     "why": "same pattern: Data exposure and theft; terms: numbers, card"
     }
    ]
   },
@@ -5598,13 +5720,13 @@
     "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
     "attack_chain": [
      "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
-     "Attacker uses the deployer key to obtain or mint XMR1.",
+     "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
      "Roughly $13.5M of XMR1 is sold into Hyperliquid liquidity, collapsing the price from about $500 to $1.",
-     "Proceeds are moved out; PeckShield reported about 640 ETH bridged to Hyperliquid by the attacker."
+     "On-chain analysis shows proceeds converted to ETH."
     ],
     "open_questions": [
-     "Which hosting provider was breached",
-     "Whether the deployer key had mint authority by design"
+     "Whether the compromise of the hosting provider exposed the key as the operator reported",
+     "What the final net losses are after any reimbursements"
     ],
     "mitigations": [
      "Keep deployer and mint keys in HSM or multisig, never on hosting infrastructure",
@@ -6720,14 +6842,6 @@
      "date": "2026-11-20T12:48:00Z",
      "score": 0.24,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: exposed"
-    },
-    {
-     "id": "b-cc049559",
-     "kind": "breach",
-     "title": "Too Lost",
-     "date": "2026-11-20T19:17:16Z",
-     "score": 0.22,
-     "why": "same pattern: Key and credential compromise, Data exposure and theft; terms: numbers, birth, dates"
     }
    ],
    "precedents": []
@@ -10656,13 +10770,13 @@
     "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
     "attack_chain": [
      "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
-     "Attacker uses the deployer key to obtain or mint XMR1.",
+     "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
      "Roughly $13.5M of XMR1 is sold into Hyperliquid liquidity, collapsing the price from about $500 to $1.",
-     "Proceeds are moved out; PeckShield reported about 640 ETH bridged to Hyperliquid by the attacker."
+     "On-chain analysis shows proceeds converted to ETH."
     ],
     "open_questions": [
-     "Which hosting provider was breached",
-     "Whether the deployer key had mint authority by design"
+     "Whether the compromise of the hosting provider exposed the key as the operator reported",
+     "What the final net losses are after any reimbursements"
     ],
     "mitigations": [
      "Keep deployer and mint keys in HSM or multisig, never on hosting infrastructure",
@@ -10769,57 +10883,90 @@
   },
   "b-cc049559": {
    "patterns": [
-    "data-exposure",
-    "key-compromise"
+    "data-exposure"
    ],
    "related": [
     {
-     "id": "b-df45f4d8",
+     "id": "b-8e8da935",
      "kind": "breach",
-     "title": "CastleRAT",
-     "date": "2026-11-13T05:41:32Z",
-     "score": 0.35,
-     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: passwords, email, addresses"
-    },
-    {
-     "id": "b-bff08f6e",
-     "kind": "breach",
-     "title": "YouHack",
-     "date": "2026-11-11T07:29:19Z",
-     "score": 0.35,
-     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, usernames, addresses"
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.4,
+     "why": "same pattern: Data exposure and theft; terms: numbers, email, names"
     },
     {
      "id": "b-8a5ec5e1",
      "kind": "breach",
      "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
      "date": "2026-11-11T01:44:58Z",
-     "score": 0.31,
+     "score": 0.34,
      "why": "same pattern: Data exposure and theft; terms: card, numbers, birth"
     },
     {
-     "id": "b-8e8da935",
-     "kind": "breach",
-     "title": "Careers360",
-     "date": "2026-11-20T03:44:54Z",
-     "score": 0.3,
-     "why": "same pattern: Data exposure and theft; terms: numbers, email, names"
+     "id": "n-19771688",
+     "kind": "news",
+     "title": "Transport for London breach exposes 265,000 Oyster card users' data",
+     "date": "2026-11-19T18:20:01Z",
+     "score": 0.34,
+     "why": "same pattern: Data exposure and theft; terms: card, breach, exposed"
     },
     {
-     "id": "b-0dbbdbf6",
-     "kind": "breach",
-     "title": "Harvard",
-     "date": "2026-11-03T07:24:50Z",
-     "score": 0.28,
-     "why": "same pattern: Data exposure and theft; terms: birth, email, numbers"
+     "id": "n-2ff5d2ac",
+     "kind": "news",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+     "date": "2026-11-19T17:16:31Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft; terms: card, numbers"
+    },
+    {
+     "id": "n-df29d71a",
+     "kind": "news",
+     "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+     "date": "2026-11-19T22:25:42Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: belonging, information, exposed"
     }
-   ]
+   ],
+   "analysis": {
+    "summary": "Have I Been Pwned indexed data attributed to Too Lost containing about 724,000 unique email addresses. Some records contained password hashes, and a smaller subset contained identity verification or partial payment card details.",
+    "attack_chain": [
+     "Initial access and extraction: unknown.",
+     "An unauthorized party claimed to have obtained Too Lost data.",
+     "Have I Been Pwned indexed the email addresses in the dataset."
+    ],
+    "open_questions": [
+     "What systems were affected?",
+     "How many people had identity documents or financial details exposed?"
+    ],
+    "mitigations": [
+     "Isolate identity verification records and limit retention to required periods.",
+     "Require MFA for administrative access and monitor bulk downloads.",
+     "Revoke exposed credentials and active sessions if the investigation identifies compromised accounts."
+    ],
+    "sources": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/TooLost"
+     }
+    ],
+    "patterns": [
+     "data-exposure"
+    ]
+   }
   },
   "b-8e8da935": {
    "patterns": [
     "data-exposure"
    ],
    "related": [
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.4,
+     "why": "same pattern: Data exposure and theft; terms: numbers, email, names"
+    },
     {
      "id": "b-8a5ec5e1",
      "kind": "breach",
@@ -10851,16 +10998,34 @@
      "date": "2026-11-19T17:16:31Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: numbers"
-    },
-    {
-     "id": "n-df29d71a",
-     "kind": "news",
-     "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
-     "date": "2026-11-19T22:25:42Z",
-     "score": 0.31,
-     "why": "same pattern: Data exposure and theft; terms: exposed"
     }
-   ]
+   ],
+   "analysis": {
+    "summary": "Have I Been Pwned indexed a dataset attributed to the Indian education platform Careers360 that contains 3.6 million unique email addresses. The data also includes student entrance-exam results and other personal information; the initial access method has not been established.",
+    "attack_chain": [
+     "Initial access and extraction: unknown.",
+     "A dataset attributed to Careers360 appeared on a public forum.",
+     "Have I Been Pwned indexed the affected email addresses."
+    ],
+    "open_questions": [
+     "What system or third party was the source?",
+     "How many people, as opposed to unique email addresses, were affected?"
+    ],
+    "mitigations": [
+     "Restrict bulk access to student records with least privilege and approval gates.",
+     "Audit large exports and alert on unusual reads of student data.",
+     "Minimize retention of sensitive demographic data and limit access to exam results."
+    ],
+    "sources": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/Careers360"
+     }
+    ],
+    "patterns": [
+     "data-exposure"
+    ]
+   }
   },
   "b-df45f4d8": {
    "patterns": [
@@ -10869,20 +11034,20 @@
    ],
    "related": [
     {
-     "id": "b-cc049559",
-     "kind": "breach",
-     "title": "Too Lost",
-     "date": "2026-11-20T19:17:16Z",
-     "score": 0.35,
-     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: passwords, email, addresses"
-    },
-    {
      "id": "b-bff08f6e",
      "kind": "breach",
      "title": "YouHack",
      "date": "2026-11-11T07:29:19Z",
      "score": 0.33,
      "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, passwords, addresses"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.25,
+     "why": "same pattern: Data exposure and theft; terms: passwords, email, addresses"
     },
     {
      "id": "b-8e8da935",
@@ -10901,14 +11066,6 @@
     "state-linked"
    ],
    "related": [
-    {
-     "id": "b-cc049559",
-     "kind": "breach",
-     "title": "Too Lost",
-     "date": "2026-11-20T19:17:16Z",
-     "score": 0.35,
-     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, usernames, addresses"
-    },
     {
      "id": "b-df45f4d8",
      "kind": "breach",
@@ -10932,6 +11089,14 @@
      "date": "2026-11-20T03:44:54Z",
      "score": 0.29,
      "why": "same pattern: Data exposure and theft; terms: email, forum, addresses"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.28,
+     "why": "same pattern: Data exposure and theft; terms: email, usernames, addresses"
     },
     {
      "id": "b-e533697f",
@@ -10966,20 +11131,20 @@
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: bank, russian, records"
     },
     {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.34,
+     "why": "same pattern: Data exposure and theft; terms: card, numbers, birth"
+    },
+    {
      "id": "b-bff08f6e",
      "kind": "breach",
      "title": "YouHack",
      "date": "2026-11-11T07:29:19Z",
      "score": 0.33,
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: email, addresses, unsalted"
-    },
-    {
-     "id": "b-cc049559",
-     "kind": "breach",
-     "title": "Too Lost",
-     "date": "2026-11-20T19:17:16Z",
-     "score": 0.31,
-     "why": "same pattern: Data exposure and theft; terms: card, numbers, birth"
     },
     {
      "id": "b-0dbbdbf6",
@@ -11006,20 +11171,20 @@
      "why": "same pattern: Data exposure and theft; terms: names, email, genders"
     },
     {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: birth, email, numbers"
+    },
+    {
      "id": "b-8a5ec5e1",
      "kind": "breach",
      "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
      "date": "2026-11-11T01:44:58Z",
      "score": 0.29,
      "why": "same pattern: Data exposure and theft; terms: numbers, birth, email"
-    },
-    {
-     "id": "b-cc049559",
-     "kind": "breach",
-     "title": "Too Lost",
-     "date": "2026-11-20T19:17:16Z",
-     "score": 0.28,
-     "why": "same pattern: Data exposure and theft; terms: birth, email, numbers"
     },
     {
      "id": "b-bff08f6e",
@@ -11055,22 +11220,6 @@
      "why": "same pattern: Data exposure and theft; terms: email, breach, addresses"
     },
     {
-     "id": "n-6c623452",
-     "kind": "news",
-     "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-     "date": "2026-11-20T18:51:43Z",
-     "score": 0.23,
-     "why": "same pattern: Data exposure and theft, AI systems and agents"
-    },
-    {
-     "id": "n-a5a08255",
-     "kind": "news",
-     "title": "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
-     "date": "2026-11-20T18:56:50Z",
-     "score": 0.23,
-     "why": "same pattern: Data exposure and theft, AI systems and agents"
-    },
-    {
      "id": "b-8e8da935",
      "kind": "breach",
      "title": "Careers360",
@@ -11094,8 +11243,7 @@
     "Bell Canada says 'agentic' hacker stole enterprise customer data"
    ],
    "patterns": [
-    "data-exposure",
-    "ai"
+    "data-exposure"
    ],
    "terms": [
     "canada",
