@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T19:57:45Z",
+ "generated": "2026-11-20T20:03:13Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -1196,7 +1196,7 @@
  "ransomware": {
   "count_24h": 21,
   "count_7d": 383,
-  "count_30d": 1264,
+  "count_30d": 1263,
   "groups_7d": [
    [
     "N0n",
@@ -1298,6 +1298,197 @@
     "MX",
     5
    ]
+  ],
+  "items_24h": [
+   {
+    "date": "2026-11-20T15:13:48Z",
+    "victim": "TraWell Co S.p.A. (d/b/a Safe Bag)",
+    "group": "aurora",
+    "sector": "Retail & E-Commerce",
+    "country": "IT",
+    "url": "https://www.ransomware.live/id/VHJhV2VsbCBDbyBTLnAuQS4gKGQvYi9hIFNhZmUgQmFnKUBhdXJvcmE=",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T14:50:12Z",
+    "victim": "al*****o.com",
+    "group": "everstake",
+    "sector": "Not Found",
+    "country": "??",
+    "url": "https://www.ransomware.live/id/YWwqKioqKm8uY29tQGV2ZXJzdGFrZQ==",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T14:30:00Z",
+    "victim": "Clarkesville Police Department, City of Clarkesville",
+    "group": "rhysida",
+    "sector": "Government & Defense",
+    "country": "GA",
+    "url": "https://www.ransomware.live/id/Q2xhcmtlc3ZpbGxlIFBvbGljZSBEZXBhcnRtZW50LCBDaXR5IG9mIENsYXJrZXN2aWxsZUByaHlzaWRh",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T14:17:35Z",
+    "victim": "William Cook Holdings Limited",
+    "group": "aurora",
+    "sector": "Manufacturing",
+    "country": "GB",
+    "url": "https://www.ransomware.live/id/V2lsbGlhbSBDb29rIEhvbGRpbmdzIExpbWl0ZWRAYXVyb3Jh",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T13:19:58Z",
+    "victim": "Pecora",
+    "group": "akira",
+    "sector": "Other",
+    "country": "IT",
+    "url": "https://www.ransomware.live/id/UGVjb3JhQGFraXJh",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T11:59:05Z",
+    "victim": "Guardant Health, Inc.",
+    "group": "N0n",
+    "sector": "Healthcare",
+    "country": "US",
+    "url": null,
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T11:51:15Z",
+    "victim": "Dallas Theological Seminary",
+    "group": "Barracuda",
+    "sector": "Education",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/RGFsbGFzIFRoZW9sb2dpY2FsIFNlbWluYXJ5QEJhcnJhY3VkYQ==",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T10:56:40Z",
+    "victim": "Halfords Group plc",
+    "group": "N0n",
+    "sector": "Retail & E-Commerce",
+    "country": "GB",
+    "url": null,
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T05:35:29Z",
+    "victim": "wakao.co.jp",
+    "group": "blackout",
+    "sector": "Other",
+    "country": "JP",
+    "url": "https://www.ransomware.live/id/d2FrYW8uY28uanBAYmxhY2tvdXQ=",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T04:42:22Z",
+    "victim": "eni.it",
+    "group": "incransom",
+    "sector": "Energy & Utilities",
+    "country": "IT",
+    "url": "https://www.ransomware.live/id/ZW5pLml0QGluY3JhbnNvbQ==",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T03:55:59Z",
+    "victim": "Inlandboatmen\u2019s Union of the Pacific \u2014 Marine Division of the ILWU",
+    "group": "spacebears",
+    "sector": "Transportation",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/SW5sYW5kYm9hdG1lbuKAmXMgVW5pb24gb2YgdGhlIFBhY2lmaWMg4oCUIE1hcmluZSBEaXZpc2lvbiBvZiB0aGUgSUxXVUBzcGFjZWJlYXJz",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T03:55:17Z",
+    "victim": "SDJ Design Engineering Limited",
+    "group": "spacebears",
+    "sector": "Manufacturing",
+    "country": "GB",
+    "url": "https://www.ransomware.live/id/U0RKIERlc2lnbiBFbmdpbmVlcmluZyBMaW1pdGVkQHNwYWNlYmVhcnM=",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T03:54:35Z",
+    "victim": "Rise | A Community Service Partnership (also known as NJ Rise)",
+    "group": "spacebears",
+    "sector": "Other",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/UmlzZSB8IEEgQ29tbXVuaXR5IFNlcnZpY2UgUGFydG5lcnNoaXAgKGFsc28ga25vd24gYXMgTkogUmlzZSlAc3BhY2ViZWFycw==",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T03:53:54Z",
+    "victim": "Epoch Residential",
+    "group": "spacebears",
+    "sector": "Hospitality",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/RXBvY2ggUmVzaWRlbnRpYWxAc3BhY2ViZWFycw==",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T03:46:28Z",
+    "victim": "Boeing",
+    "group": "incransom",
+    "sector": "Government & Defense",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/Qm9laW5nQGluY3JhbnNvbQ==",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T03:29:23Z",
+    "victim": "Ekwiik (Ideal Prepaid Botswana)",
+    "group": "N0n",
+    "sector": "Financial Services",
+    "country": "BW",
+    "url": null,
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T01:22:03Z",
+    "victim": "FIFA (F\u00e9d\u00e9ration Internationale de Football Association)",
+    "group": "Handsome Boy Hacking Club",
+    "sector": "Other",
+    "country": "CH",
+    "url": "https://www.ransomware.live/id/RklGQSAoRsOpZMOpcmF0aW9uIEludGVybmF0aW9uYWxlIGRlIEZvb3RiYWxsIEFzc29jaWF0aW9uKUBIYW5kc29tZSBCb3kgSGFja2luZyBDbHVi",
+    "desc": null
+   },
+   {
+    "date": "2026-11-20T00:21:32Z",
+    "victim": "Ban Lee Heng Motor (Melaka) Sdn. Bhd.",
+    "group": "Climax Inc",
+    "sector": "Transportation",
+    "country": "MY",
+    "url": null,
+    "desc": null
+   },
+   {
+    "date": "2026-11-19T22:18:36Z",
+    "victim": "Rudolph F. Jass, Jr., PLLC",
+    "group": "rhysida",
+    "sector": "Professional Services",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/UnVkb2xwaCBGLiBKYXNzLCBKci4sIFBMTENAcmh5c2lkYQ==",
+    "desc": null
+   },
+   {
+    "date": "2026-11-19T22:03:16Z",
+    "victim": "J... W...",
+    "group": "SilentRansomGroup",
+    "sector": "Not Found",
+    "country": "??",
+    "url": "https://www.ransomware.live/id/Si4uLiBXLi4uQFNpbGVudFJhbnNvbUdyb3Vw",
+    "desc": null
+   },
+   {
+    "date": "2026-11-19T21:52:49Z",
+    "victim": "AutoZone, Inc.",
+    "group": "Inception",
+    "sector": "Retail & E-Commerce",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/QXV0b1pvbmUsIEluYy5ASW5jZXB0aW9u",
+    "desc": null
+   }
   ],
   "coverage_days": 30.0,
   "series": [
@@ -4039,12 +4230,6 @@
  },
  "hourly": [
   {
-   "t": "2026-11-19T20:00:00Z",
-   "ransomware": 0,
-   "news": 0,
-   "x": 0
-  },
-  {
    "t": "2026-11-19T21:00:00Z",
    "ransomware": 1,
    "news": 0,
@@ -4181,8 +4366,118 @@
    "ransomware": 0,
    "news": 0,
    "x": 0
+  },
+  {
+   "t": "2026-11-20T20:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
   }
  ],
+ "brief": {
+  "updated": "2026-11-20T20:10:00Z",
+  "headline": "Two confirmed intrusions credited to AI-driven attackers (Bell Canada, and Cairn-assisted attacks on universities); a third-party vendor breach reaching Chase, Visa and Mastercard customers; a $13.5M key-compromise drain at Wagyu (XMR1) on Hyperliquid; and four newly confirmed exploited flaws, led by a VMware vCenter zero-day tied to a China-linked group.",
+  "incidents": [
+   {
+    "org": "Bell Canada",
+    "what": "Says an \"agentic\" threat actor breached its systems on Nov 17 and stole enterprise customer data, including from a circuit-provisioning system.",
+    "scale": "Enterprise customer data",
+    "patterns": [
+     "ai",
+     "data-exposure"
+    ],
+    "eid": "n-6c623452"
+   },
+   {
+    "org": "J.P. Morgan Chase, Visa, Mastercard",
+    "what": "Customer personal and marketing data exposed through a cyberattack on a third-party service provider.",
+    "scale": "Customer PII",
+    "patterns": [
+     "supply-chain",
+     "data-exposure"
+    ],
+    "eid": "n-bbc19bb6"
+   },
+   {
+    "org": "Wagyu (XMR1)",
+    "what": "Deployer signing key taken via a breach of third-party hosting; 5.2M XMR1 moved and sold into Hyperliquid's order book.",
+    "scale": "$13.5M",
+    "patterns": [
+     "key-compromise",
+     "supply-chain"
+    ],
+    "eid": "c-9e95d8b0"
+   },
+   {
+    "org": "U.S. Department of Agriculture",
+    "what": "Multiple applications taken offline over several days in response to a cybersecurity incident.",
+    "scale": "Service outage",
+    "patterns": [
+     "outage"
+    ],
+    "eid": "n-755bf327"
+   },
+   {
+    "org": "Universities (via Cairn AI tool)",
+    "what": "China-linked actor used the open-source AI pentest framework Cairn against two universities, possibly finding a zero-day.",
+    "scale": "2 institutions",
+    "patterns": [
+     "ai",
+     "state-linked",
+     "enterprise-platform"
+    ],
+    "eid": "n-cd038ca0"
+   },
+   {
+    "org": "Irish credit unions",
+    "what": "More than 40 breach notifications after a Belfast-based data processor was breached, unnoticed for six weeks.",
+    "scale": "40+ organisations",
+    "patterns": [
+     "supply-chain",
+     "data-exposure"
+    ],
+    "eid": "n-c21f2f09"
+   },
+   {
+    "org": "N-able",
+    "what": "Attackers who breached a server caused a worldwide outage of Mail Assure and SpamExperts Hosted Cloud.",
+    "scale": "Global service outage",
+    "patterns": [
+     "supply-chain",
+     "outage"
+    ],
+    "eid": "n-d9a32515"
+   },
+   {
+    "org": "Careers360",
+    "what": "Breach added to Have I Been Pwned.",
+    "scale": "3.6M accounts",
+    "patterns": [
+     "data-exposure"
+    ],
+    "eid": "b-8e8da935"
+   },
+   {
+    "org": "VMware vCenter (Broadcom)",
+    "what": "CVE-2026-123890 auth bypass, exploited as a zero-day since September by China-nexus Armory Castle; added to CISA KEV.",
+    "scale": "CVSS 9.8",
+    "patterns": [
+     "enterprise-platform",
+     "state-linked"
+    ],
+    "eid": "k-63a14165"
+   },
+   {
+    "org": "Cisco Expressway",
+    "what": "CVE-2026-76466 exploited shortly after a public proof of concept to breach devices and reach an internal network; added to CISA KEV.",
+    "scale": "Critical",
+    "patterns": [
+     "edge-device"
+    ],
+    "eid": "k-80fb8862"
+   }
+  ]
+ },
  "details": {
   "n-a5a08255": {
    "patterns": [

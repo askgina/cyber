@@ -56,9 +56,12 @@ def add_victim(v):
     ds = v.get("discovered") or v.get("attackdate")
     if not ds: return
     k = f"{v.get('victim')}|{v.get('group')}"
-    if k in cache: return
+    if k in cache:
+        cache[k].setdefault("url", v.get("url"))
+        return
     cache[k] = {"date": iso(parse_iso(ds)), "group": v.get("group") or "unknown",
-                "sector": v.get("activity") or "Not found", "country": v.get("country") or "??"}
+                "sector": v.get("activity") or "Not found", "country": v.get("country") or "??",
+                "victim": v.get("victim") or "", "url": v.get("url"), "desc": (v.get("description") or "")[:200]}
 try:
     for v in json.loads(get("https://api.ransomware.live/v2/recentvictims")): add_victim(v)
 except Exception as e:
@@ -76,6 +79,7 @@ if days_ago(oldest) < 29:
             errors.append(f"ransomware {y}-{m:02d}: {e}")
         time.sleep(3)
 cache = {k: v for k, v in cache.items() if days_ago(parse_iso(v["date"])) <= 35}
+for k, v in cache.items(): v.setdefault("victim", k.rsplit("|", 1)[0])
 json.dump(cache, open(CACHE, "w"))
 victims = [v for v in cache.values() if days_ago(parse_iso(v["date"])) <= 30]
 ransom_coverage_days = round(min(30, days_ago(min((parse_iso(v["date"]) for v in victims), default=NOW))), 1)
@@ -91,6 +95,8 @@ if victims:
         "groups_7d": Counter(v["group"] for v in v7).most_common(8),
         "sectors_7d": Counter(v["sector"] for v in v7 if v["sector"].lower() not in ("not found", "")).most_common(8),
         "countries_7d": Counter(v["country"] for v in v7 if v["country"] not in ("??", "")).most_common(8),
+        "items_24h": sorted(({kk: v.get(kk) for kk in ("date", "victim", "group", "sector", "country", "url", "desc")}
+                             for v in window(victims, 1)), key=lambda v: v["date"], reverse=True)[:200],
     }
 
 # ---- DefiLlama hacks
@@ -238,6 +244,13 @@ news_out, crypto_out, kev_out = news[:40], crypto[:60], kev[:40]
 incidents, clusters, pattern_stats, pattern_defs = enrich(
     news_out, crypto_out, kev_out, xsig, history=crypto_hist, breaches=breaches,
     notes_path=os.path.join(ROOT, "pipeline", "analysis_notes.json"))
+# ---- curated brief for the top of the page, written by the hourly agent
+brief = None
+try:
+    brief = json.load(open(os.path.join(ROOT, "pipeline", "today_brief.json")))
+    if days_ago(parse_iso(brief["updated"])) > 1.5: brief = None
+except Exception as e:
+    if os.path.exists(os.path.join(ROOT, "pipeline", "today_brief.json")): errors.append(f"brief: {e}")
 by_kind = {"news": news_out, "crypto": crypto_out, "kev": kev_out, "x": xsig, "breach": breaches}
 pos = {k: 0 for k in by_kind}
 details = {}
@@ -258,6 +271,7 @@ data = {
     "news": news_out, "x": xsig,
     "breaches": {"count_30d": len(breaches), "accounts_30d": sum(b["count"] or 0 for b in breaches), "items": breaches},
     "hourly": hourly,
+    "brief": brief,
     "details": details, "clusters": clusters[:12], "patterns": pattern_stats, "pattern_defs": pattern_defs,
 }
 json.dump(data, open(OUT, "w"), indent=1)

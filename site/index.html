@@ -18,8 +18,8 @@
 <header class="site">
   <a class="wordmark" href="#top" aria-label="Breach Ledger, top of page">Breach Ledger</a>
   <nav aria-label="Sections">
+    <a href="#glance">Today</a>
     <a href="#live">Live</a>
-    <a href="#today">Today</a>
     <a href="#patterns">Patterns</a>
     <a href="#crypto">Crypto</a>
     <a href="#ransomware">Ransomware</a>
@@ -43,6 +43,29 @@
         <a class="link" href="#method">Read the method</a>
       </div>
       <p class="hint">Select any text on this page to ask Perplexity about it.</p>
+    </div>
+  </section>
+
+  <section class="glance" id="glance" aria-labelledby="g-title">
+    <div class="live-head">
+      <h2 class="g-title" id="g-title">Today<span id="g-date"></span></h2>
+      <p class="live-status" id="g-window">Last 24 hours</p>
+    </div>
+    <p class="g-brief" id="g-brief"></p>
+    <div class="ticks g-ticks" id="g-ticks" aria-label="Today in numbers"></div>
+    <div class="g-grid">
+      <div>
+        <h3 class="g-h">Who was hit</h3>
+        <table class="tbl hit" id="g-hit"></table>
+        <button type="button" class="more" id="g-more" hidden></button>
+      </div>
+      <div>
+        <h3 class="g-h">How they got in</h3>
+        <div class="gp" id="g-pat"></div>
+        <p class="cap">Share of today's incidents by attack pattern. Select one to filter the whole page.</p>
+        <h3 class="g-h">Named on leak sites</h3>
+        <ul class="gr" id="g-ransom"></ul>
+      </div>
     </div>
   </section>
 

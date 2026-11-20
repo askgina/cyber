@@ -256,12 +256,7 @@
 
     // Abstract
     const biggest = [...crypto7].sort((a, b) => (b.amount || 0) - (a.amount || 0))[0];
-    $("#abstract").innerHTML =
-      `In the past seven days, public sources recorded <b>${c.count_7d} crypto exploits</b> totalling at least <b>${fmtUSD(c.usd_7d)}</b>` +
-      (biggest ? `, the largest at ${biggest.name} (${fmtUSD(biggest.amount)})` : "") +
-      `; <b>${r.count_7d ?? "—"} ransomware leak-site claims</b>, ${r.count_24h ?? "—"} of them in the last 24 hours; and <b>${k.count_7d} newly confirmed exploited vulnerabilities</b> in CISA's catalog. ` +
-      `${news48.length} incident reports appeared in the security press over the last 48 hours. Each entry below opens into a detail view with its attack pattern, similar incidents and sources, and links to its reporting, to live discussion on X and to Perplexity. ` +
-      `Counts are claims as published, not verified totals.`;
+    $("#abstract").innerHTML = `What was hacked today, who was hit, how much was taken and how they got in, from ransomware leak sites, CISA, DefiLlama, SlowMist, Have I Been Pwned, the security press and X. Polled live, rebuilt hourly. This week: <b>${c.count_7d} crypto exploits</b> (${fmtUSD(c.usd_7d)}), <b>${r.count_7d ?? "—"} ransomware claims</b>, <b>${k.count_7d} exploited flaws</b>${biggest ? `; largest loss ${escape(biggest.name)}, ${fmtUSD(biggest.amount)}` : ""}.`;
     $("#ask-today").href = askURL("What are the most significant cyber security incidents, hacks and exploited vulnerabilities reported in the last 24 hours?", "today's summary");
 
     // Ticks
@@ -337,6 +332,7 @@
     }), 8);
 
     drawLive(D);
+    drawGlance(D);
 
     list("kev", $("#kev-list"), k.items, (v) => entry({
       id: v.eid, kind: "kev", it: v, title: `${v.id}: ${v.name}`, text: v.desc,
@@ -389,7 +385,7 @@
 
   // Active section in TOC + nav
   function spy() {
-    const ids = ["live", "today", "news", "x-signals", "patterns", "clusters", "crypto", "ransomware", "groups", "sectors", "breaches", "exploited", "method", "stages", "sources", "elsewhere", "limits", "cite"];
+    const ids = ["glance", "live", "today", "news", "x-signals", "patterns", "clusters", "crypto", "ransomware", "groups", "sectors", "breaches", "exploited", "method", "stages", "sources", "elsewhere", "limits", "cite"];
     const obs = new IntersectionObserver((ents) => {
       ents.forEach((e) => {
         if (!e.isIntersecting) return;
@@ -445,6 +441,81 @@
     });
     if (H.length) rows.push(el("div", { class: "axis" }, el("span"), el("span", {}, el("span", {}, "24h ago"), el("span", {}, "12h"), el("span", {}, "Now")), el("span")));
     $("#hours").replaceChildren(...rows);
+  }
+
+  function drawGlance(D) {
+    const day = 26; // hours; covers sources that publish with a lag
+    const B = D.breaches || { items: [] };
+    const R = D.ransomware || {};
+    const inDay = (t) => t && (t.length === 10 ? hoursAgo(t + "T23:59:59Z") <= day : hoursAgo(t) <= day);
+    const pats = (id) => ((DET[id] || {}).patterns || []).filter((p) => p !== "unclassified");
+    const cr = D.crypto.items.filter((c) => inDay(c.date));
+    const br = B.items.filter((b) => inDay(b.added));
+    const kv = D.kev.items.filter((v) => inDay(v.date));
+    const nw = D.news.filter((n) => inDay(n.date));
+    const rv = R.items_24h || [];
+    const brief = D.brief && D.brief.incidents ? D.brief : null;
+
+    $("#g-date").textContent = ", " + new Date(D.generated).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
+    $("#g-brief").textContent = brief ? brief.headline : "";
+    $("#g-brief").hidden = !brief;
+
+    // Rows: curated first, then anything structured the brief did not cover.
+    const rows = [];
+    const seen = new Set();
+    if (brief) brief.incidents.forEach((i) => { rows.push({ ...i, patterns: i.patterns || pats(i.eid) }); i.eid && seen.add(i.eid); });
+    cr.filter((c) => !seen.has(c.eid)).sort((a, b) => (b.amount || 0) - (a.amount || 0)).forEach((c) =>
+      rows.push({ org: c.name, what: `Crypto exploit${c.technique && c.technique !== "Unknown" ? ": " + c.technique.toLowerCase() : ""}${c.chains.length ? " on " + c.chains.slice(0, 2).join(", ") : ""}.`, scale: fmtUSD(c.amount), patterns: pats(c.eid), eid: c.eid, n: c.amount || 0 }));
+    br.filter((b) => !seen.has(b.eid)).forEach((b) =>
+      rows.push({ org: b.title, what: `Breach added to Have I Been Pwned: ${(b.classes || []).slice(0, 3).join(", ").toLowerCase()}.`, scale: `${compact(b.count || 0)} accounts`, patterns: pats(b.eid), eid: b.eid }));
+    kv.filter((v) => !seen.has(v.eid)).forEach((v) =>
+      rows.push({ org: `${v.vendor} ${v.product}`, what: `${v.id} confirmed exploited in the wild; added to CISA KEV.`, scale: v.ransomware ? "Ransomware use" : "Exploited", patterns: pats(v.eid), eid: v.eid }));
+    if (!brief) nw.slice(0, 6).forEach((n) => rows.push({ org: n.title, what: n.source, scale: "", patterns: pats(n.eid), eid: n.eid }));
+
+    const named = rv.filter((v) => v.victim && !/\*/.test(v.victim));
+    const usd = cr.reduce((a, c) => a + (c.amount || 0), 0);
+    const acc = br.reduce((a, b) => a + (b.count || 0), 0);
+    const ticks = [
+      [rows.length + rv.length, "Organisations hit", `${rows.length} reported, ${rv.length} on leak sites`],
+      [usd ? fmtUSD(usd) : "$0", "Stolen in crypto", `${cr.length} exploit${cr.length === 1 ? "" : "s"}`],
+      [acc ? compact(acc) : "0", "Accounts exposed", `${br.length} breach${br.length === 1 ? "" : "es"} confirmed by HIBP`],
+      [kv.length, "Exploited flaws", "newly confirmed by CISA"],
+      [nw.length, "Incident reports", "security press"],
+    ];
+    $("#g-ticks").replaceChildren(...ticks.map(([n, l, s]) => el("div", { class: "tick" }, el("div", { class: "n" }, String(n)), el("div", { class: "l" }, l), el("div", { class: "s" }, s))));
+
+    const tb = el("tbody");
+    const LIM = 8;
+    rows.forEach((r, ix) => {
+      const name = r.eid ? el("a", { href: `#e-${r.eid}`, class: "jump" }, r.org) : el("span", {}, r.org);
+      if (r.eid) name.addEventListener("click", (x) => { x.preventDefault(); jumpTo(r.eid); });
+      const chips = (r.patterns || []).slice(0, 1).map((p) => { const b = el("button", { type: "button", class: "chip" }, LABEL[p] || p); b.addEventListener("click", () => setFilter({ pattern: p }, true)); return b; });
+      tb.append(el("tr", { class: ix >= LIM && !LIVE.allHit ? "more-row" : null, hidden: ix >= LIM && !LIVE.allHit ? "" : null }, el("td", { class: "org" }, name, el("span", { class: "what" }, r.what)), el("td", { class: "num sc" }, r.scale || ""), el("td", { class: "pc" }, chips)));
+    });
+    $("#g-hit").replaceChildren(el("thead", {}, el("tr", {}, el("th", {}, "Organisation and what happened"), el("th", { class: "num" }, "Scale"), el("th", { class: "pc" }, "Pattern"))), tb);
+    const mb = $("#g-more");
+    mb.hidden = rows.length <= LIM;
+    mb.textContent = LIVE.allHit ? "Show fewer" : `Show all ${rows.length}`;
+    mb.onclick = () => { LIVE.allHit = !LIVE.allHit; drawGlance(D0); };
+
+    // Patterns today
+    const cnt = {};
+    rows.forEach((r) => (r.patterns || []).forEach((p) => { cnt[p] = (cnt[p] || 0) + 1; }));
+    if (rv.length) cnt.ransomware = (cnt.ransomware || 0) + rv.length;
+    const pr = Object.entries(cnt).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    const max = Math.max(1, ...pr.map((p) => p[1]));
+    $("#g-pat").replaceChildren(...pr.map(([p, n]) => {
+      const b = el("button", { type: "button", class: "gpr" }, el("span", { class: "gl" }, LABEL[p] || p), el("span", { class: "gb" }, el("i", { style: `--w:${Math.max(4, (n / max) * 100)}%` })), el("span", { class: "gn" }, String(n)));
+      b.addEventListener("click", () => setFilter({ pattern: p }, true));
+      return b;
+    }));
+
+    const groups = {};
+    rv.forEach((v) => { groups[v.group] = (groups[v.group] || 0) + 1; });
+    const topG = Object.entries(groups).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([g, n]) => `${g} (${n})`).join(", ");
+    $("#g-ransom").replaceChildren(
+      ...named.slice(0, 8).map((v) => el("li", {}, el("a", { href: v.url || "https://www.ransomware.live", target: "_blank", rel: "noopener" }, v.victim), el("span", { class: "fs" }, [v.group, v.sector && !/not found/i.test(v.sector) ? v.sector : null, v.country && v.country !== "??" ? v.country : null].filter(Boolean).join(" · ")))),
+      el("li", { class: "more" }, `${rv.length} claims in 24 hours${named.length > 8 ? `, ${named.length - 8} more named` : ""}. Most active: ${topG || "none"}. `, el("a", { href: "#ransomware" }, "Groups and sectors")));
   }
 
   function tick() {
