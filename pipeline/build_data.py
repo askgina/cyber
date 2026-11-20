@@ -143,6 +143,66 @@ for name, url in FEEDS:
         errors.append(f"news {name}: {e}")
 news.sort(key=lambda x: x["date"], reverse=True)
 
+
+# ---- SlowMist Hacked (second crypto source; merged with DefiLlama)
+def norm(n): return re.sub(r"[^a-z0-9]", "", re.sub(r"\(.*?\)", "", n.lower()))
+slow = []
+try:
+    for pg in (1, 2):
+        page = get(f"https://hacked.slowmist.io/?page={pg}", 30).decode("utf-8", "replace")
+        for li in re.findall(r"<li>(.*?)</li>", page, re.S):
+            m_t = re.search(r'class="time">([0-9-]{10})', li); m_n = re.search(r"Hacked target: </em>(.*?)</h3>", li, re.S)
+            if not (m_t and m_n): continue
+            d_ = re.search(r"Description of the event: </em>(.*?)</p>", li, re.S)
+            a_ = re.search(r"Amount of loss: </em>(.*?)</span>", li, re.S)
+            meth = re.search(r"Attack method: </em>(.*?)</span>", li, re.S)
+            ref = re.search(r'link-reference"><a href="([^"]+)"', li)
+            amt = re.sub(r"[^0-9.]", "", clean(a_.group(1))) if a_ else ""
+            slow.append({"date": m_t.group(1), "name": clean(m_n.group(1)), "desc": clean(d_.group(1)) if d_ else "",
+                         "amount": float(amt) if amt else None, "method": clean(meth.group(1)) if meth else None,
+                         "ref": html.unescape(ref.group(1)) if ref else None})
+        time.sleep(1)
+except Exception as e:
+    errors.append(f"slowmist: {e}")
+def near(a, b, days=5): return abs((parse_iso(a) - parse_iso(b)).days) <= days
+for s_ in slow:
+    if days_ago(parse_iso(s_["date"])) > 30: continue
+    hit = next((c for c in crypto if near(c["date"], s_["date"]) and (norm(c["name"]) == norm(s_["name"]) or norm(s_["name"]) in norm(c["name"]) or norm(c["name"]) in norm(s_["name"])) and len(norm(s_["name"])) >= 3), None)
+    sm_links = [{"label": "SlowMist", "url": "https://hacked.slowmist.io/?search=" + urllib.parse.quote(s_["name"])}]
+    if s_["ref"]: sm_links.append({"label": "SlowMist reference", "url": s_["ref"]})
+    if hit:
+        hit.setdefault("sources", ["DefiLlama"]); hit["sources"].append("SlowMist")
+        hit["slowmist_method"] = s_["method"]
+        hit["links"] = hit["links"][:-1] + [l for l in sm_links if l["url"] not in [x["url"] for x in hit["links"]]] + hit["links"][-1:]
+    else:
+        crypto.append({"date": s_["date"], "name": s_["name"], "amount": s_["amount"], "returned": None, "chains": [],
+                       "classification": None, "technique": s_["method"], "target": None, "desc": s_["desc"],
+                       "sources": ["SlowMist"], "links": sm_links + [{"label": "Search X", "url": xsearch(f"{s_['name']} (exploit OR hack OR drained)")}]})
+for c in crypto: c.setdefault("sources", ["DefiLlama"])
+crypto.sort(key=lambda x: (x["date"], x["amount"] or 0), reverse=True)
+
+# ---- link rekt.news post-mortems to matching crypto entries
+for n in [n for n in news if n["source"] == "rekt"]:
+    for c in crypto:
+        if len(norm(c["name"])) >= 4 and norm(c["name"]) in norm(n["title"]):
+            if n["url"] not in [l["url"] for l in c["links"]]:
+                c["links"].insert(0, {"label": "rekt post-mortem", "url": n["url"]})
+                c["sources"].append("rekt")
+
+# ---- Have I Been Pwned: breaches added in the last 30 days (CC BY 4.0)
+breaches = []
+try:
+    for b in json.loads(get("https://haveibeenpwned.com/api/v3/breaches", 60)):
+        if days_ago(parse_iso(b["AddedDate"])) > 30 or b.get("IsSpamList") or b.get("IsFabricated"): continue
+        breaches.append({"name": b["Name"], "title": b["Title"], "domain": b.get("Domain"), "breach_date": b.get("BreachDate"),
+                         "added": b["AddedDate"], "count": b.get("PwnCount"), "classes": b.get("DataClasses") or [],
+                         "verified": b.get("IsVerified"), "sensitive": b.get("IsSensitive"), "desc": clean(b.get("Description"))[:900],
+                         "links": [{"label": "Have I Been Pwned", "url": f"https://haveibeenpwned.com/Breach/{b['Name']}"},
+                                   {"label": "Search X", "url": xsearch(f"{b['Title']} breach")}]})
+    breaches.sort(key=lambda x: x["added"], reverse=True)
+except Exception as e:
+    errors.append(f"hibp: {e}")
+
 # ---- X signals (curated / agent-collected; facts + link only)
 xsig = []
 if os.path.exists(XFILE):
@@ -162,14 +222,24 @@ def daily(rows, key):
     return out
 
 c30 = crypto
+# ---- last 24 hours by hour, across timestamped sources
+def hourly_bins():
+    out = []
+    for h in range(23, -1, -1):
+        t0 = NOW.replace(minute=0, second=0, microsecond=0) - dt.timedelta(hours=h)
+        t1 = t0 + dt.timedelta(hours=1)
+        def cnt(rows, key): return sum(1 for r in rows if t0 <= parse_iso(r[key]) < t1)
+        out.append({"t": iso(t0), "ransomware": cnt(victims, "date"), "news": cnt(news, "date"), "x": cnt(xsig, "date")})
+    return out
+hourly = hourly_bins()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from enrich import enrich
 news_out, crypto_out, kev_out = news[:40], crypto[:60], kev[:40]
 incidents, clusters, pattern_stats, pattern_defs = enrich(
-    news_out, crypto_out, kev_out, xsig, history=crypto_hist,
+    news_out, crypto_out, kev_out, xsig, history=crypto_hist, breaches=breaches,
     notes_path=os.path.join(ROOT, "pipeline", "analysis_notes.json"))
-by_kind = {"news": news_out, "crypto": crypto_out, "kev": kev_out, "x": xsig}
-pos = {"news": 0, "crypto": 0, "kev": 0, "x": 0}
+by_kind = {"news": news_out, "crypto": crypto_out, "kev": kev_out, "x": xsig, "breach": breaches}
+pos = {k: 0 for k in by_kind}
 details = {}
 for inc in incidents:
     item = by_kind[inc["kind"]][pos[inc["kind"]]]; pos[inc["kind"]] += 1
@@ -186,6 +256,8 @@ data = {
                "usd_30d": sum((c["amount"] or 0) for c in c30), "items": crypto_out, "series": daily(c30, "date"),
                "history_size": len(crypto_hist)},
     "news": news_out, "x": xsig,
+    "breaches": {"count_30d": len(breaches), "accounts_30d": sum(b["count"] or 0 for b in breaches), "items": breaches},
+    "hourly": hourly,
     "details": details, "clusters": clusters[:12], "patterns": pattern_stats, "pattern_defs": pattern_defs,
 }
 json.dump(data, open(OUT, "w"), indent=1)

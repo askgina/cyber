@@ -100,7 +100,7 @@ def tag(text, extra=()):
 def iid(prefix, s):
     return prefix + "-" + hashlib.sha1(s.encode()).hexdigest()[:8]
 
-def build_incidents(news, crypto, kev, xsig):
+def build_incidents(news, crypto, kev, xsig, breaches=()):
     inc = []
     for n in news:
         text = f"{n['title']}. {n['summary']}"
@@ -129,6 +129,11 @@ def build_incidents(news, crypto, kev, xsig):
         inc.append({"id": iid("x", x["subject"] + x["date"][:10]), "kind": "x", "date": x["date"], "title": x["subject"],
                     "text": x["claim"], "stage": x.get("stage"), "patterns": tag(text, [{"crypto": None}.get(x.get("category"))]),
                     "entities": [x["subject"].lower()], "_t": text})
+    for b in breaches:
+        text = f"{b['title']} {b.get('domain') or ''} data breach. {b['desc']} Exposed: {', '.join(b.get('classes') or [])}"
+        inc.append({"id": iid("b", b["name"]), "kind": "breach", "date": b["added"], "title": b["title"],
+                    "text": b["desc"], "patterns": tag(text, ["data-exposure"]),
+                    "entities": [x for x in [(b.get("domain") or "").lower()] if x], "_t": text})
     return inc
 
 def tfidf(docs):
@@ -151,9 +156,9 @@ def shared_terms(a, b, k=4):
     common = [(a[w] * b[w], w) for w in a if w in b]
     return [w for _, w in sorted(common, reverse=True)[:k]]
 
-def enrich(news, crypto, kev, xsig, history=None, notes_path=None):
+def enrich(news, crypto, kev, xsig, history=None, notes_path=None, breaches=()):
     """Return (incidents, clusters, pattern_stats)."""
-    inc = build_incidents(news, crypto, kev, xsig)
+    inc = build_incidents(news, crypto, kev, xsig, breaches)
     # merge agent-written analysis; a note may override the auto-tagged patterns
     if notes_path and os.path.exists(notes_path):
         try:
@@ -227,7 +232,7 @@ def enrich(news, crypto, kev, xsig, history=None, notes_path=None):
                 if a < b: terms.update(shared_terms(iv[a], iv[b], 4))
         kinds = Counter(inc[a]["kind"] for a in g)
         cid = "cl-" + hashlib.sha1("|".join(sorted(inc[a]["id"] for a in g)).encode()).hexdigest()[:6]
-        clusters.append({"id": cid, "size": len(g), "members": sorted((inc[a]["id"] for a in g), key=lambda x: x),
+        clusters.append({"id": cid, "size": len(g), "members": [inc[a]["id"] for a in sorted(g, key=lambda a: inc[a]["date"], reverse=True)],
                          "titles": [inc[a]["title"] for a in sorted(g, key=lambda a: inc[a]["date"], reverse=True)],
                          "patterns": [p for p, _ in pats.most_common(3)], "terms": [t for t, _ in terms.most_common(5)],
                          "kinds": dict(kinds), "latest": max(inc[a]["date"] for a in g),
@@ -235,7 +240,7 @@ def enrich(news, crypto, kev, xsig, history=None, notes_path=None):
         for a in g: inc[a]["cluster"] = cid
     clusters.sort(key=lambda c: (c["size"] * c["cohesion"], c["latest"]), reverse=True)
     # pattern stats
-    stats = defaultdict(lambda: {"news": 0, "crypto": 0, "kev": 0, "x": 0, "usd": 0, "total": 0, "recent7": 0})
+    stats = defaultdict(lambda: {"news": 0, "crypto": 0, "kev": 0, "x": 0, "breach": 0, "usd": 0, "total": 0, "recent7": 0})
     from datetime import datetime, timezone
     now = datetime.now(timezone.utc)
     for i in inc:

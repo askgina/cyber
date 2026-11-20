@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T19:52:44Z",
+ "generated": "2026-11-20T19:57:45Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -1196,7 +1196,7 @@
  "ransomware": {
   "count_24h": 21,
   "count_7d": 383,
-  "count_30d": 1265,
+  "count_30d": 1264,
   "groups_7d": [
    [
     "N0n",
@@ -1424,10 +1424,10 @@
   ]
  },
  "crypto": {
-  "count_7d": 16,
-  "count_30d": 52,
+  "count_7d": 17,
+  "count_30d": 64,
   "usd_7d": 34285460,
-  "usd_30d": 6455590965,
+  "usd_30d": 6590288765.0,
   "items": [
    {
     "date": "2026-11-20",
@@ -1450,6 +1450,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Wagyu%20%28XMR1%29%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-9e95d8b0"
    },
@@ -1476,6 +1479,9 @@
       "url": "https://x.com/search?f=live&q=CALC%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-ac4021af"
    },
    {
@@ -1494,10 +1500,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Fluidkey"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/fluidkey/status/2123481430634492278?s=46"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Fluidkey%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Unknown",
     "eid": "c-7b9a9595"
    },
    {
@@ -1518,10 +1537,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=K3%20Capital"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/k3_capital/status/2123040539578970305"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=K3%20Capital%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-a002e12f"
    },
    {
@@ -1542,10 +1574,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Gonka%20AI"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/gonka_ai/status/2123210678211318257"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Gonka%20AI%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-32a18fac"
    },
    {
@@ -1566,10 +1611,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=RNT%20Lend"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/Bitquery_io/status/2123100195122798895"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=RNT%20Lend%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Admin Key Compromise",
     "eid": "c-49496e7a"
    },
    {
@@ -1590,10 +1648,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=LUKSO"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/LUKSO_io/status/2123030837608186321"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=LUKSO%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Backend Vulnerability",
     "eid": "c-7e98ce2f"
    },
    {
@@ -1612,10 +1683,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Peapods%20Finance"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/PeapodsFinance/status/2123088545573118150"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Peapods%20Finance%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Private Key Leakage",
     "eid": "c-093be70e"
    },
    {
@@ -1636,11 +1720,53 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=B18%20TimeBank"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/blockaid_/status/2122779678427521387"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=B18%20TimeBank%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-68017625"
+   },
+   {
+    "date": "2026-11-17",
+    "name": "Paytaca",
+    "amount": 0.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Backend Vulnerability",
+    "target": null,
+    "desc": "Self-custodial Bitcoin Cash (BCH) wallet Paytaca suffered backend vulnerability exploits on November 17\u201318, 2026. Attackers used flaws in its P2P Ramp and other backend systems to generate fraudulent orders and unsolicited payment requests. The team stated the attacks targeted backend infrastructure only; private keys remain solely on users\u2019 devices and are never stored on servers, so fund transfers still require user signatures. User funds and private keys were unaffected. The team is investigating/fixing the issues and advises users to ignore suspicious orders/requests and never sign transactions they did not initiate.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Paytaca"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/_paytaca_/status/2122858068161736800"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Paytaca%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-9a202e8d"
    },
    {
     "date": "2026-11-16",
@@ -1660,10 +1786,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Lighter"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/Lighter_xyz/status/2122311006604984497"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Lighter%20Perps%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "API key leakage",
     "eid": "c-f7c50d27"
    },
    {
@@ -1684,10 +1823,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=MORE%20Markets"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/flow_blockchain/status/2122457454726312274"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=MORE%20Markets%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-c06e0adf"
    },
    {
@@ -1716,6 +1868,9 @@
       "url": "https://x.com/search?f=live&q=Optimizely%20%28OPTIMJACK%29%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-964f412e"
    },
    {
@@ -1736,10 +1891,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Chain%20Games"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/RealChainGames/status/2122112343970808002"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Chain%20Games%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-b957aeff"
    },
    {
@@ -1760,10 +1928,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Luxor"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/luxor/status/2122018094914601464"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Luxor%20Commander%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Software Vulnerability",
     "eid": "c-d9bcfe3f"
    },
    {
@@ -1784,10 +1965,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Kava%20Lend"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/KAVA_CHAIN/status/2122266605677580750"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Kava%20Lend%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-c153ccbf"
    },
    {
@@ -1808,11 +2002,53 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=HyprEarn"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/HyprEarn/status/2121673806704243178"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Hyprearn%20Perps%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Unknown",
     "eid": "c-c5d24106"
+   },
+   {
+    "date": "2026-11-13",
+    "name": "Pool Party",
+    "amount": 215000.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Smart Contract Vulnerability",
+    "target": null,
+    "desc": "On November 13, 2026, DeFi project Pool Party had 15 pools drained (12 on Arbitrum and 3 on Base) due to a vulnerability in the snapshot contracts that record user positions. The attacker modified their recorded position, deposited only 10 USDC, and withdrew all funds from the pools, resulting in approximately $215k in losses. Pools on Polygon and Robinhood Chain were unaffected, and the vulnerability has been fixed across all chains.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Pool%20Party"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/PoolParty_xyz/status/2121307902430359906"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Pool%20Party%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-4988a1f9"
    },
    {
     "date": "2026-11-13",
@@ -1832,10 +2068,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=PennysiaSettlement"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://etherscan.io/tx/0x2716c50e450272240f68f2827bcb4a336c2ac520951e0e530154566c295b732d"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Pennysia%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-2eb42f2b"
    },
    {
@@ -1856,11 +2105,82 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Edel%20Finance"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/edeldotfinance/status/2120902181104611616"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Edel%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Unknown",
     "eid": "c-0c6ac80c"
+   },
+   {
+    "date": "2026-11-12",
+    "name": "MapleStory Universe",
+    "amount": 0.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Server Intrusion",
+    "target": null,
+    "desc": "On November 12, 2026, MapleStory Universe confirmed unauthorized external access to part of its off-chain server infrastructure, exposing some user data (wallet addresses, nicknames, login history, partial emails, linked social accounts, etc.) and information from 328 Builder apps; the blockchain and smart contracts were unaffected, with no assets stolen. The team blocked the access path, replaced servers, and plans to rotate operational keys.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=MapleStory%20Universe"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/MaplestoryU/status/2120927819786309872"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=MapleStory%20Universe%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-b6276ed1"
+   },
+   {
+    "date": "2026-11-12",
+    "name": "Coinone (MetaM)",
+    "amount": 0.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Supply Chain Attack",
+    "target": null,
+    "desc": "On November 12, 2026, the server of Coinone\u2019s outsourced customer support provider (MetaM) was illegally accessed by external attackers, resulting in the potential leak of personal information from users who had contacted the customer center. Exposed data may include names, phone numbers, emails, dates of birth, bank account numbers, passwords, resident registration numbers, ID issue dates, home addresses, wallet addresses, and TXIDs (varying by individual). Coinone\u2019s core membership, trading, and wallet systems remain unaffected. The exchange blocked related IPs, reported the incident to authorities, and is investigating with the contractor.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Coinone%20%28MetaM%29"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://biz.chosun.com/en/en-finance/2026/11/15/37SXPOUOARCZLIE2N7NORVPNDU/"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Coinone%20%28MetaM%29%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-c90bbed1"
    },
    {
     "date": "2026-11-11",
@@ -1880,10 +2200,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Rujira%20AMM%20Strategies"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/RujiraNetwork/status/2120509584553259366"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Rujira%20AMM%20Strategies%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-a9167bc8"
    },
    {
@@ -1904,10 +2237,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Arcus"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://arcus.xyz/blog/arcus-incident-report-november-9-2026"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Arcus%20Perps%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Accounting Bug",
     "eid": "c-cdb111ab"
    },
    {
@@ -1928,10 +2274,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Initia"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/initia/status/2120050740626628972?a=QJo33joErvmhV_SB2E8&s=46"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Initia%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Private Key Leak",
     "eid": "c-0959887d"
    },
    {
@@ -1956,6 +2315,9 @@
       "url": "https://x.com/search?f=live&q=Curve%20Finance%20%28CowSwapBurner%29%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-e2d93b5c"
    },
    {
@@ -1976,10 +2338,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Across%20Protocol"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/AcrossProtocol/status/2120278803318489362"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Across%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Social Engineering",
     "eid": "c-f4674cee"
    },
    {
@@ -2004,7 +2379,68 @@
       "url": "https://x.com/search?f=live&q=Ankr%20Bridge%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-5b2f03bc"
+   },
+   {
+    "date": "2026-11-09",
+    "name": "Ankr Ethereum Cross-chain Bridge",
+    "amount": 304500.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Smart Contract Vulnerability",
+    "target": null,
+    "desc": "Ankr\u2019s Ethereum cross-chain bridge was exploited. The attacker submitted five forged cross-chain receipts referencing the same legitimate Optimism transaction, altering the recipient, token, and amounts. All receipts carried valid signatures from the bridge\u2019s trusted consensus signer, allowing the withdraw() function to release assets without verifying against actual source-chain events. Loss \u2248 $304.5k.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Ankr%20Ethereum%20Cross-chain%20Bridge"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/SlowMist_Team/status/2119720284093890615"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Ankr%20Ethereum%20Cross-chain%20Bridge%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-e3bcc1a5"
+   },
+   {
+    "date": "2026-11-09",
+    "name": "Swarm",
+    "amount": 0.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Supply Chain Attack",
+    "target": null,
+    "desc": "The development team Ethersphere behind the decentralized storage project Swarm suffered a supply chain attack. On November 9, 2026, attackers published a malicious bee-js 13.3.0 to npm and pushed a trojanized Swarm Desktop 0.56.2 via auto-updates. The malware reads Bee node config files and encrypted wallet keystores (with plaintext passwords in the config) and exfiltrates them, while also installing a remote-access backdoor. npm and the project have removed the versions; no confirmed fund losses.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Swarm"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/ethswarm/status/2119764040008491491"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Swarm%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-9c5869b8"
    },
    {
     "date": "2026-11-08",
@@ -2028,10 +2464,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=ACryptoS"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/acryptosdao/status/2119479478749667555"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=ACryptoS%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-48895bd5"
    },
    {
@@ -2053,10 +2502,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=LNbits"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/lnbits/status/2119428804951048237"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=LNbits%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Software Vulnerability",
     "eid": "c-24c2fd5e"
    },
    {
@@ -2081,7 +2543,68 @@
       "url": "https://x.com/search?f=live&q=LiquidCore%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-b3750593"
+   },
+   {
+    "date": "2026-11-06",
+    "name": "Unocoin",
+    "amount": 200000.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Private Key Leakage",
+    "target": null,
+    "desc": "Indian cryptocurrency exchange Unocoin experienced a security incident in November 2026. Three of its more than 20 operational hot wallets were compromised, with estimated cryptocurrency losses of approximately $200,000. The root cause was the compromise of Unocoin-controlled backup signing keys (generated about eight years ago and stored on paper), not BitGo\u2019s infrastructure. A portion of the funds has been frozen, and some customer information may have been exposed (no evidence of KYC document access so far). Unocoin will fully cover the losses from its own resources and is rebuilding its infrastructure; services remain suspended.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Unocoin"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/Unocoin/status/2121599275289510223"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Unocoin%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-a3183f55"
+   },
+   {
+    "date": "2026-11-06",
+    "name": "Degen Coin Flip",
+    "amount": 10000.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Smart Contract Vulnerability",
+    "target": null,
+    "desc": "Degen Coin Flip discovered an exploit in its Degen Spin game and was attacked by over 30,000 wallets. Damage was limited to about $10,000, all from the house. User funds are safe as players use their own wallets and the project does not hold balances. Spin and side bets are paused for fixes; other games are unaffected.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Degen%20Coin%20Flip"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/degencoinflip/status/2118555191599616042?s=46"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Degen%20Coin%20Flip%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-c0df5bb7"
    },
    {
     "date": "2026-11-06",
@@ -2099,10 +2622,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Keplr%20Wallet"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/keplrwallet/status/2118926087615045807"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Keplr%20Wallet%20%28Web3Auth%29%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Supply Chain Attack",
     "eid": "c-96da298e"
    },
    {
@@ -2123,10 +2659,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=%24TENDRIL"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/CertiKAlert/status/2118242639212658985"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=TENDRIL%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-98c1a388"
    },
    {
@@ -2147,11 +2696,82 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Loopscale"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/Loopscale/status/2118502123705159769"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Loopscale%20Lending%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-bb03e0f5"
+   },
+   {
+    "date": "2026-11-05",
+    "name": "FLOKI Trading Bot",
+    "amount": null,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Unknown",
+    "target": null,
+    "desc": "The FLOKI team announced an exploit in its Telegram trading bot and took it offline. They are identifying affected users and will move remaining funds to new secure wallets. Users are instructed not to deposit into bot wallets, to move any funds from exported private keys to self-controlled wallets, and to ignore unsolicited \u201crefund/recovery\u201d messages.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=FLOKI%20Trading%20Bot"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/FLOKI/status/2118381080260608281"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=FLOKI%20Trading%20Bot%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-1921c187"
+   },
+   {
+    "date": "2026-11-03",
+    "name": "InsurancePool/CoreVault",
+    "amount": 112300.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Flash Loan Attack",
+    "target": null,
+    "desc": "On November 3, 2026, the InsurancePool and CoreVault contracts on BSC were attacked, resulting in a loss of approximately $112,300 (about 160.26 BNB). The attacker used a flash loan to manipulate liquidity pool prices/oracle, inflating a CoreVault redemption by about 33 times to extract excess funds from the InsurancePool before repaying the loan.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=InsurancePool/CoreVault"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/TenArmorAlert/status/2117794176079376390"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=InsurancePool/CoreVault%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-a0af09f8"
    },
    {
     "date": "2026-11-03",
@@ -2174,6 +2794,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=DeFiChain%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-f52bd5aa"
    },
@@ -2204,11 +2827,53 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Mercado%20Bitcoin"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/MercadoBitcoin/status/2117417663966150718"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Mercado%20Bitcoin%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Signing Capability Compromise",
     "eid": "c-a205b47d"
+   },
+   {
+    "date": "2026-11-02",
+    "name": "Solana MEV Bot King",
+    "amount": 856000.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Hot Wallet Key Compromise",
+    "target": null,
+    "desc": "The main wallet of King (one of Solana\u2019s oldest and most successful MEV/arbitrage bots with ~$7.2M lifetime PnL) was emptied in 146 seconds via five plain transfers signed with its own private key, just 24 seconds after it stopped trading on November 2, 2026. Approximately $856K was stolen. Funds were swapped to SOL and bridged to Ethereum; about $280K was frozen by Mayan and Relay bridges, while ~$574K (251 ETH) remains unmoved in an Ethereum address. A 20% on-chain bounty was offered with no reply.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Solana%20MEV%20Bot%20King"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/OnchainLens/status/2117318995460476935"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Solana%20MEV%20Bot%20King%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-d5865dcb"
    },
    {
     "date": "2026-11-02",
@@ -2230,11 +2895,53 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=BitMart"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/sheldonbitmart/status/2117650361154691529"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=BitMart%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Unknown",
     "eid": "c-be6be6b4"
+   },
+   {
+    "date": "2026-11-01",
+    "name": "Cr\u00e9dit Mutuel Ark\u00e9a",
+    "amount": 133000000.0,
+    "returned": null,
+    "chains": [],
+    "classification": null,
+    "technique": "Supply Chain Attack",
+    "target": null,
+    "desc": "On November 4, 2026, Cr\u00e9dit Mutuel Ark\u00e9a issued a statement confirming that the attacker gained access through the platform of an unnamed third-party service provider, then used the bank's own accounts to transfer funds to other financial institutions. The funds may have subsequently been converted into cryptocurrency through specialized platforms. The bank denied that the breach originated from its online banking subsidiary, Fortuneo, and stated that customer assets were not affected. Regarding the approximately $133 million in losses previously reported by ZachXBT, the bank did not confirm the exact figure but acknowledged the scale of the incident. Some funds have been frozen, while the final losses remain under assessment.",
+    "sources": [
+     "SlowMist"
+    ],
+    "links": [
+     {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Cr%C3%A9dit%20Mutuel%20Ark%C3%A9a"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://t.me/investigations/375"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Cr%C3%A9dit%20Mutuel%20Ark%C3%A9a%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ],
+    "eid": "c-2336d4da"
    },
    {
     "date": "2026-11-01",
@@ -2258,6 +2965,9 @@
       "url": "https://x.com/search?f=live&q=Sovryn%20Dex%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-d313cf25"
    },
    {
@@ -2278,10 +2988,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=Premia%20V3"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/blockaid_/status/2116745378674463229"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Premia%20V3%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Smart Contract Vulnerability",
     "eid": "c-6028ac8d"
    },
    {
@@ -2303,10 +3026,23 @@
       "url": "https://defillama.com/hacks"
      },
      {
+      "label": "SlowMist",
+      "url": "https://hacked.slowmist.io/?search=BTCPay%20Server"
+     },
+     {
+      "label": "SlowMist reference",
+      "url": "https://x.com/BtcpayServer/status/2117020340815819262"
+     },
+     {
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=BTCPay%20Server%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama",
+     "SlowMist"
+    ],
+    "slowmist_method": "Unauthorized Signing Access",
     "eid": "c-672b11e7"
    },
    {
@@ -2331,6 +3067,9 @@
       "url": "https://x.com/search?f=live&q=Sovryn%20Lend%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-b26872d0"
    },
    {
@@ -2352,6 +3091,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Troves%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-c99ff4b3"
    },
@@ -2376,6 +3118,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=b14g%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-0c19d1d3"
    },
@@ -2407,6 +3152,9 @@
       "url": "https://x.com/search?f=live&q=Binance%20CEX%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-846757cf"
    },
    {
@@ -2430,6 +3178,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Polymarket%20International%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-94c7749d"
    },
@@ -2455,6 +3206,9 @@
       "url": "https://x.com/search?f=live&q=zkLink%20Nova%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-2dbef4e0"
    },
    {
@@ -2478,6 +3232,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Hifi%20Finance%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-11e11347"
    },
@@ -2503,6 +3260,9 @@
       "url": "https://x.com/search?f=live&q=Fence%20Finance%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-cf6ebf15"
    },
    {
@@ -2526,6 +3286,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Predict%20Fun%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-5a4553e8"
    },
@@ -2551,6 +3314,9 @@
       "url": "https://x.com/search?f=live&q=Zilliqa%20X-Bridge%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-296863a5"
    },
    {
@@ -2574,6 +3340,9 @@
       "label": "Search X",
       "url": "https://x.com/search?f=live&q=Bloom%20Trading%20Bot%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
+    ],
+    "sources": [
+     "DefiLlama"
     ],
     "eid": "c-2c17742f"
    },
@@ -2599,105 +3368,10 @@
       "url": "https://x.com/search?f=live&q=Myriad%20Markets%20%28exploit%20OR%20hack%20OR%20drained%29"
      }
     ],
+    "sources": [
+     "DefiLlama"
+    ],
     "eid": "c-76c2bb72"
-   },
-   {
-    "date": "2026-10-25",
-    "name": "Yapeswap",
-    "amount": 21900,
-    "returned": null,
-    "chains": [
-     "Ethereum"
-    ],
-    "classification": "Governance",
-    "technique": "Malicious Proposal",
-    "target": "DeFi Protocol",
-    "desc": "YapeSwap\u2019s WorkersUnion governance contract allowed proposals to pass with zero quorum, enabling an attacker controlling approximately 0.000055% of voting power to transfer YapeFactory\u2019s feeToSetter role to themselves. The attacker then installed a malicious Registry that returned fake vault addresses through latestVault(), while vaults() continued listing legitimate vaults. This redirected deposits into attacker-controlled destinations while YapePair incorrectly accounted for them as farming assets, resulting in approximately $21,900 in losses",
-    "links": [
-     {
-      "label": "DefiLlama",
-      "url": "https://defillama.com/hacks"
-     },
-     {
-      "label": "Search X",
-      "url": "https://x.com/search?f=live&q=Yapeswap%20%28exploit%20OR%20hack%20OR%20drained%29"
-     }
-    ],
-    "eid": "c-00273740"
-   },
-   {
-    "date": "2026-10-24",
-    "name": "X100",
-    "amount": 4750000,
-    "returned": null,
-    "chains": [
-     "Ethereum"
-    ],
-    "classification": "Governance",
-    "technique": "Flashloan Governance Attack",
-    "target": "DeFi Protocol",
-    "desc": "X100\u2019s governance system allowed an attacker to obtain two of three Senate seats using flash-loan-funded X tokens. The attacker immediately used this majority to approve and execute a malicious treasury proposal within the same transaction. The proposal forced the Freezer to swap 400,000 X tokens into an attacker-controlled liquidity pool with zero minimum output, allowing the attacker to extract treasury value through a manipulated trade",
-    "links": [
-     {
-      "label": "DefiLlama",
-      "url": "https://defillama.com/hacks"
-     },
-     {
-      "label": "Search X",
-      "url": "https://x.com/search?f=live&q=X100%20%28exploit%20OR%20hack%20OR%20drained%29"
-     }
-    ],
-    "eid": "c-804f446c"
-   },
-   {
-    "date": "2026-10-23",
-    "name": "Initia",
-    "amount": 2600000,
-    "returned": null,
-    "chains": [
-     "Initia"
-    ],
-    "classification": "Token & Share Accounting",
-    "technique": "Infinite Mint",
-    "target": "Chain",
-    "desc": "Initia suffered a security incident involving the unauthorized minting of multiple assets on its L1. The attacker reportedly transferred and converted some of the minted assets into Ethereum-based holdings. Initia halted its L1 and rollups while investigating the vulnerability and coordinating with validators, exchanges, and security teams",
-    "links": [
-     {
-      "label": "DefiLlama",
-      "url": "https://defillama.com/hacks"
-     },
-     {
-      "label": "Search X",
-      "url": "https://x.com/search?f=live&q=Initia%20%28exploit%20OR%20hack%20OR%20drained%29"
-     }
-    ],
-    "eid": "c-f80740ee"
-   },
-   {
-    "date": "2026-10-22",
-    "name": "WAX Multi-Chain Bridge",
-    "amount": 90500,
-    "returned": null,
-    "chains": [
-     "Solana",
-     "Ethereum",
-     "WAX"
-    ],
-    "classification": "Input Validation",
-    "technique": "Missing Input Validation",
-    "target": "DeFi Protocol",
-    "desc": "WAX\u2019s eth.token::withdraw function failed to validate that max_fee was nonnegative. By setting max_fee = -quantity, the attacker reduced the total account debit to zero while retaining the full withdrawal amount. Because the configured withdrawal fee was zero, the fee check did not reject the transaction. The resulting withdrawal logs triggered real payouts from the bridge on Solana and Ethereum",
-    "links": [
-     {
-      "label": "DefiLlama",
-      "url": "https://defillama.com/hacks"
-     },
-     {
-      "label": "Search X",
-      "url": "https://x.com/search?f=live&q=WAX%20Multi-Chain%20Bridge%20%28exploit%20OR%20hack%20OR%20drained%29"
-     }
-    ],
-    "eid": "c-6b5971b6"
    }
   ],
   "series": [
@@ -2743,15 +3417,15 @@
    ],
    [
     "2026-11-01",
-    3
+    4
    ],
    [
     "2026-11-02",
-    2
+    3
    ],
    [
     "2026-11-03",
-    1
+    2
    ],
    [
     "2026-11-04",
@@ -2759,11 +3433,11 @@
    ],
    [
     "2026-11-05",
-    2
+    3
    ],
    [
     "2026-11-06",
-    1
+    3
    ],
    [
     "2026-11-07",
@@ -2775,7 +3449,7 @@
    ],
    [
     "2026-11-09",
-    1
+    3
    ],
    [
     "2026-11-10",
@@ -2787,11 +3461,11 @@
    ],
    [
     "2026-11-12",
-    1
+    3
    ],
    [
     "2026-11-13",
-    1
+    2
    ],
    [
     "2026-11-14",
@@ -2807,7 +3481,7 @@
    ],
    [
     "2026-11-17",
-    1
+    2
    ],
    [
     "2026-11-18",
@@ -3138,6 +3812,377 @@
    "eid": "x-7b9a9595"
   }
  ],
+ "breaches": {
+  "count_30d": 7,
+  "accounts_30d": 16159025,
+  "items": [
+   {
+    "name": "TooLost",
+    "title": "Too Lost",
+    "domain": "toolost.com",
+    "breach_date": "2026-11-02",
+    "added": "2026-11-20T19:17:16Z",
+    "count": 724323,
+    "classes": [
+     "Dates of birth",
+     "Driver's licenses",
+     "Email addresses",
+     "Government issued IDs",
+     "IP addresses",
+     "Names",
+     "Partial credit card data",
+     "Passport numbers",
+     "Passwords",
+     "Payment histories",
+     "Physical addresses",
+     "Places of birth",
+     "Social media profiles",
+     "Usernames"
+    ],
+    "verified": true,
+    "sensitive": false,
+    "desc": "In November 2026, an unauthorised party claimed to have obtained data from the music distributor for independent artists, Too Lost. The data contained 724k unique email addresses belonging to artists, their collaborators and fans. Some records also contained bcrypt password hashes, while a small subset included partial credit card data (last 4 digits and card type), identity verification information (in some cases, passport, driver's licence or national ID numbers), and payouts made to artists. Too Lost advised that its investigation remains ongoing, external forensic specialists have been engaged, and measures have been taken to secure affected systems and credentials. The company is also working with advisors to coordinate communications and support for affected individuals.",
+    "links": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/TooLost"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Too%20Lost%20breach"
+     }
+    ],
+    "eid": "b-cc049559"
+   },
+   {
+    "name": "Careers360",
+    "title": "Careers360",
+    "domain": "careers360.com",
+    "breach_date": "2026-11-14",
+    "added": "2026-11-20T03:44:54Z",
+    "count": 3609421,
+    "classes": [
+     "Academic records",
+     "Castes",
+     "Email addresses",
+     "Genders",
+     "Names",
+     "Phone numbers"
+    ],
+    "verified": true,
+    "sensitive": false,
+    "desc": "In November 2026, data allegedly taken from the Indian education and careers platform Careers360 appeared on a public hacking forum . The 22M records included 3.6M unique email addresses alongside names, phone numbers, genders and caste categories, and most also contained students' entrance exam results, including ranks and marks.",
+    "links": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/Careers360"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Careers360%20breach"
+     }
+    ],
+    "eid": "b-8e8da935"
+   },
+   {
+    "name": "CastleRAT",
+    "title": "CastleRAT",
+    "domain": "",
+    "breach_date": "2026-11-12",
+    "added": "2026-11-13T05:41:32Z",
+    "count": 179745,
+    "classes": [
+     "Email addresses",
+     "Passwords"
+    ],
+    "verified": true,
+    "sensitive": false,
+    "desc": "In November 2026, Europol and international law enforcement partners dismantled infrastructure supporting several malware operations . Among them was CastleRAT, a remote access trojan (RAT) that enabled criminals to remotely control infected computers. Europol provided HIBP with 180k email addresses associated with CastleRAT infections, along with 893k unique passwords observed more than 3M times across accounts used on infected computers. The passwords are now searchable via Pwned Passwords .",
+    "links": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/CastleRAT"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=CastleRAT%20breach"
+     }
+    ],
+    "eid": "b-df45f4d8"
+   },
+   {
+    "name": "YouHack",
+    "title": "YouHack",
+    "domain": "youhack.ru",
+    "breach_date": "2013-05-29",
+    "added": "2026-11-11T07:29:19Z",
+    "count": 7160849,
+    "classes": [
+     "Email addresses",
+     "IP addresses",
+     "Passwords",
+     "Usernames"
+    ],
+    "verified": true,
+    "sensitive": false,
+    "desc": "In May 2013, the Russian-language hacking forum YouHack suffered a data breach that was later redistributed as part of a larger corpus of data . The breach exposed 107k forum members' email addresses, usernames, IP addresses and MD5 password hashes, most of which were unsalted. Forum posts also contained email address and password pairs belonging to other victims, bringing the total to 7.2M unique email addresses.",
+    "links": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/YouHack"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=YouHack%20breach"
+     }
+    ],
+    "eid": "b-bff08f6e"
+   },
+   {
+    "name": "SberSpasibo",
+    "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+    "domain": "spasibosberbank.ru",
+    "breach_date": "2023-03-09",
+    "added": "2026-11-11T01:44:58Z",
+    "count": 3288711,
+    "classes": [
+     "Bank card numbers",
+     "Dates of birth",
+     "Email addresses",
+     "Loyalty program details",
+     "Phone numbers"
+    ],
+    "verified": true,
+    "sensitive": false,
+    "desc": "In March 2023, data allegedly taken from \u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo), the loyalty program of Russian bank \u0421\u0431\u0435\u0440\u0431\u0430\u043d\u043a (Sberbank), was published online . The data contained records relating to 48M users, including 3.3M unique email addresses alongside phone numbers and dates of birth. Data also included bank card numbers stored as unsalted SHA-1 hashes, plus loyalty program details such as membership dates and the redemption of bonus points for partner offers.",
+    "links": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/SberSpasibo"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=%D0%A1%D0%B1%D0%B5%D1%80%D0%A1%D0%BF%D0%B0%D1%81%D0%B8%D0%B1%D0%BE%20%28SberSpasibo%29%20breach"
+     }
+    ],
+    "eid": "b-8a5ec5e1"
+   },
+   {
+    "name": "Harvard",
+    "title": "Harvard",
+    "domain": "harvard.edu",
+    "breach_date": "2025-11-18",
+    "added": "2026-11-03T07:24:50Z",
+    "count": 850537,
+    "classes": [
+     "Charitable donations",
+     "Citizenship statuses",
+     "Dates of birth",
+     "Education levels",
+     "Email addresses",
+     "Employers",
+     "Ethnicities",
+     "Family members' names",
+     "Genders",
+     "Job titles",
+     "Marital statuses",
+     "Names",
+     "Occupations",
+     "Phone numbers",
+     "Physical addresses",
+     "Places of birth",
+     "Salutations",
+     "Social media profiles"
+    ],
+    "verified": true,
+    "sensitive": false,
+    "desc": "In November 2025, Harvard University suffered a data breach later linked to a ShinyHunters \"pay or leak\" extortion attempt . The data contained 851k unique email addresses relating to the university's alumni and fundraising systems, along with extensive profile information for donors, alumni, parents and some faculty, staff and students. In Harvard's disclosure notice , the university stated that the breach impacted \"personal information such as email addresses, telephone numbers, home and business addresses, event attendance, details of donations to the University, and other biographical information pertaining to University fundraising and alumni engagement activities\".",
+    "links": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/Harvard"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Harvard%20breach"
+     }
+    ],
+    "eid": "b-0dbbdbf6"
+   },
+   {
+    "name": "AfD",
+    "title": "AfD",
+    "domain": "afd.de",
+    "breach_date": "2026-09-09",
+    "added": "2026-10-27T07:01:06Z",
+    "count": 345439,
+    "classes": [
+     "Email addresses",
+     "Email messages"
+    ],
+    "verified": true,
+    "sensitive": true,
+    "desc": "In September 2026, the German political party Alternative f\u00fcr Deutschland (AfD) suffered a data breach which exposed 345k unique email addresses. The following month, hundreds of gigabytes of data containing hundreds of thousands of emails and attachments was published online, with searchable AI-generated summaries and downloadable original files. An analysis of the incident reported that the breach was detected as early as 9 September, with a subsequent intrusion occurring five days later. In its public statement , AfD attributed the breach to an attack on a hosting provider, identified in subsequent reporting as the party-owned Alternita Dienstleistungs GmbH.",
+    "links": [
+     {
+      "label": "Have I Been Pwned",
+      "url": "https://haveibeenpwned.com/Breach/AfD"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=AfD%20breach"
+     }
+    ],
+    "eid": "b-e533697f"
+   }
+  ]
+ },
+ "hourly": [
+  {
+   "t": "2026-11-19T20:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-19T21:00:00Z",
+   "ransomware": 1,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-19T22:00:00Z",
+   "ransomware": 2,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-19T23:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T00:00:00Z",
+   "ransomware": 1,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T01:00:00Z",
+   "ransomware": 1,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T02:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T03:00:00Z",
+   "ransomware": 6,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T04:00:00Z",
+   "ransomware": 1,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T05:00:00Z",
+   "ransomware": 1,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T06:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T07:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T08:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T09:00:00Z",
+   "ransomware": 0,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T10:00:00Z",
+   "ransomware": 1,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T11:00:00Z",
+   "ransomware": 2,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T12:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 1
+  },
+  {
+   "t": "2026-11-20T13:00:00Z",
+   "ransomware": 1,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T14:00:00Z",
+   "ransomware": 3,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T15:00:00Z",
+   "ransomware": 1,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T16:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T17:00:00Z",
+   "ransomware": 0,
+   "news": 2,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T18:00:00Z",
+   "ransomware": 0,
+   "news": 3,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T19:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
+  }
+ ],
  "details": {
   "n-a5a08255": {
    "patterns": [
@@ -3152,6 +4197,14 @@
      "date": "2026-11-20T18:51:43Z",
      "score": 0.87,
      "why": "same pattern: Data exposure and theft, AI systems and agents; terms: canada, bell, agentic"
+    },
+    {
+     "id": "b-e533697f",
+     "kind": "breach",
+     "title": "AfD",
+     "date": "2026-10-27T07:01:06Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft, AI systems and agents"
     },
     {
      "id": "n-df29d71a",
@@ -3187,12 +4240,12 @@
      "why": "same pattern: Data exposure and theft; terms: customer, information"
     },
     {
-     "id": "n-2ff5d2ac",
-     "kind": "news",
-     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-     "date": "2026-11-19T17:16:31Z",
-     "score": 0.22,
-     "why": "same pattern: Data exposure and theft; terms: customer"
+     "id": "b-e533697f",
+     "kind": "breach",
+     "title": "AfD",
+     "date": "2026-10-27T07:01:06Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft, AI systems and agents"
     }
    ],
    "cluster": "cl-ad5c46"
@@ -3264,7 +4317,7 @@
      "kind": "news",
      "title": "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
      "date": "2026-11-20T09:38:15Z",
-     "score": 0.25,
+     "score": 0.24,
      "why": "same pattern: Enterprise platform zero-days, Data exposure and theft; terms: zero-day, server"
     }
    ]
@@ -3280,7 +4333,7 @@
      "kind": "news",
      "title": "Dozens of credit unions hit by supplier breach that went unnoticed for six weeks",
      "date": "2026-11-20T14:24:00Z",
-     "score": 0.33,
+     "score": 0.32,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: breach"
     },
     {
@@ -3290,6 +4343,14 @@
      "date": "2026-11-19T17:16:31Z",
      "score": 0.28,
      "why": "same pattern: Data exposure and theft; terms: visa, mastercard, chase"
+    },
+    {
+     "id": "c-2336d4da",
+     "kind": "crypto",
+     "title": "Cr\u00e9dit Mutuel Ark\u00e9a",
+     "date": "2026-11-01",
+     "score": 0.24,
+     "why": "same pattern: Supply chain and third parties; terms: provider, breach, third-party"
     }
    ]
   },
@@ -3304,7 +4365,7 @@
      "kind": "news",
      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
      "date": "2026-11-20T15:58:06Z",
-     "score": 0.33,
+     "score": 0.32,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: breach"
     }
    ]
@@ -3344,7 +4405,7 @@
      "kind": "crypto",
      "title": "BTCPay Server",
      "date": "2026-11-01",
-     "score": 0.25,
+     "score": 0.24,
      "why": "same pattern: Supply chain and third parties, Disruption and outages; terms: servers"
     }
    ]
@@ -3417,7 +4478,7 @@
      "kind": "news",
      "title": "Hackers use autonomous AI tool Cairn to find zero-day, take over server",
      "date": "2026-11-20T17:30:00Z",
-     "score": 0.25,
+     "score": 0.24,
      "why": "same pattern: Enterprise platform zero-days, Data exposure and theft; terms: zero-day, server"
     }
    ],
@@ -3541,6 +4602,14 @@
      "why": "same pattern: Data exposure and theft; terms: customers, customer"
     },
     {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: exposed"
+    },
+    {
      "id": "n-6c623452",
      "kind": "news",
      "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
@@ -3568,7 +4637,7 @@
      "kind": "news",
      "title": "UK: Transport for London photocard breach exposes 265,000 customers",
      "date": "2026-11-18T21:08:50Z",
-     "score": 0.39,
+     "score": 0.41,
      "why": "terms: transport, london, oyster"
     },
     {
@@ -3586,6 +4655,22 @@
      "date": "2026-11-19T22:25:42Z",
      "score": 0.33,
      "why": "same pattern: Data exposure and theft; terms: customers, exposed"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: breach, exposed"
+    },
+    {
+     "id": "b-8a5ec5e1",
+     "kind": "breach",
+     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+     "date": "2026-11-11T01:44:58Z",
+     "score": 0.26,
+     "why": "same pattern: Data exposure and theft; terms: card, details, breach"
     }
    ]
   },
@@ -3611,6 +4696,14 @@
      "why": "same pattern: Data exposure and theft; terms: customers, customer"
     },
     {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: numbers"
+    },
+    {
      "id": "n-bbc19bb6",
      "kind": "news",
      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
@@ -3619,12 +4712,12 @@
      "why": "same pattern: Data exposure and theft; terms: visa, mastercard, chase"
     },
     {
-     "id": "n-6c623452",
-     "kind": "news",
-     "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
-     "date": "2026-11-20T18:51:43Z",
-     "score": 0.22,
-     "why": "same pattern: Data exposure and theft; terms: customer"
+     "id": "b-8a5ec5e1",
+     "kind": "breach",
+     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+     "date": "2026-11-11T01:44:58Z",
+     "score": 0.24,
+     "why": "same pattern: Data exposure and theft; terms: numbers, card"
     }
    ]
   },
@@ -3768,6 +4861,14 @@
      "why": "same pattern: Supply chain and third parties; terms: n-able"
     },
     {
+     "id": "c-2336d4da",
+     "kind": "crypto",
+     "title": "Cr\u00e9dit Mutuel Ark\u00e9a",
+     "date": "2026-11-01",
+     "score": 0.31,
+     "why": "same pattern: Supply chain and third parties; terms: gained, breach, access"
+    },
+    {
      "id": "c-94c7749d",
      "kind": "crypto",
      "title": "Polymarket International",
@@ -3782,14 +4883,6 @@
      "date": "2026-11-16",
      "score": 0.3,
      "why": "same pattern: Supply chain and third parties"
-    },
-    {
-     "id": "n-ee9a2376",
-     "kind": "news",
-     "title": "Russian COLD RELIC Hackers Use Stolen Google Workspace Data to Breach Second U.S. Organization",
-     "date": "2026-11-18T05:58:04Z",
-     "score": 0.25,
-     "why": "same pattern: Supply chain and third parties; terms: cloud, threat, breach"
     }
    ]
   },
@@ -3821,7 +4914,7 @@
      "kind": "news",
      "title": "Transport for London breach exposes 265,000 Oyster card users' data",
      "date": "2026-11-19T18:20:01Z",
-     "score": 0.39,
+     "score": 0.41,
      "why": "terms: transport, london, oyster"
     }
    ]
@@ -3837,7 +4930,24 @@
     "data-exposure",
     "state-linked"
    ],
-   "related": []
+   "related": [
+    {
+     "id": "b-8a5ec5e1",
+     "kind": "breach",
+     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+     "date": "2026-11-11T01:44:58Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: bank, russian, records"
+    },
+    {
+     "id": "b-bff08f6e",
+     "kind": "breach",
+     "title": "YouHack",
+     "date": "2026-11-11T07:29:19Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft, State-linked activity"
+    }
+   ]
   },
   "n-c1761702": {
    "patterns": [
@@ -3948,6 +5058,14 @@
    ],
    "related": [
     {
+     "id": "c-9c5869b8",
+     "kind": "crypto",
+     "title": "Swarm",
+     "date": "2026-11-09",
+     "score": 0.25,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: versions, published, malicious"
+    },
+    {
      "id": "x-37d402a7",
      "kind": "x",
      "title": "Wagyu XMR1",
@@ -4030,6 +5148,14 @@
      "kind": "crypto",
      "title": "Polymarket International",
      "date": "2026-10-29",
+     "score": 0.3,
+     "why": "same pattern: Supply chain and third parties"
+    },
+    {
+     "id": "c-2336d4da",
+     "kind": "crypto",
+     "title": "Cr\u00e9dit Mutuel Ark\u00e9a",
+     "date": "2026-11-01",
      "score": 0.3,
      "why": "same pattern: Supply chain and third parties"
     },
@@ -4145,20 +5271,20 @@
      "why": "same pattern: Key and credential compromise; shared: hyperliquid l1; terms: deployer, hyperliquid, key"
     },
     {
+     "id": "c-9c5869b8",
+     "kind": "crypto",
+     "title": "Swarm",
+     "date": "2026-11-09",
+     "score": 0.32,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: files, wallet"
+    },
+    {
      "id": "c-76c2bb72",
      "kind": "crypto",
      "title": "Myriad Markets",
      "date": "2026-10-26",
      "score": 0.27,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: infrastructure, leaked, third-party"
-    },
-    {
-     "id": "c-f7c50d27",
-     "kind": "crypto",
-     "title": "Lighter Perps",
-     "date": "2026-11-16",
-     "score": 0.25,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: hyperliquid, infrastructure, leaked"
     }
    ],
    "precedents": [
@@ -4169,7 +5295,7 @@
      "technique": "Key Leaked via Infrastructure",
      "classification": "Frontend & Infrastructure",
      "score": 0.15,
-     "why": "hosting, infrastructure, breach"
+     "why": "hosting, infrastructure, leaked"
     }
    ],
    "cluster": "cl-7fee46",
@@ -4225,7 +5351,7 @@
      "kind": "crypto",
      "title": "Binance CEX",
      "date": "2026-10-29",
-     "score": 0.38,
+     "score": 0.37,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, operational, identified"
     },
     {
@@ -4278,8 +5404,16 @@
      "kind": "x",
      "title": "Fluidkey",
      "date": "2026-11-19T19:30:00Z",
-     "score": 0.71,
+     "score": 0.72,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; shared: fluidkey; terms: fluidkey, seal, privacy"
+    },
+    {
+     "id": "c-1921c187",
+     "kind": "crypto",
+     "title": "FLOKI Trading Bot",
+     "date": "2026-11-05",
+     "score": 0.27,
+     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
     },
     {
      "id": "c-9e95d8b0",
@@ -4290,20 +5424,20 @@
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
     },
     {
+     "id": "c-9c5869b8",
+     "kind": "crypto",
+     "title": "Swarm",
+     "date": "2026-11-09",
+     "score": 0.24,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
+    },
+    {
      "id": "x-37d402a7",
      "kind": "x",
      "title": "Wagyu XMR1",
      "date": "2026-11-20T12:48:00Z",
      "score": 0.23,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties"
-    },
-    {
-     "id": "c-672b11e7",
-     "kind": "crypto",
-     "title": "BTCPay Server",
-     "date": "2026-11-01",
-     "score": 0.22,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: offline, wallet"
     }
    ],
    "precedents": [],
@@ -4367,7 +5501,7 @@
      "kind": "crypto",
      "title": "TENDRIL",
      "date": "2026-11-05",
-     "score": 0.31,
+     "score": 0.32,
      "why": "same pattern: Smart contract logic flaws; terms: triggered, transactions, token"
     },
     {
@@ -4423,6 +5557,14 @@
    ],
    "related": [
     {
+     "id": "c-9a202e8d",
+     "kind": "crypto",
+     "title": "Paytaca",
+     "date": "2026-11-17",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise; terms: private"
+    },
+    {
      "id": "k-4dbd313c",
      "kind": "kev",
      "title": "CVE-2024-27834 \u00b7 Apple Multiple Products",
@@ -4439,20 +5581,20 @@
      "why": "same pattern: Key and credential compromise"
     },
     {
+     "id": "c-d5865dcb",
+     "kind": "crypto",
+     "title": "Solana MEV Bot King",
+     "date": "2026-11-02",
+     "score": 0.24,
+     "why": "same pattern: Key and credential compromise; terms: mev, bots, key"
+    },
+    {
      "id": "c-b3750593",
      "kind": "crypto",
      "title": "LiquidCore",
      "date": "2026-11-07",
      "score": 0.23,
      "why": "same pattern: Key and credential compromise; terms: subsequently, upgrade, key"
-    },
-    {
-     "id": "k-913a37e6",
-     "kind": "kev",
-     "title": "CVE-2026-102895 \u00b7 GPUStack GPUStack",
-     "date": "2026-11-09",
-     "score": 0.22,
-     "why": "same pattern: Key and credential compromise; terms: administrator"
     }
    ],
    "precedents": []
@@ -4494,7 +5636,7 @@
      "title": "Arcus Perps",
      "date": "2026-11-10",
      "score": 0.25,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, accounts, withdraw"
+     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, withdraw, accounts"
     },
     {
      "id": "c-c153ccbf",
@@ -4536,6 +5678,14 @@
      "date": "2026-10-27",
      "score": 0.33,
      "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: key, liquidity, compromise"
+    },
+    {
+     "id": "c-d5865dcb",
+     "kind": "crypto",
+     "title": "Solana MEV Bot King",
+     "date": "2026-11-02",
+     "score": 0.32,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: bridged, key, compromise"
     },
     {
      "id": "c-9e95d8b0",
@@ -4624,20 +5774,79 @@
    ],
    "precedents": []
   },
+  "c-9a202e8d": {
+   "patterns": [
+    "key-compromise"
+   ],
+   "related": [
+    {
+     "id": "c-49496e7a",
+     "kind": "crypto",
+     "title": "RNT Lend",
+     "date": "2026-11-18",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise; terms: private"
+    },
+    {
+     "id": "k-4dbd313c",
+     "kind": "kev",
+     "title": "CVE-2024-27834 \u00b7 Apple Multiple Products",
+     "date": "2026-11-04",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise"
+    },
+    {
+     "id": "k-f3975c8c",
+     "kind": "kev",
+     "title": "CVE-2026-123218 \u00b7 IBM Aspera Faspex",
+     "date": "2026-11-09",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise"
+    },
+    {
+     "id": "c-1921c187",
+     "kind": "crypto",
+     "title": "FLOKI Trading Bot",
+     "date": "2026-11-05",
+     "score": 0.26,
+     "why": "same pattern: Key and credential compromise; terms: unsolicited, ignore, keys"
+    },
+    {
+     "id": "c-a3183f55",
+     "kind": "crypto",
+     "title": "Unocoin",
+     "date": "2026-11-06",
+     "score": 0.22,
+     "why": "same pattern: Key and credential compromise; terms: stored, keys, infrastructure"
+    }
+   ],
+   "precedents": [
+    {
+     "name": "BigONE",
+     "date": "2025-07-16",
+     "amount": 27000000,
+     "technique": "Supply Chain Attack",
+     "classification": "Frontend & Infrastructure",
+     "score": 0.16,
+     "why": "backend, requests, fraudulent"
+    },
+    {
+     "name": "Livecoin",
+     "date": "2020-12-24",
+     "amount": 3300000,
+     "technique": "API Key Compromised",
+     "classification": "Frontend & Infrastructure",
+     "score": 0.14,
+     "why": "backend, never, servers"
+    }
+   ]
+  },
   "c-f7c50d27": {
    "patterns": [
     "supply-chain",
     "key-compromise"
    ],
    "related": [
-    {
-     "id": "c-96da298e",
-     "kind": "crypto",
-     "title": "Keplr Wallet (Web3Auth)",
-     "date": "2026-11-06",
-     "score": 0.36,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: recovery, belonging, suspended"
-    },
     {
      "id": "c-ac4021af",
      "kind": "crypto",
@@ -4647,11 +5856,19 @@
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: hyperliquid, withdrawals, recovery"
     },
     {
+     "id": "c-96da298e",
+     "kind": "crypto",
+     "title": "Keplr Wallet (Web3Auth)",
+     "date": "2026-11-06",
+     "score": 0.36,
+     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: recovery, belonging, suspended"
+    },
+    {
      "id": "c-76c2bb72",
      "kind": "crypto",
      "title": "Myriad Markets",
      "date": "2026-10-26",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: belonging, leaked, key"
     },
     {
@@ -4703,20 +5920,20 @@
      "why": "same pattern: Smart contract logic flaws; terms: reserve"
     },
     {
+     "id": "c-a0af09f8",
+     "kind": "crypto",
+     "title": "InsurancePool/CoreVault",
+     "date": "2026-11-03",
+     "score": 0.31,
+     "why": "same pattern: Smart contract logic flaws; terms: flash"
+    },
+    {
      "id": "c-bb03e0f5",
      "kind": "crypto",
      "title": "Loopscale Lending",
      "date": "2026-11-05",
      "score": 0.31,
      "why": "same pattern: Smart contract logic flaws; terms: lending"
-    },
-    {
-     "id": "c-cf6ebf15",
-     "kind": "crypto",
-     "title": "Fence Finance",
-     "date": "2026-10-27",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws; terms: flash"
     }
    ],
    "precedents": [
@@ -4760,7 +5977,7 @@
      "title": "Polymarket International",
      "date": "2026-10-29",
      "score": 0.35,
-     "why": "same pattern: Supply chain and third parties; terms: javascript, removed, supply"
+     "why": "same pattern: Supply chain and third parties; terms: javascript, removed, attacker-controlled"
     },
     {
      "id": "c-846757cf",
@@ -4787,12 +6004,12 @@
      "why": "same pattern: Supply chain and third parties; shared: bsc; terms: frontend, infrastructure, bsc"
     },
     {
-     "id": "c-672b11e7",
+     "id": "c-2336d4da",
      "kind": "crypto",
-     "title": "BTCPay Server",
+     "title": "Cr\u00e9dit Mutuel Ark\u00e9a",
      "date": "2026-11-01",
      "score": 0.31,
-     "why": "same pattern: Supply chain and third parties; shared: bitcoin, litecoin; terms: litecoin, infrastructure, remained"
+     "why": "same pattern: Supply chain and third parties; terms: cryptocurrency, supply, chain"
     }
    ],
    "precedents": [
@@ -4813,14 +6030,6 @@
     "bridge"
    ],
    "related": [
-    {
-     "id": "c-f80740ee",
-     "kind": "crypto",
-     "title": "Initia",
-     "date": "2026-10-23",
-     "score": 0.34,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: validators, chain, share"
-    },
     {
      "id": "c-cdb111ab",
      "kind": "crypto",
@@ -4846,12 +6055,20 @@
      "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: chain, repeatedly, inflated"
     },
     {
-     "id": "c-6b5971b6",
+     "id": "c-a205b47d",
      "kind": "crypto",
-     "title": "WAX Multi-Chain Bridge",
-     "date": "2026-10-22",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: failed"
+     "title": "Mercado Bitcoin",
+     "date": "2026-11-02",
+     "score": 0.28,
+     "why": "same pattern: Smart contract logic flaws; shared: polygon; terms: polygon, transfers"
+    },
+    {
+     "id": "c-cf6ebf15",
+     "kind": "crypto",
+     "title": "Fence Finance",
+     "date": "2026-10-27",
+     "score": 0.26,
+     "why": "same pattern: Smart contract logic flaws; terms: shares, redeemed, subsequently"
     }
    ],
    "precedents": [
@@ -4947,28 +6164,28 @@
      "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: chain, repeatedly, inflated"
     },
     {
-     "id": "c-f80740ee",
-     "kind": "crypto",
-     "title": "Initia",
-     "date": "2026-10-23",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: chain, share, accounting"
-    },
-    {
-     "id": "c-6b5971b6",
-     "kind": "crypto",
-     "title": "WAX Multi-Chain Bridge",
-     "date": "2026-10-22",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: bridge, resulting"
-    },
-    {
      "id": "c-f52bd5aa",
      "kind": "crypto",
      "title": "DeFiChain",
      "date": "2026-11-03",
      "score": 0.25,
      "why": "same pattern: Smart contract logic flaws; terms: arithmetic, supply, error"
+    },
+    {
+     "id": "c-7e98ce2f",
+     "kind": "crypto",
+     "title": "LUKSO",
+     "date": "2026-11-18",
+     "score": 0.24,
+     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: bridged"
+    },
+    {
+     "id": "c-c06e0adf",
+     "kind": "crypto",
+     "title": "MORE Markets",
+     "date": "2026-11-16",
+     "score": 0.23,
+     "why": "same pattern: Smart contract logic flaws; terms: debt, loans, repeatedly"
     }
    ],
    "precedents": []
@@ -5020,6 +6237,23 @@
     }
    ],
    "precedents": []
+  },
+  "c-4988a1f9": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": [],
+   "precedents": [
+    {
+     "name": "Citizen Finance",
+     "date": "2022-07-12",
+     "amount": 94300,
+     "technique": "Private Key Compromised",
+     "classification": "Key Compromise",
+     "score": 0.16,
+     "why": "party, chains, polygon"
+    }
+   ]
   },
   "c-2eb42f2b": {
    "patterns": [
@@ -5136,25 +6370,72 @@
      "why": "same pattern: Smart contract logic flaws; terms: trace, exchanges, assets"
     },
     {
-     "id": "c-f80740ee",
+     "id": "c-b26872d0",
      "kind": "crypto",
-     "title": "Initia",
-     "date": "2026-10-23",
+     "title": "Sovryn Lend",
+     "date": "2026-10-31",
      "score": 0.23,
-     "why": "same pattern: Smart contract logic flaws; terms: coordinating, exchanges, assets"
+     "why": "same pattern: Smart contract logic flaws; terms: undisclosed, block"
     }
    ],
-   "precedents": [
+   "precedents": []
+  },
+  "c-b6276ed1": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": [],
+   "precedents": []
+  },
+  "c-c90bbed1": {
+   "patterns": [
+    "key-compromise",
+    "supply-chain",
+    "data-exposure"
+   ],
+   "related": [
     {
-     "name": "Bitcoin Gold",
-     "date": "2018-05-16",
-     "amount": 18000000,
-     "technique": "Forged Proof",
-     "classification": "Bridge & Cross-Chain",
-     "score": 0.14,
-     "why": "exchanges, initial, cryptocurrency"
+     "id": "c-a3183f55",
+     "kind": "crypto",
+     "title": "Unocoin",
+     "date": "2026-11-06",
+     "score": 0.26,
+     "why": "same pattern: Key and credential compromise, Data exposure and theft; terms: customer, information, exposed"
+    },
+    {
+     "id": "c-9c5869b8",
+     "kind": "crypto",
+     "title": "Swarm",
+     "date": "2026-11-09",
+     "score": 0.26,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: passwords, supply, chain"
+    },
+    {
+     "id": "c-9e95d8b0",
+     "kind": "crypto",
+     "title": "Wagyu (XMR1)",
+     "date": "2026-11-20",
+     "score": 0.25,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: server, account, wallet"
+    },
+    {
+     "id": "x-37d402a7",
+     "kind": "x",
+     "title": "Wagyu XMR1",
+     "date": "2026-11-20T12:48:00Z",
+     "score": 0.24,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: exposed"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.22,
+     "why": "same pattern: Key and credential compromise, Data exposure and theft; terms: numbers, birth, dates"
     }
-   ]
+   ],
+   "precedents": []
   },
   "c-a9167bc8": {
    "patterns": [
@@ -5230,14 +6511,6 @@
      "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: chain, transfers, inflate"
     },
     {
-     "id": "c-6b5971b6",
-     "kind": "crypto",
-     "title": "WAX Multi-Chain Bridge",
-     "date": "2026-10-22",
-     "score": 0.33,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: withdrawal, bridge, account"
-    },
-    {
      "id": "c-c153ccbf",
      "kind": "crypto",
      "title": "Kava Lend",
@@ -5246,20 +6519,28 @@
      "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: blocked, chain, inflated"
     },
     {
-     "id": "c-f80740ee",
-     "kind": "crypto",
-     "title": "Initia",
-     "date": "2026-10-23",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: chain, accounting"
-    },
-    {
      "id": "c-7e98ce2f",
      "kind": "crypto",
      "title": "LUKSO",
      "date": "2026-11-18",
      "score": 0.25,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, accounts, withdraw"
+     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, withdraw, accounts"
+    },
+    {
+     "id": "c-c5d24106",
+     "kind": "crypto",
+     "title": "Hyprearn Perps",
+     "date": "2026-11-14",
+     "score": 0.23,
+     "why": "same pattern: Smart contract logic flaws; terms: perps, accounts, withdraw"
+    },
+    {
+     "id": "c-6028ac8d",
+     "kind": "crypto",
+     "title": "Premia V3",
+     "date": "2026-11-01",
+     "score": 0.23,
+     "why": "same pattern: Smart contract logic flaws; terms: withdrawal"
     }
    ],
    "precedents": [
@@ -5269,7 +6550,7 @@
      "amount": 8200,
      "technique": "Social Account Takeover",
      "classification": "Social Engineering",
-     "score": 0.15,
+     "score": 0.14,
      "why": "robinhood, account, chain"
     }
    ]
@@ -5280,14 +6561,6 @@
     "bridge"
    ],
    "related": [
-    {
-     "id": "c-f80740ee",
-     "kind": "crypto",
-     "title": "Initia",
-     "date": "2026-10-23",
-     "score": 0.48,
-     "why": "same pattern: Bridges and cross-chain; shared: initia; terms: initia, rollups, teams"
-    },
     {
      "id": "c-b3750593",
      "kind": "crypto",
@@ -5311,20 +6584,17 @@
      "date": "2026-10-27",
      "score": 0.33,
      "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: assets, network, key"
-    }
-   ],
-   "precedents": [
+    },
     {
-     "name": "Axelar Secret IBC Bridge",
-     "date": "2026-06-10",
-     "amount": 4670000,
-     "technique": "Unbacked Cross-Chain Mint",
-     "classification": "Bridge & Cross-Chain",
-     "score": 0.14,
-     "why": "escrow, ibc, blockchain"
+     "id": "c-d5865dcb",
+     "kind": "crypto",
+     "title": "Solana MEV Bot King",
+     "date": "2026-11-02",
+     "score": 0.32,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: bridged, transfers, key"
     }
    ],
-   "cluster": "cl-004241"
+   "precedents": []
   },
   "c-e2d93b5c": {
    "patterns": [
@@ -5388,7 +6658,7 @@
      "title": "Predict Fun",
      "date": "2026-10-27",
      "score": 0.3,
-     "why": "same pattern: Supply chain and third parties, Disruption and outages; terms: offline, committed, website"
+     "why": "same pattern: Supply chain and third parties, Disruption and outages; terms: committed, offline, website"
     }
    ],
    "precedents": [
@@ -5416,7 +6686,7 @@
      "amount": null,
      "technique": "DNS Hijack",
      "classification": "Frontend & Infrastructure",
-     "score": 0.22,
+     "score": 0.23,
      "why": "domain, registrar, frontend"
     }
    ]
@@ -5427,11 +6697,19 @@
    ],
    "related": [
     {
+     "id": "c-e3bcc1a5",
+     "kind": "crypto",
+     "title": "Ankr Ethereum Cross-chain Bridge",
+     "date": "2026-11-09",
+     "score": 0.62,
+     "why": "same pattern: Bridges and cross-chain; terms: receipts, ankr, referencing"
+    },
+    {
      "id": "c-2dbef4e0",
      "kind": "crypto",
      "title": "zkLink Nova",
      "date": "2026-10-28",
-     "score": 0.24,
+     "score": 0.25,
      "why": "same pattern: Bridges and cross-chain; terms: message, cross-chain, bridge"
     },
     {
@@ -5450,7 +6728,7 @@
      "amount": 5000000,
      "technique": "Improper Access Control",
      "classification": "Access Control",
-     "score": 0.22,
+     "score": 0.21,
      "why": "ankr, staking, tokens"
     },
     {
@@ -5459,17 +6737,112 @@
      "amount": 7900000,
      "technique": "Cross-Chain Message Spoofing",
      "classification": "Bridge & Cross-Chain",
-     "score": 0.17,
+     "score": 0.18,
      "why": "cross-chain, bridge, message"
     },
     {
-     "name": "Orbit Bridge",
-     "date": "2023-12-31",
-     "amount": 81700000,
-     "technique": "Signature Verification Flaw",
-     "classification": "Input Validation",
+     "name": "Fegex",
+     "date": "2024-12-29",
+     "amount": 1070000,
+     "technique": "Cross-Chain Message Spoofing",
+     "classification": "Bridge & Cross-Chain",
      "score": 0.16,
-     "why": "signatures, bridge, signer"
+     "why": "cross-chain, spoofing, accepted"
+    }
+   ],
+   "cluster": "cl-a104af"
+  },
+  "c-e3bcc1a5": {
+   "patterns": [
+    "bridge"
+   ],
+   "related": [
+    {
+     "id": "c-5b2f03bc",
+     "kind": "crypto",
+     "title": "Ankr Bridge",
+     "date": "2026-11-09",
+     "score": 0.62,
+     "why": "same pattern: Bridges and cross-chain; terms: receipts, ankr, referencing"
+    },
+    {
+     "id": "c-2dbef4e0",
+     "kind": "crypto",
+     "title": "zkLink Nova",
+     "date": "2026-10-28",
+     "score": 0.23,
+     "why": "same pattern: Bridges and cross-chain; terms: cross-chain, submitted, bridge"
+    }
+   ],
+   "precedents": [
+    {
+     "name": "Ankr",
+     "date": "2022-12-02",
+     "amount": 5000000,
+     "technique": "Improper Access Control",
+     "classification": "Access Control",
+     "score": 0.18,
+     "why": "ankr, contract, token"
+    }
+   ],
+   "cluster": "cl-a104af"
+  },
+  "c-9c5869b8": {
+   "patterns": [
+    "key-compromise",
+    "supply-chain"
+   ],
+   "related": [
+    {
+     "id": "c-9e95d8b0",
+     "kind": "crypto",
+     "title": "Wagyu (XMR1)",
+     "date": "2026-11-20",
+     "score": 0.32,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: files, wallet"
+    },
+    {
+     "id": "x-37d402a7",
+     "kind": "x",
+     "title": "Wagyu XMR1",
+     "date": "2026-11-20T12:48:00Z",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties"
+    },
+    {
+     "id": "c-c90bbed1",
+     "kind": "crypto",
+     "title": "Coinone (MetaM)",
+     "date": "2026-11-12",
+     "score": 0.26,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: passwords, supply, chain"
+    },
+    {
+     "id": "n-1df53018",
+     "kind": "news",
+     "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+     "date": "2026-11-18T06:45:26Z",
+     "score": 0.25,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: versions, published, malicious"
+    },
+    {
+     "id": "c-7b9a9595",
+     "kind": "crypto",
+     "title": "Fluidkey",
+     "date": "2026-11-19",
+     "score": 0.24,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
+    }
+   ],
+   "precedents": [
+    {
+     "name": "Swarm Markets",
+     "date": "2024-02-22",
+     "amount": 472892,
+     "technique": "Improper Access Control",
+     "classification": "Access Control",
+     "score": 0.14,
+     "why": "swarm"
     }
    ]
   },
@@ -5584,7 +6957,7 @@
      "kind": "crypto",
      "title": "BTCPay Server",
      "date": "2026-11-01",
-     "score": 0.28,
+     "score": 0.27,
      "why": "same pattern: Key and credential compromise; shared: bitcoin; terms: installations, operators, rotate"
     },
     {
@@ -5621,6 +6994,14 @@
      "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: status, recovery, assets"
     },
     {
+     "id": "c-d5865dcb",
+     "kind": "crypto",
+     "title": "Solana MEV Bot King",
+     "date": "2026-11-02",
+     "score": 0.34,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: mayan, key, address"
+    },
+    {
      "id": "c-296863a5",
      "kind": "crypto",
      "title": "Zilliqa X-Bridge",
@@ -5635,14 +7016,6 @@
      "date": "2026-11-20",
      "score": 0.32,
      "why": "same pattern: Key and credential compromise; shared: hyperliquid l1; terms: deployer, hyperliquid, key"
-    },
-    {
-     "id": "c-49496e7a",
-     "kind": "crypto",
-     "title": "RNT Lend",
-     "date": "2026-11-18",
-     "score": 0.23,
-     "why": "same pattern: Key and credential compromise; terms: subsequently, upgrade, key"
     }
    ],
    "precedents": [
@@ -5661,10 +7034,51 @@
      "amount": 4208000,
      "technique": "Key Leaked via Infrastructure",
      "classification": "Frontend & Infrastructure",
-     "score": 0.15,
+     "score": 0.14,
      "why": "mayan, unconfirmed, subsequently"
+    },
+    {
+     "name": "GERA",
+     "date": "2022-09-07",
+     "amount": 1480000,
+     "technique": "Deployer Key Compromised",
+     "classification": "Key Compromise",
+     "score": 0.14,
+     "why": "deployer, key, address"
     }
    ]
+  },
+  "c-a3183f55": {
+   "patterns": [
+    "key-compromise",
+    "data-exposure"
+   ],
+   "related": [
+    {
+     "id": "c-c90bbed1",
+     "kind": "crypto",
+     "title": "Coinone (MetaM)",
+     "date": "2026-11-12",
+     "score": 0.26,
+     "why": "same pattern: Key and credential compromise, Data exposure and theft; terms: customer, information, exposed"
+    },
+    {
+     "id": "c-9a202e8d",
+     "kind": "crypto",
+     "title": "Paytaca",
+     "date": "2026-11-17",
+     "score": 0.22,
+     "why": "same pattern: Key and credential compromise; terms: stored, keys, infrastructure"
+    }
+   ],
+   "precedents": []
+  },
+  "c-c0df5bb7": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": [],
+   "precedents": []
   },
   "c-96da298e": {
    "patterns": [
@@ -5685,8 +7099,8 @@
      "kind": "crypto",
      "title": "Myriad Markets",
      "date": "2026-10-26",
-     "score": 0.39,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: exposed, secured, belonging"
+     "score": 0.38,
+     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: secured, exposed, belonging"
     },
     {
      "id": "c-f7c50d27",
@@ -5730,19 +7144,19 @@
      "why": "same pattern: Smart contract logic flaws; shared: bsc; terms: bsc"
     },
     {
-     "id": "c-804f446c",
+     "id": "c-a0af09f8",
      "kind": "crypto",
-     "title": "X100",
-     "date": "2026-10-24",
-     "score": 0.34,
-     "why": "same pattern: Smart contract logic flaws; terms: flash-loan-funded, liquidity, swap"
+     "title": "InsurancePool/CoreVault",
+     "date": "2026-11-03",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: liquidity, resulting, pool"
     },
     {
      "id": "c-a002e12f",
      "kind": "crypto",
      "title": "K3 Capital",
      "date": "2026-11-18",
-     "score": 0.31,
+     "score": 0.32,
      "why": "same pattern: Smart contract logic flaws; terms: triggered, transactions, token"
     },
     {
@@ -5814,12 +7228,12 @@
      "why": "same pattern: Smart contract logic flaws; terms: detecting, paused, lending"
     },
     {
-     "id": "c-a205b47d",
+     "id": "c-48895bd5",
      "kind": "crypto",
-     "title": "Mercado Bitcoin",
-     "date": "2026-11-02",
+     "title": "ACryptoS",
+     "date": "2026-11-08",
      "score": 0.33,
-     "why": "same pattern: Smart contract logic flaws; shared: solana; terms: stated, solana, deposits"
+     "why": "same pattern: Smart contract logic flaws; terms: vaults, deposits"
     },
     {
      "id": "c-c5d24106",
@@ -5830,12 +7244,12 @@
      "why": "same pattern: Smart contract logic flaws; terms: activity, api"
     },
     {
-     "id": "c-48895bd5",
+     "id": "c-a205b47d",
      "kind": "crypto",
-     "title": "ACryptoS",
-     "date": "2026-11-08",
+     "title": "Mercado Bitcoin",
+     "date": "2026-11-02",
      "score": 0.33,
-     "why": "same pattern: Smart contract logic flaws; terms: vaults, deposits"
+     "why": "same pattern: Smart contract logic flaws; shared: solana; terms: stated, solana, deposits"
     }
    ],
    "precedents": [
@@ -5847,6 +7261,134 @@
      "classification": "Oracle Manipulation",
      "score": 0.27,
      "why": "loopscale, sol, solana"
+    }
+   ]
+  },
+  "c-1921c187": {
+   "patterns": [
+    "key-compromise",
+    "outage"
+   ],
+   "related": [
+    {
+     "id": "c-7b9a9595",
+     "kind": "crypto",
+     "title": "Fluidkey",
+     "date": "2026-11-19",
+     "score": 0.27,
+     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
+    },
+    {
+     "id": "x-7b9a9595",
+     "kind": "x",
+     "title": "Fluidkey",
+     "date": "2026-11-19T19:30:00Z",
+     "score": 0.27,
+     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
+    },
+    {
+     "id": "c-9a202e8d",
+     "kind": "crypto",
+     "title": "Paytaca",
+     "date": "2026-11-17",
+     "score": 0.26,
+     "why": "same pattern: Key and credential compromise; terms: unsolicited, ignore, keys"
+    }
+   ],
+   "precedents": [
+    {
+     "name": "Maestro",
+     "date": "2023-10-23",
+     "amount": 500000,
+     "technique": "Arbitrary External Call",
+     "classification": "Access Control",
+     "score": 0.16,
+     "why": "trading, bot, telegram"
+    },
+    {
+     "name": "Solareum",
+     "date": "2024-03-29",
+     "amount": 1400000,
+     "technique": "Social Account Takeover",
+     "classification": "Social Engineering",
+     "score": 0.15,
+     "why": "bot, telegram, trading"
+    },
+    {
+     "name": "Polycule",
+     "date": "2026-01-07",
+     "amount": 230000,
+     "technique": "Key Leaked via Infrastructure",
+     "classification": "Frontend & Infrastructure",
+     "score": 0.15,
+     "why": "bot, telegram, keys"
+    }
+   ]
+  },
+  "c-a0af09f8": {
+   "patterns": [
+    "contract-logic"
+   ],
+   "related": [
+    {
+     "id": "c-cf6ebf15",
+     "kind": "crypto",
+     "title": "Fence Finance",
+     "date": "2026-10-27",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: loan, flash"
+    },
+    {
+     "id": "c-98c1a388",
+     "kind": "crypto",
+     "title": "TENDRIL",
+     "date": "2026-11-05",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: liquidity, resulting, pool"
+    },
+    {
+     "id": "c-68017625",
+     "kind": "crypto",
+     "title": "B18 TimeBank",
+     "date": "2026-11-17",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: redemption"
+    },
+    {
+     "id": "c-f52bd5aa",
+     "kind": "crypto",
+     "title": "DeFiChain",
+     "date": "2026-11-03",
+     "score": 0.31,
+     "why": "same pattern: Smart contract logic flaws; terms: times"
+    },
+    {
+     "id": "c-c06e0adf",
+     "kind": "crypto",
+     "title": "MORE Markets",
+     "date": "2026-11-16",
+     "score": 0.31,
+     "why": "same pattern: Smart contract logic flaws; terms: flash"
+    }
+   ],
+   "precedents": [
+    {
+     "name": "Impossible Finance",
+     "date": "2021-06-21",
+     "amount": 500000,
+     "technique": "Spot Price Manipulation",
+     "classification": "Oracle Manipulation",
+     "score": 0.15,
+     "why": "attacked, loan, prices"
+    },
+    {
+     "name": "GDS",
+     "date": "2023-01-03",
+     "amount": 187000,
+     "technique": "Reward Logic Flaw",
+     "classification": "Protocol Logic",
+     "score": 0.14,
+     "why": "loan, repaying, flash"
     }
    ]
   },
@@ -5868,7 +7410,7 @@
      "kind": "crypto",
      "title": "BitMart",
      "date": "2026-11-02",
-     "score": 0.32,
+     "score": 0.31,
      "why": "same pattern: Smart contract logic flaws; terms: blockchain, addresses"
     },
     {
@@ -5888,12 +7430,12 @@
      "why": "same pattern: Smart contract logic flaws; terms: leaving"
     },
     {
-     "id": "c-00273740",
+     "id": "c-a0af09f8",
      "kind": "crypto",
-     "title": "Yapeswap",
-     "date": "2026-10-25",
+     "title": "InsurancePool/CoreVault",
+     "date": "2026-11-03",
      "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws; terms: transfer, addresses"
+     "why": "same pattern: Smart contract logic flaws; terms: times"
     }
    ],
    "precedents": [
@@ -5971,7 +7513,7 @@
      "amount": 40000000,
      "technique": "Hot Wallet Key Compromised",
      "classification": "Key Compromise",
-     "score": 0.2,
+     "score": 0.21,
      "why": "bitcoin, cex, customers"
     },
     {
@@ -5989,8 +7531,67 @@
      "amount": 55000000,
      "technique": "Hot Wallet Key Compromised",
      "classification": "Key Compromise",
-     "score": 0.16,
+     "score": 0.17,
      "why": "stellar, tron, bitcoin"
+    }
+   ]
+  },
+  "c-d5865dcb": {
+   "patterns": [
+    "key-compromise",
+    "bridge"
+   ],
+   "related": [
+    {
+     "id": "c-b3750593",
+     "kind": "crypto",
+     "title": "LiquidCore",
+     "date": "2026-11-07",
+     "score": 0.34,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: mayan, key, address"
+    },
+    {
+     "id": "c-093be70e",
+     "kind": "crypto",
+     "title": "Peapods Finance",
+     "date": "2026-11-18",
+     "score": 0.32,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: bridged, key, compromise"
+    },
+    {
+     "id": "c-0959887d",
+     "kind": "crypto",
+     "title": "Initia",
+     "date": "2026-11-10",
+     "score": 0.32,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: bridged, transfers, key"
+    },
+    {
+     "id": "c-296863a5",
+     "kind": "crypto",
+     "title": "Zilliqa X-Bridge",
+     "date": "2026-10-27",
+     "score": 0.31,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: key, private, compromise"
+    },
+    {
+     "id": "c-49496e7a",
+     "kind": "crypto",
+     "title": "RNT Lend",
+     "date": "2026-11-18",
+     "score": 0.24,
+     "why": "same pattern: Key and credential compromise; terms: mev, bots, key"
+    }
+   ],
+   "precedents": [
+    {
+     "name": "Curve Finance MEV Bot",
+     "date": "2023-11-07",
+     "amount": 2000000,
+     "technique": "Improper Access Control",
+     "classification": "Access Control",
+     "score": 0.16,
+     "why": "mev, bot, arbitrage"
     }
    ]
   },
@@ -6038,6 +7639,54 @@
      "date": "2026-11-01",
      "score": 0.32,
      "why": "same pattern: Smart contract logic flaws; terms: portions"
+    }
+   ],
+   "precedents": []
+  },
+  "c-2336d4da": {
+   "patterns": [
+    "supply-chain"
+   ],
+   "related": [
+    {
+     "id": "c-94c7749d",
+     "kind": "crypto",
+     "title": "Polymarket International",
+     "date": "2026-10-29",
+     "score": 0.32,
+     "why": "same pattern: Supply chain and third parties; terms: third-party, supply, transfer"
+    },
+    {
+     "id": "c-964f412e",
+     "kind": "crypto",
+     "title": "Optimizely (OPTIMJACK)",
+     "date": "2026-11-16",
+     "score": 0.31,
+     "why": "same pattern: Supply chain and third parties; terms: cryptocurrency, supply, chain"
+    },
+    {
+     "id": "n-67401cc8",
+     "kind": "news",
+     "title": "Hackers Breach N-able Cloud Server, Disrupting Email Security Management Across 3 Regions",
+     "date": "2026-11-19T09:31:26Z",
+     "score": 0.31,
+     "why": "same pattern: Supply chain and third parties; terms: gained, breach, access"
+    },
+    {
+     "id": "n-1ef65dbe",
+     "kind": "news",
+     "title": "N-able Patches 17 N-central Flaws as Attackers Exploit Earlier Bugs to Deploy Crypto Miners",
+     "date": "2026-11-17T05:00:34Z",
+     "score": 0.3,
+     "why": "same pattern: Supply chain and third parties"
+    },
+    {
+     "id": "n-bbc19bb6",
+     "kind": "news",
+     "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+     "date": "2026-11-20T15:58:06Z",
+     "score": 0.24,
+     "why": "same pattern: Supply chain and third parties; terms: provider, breach, third-party"
     }
    ],
    "precedents": []
@@ -6167,7 +7816,7 @@
      "kind": "crypto",
      "title": "Keplr Wallet (Web3Auth)",
      "date": "2026-11-06",
-     "score": 0.3,
+     "score": 0.29,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: exposed, wallets, infrastructure"
     },
     {
@@ -6262,14 +7911,6 @@
      "why": "same pattern: Smart contract logic flaws; terms: vaults, paused"
     },
     {
-     "id": "c-00273740",
-     "kind": "crypto",
-     "title": "Yapeswap",
-     "date": "2026-10-25",
-     "score": 0.34,
-     "why": "same pattern: Smart contract logic flaws; terms: vaults, vault, resulting"
-    },
-    {
      "id": "c-48895bd5",
      "kind": "crypto",
      "title": "ACryptoS",
@@ -6292,6 +7933,14 @@
      "date": "2026-11-01",
      "score": 0.33,
      "why": "same pattern: Smart contract logic flaws; terms: impact, btc, control"
+    },
+    {
+     "id": "c-0c19d1d3",
+     "kind": "crypto",
+     "title": "b14g",
+     "date": "2026-10-31",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: paused, btc"
     }
    ],
    "precedents": [
@@ -6303,6 +7952,15 @@
      "classification": "Access Control",
      "score": 0.17,
      "why": "legacy, vaults, control"
+    },
+    {
+     "name": "Agentic FoF",
+     "date": "2025-11-24",
+     "amount": 531000,
+     "technique": "Unknown",
+     "classification": "Protocol Logic",
+     "score": 0.14,
+     "why": "vaults, precaution, vault"
     }
    ]
   },
@@ -6336,20 +7994,20 @@
      "why": "same pattern: Smart contract logic flaws; terms: paused, remained"
     },
     {
-     "id": "c-00273740",
-     "kind": "crypto",
-     "title": "Yapeswap",
-     "date": "2026-10-25",
-     "score": 0.32,
-     "why": "same pattern: Smart contract logic flaws; terms: attacker-controlled, addresses, assets"
-    },
-    {
      "id": "c-c99ff4b3",
      "kind": "crypto",
      "title": "Troves",
      "date": "2026-10-31",
      "score": 0.32,
      "why": "same pattern: Smart contract logic flaws; terms: paused, btc"
+    },
+    {
+     "id": "c-11e11347",
+     "kind": "crypto",
+     "title": "Hifi Finance",
+     "date": "2026-10-28",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: coordinated, attacker-controlled"
     }
    ],
    "precedents": [
@@ -6359,7 +8017,7 @@
      "amount": 5000000,
      "technique": "Private Key Compromised",
      "classification": "Key Compromise",
-     "score": 0.16,
+     "score": 0.15,
      "why": "core, remained, unaffected"
     },
     {
@@ -6401,7 +8059,7 @@
      "kind": "crypto",
      "title": "CALC",
      "date": "2026-11-19",
-     "score": 0.38,
+     "score": 0.37,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, operational, identified"
     },
     {
@@ -6461,7 +8119,23 @@
      "title": "Optimizely (OPTIMJACK)",
      "date": "2026-11-16",
      "score": 0.35,
-     "why": "same pattern: Supply chain and third parties; terms: javascript, removed, supply"
+     "why": "same pattern: Supply chain and third parties; terms: javascript, removed, attacker-controlled"
+    },
+    {
+     "id": "c-2336d4da",
+     "kind": "crypto",
+     "title": "Cr\u00e9dit Mutuel Ark\u00e9a",
+     "date": "2026-11-01",
+     "score": 0.32,
+     "why": "same pattern: Supply chain and third parties; terms: third-party, supply, transfer"
+    },
+    {
+     "id": "c-5a4553e8",
+     "kind": "crypto",
+     "title": "Predict Fun",
+     "date": "2026-10-27",
+     "score": 0.3,
+     "why": "same pattern: Supply chain and third parties; terms: reimbursing, prediction, committed"
     },
     {
      "id": "n-1ef65dbe",
@@ -6478,22 +8152,6 @@
      "date": "2026-11-19T09:31:26Z",
      "score": 0.3,
      "why": "same pattern: Supply chain and third parties"
-    },
-    {
-     "id": "c-5a4553e8",
-     "kind": "crypto",
-     "title": "Predict Fun",
-     "date": "2026-10-27",
-     "score": 0.3,
-     "why": "same pattern: Supply chain and third parties; terms: reimbursing, prediction, committed"
-    },
-    {
-     "id": "c-76c2bb72",
-     "kind": "crypto",
-     "title": "Myriad Markets",
-     "date": "2026-10-26",
-     "score": 0.26,
-     "why": "same pattern: Supply chain and third parties; terms: prediction, third-party, positions"
     }
    ],
    "precedents": [
@@ -6529,8 +8187,16 @@
      "kind": "crypto",
      "title": "Ankr Bridge",
      "date": "2026-11-09",
-     "score": 0.24,
+     "score": 0.25,
      "why": "same pattern: Bridges and cross-chain; terms: message, cross-chain, bridge"
+    },
+    {
+     "id": "c-e3bcc1a5",
+     "kind": "crypto",
+     "title": "Ankr Ethereum Cross-chain Bridge",
+     "date": "2026-11-09",
+     "score": 0.23,
+     "why": "same pattern: Bridges and cross-chain; terms: cross-chain, submitted, bridge"
     }
    ],
    "precedents": [
@@ -6569,22 +8235,6 @@
    ],
    "related": [
     {
-     "id": "c-804f446c",
-     "kind": "crypto",
-     "title": "X100",
-     "date": "2026-10-24",
-     "score": 0.41,
-     "why": "same pattern: Smart contract logic flaws; terms: proposal, governance, attacker-controlled"
-    },
-    {
-     "id": "c-00273740",
-     "kind": "crypto",
-     "title": "Yapeswap",
-     "date": "2026-10-25",
-     "score": 0.4,
-     "why": "same pattern: Smart contract logic flaws; terms: governance, proposal, pass"
-    },
-    {
      "id": "c-2eb42f2b",
      "kind": "crypto",
      "title": "Pennysia",
@@ -6607,6 +8257,22 @@
      "date": "2026-10-31",
      "score": 0.32,
      "why": "same pattern: Smart contract logic flaws; terms: coordinated, attacker-controlled"
+    },
+    {
+     "id": "c-e2d93b5c",
+     "kind": "crypto",
+     "title": "Curve Finance (CowSwapBurner)",
+     "date": "2026-11-10",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: executed, finance, contract"
+    },
+    {
+     "id": "c-c5d24106",
+     "kind": "crypto",
+     "title": "Hyprearn Perps",
+     "date": "2026-11-14",
+     "score": 0.31,
+     "why": "same pattern: Smart contract logic flaws; terms: existing"
     }
    ],
    "precedents": [
@@ -6616,17 +8282,8 @@
      "amount": 270000,
      "technique": "Flashloan Governance Attack",
      "classification": "Governance",
-     "score": 0.25,
+     "score": 0.26,
      "why": "governance, proposal, pass"
-    },
-    {
-     "name": "Token of Power",
-     "date": "2026-06-09",
-     "amount": 1580000,
-     "technique": "Malicious Proposal",
-     "classification": "Governance",
-     "score": 0.24,
-     "why": "proposal, governance, acquired"
     },
     {
      "name": "Panther Protocol",
@@ -6636,6 +8293,15 @@
      "classification": "Governance",
      "score": 0.24,
      "why": "proposal, governance, malicious"
+    },
+    {
+     "name": "Token of Power",
+     "date": "2026-06-09",
+     "amount": 1580000,
+     "technique": "Malicious Proposal",
+     "classification": "Governance",
+     "score": 0.24,
+     "why": "proposal, governance, acquired"
     }
    ]
   },
@@ -6669,20 +8335,20 @@
      "why": "same pattern: Smart contract logic flaws; shared: avalanche; terms: associated, avalanche"
     },
     {
+     "id": "c-a0af09f8",
+     "kind": "crypto",
+     "title": "InsurancePool/CoreVault",
+     "date": "2026-11-03",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: loan, flash"
+    },
+    {
      "id": "c-68017625",
      "kind": "crypto",
      "title": "B18 TimeBank",
      "date": "2026-11-17",
      "score": 0.32,
      "why": "same pattern: Smart contract logic flaws; terms: redeemed, usdc"
-    },
-    {
-     "id": "c-804f446c",
-     "kind": "crypto",
-     "title": "X100",
-     "date": "2026-10-24",
-     "score": 0.32,
-     "why": "same pattern: Smart contract logic flaws; terms: obtain"
     }
    ],
    "precedents": [
@@ -6759,7 +8425,7 @@
      "title": "Across",
      "date": "2026-11-10",
      "score": 0.3,
-     "why": "same pattern: Supply chain and third parties, Disruption and outages; terms: offline, committed, website"
+     "why": "same pattern: Supply chain and third parties, Disruption and outages; terms: committed, offline, website"
     }
    ],
    "precedents": []
@@ -6793,6 +8459,14 @@
      "date": "2026-11-18",
      "score": 0.33,
      "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: key, liquidity, compromise"
+    },
+    {
+     "id": "c-d5865dcb",
+     "kind": "crypto",
+     "title": "Solana MEV Bot King",
+     "date": "2026-11-02",
+     "score": 0.31,
+     "why": "same pattern: Key and credential compromise, Bridges and cross-chain; terms: key, private, compromise"
     }
    ],
    "precedents": [
@@ -6844,7 +8518,7 @@
      "title": "CALC",
      "date": "2026-11-19",
      "score": 0.28,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, exposed, wallet"
+     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, exposed, enabling"
     },
     {
      "id": "c-846757cf",
@@ -6872,7 +8546,7 @@
      "technique": "Social Account Takeover",
      "classification": "Social Engineering",
      "score": 0.16,
-     "why": "bot, third-party, trading"
+     "why": "third-party, bot, trading"
     },
     {
      "name": "Atomic Wallet",
@@ -6896,8 +8570,8 @@
      "kind": "crypto",
      "title": "Keplr Wallet (Web3Auth)",
      "date": "2026-11-06",
-     "score": 0.39,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: exposed, secured, belonging"
+     "score": 0.38,
+     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: secured, exposed, belonging"
     },
     {
      "id": "c-ac4021af",
@@ -6912,7 +8586,7 @@
      "kind": "crypto",
      "title": "Lighter Perps",
      "date": "2026-11-16",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: belonging, leaked, key"
     },
     {
@@ -6941,276 +8615,6 @@
      "classification": "Frontend & Infrastructure",
      "score": 0.14,
      "why": "force, permissions, leaked"
-    }
-   ]
-  },
-  "c-00273740": {
-   "patterns": [
-    "contract-logic"
-   ],
-   "related": [
-    {
-     "id": "c-11e11347",
-     "kind": "crypto",
-     "title": "Hifi Finance",
-     "date": "2026-10-28",
-     "score": 0.4,
-     "why": "same pattern: Smart contract logic flaws; terms: governance, proposal, pass"
-    },
-    {
-     "id": "c-804f446c",
-     "kind": "crypto",
-     "title": "X100",
-     "date": "2026-10-24",
-     "score": 0.37,
-     "why": "same pattern: Smart contract logic flaws; terms: governance, proposal, zero"
-    },
-    {
-     "id": "c-48895bd5",
-     "kind": "crypto",
-     "title": "ACryptoS",
-     "date": "2026-11-08",
-     "score": 0.34,
-     "why": "same pattern: Smart contract logic flaws; terms: vaults, deposits, vault"
-    },
-    {
-     "id": "c-c99ff4b3",
-     "kind": "crypto",
-     "title": "Troves",
-     "date": "2026-10-31",
-     "score": 0.34,
-     "why": "same pattern: Smart contract logic flaws; terms: vaults, vault, resulting"
-    },
-    {
-     "id": "c-bb03e0f5",
-     "kind": "crypto",
-     "title": "Loopscale Lending",
-     "date": "2026-11-05",
-     "score": 0.33,
-     "why": "same pattern: Smart contract logic flaws; terms: vaults, deposits, malicious"
-    }
-   ],
-   "precedents": [
-    {
-     "name": "TermFinance Vaults",
-     "date": "2026-08-23",
-     "amount": 8500000,
-     "technique": "Malicious Proposal",
-     "classification": "Governance",
-     "score": 0.25,
-     "why": "vaults, governance, proposals"
-    },
-    {
-     "name": "FutureSwap",
-     "date": "2025-12-16",
-     "amount": 270000,
-     "technique": "Flashloan Governance Attack",
-     "classification": "Governance",
-     "score": 0.21,
-     "why": "governance, pass, voting"
-    },
-    {
-     "name": "Swerve",
-     "date": "2023-03-25",
-     "amount": 1300000,
-     "technique": "Malicious Proposal",
-     "classification": "Governance",
-     "score": 0.18,
-     "why": "governance, proposals, voting"
-    }
-   ]
-  },
-  "c-804f446c": {
-   "patterns": [
-    "contract-logic"
-   ],
-   "related": [
-    {
-     "id": "c-11e11347",
-     "kind": "crypto",
-     "title": "Hifi Finance",
-     "date": "2026-10-28",
-     "score": 0.41,
-     "why": "same pattern: Smart contract logic flaws; terms: proposal, governance, attacker-controlled"
-    },
-    {
-     "id": "c-00273740",
-     "kind": "crypto",
-     "title": "Yapeswap",
-     "date": "2026-10-25",
-     "score": 0.37,
-     "why": "same pattern: Smart contract logic flaws; terms: governance, proposal, zero"
-    },
-    {
-     "id": "c-98c1a388",
-     "kind": "crypto",
-     "title": "TENDRIL",
-     "date": "2026-11-05",
-     "score": 0.34,
-     "why": "same pattern: Smart contract logic flaws; terms: flash-loan-funded, liquidity, swap"
-    },
-    {
-     "id": "c-cf6ebf15",
-     "kind": "crypto",
-     "title": "Fence Finance",
-     "date": "2026-10-27",
-     "score": 0.32,
-     "why": "same pattern: Smart contract logic flaws; terms: obtain"
-    },
-    {
-     "id": "c-d313cf25",
-     "kind": "crypto",
-     "title": "Sovryn Dex",
-     "date": "2026-11-01",
-     "score": 0.32,
-     "why": "same pattern: Smart contract logic flaws; terms: attacker-controlled, pool, liquidity"
-    }
-   ],
-   "precedents": [
-    {
-     "name": "Panther Protocol",
-     "date": "2026-08-06",
-     "amount": 7578,
-     "technique": "Malicious Proposal",
-     "classification": "Governance",
-     "score": 0.21,
-     "why": "governance, proposal, malicious"
-    },
-    {
-     "name": "Build Finance",
-     "date": "2022-02-15",
-     "amount": 470000,
-     "technique": "Malicious Proposal",
-     "classification": "Governance",
-     "score": 0.2,
-     "why": "proposal, governance, treasury"
-    },
-    {
-     "name": "FutureSwap",
-     "date": "2025-12-16",
-     "amount": 270000,
-     "technique": "Flashloan Governance Attack",
-     "classification": "Governance",
-     "score": 0.19,
-     "why": "governance, proposal, flashloan"
-    }
-   ]
-  },
-  "c-f80740ee": {
-   "patterns": [
-    "contract-logic",
-    "bridge"
-   ],
-   "related": [
-    {
-     "id": "c-0959887d",
-     "kind": "crypto",
-     "title": "Initia",
-     "date": "2026-11-10",
-     "score": 0.48,
-     "why": "same pattern: Bridges and cross-chain; shared: initia; terms: initia, rollups, teams"
-    },
-    {
-     "id": "c-b957aeff",
-     "kind": "crypto",
-     "title": "Chain Games",
-     "date": "2026-11-15",
-     "score": 0.34,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: validators, chain, share"
-    },
-    {
-     "id": "c-cdb111ab",
-     "kind": "crypto",
-     "title": "Arcus Perps",
-     "date": "2026-11-10",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: chain, accounting"
-    },
-    {
-     "id": "c-c153ccbf",
-     "kind": "crypto",
-     "title": "Kava Lend",
-     "date": "2026-11-14",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: chain, share, accounting"
-    },
-    {
-     "id": "c-6b5971b6",
-     "kind": "crypto",
-     "title": "WAX Multi-Chain Bridge",
-     "date": "2026-10-22",
-     "score": 0.3,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain"
-    }
-   ],
-   "precedents": [],
-   "cluster": "cl-004241"
-  },
-  "c-6b5971b6": {
-   "patterns": [
-    "contract-logic",
-    "bridge"
-   ],
-   "related": [
-    {
-     "id": "c-cdb111ab",
-     "kind": "crypto",
-     "title": "Arcus Perps",
-     "date": "2026-11-10",
-     "score": 0.33,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: withdrawal, bridge, account"
-    },
-    {
-     "id": "c-bb03e0f5",
-     "kind": "crypto",
-     "title": "Loopscale Lending",
-     "date": "2026-11-05",
-     "score": 0.32,
-     "why": "same pattern: Smart contract logic flaws; shared: solana; terms: solana, did"
-    },
-    {
-     "id": "c-c153ccbf",
-     "kind": "crypto",
-     "title": "Kava Lend",
-     "date": "2026-11-14",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: bridge, resulting"
-    },
-    {
-     "id": "c-b957aeff",
-     "kind": "crypto",
-     "title": "Chain Games",
-     "date": "2026-11-15",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: failed"
-    },
-    {
-     "id": "c-f80740ee",
-     "kind": "crypto",
-     "title": "Initia",
-     "date": "2026-10-23",
-     "score": 0.3,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain"
-    }
-   ],
-   "precedents": [
-    {
-     "name": "FlashTrade",
-     "date": "2026-07-21",
-     "amount": 98000,
-     "technique": "Missing Input Validation",
-     "classification": "Input Validation",
-     "score": 0.16,
-     "why": "solana, withdrawal, input"
-    },
-    {
-     "name": "Glide Finance",
-     "date": "2021-10-18",
-     "amount": 300000,
-     "technique": "Missing Input Validation",
-     "classification": "Input Validation",
-     "score": 0.14,
-     "why": "fee, input, validation"
     }
    ]
   },
@@ -7380,20 +8784,20 @@
    ],
    "related": [
     {
-     "id": "k-e3895843",
-     "kind": "kev",
-     "title": "CVE-2026-123039 \u00b7 Check Point Multiple Products",
-     "date": "2026-11-13",
-     "score": 0.27,
-     "why": "same pattern: Key and credential compromise, Edge and perimeter devices; terms: root"
-    },
-    {
      "id": "k-b0f4b7db",
      "kind": "kev",
      "title": "CVE-2026-20320 \u00b7 Cisco BroadWorks",
      "date": "2026-11-10",
      "score": 0.27,
      "why": "same pattern: Edge and perimeter devices; shared: cisco; terms: cisco, unauthenticated, remote"
+    },
+    {
+     "id": "k-e3895843",
+     "kind": "kev",
+     "title": "CVE-2026-123039 \u00b7 Check Point Multiple Products",
+     "date": "2026-11-13",
+     "score": 0.27,
+     "why": "same pattern: Key and credential compromise, Edge and perimeter devices; terms: root"
     },
     {
      "id": "k-1d75a748",
@@ -7615,7 +9019,7 @@
      "kind": "kev",
      "title": "CVE-2026-48356 \u00b7 Adobe Commerce and Magento",
      "date": "2026-10-27",
-     "score": 0.34,
+     "score": 0.33,
      "why": "same pattern: Injection and code execution; terms: type, code, arbitrary"
     },
     {
@@ -8169,6 +9573,14 @@
      "why": "same pattern: Key and credential compromise; terms: allow, bypass"
     },
     {
+     "id": "c-9a202e8d",
+     "kind": "crypto",
+     "title": "Paytaca",
+     "date": "2026-11-17",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise"
+    },
+    {
      "id": "c-49496e7a",
      "kind": "crypto",
      "title": "RNT Lend",
@@ -8191,14 +9603,6 @@
      "date": "2026-11-06",
      "score": 0.23,
      "why": "same pattern: Key and credential compromise; terms: bypass, allow, contains"
-    },
-    {
-     "id": "k-63a14165",
-     "kind": "kev",
-     "title": "CVE-2026-123890 \u00b7 Broadcom VMware vCenter",
-     "date": "2026-11-20",
-     "score": 0.23,
-     "why": "same pattern: Key and credential compromise; terms: bypass, contains"
     }
    ],
    "cwes": [
@@ -8278,6 +9682,14 @@
      "why": "same pattern: Key and credential compromise; terms: allow, bypass"
     },
     {
+     "id": "c-9a202e8d",
+     "kind": "crypto",
+     "title": "Paytaca",
+     "date": "2026-11-17",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise"
+    },
+    {
      "id": "c-49496e7a",
      "kind": "crypto",
      "title": "RNT Lend",
@@ -8300,14 +9712,6 @@
      "date": "2026-11-20",
      "score": 0.28,
      "why": "same pattern: Key and credential compromise; terms: authentication, bypass"
-    },
-    {
-     "id": "k-913a37e6",
-     "kind": "kev",
-     "title": "CVE-2026-102895 \u00b7 GPUStack GPUStack",
-     "date": "2026-11-09",
-     "score": 0.27,
-     "why": "same pattern: Key and credential compromise; terms: authentication, allow, improper"
     }
    ],
    "cwes": [
@@ -8479,20 +9883,20 @@
      "why": "same pattern: Edge and perimeter devices; shared: cisco; terms: cisco, unauthenticated, remote"
     },
     {
-     "id": "k-dec215a1",
-     "kind": "kev",
-     "title": "CVE-2026-118527 \u00b7 Ivanti Connect Secure",
-     "date": "2026-10-30",
-     "score": 0.26,
-     "why": "same pattern: Edge and perimeter devices; terms: secure, remote, contains"
-    },
-    {
      "id": "k-80fb8862",
      "kind": "kev",
      "title": "CVE-2026-76466 \u00b7 Cisco Expressway Series",
      "date": "2026-11-20",
      "score": 0.26,
      "why": "same pattern: Edge and perimeter devices; shared: cisco; terms: cisco, device, unauthenticated"
+    },
+    {
+     "id": "k-dec215a1",
+     "kind": "kev",
+     "title": "CVE-2026-118527 \u00b7 Ivanti Connect Secure",
+     "date": "2026-10-30",
+     "score": 0.26,
+     "why": "same pattern: Edge and perimeter devices; terms: secure, remote, contains"
     },
     {
      "id": "n-c9ddefa6",
@@ -8614,7 +10018,7 @@
      "kind": "kev",
      "title": "CVE-2026-115731 \u00b7 Perforce Puppet Enterprise",
      "date": "2026-11-17",
-     "score": 0.34,
+     "score": 0.33,
      "why": "same pattern: Injection and code execution; terms: type, code, arbitrary"
     },
     {
@@ -8865,20 +10269,20 @@
      "why": "same pattern: Injection and code execution; terms: injection, remote, contains"
     },
     {
-     "id": "k-ade0fc5a",
-     "kind": "kev",
-     "title": "CVE-2026-115731 \u00b7 Perforce Puppet Enterprise",
-     "date": "2026-11-17",
-     "score": 0.34,
-     "why": "same pattern: Injection and code execution; terms: code, server, contains"
-    },
-    {
      "id": "k-f024acc8",
      "kind": "kev",
      "title": "CVE-2026-116779 \u00b7 SignalWire FreeSwitch",
      "date": "2026-11-09",
      "score": 0.34,
      "why": "same pattern: Injection and code execution; terms: injection, command, code"
+    },
+    {
+     "id": "k-ade0fc5a",
+     "kind": "kev",
+     "title": "CVE-2026-115731 \u00b7 Perforce Puppet Enterprise",
+     "date": "2026-11-17",
+     "score": 0.34,
+     "why": "same pattern: Injection and code execution; terms: code, server, contains"
     },
     {
      "id": "k-3981d99b",
@@ -8920,6 +10324,22 @@
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: xmr1, wagyu, hyperliquid"
     },
     {
+     "id": "c-9c5869b8",
+     "kind": "crypto",
+     "title": "Swarm",
+     "date": "2026-11-09",
+     "score": 0.3,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties"
+    },
+    {
+     "id": "c-c90bbed1",
+     "kind": "crypto",
+     "title": "Coinone (MetaM)",
+     "date": "2026-11-12",
+     "score": 0.24,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: exposed"
+    },
+    {
      "id": "x-7b9a9595",
      "kind": "x",
      "title": "Fluidkey",
@@ -8934,22 +10354,6 @@
      "date": "2026-11-19",
      "score": 0.23,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties"
-    },
-    {
-     "id": "n-1df53018",
-     "kind": "news",
-     "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
-     "date": "2026-11-18T06:45:26Z",
-     "score": 0.23,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties"
-    },
-    {
-     "id": "c-ac4021af",
-     "kind": "crypto",
-     "title": "CALC",
-     "date": "2026-11-19",
-     "score": 0.22,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: hyperliquid, exposed, key"
     }
    ],
    "cluster": "cl-7fee46",
@@ -8998,8 +10402,16 @@
      "kind": "crypto",
      "title": "Fluidkey",
      "date": "2026-11-19",
-     "score": 0.71,
+     "score": 0.72,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; shared: fluidkey; terms: fluidkey, seal, privacy"
+    },
+    {
+     "id": "c-1921c187",
+     "kind": "crypto",
+     "title": "FLOKI Trading Bot",
+     "date": "2026-11-05",
+     "score": 0.27,
+     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
     },
     {
      "id": "c-9e95d8b0",
@@ -9008,6 +10420,14 @@
      "date": "2026-11-20",
      "score": 0.24,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet, through"
+    },
+    {
+     "id": "c-9c5869b8",
+     "kind": "crypto",
+     "title": "Swarm",
+     "date": "2026-11-09",
+     "score": 0.24,
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
     },
     {
      "id": "x-37d402a7",
@@ -9051,6 +10471,319 @@
      "outage"
     ]
    }
+  },
+  "b-cc049559": {
+   "patterns": [
+    "data-exposure",
+    "key-compromise"
+   ],
+   "related": [
+    {
+     "id": "b-df45f4d8",
+     "kind": "breach",
+     "title": "CastleRAT",
+     "date": "2026-11-13T05:41:32Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: passwords, email, addresses"
+    },
+    {
+     "id": "b-bff08f6e",
+     "kind": "breach",
+     "title": "YouHack",
+     "date": "2026-11-11T07:29:19Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, usernames, addresses"
+    },
+    {
+     "id": "b-8a5ec5e1",
+     "kind": "breach",
+     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+     "date": "2026-11-11T01:44:58Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: card, numbers, birth"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft; terms: numbers, email, names"
+    },
+    {
+     "id": "b-0dbbdbf6",
+     "kind": "breach",
+     "title": "Harvard",
+     "date": "2026-11-03T07:24:50Z",
+     "score": 0.28,
+     "why": "same pattern: Data exposure and theft; terms: birth, email, numbers"
+    }
+   ]
+  },
+  "b-8e8da935": {
+   "patterns": [
+    "data-exposure"
+   ],
+   "related": [
+    {
+     "id": "b-8a5ec5e1",
+     "kind": "breach",
+     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+     "date": "2026-11-11T01:44:58Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft; terms: numbers, phone, email"
+    },
+    {
+     "id": "b-0dbbdbf6",
+     "kind": "breach",
+     "title": "Harvard",
+     "date": "2026-11-03T07:24:50Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft; terms: names, email, genders"
+    },
+    {
+     "id": "n-19771688",
+     "kind": "news",
+     "title": "Transport for London breach exposes 265,000 Oyster card users' data",
+     "date": "2026-11-19T18:20:01Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: breach, exposed"
+    },
+    {
+     "id": "n-2ff5d2ac",
+     "kind": "news",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+     "date": "2026-11-19T17:16:31Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: numbers"
+    },
+    {
+     "id": "n-df29d71a",
+     "kind": "news",
+     "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+     "date": "2026-11-19T22:25:42Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: exposed"
+    }
+   ]
+  },
+  "b-df45f4d8": {
+   "patterns": [
+    "data-exposure",
+    "key-compromise"
+   ],
+   "related": [
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: passwords, email, addresses"
+    },
+    {
+     "id": "b-bff08f6e",
+     "kind": "breach",
+     "title": "YouHack",
+     "date": "2026-11-11T07:29:19Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, passwords, addresses"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.25,
+     "why": "same pattern: Data exposure and theft; terms: email, addresses, unique"
+    }
+   ]
+  },
+  "b-bff08f6e": {
+   "patterns": [
+    "data-exposure",
+    "key-compromise",
+    "state-linked"
+   ],
+   "related": [
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, usernames, addresses"
+    },
+    {
+     "id": "b-df45f4d8",
+     "kind": "breach",
+     "title": "CastleRAT",
+     "date": "2026-11-13T05:41:32Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, passwords, addresses"
+    },
+    {
+     "id": "b-8a5ec5e1",
+     "kind": "breach",
+     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+     "date": "2026-11-11T01:44:58Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: email, addresses, unsalted"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.29,
+     "why": "same pattern: Data exposure and theft; terms: email, forum, addresses"
+    },
+    {
+     "id": "b-e533697f",
+     "kind": "breach",
+     "title": "AfD",
+     "date": "2026-10-27T07:01:06Z",
+     "score": 0.24,
+     "why": "same pattern: Data exposure and theft; terms: email, breach, addresses"
+    }
+   ]
+  },
+  "b-8a5ec5e1": {
+   "patterns": [
+    "data-exposure",
+    "state-linked"
+   ],
+   "related": [
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft; terms: numbers, phone, email"
+    },
+    {
+     "id": "n-f7e2b10e",
+     "kind": "news",
+     "title": "Deutsche Bank chair backs CEO after reports expose past lapses; Trump calls tax leak \u2018illegal\u2019",
+     "date": "2026-11-18T19:14:57Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: bank, russian, records"
+    },
+    {
+     "id": "b-bff08f6e",
+     "kind": "breach",
+     "title": "YouHack",
+     "date": "2026-11-11T07:29:19Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: email, addresses, unsalted"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: card, numbers, birth"
+    },
+    {
+     "id": "b-0dbbdbf6",
+     "kind": "breach",
+     "title": "Harvard",
+     "date": "2026-11-03T07:24:50Z",
+     "score": 0.29,
+     "why": "same pattern: Data exposure and theft; terms: numbers, birth, email"
+    }
+   ]
+  },
+  "b-0dbbdbf6": {
+   "patterns": [
+    "data-exposure",
+    "ransomware"
+   ],
+   "related": [
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft; terms: names, email, genders"
+    },
+    {
+     "id": "b-8a5ec5e1",
+     "kind": "breach",
+     "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
+     "date": "2026-11-11T01:44:58Z",
+     "score": 0.29,
+     "why": "same pattern: Data exposure and theft; terms: numbers, birth, email"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.28,
+     "why": "same pattern: Data exposure and theft; terms: birth, email, numbers"
+    },
+    {
+     "id": "b-bff08f6e",
+     "kind": "breach",
+     "title": "YouHack",
+     "date": "2026-11-11T07:29:19Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft; terms: email, addresses, breach"
+    },
+    {
+     "id": "n-19771688",
+     "kind": "news",
+     "title": "Transport for London breach exposes 265,000 Oyster card users' data",
+     "date": "2026-11-19T18:20:01Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft; terms: breach, details, exposed"
+    }
+   ]
+  },
+  "b-e533697f": {
+   "patterns": [
+    "data-exposure",
+    "supply-chain",
+    "ai"
+   ],
+   "related": [
+    {
+     "id": "b-bff08f6e",
+     "kind": "breach",
+     "title": "YouHack",
+     "date": "2026-11-11T07:29:19Z",
+     "score": 0.24,
+     "why": "same pattern: Data exposure and theft; terms: email, breach, addresses"
+    },
+    {
+     "id": "n-6c623452",
+     "kind": "news",
+     "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+     "date": "2026-11-20T18:51:43Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft, AI systems and agents"
+    },
+    {
+     "id": "n-a5a08255",
+     "kind": "news",
+     "title": "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
+     "date": "2026-11-20T18:56:50Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft, AI systems and agents"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft; terms: email, addresses, unique"
+    }
+   ]
   }
  },
  "clusters": [
@@ -9058,8 +10791,8 @@
    "id": "cl-ad5c46",
    "size": 2,
    "members": [
-    "n-6c623452",
-    "n-a5a08255"
+    "n-a5a08255",
+    "n-6c623452"
    ],
    "titles": [
     "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
@@ -9085,8 +10818,8 @@
    "id": "cl-330d90",
    "size": 2,
    "members": [
-    "k-7626899f",
-    "k-a5097afe"
+    "k-a5097afe",
+    "k-7626899f"
    ],
    "titles": [
     "CVE-2026-109618 \u00b7 PHP Group PHP",
@@ -9112,8 +10845,8 @@
    "id": "cl-28f79e",
    "size": 2,
    "members": [
-    "c-7b9a9595",
-    "x-7b9a9595"
+    "x-7b9a9595",
+    "c-7b9a9595"
    ],
    "titles": [
     "Fluidkey",
@@ -9135,14 +10868,14 @@
     "x": 1
    },
    "latest": "2026-11-19T19:30:00Z",
-   "cohesion": 0.71
+   "cohesion": 0.72
   },
   {
    "id": "cl-c78a07",
    "size": 2,
    "members": [
-    "c-b26872d0",
-    "c-d313cf25"
+    "c-d313cf25",
+    "c-b26872d0"
    ],
    "titles": [
     "Sovryn Dex",
@@ -9167,9 +10900,9 @@
    "id": "cl-26da8e",
    "size": 3,
    "members": [
-    "n-7008c485",
+    "n-dc6901c8",
     "n-c5e24a06",
-    "n-dc6901c8"
+    "n-7008c485"
    ],
    "titles": [
     "China-Linked Hackers Exploit Critical VMware vCenter Zero-Day to Gain Admin Access and Steal Data",
@@ -9192,14 +10925,40 @@
     "news": 3
    },
    "latest": "2026-11-20T09:38:15Z",
-   "cohesion": 0.42
+   "cohesion": 0.43
+  },
+  {
+   "id": "cl-a104af",
+   "size": 2,
+   "members": [
+    "c-5b2f03bc",
+    "c-e3bcc1a5"
+   ],
+   "titles": [
+    "Ankr Bridge",
+    "Ankr Ethereum Cross-chain Bridge"
+   ],
+   "patterns": [
+    "bridge"
+   ],
+   "terms": [
+    "receipts",
+    "ankr",
+    "referencing",
+    "cross-chain"
+   ],
+   "kinds": {
+    "crypto": 2
+   },
+   "latest": "2026-11-09",
+   "cohesion": 0.62
   },
   {
    "id": "cl-e07830",
    "size": 2,
    "members": [
-    "c-96da298e",
-    "c-ac4021af"
+    "c-ac4021af",
+    "c-96da298e"
    ],
    "titles": [
     "CALC",
@@ -9225,8 +10984,8 @@
    "id": "cl-7fee46",
    "size": 2,
    "members": [
-    "c-9e95d8b0",
-    "x-37d402a7"
+    "x-37d402a7",
+    "c-9e95d8b0"
    ],
    "titles": [
     "Wagyu XMR1",
@@ -9253,8 +11012,8 @@
    "id": "cl-28185a",
    "size": 2,
    "members": [
-    "k-1b56469e",
-    "k-dec215a1"
+    "k-dec215a1",
+    "k-1b56469e"
    ],
    "titles": [
     "CVE-2026-118527 \u00b7 Ivanti Connect Secure",
@@ -9304,39 +11063,11 @@
    "cohesion": 0.5
   },
   {
-   "id": "cl-004241",
-   "size": 2,
-   "members": [
-    "c-0959887d",
-    "c-f80740ee"
-   ],
-   "titles": [
-    "Initia",
-    "Initia"
-   ],
-   "patterns": [
-    "bridge",
-    "key-compromise",
-    "contract-logic"
-   ],
-   "terms": [
-    "initia",
-    "rollups",
-    "teams",
-    "halted"
-   ],
-   "kinds": {
-    "crypto": 2
-   },
-   "latest": "2026-11-10",
-   "cohesion": 0.48
-  },
-  {
    "id": "cl-57efd8",
    "size": 2,
    "members": [
-    "k-ade0fc5a",
-    "n-25f152a1"
+    "n-25f152a1",
+    "k-ade0fc5a"
    ],
    "titles": [
     "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
@@ -9363,33 +11094,36 @@
    "id": "contract-logic",
    "label": "Smart contract logic flaws",
    "news": 0,
-   "crypto": 31,
+   "crypto": 28,
    "kev": 0,
    "x": 0,
-   "usd": 63761781,
-   "total": 31,
+   "breach": 0,
+   "usd": 56411681.0,
+   "total": 28,
    "recent7": 8
   },
   {
    "id": "key-compromise",
    "label": "Key and credential compromise",
    "news": 2,
-   "crypto": 7,
+   "crypto": 13,
    "kev": 9,
    "x": 2,
-   "usd": 15216367,
-   "total": 20,
-   "recent7": 10
+   "breach": 0,
+   "usd": 16272367.0,
+   "total": 26,
+   "recent7": 11
   },
   {
    "id": "supply-chain",
    "label": "Supply chain and third parties",
    "news": 6,
-   "crypto": 11,
+   "crypto": 12,
    "kev": 0,
    "x": 0,
-   "usd": 6374475217,
-   "total": 17,
+   "breach": 0,
+   "usd": 6507475217.0,
+   "total": 18,
    "recent7": 9
   },
   {
@@ -9399,20 +11133,10 @@
    "crypto": 0,
    "kev": 12,
    "x": 0,
+   "breach": 0,
    "usd": 0,
    "total": 14,
    "recent7": 7
-  },
-  {
-   "id": "enterprise-platform",
-   "label": "Enterprise platform zero-days",
-   "news": 8,
-   "crypto": 0,
-   "kev": 3,
-   "x": 0,
-   "usd": 0,
-   "total": 11,
-   "recent7": 9
   },
   {
    "id": "data-exposure",
@@ -9421,19 +11145,33 @@
    "crypto": 0,
    "kev": 0,
    "x": 0,
+   "breach": 7,
    "usd": 0,
-   "total": 6,
-   "recent7": 6
+   "total": 13,
+   "recent7": 8
+  },
+  {
+   "id": "enterprise-platform",
+   "label": "Enterprise platform zero-days",
+   "news": 8,
+   "crypto": 0,
+   "kev": 3,
+   "x": 0,
+   "breach": 0,
+   "usd": 0,
+   "total": 11,
+   "recent7": 9
   },
   {
    "id": "unclassified",
    "label": "Unclassified",
    "news": 3,
-   "crypto": 0,
+   "crypto": 3,
    "kev": 3,
    "x": 0,
-   "usd": 0,
-   "total": 6,
+   "breach": 0,
+   "usd": 225000.0,
+   "total": 9,
    "recent7": 3
   },
   {
@@ -9443,6 +11181,7 @@
    "crypto": 0,
    "kev": 3,
    "x": 0,
+   "breach": 0,
    "usd": 0,
    "total": 5,
    "recent7": 2
@@ -9454,9 +11193,22 @@
    "crypto": 0,
    "kev": 5,
    "x": 0,
+   "breach": 0,
    "usd": 0,
    "total": 5,
    "recent7": 0
+  },
+  {
+   "id": "bridge",
+   "label": "Bridges and cross-chain",
+   "news": 0,
+   "crypto": 4,
+   "kev": 0,
+   "x": 0,
+   "breach": 0,
+   "usd": 2442100.0,
+   "total": 4,
+   "recent7": 1
   },
   {
    "id": "ai",
@@ -9465,20 +11217,10 @@
    "crypto": 0,
    "kev": 1,
    "x": 0,
+   "breach": 0,
    "usd": 0,
    "total": 3,
    "recent7": 3
-  },
-  {
-   "id": "bridge",
-   "label": "Bridges and cross-chain",
-   "news": 0,
-   "crypto": 3,
-   "kev": 0,
-   "x": 0,
-   "usd": 2137600,
-   "total": 3,
-   "recent7": 1
   },
   {
    "id": "outage",
@@ -9487,6 +11229,7 @@
    "crypto": 0,
    "kev": 0,
    "x": 0,
+   "breach": 0,
    "usd": 0,
    "total": 1,
    "recent7": 1
@@ -9498,6 +11241,7 @@
    "crypto": 0,
    "kev": 0,
    "x": 0,
+   "breach": 0,
    "usd": 0,
    "total": 1,
    "recent7": 1

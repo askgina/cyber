@@ -18,12 +18,13 @@
 <header class="site">
   <a class="wordmark" href="#top" aria-label="Breach Ledger, top of page">Breach Ledger</a>
   <nav aria-label="Sections">
+    <a href="#live">Live</a>
     <a href="#today">Today</a>
     <a href="#patterns">Patterns</a>
     <a href="#crypto">Crypto</a>
     <a href="#ransomware">Ransomware</a>
+    <a href="#breaches">Breaches</a>
     <a href="#exploited">Exploited</a>
-    <a href="#method">Method</a>
   </nav>
 </header>
 
@@ -34,7 +35,7 @@
       <p class="abstract" id="abstract">Loading the latest record…</p>
       <dl class="meta">
         <div><dt class="sr">Type</dt><dd>Daily register</dd></div>
-        <div><dt class="sr">Cadence</dt><dd>Updated hourly</dd></div>
+        <div><dt class="sr">Cadence</dt><dd>Live, rebuilt hourly</dd></div>
         <div><dt class="sr">As of</dt><dd id="asof">—</dd></div>
       </dl>
       <div class="actions">
@@ -42,6 +43,21 @@
         <a class="link" href="#method">Read the method</a>
       </div>
       <p class="hint">Select any text on this page to ask Perplexity about it.</p>
+    </div>
+  </section>
+
+  <section class="live" id="live" aria-label="Live activity">
+    <div class="live-head">
+      <h2 class="live-title"><span class="dot" id="live-dot" aria-hidden="true"></span>Live</h2>
+      <p class="live-status" id="live-status" aria-live="polite">Connecting…</p>
+    </div>
+    <p class="since" id="since" hidden></p>
+    <div class="live-grid">
+      <ol class="feed" id="feed" aria-label="Latest incidents across all sources"></ol>
+      <div class="day">
+        <div class="series hours" id="hours"></div>
+        <p class="cap"><b>Last 24 hours,</b> by hour. Ransomware leak-site claims, security press reports and X signals.</p>
+      </div>
     </div>
   </section>
 
@@ -61,9 +77,10 @@
         <li><a href="#crypto">Crypto exploits</a></li>
         <li><a href="#ransomware">Ransomware claims</a>
           <ol><li><a href="#groups">Groups</a></li><li><a href="#sectors">Sectors and countries</a></li></ol></li>
+        <li><a href="#breaches">Data breaches</a></li>
         <li><a href="#exploited">Exploited vulnerabilities</a></li>
         <li><a href="#method">Method</a>
-          <ol><li><a href="#stages">Confidence stages</a></li><li><a href="#sources">Sources</a></li><li><a href="#limits">Limitations</a></li></ol></li>
+          <ol><li><a href="#stages">Confidence stages</a></li><li><a href="#sources">Sources</a></li><li><a href="#elsewhere">Other trackers</a></li><li><a href="#limits">Limitations</a></li></ol></li>
         <li><a href="#cite">Citation</a></li>
       </ol>
     </aside>
@@ -111,6 +128,12 @@
         </div>
       </section>
 
+      <section id="breaches">
+        <h2>Data breaches</h2>
+        <p class="lede" id="breach-lede"></p>
+        <div id="breach-list" class="entries"></div>
+      </section>
+
       <section id="exploited">
         <h2>Exploited vulnerabilities</h2>
         <p class="lede" id="kev-lede"></p>
@@ -132,9 +155,19 @@
         <ul class="sources">
           <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Known Exploited Vulnerabilities catalog</a>, JSON feed.</li>
           <li><a href="https://www.ransomware.live" target="_blank" rel="noopener">ransomware.live</a> leak-site index, v2 API.</li>
-          <li><a href="https://defillama.com/hacks" target="_blank" rel="noopener">DefiLlama hacks dataset</a>, for crypto losses, chains and technique.</li>
+          <li><a href="https://defillama.com/hacks" target="_blank" rel="noopener">DefiLlama hacks dataset</a>, for crypto losses, chains and technique, polled live from your browser every two minutes.</li>
+          <li><a href="https://hacked.slowmist.io/" target="_blank" rel="noopener">SlowMist Hacked</a>, merged with DefiLlama; each crypto entry shows which sources list it.</li>
+          <li><a href="https://rekt.news/leaderboard" target="_blank" rel="noopener">rekt</a> post-mortems, linked to the matching exploit.</li>
+          <li><a href="https://haveibeenpwned.com" target="_blank" rel="noopener">Have I Been Pwned</a> breach catalog (CC BY 4.0), polled live every ten minutes.</li>
           <li>News: <a href="https://therecord.media" target="_blank" rel="noopener">The Record</a>, <a href="https://thehackernews.com" target="_blank" rel="noopener">The Hacker News</a>, <a href="https://www.bleepingcomputer.com" target="_blank" rel="noopener">BleepingComputer</a>, <a href="https://databreaches.net" target="_blank" rel="noopener">DataBreaches.net</a>, <a href="https://krebsonsecurity.com" target="_blank" rel="noopener">Krebs on Security</a>, <a href="https://rekt.news" target="_blank" rel="noopener">rekt</a>.</li>
           <li>X: curated signals plus a live search link on every entry.</li>
+        </ul>
+        <h3 id="elsewhere">Other trackers</h3>
+        <p>Useful alongside this page. Live threat maps show detections from one vendor's sensors rather than confirmed incidents, so they are linked here, not counted.</p>
+        <ul class="sources">
+          <li>Crypto: <a href="https://rekt.news/leaderboard" target="_blank" rel="noopener">rekt leaderboard</a>, <a href="https://smartcontractshacking.com/tools/web3-hacks-dashboard" target="_blank" rel="noopener">SCH Web3 hacks dashboard</a>, <a href="https://securityalliance.org" target="_blank" rel="noopener">SEAL 911</a> for active incidents.</li>
+          <li>Breaches and ransomware: <a href="https://www.ransomware.live/" target="_blank" rel="noopener">ransomware.live</a>, <a href="https://axis-intelligence.com/data-breach-tracker/" target="_blank" rel="noopener">Axis Intelligence breach tracker</a>, <a href="https://cyberzenpulse.com/live" target="_blank" rel="noopener">Cyber Pulse</a>.</li>
+          <li>Threat maps: <a href="https://cybermap.kaspersky.com/" target="_blank" rel="noopener">Kaspersky Cybermap</a>, <a href="https://www.fortiguard.com/threat-map" target="_blank" rel="noopener">FortiGuard</a>, <a href="https://attackmap.sonicwall.com/live-attack-map" target="_blank" rel="noopener">SonicWall</a>, and the <a href="https://www.defconlevel.com/cyber-threat-maps" target="_blank" rel="noopener">DEFCON Level index</a>.</li>
         </ul>
         <h3 id="limits">Limitations</h3>
         <p>Feeds lag reality by minutes to days, and coverage is uneven: crypto and ransomware are well instrumented; most corporate breaches surface only through disclosure. Loss figures are as reported and often revised. News items are filtered by keyword and may include advisories rather than incidents.</p>

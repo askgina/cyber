@@ -38,7 +38,7 @@
     return el("aside", { class: "note", "aria-label": "Sources" }, ol);
   }
 
-  const KIND = { news: "News", crypto: "Crypto", kev: "Exploited", x: "X signal" };
+  const KIND = { news: "News", crypto: "Crypto", kev: "Exploited", x: "X signal", breach: "Breach" };
   let DET = {}, LABEL = {}, LISTS = {}, ITEM = {};
   const state = { pattern: null, q: "", expanded: {} };
 
@@ -67,7 +67,11 @@
     const box = el("div", { class: "detail" });
     let rows;
     if (kind === "crypto") rows = [["Loss", fmtUSD(it.amount)], ["Returned", it.returned ? fmtUSD(it.returned) : null], ["Date", fmtDate(it.date)],
-      ["Chains", it.chains.join(", ")], ["Classification", it.classification], ["Technique", it.technique], ["Target", it.target]];
+      ["Chains", it.chains.join(", ")], ["Classification", it.classification], ["Technique", it.technique],
+      ["SlowMist method", it.slowmist_method && it.slowmist_method !== it.technique ? it.slowmist_method : null], ["Target", it.target],
+      ["Listed by", (it.sources || []).join(", ")]];
+    else if (kind === "breach") rows = [["Accounts", it.count ? it.count.toLocaleString("en-US") : null], ["Domain", it.domain || null], ["Breach date", it.breach_date ? fmtDate(it.breach_date) + " " + it.breach_date.slice(0, 4) : null],
+      ["Added to HIBP", fmtLong(it.added)], ["Data exposed", it.classes.join(", ")], ["Verified", it.verified ? "Yes" : "No"]];
     else if (kind === "kev") rows = [["CVE", it.id], ["Product", `${it.vendor} ${it.product}`], ["Added to KEV", fmtDate(it.date)], ["Patch due", it.due ? fmtDate(it.due) : null],
       ["Ransomware use", it.ransomware ? "Known" : "Not known"],
       ["Weakness", (it.cwes || []).length ? (det.cwes || it.cwes.map((c) => ({ id: c }))).map((c, ix) => [ix ? ", " : "", el("a", { href: `https://cwe.mitre.org/data/definitions/${c.id.replace("CWE-", "")}.html`, target: "_blank", rel: "noopener" }, c.id), c.name ? ` ${c.name.toLowerCase()}` : ""]).flat() : null]];
@@ -196,18 +200,18 @@
   function drawPatterns() {
     const P = D0.patterns || [];
     const max = Math.max(1, ...P.map((p) => p.total));
-    table($("#patterns-tbl"), [{ label: "Pattern" }, { label: "", cls: "hide-sm" }, { label: "News", num: true }, { label: "Crypto", num: true }, { label: "Exploited", num: true }, { label: "X", num: true, cls: "hide-sm" }, { label: "7 days", num: true }, { label: "Crypto losses", num: true, cls: "hide-sm" }],
+    table($("#patterns-tbl"), [{ label: "Pattern" }, { label: "", cls: "hide-sm" }, { label: "News", num: true }, { label: "Crypto", num: true }, { label: "Exploited", num: true }, { label: "Breaches", num: true, cls: "hide-sm" }, { label: "X", num: true, cls: "hide-sm" }, { label: "7 days", num: true }, { label: "Crypto losses", num: true, cls: "hide-sm" }],
       P.map((p) => {
         const b = el("button", { type: "button", class: "plink", "aria-pressed": String(state.pattern === p.id) }, p.label);
         b.addEventListener("click", () => setFilter({ pattern: state.pattern === p.id ? null : p.id }));
         const tr = el("tr", { class: state.pattern === p.id ? "on" : null },
           el("td", {}, b), el("td", { class: "bar hide-sm" }, el("i", { style: `width:${(p.total / max) * 100}%` })),
           ...[p.news, p.crypto, p.kev].map((v) => el("td", { class: "num" }, v ? String(v) : "·")),
-          el("td", { class: "num hide-sm" }, p.x ? String(p.x) : "·"), el("td", { class: "num" }, String(p.recent7)),
+          el("td", { class: "num hide-sm" }, p.breach ? String(p.breach) : "·"), el("td", { class: "num hide-sm" }, p.x ? String(p.x) : "·"), el("td", { class: "num" }, String(p.recent7)),
           el("td", { class: "num hide-sm" }, p.usd ? fmtUSD(p.usd) : "·"));
         return tr;
       }));
-    $("#patterns-tbl").querySelectorAll("thead th").forEach((th, ix) => { if ([1, 5, 7].includes(ix)) th.classList.add("hide-sm"); });
+    $("#patterns-tbl").querySelectorAll("thead th").forEach((th, ix) => { if ([1, 5, 6, 8].includes(ix)) th.classList.add("hide-sm"); });
   }
 
   function drawClusters() {
@@ -219,7 +223,7 @@
       const ul = el("ul", { class: "rel" }, c.members.map((m, ix) => {
         const a = el("a", { href: `#e-${m}`, class: "jump" }, c.titles[ix]);
         a.addEventListener("click", (e) => { e.preventDefault(); jumpTo(m); });
-        return el("li", {}, el("span", { class: "rk" }, KIND[m[0] === "n" ? "news" : m[0] === "c" ? "crypto" : m[0] === "k" ? "kev" : "x"]), el("span", { class: "rt" }, a));
+        return el("li", {}, el("span", { class: "rk" }, KIND[{ n: "news", c: "crypto", k: "kev", x: "x", b: "breach" }[m[0]]]), el("span", { class: "rt" }, a));
       }));
       const main = el("div", { class: "main" },
         el("div", { class: "k" }, el("span", {}, `${c.size} entries`), el("span", {}, kinds), el("span", {}, `latest ${fmtDate(c.latest)}`), el("span", { title: "Average pairwise similarity" }, `cohesion ${c.cohesion.toFixed(2)}`)),
@@ -242,7 +246,7 @@
 
   let D0 = {};
   function render(D) {
-    D0 = D; DET = D.details || {};
+    D0 = D; DET = D.details || {}; noteNo = 0;
     (D.pattern_defs || []).forEach((p) => { LABEL[p.id] = p.label; });
     const k = D.kev, r = D.ransomware, c = D.crypto;
     const news48 = D.news.filter((n) => hoursAgo(n.date) <= 48);
@@ -266,6 +270,7 @@
       [c.count_7d, "Crypto exploits", `${fmtUSD(c.usd_7d)} lost, 7 days`],
       [k.count_7d, "Exploited CVEs added", "CISA KEV, 7 days"],
       [news48.length, "Incident reports", "security press, 48 hours"],
+      [D.breaches ? compact(D.breaches.accounts_30d) : "—", "Breached accounts", `${D.breaches ? D.breaches.count_30d : 0} breaches added to HIBP, 30 days`],
     ];
     $("#ticks").replaceChildren(...ticks.map(([n, l, s]) => el("div", { class: "tick" }, el("div", { class: "n" }, String(n)), el("div", { class: "l" }, l), el("div", { class: "s" }, s))));
 
@@ -304,7 +309,7 @@
     $("#crypto-lede").textContent = `${c.count_30d} exploits in the last 30 days, ${fmtUSD(c.usd_30d)} in reported losses. On-chain incidents are the easiest to corroborate: amounts and wallet flows are public, and protocols usually confirm on X within hours.`;
     list("crypto", $("#crypto-list"), c.items, (i) => entry({
       id: i.eid, kind: "crypto", it: i, title: i.name, text: i.desc,
-      k: [el("span", {}, fmtDate(i.date)), i.chains.length ? el("span", {}, i.chains.slice(0, 3).join(", ") + (i.chains.length > 3 ? ` +${i.chains.length - 3}` : "")) : null, el("span", {}, i.technique || i.classification || "")],
+      k: [el("span", {}, fmtDate(i.date)), i.chains.length ? el("span", {}, i.chains.slice(0, 3).join(", ") + (i.chains.length > 3 ? ` +${i.chains.length - 3}` : "")) : null, el("span", {}, i.technique || i.classification || ""), (i.sources || []).length > 1 ? el("span", { title: i.sources.join(", ") }, `${i.sources.length} sources`) : null],
       t: `${escape(i.name)} <span class="amt">· ${fmtUSD(i.amount)}</span>${i.returned ? ` <span class="amt">(${fmtUSD(i.returned)} returned)</span>` : ""}`,
       d: i.desc, clamp: true, links: i.links, ask: `${i.name} crypto exploit (${i.date}): ${i.desc.slice(0, 300)}`, ctx: "crypto exploit entry",
     }), 10);
@@ -322,6 +327,17 @@
 
     // KEV
     $("#kev-lede").textContent = `${k.count_30d} vulnerabilities were added to CISA's Known Exploited Vulnerabilities catalog in the last 30 days (${k.count_7d} this week)` + (k.ransomware_linked_30d ? `, ${k.ransomware_linked_30d} with known ransomware use` : "") + `. A KEV listing is the strongest public confirmation that a flaw is being exploited in the wild.`;
+    const B = D.breaches || { items: [], count_30d: 0, accounts_30d: 0 };
+    $("#breach-lede").textContent = `${B.count_30d} breaches were added to Have I Been Pwned in the last 30 days, exposing ${B.accounts_30d.toLocaleString("en-US")} accounts. HIBP loads a breach only after obtaining and checking the data, so these are confirmed exposures; the breach itself may be older than the date it was added.`;
+    list("breach", $("#breach-list"), B.items, (b) => entry({
+      id: b.eid, kind: "breach", it: b, title: b.title, text: b.desc,
+      k: [el("span", {}, `added ${ago(b.added)}`), b.domain ? el("span", {}, b.domain) : null, b.breach_date ? el("span", {}, `breached ${b.breach_date.slice(0, 7)}`) : null],
+      t: `${escape(b.title)} <span class="amt">· ${b.count ? b.count.toLocaleString("en-US") : "?"} accounts</span>`,
+      d: b.desc, clamp: true, links: b.links, ask: `${b.title} data breach: ${b.desc.slice(0, 300)}`, ctx: "Have I Been Pwned breach entry",
+    }), 8);
+
+    drawLive(D);
+
     list("kev", $("#kev-list"), k.items, (v) => entry({
       id: v.eid, kind: "kev", it: v, title: `${v.id}: ${v.name}`, text: v.desc,
       k: [el("span", {}, v.id), el("span", {}, `added ${fmtDate(v.date)}`), v.ransomware ? el("span", { class: "stage Confirmed" }, "ransomware use") : null],
@@ -334,10 +350,6 @@
     const top = P.filter((p) => p.id !== "unclassified").slice(0, 3).map((p) => `${p.label.toLowerCase()} (${p.total})`).join(", ");
     $("#patterns-lede").textContent = `Every entry is tagged with one or more attack patterns, from its text, DefiLlama's classification or CISA's weakness codes. The most common this window: ${top}. Select a pattern, or type below, to filter every list on the page.`;
     drawPatterns(); drawClusters();
-    let qt; $("#q").addEventListener("input", (e) => { clearTimeout(qt); qt = setTimeout(() => setFilter({ q: e.target.value.trim() }), 150); });
-    $("#clear-filter").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
-    $("#fbar-clear").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
-    if (/^#e-/.test(location.hash)) setTimeout(() => jumpTo(location.hash.slice(3)), 50);
 
     $("#status").textContent = `Last build ${D.generated}.` + (D.errors.length ? ` Partial: ${D.errors.length} source${D.errors.length > 1 ? "s" : ""} unavailable this hour; previous values kept.` : " All sources responded.");
     $("#cite-block").textContent = `Breach Ledger. "A Daily Record of Cyber Incidents."\nRetrieved ${fmtLong(D.generated)}.\n${PAGE_URL}`;
@@ -377,7 +389,7 @@
 
   // Active section in TOC + nav
   function spy() {
-    const ids = ["today", "news", "x-signals", "patterns", "clusters", "crypto", "ransomware", "groups", "sectors", "exploited", "method", "stages", "sources", "limits", "cite"];
+    const ids = ["live", "today", "news", "x-signals", "patterns", "clusters", "crypto", "ransomware", "groups", "sectors", "breaches", "exploited", "method", "stages", "sources", "elsewhere", "limits", "cite"];
     const obs = new IntersectionObserver((ents) => {
       ents.forEach((e) => {
         if (!e.isIntersecting) return;
@@ -390,7 +402,120 @@
     ids.forEach((id) => { const n = document.getElementById(id); n && obs.observe(n); });
   }
 
-  fetch("data.json", { cache: "no-store" })
-    .then((r) => r.json()).then((D) => { render(D); spy(); })
-    .catch(() => { $("#abstract").textContent = "The record could not be loaded. Try again in a moment."; });
+  const compact = (n) => n >= 1e9 ? (n / 1e9).toFixed(1) + "B" : n >= 1e6 ? (n / 1e6).toFixed(1) + "M" : n >= 1e3 ? Math.round(n / 1e3) + "K" : String(n);
+  const ts = (s) => new Date(s.length === 10 ? s + "T00:00:00Z" : s).getTime();
+  const norm = (n) => n.toLowerCase().replace(/\(.*?\)/g, "").replace(/[^a-z0-9]/g, "");
+  const LIVE = { checked: null, extra: [], fresh: new Set(), prevIds: null, seen: null };
+  try { LIVE.seen = Number(localStorage.getItem("bl_last_visit")) || null; } catch (e) {}
+
+  function events(D) {
+    const ev = [];
+    D.news.forEach((n) => ev.push({ id: n.eid, kind: "news", t: n.date, title: n.title, sub: n.source }));
+    (D.x || []).forEach((x) => ev.push({ id: x.eid, kind: "x", t: x.date, title: x.subject, sub: x.stage + (x.amount_usd_claimed ? ` · ${fmtUSD(x.amount_usd_claimed)} claimed` : "") }));
+    D.crypto.items.forEach((c) => ev.push({ id: c.eid, kind: "crypto", t: c.date, title: c.name, sub: `${fmtUSD(c.amount)}${c.technique && c.technique !== "Unknown" ? " · " + c.technique : ""}` }));
+    D.kev.items.forEach((v) => ev.push({ id: v.eid, kind: "kev", t: v.date, title: `${v.vendor} ${v.product}`, sub: v.id }));
+    ((D.breaches || {}).items || []).forEach((b) => ev.push({ id: b.eid, kind: "breach", t: b.added, title: b.title, sub: `${compact(b.count || 0)} accounts` }));
+    return ev;
+  }
+
+  function drawLive(D) {
+    const ev = [...LIVE.extra, ...events(D)].sort((a, b) => ts(b.t) - ts(a.t) || (b.t.length - a.t.length));
+    const feed = $("#feed"); feed.replaceChildren();
+    ev.slice(0, 12).forEach((e) => {
+      const fresh = LIVE.fresh.has(e.id) || e.live || (LIVE.seen && e.t.length > 10 && ts(e.t) > LIVE.seen);
+      const when = el("span", { class: "when", "data-ago": e.t.length > 10 ? e.t : null }, e.t.length > 10 ? ago(e.t) : fmtDate(e.t));
+      const title = e.id ? el("a", { href: `#e-${e.id}`, class: "jump" }, e.title) : el("a", { href: e.url, target: "_blank", rel: "noopener" }, e.title);
+      if (e.id) title.addEventListener("click", (x) => { x.preventDefault(); jumpTo(e.id); });
+      feed.append(el("li", { class: fresh ? "fresh" : null }, when, el("span", { class: "fk" }, KIND[e.kind]), el("span", { class: "ft" }, title, el("span", { class: "fs" }, e.sub)), fresh ? el("span", { class: "new" }, "New") : el("span")));
+    });
+    if (LIVE.seen) {
+      const n = ev.filter((e) => ts(e.t) > LIVE.seen && e.t.length > 10).length + ev.filter((e) => e.t.length === 10 && ts(e.t) > LIVE.seen).length;
+      const s = $("#since"); s.hidden = false;
+      s.textContent = n ? `${n} new ${n === 1 ? "entry" : "entries"} since your last visit, ${fmtLong(new Date(LIVE.seen).toISOString())}.` : `Nothing new since your last visit, ${fmtLong(new Date(LIVE.seen).toISOString())}.`;
+    }
+    // 24 hours
+    const H = D.hourly || [];
+    const rows = [["Ransomware", "ransomware"], ["Reports", "news"], ["X signals", "x"]].map(([name, key]) => {
+      const max = Math.max(1, ...H.map((h) => h[key]));
+      const total = H.reduce((a, h) => a + h[key], 0);
+      return el("div", { class: "row" }, el("div", { class: "name" }, name),
+        el("div", { class: "cells h24", role: "img", "aria-label": `${name}: ${total} in 24 hours` },
+          H.map((h) => el("i", { class: h[key] ? "" : "z", title: `${new Date(h.t).toLocaleTimeString("en-US", { hour: "numeric" })}: ${h[key]}`, style: h[key] ? `--w:${Math.max(22, Math.sqrt(h[key] / max) * 100)}%` : null }))),
+        el("div", { class: "total" }, String(total)));
+    });
+    if (H.length) rows.push(el("div", { class: "axis" }, el("span"), el("span", {}, el("span", {}, "24h ago"), el("span", {}, "12h"), el("span", {}, "Now")), el("span")));
+    $("#hours").replaceChildren(...rows);
+  }
+
+  function tick() {
+    document.querySelectorAll("[data-ago]").forEach((n) => { n.textContent = ago(n.dataset.ago); });
+    if (LIVE.checked) {
+      const s = Math.round((Date.now() - LIVE.checked) / 1000);
+      $("#live-status").textContent = `Checked ${s < 60 ? s + "s" : Math.round(s / 60) + "m"} ago · page data rebuilt ${ago(D0.generated)}`;
+    }
+  }
+
+  // Poll DefiLlama directly (CORS-enabled) for exploits newer than the last build
+  async function pollLlama() {
+    try {
+      const r = await fetch("https://api.llama.fi/hacks", { cache: "no-store" }); const all = await r.json();
+      const known = new Set(D0.crypto.items.map((c) => norm(c.name)));
+      const cut = Date.now() - 3 * 864e5;
+      all.filter((h) => h.date * 1000 > cut && !known.has(norm(h.name))).forEach((h) => {
+        const key = "live-" + norm(h.name);
+        if (LIVE.extra.some((e) => e.key === key)) return;
+        LIVE.extra.push({ key, live: true, kind: "crypto", t: new Date().toISOString(), title: h.name, url: "https://defillama.com/hacks",
+          sub: `${fmtUSD(h.amount)} · newly listed on DefiLlama, ${fmtDate(new Date(h.date * 1000).toISOString())}` });
+      });
+      LIVE.checked = Date.now(); drawLive(D0); tick();
+    } catch (e) { /* keep last state */ }
+  }
+  async function pollHIBP() {
+    try {
+      const r = await fetch("https://haveibeenpwned.com/api/v3/breaches", { cache: "no-store" }); const all = await r.json();
+      const known = new Set(((D0.breaches || {}).items || []).map((b) => b.name));
+      all.filter((b) => ts(b.AddedDate) > ts(D0.generated) && !known.has(b.Name)).forEach((b) => {
+        const key = "live-hibp-" + b.Name;
+        if (LIVE.extra.some((e) => e.key === key)) return;
+        LIVE.extra.push({ key, live: true, kind: "breach", t: b.AddedDate, title: b.Title, url: `https://haveibeenpwned.com/Breach/${b.Name}`, sub: `${compact(b.PwnCount || 0)} accounts · just added to HIBP` });
+      });
+      LIVE.checked = Date.now(); drawLive(D0); tick();
+    } catch (e) {}
+  }
+  async function pollData(first) {
+    try {
+      const D = await (await fetch("data.json", { cache: "no-store" })).json();
+      if (!first && D.generated === D0.generated) { LIVE.checked = Date.now(); tick(); return; }
+      const ids = new Set(events(D).map((e) => e.id));
+      if (LIVE.prevIds) ids.forEach((id) => { if (!LIVE.prevIds.has(id)) LIVE.fresh.add(id); });
+      LIVE.prevIds = ids;
+      const open = [...document.querySelectorAll(".entry .more[aria-expanded='true']")].map((b) => b.closest(".entry").id.slice(2));
+      const y = window.scrollY;
+      LIVE.extra = LIVE.extra.filter((e) => !events(D).some((x) => norm(x.title) === norm(e.title)));
+      render(D);
+      if (state.pattern || state.q) setFilter({});
+      open.forEach((id) => { const n = document.getElementById("e-" + id); n && n._toggle(true); });
+      LIVE.fresh.forEach((id) => { const n = document.getElementById("e-" + id); n && n.classList.add("is-new"); });
+      if (!first) window.scrollTo(0, y);
+      LIVE.checked = Date.now(); tick();
+      if (first) {
+        spy();
+        if (/^#e-/.test(location.hash)) setTimeout(() => jumpTo(location.hash.slice(3)), 50);
+        pollLlama(); setTimeout(pollHIBP, 4000);
+        setInterval(() => pollData(false), 5 * 60e3);
+        setInterval(pollLlama, 2 * 60e3);
+        setInterval(pollHIBP, 10 * 60e3);
+        setInterval(tick, 1000);
+        setTimeout(() => { try { localStorage.setItem("bl_last_visit", String(Date.now())); } catch (e) {} }, 8000);
+      }
+    } catch (e) {
+      if (first) $("#abstract").textContent = "The record could not be loaded. Try again in a moment.";
+    }
+  }
+
+    let qt; $("#q").addEventListener("input", (e) => { clearTimeout(qt); qt = setTimeout(() => setFilter({ q: e.target.value.trim() }), 150); });
+    $("#clear-filter").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
+    $("#fbar-clear").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
+
+  pollData(true);
 })();
