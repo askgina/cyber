@@ -318,3 +318,17 @@ footer.site { display: flex; justify-content: space-between; padding-top: 2rem; 
 .opening .meta { margin-top: 1rem; }
 .opening .actions { margin-top: 1rem; }
 .glance { margin-top: clamp(2rem, 5vmin, 3rem); }
+
+/* X lifecycle */
+.track { display: inline-flex; align-items: center; gap: 2px; }
+.track i { width: 9px; height: 7px; background: var(--smoke); display: inline-block; }
+.track i.on { background: var(--navy); }
+.track b { font-weight: 400; margin-left: .45rem; color: var(--ink); }
+.track.off i { background: transparent; border: 1px solid var(--muted); height: 5px; }
+.stale { color: var(--ink); border-bottom: 1px dashed var(--muted); }
+.life { list-style: none; }
+.life li { display: grid; grid-template-columns: 7.5rem 7.5rem 1fr; gap: .9rem; padding: .4rem 0; border-top: 1px solid var(--smoke); font-size: .9rem; }
+.life .rk { font-family: var(--mono); font-size: .72rem; color: var(--muted); padding-top: .2em; }
+.life .ls { font-weight: 500; }
+.posts .role { color: var(--muted); font-size: .8125rem; font-weight: 300; }
+@media (max-width: 36rem) { .life li { grid-template-columns: 1fr; gap: .1rem; } }

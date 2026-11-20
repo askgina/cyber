@@ -167,11 +167,16 @@
         <h2>Method</h2>
         <p>Breach Ledger is rebuilt every hour from public feeds. Each run pulls the sources below, removes duplicates, recomputes the 24-hour, 7-day and 30-day counts, and republishes this page. Nothing here is a verdict: an entry records what a source claims, how far that claim has been corroborated, and where to read more.</p>
         <h3 id="stages">Confidence stages</h3>
+        <p>Signals from X are grouped by project, not by account: every post we find about the same incident, from security firms, journalists or ordinary users of the platform, is attached to one record. Each account carries a weight for who it is (the affected party 1.0, security firms 0.7, investigators 0.65, media 0.4, aggregators 0.2, users 0.12, unverified accounts 0.08, raised when the post shows on-chain evidence). Weights combine as independent evidence, so five unrelated users reporting the same drain count for about as much as one security firm. The stage is computed from that evidence, never set by hand, and its history records which post or listing moved it.</p>
         <dl class="stages">
-          <div><dt>Claimed</dt><dd>A single post, leak-site listing or unverified report. Treat as a lead.</dd></div>
-          <div><dt>Corroborated</dt><dd>Independent confirmation: a second credible source, on-chain transactions, or a statement from the affected party.</dd></div>
-          <div><dt>Confirmed</dt><dd>A post-mortem, regulator filing, CISA KEV listing or equivalent authoritative record.</dd></div>
+          <div><dt>Rumour</dt><dd>Only low-weight accounts so far. Shown so early user reports are not missed.</dd></div>
+          <div><dt>Claimed</dt><dd>At least one credible account, or enough independent reports to pass the threshold.</dd></div>
+          <div><dt>Corroborated</dt><dd>Two or more credible accounts, or combined credibility of 70 or more.</dd></div>
+          <div><dt>Confirmed</dt><dd>The affected party acknowledges it, or DefiLlama, SlowMist, Have I Been Pwned or CISA lists it. Databases often lag X by hours, so they confirm rather than trigger.</dd></div>
+          <div><dt>Post-mortem</dt><dd>The affected party or an independent investigator has published a root-cause write-up.</dd></div>
+          <div><dt>Disputed, False alarm</dt><dd>The affected party denies it, or the claim was withdrawn or disproved.</dd></div>
         </dl>
+        <p>Claims that stay at Rumour or Claimed for 24 hours are marked unconfirmed. Coverage of small accounts is limited: posts are found through search rather than the full X firehose.</p>
         <p>Ransomware leak-site listings are claims by criminal groups and are shown only as counts by group, sector and country. Victim names are deliberately omitted.</p>
         <p>Attack patterns are assigned by rules over each entry's text, DefiLlama's classification and CISA's CWE codes. Similarity combines text overlap (TF-IDF cosine) with shared patterns and shared vendors or chains; groups are entries whose similarity clears a fixed threshold. Crypto entries are also compared with DefiLlama's full archive of past hacks. Where an incident is significant, a written analysis with the attack chain, open questions and mitigations is added and may correct the automatic tags.</p>
         <h3 id="sources">Sources</h3>

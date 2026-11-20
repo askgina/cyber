@@ -62,6 +62,18 @@
     }));
   }
 
+  const STAGES = ["Rumour", "Claimed", "Corroborated", "Confirmed", "Post-mortem"];
+  const ROLE = { official: "Affected party", security: "Security firm", investigator: "Investigator", media: "Media", aggregator: "Aggregator", user: "User", unknown: "Unverified account" };
+  const hrs = (h) => h == null ? null : h < 1 ? `${Math.max(1, Math.round(h * 60))} min` : h < 48 ? `${h.toFixed(h < 10 ? 1 : 0)} h` : `${Math.round(h / 24)} days`;
+  function track(stage) {
+    const i = STAGES.indexOf(stage);
+    const n = el("span", { class: "track" + (i < 0 ? " off" : ""), role: "img", "aria-label": `Stage: ${stage}` });
+    STAGES.forEach((s, ix) => n.append(el("i", { class: ix <= i ? "on" : null, title: s })));
+    n.append(el("b", {}, stage));
+    return n;
+  }
+  function xFor(eid) { return (D0.x || []).find((x) => (x.matches || []).some((m) => m.eid === eid)); }
+
   function detailPanel(it, kind, id, title, text) {
     const det = DET[id] || {};
     const box = el("div", { class: "detail" });
@@ -76,11 +88,36 @@
       ["Ransomware use", it.ransomware ? "Known" : "Not known"],
       ["Weakness", (it.cwes || []).length ? (det.cwes || it.cwes.map((c) => ({ id: c }))).map((c, ix) => [ix ? ", " : "", el("a", { href: `https://cwe.mitre.org/data/definitions/${c.id.replace("CWE-", "")}.html`, target: "_blank", rel: "noopener" }, c.id), c.name ? ` ${c.name.toLowerCase()}` : ""]).flat() : null]];
     else if (kind === "news") rows = [["Source", it.source], ["Published", fmtLong(it.date)]];
-    else rows = [["Stage", it.stage], ["Category", it.category], ["Claimed", it.amount_usd_claimed ? fmtUSD(it.amount_usd_claimed) : null], ["First seen", fmtLong(it.date)]];
+    else {
+      const db = (it.matches || []).map((m) => [(m.sources || []).length ? m.sources.join(" and ") : m.label, m.listed_at ? ` listed ${hrs(m.lag_h)} after the first post` : " list it"].join("")).join("; ");
+      rows = [["Stage", track(it.stage)], ["Credibility", `${it.score} / 100`],
+        ["Accounts", `${it.accounts} posting, ${it.credible} credible${it.official ? ", affected party has confirmed" : ", no word from the affected party"}`],
+        ["Claimed", it.amount_usd_claimed ? fmtUSD(it.amount_usd_claimed) : null], ["First post", fmtLong(it.date)],
+        ["To confirmation", it.hours_to_confirm != null ? (it.hours_to_confirm < 0.05 ? "Confirmed in the earliest post found" : hrs(it.hours_to_confirm) + " after the first post") : (it.stale ? `Unconfirmed after ${hrs(it.age_h)}` : "Not yet")],
+        ["Post-mortem", it.postmortem && it.postmortem.url ? el("a", { href: it.postmortem.url, target: "_blank", rel: "noopener" }, `${it.postmortem.label || "Write-up"}${it.postmortem.auto ? " (found automatically)" : ""}`) : "Not published yet"],
+        ["Databases", db || "Not yet in DefiLlama, SlowMist, HIBP or CISA"],
+        ["Press", it.press_lead_h != null ? `First article ${hrs(it.press_lead_h)} after the first post` : null]];
+    }
+    if (kind === "crypto") { const x = xFor(id); if (x) rows.push(["First on X", `${fmtLong(x.date)} (${x.posts.length} posts, now ${x.stage.toLowerCase()})`]); }
     rows.unshift(["Pattern", (det.patterns || []).length ? patChips(det.patterns) : null]);
     box.append(facts(rows));
     if (kind === "kev" && it.action) box.append(el("p", { class: "dnote" }, el("b", {}, "Required action. "), it.action));
 
+    if (kind === "x" && (it.history || []).length) {
+      const sec = el("div", { class: "dsec" }, el("h4", {}, "How it was confirmed"));
+      sec.append(el("ol", { class: "life" }, it.history.map((h) => el("li", {}, el("span", { class: "rk" }, `${fmtDate(h.t)} ${new Date(h.t).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "UTC" })} UTC`), el("span", { class: "ls" }, h.stage),
+        el("span", { class: "rt" }, h.url ? el("a", { href: h.url, target: "_blank", rel: "noopener" }, h.by) : h.by)))));
+      box.append(sec);
+    }
+    if (kind === "x" && (it.posts || []).length) {
+      const sec = el("div", { class: "dsec" }, el("h4", {}, `Posts (${it.posts.length})`));
+      sec.append(el("ul", { class: "rel posts" }, it.posts.map((p) => el("li", {},
+        el("span", { class: "rk" }, `${fmtDate(p.date)} ${new Date(p.date).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "UTC" })}`),
+        el("span", { class: "rt" }, el("a", { href: p.url, target: "_blank", rel: "noopener" }, "@" + p.handle), el("span", { class: "role" }, ` ${ROLE[p.role] || p.role}${p.stance && p.stance !== "report" ? " · " + p.stance : ""}${p.evidence === "onchain" ? " · on-chain evidence" : ""}`), p.note ? el("span", { class: "why" }, p.note) : null),
+        el("span", { class: "rs", title: "Account weight" }, p.w != null ? p.w.toFixed(2) : "")))));
+      sec.append(el("p", { class: "dsrc" }, "Weight reflects who the account is: affected party 1.0, security firm 0.7, investigator 0.65, media 0.4, aggregator 0.2, user 0.12, unverified 0.08; raised for on-chain evidence. Credibility combines independent accounts, so many users reporting the same thing adds up."));
+      box.append(sec);
+    }
     const an = det.analysis;
     if (an) {
       const sec = el("div", { class: "dsec" }, el("h4", {}, "Analysis"));
@@ -295,7 +332,7 @@
 
     list("x", $("#x-list"), D.x || [], (x) => entry({
       id: x.eid, kind: "x", it: x, title: x.subject, text: x.claim,
-      k: [el("span", { class: `stage ${x.stage}` }, x.stage), el("span", {}, x.category), el("span", {}, fmtDate(x.date))],
+      k: [track(x.stage), el("span", {}, `${x.score}/100`), el("span", {}, `${x.accounts} accounts, ${x.credible} credible`), el("span", {}, `first post ${ago(x.date)}`), x.stale ? el("span", { class: "stale" }, "unconfirmed 24h+") : null],
       t: `${escape(x.subject)}${x.amount_usd_claimed ? ` <span class="amt">· ${fmtUSD(x.amount_usd_claimed)} claimed</span>` : ""}`,
       d: x.claim, links: x.links, ask: `${x.subject}: ${x.claim}`, ctx: "early signal from X",
     }), 6);
@@ -407,7 +444,7 @@
   function events(D) {
     const ev = [];
     D.news.forEach((n) => ev.push({ id: n.eid, kind: "news", t: n.date, title: n.title, sub: n.source }));
-    (D.x || []).forEach((x) => ev.push({ id: x.eid, kind: "x", t: x.date, title: x.subject, sub: x.stage + (x.amount_usd_claimed ? ` · ${fmtUSD(x.amount_usd_claimed)} claimed` : "") }));
+    (D.x || []).forEach((x) => ev.push({ id: x.eid, kind: "x", t: x.date, title: x.subject, sub: `${x.stage}, ${x.accounts} accounts` + (x.amount_usd_claimed ? ` · ${fmtUSD(x.amount_usd_claimed)} claimed` : "") }));
     D.crypto.items.forEach((c) => ev.push({ id: c.eid, kind: "crypto", t: c.date, title: c.name, sub: `${fmtUSD(c.amount)}${c.technique && c.technique !== "Unknown" ? " · " + c.technique : ""}` }));
     D.kev.items.forEach((v) => ev.push({ id: v.eid, kind: "kev", t: v.date, title: `${v.vendor} ${v.product}`, sub: v.id }));
     ((D.breaches || {}).items || []).forEach((b) => ev.push({ id: b.eid, kind: "breach", t: b.added, title: b.title, sub: `${compact(b.count || 0)} accounts` }));
@@ -470,6 +507,8 @@
       rows.push({ org: b.title, what: `Breach added to Have I Been Pwned: ${(b.classes || []).slice(0, 3).join(", ").toLowerCase()}.`, scale: `${compact(b.count || 0)} accounts`, patterns: pats(b.eid), eid: b.eid }));
     kv.filter((v) => !seen.has(v.eid)).forEach((v) =>
       rows.push({ org: `${v.vendor} ${v.product}`, what: `${v.id} confirmed exploited in the wild; added to CISA KEV.`, scale: v.ransomware ? "Ransomware use" : "Exploited", patterns: pats(v.eid), eid: v.eid }));
+    (D.x || []).filter((x) => inDay(x.date) && !seen.has(x.eid) && !(x.matches || []).some((m) => seen.has(m.eid) || rows.some((r) => r.eid === m.eid)) && x.stage !== "Rumour").forEach((x) =>
+      rows.push({ org: x.subject, what: `On X only so far: ${x.accounts} accounts, ${x.credible} credible. ${x.claim.split(". ")[0]}.`, scale: x.amount_usd_claimed ? `${fmtUSD(x.amount_usd_claimed)} claimed` : x.stage, patterns: pats(x.eid), eid: x.eid }));
     if (!brief) nw.slice(0, 6).forEach((n) => rows.push({ org: n.title, what: n.source, scale: "", patterns: pats(n.eid), eid: n.eid }));
 
     const named = rv.filter((v) => v.victim && !/\*/.test(v.victim));

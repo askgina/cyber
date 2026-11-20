@@ -1,0 +1,16 @@
+{
+ "_doc": "Known X accounts and their role. Roles and default weights live in xscore.py. Accounts not listed here are scored by the role recorded on the post (default: unknown). Add accounts as you learn them; never raise a weight because a post turned out right once.",
+ "PeckShieldAlert": "security", "peckshield": "security", "CertiKAlert": "security", "CertiK": "security",
+ "CyversAlerts": "security", "Cyvers_": "security", "blockaid_": "security", "GoPlusSecurity": "security",
+ "SlowMist_Team": "security", "MistTrack_io": "security", "realScamSniffer": "security", "Hacken_io": "security",
+ "BlockSecTeam": "security", "Phalcon_xyz": "security", "TenArmorAlert": "security", "Dedaub": "security",
+ "hypernativelabs": "security", "chainalysis": "security", "TRMLabs": "security", "elliptic": "security",
+ "SEAL_Org": "security", "zachxbt": "investigator", "samczsun": "investigator", "tayvano_": "investigator",
+ "pcaversaccio": "investigator", "officer_cia": "investigator", "lookonchain": "investigator", "spotonchain": "investigator",
+ "EmberCN": "investigator", "OnchainLens": "investigator", "hazae41": "investigator", "GossiTheDog": "investigator",
+ "vxunderground": "investigator", "campuscodi": "media", "TheRecord_Media": "media", "BleepinComputer": "media",
+ "TheHackersNews": "media", "DefiantNews": "media", "TheBlock__": "media", "CoinDesk": "media", "Cointelegraph": "media",
+ "WuBlockchain": "media", "crypto_banter": "media", "CryptoTimes_io": "media", "rektnews": "media", "decryptmedia": "media",
+ "DailyDarkWeb": "aggregator", "HackManac": "aggregator", "FalconFeedsio": "aggregator", "DarkWebInformer": "aggregator",
+ "XBToshi": "aggregator"
+}

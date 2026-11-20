@@ -209,11 +209,34 @@ try:
 except Exception as e:
     errors.append(f"hibp: {e}")
 
-# ---- X signals (curated / agent-collected; facts + link only)
+# ---- first-seen times: when each database first listed an entry (DefiLlama often lags X by hours)
+FS = os.path.join(ROOT, "pipeline", "first_seen.json")
+first_seen = json.load(open(FS)) if os.path.exists(FS) else None
+backfill = first_seen is None
+first_seen = first_seen or {}
+for c in crypto:
+    k = "c:" + norm(c["name"]) + ":" + c["date"]
+    if k not in first_seen: first_seen[k] = None if backfill else iso(NOW)
+    c["listed_at"] = first_seen[k]
+first_seen = {k: v for k, v in first_seen.items() if k.rsplit(":", 1)[-1] >= iso(NOW - dt.timedelta(days=45))[:10]}
+json.dump(first_seen, open(FS, "w"), indent=0)
+
+# ---- X signals: one record per project with every post found; scored in xscore.py
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from xscore import score_signals, ROLE_LABEL
 xsig = []
 if os.path.exists(XFILE):
     try:
-        xsig = [x for x in json.load(open(XFILE)) if days_ago(parse_iso(x["date"])) <= 7]
+        raw = json.load(open(XFILE))
+        scored = score_signals(raw, crypto, breaches, kev, news, os.path.join(ROOT, "pipeline", "x_accounts.json"), NOW)
+        lead = {}
+        for x in scored:
+            for h in x["matches"]:
+                h["listed_at"] = next((c.get("listed_at") for c in crypto if c.get("eid") is None and h["kind"] == "crypto"
+                                       and norm(c["name"]) in {norm(x.get("project") or x["subject"]), *map(norm, x.get("aliases", []))}), None)
+                if h.get("listed_at"):
+                    h["lag_h"] = round((parse_iso(h["listed_at"]) - parse_iso(x["first"])).total_seconds() / 3600, 1)
+        xsig = [x for x in scored if days_ago(parse_iso(x["date"])) <= 7]
         xsig.sort(key=lambda x: x["date"], reverse=True)
     except Exception as e:
         errors.append(f"x: {e}")
@@ -258,6 +281,12 @@ for inc in incidents:
     item = by_kind[inc["kind"]][pos[inc["kind"]]]; pos[inc["kind"]] += 1
     item["eid"] = inc["id"]
     details[inc["id"]] = {k: inc[k] for k in ("patterns", "related", "precedents", "cluster", "cwes", "analysis", "action") if k in inc}
+# X signal matches were computed before ids existed; resolve them now.
+by_ref = {id(o): o for rows in (crypto, breaches, kev, news) for o in rows}
+for x in xsig:
+    for h in x.get("matches", []) + x.get("press", []):
+        o = by_ref.get(h.pop("ref", None))
+        if o is not None: h["eid"] = o.get("eid")
 data = {
     "generated": iso(NOW), "errors": errors,
     "kev": {"total_catalog": kev_total, "count_7d": len(window(kev, 7)), "count_30d": len(kev),

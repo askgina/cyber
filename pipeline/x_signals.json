@@ -1,34 +1,37 @@
 [
- {"date": "2026-11-19T19:30:00Z", "subject": "Fluidkey", "category": "crypto",
-  "stage": "Corroborated",
-  "claim": "Users of the Fluidkey privacy wallet report funds drained across seven chains in about 25 minutes, routed through Fluidkey's own relayer with valid signatures. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911. Cause is unconfirmed; supply-chain compromise is speculation pending a post-mortem.",
-  "amount_usd_claimed": 1600000,
-  "links": [{"label": "X thread", "url": "https://x.com/hazae41/status/2123648034194239946"},
-            {"label": "Search X", "url": "https://x.com/search?f=live&q=Fluidkey"}]},
-  {
-    "date": "2026-11-20T12:48:00Z",
-    "subject": "Wagyu XMR1",
-    "category": "crypto",
-    "stage": "Confirmed",
-    "claim": "About $13.5 million in XMR1 sales drove Wagyu's wrapped Monero token from about $500 to $1 on Hyperliquid. Wagyu's operator attributed the incident to an exposed deployer key in a hosting-provider breach; on-chain records corroborate the sales but do not establish how the key was obtained.",
-    "amount_usd_claimed": 13500000,
-    "links": [
-      {
-        "label": "X post",
-        "url": "https://x.com/PerpetualCow/status/2123760480061718801"
-      },
-      {
-        "label": "Search X",
-        "url": "https://x.com/search?f=live&q=Wagyu%20XMR1"
-      },
-      {
-        "label": "Bitquery",
-        "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
-      },
-      {
-        "label": "The Block",
-        "url": "https://www.theblock.co/news/defi/2026-11-20-wagyus-xmr1-wrapped-monero-plunges-99-after-13-million-hack-founder-promises-refunds-444747"
-      }
-    ]
-  }
+ {
+  "project": "Fluidkey", "subject": "Fluidkey", "aliases": ["Fluidkey"], "category": "crypto",
+  "claim": "Users of the Fluidkey privacy wallet lost funds across six chains in about 36 minutes, paid out by Fluidkey's own relayer. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911. The entry point is unconfirmed; supply-chain or frontend compromise is speculation pending a post-mortem.",
+  "amount_usd_claimed": 1580000,
+  "posts": [
+   {"url": "https://x.com/fluidkey/status/2123481430634492278", "role": "official", "stance": "confirm", "evidence": "none", "note": "Security incident affecting users; avoid website and app."},
+   {"url": "https://x.com/DefiantNews/status/2123487975145378208", "stance": "report", "evidence": "link", "note": "Reports the notice; loss not stated."},
+   {"url": "https://x.com/fluidkey/status/2123511041791349059", "role": "official", "stance": "update", "evidence": "none", "note": "No unauthorized transactions since 18:05 UTC; working with SEAL 911; post-mortem to follow."},
+   {"url": "https://x.com/ReginaldWatches/status/2123521238534680870", "role": "unknown", "stance": "report", "evidence": "none", "note": "Warns users about fake refund links."},
+   {"url": "https://x.com/hazae41/status/2123648034194239946", "stance": "report", "evidence": "onchain", "note": "Thread on the drain path through the relayer and a consolidation address."}
+  ],
+  "postmortem": null,
+  "links": [{"label": "Bitquery investigation", "url": "https://www.bitquery.io/investigations/fluidkey-hack"},
+            {"label": "Search X", "url": "https://x.com/search?f=live&q=Fluidkey"}]
+ },
+ {
+  "project": "Wagyu (XMR1)", "subject": "Wagyu XMR1", "aliases": ["Wagyu", "XMR1"], "category": "crypto",
+  "claim": "About 5.2M XMR1 moved from the token's deployer address to a new wallet and roughly $13.5M was sold into Hyperliquid's order book, crashing the wrapped Monero token about 99.8%. Wagyu's operator says the deployer key sat on a previously deleted server at a compromised hosting provider and promises refunds; the key compromise is his account, not independently verified.",
+  "amount_usd_claimed": 13500000,
+  "posts": [
+   {"url": "https://x.com/0xLegendman/status/2123673331341709788", "role": "unknown", "stance": "report", "evidence": "none", "note": "Early exploit claim, ~$13M."},
+   {"url": "https://x.com/m3aadh/status/2123673623978516660", "role": "user", "stance": "speculation", "evidence": "none", "note": "Asks whether it is an exit rug."},
+   {"url": "https://x.com/crypto_banter/status/2123674436033294701", "stance": "report", "evidence": "onchain", "note": "Relays Lookonchain's attacker wallet and ETH purchases."},
+   {"url": "https://x.com/GoPlusSecurity/status/2123694304959021131", "stance": "report", "evidence": "onchain", "note": "Suspected exploit; deployer moved 5.2M XMR1; proceeds ~7,300 ETH bridged."},
+   {"url": "https://x.com/CryptoTimes_io/status/2123710046450090318", "stance": "report", "evidence": "link", "note": "Cites a CertiK flag; cause unconfirmed."},
+   {"url": "https://x.com/XBToshi/status/2123750837931639036", "stance": "report", "evidence": "none", "note": "Timeline; hack or exit scam unresolved."},
+   {"url": "https://x.com/PerpetualCow/status/2123760480061718801", "role": "official", "stance": "confirm", "evidence": "none", "note": "Operator attributes it to a hosting-provider breach exposing the deployer key; promises refunds."},
+   {"url": "https://x.com/crypto_banter/status/2123769914678759459", "stance": "update", "evidence": "link", "note": "Relays the hosting-provider explanation."},
+   {"url": "https://x.com/DailyDarkWeb/status/2123786350730137992", "stance": "report", "evidence": "link", "note": "Summary citing CoinDesk."}
+  ],
+  "postmortem": null,
+  "links": [{"label": "Bitquery investigation", "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"},
+            {"label": "The Block", "url": "https://www.theblock.co/news/defi/2026-11-20-wagyus-xmr1-wrapped-monero-plunges-99-after-13-million-hack-founder-promises-refunds-444747"},
+            {"label": "Search X", "url": "https://x.com/search?f=live&q=Wagyu%20XMR1"}]
+ }
 ]
