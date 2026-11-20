@@ -39,5 +39,36 @@
   "links": [{"label": "Bitquery investigation", "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"},
             {"label": "The Block", "url": "https://www.theblock.co/news/defi/2026-11-20-wagyus-xmr1-wrapped-monero-plunges-99-after-13-million-hack-founder-promises-refunds-444747"},
             {"label": "Search X", "url": "https://x.com/search?f=live&q=Wagyu%20XMR1"}]
+ },
+ {
+  "project": "Chase, Visa and Mastercard vendor breach",
+  "subject": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+  "aliases": ["J.P. Morgan Chase", "Visa", "Mastercard"],
+  "category": "breach",
+  "claim": "Chase said attackers accessed marketing data held by vendors, and Mastercard confirmed limited email exposure in one benefit program. Visa said a provider in Asia Pacific was affected but its own systems and payment data were not; the providers and total number of people affected have not been confirmed.",
+  "amount_usd_claimed": null,
+  "posts": [
+   {"url": "https://x.com/SpecialSitsNews/status/2123454468079632585", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Reports claims of vendor attacks affecting customers of the three companies."},
+   {"url": "https://x.com/LTSmash420/status/2123462462414438602", "role": "unknown", "stance": "report", "evidence": "none", "note": "Relays an extortion group's claim that it published customer records."},
+   {"url": "https://x.com/rohanpaul_ai/status/2123591143606878688", "role": "unknown", "stance": "report", "evidence": "none", "note": "Distinguishes vendor compromises from the companies' own systems."},
+   {"url": "https://x.com/TimesNow/status/2123604913381073038", "role": "media", "stance": "report", "evidence": "none", "note": "Reports customer data exposure at vendors and says payment details were not exposed."},
+   {"url": "https://x.com/BleepinComputer/status/2123808174767485321", "role": "media", "stance": "report", "evidence": "link", "note": "Links reporting that quotes all three companies about third-party exposure."},
+   {"url": "https://x.com/NewsHour/status/2123827008530424277", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Chase's statement that vendor-held marketing data was accessed."}
+  ],
+  "postmortem": null,
+  "links": [{"label": "BleepingComputer reporting with company statements", "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"}]
+ },
+ {
+  "project": "EDUTEC Chile",
+  "subject": "Alleged EDUTEC Chile data exposure",
+  "aliases": ["EDUTEC", "edutec.cl"],
+  "category": "breach",
+  "claim": "VECERT Analyzer flagged a claim that over 10 GB of data attributed to Chilean education platform EDUTEC includes student and teacher records and photographs. The authenticity, source and number of people affected are unverified.",
+  "amount_usd_claimed": null,
+  "posts": [
+   {"url": "https://x.com/VECERTRadar/status/2123570233503879373", "role": "security", "stance": "report", "evidence": "none", "note": "Flags an unverified claim of more than 10 GB of education records and photos."}
+  ],
+  "postmortem": null,
+  "links": [{"label": "CiberLATAM Radar", "url": "https://ciberlatam.com/en/pulse"}]
  }
 ]

@@ -1,4 +1,20 @@
 {
+ "Vendor data breach exposes Chase, Visa, Mastercard customer info": {
+  "summary": "Chase said attackers accessed certain vendor-held marketing data, which may include customer names and email addresses. Mastercard confirmed limited email exposure in a cardholder benefit program, and Visa said a provider in Asia Pacific was affected but its own systems and payment data were not.",
+  "attack_chain": ["Initial access: not disclosed.", "The companies reported incidents involving third-party service providers; whether the providers or intrusions overlap is unconfirmed.", "Chase reported access to vendor-held marketing data, and Mastercard reported exposure of some cardholder email addresses."],
+  "open_questions": ["Which providers and systems were affected?", "How many unique people were affected, and what data was exposed in each case?"],
+  "mitigations": ["Limit how much personal information vendors retain and review their access regularly.", "Ask vendors to preserve relevant logs and report bulk exports or unusual access promptly.", "Warn affected customers about phishing and direct them to verified support channels."],
+  "sources": [{"label": "BleepingComputer reporting with company statements", "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"}],
+  "patterns": ["supply-chain", "data-exposure"]
+ },
+ "Alleged EDUTEC Chile data exposure": {
+  "summary": "VECERT Analyzer relayed an unverified claim that more than 10 GB of records and photographs are linked to Chile's EDUTEC education platform. CiberLATAM tracked the same claim, but that coverage does not independently establish the data's origin, authenticity or scope.",
+  "attack_chain": ["Access and extraction: not established.", "VECERT Analyzer reported a forum claim that the data had been obtained."],
+  "open_questions": ["Are the records authentic and attributable to EDUTEC?", "Was there unauthorized access, and how many people, if any, were affected?"],
+  "mitigations": ["Preserve access and export logs while investigating the claim.", "Review who can access student records and photographs, and restrict bulk exports to authorized staff.", "Prepare guidance for schools and families if exposure is verified."],
+  "sources": [{"label": "VECERT Analyzer alert", "url": "https://x.com/VECERTRadar/status/2123570233503879373"}, {"label": "CiberLATAM Radar", "url": "https://ciberlatam.com/en/pulse"}],
+  "patterns": ["data-exposure"]
+ },
  "Careers360": {
   "summary": "Have I Been Pwned indexed a dataset attributed to the Indian education platform Careers360 that contains 3.6 million unique email addresses. The data also includes student entrance-exam results and other personal information; the initial access method has not been established.",
   "attack_chain": ["Initial access and extraction: unknown.", "A dataset attributed to Careers360 appeared on a public forum.", "Have I Been Pwned indexed the affected email addresses."],

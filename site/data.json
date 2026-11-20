@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T21:23:41Z",
+ "generated": "2026-11-20T22:24:27Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -1194,9 +1194,9 @@
   ]
  },
  "ransomware": {
-  "count_24h": 21,
+  "count_24h": 19,
   "count_7d": 377,
-  "count_30d": 1254,
+  "count_30d": 1255,
   "groups_7d": [
    [
     "N0n",
@@ -1268,7 +1268,7 @@
   "countries_7d": [
    [
     "US",
-    183
+    184
    ],
    [
     "CA",
@@ -1280,7 +1280,7 @@
    ],
    [
     "DE",
-    11
+    10
    ],
    [
     "IN",
@@ -1300,6 +1300,15 @@
    ]
   ],
   "items_24h": [
+   {
+    "date": "2026-11-20T18:10:29Z",
+    "victim": "Jones Walker",
+    "group": "SilentRansomGroup",
+    "sector": "Professional Services",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/Sm9uZXMgV2Fsa2VyQFNpbGVudFJhbnNvbUdyb3Vw",
+    "desc": "Jones Walker, founded in 1937 and headquartered in New Orleans, Louisiana, is a full-service law firm \u2026"
+   },
    {
     "date": "2026-11-20T15:13:48Z",
     "victim": "TraWell Co S.p.A. (d/b/a Safe Bag)",
@@ -1461,36 +1470,9 @@
     "country": "MY",
     "url": null,
     "desc": null
-   },
-   {
-    "date": "2026-11-19T22:18:36Z",
-    "victim": "Rudolph F. Jass, Jr., PLLC",
-    "group": "rhysida",
-    "sector": "Professional Services",
-    "country": "US",
-    "url": "https://www.ransomware.live/id/UnVkb2xwaCBGLiBKYXNzLCBKci4sIFBMTENAcmh5c2lkYQ==",
-    "desc": null
-   },
-   {
-    "date": "2026-11-19T22:03:16Z",
-    "victim": "J... W...",
-    "group": "SilentRansomGroup",
-    "sector": "Not Found",
-    "country": "??",
-    "url": "https://www.ransomware.live/id/Si4uLiBXLi4uQFNpbGVudFJhbnNvbUdyb3Vw",
-    "desc": null
-   },
-   {
-    "date": "2026-11-19T21:52:49Z",
-    "victim": "AutoZone, Inc.",
-    "group": "Inception",
-    "sector": "Retail & E-Commerce",
-    "country": "US",
-    "url": "https://www.ransomware.live/id/QXV0b1pvbmUsIEluYy5ASW5jZXB0aW9u",
-    "desc": null
    }
   ],
-  "coverage_days": 29.9,
+  "coverage_days": 30.0,
   "series": [
    [
     "2026-10-22",
@@ -1610,7 +1592,7 @@
    ],
    [
     "2026-11-20",
-    18
+    19
    ]
   ]
  },
@@ -3751,6 +3733,14 @@
  },
  "news": [
   {
+   "date": "2026-11-20T21:34:36Z",
+   "source": "The Record",
+   "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+   "url": "https://therecord.media/west-virginia-legislature-cyberattack",
+   "summary": "A cybersecurity incident that began Thursday was still ongoing Friday in the West Virginia Legislature. A spokesperson said the disruption did not spread to other government entities.",
+   "eid": "n-f0b8696c"
+  },
+  {
    "date": "2026-11-20T18:56:50Z",
    "source": "DataBreaches.net",
    "title": "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
@@ -4226,8 +4216,62 @@
    "hours_to_confirm": 5.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 15.5,
+   "age_h": 16.5,
    "eid": "x-37d402a7"
+  },
+  {
+   "project": "EDUTEC Chile",
+   "subject": "Alleged EDUTEC Chile data exposure",
+   "aliases": [
+    "EDUTEC",
+    "edutec.cl"
+   ],
+   "category": "breach",
+   "claim": "VECERT Analyzer flagged a claim that over 10 GB of data attributed to Chilean education platform EDUTEC includes student and teacher records and photographs. The authenticity, source and number of people affected are unverified.",
+   "amount_usd_claimed": null,
+   "posts": [
+    {
+     "date": "2026-11-20T00:12:52Z",
+     "handle": "VECERTRadar",
+     "role": "security",
+     "w": 0.7,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/VECERTRadar/status/2123570233503879373",
+     "note": "Flags an unverified claim of more than 10 GB of education records and photos."
+    }
+   ],
+   "postmortem": null,
+   "links": [
+    {
+     "label": "CiberLATAM Radar",
+     "url": "https://ciberlatam.com/en/pulse"
+    }
+   ],
+   "first": "2026-11-20T00:12:52Z",
+   "date": "2026-11-20T00:12:52Z",
+   "outcome": null,
+   "score": 70,
+   "stage": "Corroborated",
+   "accounts": 1,
+   "credible": 1,
+   "official": false,
+   "history": [
+    {
+     "t": "2026-11-20T00:12:52Z",
+     "stage": "Corroborated",
+     "by": "@VECERTRadar",
+     "url": "https://x.com/VECERTRadar/status/2123570233503879373",
+     "eid": null
+    }
+   ],
+   "matches": [],
+   "press": [],
+   "hours_to_confirm": null,
+   "press_lead_h": null,
+   "stale": false,
+   "age_h": 22.2,
+   "eid": "x-77fc8232"
   },
   {
    "project": "Fluidkey",
@@ -4339,8 +4383,140 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 27.1,
+   "age_h": 28.1,
    "eid": "x-7b9a9595"
+  },
+  {
+   "project": "Chase, Visa and Mastercard vendor breach",
+   "subject": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+   "aliases": [
+    "J.P. Morgan Chase",
+    "Visa",
+    "Mastercard"
+   ],
+   "category": "breach",
+   "claim": "Chase said attackers accessed marketing data held by vendors, and Mastercard confirmed limited email exposure in one benefit program. Visa said a provider in Asia Pacific was affected but its own systems and payment data were not; the providers and total number of people affected have not been confirmed.",
+   "amount_usd_claimed": null,
+   "posts": [
+    {
+     "date": "2026-11-19T16:32:51Z",
+     "handle": "SpecialSitsNews",
+     "role": "aggregator",
+     "w": 0.2,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/SpecialSitsNews/status/2123454468079632585",
+     "note": "Reports claims of vendor attacks affecting customers of the three companies."
+    },
+    {
+     "date": "2026-11-19T17:04:37Z",
+     "handle": "LTSmash420",
+     "role": "unknown",
+     "w": 0.08,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/LTSmash420/status/2123462462414438602",
+     "note": "Relays an extortion group's claim that it published customer records."
+    },
+    {
+     "date": "2026-11-20T01:35:57Z",
+     "handle": "rohanpaul_ai",
+     "role": "unknown",
+     "w": 0.08,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/rohanpaul_ai/status/2123591143606878688",
+     "note": "Distinguishes vendor compromises from the companies' own systems."
+    },
+    {
+     "date": "2026-11-20T02:30:40Z",
+     "handle": "TimesNow",
+     "role": "media",
+     "w": 0.4,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/TimesNow/status/2123604913381073038",
+     "note": "Reports customer data exposure at vendors and says payment details were not exposed."
+    },
+    {
+     "date": "2026-11-20T15:58:21Z",
+     "handle": "BleepinComputer",
+     "role": "media",
+     "w": 0.46,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/BleepinComputer/status/2123808174767485321",
+     "note": "Links reporting that quotes all three companies about third-party exposure."
+    },
+    {
+     "date": "2026-11-20T17:13:12Z",
+     "handle": "NewsHour",
+     "role": "media",
+     "w": 0.4,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/NewsHour/status/2123827008530424277",
+     "note": "Reports Chase's statement that vendor-held marketing data was accessed."
+    }
+   ],
+   "postmortem": null,
+   "links": [
+    {
+     "label": "BleepingComputer reporting with company statements",
+     "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
+    }
+   ],
+   "first": "2026-11-19T16:32:51Z",
+   "date": "2026-11-19T16:32:51Z",
+   "outcome": null,
+   "score": 87,
+   "stage": "Corroborated",
+   "accounts": 6,
+   "credible": 0,
+   "official": false,
+   "history": [
+    {
+     "t": "2026-11-19T16:32:51Z",
+     "stage": "Rumour",
+     "by": "@SpecialSitsNews",
+     "url": "https://x.com/SpecialSitsNews/status/2123454468079632585",
+     "eid": null
+    },
+    {
+     "t": "2026-11-20T01:35:57Z",
+     "stage": "Claimed",
+     "by": "@rohanpaul_ai",
+     "url": "https://x.com/rohanpaul_ai/status/2123591143606878688",
+     "eid": null
+    },
+    {
+     "t": "2026-11-20T15:58:21Z",
+     "stage": "Corroborated",
+     "by": "@BleepinComputer",
+     "url": "https://x.com/BleepinComputer/status/2123808174767485321",
+     "eid": null
+    }
+   ],
+   "matches": [],
+   "press": [
+    {
+     "eid": "n-bbc19bb6",
+     "source": "BleepingComputer",
+     "date": "2026-11-20T15:58:06Z",
+     "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info"
+    },
+    {
+     "eid": "n-2ff5d2ac",
+     "source": "DataBreaches.net",
+     "date": "2026-11-19T17:16:31Z",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers"
+    }
+   ],
+   "hours_to_confirm": null,
+   "press_lead_h": 0.7,
+   "stale": false,
+   "age_h": 29.9,
+   "eid": "x-41c84c0c"
   }
  ],
  "breaches": {
@@ -4570,12 +4746,6 @@
  },
  "hourly": [
   {
-   "t": "2026-11-19T22:00:00Z",
-   "ransomware": 2,
-   "news": 1,
-   "x": 0
-  },
-  {
    "t": "2026-11-19T23:00:00Z",
    "ransomware": 0,
    "news": 0,
@@ -4585,7 +4755,7 @@
    "t": "2026-11-20T00:00:00Z",
    "ransomware": 1,
    "news": 1,
-   "x": 0
+   "x": 1
   },
   {
    "t": "2026-11-20T01:00:00Z",
@@ -4691,7 +4861,7 @@
   },
   {
    "t": "2026-11-20T18:00:00Z",
-   "ransomware": 0,
+   "ransomware": 1,
    "news": 3,
    "x": 0
   },
@@ -4710,13 +4880,19 @@
   {
    "t": "2026-11-20T21:00:00Z",
    "ransomware": 0,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-20T22:00:00Z",
+   "ransomware": 0,
    "news": 0,
    "x": 0
   }
  ],
  "brief": {
-  "updated": "2026-11-20T21:23:00Z",
-  "headline": "A dataset attributed to Careers360 contains 3.6 million unique email addresses, and SBC Medical Group disclosed a breach affecting about 1.6 million people. Wagyu\u2019s XMR1 fell to about $1 after $13.5 million in sales, while CISA added actively exploited flaws in VMware vCenter, SAP NetWeaver and Cisco Expressway.",
+  "updated": "2026-11-20T22:23:38Z",
+  "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360 and 724,000 tied to Too Lost, while about $13.5 million in XMR1 sales drove Wagyu\u2019s token down to roughly $1. CISA added exploited flaws in VMware vCenter, SAP NetWeaver and Cisco Expressway, and Bell Canada said enterprise customer data was stolen.",
   "incidents": [
    {
     "org": "Careers360",
@@ -4726,15 +4902,6 @@
      "data-exposure"
     ],
     "eid": "b-8e8da935"
-   },
-   {
-    "org": "SBC Medical Group",
-    "what": "The company disclosed that an intruder extracted customer and employee information from its Japanese subsidiary's website databases; the entry method remains under investigation.",
-    "scale": "1.6M people",
-    "patterns": [
-     "data-exposure"
-    ],
-    "eid": "n-df29d71a"
    },
    {
     "org": "Wagyu (XMR1)",
@@ -4756,6 +4923,24 @@
     "eid": "k-63a14165"
    },
    {
+    "org": "Cisco Expressway",
+    "what": "CISA added CVE-2026-76466 to its catalog after researchers reported that attackers used it to compromise devices and reach an internal network.",
+    "scale": "Critical",
+    "patterns": [
+     "edge-device"
+    ],
+    "eid": "k-80fb8862"
+   },
+   {
+    "org": "SAP NetWeaver",
+    "what": "CISA added CVE-2025-42884, an actively exploited flaw that can expose or allow changes to server information in NetWeaver Enterprise Portal.",
+    "scale": "Exploited",
+    "patterns": [
+     "enterprise-platform"
+    ],
+    "eid": "k-8e30ace2"
+   },
+   {
     "org": "Bell Canada",
     "what": "Bell said an intruder stole enterprise customer data after accessing systems including a circuit-provisioning environment, but did not disclose how the intruder entered.",
     "scale": "Scope undisclosed",
@@ -4766,8 +4951,8 @@
    },
    {
     "org": "J.P. Morgan Chase, Visa, Mastercard",
-    "what": "Customer personal and marketing data exposed through a cyberattack on a third-party service provider.",
-    "scale": "Customer PII",
+    "what": "Chase and Mastercard reported customer marketing data or email exposure at vendors, while Visa said a provider incident did not affect payment data.",
+    "scale": "Total undisclosed",
     "patterns": [
      "supply-chain",
      "data-exposure"
@@ -4802,15 +4987,6 @@
     "eid": "n-cd038ca0"
    },
    {
-    "org": "SAP NetWeaver",
-    "what": "CISA added CVE-2025-42884, an actively exploited flaw that can expose or allow changes to server information in NetWeaver Enterprise Portal.",
-    "scale": "Exploited",
-    "patterns": [
-     "enterprise-platform"
-    ],
-    "eid": "k-8e30ace2"
-   },
-   {
     "org": "N-able",
     "what": "Attackers who breached a server caused a worldwide outage of Mail Assure and SpamExperts Hosted Cloud.",
     "scale": "Global service outage",
@@ -4821,17 +4997,48 @@
     "eid": "n-d9a32515"
    },
    {
-    "org": "Cisco Expressway",
-    "what": "CISA added CVE-2026-76466 to its catalog after researchers reported that attackers used it to compromise devices and reach an internal network.",
-    "scale": "Critical",
+    "org": "West Virginia Legislature",
+    "what": "The legislature took some IT systems offline during a cyberattack that also disrupted its website and had not spread to other state agencies.",
+    "scale": "Legislative IT outage",
     "patterns": [
-     "edge-device"
+     "outage"
     ],
-    "eid": "k-80fb8862"
+    "eid": "n-f0b8696c"
    }
   ]
  },
  "details": {
+  "n-f0b8696c": {
+   "patterns": [
+    "outage"
+   ],
+   "related": [
+    {
+     "id": "n-755bf327",
+     "kind": "news",
+     "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
+     "date": "2026-11-20T18:44:27Z",
+     "score": 0.32,
+     "why": "same pattern: Disruption and outages; terms: cybersecurity"
+    },
+    {
+     "id": "x-7b9a9595",
+     "kind": "x",
+     "title": "Fluidkey",
+     "date": "2026-11-19T18:20:00Z",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
+    },
+    {
+     "id": "c-7b9a9595",
+     "kind": "crypto",
+     "title": "Fluidkey",
+     "date": "2026-11-19",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
+    }
+   ]
+  },
   "n-a5a08255": {
    "patterns": [
     "data-exposure"
@@ -5000,6 +5207,14 @@
      "date": "2026-11-19",
      "score": 0.33,
      "why": "same pattern: Disruption and outages; terms: offline"
+    },
+    {
+     "id": "n-f0b8696c",
+     "kind": "news",
+     "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+     "date": "2026-11-20T21:34:36Z",
+     "score": 0.32,
+     "why": "same pattern: Disruption and outages; terms: cybersecurity"
     }
    ]
   },
@@ -5076,6 +5291,14 @@
    ],
    "related": [
     {
+     "id": "x-41c84c0c",
+     "kind": "x",
+     "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+     "date": "2026-11-19T16:32:51Z",
+     "score": 0.61,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: chase, visa, mastercard"
+    },
+    {
      "id": "n-2ff5d2ac",
      "kind": "news",
      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
@@ -5091,7 +5314,35 @@
      "score": 0.24,
      "why": "same pattern: Supply chain and third parties; terms: provider, breach, third-party"
     }
-   ]
+   ],
+   "cluster": "cl-d2acde",
+   "analysis": {
+    "summary": "Chase said attackers accessed certain vendor-held marketing data, which may include customer names and email addresses. Mastercard confirmed limited email exposure in a cardholder benefit program, and Visa said a provider in Asia Pacific was affected but its own systems and payment data were not.",
+    "attack_chain": [
+     "Initial access: not disclosed.",
+     "The companies reported incidents involving third-party service providers; whether the providers or intrusions overlap is unconfirmed.",
+     "Chase reported access to vendor-held marketing data, and Mastercard reported exposure of some cardholder email addresses."
+    ],
+    "open_questions": [
+     "Which providers and systems were affected?",
+     "How many unique people were affected, and what data was exposed in each case?"
+    ],
+    "mitigations": [
+     "Limit how much personal information vendors retain and review their access regularly.",
+     "Ask vendors to preserve relevant logs and report bulk exports or unusual access promptly.",
+     "Warn affected customers about phishing and direct them to verified support channels."
+    ],
+    "sources": [
+     {
+      "label": "BleepingComputer reporting with company statements",
+      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
+     }
+    ],
+    "patterns": [
+     "supply-chain",
+     "data-exposure"
+    ]
+   }
   },
   "n-d9a32515": {
    "patterns": [
@@ -5333,20 +5584,20 @@
      "why": "same pattern: Data exposure and theft; terms: customers, exposed"
     },
     {
+     "id": "x-77fc8232",
+     "kind": "x",
+     "title": "Alleged EDUTEC Chile data exposure",
+     "date": "2026-11-20T00:12:52Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: people"
+    },
+    {
      "id": "n-2ff5d2ac",
      "kind": "news",
      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
      "date": "2026-11-19T17:16:31Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: customers, customer"
-    },
-    {
-     "id": "b-cc049559",
-     "kind": "breach",
-     "title": "Too Lost",
-     "date": "2026-11-20T19:17:16Z",
-     "score": 0.32,
-     "why": "same pattern: Data exposure and theft; terms: belonging, information, exposed"
     }
    ],
    "analysis": {
@@ -6044,7 +6295,7 @@
      "technique": "Key Leaked via Infrastructure",
      "classification": "Frontend & Infrastructure",
      "score": 0.15,
-     "why": "hosting, infrastructure, breach"
+     "why": "hosting, infrastructure, leaked"
     }
    ],
    "cluster": "cl-7fee46",
@@ -6161,6 +6412,14 @@
      "date": "2026-11-20T18:44:27Z",
      "score": 0.33,
      "why": "same pattern: Disruption and outages; terms: offline"
+    },
+    {
+     "id": "n-f0b8696c",
+     "kind": "news",
+     "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+     "date": "2026-11-20T21:34:36Z",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
     }
    ],
    "precedents": [],
@@ -6842,7 +7101,7 @@
      "title": "Sovryn Dex",
      "date": "2026-11-01",
      "score": 0.23,
-     "why": "same pattern: Smart contract logic flaws; terms: began, underlying, pool"
+     "why": "same pattern: Smart contract logic flaws; terms: underlying, began, pool"
     },
     {
      "id": "c-c5d24106",
@@ -8418,7 +8677,17 @@
      "why": "same pattern: Smart contract logic flaws; terms: portions"
     }
    ],
-   "precedents": [],
+   "precedents": [
+    {
+     "name": "Sovryn",
+     "date": "2022-10-04",
+     "amount": 1100000,
+     "technique": "Reentrancy",
+     "classification": "Reentrancy",
+     "score": 0.14,
+     "why": "sovryn, pool"
+    }
+   ],
    "cluster": "cl-c78a07"
   },
   "c-6028ac8d": {
@@ -11071,6 +11340,82 @@
     ]
    }
   },
+  "x-77fc8232": {
+   "patterns": [
+    "data-exposure"
+   ],
+   "related": [
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.34,
+     "why": "same pattern: Data exposure and theft; terms: education, records"
+    },
+    {
+     "id": "n-df29d71a",
+     "kind": "news",
+     "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+     "date": "2026-11-19T22:25:42Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: people"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: records"
+    },
+    {
+     "id": "n-2ff5d2ac",
+     "kind": "news",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+     "date": "2026-11-19T17:16:31Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft"
+    },
+    {
+     "id": "n-19771688",
+     "kind": "news",
+     "title": "Transport for London breach exposes 265,000 Oyster card users' data",
+     "date": "2026-11-19T18:20:01Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft"
+    }
+   ],
+   "analysis": {
+    "summary": "VECERT Analyzer relayed an unverified claim that more than 10 GB of records and photographs are linked to Chile's EDUTEC education platform. CiberLATAM tracked the same claim, but that coverage does not independently establish the data's origin, authenticity or scope.",
+    "attack_chain": [
+     "Access and extraction: not established.",
+     "VECERT Analyzer reported a forum claim that the data had been obtained."
+    ],
+    "open_questions": [
+     "Are the records authentic and attributable to EDUTEC?",
+     "Was there unauthorized access, and how many people, if any, were affected?"
+    ],
+    "mitigations": [
+     "Preserve access and export logs while investigating the claim.",
+     "Review who can access student records and photographs, and restrict bulk exports to authorized staff.",
+     "Prepare guidance for schools and families if exposure is verified."
+    ],
+    "sources": [
+     {
+      "label": "VECERT Analyzer alert",
+      "url": "https://x.com/VECERTRadar/status/2123570233503879373"
+     },
+     {
+      "label": "CiberLATAM Radar",
+      "url": "https://ciberlatam.com/en/pulse"
+     }
+    ],
+    "patterns": [
+     "data-exposure"
+    ]
+   }
+  },
   "x-7b9a9595": {
    "patterns": [
     "outage"
@@ -11091,6 +11436,14 @@
      "date": "2026-11-20T18:44:27Z",
      "score": 0.33,
      "why": "same pattern: Disruption and outages; terms: offline"
+    },
+    {
+     "id": "n-f0b8696c",
+     "kind": "news",
+     "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+     "date": "2026-11-20T21:34:36Z",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
     }
    ],
    "cluster": "cl-28f79e",
@@ -11123,6 +11476,66 @@
     ],
     "patterns": [
      "outage"
+    ]
+   }
+  },
+  "x-41c84c0c": {
+   "patterns": [
+    "supply-chain",
+    "data-exposure"
+   ],
+   "related": [
+    {
+     "id": "n-bbc19bb6",
+     "kind": "news",
+     "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+     "date": "2026-11-20T15:58:06Z",
+     "score": 0.61,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: chase, visa, mastercard"
+    },
+    {
+     "id": "n-2ff5d2ac",
+     "kind": "news",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+     "date": "2026-11-19T17:16:31Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft; terms: visa, mastercard, chase"
+    },
+    {
+     "id": "c-2336d4da",
+     "kind": "crypto",
+     "title": "Cr\u00e9dit Mutuel Ark\u00e9a",
+     "date": "2026-11-01",
+     "score": 0.23,
+     "why": "same pattern: Supply chain and third parties; terms: provider, customer, own"
+    }
+   ],
+   "cluster": "cl-d2acde",
+   "analysis": {
+    "summary": "Chase said attackers accessed certain vendor-held marketing data, which may include customer names and email addresses. Mastercard confirmed limited email exposure in a cardholder benefit program, and Visa said a provider in Asia Pacific was affected but its own systems and payment data were not.",
+    "attack_chain": [
+     "Initial access: not disclosed.",
+     "The companies reported incidents involving third-party service providers; whether the providers or intrusions overlap is unconfirmed.",
+     "Chase reported access to vendor-held marketing data, and Mastercard reported exposure of some cardholder email addresses."
+    ],
+    "open_questions": [
+     "Which providers and systems were affected?",
+     "How many unique people were affected, and what data was exposed in each case?"
+    ],
+    "mitigations": [
+     "Limit how much personal information vendors retain and review their access regularly.",
+     "Ask vendors to preserve relevant logs and report bulk exports or unusual access promptly.",
+     "Warn affected customers about phishing and direct them to verified support channels."
+    ],
+    "sources": [
+     {
+      "label": "BleepingComputer reporting with company statements",
+      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
+     }
+    ],
+    "patterns": [
+     "supply-chain",
+     "data-exposure"
     ]
    }
   },
@@ -11221,12 +11634,20 @@
      "why": "same pattern: Data exposure and theft; terms: numbers, phone, email"
     },
     {
+     "id": "x-77fc8232",
+     "kind": "x",
+     "title": "Alleged EDUTEC Chile data exposure",
+     "date": "2026-11-20T00:12:52Z",
+     "score": 0.34,
+     "why": "same pattern: Data exposure and theft; terms: education, records"
+    },
+    {
      "id": "b-0dbbdbf6",
      "kind": "breach",
      "title": "Harvard",
      "date": "2026-11-03T07:24:50Z",
      "score": 0.33,
-     "why": "same pattern: Data exposure and theft; terms: names, email, genders"
+     "why": "same pattern: Data exposure and theft; terms: names, genders, email"
     },
     {
      "id": "n-19771688",
@@ -11235,14 +11656,6 @@
      "date": "2026-11-19T18:20:01Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: breach, exposed"
-    },
-    {
-     "id": "n-2ff5d2ac",
-     "kind": "news",
-     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
-     "date": "2026-11-19T17:16:31Z",
-     "score": 0.32,
-     "why": "same pattern: Data exposure and theft; terms: numbers"
     }
    ],
    "analysis": {
@@ -11312,20 +11725,20 @@
    ],
    "related": [
     {
-     "id": "b-df45f4d8",
-     "kind": "breach",
-     "title": "CastleRAT",
-     "date": "2026-11-13T05:41:32Z",
-     "score": 0.33,
-     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, passwords, addresses"
-    },
-    {
      "id": "b-8a5ec5e1",
      "kind": "breach",
      "title": "\u0421\u0431\u0435\u0440\u0421\u043f\u0430\u0441\u0438\u0431\u043e (SberSpasibo)",
      "date": "2026-11-11T01:44:58Z",
      "score": 0.33,
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: email, addresses, unsalted"
+    },
+    {
+     "id": "b-df45f4d8",
+     "kind": "breach",
+     "title": "CastleRAT",
+     "date": "2026-11-13T05:41:32Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, Key and credential compromise; terms: email, passwords, addresses"
     },
     {
      "id": "b-8e8da935",
@@ -11413,7 +11826,7 @@
      "title": "Careers360",
      "date": "2026-11-20T03:44:54Z",
      "score": 0.33,
-     "why": "same pattern: Data exposure and theft; terms: names, email, genders"
+     "why": "same pattern: Data exposure and theft; terms: names, genders, email"
     },
     {
      "id": "b-cc049559",
@@ -11668,6 +12081,34 @@
    "cohesion": 0.62
   },
   {
+   "id": "cl-d2acde",
+   "size": 2,
+   "members": [
+    "n-bbc19bb6",
+    "x-41c84c0c"
+   ],
+   "titles": [
+    "Vendor data breach exposes Chase, Visa, Mastercard customer info",
+    "Vendor data breach exposes Chase, Visa, Mastercard customer info"
+   ],
+   "patterns": [
+    "supply-chain",
+    "data-exposure"
+   ],
+   "terms": [
+    "chase",
+    "visa",
+    "mastercard",
+    "marketing"
+   ],
+   "kinds": {
+    "news": 1,
+    "x": 1
+   },
+   "latest": "2026-11-20T15:58:06Z",
+   "cohesion": 0.61
+  },
+  {
    "id": "cl-e07830",
    "size": 2,
    "members": [
@@ -11806,11 +12247,23 @@
    "news": 5,
    "crypto": 12,
    "kev": 0,
-   "x": 0,
+   "x": 1,
    "breach": 0,
    "usd": 6507475217.0,
-   "total": 17,
-   "recent7": 8
+   "total": 18,
+   "recent7": 9
+  },
+  {
+   "id": "data-exposure",
+   "label": "Data exposure and theft",
+   "news": 6,
+   "crypto": 0,
+   "kev": 0,
+   "x": 1,
+   "breach": 7,
+   "usd": 0,
+   "total": 14,
+   "recent7": 9
   },
   {
    "id": "injection-rce",
@@ -11823,18 +12276,6 @@
    "usd": 0,
    "total": 14,
    "recent7": 7
-  },
-  {
-   "id": "data-exposure",
-   "label": "Data exposure and theft",
-   "news": 6,
-   "crypto": 0,
-   "kev": 0,
-   "x": 0,
-   "breach": 7,
-   "usd": 0,
-   "total": 13,
-   "recent7": 8
   },
   {
    "id": "enterprise-platform",
@@ -11885,6 +12326,18 @@
    "recent7": 0
   },
   {
+   "id": "outage",
+   "label": "Disruption and outages",
+   "news": 2,
+   "crypto": 1,
+   "kev": 0,
+   "x": 1,
+   "breach": 0,
+   "usd": 0,
+   "total": 4,
+   "recent7": 4
+  },
+  {
    "id": "bridge",
    "label": "Bridges and cross-chain",
    "news": 0,
@@ -11895,18 +12348,6 @@
    "usd": 2442100.0,
    "total": 4,
    "recent7": 1
-  },
-  {
-   "id": "outage",
-   "label": "Disruption and outages",
-   "news": 1,
-   "crypto": 1,
-   "kev": 0,
-   "x": 1,
-   "breach": 0,
-   "usd": 0,
-   "total": 3,
-   "recent7": 3
   },
   {
    "id": "ai",

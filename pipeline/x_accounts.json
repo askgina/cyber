@@ -12,5 +12,5 @@
  "TheHackersNews": "media", "DefiantNews": "media", "TheBlock__": "media", "TheBlockCo": "media", "CoinDesk": "media", "Cointelegraph": "media",
  "WuBlockchain": "media", "crypto_banter": "media", "CryptoTimes_io": "media", "rektnews": "media", "decryptmedia": "media",
  "DailyDarkWeb": "aggregator", "HackManac": "aggregator", "FalconFeedsio": "aggregator", "DarkWebInformer": "aggregator",
- "XBToshi": "aggregator"
+ "XBToshi": "aggregator", "VECERTRadar": "security", "NewsHour": "media", "TimesNow": "media"
 }
