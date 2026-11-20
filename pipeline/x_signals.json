@@ -53,7 +53,11 @@
    {"url": "https://x.com/rohanpaul_ai/status/2123591143606878688", "role": "unknown", "stance": "report", "evidence": "none", "note": "Distinguishes vendor compromises from the companies' own systems."},
    {"url": "https://x.com/TimesNow/status/2123604913381073038", "role": "media", "stance": "report", "evidence": "none", "note": "Reports customer data exposure at vendors and says payment details were not exposed."},
    {"url": "https://x.com/BleepinComputer/status/2123808174767485321", "role": "media", "stance": "report", "evidence": "link", "note": "Links reporting that quotes all three companies about third-party exposure."},
-   {"url": "https://x.com/NewsHour/status/2123827008530424277", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Chase's statement that vendor-held marketing data was accessed."}
+   {"url": "https://x.com/NewsHour/status/2123827008530424277", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Chase's statement that vendor-held marketing data was accessed."},
+   {"url": "https://x.com/The_Cyber_News/status/2123661435154936175", "role": "media", "stance": "report", "evidence": "link", "note": "Reports customer data exposure tied to outside service providers."},
+   {"url": "https://x.com/TheDailyJagran/status/2123649234821939625", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Chase may notify customers whose marketing information was exposed."},
+   {"url": "https://x.com/Newsforce/status/2123452946520162545", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Relays reports of limited customer information exposure and no payment data."},
+   {"url": "https://x.com/RedWavePress/status/2123517207028396295", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Cites Fox News reporting and distinguishes the breach from earlier outages."}
   ],
   "postmortem": null,
   "links": [{"label": "BleepingComputer reporting with company statements", "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"}]
@@ -66,9 +70,65 @@
   "claim": "VECERT Analyzer flagged a claim that over 10 GB of data attributed to Chilean education platform EDUTEC includes student and teacher records and photographs. The authenticity, source and number of people affected are unverified.",
   "amount_usd_claimed": null,
   "posts": [
-   {"url": "https://x.com/VECERTRadar/status/2123570233503879373", "role": "security", "stance": "report", "evidence": "none", "note": "Flags an unverified claim of more than 10 GB of education records and photos."}
+   {"url": "https://x.com/VECERTRadar/status/2123570233503879373", "role": "security", "stance": "report", "evidence": "none", "note": "Flags an unverified claim of more than 10 GB of education records and photos."},
+   {"url": "https://x.com/JzConstant/status/2123577538597331162", "role": "unknown", "stance": "report", "evidence": "none", "note": "Repeats VECERT's allegation without offering independent evidence."}
   ],
   "postmortem": null,
   "links": [{"label": "CiberLATAM Radar", "url": "https://ciberlatam.com/en/pulse"}]
+ },
+ {
+  "project": "Binance CEX", "subject": "Binance CEX: October theft recovery", "aliases": ["Binance", "Binance October 29 theft"], "category": "crypto",
+  "claim": "Blockchain monitors reported new movements of assets tied to Binance’s October 29 theft, which the exchange put at roughly $6.3 billion. Binance also obtained court orders to support recovery; neither the transfers nor the freezing order represents a new loss or an amount recovered.",
+  "amount_usd_claimed": 6300000000,
+  "posts": [
+   {"url": "https://x.com/whale_alert/status/2123691969163514186", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Flags a transfer attributed to assets stolen in October."},
+   {"url": "https://x.com/OnchainLens/status/2123705781673726431", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Tracks new movements of funds associated with the October theft."},
+   {"url": "https://x.com/PeckShieldAlert/status/2123712551410380833", "role": "security", "stance": "update", "evidence": "onchain", "note": "Reports redistribution of funds from an address labeled as connected to the theft."},
+   {"url": "https://x.com/Lookonchain/status/2123315988565471543", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Tracks an earlier movement of ether attributed to the theft."},
+   {"url": "https://x.com/WuBlockchain/status/2123709212010434813", "role": "media", "stance": "update", "evidence": "none", "note": "Summarizes Onchain Lens reporting on movements over two days."},
+   {"url": "https://x.com/TheNationalNews/status/2123290669141602578", "role": "media", "stance": "update", "evidence": "link", "note": "Quotes Binance on obtaining court orders to support asset recovery."},
+   {"url": "https://x.com/khaleejtimes/status/2123566994901307846", "role": "media", "stance": "update", "evidence": "link", "note": "Reports the Abu Dhabi court’s worldwide freezing order."},
+   {"url": "https://x.com/Cointelegraph/status/2123657722994282813", "role": "media", "stance": "update", "evidence": "link", "note": "Reports the freezing order concerns crypto stolen in October."},
+   {"url": "https://x.com/business/status/2123208419934912976", "role": "media", "stance": "update", "evidence": "link", "note": "Reports Binance obtained a $6.5 billion freezing order."}
+  ],
+  "postmortem": null,
+  "links": [{"label": "The National: Binance court orders", "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"}]
+ },
+ {
+  "project": "Trubank and unnamed hosting provider", "subject": "Alleged hosting intrusion and Trubank exposure", "aliases": ["Trubank"], "category": "breach",
+  "claim": "VECERT Analyzer relayed an unverified claim of access to 1,331 databases at an unnamed multi-tenant hosting provider and to a system attributed to Trubank. The provider’s identity, any unauthorized access, and the number of people affected have not been established.",
+  "amount_usd_claimed": null,
+  "posts": [{"url": "https://x.com/VECERTRadar/status/2123804741662625896", "role": "security", "stance": "report", "evidence": "none", "note": "Summarizes an unverified claim involving an unnamed hosting provider and a system attributed to Trubank."}],
+  "postmortem": null,
+  "links": []
+ },
+ {
+  "project": "Coinbase India", "subject": "Coinbase India INR withdrawal outage", "aliases": ["Coinbase India", "Coinbase INR"], "category": "outage",
+  "claim": "Coinbase India said its banking partner’s outage continued to block in-app rupee withdrawals, while support handled withdrawal requests and batches of payouts continued. Coinbase said funds remained safe; no breach or theft has been substantiated.",
+  "amount_usd_claimed": null,
+  "posts": [
+   {"url": "https://x.com/CoinbaseIndia/status/2121445515946807609", "role": "official", "stance": "confirm", "evidence": "none", "note": "Confirms rupee withdrawals are unavailable due to an outage at a banking partner."},
+   {"url": "https://x.com/CoinbaseIndia/status/2123677401175478677", "role": "official", "stance": "update", "evidence": "none", "note": "Says batch payouts continue and new withdrawal requests can go through support."},
+   {"url": "https://x.com/CryptooIndia/status/2123679626115596466", "role": "media", "stance": "report", "evidence": "none", "note": "Relays Coinbase’s update on in-app withdrawals and support."},
+   {"url": "https://x.com/DefiantNews/status/2123699619666489788", "role": "media", "stance": "report", "evidence": "link", "note": "Reports Coinbase India is handling rupee withdrawal requests through customer support."},
+   {"url": "https://x.com/CNBCTV18Live/status/2121789067931296045", "role": "media", "stance": "report", "evidence": "link", "note": "Reports Coinbase India suspended in-app rupee withdrawals following a banking partner outage."},
+   {"url": "https://x.com/CryptoTimes_io/status/2122737671487492473", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Coinbase began processing previously failed withdrawals in batches."}
+  ],
+  "postmortem": null,
+  "links": []
+ },
+ {
+  "project": "K3 Capital", "subject": "K3 Capital", "aliases": ["K3 Capital", "sBOLD", "sBOLD Vault"], "category": "crypto",
+  "claim": "K3 Capital’s post-mortem attributes the November 18 sBOLD vault drain of about 3.43 million BOLD to a flaw in the vault’s handling of collateral swaps. The vault was paused, and K3 says it is pursuing partial recovery; losses were confined to sBOLD rather than Liquity V2.",
+  "amount_usd_claimed": 3420000,
+  "posts": [
+   {"url": "https://x.com/k3_capital/status/2123395654214967426", "role": "official", "stance": "postmortem", "evidence": "none", "note": "Attributes the drain to the vault’s swap workflow and outlines a recovery effort."},
+   {"url": "https://x.com/LiquityProtocol/status/2123408020579496280", "role": "unknown", "stance": "update", "evidence": "link", "note": "Says Liquity V2 and BOLD were unaffected and points to K3’s report."},
+   {"url": "https://x.com/tracefast_xyz/status/2123417830997557736", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Reports tracing subsequent funds movements associated with the vault drain."},
+   {"url": "https://x.com/3liXBT/status/2123430399846346919", "role": "unknown", "stance": "report", "evidence": "none", "note": "Comments on the elapsed time between the drain and the vault pause."},
+   {"url": "https://x.com/DefiantNews/status/2123401909625290952", "role": "media", "stance": "report", "evidence": "link", "note": "Reports the vault lost almost all its assets while Liquity V2 remained unaffected."}
+  ],
+  "postmortem": {"url": "https://x.com/k3_capital/status/2123395654214967426", "label": "K3 Capital post-mortem and recovery plan", "date": "2026-11-19T12:39:09Z"},
+  "links": []
  }
 ]

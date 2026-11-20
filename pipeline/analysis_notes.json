@@ -1,4 +1,44 @@
 {
+ "Binance CEX": {
+  "summary": "Binance reported roughly $6.3 billion stolen in the October 29 incident. It obtained court orders to help recover assets, and blockchain monitors reported additional movements of funds attributed to the theft; these are developments in the original case, not a new loss.",
+  "attack_chain": ["Binance said the intrusion began with social engineering that compromised an engineer’s device.", "Binance said a compromised internal tool was involved in unauthorized access to wallet systems.", "Funds were taken in October; the exchange reported that some assets were frozen or intercepted and is pursuing recovery."],
+  "open_questions": ["How much has been returned, rather than frozen or tracked?", "Which residual controls and assets remain subject to the investigation?"],
+  "mitigations": ["Isolate wallet signing from employee devices and general-purpose internal tools.", "Require independently verified approvals for large transfers and monitor changes to privileged access.", "Keep recovery communications and coordination procedures ready with custodians and issuers."],
+  "sources": [{"label": "The National reporting on the theft and court orders", "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"}, {"label": "Onchain Lens follow-up", "url": "https://x.com/OnchainLens/status/2123705781673726431"}],
+  "patterns": ["phishing", "key-compromise", "state-linked"]
+ },
+ "Binance CEX: October theft recovery": {
+  "summary": "Binance reported roughly $6.3 billion stolen in the October 29 incident. It obtained court orders to help recover assets, and blockchain monitors reported additional movements of funds attributed to the theft; these are developments in the original case, not a new loss.",
+  "attack_chain": ["Binance said the intrusion began with social engineering that compromised an engineer’s device.", "Binance said a compromised internal tool was involved in unauthorized access to wallet systems.", "Funds were taken in October; the exchange reported that some assets were frozen or intercepted and is pursuing recovery."],
+  "open_questions": ["How much has been returned, rather than frozen or tracked?", "Which residual controls and assets remain subject to the investigation?"],
+  "mitigations": ["Isolate wallet signing from employee devices and general-purpose internal tools.", "Require independently verified approvals for large transfers and monitor changes to privileged access.", "Keep recovery communications and coordination procedures ready with custodians and issuers."],
+  "sources": [{"label": "The National reporting on the theft and court orders", "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"}, {"label": "Onchain Lens follow-up", "url": "https://x.com/OnchainLens/status/2123705781673726431"}],
+  "patterns": ["phishing", "key-compromise", "state-linked"]
+ },
+ "K3 Capital": {
+  "summary": "K3 Capital said roughly 3.43 million BOLD drained from its sBOLD vault on November 18 and traced the loss to the vault’s handling of collateral swaps. The project paused the vault and began pursuing partial recovery; it said Liquity V2 was not affected.",
+  "attack_chain": ["K3 identified a flaw in how the vault verified swaps and cleared token permissions.", "The flawed workflow was abused to draw assets from the vault.", "K3 paused the vault after nearly all its assets had been drained."],
+  "open_questions": ["How much will be returned to depositors?", "What controls will be audited before the vault is used again?"],
+  "mitigations": ["Verify swap results against observed asset balances and clear unused approvals.", "Test with adversarial token and router behavior; add invariant tests for assets and shares.", "Set abnormal outflow alerts and rehearse pausing affected vault operations."],
+  "sources": [{"label": "K3 Capital post-mortem", "url": "https://x.com/k3_capital/status/2123395654214967426"}],
+  "patterns": ["contract-logic"]
+ },
+ "Alleged hosting intrusion and Trubank exposure": {
+  "summary": "VECERT Analyzer relayed a claim that a multi-tenant hosting environment and a system attributed to Trubank were accessed. The claim that 1,331 databases were affected is unverified; neither the hosting provider nor the number of people affected is established.",
+  "attack_chain": ["Initial access: unverified.", "An outside party claimed unauthorized access to hosted databases and a system attributed to Trubank.", "No extraction or exposure has been independently established."],
+  "open_questions": ["Can the host or affected tenants verify any unauthorized access?", "Do the alleged records originate from the systems named in the claim?"],
+  "mitigations": ["Preserve relevant hosting and database logs for investigation.", "Audit public exposure of sensitive configuration and rotate any credentials found to be exposed.", "Check tenant isolation and alert on unusual cross-tenant access or bulk exports."],
+  "sources": [{"label": "VECERT Analyzer alert", "url": "https://x.com/VECERTRadar/status/2123804741662625896"}],
+  "patterns": ["data-exposure"]
+ },
+ "Coinbase India INR withdrawal outage": {
+  "summary": "Coinbase India attributed unavailable in-app rupee withdrawals to an outage at its banking partner and said payouts were being processed in batches. Coinbase said its customers’ funds remained safe; the service disruption does not establish a breach or theft.",
+  "attack_chain": ["No attack has been substantiated.", "Coinbase attributed the loss of in-app withdrawals to a partner payout outage.", "Coinbase moved withdrawals to batch processing and routed new requests through support."],
+  "open_questions": ["When will in-app withdrawals return?", "What caused the partner payout outage and how many users experienced delays?"],
+  "mitigations": ["Monitor payout-provider health and reconcile retries against bank confirmations.", "Test failover and duplicate-payment protection before rerouting payouts.", "Publish status and support guidance through verified channels to reduce impersonation risk."],
+  "sources": [{"label": "Coinbase India official update", "url": "https://x.com/CoinbaseIndia/status/2123677401175478677"}, {"label": "Coinbase India statement on funds", "url": "https://x.com/CoinbaseIndia/status/2122731372163006536"}],
+  "patterns": ["outage"]
+ },
  "Vendor data breach exposes Chase, Visa, Mastercard customer info": {
   "summary": "Chase said attackers accessed certain vendor-held marketing data, which may include customer names and email addresses. Mastercard confirmed limited email exposure in a cardholder benefit program, and Visa said a provider in Asia Pacific was affected but its own systems and payment data were not.",
   "attack_chain": ["Initial access: not disclosed.", "The companies reported incidents involving third-party service providers; whether the providers or intrusions overlap is unconfirmed.", "Chase reported access to vendor-held marketing data, and Mastercard reported exposure of some cardholder email addresses."],

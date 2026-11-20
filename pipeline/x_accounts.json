@@ -12,5 +12,7 @@
  "TheHackersNews": "media", "DefiantNews": "media", "TheBlock__": "media", "TheBlockCo": "media", "CoinDesk": "media", "Cointelegraph": "media",
  "WuBlockchain": "media", "crypto_banter": "media", "CryptoTimes_io": "media", "rektnews": "media", "decryptmedia": "media",
  "DailyDarkWeb": "aggregator", "HackManac": "aggregator", "FalconFeedsio": "aggregator", "DarkWebInformer": "aggregator",
- "XBToshi": "aggregator", "VECERTRadar": "security", "NewsHour": "media", "TimesNow": "media"
+ "XBToshi": "aggregator", "VECERTRadar": "security", "NewsHour": "media", "TimesNow": "media",
+ "whale_alert": "investigator", "business": "media", "TheNationalNews": "media", "khaleejtimes": "media",
+ "CNBCTV18Live": "media", "TheDailyJagran": "media", "The_Cyber_News": "media"
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T22:24:27Z",
+ "generated": "2026-11-20T23:24:40Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -1194,9 +1194,9 @@
   ]
  },
  "ransomware": {
-  "count_24h": 19,
-  "count_7d": 377,
-  "count_30d": 1255,
+  "count_24h": 20,
+  "count_7d": 376,
+  "count_30d": 1253,
   "groups_7d": [
    [
     "N0n",
@@ -1241,12 +1241,12 @@
     55
    ],
    [
-    "Technology",
+    "Professional Services",
     38
    ],
    [
-    "Professional Services",
-    37
+    "Technology",
+    38
    ],
    [
     "Retail & E-Commerce",
@@ -1258,7 +1258,7 @@
    ],
    [
     "Other",
-    21
+    20
    ],
    [
     "Energy & Utilities",
@@ -1268,7 +1268,7 @@
   "countries_7d": [
    [
     "US",
-    184
+    183
    ],
    [
     "CA",
@@ -1280,7 +1280,7 @@
    ],
    [
     "DE",
-    10
+    11
    ],
    [
     "IN",
@@ -1300,6 +1300,15 @@
    ]
   ],
   "items_24h": [
+   {
+    "date": "2026-11-20T18:47:53Z",
+    "victim": "Calvatis GmbH",
+    "group": "aurora",
+    "sector": "Professional Services",
+    "country": "DE",
+    "url": "https://www.ransomware.live/id/Q2FsdmF0aXMgR21iSEBhdXJvcmE=",
+    "desc": "[manufacturer] Calvatis GmbH \u2014 a Ladenburg, Germany-based chemical manufacturer operating since the mid-20th century, specializing in industrial cleaning and disinfection products for the food & bever"
+   },
    {
     "date": "2026-11-20T18:10:29Z",
     "victim": "Jones Walker",
@@ -1592,7 +1601,7 @@
    ],
    [
     "2026-11-20",
-    19
+    20
    ]
   ]
  },
@@ -3999,6 +4008,54 @@
  ],
  "x": [
   {
+   "project": "Trubank and unnamed hosting provider",
+   "subject": "Alleged hosting intrusion and Trubank exposure",
+   "aliases": [
+    "Trubank"
+   ],
+   "category": "breach",
+   "claim": "VECERT Analyzer relayed an unverified claim of access to 1,331 databases at an unnamed multi-tenant hosting provider and to a system attributed to Trubank. The provider\u2019s identity, any unauthorized access, and the number of people affected have not been established.",
+   "amount_usd_claimed": null,
+   "posts": [
+    {
+     "date": "2026-11-20T15:44:43Z",
+     "handle": "VECERTRadar",
+     "role": "security",
+     "w": 0.7,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/VECERTRadar/status/2123804741662625896",
+     "note": "Summarizes an unverified claim involving an unnamed hosting provider and a system attributed to Trubank."
+    }
+   ],
+   "postmortem": null,
+   "links": [],
+   "first": "2026-11-20T15:44:43Z",
+   "date": "2026-11-20T15:44:43Z",
+   "outcome": null,
+   "score": 70,
+   "stage": "Corroborated",
+   "accounts": 1,
+   "credible": 1,
+   "official": false,
+   "history": [
+    {
+     "t": "2026-11-20T15:44:43Z",
+     "stage": "Corroborated",
+     "by": "@VECERTRadar",
+     "url": "https://x.com/VECERTRadar/status/2123804741662625896",
+     "eid": null
+    }
+   ],
+   "matches": [],
+   "press": [],
+   "hours_to_confirm": null,
+   "press_lead_h": null,
+   "stale": false,
+   "age_h": 7.7,
+   "eid": "x-d0056ba9"
+  },
+  {
    "project": "Wagyu (XMR1)",
    "subject": "Wagyu XMR1",
    "aliases": [
@@ -4216,7 +4273,7 @@
    "hours_to_confirm": 5.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 16.5,
+   "age_h": 17.5,
    "eid": "x-37d402a7"
   },
   {
@@ -4239,6 +4296,16 @@
      "evidence": "none",
      "url": "https://x.com/VECERTRadar/status/2123570233503879373",
      "note": "Flags an unverified claim of more than 10 GB of education records and photos."
+    },
+    {
+     "date": "2026-11-20T00:41:54Z",
+     "handle": "JzConstant",
+     "role": "unknown",
+     "w": 0.08,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/JzConstant/status/2123577538597331162",
+     "note": "Repeats VECERT's allegation without offering independent evidence."
     }
    ],
    "postmortem": null,
@@ -4251,9 +4318,9 @@
    "first": "2026-11-20T00:12:52Z",
    "date": "2026-11-20T00:12:52Z",
    "outcome": null,
-   "score": 70,
+   "score": 72,
    "stage": "Corroborated",
-   "accounts": 1,
+   "accounts": 2,
    "credible": 1,
    "official": false,
    "history": [
@@ -4270,7 +4337,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 22.2,
+   "age_h": 23.2,
    "eid": "x-77fc8232"
   },
   {
@@ -4383,7 +4450,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 28.1,
+   "age_h": 29.1,
    "eid": "x-7b9a9595"
   },
   {
@@ -4398,6 +4465,16 @@
    "claim": "Chase said attackers accessed marketing data held by vendors, and Mastercard confirmed limited email exposure in one benefit program. Visa said a provider in Asia Pacific was affected but its own systems and payment data were not; the providers and total number of people affected have not been confirmed.",
    "amount_usd_claimed": null,
    "posts": [
+    {
+     "date": "2026-11-19T16:26:48Z",
+     "handle": "Newsforce",
+     "role": "aggregator",
+     "w": 0.2,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/Newsforce/status/2123452946520162545",
+     "note": "Relays reports of limited customer information exposure and no payment data."
+    },
     {
      "date": "2026-11-19T16:32:51Z",
      "handle": "SpecialSitsNews",
@@ -4419,6 +4496,16 @@
      "note": "Relays an extortion group's claim that it published customer records."
     },
     {
+     "date": "2026-11-19T20:42:09Z",
+     "handle": "RedWavePress",
+     "role": "aggregator",
+     "w": 0.2,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/RedWavePress/status/2123517207028396295",
+     "note": "Cites Fox News reporting and distinguishes the breach from earlier outages."
+    },
+    {
      "date": "2026-11-20T01:35:57Z",
      "handle": "rohanpaul_ai",
      "role": "unknown",
@@ -4437,6 +4524,26 @@
      "evidence": "none",
      "url": "https://x.com/TimesNow/status/2123604913381073038",
      "note": "Reports customer data exposure at vendors and says payment details were not exposed."
+    },
+    {
+     "date": "2026-11-20T05:26:47Z",
+     "handle": "TheDailyJagran",
+     "role": "media",
+     "w": 0.4,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/TheDailyJagran/status/2123649234821939625",
+     "note": "Reports Chase may notify customers whose marketing information was exposed."
+    },
+    {
+     "date": "2026-11-20T06:15:16Z",
+     "handle": "The_Cyber_News",
+     "role": "media",
+     "w": 0.46,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/The_Cyber_News/status/2123661435154936175",
+     "note": "Reports customer data exposure tied to outside service providers."
     },
     {
      "date": "2026-11-20T15:58:21Z",
@@ -4466,34 +4573,34 @@
      "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
     }
    ],
-   "first": "2026-11-19T16:32:51Z",
-   "date": "2026-11-19T16:32:51Z",
+   "first": "2026-11-19T16:26:48Z",
+   "date": "2026-11-19T16:26:48Z",
    "outcome": null,
-   "score": 87,
+   "score": 97,
    "stage": "Corroborated",
-   "accounts": 6,
+   "accounts": 10,
    "credible": 0,
    "official": false,
    "history": [
     {
-     "t": "2026-11-19T16:32:51Z",
+     "t": "2026-11-19T16:26:48Z",
      "stage": "Rumour",
+     "by": "@Newsforce",
+     "url": "https://x.com/Newsforce/status/2123452946520162545",
+     "eid": null
+    },
+    {
+     "t": "2026-11-19T16:32:51Z",
+     "stage": "Claimed",
      "by": "@SpecialSitsNews",
      "url": "https://x.com/SpecialSitsNews/status/2123454468079632585",
      "eid": null
     },
     {
-     "t": "2026-11-20T01:35:57Z",
-     "stage": "Claimed",
-     "by": "@rohanpaul_ai",
-     "url": "https://x.com/rohanpaul_ai/status/2123591143606878688",
-     "eid": null
-    },
-    {
-     "t": "2026-11-20T15:58:21Z",
+     "t": "2026-11-20T02:30:40Z",
      "stage": "Corroborated",
-     "by": "@BleepinComputer",
-     "url": "https://x.com/BleepinComputer/status/2123808174767485321",
+     "by": "@TimesNow",
+     "url": "https://x.com/TimesNow/status/2123604913381073038",
      "eid": null
     }
    ],
@@ -4513,10 +4620,363 @@
     }
    ],
    "hours_to_confirm": null,
-   "press_lead_h": 0.7,
+   "press_lead_h": 0.8,
    "stale": false,
-   "age_h": 29.9,
+   "age_h": 31.0,
    "eid": "x-41c84c0c"
+  },
+  {
+   "project": "K3 Capital",
+   "subject": "K3 Capital",
+   "aliases": [
+    "K3 Capital",
+    "sBOLD",
+    "sBOLD Vault"
+   ],
+   "category": "crypto",
+   "claim": "K3 Capital\u2019s post-mortem attributes the November 18 sBOLD vault drain of about 3.43 million BOLD to a flaw in the vault\u2019s handling of collateral swaps. The vault was paused, and K3 says it is pursuing partial recovery; losses were confined to sBOLD rather than Liquity V2.",
+   "amount_usd_claimed": 3420000,
+   "posts": [
+    {
+     "date": "2026-11-19T12:39:09Z",
+     "handle": "k3_capital",
+     "role": "official",
+     "w": 1.0,
+     "stance": "postmortem",
+     "evidence": "none",
+     "url": "https://x.com/k3_capital/status/2123395654214967426",
+     "note": "Attributes the drain to the vault\u2019s swap workflow and outlines a recovery effort."
+    },
+    {
+     "date": "2026-11-19T13:04:00Z",
+     "handle": "DefiantNews",
+     "role": "media",
+     "w": 0.46,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/DefiantNews/status/2123401909625290952",
+     "note": "Reports the vault lost almost all its assets while Liquity V2 remained unaffected."
+    },
+    {
+     "date": "2026-11-19T13:28:17Z",
+     "handle": "LiquityProtocol",
+     "role": "unknown",
+     "w": 0.09,
+     "stance": "update",
+     "evidence": "link",
+     "url": "https://x.com/LiquityProtocol/status/2123408020579496280",
+     "note": "Says Liquity V2 and BOLD were unaffected and points to K3\u2019s report."
+    },
+    {
+     "date": "2026-11-19T14:07:16Z",
+     "handle": "tracefast_xyz",
+     "role": "investigator",
+     "w": 0.9,
+     "stance": "update",
+     "evidence": "onchain",
+     "url": "https://x.com/tracefast_xyz/status/2123417830997557736",
+     "note": "Reports tracing subsequent funds movements associated with the vault drain."
+    },
+    {
+     "date": "2026-11-19T14:57:13Z",
+     "handle": "3liXBT",
+     "role": "unknown",
+     "w": 0.08,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/3liXBT/status/2123430399846346919",
+     "note": "Comments on the elapsed time between the drain and the vault pause."
+    }
+   ],
+   "postmortem": {
+    "url": "https://x.com/k3_capital/status/2123395654214967426",
+    "label": "K3 Capital post-mortem and recovery plan",
+    "date": "2026-11-19T12:39:09Z"
+   },
+   "links": [],
+   "first": "2026-11-19T12:39:09Z",
+   "date": "2026-11-19T12:39:09Z",
+   "outcome": null,
+   "score": 100,
+   "stage": "Post-mortem",
+   "accounts": 5,
+   "credible": 2,
+   "official": true,
+   "history": [
+    {
+     "t": "2026-11-18T23:59:59Z",
+     "stage": "Confirmed",
+     "by": "DefiLlama",
+     "url": null,
+     "eid": null
+    },
+    {
+     "t": "2026-11-19T12:39:09Z",
+     "stage": "Post-mortem",
+     "by": "@k3_capital",
+     "url": "https://x.com/k3_capital/status/2123395654214967426",
+     "eid": null
+    }
+   ],
+   "matches": [
+    {
+     "kind": "crypto",
+     "eid": "c-a002e12f",
+     "label": "DefiLlama",
+     "date": "2026-11-18T23:59:59Z",
+     "sources": [
+      "DefiLlama",
+      "SlowMist"
+     ],
+     "listed_at": null
+    }
+   ],
+   "press": [],
+   "hours_to_confirm": -12.7,
+   "press_lead_h": null,
+   "stale": false,
+   "age_h": 34.8,
+   "eid": "x-28e9dc79"
+  },
+  {
+   "project": "Binance CEX",
+   "subject": "Binance CEX: October theft recovery",
+   "aliases": [
+    "Binance",
+    "Binance October 29 theft"
+   ],
+   "category": "crypto",
+   "claim": "Blockchain monitors reported new movements of assets tied to Binance\u2019s October 29 theft, which the exchange put at roughly $6.3 billion. Binance also obtained court orders to support recovery; neither the transfers nor the freezing order represents a new loss or an amount recovered.",
+   "amount_usd_claimed": 6300000000,
+   "posts": [
+    {
+     "date": "2026-11-19T00:15:09Z",
+     "handle": "business",
+     "role": "media",
+     "w": 0.46,
+     "stance": "update",
+     "evidence": "link",
+     "url": "https://x.com/business/status/2123208419934912976",
+     "note": "Reports Binance obtained a $6.5 billion freezing order."
+    },
+    {
+     "date": "2026-11-19T05:41:59Z",
+     "handle": "TheNationalNews",
+     "role": "media",
+     "w": 0.46,
+     "stance": "update",
+     "evidence": "link",
+     "url": "https://x.com/TheNationalNews/status/2123290669141602578",
+     "note": "Quotes Binance on obtaining court orders to support asset recovery."
+    },
+    {
+     "date": "2026-11-19T07:22:35Z",
+     "handle": "Lookonchain",
+     "role": "investigator",
+     "w": 0.9,
+     "stance": "update",
+     "evidence": "onchain",
+     "url": "https://x.com/Lookonchain/status/2123315988565471543",
+     "note": "Tracks an earlier movement of ether attributed to the theft."
+    },
+    {
+     "date": "2026-11-20T00:00:00Z",
+     "handle": "khaleejtimes",
+     "role": "media",
+     "w": 0.46,
+     "stance": "update",
+     "evidence": "link",
+     "url": "https://x.com/khaleejtimes/status/2123566994901307846",
+     "note": "Reports the Abu Dhabi court\u2019s worldwide freezing order."
+    },
+    {
+     "date": "2026-11-20T06:00:31Z",
+     "handle": "Cointelegraph",
+     "role": "media",
+     "w": 0.46,
+     "stance": "update",
+     "evidence": "link",
+     "url": "https://x.com/Cointelegraph/status/2123657722994282813",
+     "note": "Reports the freezing order concerns crypto stolen in October."
+    },
+    {
+     "date": "2026-11-20T08:16:36Z",
+     "handle": "whale_alert",
+     "role": "investigator",
+     "w": 0.9,
+     "stance": "update",
+     "evidence": "onchain",
+     "url": "https://x.com/whale_alert/status/2123691969163514186",
+     "note": "Flags a transfer attributed to assets stolen in October."
+    },
+    {
+     "date": "2026-11-20T09:11:29Z",
+     "handle": "OnchainLens",
+     "role": "investigator",
+     "w": 0.9,
+     "stance": "update",
+     "evidence": "onchain",
+     "url": "https://x.com/OnchainLens/status/2123705781673726431",
+     "note": "Tracks new movements of funds associated with the October theft."
+    },
+    {
+     "date": "2026-11-20T09:25:07Z",
+     "handle": "WuBlockchain",
+     "role": "media",
+     "w": 0.4,
+     "stance": "update",
+     "evidence": "none",
+     "url": "https://x.com/WuBlockchain/status/2123709212010434813",
+     "note": "Summarizes Onchain Lens reporting on movements over two days."
+    },
+    {
+     "date": "2026-11-20T09:38:23Z",
+     "handle": "PeckShieldAlert",
+     "role": "security",
+     "w": 0.9,
+     "stance": "update",
+     "evidence": "onchain",
+     "url": "https://x.com/PeckShieldAlert/status/2123712551410380833",
+     "note": "Reports redistribution of funds from an address labeled as connected to the theft."
+    }
+   ],
+   "postmortem": null,
+   "links": [
+    {
+     "label": "The National: Binance court orders",
+     "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"
+    }
+   ],
+   "first": "2026-11-19T00:15:09Z",
+   "date": "2026-11-19T00:15:09Z",
+   "outcome": null,
+   "score": 100,
+   "stage": "Corroborated",
+   "accounts": 9,
+   "credible": 4,
+   "official": false,
+   "history": [
+    {
+     "t": "2026-11-19T00:15:09Z",
+     "stage": "Claimed",
+     "by": "@business",
+     "url": "https://x.com/business/status/2123208419934912976",
+     "eid": null
+    },
+    {
+     "t": "2026-11-19T05:41:59Z",
+     "stage": "Corroborated",
+     "by": "@TheNationalNews",
+     "url": "https://x.com/TheNationalNews/status/2123290669141602578",
+     "eid": null
+    }
+   ],
+   "matches": [],
+   "press": [],
+   "hours_to_confirm": null,
+   "press_lead_h": null,
+   "stale": false,
+   "age_h": 47.2,
+   "eid": "x-6e245351"
+  },
+  {
+   "project": "Coinbase India",
+   "subject": "Coinbase India INR withdrawal outage",
+   "aliases": [
+    "Coinbase India",
+    "Coinbase INR"
+   ],
+   "category": "outage",
+   "claim": "Coinbase India said its banking partner\u2019s outage continued to block in-app rupee withdrawals, while support handled withdrawal requests and batches of payouts continued. Coinbase said funds remained safe; no breach or theft has been substantiated.",
+   "amount_usd_claimed": null,
+   "posts": [
+    {
+     "date": "2026-11-14T03:30:00Z",
+     "handle": "CoinbaseIndia",
+     "role": "official",
+     "w": 1.0,
+     "stance": "confirm",
+     "evidence": "none",
+     "url": "https://x.com/CoinbaseIndia/status/2121445515946807609",
+     "note": "Confirms rupee withdrawals are unavailable due to an outage at a banking partner."
+    },
+    {
+     "date": "2026-11-15T02:15:09Z",
+     "handle": "CNBCTV18Live",
+     "role": "media",
+     "w": 0.46,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/CNBCTV18Live/status/2121789067931296045",
+     "note": "Reports Coinbase India suspended in-app rupee withdrawals following a banking partner outage."
+    },
+    {
+     "date": "2026-11-17T17:04:34Z",
+     "handle": "CryptoTimes_io",
+     "role": "media",
+     "w": 0.4,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/CryptoTimes_io/status/2122737671487492473",
+     "note": "Reports Coinbase began processing previously failed withdrawals in batches."
+    },
+    {
+     "date": "2026-11-20T07:18:43Z",
+     "handle": "CoinbaseIndia",
+     "role": "official",
+     "w": 1.0,
+     "stance": "update",
+     "evidence": "none",
+     "url": "https://x.com/CoinbaseIndia/status/2123677401175478677",
+     "note": "Says batch payouts continue and new withdrawal requests can go through support."
+    },
+    {
+     "date": "2026-11-20T07:27:33Z",
+     "handle": "CryptooIndia",
+     "role": "media",
+     "w": 0.4,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/CryptooIndia/status/2123679626115596466",
+     "note": "Relays Coinbase\u2019s update on in-app withdrawals and support."
+    },
+    {
+     "date": "2026-11-20T08:47:00Z",
+     "handle": "DefiantNews",
+     "role": "media",
+     "w": 0.46,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/DefiantNews/status/2123699619666489788",
+     "note": "Reports Coinbase India is handling rupee withdrawal requests through customer support."
+    }
+   ],
+   "postmortem": null,
+   "links": [],
+   "first": "2026-11-14T03:30:00Z",
+   "date": "2026-11-14T03:30:00Z",
+   "outcome": null,
+   "score": 90,
+   "stage": "Confirmed",
+   "accounts": 5,
+   "credible": 1,
+   "official": true,
+   "history": [
+    {
+     "t": "2026-11-14T03:30:00Z",
+     "stage": "Confirmed",
+     "by": "@CoinbaseIndia",
+     "url": "https://x.com/CoinbaseIndia/status/2121445515946807609",
+     "eid": null
+    }
+   ],
+   "matches": [],
+   "press": [],
+   "hours_to_confirm": 0.0,
+   "press_lead_h": null,
+   "stale": false,
+   "age_h": 163.9,
+   "eid": "x-fbb57da1"
   }
  ],
  "breaches": {
@@ -4746,12 +5206,6 @@
  },
  "hourly": [
   {
-   "t": "2026-11-19T23:00:00Z",
-   "ransomware": 0,
-   "news": 0,
-   "x": 0
-  },
-  {
    "t": "2026-11-20T00:00:00Z",
    "ransomware": 1,
    "news": 1,
@@ -4845,7 +5299,7 @@
    "t": "2026-11-20T15:00:00Z",
    "ransomware": 1,
    "news": 1,
-   "x": 0
+   "x": 1
   },
   {
    "t": "2026-11-20T16:00:00Z",
@@ -4861,7 +5315,7 @@
   },
   {
    "t": "2026-11-20T18:00:00Z",
-   "ransomware": 1,
+   "ransomware": 2,
    "news": 3,
    "x": 0
   },
@@ -4888,11 +5342,17 @@
    "ransomware": 0,
    "news": 0,
    "x": 0
+  },
+  {
+   "t": "2026-11-20T23:00:00Z",
+   "ransomware": 0,
+   "news": 0,
+   "x": 0
   }
  ],
  "brief": {
-  "updated": "2026-11-20T22:23:38Z",
-  "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360 and 724,000 tied to Too Lost, while about $13.5 million in XMR1 sales drove Wagyu\u2019s token down to roughly $1. CISA added exploited flaws in VMware vCenter, SAP NetWeaver and Cisco Expressway, and Bell Canada said enterprise customer data was stolen.",
+  "updated": "2026-11-20T23:22:55Z",
+  "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360 and 724,000 tied to Too Lost, while about $13.5 million in XMR1 sales drove Wagyu\u2019s token down to roughly $1. Blockchain monitors tracked new transfers tied to Binance\u2019s October theft, and Bell Canada disclosed theft of enterprise customer data.",
   "incidents": [
    {
     "org": "Careers360",
@@ -4912,6 +5372,17 @@
      "supply-chain"
     ],
     "eid": "c-9e95d8b0"
+   },
+   {
+    "org": "Binance",
+    "what": "Blockchain monitors reported further movements of assets tied to Binance\u2019s October theft, not a new theft.",
+    "scale": "$6.3B original theft",
+    "patterns": [
+     "phishing",
+     "key-compromise",
+     "state-linked"
+    ],
+    "eid": "c-846757cf"
    },
    {
     "org": "VMware vCenter (Broadcom)",
@@ -4978,15 +5449,6 @@
     "eid": "n-755bf327"
    },
    {
-    "org": "Two universities in East Asia",
-    "what": "Amazon researchers reported that attackers using an AI tool breached two universities through a previously unpatched flaw in a medical imaging application.",
-    "scale": "2 institutions",
-    "patterns": [
-     "ai"
-    ],
-    "eid": "n-cd038ca0"
-   },
-   {
     "org": "N-able",
     "what": "Attackers who breached a server caused a worldwide outage of Mail Assure and SpamExperts Hosted Cloud.",
     "scale": "Global service outage",
@@ -5020,6 +5482,14 @@
      "date": "2026-11-20T18:44:27Z",
      "score": 0.32,
      "why": "same pattern: Disruption and outages; terms: cybersecurity"
+    },
+    {
+     "id": "x-fbb57da1",
+     "kind": "x",
+     "title": "Coinbase India INR withdrawal outage",
+     "date": "2026-11-14T03:30:00Z",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
     },
     {
      "id": "x-7b9a9595",
@@ -5215,6 +5685,14 @@
      "date": "2026-11-20T21:34:36Z",
      "score": 0.32,
      "why": "same pattern: Disruption and outages; terms: cybersecurity"
+    },
+    {
+     "id": "x-fbb57da1",
+     "kind": "x",
+     "title": "Coinbase India INR withdrawal outage",
+     "date": "2026-11-14T03:30:00Z",
+     "score": 0.31,
+     "why": "same pattern: Disruption and outages; terms: breach"
     }
    ]
   },
@@ -5294,7 +5772,7 @@
      "id": "x-41c84c0c",
      "kind": "x",
      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-     "date": "2026-11-19T16:32:51Z",
+     "date": "2026-11-19T16:26:48Z",
      "score": 0.61,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: chase, visa, mastercard"
     },
@@ -5584,20 +6062,20 @@
      "why": "same pattern: Data exposure and theft; terms: customers, exposed"
     },
     {
-     "id": "x-77fc8232",
-     "kind": "x",
-     "title": "Alleged EDUTEC Chile data exposure",
-     "date": "2026-11-20T00:12:52Z",
-     "score": 0.32,
-     "why": "same pattern: Data exposure and theft; terms: people"
-    },
-    {
      "id": "n-2ff5d2ac",
      "kind": "news",
      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
      "date": "2026-11-19T17:16:31Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: customers, customer"
+    },
+    {
+     "id": "x-77fc8232",
+     "kind": "x",
+     "title": "Alleged EDUTEC Chile data exposure",
+     "date": "2026-11-20T00:12:52Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: people"
     }
    ],
    "analysis": {
@@ -6347,14 +6825,6 @@
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: web3auth, keplr, operation"
     },
     {
-     "id": "c-846757cf",
-     "kind": "crypto",
-     "title": "Binance CEX",
-     "date": "2026-10-29",
-     "score": 0.37,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, operational, identified"
-    },
-    {
      "id": "c-9e95d8b0",
      "kind": "crypto",
      "title": "Wagyu (XMR1)",
@@ -6377,6 +6847,14 @@
      "date": "2026-10-26",
      "score": 0.35,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, wallet, leaked"
+    },
+    {
+     "id": "c-672b11e7",
+     "kind": "crypto",
+     "title": "BTCPay Server",
+     "date": "2026-11-01",
+     "score": 0.28,
+     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: exposed, infrastructure, wallet"
     }
    ],
    "precedents": [
@@ -6412,6 +6890,14 @@
      "date": "2026-11-20T18:44:27Z",
      "score": 0.33,
      "why": "same pattern: Disruption and outages; terms: offline"
+    },
+    {
+     "id": "x-fbb57da1",
+     "kind": "x",
+     "title": "Coinbase India INR withdrawal outage",
+     "date": "2026-11-14T03:30:00Z",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
     },
     {
      "id": "n-f0b8696c",
@@ -6462,6 +6948,14 @@
    ],
    "related": [
     {
+     "id": "x-28e9dc79",
+     "kind": "x",
+     "title": "K3 Capital",
+     "date": "2026-11-19T12:39:09Z",
+     "score": 0.63,
+     "why": "same pattern: Smart contract logic flaws; shared: k3 capital; terms: sbold, capital, bold"
+    },
+    {
      "id": "c-cf6ebf15",
      "kind": "crypto",
      "title": "Fence Finance",
@@ -6492,14 +6986,6 @@
      "date": "2026-11-17",
      "score": 0.31,
      "why": "same pattern: Smart contract logic flaws; terms: redeemed"
-    },
-    {
-     "id": "c-c99ff4b3",
-     "kind": "crypto",
-     "title": "Troves",
-     "date": "2026-10-31",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws; terms: vault"
     }
    ],
    "precedents": [
@@ -6512,7 +6998,34 @@
      "score": 0.16,
      "why": "discrepancy, flash-loaned, accounting"
     }
-   ]
+   ],
+   "cluster": "cl-f01730",
+   "analysis": {
+    "summary": "K3 Capital said roughly 3.43 million BOLD drained from its sBOLD vault on November 18 and traced the loss to the vault\u2019s handling of collateral swaps. The project paused the vault and began pursuing partial recovery; it said Liquity V2 was not affected.",
+    "attack_chain": [
+     "K3 identified a flaw in how the vault verified swaps and cleared token permissions.",
+     "The flawed workflow was abused to draw assets from the vault.",
+     "K3 paused the vault after nearly all its assets had been drained."
+    ],
+    "open_questions": [
+     "How much will be returned to depositors?",
+     "What controls will be audited before the vault is used again?"
+    ],
+    "mitigations": [
+     "Verify swap results against observed asset balances and clear unused approvals.",
+     "Test with adversarial token and router behavior; add invariant tests for assets and shares.",
+     "Set abnormal outflow alerts and rehearse pausing affected vault operations."
+    ],
+    "sources": [
+     {
+      "label": "K3 Capital post-mortem",
+      "url": "https://x.com/k3_capital/status/2123395654214967426"
+     }
+    ],
+    "patterns": [
+     "contract-logic"
+    ]
+   }
   },
   "c-32a18fac": {
    "patterns": [
@@ -6592,7 +7105,7 @@
      "kind": "crypto",
      "title": "Edel",
      "date": "2026-11-12",
-     "score": 0.29,
+     "score": 0.28,
      "why": "same pattern: Smart contract logic flaws, Key and credential compromise; terms: recovery, began, blockchain"
     },
     {
@@ -6853,20 +7366,20 @@
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: belonging, leaked, key"
     },
     {
-     "id": "c-846757cf",
-     "kind": "crypto",
-     "title": "Binance CEX",
-     "date": "2026-10-29",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: withdrawals, infrastructure, leaked"
-    },
-    {
      "id": "c-2c17742f",
      "kind": "crypto",
      "title": "Bloom Trading Bot",
      "date": "2026-10-26",
      "score": 0.28,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: belonging, confirmed, unauthorized"
+    },
+    {
+     "id": "c-672b11e7",
+     "kind": "crypto",
+     "title": "BTCPay Server",
+     "date": "2026-11-01",
+     "score": 0.26,
+     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: remained, leaked, infrastructure"
     }
    ],
    "precedents": []
@@ -6925,7 +7438,7 @@
      "technique": "Unbacked Mint",
      "classification": "Token & Share Accounting",
      "score": 0.46,
-     "why": "ankrflow, wflow, flow"
+     "why": "wflow, ankrflow, flow"
     },
     {
      "name": "Flow",
@@ -6961,14 +7474,6 @@
      "why": "same pattern: Supply chain and third parties; terms: javascript, removed, attacker-controlled"
     },
     {
-     "id": "c-846757cf",
-     "kind": "crypto",
-     "title": "Binance CEX",
-     "date": "2026-10-29",
-     "score": 0.33,
-     "why": "same pattern: Supply chain and third parties; shared: bitcoin, tron; terms: tron, infrastructure, bitcoin"
-    },
-    {
      "id": "c-76c2bb72",
      "kind": "crypto",
      "title": "Myriad Markets",
@@ -6991,6 +7496,14 @@
      "date": "2026-11-01",
      "score": 0.31,
      "why": "same pattern: Supply chain and third parties; terms: cryptocurrency, supply, chain"
+    },
+    {
+     "id": "c-672b11e7",
+     "kind": "crypto",
+     "title": "BTCPay Server",
+     "date": "2026-11-01",
+     "score": 0.31,
+     "why": "same pattern: Supply chain and third parties; shared: bitcoin, litecoin; terms: litecoin, infrastructure, remained"
     }
    ],
    "precedents": [
@@ -7331,7 +7844,7 @@
      "kind": "crypto",
      "title": "LUKSO",
      "date": "2026-11-18",
-     "score": 0.29,
+     "score": 0.28,
      "why": "same pattern: Smart contract logic flaws, Key and credential compromise; terms: recovery, began, blockchain"
     },
     {
@@ -8067,20 +8580,20 @@
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: recovery, belonging, suspended"
     },
     {
-     "id": "c-846757cf",
-     "kind": "crypto",
-     "title": "Binance CEX",
-     "date": "2026-10-29",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, leaked, wallet"
-    },
-    {
      "id": "c-2c17742f",
      "kind": "crypto",
      "title": "Bloom Trading Bot",
      "date": "2026-10-26",
      "score": 0.32,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: exposed, belonging, wallets"
+    },
+    {
+     "id": "c-672b11e7",
+     "kind": "crypto",
+     "title": "BTCPay Server",
+     "date": "2026-11-01",
+     "score": 0.29,
+     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: exposed, wallets, infrastructure"
     }
    ],
    "precedents": [],
@@ -8188,7 +8701,7 @@
      "kind": "crypto",
      "title": "ACryptoS",
      "date": "2026-11-08",
-     "score": 0.33,
+     "score": 0.34,
      "why": "same pattern: Smart contract logic flaws; terms: vaults, deposits"
     },
     {
@@ -8346,20 +8859,20 @@
      "why": "same pattern: Smart contract logic flaws; terms: inflated, share, accounting"
     },
     {
-     "id": "c-be6be6b4",
-     "kind": "crypto",
-     "title": "BitMart",
-     "date": "2026-11-02",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws; terms: blockchain, addresses"
-    },
-    {
      "id": "c-48895bd5",
      "kind": "crypto",
      "title": "ACryptoS",
      "date": "2026-11-08",
      "score": 0.31,
      "why": "same pattern: Smart contract logic flaws; terms: amounts, causing"
+    },
+    {
+     "id": "c-be6be6b4",
+     "kind": "crypto",
+     "title": "BitMart",
+     "date": "2026-11-02",
+     "score": 0.31,
+     "why": "same pattern: Smart contract logic flaws; terms: blockchain, addresses"
     },
     {
      "id": "c-c06e0adf",
@@ -8370,12 +8883,12 @@
      "why": "same pattern: Smart contract logic flaws; terms: leaving"
     },
     {
-     "id": "c-a0af09f8",
+     "id": "c-a002e12f",
      "kind": "crypto",
-     "title": "InsurancePool/CoreVault",
-     "date": "2026-11-03",
+     "title": "K3 Capital",
+     "date": "2026-11-18",
      "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws; terms: times"
+     "why": "same pattern: Smart contract logic flaws; terms: share, accounting, token"
     }
    ],
    "precedents": [
@@ -8453,7 +8966,7 @@
      "amount": 40000000,
      "technique": "Hot Wallet Key Compromised",
      "classification": "Key Compromise",
-     "score": 0.21,
+     "score": 0.2,
      "why": "bitcoin, cex, customers"
     },
     {
@@ -8746,14 +9259,6 @@
    ],
    "related": [
     {
-     "id": "c-846757cf",
-     "kind": "crypto",
-     "title": "Binance CEX",
-     "date": "2026-10-29",
-     "score": 0.38,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; shared: bitcoin; terms: potentially, infrastructure, leaked"
-    },
-    {
      "id": "c-964f412e",
      "kind": "crypto",
      "title": "Optimizely (OPTIMJACK)",
@@ -8784,6 +9289,14 @@
      "date": "2026-10-26",
      "score": 0.28,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: exposed, leaked, infrastructure"
+    },
+    {
+     "id": "c-24c2fd5e",
+     "kind": "crypto",
+     "title": "LNbits",
+     "date": "2026-11-08",
+     "score": 0.27,
+     "why": "same pattern: Key and credential compromise; shared: bitcoin; terms: installations, operators, rotate"
     }
    ],
    "precedents": []
@@ -8877,20 +9390,20 @@
      "why": "same pattern: Smart contract logic flaws; terms: revoked, impact"
     },
     {
+     "id": "x-28e9dc79",
+     "kind": "x",
+     "title": "K3 Capital",
+     "date": "2026-11-19T12:39:09Z",
+     "score": 0.33,
+     "why": "same pattern: Smart contract logic flaws; terms: vault, paused"
+    },
+    {
      "id": "c-d313cf25",
      "kind": "crypto",
      "title": "Sovryn Dex",
      "date": "2026-11-01",
      "score": 0.33,
      "why": "same pattern: Smart contract logic flaws; terms: impact, btc, control"
-    },
-    {
-     "id": "c-0c19d1d3",
-     "kind": "crypto",
-     "title": "b14g",
-     "date": "2026-10-31",
-     "score": 0.32,
-     "why": "same pattern: Smart contract logic flaws; terms: paused, btc"
     }
    ],
    "precedents": [
@@ -8992,49 +9505,18 @@
   },
   "c-846757cf": {
    "patterns": [
-    "supply-chain",
-    "key-compromise"
+    "phishing",
+    "key-compromise",
+    "state-linked"
    ],
    "related": [
     {
-     "id": "c-672b11e7",
-     "kind": "crypto",
-     "title": "BTCPay Server",
-     "date": "2026-11-01",
-     "score": 0.38,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; shared: bitcoin; terms: potentially, infrastructure, leaked"
-    },
-    {
-     "id": "c-ac4021af",
-     "kind": "crypto",
-     "title": "CALC",
-     "date": "2026-11-19",
-     "score": 0.37,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, operational, identified"
-    },
-    {
-     "id": "c-76c2bb72",
-     "kind": "crypto",
-     "title": "Myriad Markets",
-     "date": "2026-10-26",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, leaked, key"
-    },
-    {
-     "id": "c-f7c50d27",
-     "kind": "crypto",
-     "title": "Lighter Perps",
-     "date": "2026-11-16",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: withdrawals, infrastructure, leaked"
-    },
-    {
-     "id": "c-96da298e",
-     "kind": "crypto",
-     "title": "Keplr Wallet (Web3Auth)",
-     "date": "2026-11-06",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, leaked, wallet"
+     "id": "x-6e245351",
+     "kind": "x",
+     "title": "Binance CEX: October theft recovery",
+     "date": "2026-11-19T00:15:09Z",
+     "score": 0.4,
+     "why": "same pattern: Phishing and social engineering, Key and credential compromise; terms: binance, cex, 6.3"
     }
    ],
    "precedents": [
@@ -9056,7 +9538,39 @@
      "score": 0.14,
      "why": "cex, infrastructure, leaked"
     }
-   ]
+   ],
+   "analysis": {
+    "summary": "Binance reported roughly $6.3 billion stolen in the October 29 incident. It obtained court orders to help recover assets, and blockchain monitors reported additional movements of funds attributed to the theft; these are developments in the original case, not a new loss.",
+    "attack_chain": [
+     "Binance said the intrusion began with social engineering that compromised an engineer\u2019s device.",
+     "Binance said a compromised internal tool was involved in unauthorized access to wallet systems.",
+     "Funds were taken in October; the exchange reported that some assets were frozen or intercepted and is pursuing recovery."
+    ],
+    "open_questions": [
+     "How much has been returned, rather than frozen or tracked?",
+     "Which residual controls and assets remain subject to the investigation?"
+    ],
+    "mitigations": [
+     "Isolate wallet signing from employee devices and general-purpose internal tools.",
+     "Require independently verified approvals for large transfers and monitor changes to privileged access.",
+     "Keep recovery communications and coordination procedures ready with custodians and issuers."
+    ],
+    "sources": [
+     {
+      "label": "The National reporting on the theft and court orders",
+      "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"
+     },
+     {
+      "label": "Onchain Lens follow-up",
+      "url": "https://x.com/OnchainLens/status/2123705781673726431"
+     }
+    ],
+    "patterns": [
+     "phishing",
+     "key-compromise",
+     "state-linked"
+    ]
+   }
   },
   "c-94c7749d": {
    "patterns": [
@@ -9277,6 +9791,14 @@
      "why": "same pattern: Smart contract logic flaws; terms: shares, vault"
     },
     {
+     "id": "x-28e9dc79",
+     "kind": "x",
+     "title": "K3 Capital",
+     "date": "2026-11-19T12:39:09Z",
+     "score": 0.34,
+     "why": "same pattern: Smart contract logic flaws; terms: vault"
+    },
+    {
      "id": "c-a205b47d",
      "kind": "crypto",
      "title": "Mercado Bitcoin",
@@ -9291,14 +9813,6 @@
      "date": "2026-11-03",
      "score": 0.32,
      "why": "same pattern: Smart contract logic flaws; terms: loan, flash"
-    },
-    {
-     "id": "c-68017625",
-     "kind": "crypto",
-     "title": "B18 TimeBank",
-     "date": "2026-11-17",
-     "score": 0.32,
-     "why": "same pattern: Smart contract logic flaws; terms: redeemed, usdc"
     }
    ],
    "precedents": [
@@ -9471,12 +9985,12 @@
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, exposed, enabling"
     },
     {
-     "id": "c-846757cf",
+     "id": "c-94c7749d",
      "kind": "crypto",
-     "title": "Binance CEX",
+     "title": "Polymarket International",
      "date": "2026-10-29",
-     "score": 0.26,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, frontend, unauthorized"
+     "score": 0.25,
+     "why": "same pattern: Supply chain and third parties; terms: trading, third-party, wallets"
     }
    ],
    "precedents": [
@@ -9540,20 +10054,20 @@
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: belonging, leaked, key"
     },
     {
-     "id": "c-846757cf",
-     "kind": "crypto",
-     "title": "Binance CEX",
-     "date": "2026-10-29",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: infrastructure, leaked, key"
-    },
-    {
      "id": "c-5a4553e8",
      "kind": "crypto",
      "title": "Predict Fun",
      "date": "2026-10-27",
      "score": 0.32,
      "why": "same pattern: Supply chain and third parties; shared: bsc; terms: prediction, third-party, frontend"
+    },
+    {
+     "id": "c-964f412e",
+     "kind": "crypto",
+     "title": "Optimizely (OPTIMJACK)",
+     "date": "2026-11-16",
+     "score": 0.32,
+     "why": "same pattern: Supply chain and third parties; shared: bsc; terms: infrastructure, wallet, frontend"
     }
    ],
    "precedents": [
@@ -11259,6 +11773,80 @@
    ],
    "action": "Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA\u2019s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA\u2019s \u201cForensics Triage Requirements\u201d (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable. Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines."
   },
+  "x-d0056ba9": {
+   "patterns": [
+    "data-exposure"
+   ],
+   "related": [
+    {
+     "id": "x-77fc8232",
+     "kind": "x",
+     "title": "Alleged EDUTEC Chile data exposure",
+     "date": "2026-11-20T00:12:52Z",
+     "score": 0.49,
+     "why": "same pattern: Data exposure and theft; terms: vecert, analyzer, alleged"
+    },
+    {
+     "id": "n-df29d71a",
+     "kind": "news",
+     "title": "Hackers steal data of 1.6 million SBC Medical Group customers",
+     "date": "2026-11-19T22:25:42Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: people"
+    },
+    {
+     "id": "b-cc049559",
+     "kind": "breach",
+     "title": "Too Lost",
+     "date": "2026-11-20T19:17:16Z",
+     "score": 0.31,
+     "why": "same pattern: Data exposure and theft; terms: identity"
+    },
+    {
+     "id": "b-8e8da935",
+     "kind": "breach",
+     "title": "Careers360",
+     "date": "2026-11-20T03:44:54Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft"
+    },
+    {
+     "id": "n-2ff5d2ac",
+     "kind": "news",
+     "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
+     "date": "2026-11-19T17:16:31Z",
+     "score": 0.3,
+     "why": "same pattern: Data exposure and theft"
+    }
+   ],
+   "cluster": "cl-364a73",
+   "analysis": {
+    "summary": "VECERT Analyzer relayed a claim that a multi-tenant hosting environment and a system attributed to Trubank were accessed. The claim that 1,331 databases were affected is unverified; neither the hosting provider nor the number of people affected is established.",
+    "attack_chain": [
+     "Initial access: unverified.",
+     "An outside party claimed unauthorized access to hosted databases and a system attributed to Trubank.",
+     "No extraction or exposure has been independently established."
+    ],
+    "open_questions": [
+     "Can the host or affected tenants verify any unauthorized access?",
+     "Do the alleged records originate from the systems named in the claim?"
+    ],
+    "mitigations": [
+     "Preserve relevant hosting and database logs for investigation.",
+     "Audit public exposure of sensitive configuration and rotate any credentials found to be exposed.",
+     "Check tenant isolation and alert on unusual cross-tenant access or bulk exports."
+    ],
+    "sources": [
+     {
+      "label": "VECERT Analyzer alert",
+      "url": "https://x.com/VECERTRadar/status/2123804741662625896"
+     }
+    ],
+    "patterns": [
+     "data-exposure"
+    ]
+   }
+  },
   "x-37d402a7": {
    "patterns": [
     "key-compromise",
@@ -11346,6 +11934,14 @@
    ],
    "related": [
     {
+     "id": "x-d0056ba9",
+     "kind": "x",
+     "title": "Alleged hosting intrusion and Trubank exposure",
+     "date": "2026-11-20T15:44:43Z",
+     "score": 0.49,
+     "why": "same pattern: Data exposure and theft; terms: vecert, analyzer, alleged"
+    },
+    {
      "id": "b-8e8da935",
      "kind": "breach",
      "title": "Careers360",
@@ -11376,16 +11972,9 @@
      "date": "2026-11-19T17:16:31Z",
      "score": 0.3,
      "why": "same pattern: Data exposure and theft"
-    },
-    {
-     "id": "n-19771688",
-     "kind": "news",
-     "title": "Transport for London breach exposes 265,000 Oyster card users' data",
-     "date": "2026-11-19T18:20:01Z",
-     "score": 0.3,
-     "why": "same pattern: Data exposure and theft"
     }
    ],
+   "cluster": "cl-364a73",
    "analysis": {
     "summary": "VECERT Analyzer relayed an unverified claim that more than 10 GB of records and photographs are linked to Chile's EDUTEC education platform. CiberLATAM tracked the same claim, but that coverage does not independently establish the data's origin, authenticity or scope.",
     "attack_chain": [
@@ -11436,6 +12025,14 @@
      "date": "2026-11-20T18:44:27Z",
      "score": 0.33,
      "why": "same pattern: Disruption and outages; terms: offline"
+    },
+    {
+     "id": "x-fbb57da1",
+     "kind": "x",
+     "title": "Coinbase India INR withdrawal outage",
+     "date": "2026-11-14T03:30:00Z",
+     "score": 0.32,
+     "why": "same pattern: Disruption and outages; terms: payouts"
     },
     {
      "id": "n-f0b8696c",
@@ -11536,6 +12133,198 @@
     "patterns": [
      "supply-chain",
      "data-exposure"
+    ]
+   }
+  },
+  "x-28e9dc79": {
+   "patterns": [
+    "contract-logic"
+   ],
+   "related": [
+    {
+     "id": "c-a002e12f",
+     "kind": "crypto",
+     "title": "K3 Capital",
+     "date": "2026-11-18",
+     "score": 0.63,
+     "why": "same pattern: Smart contract logic flaws; shared: k3 capital; terms: sbold, capital, bold"
+    },
+    {
+     "id": "c-cf6ebf15",
+     "kind": "crypto",
+     "title": "Fence Finance",
+     "date": "2026-10-27",
+     "score": 0.34,
+     "why": "same pattern: Smart contract logic flaws; terms: vault"
+    },
+    {
+     "id": "c-c99ff4b3",
+     "kind": "crypto",
+     "title": "Troves",
+     "date": "2026-10-31",
+     "score": 0.33,
+     "why": "same pattern: Smart contract logic flaws; terms: vault, paused"
+    },
+    {
+     "id": "c-bb03e0f5",
+     "kind": "crypto",
+     "title": "Loopscale Lending",
+     "date": "2026-11-05",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: paused"
+    },
+    {
+     "id": "c-48895bd5",
+     "kind": "crypto",
+     "title": "ACryptoS",
+     "date": "2026-11-08",
+     "score": 0.32,
+     "why": "same pattern: Smart contract logic flaws; terms: vault"
+    }
+   ],
+   "cluster": "cl-f01730",
+   "analysis": {
+    "summary": "K3 Capital said roughly 3.43 million BOLD drained from its sBOLD vault on November 18 and traced the loss to the vault\u2019s handling of collateral swaps. The project paused the vault and began pursuing partial recovery; it said Liquity V2 was not affected.",
+    "attack_chain": [
+     "K3 identified a flaw in how the vault verified swaps and cleared token permissions.",
+     "The flawed workflow was abused to draw assets from the vault.",
+     "K3 paused the vault after nearly all its assets had been drained."
+    ],
+    "open_questions": [
+     "How much will be returned to depositors?",
+     "What controls will be audited before the vault is used again?"
+    ],
+    "mitigations": [
+     "Verify swap results against observed asset balances and clear unused approvals.",
+     "Test with adversarial token and router behavior; add invariant tests for assets and shares.",
+     "Set abnormal outflow alerts and rehearse pausing affected vault operations."
+    ],
+    "sources": [
+     {
+      "label": "K3 Capital post-mortem",
+      "url": "https://x.com/k3_capital/status/2123395654214967426"
+     }
+    ],
+    "patterns": [
+     "contract-logic"
+    ]
+   }
+  },
+  "x-6e245351": {
+   "patterns": [
+    "phishing",
+    "key-compromise",
+    "state-linked"
+   ],
+   "related": [
+    {
+     "id": "c-846757cf",
+     "kind": "crypto",
+     "title": "Binance CEX",
+     "date": "2026-10-29",
+     "score": 0.4,
+     "why": "same pattern: Phishing and social engineering, Key and credential compromise; terms: binance, cex, 6.3"
+    }
+   ],
+   "analysis": {
+    "summary": "Binance reported roughly $6.3 billion stolen in the October 29 incident. It obtained court orders to help recover assets, and blockchain monitors reported additional movements of funds attributed to the theft; these are developments in the original case, not a new loss.",
+    "attack_chain": [
+     "Binance said the intrusion began with social engineering that compromised an engineer\u2019s device.",
+     "Binance said a compromised internal tool was involved in unauthorized access to wallet systems.",
+     "Funds were taken in October; the exchange reported that some assets were frozen or intercepted and is pursuing recovery."
+    ],
+    "open_questions": [
+     "How much has been returned, rather than frozen or tracked?",
+     "Which residual controls and assets remain subject to the investigation?"
+    ],
+    "mitigations": [
+     "Isolate wallet signing from employee devices and general-purpose internal tools.",
+     "Require independently verified approvals for large transfers and monitor changes to privileged access.",
+     "Keep recovery communications and coordination procedures ready with custodians and issuers."
+    ],
+    "sources": [
+     {
+      "label": "The National reporting on the theft and court orders",
+      "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"
+     },
+     {
+      "label": "Onchain Lens follow-up",
+      "url": "https://x.com/OnchainLens/status/2123705781673726431"
+     }
+    ],
+    "patterns": [
+     "phishing",
+     "key-compromise",
+     "state-linked"
+    ]
+   }
+  },
+  "x-fbb57da1": {
+   "patterns": [
+    "outage"
+   ],
+   "related": [
+    {
+     "id": "x-7b9a9595",
+     "kind": "x",
+     "title": "Fluidkey",
+     "date": "2026-11-19T18:20:00Z",
+     "score": 0.32,
+     "why": "same pattern: Disruption and outages; terms: payouts"
+    },
+    {
+     "id": "n-755bf327",
+     "kind": "news",
+     "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
+     "date": "2026-11-20T18:44:27Z",
+     "score": 0.31,
+     "why": "same pattern: Disruption and outages; terms: breach"
+    },
+    {
+     "id": "c-7b9a9595",
+     "kind": "crypto",
+     "title": "Fluidkey",
+     "date": "2026-11-19",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
+    },
+    {
+     "id": "n-f0b8696c",
+     "kind": "news",
+     "title": "West Virginia Legislature hit with cyber incident affecting IT systems",
+     "date": "2026-11-20T21:34:36Z",
+     "score": 0.3,
+     "why": "same pattern: Disruption and outages"
+    }
+   ],
+   "analysis": {
+    "summary": "Coinbase India attributed unavailable in-app rupee withdrawals to an outage at its banking partner and said payouts were being processed in batches. Coinbase said its customers\u2019 funds remained safe; the service disruption does not establish a breach or theft.",
+    "attack_chain": [
+     "No attack has been substantiated.",
+     "Coinbase attributed the loss of in-app withdrawals to a partner payout outage.",
+     "Coinbase moved withdrawals to batch processing and routed new requests through support."
+    ],
+    "open_questions": [
+     "When will in-app withdrawals return?",
+     "What caused the partner payout outage and how many users experienced delays?"
+    ],
+    "mitigations": [
+     "Monitor payout-provider health and reconcile retries against bank confirmations.",
+     "Test failover and duplicate-payment protection before rerouting payouts.",
+     "Publish status and support guidance through verified channels to reduce impersonation risk."
+    ],
+    "sources": [
+     {
+      "label": "Coinbase India official update",
+      "url": "https://x.com/CoinbaseIndia/status/2123677401175478677"
+     },
+     {
+      "label": "Coinbase India statement on funds",
+      "url": "https://x.com/CoinbaseIndia/status/2122731372163006536"
+     }
+    ],
+    "patterns": [
+     "outage"
     ]
    }
   },
@@ -11884,6 +12673,14 @@
      "date": "2026-11-20T03:44:54Z",
      "score": 0.23,
      "why": "same pattern: Data exposure and theft; terms: email, addresses, unique"
+    },
+    {
+     "id": "x-d0056ba9",
+     "kind": "x",
+     "title": "Alleged hosting intrusion and Trubank exposure",
+     "date": "2026-11-20T15:44:43Z",
+     "score": 0.23,
+     "why": "same pattern: Data exposure and theft; terms: hosting, provider, intrusion"
     }
    ]
   }
@@ -12055,6 +12852,33 @@
    "cohesion": 0.43
   },
   {
+   "id": "cl-f01730",
+   "size": 2,
+   "members": [
+    "x-28e9dc79",
+    "c-a002e12f"
+   ],
+   "titles": [
+    "K3 Capital",
+    "K3 Capital"
+   ],
+   "patterns": [
+    "contract-logic"
+   ],
+   "terms": [
+    "sbold",
+    "capital",
+    "bold",
+    "vault"
+   ],
+   "kinds": {
+    "crypto": 1,
+    "x": 1
+   },
+   "latest": "2026-11-19T12:39:09Z",
+   "cohesion": 0.63
+  },
+  {
    "id": "cl-a104af",
    "size": 2,
    "members": [
@@ -12188,32 +13012,6 @@
    },
    "latest": "2026-11-20",
    "cohesion": 0.5
-  },
-  {
-   "id": "cl-57efd8",
-   "size": 2,
-   "members": [
-    "n-25f152a1",
-    "k-ade0fc5a"
-   ],
-   "titles": [
-    "Hackers Exploiting Critical Puppet RCE Flaw Affecting Enterprise Management Servers",
-    "CVE-2026-115731 \u00b7 Perforce Puppet Enterprise"
-   ],
-   "patterns": [
-    "injection-rce"
-   ],
-   "terms": [
-    "puppet",
-    "enterprise",
-    "perforce"
-   ],
-   "kinds": {
-    "news": 1,
-    "kev": 1
-   },
-   "latest": "2026-11-18T08:24:31Z",
-   "cohesion": 0.47
   }
  ],
  "patterns": [
@@ -12223,11 +13021,11 @@
    "news": 0,
    "crypto": 28,
    "kev": 0,
-   "x": 0,
+   "x": 1,
    "breach": 0,
    "usd": 56411681.0,
-   "total": 28,
-   "recent7": 8
+   "total": 29,
+   "recent7": 9
   },
   {
    "id": "key-compromise",
@@ -12245,12 +13043,12 @@
    "id": "supply-chain",
    "label": "Supply chain and third parties",
    "news": 5,
-   "crypto": 12,
+   "crypto": 11,
    "kev": 0,
    "x": 1,
    "breach": 0,
-   "usd": 6507475217.0,
-   "total": 18,
+   "usd": 147475217.0,
+   "total": 17,
    "recent7": 9
   },
   {
@@ -12259,11 +13057,11 @@
    "news": 6,
    "crypto": 0,
    "kev": 0,
-   "x": 1,
+   "x": 2,
    "breach": 7,
    "usd": 0,
-   "total": 14,
-   "recent7": 9
+   "total": 15,
+   "recent7": 10
   },
   {
    "id": "injection-rce",
@@ -12302,6 +13100,18 @@
    "recent7": 3
   },
   {
+   "id": "outage",
+   "label": "Disruption and outages",
+   "news": 2,
+   "crypto": 1,
+   "kev": 0,
+   "x": 2,
+   "breach": 0,
+   "usd": 0,
+   "total": 5,
+   "recent7": 5
+  },
+  {
    "id": "edge-device",
    "label": "Edge and perimeter devices",
    "news": 2,
@@ -12324,18 +13134,6 @@
    "usd": 0,
    "total": 5,
    "recent7": 0
-  },
-  {
-   "id": "outage",
-   "label": "Disruption and outages",
-   "news": 2,
-   "crypto": 1,
-   "kev": 0,
-   "x": 1,
-   "breach": 0,
-   "usd": 0,
-   "total": 4,
-   "recent7": 4
   },
   {
    "id": "bridge",
@@ -12365,13 +13163,13 @@
    "id": "phishing",
    "label": "Phishing and social engineering",
    "news": 1,
-   "crypto": 0,
+   "crypto": 1,
    "kev": 0,
-   "x": 0,
+   "x": 1,
    "breach": 0,
-   "usd": 0,
-   "total": 1,
-   "recent7": 1
+   "usd": 6360000000,
+   "total": 3,
+   "recent7": 2
   }
  ],
  "pattern_defs": [
