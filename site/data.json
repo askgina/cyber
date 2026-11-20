@@ -1,12 +1,108 @@
 {
- "generated": "2026-11-20T18:22:32Z",
+ "generated": "2026-11-20T19:22:28Z",
  "errors": [],
  "kev": {
-  "total_catalog": 1786,
-  "count_7d": 5,
-  "count_30d": 32,
+  "total_catalog": 1790,
+  "count_7d": 9,
+  "count_30d": 36,
   "ransomware_linked_30d": 0,
   "items": [
+   {
+    "id": "CVE-2026-129448",
+    "date": "2026-11-20",
+    "vendor": "Apache",
+    "product": "Roller",
+    "name": "Apache Roller Deserialization of Untrusted Data Vulnerability",
+    "desc": "Apache Roller contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via the XML-RPC endpoint, which accepts and deserializes vendor extension types before authentication. This CVE covers the same underlying vulnerability as CVE-2026-82384 but applies to a broader range of affected versions.",
+    "ransomware": false,
+    "due": "2026-11-23",
+    "links": [
+     {
+      "label": "NVD",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-129448"
+     },
+     {
+      "label": "CISA KEV",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-129448"
+     },
+     {
+      "label": "X",
+      "url": "https://x.com/search?f=live&q=CVE-2026-129448"
+     }
+    ]
+   },
+   {
+    "id": "CVE-2026-123890",
+    "date": "2026-11-20",
+    "vendor": "Broadcom",
+    "product": "VMware vCenter",
+    "name": "VMWare vCenter Authentication Bypass Using an Alternate Path or Channel Vulnerability",
+    "desc": "Broadcom VMware vCenter contains an authentication bypass using an alternate path or channel vulnerability in the VMware Directory Service that allows an unauthenticated attacker with network access to vCenter to bypass authentication and gain unauthorized access to the system.",
+    "ransomware": false,
+    "due": "2026-11-23",
+    "links": [
+     {
+      "label": "NVD",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-123890"
+     },
+     {
+      "label": "CISA KEV",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-123890"
+     },
+     {
+      "label": "X",
+      "url": "https://x.com/search?f=live&q=CVE-2026-123890"
+     }
+    ]
+   },
+   {
+    "id": "CVE-2025-42884",
+    "date": "2026-11-20",
+    "vendor": "SAP",
+    "product": "NetWeaver",
+    "name": "SAP NetWeaver Improper Neutralization of Special Elements in Data Query Logic Vulnerability",
+    "desc": "SAP NetWeaver Enterprise Portal contains an improper neutralization of special elements in data query logic vulnerability that allows an unauthenticated attacker to disclose or modify server information via injected JNDI environment properties or a URL used during JNDI lookup operations.",
+    "ransomware": false,
+    "due": "2026-11-23",
+    "links": [
+     {
+      "label": "NVD",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-42884"
+     },
+     {
+      "label": "CISA KEV",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2025-42884"
+     },
+     {
+      "label": "X",
+      "url": "https://x.com/search?f=live&q=CVE-2025-42884"
+     }
+    ]
+   },
+   {
+    "id": "CVE-2026-76466",
+    "date": "2026-11-20",
+    "vendor": "Cisco",
+    "product": "Expressway Series",
+    "name": "Cisco Expressway Series Use of Hard-coded Credentials Vulnerability",
+    "desc": "Cisco Expressway Series contains a use of hard-coded credentials vulnerability that allows an unauthenticated, remote attacker with persistent cookies and network access to execute commands as root on a clustered device via the database service.",
+    "ransomware": false,
+    "due": "2026-11-23",
+    "links": [
+     {
+      "label": "NVD",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-76466"
+     },
+     {
+      "label": "CISA KEV",
+      "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=CVE-2026-76466"
+     },
+     {
+      "label": "X",
+      "url": "https://x.com/search?f=live&q=CVE-2026-76466"
+     }
+    ]
+   },
    {
     "id": "CVE-2024-10441",
     "date": "2026-11-18",
@@ -895,14 +991,14 @@
    ],
    [
     "2026-11-20",
-    0
+    4
    ]
   ]
  },
  "ransomware": {
-  "count_24h": 17,
-  "count_7d": 380,
-  "count_30d": 1263,
+  "count_24h": 21,
+  "count_7d": 383,
+  "count_30d": 1266,
   "groups_7d": [
    [
     "N0n",
@@ -934,7 +1030,7 @@
    ],
    [
     "rhysida",
-    9
+    10
    ]
   ],
   "sectors_7d": [
@@ -944,7 +1040,7 @@
    ],
    [
     "Manufacturing",
-    54
+    55
    ],
    [
     "Retail & E-Commerce",
@@ -967,14 +1063,14 @@
     21
    ],
    [
-    "Energy & Utilities",
+    "Government & Defense",
     8
    ]
   ],
   "countries_7d": [
    [
     "US",
-    187
+    186
    ],
    [
     "CA",
@@ -982,7 +1078,7 @@
    ],
    [
     "GB",
-    14
+    15
    ],
    [
     "DE",
@@ -993,11 +1089,11 @@
     7
    ],
    [
-    "FR",
-    5
+    "IT",
+    6
    ],
    [
-    "IT",
+    "FR",
     5
    ],
    [
@@ -1125,16 +1221,39 @@
    ],
    [
     "2026-11-20",
-    14
+    18
    ]
   ]
  },
  "crypto": {
-  "count_7d": 15,
-  "count_30d": 51,
-  "usd_7d": 20775460,
-  "usd_30d": 6442080965,
+  "count_7d": 16,
+  "count_30d": 52,
+  "usd_7d": 34285460,
+  "usd_30d": 6455590965,
   "items": [
+   {
+    "date": "2026-11-20",
+    "name": "Wagyu (XMR1)",
+    "amount": 13510000,
+    "returned": null,
+    "chains": [
+     "Hyperliquid L1"
+    ],
+    "classification": "Frontend & Infrastructure",
+    "technique": "Key Leaked via Infrastructure",
+    "target": "DeFi Protocol",
+    "desc": "An attacker reportedly obtained Wagyu's XMR1 deployer signing key through a breach of third-party hosting infrastructure that retained files from a previously deleted server. The attacker transferred 5.2M XMR1 from the deployer account to a newly created wallet and sold approximately 369,623 tokens into Hyperliquid's spot order book for $13.51M USDC, causing XMR1 to lose approximately 99.8% of its market value. The proceeds were converted into ETH and transferred across Arbitrum and Ethereum",
+    "links": [
+     {
+      "label": "DefiLlama",
+      "url": "https://defillama.com/hacks"
+     },
+     {
+      "label": "Search X",
+      "url": "https://x.com/search?f=live&q=Wagyu%20%28XMR1%29%20%28exploit%20OR%20hack%20OR%20drained%29"
+     }
+    ]
+   },
    {
     "date": "2026-11-19",
     "name": "CALC",
@@ -2450,11 +2569,32 @@
    ],
    [
     "2026-11-20",
-    0
+    1
    ]
   ]
  },
  "news": [
+  {
+   "date": "2026-11-20T18:56:50Z",
+   "source": "DataBreaches.net",
+   "title": "Bell Canada says \u2018agentic\u2019 hacker stole enterprise customer data",
+   "url": "https://databreaches.net/2026/11/20/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+   "summary": "Lawrence Abrams reports: Bell Canada has confirmed that an \u201cagentic\u201d threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. Bell is one of Canada\u2019s la"
+  },
+  {
+   "date": "2026-11-20T18:51:43Z",
+   "source": "BleepingComputer",
+   "title": "Bell Canada says 'agentic' hacker stole enterprise customer data",
+   "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/",
+   "summary": "Bell Canada has confirmed that an \"agentic\" threat actor breached its systems on November 17, 2026, and stole enterprise customer data, including information from a system used to order and provision telecommunications circuits. [...]"
+  },
+  {
+   "date": "2026-11-20T18:44:27Z",
+   "source": "DataBreaches.net",
+   "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
+   "url": "https://databreaches.net/2026/11/20/u-s-department-of-agriculture-grapples-with-security-breach-as-it-staff-take-multiple-systems-offline/",
+   "summary": "David DiMolfetta and Jory Heckman report: Numerous Department of Agriculture applications have been taken offline over a multi-day period in response to a cybersecurity incident internally disclosed earlier this week, according to three people familiar with the matter and an emai"
+  },
   {
    "date": "2026-11-20T17:30:00Z",
    "source": "The Record",
@@ -2664,13 +2804,6 @@
    "title": "BO Team Exploits Log4Shell in VMware vCenter, Compromises Russian Firm's Code-Signing Server",
    "url": "https://thehackernews.com/2026/11/bo-team-exploits-log4shell-in-vmware.html",
    "summary": "An investigation into suspicious activity within a Russian software developer's network has uncovered a months-long compromise of its development infrastructure and a software code-signing server. The activity, documented by Kaspersky's ICS CERT team after it was contacted by the"
-  },
-  {
-   "date": "2026-11-15T08:22:04Z",
-   "source": "The Hacker News",
-   "title": "Cursor Says Stolen Fireworks AI Key Led to Trojanized Claude Code Extension Incident",
-   "url": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
-   "summary": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor sai"
   }
  ],
  "x": [
