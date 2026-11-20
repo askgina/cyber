@@ -406,7 +406,7 @@
   const ts = (s) => new Date(s.length === 10 ? s + "T00:00:00Z" : s).getTime();
   const norm = (n) => n.toLowerCase().replace(/\(.*?\)/g, "").replace(/[^a-z0-9]/g, "");
   const LIVE = { checked: null, extra: [], fresh: new Set(), prevIds: null, seen: null };
-  try { LIVE.seen = Number(localStorage.getItem("bl_last_visit")) || null; } catch (e) {}
+  LIVE.seen = Date.now();
 
   function events(D) {
     const ev = [];
@@ -431,7 +431,7 @@
     if (LIVE.seen) {
       const n = ev.filter((e) => ts(e.t) > LIVE.seen && e.t.length > 10).length + ev.filter((e) => e.t.length === 10 && ts(e.t) > LIVE.seen).length;
       const s = $("#since"); s.hidden = false;
-      s.textContent = n ? `${n} new ${n === 1 ? "entry" : "entries"} since your last visit, ${fmtLong(new Date(LIVE.seen).toISOString())}.` : `Nothing new since your last visit, ${fmtLong(new Date(LIVE.seen).toISOString())}.`;
+      s.textContent = n ? `${n} new ${n === 1 ? "entry" : "entries"} since you opened this page.` : `Watching for new entries since you opened this page.`;
     }
     // 24 hours
     const H = D.hourly || [];
@@ -506,7 +506,6 @@
         setInterval(pollLlama, 2 * 60e3);
         setInterval(pollHIBP, 10 * 60e3);
         setInterval(tick, 1000);
-        setTimeout(() => { try { localStorage.setItem("bl_last_visit", String(Date.now())); } catch (e) {} }, 8000);
       }
     } catch (e) {
       if (first) $("#abstract").textContent = "The record could not be loaded. Try again in a moment.";
