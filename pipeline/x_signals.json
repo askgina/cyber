@@ -1,17 +1,18 @@
 [
  {
   "project": "Fluidkey", "subject": "Fluidkey", "aliases": ["Fluidkey"], "category": "crypto",
-  "claim": "Users of the Fluidkey privacy wallet lost funds across six chains in about 36 minutes, paid out by Fluidkey's own relayer. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911. The entry point is unconfirmed; supply-chain or frontend compromise is speculation pending a post-mortem.",
+  "claim": "Bitquery traced at least $1.58 million in unauthorized Fluidkey payouts across six chains over about 36 minutes. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911; the entry point remains unknown.",
   "amount_usd_claimed": 1580000,
   "posts": [
    {"url": "https://x.com/fluidkey/status/2123481430634492278", "role": "official", "stance": "confirm", "evidence": "none", "note": "Security incident affecting users; avoid website and app."},
-   {"url": "https://x.com/DefiantNews/status/2123487975145378208", "stance": "report", "evidence": "link", "note": "Reports the notice; loss not stated."},
-   {"url": "https://x.com/fluidkey/status/2123511041791349059", "role": "official", "stance": "update", "evidence": "none", "note": "No unauthorized transactions since 18:05 UTC; working with SEAL 911; post-mortem to follow."},
+   {"url": "https://x.com/DefiantNews/status/2123487975145378208", "role": "media", "stance": "report", "evidence": "link", "note": "Reports the notice; loss not stated."},
+   {"url": "https://x.com/fluidkey/status/2123510970165436704", "role": "official", "stance": "update", "evidence": "none", "note": "Reports no further unauthorized transactions after shutdown and says SEAL 911 is assisting."},
    {"url": "https://x.com/ReginaldWatches/status/2123521238534680870", "role": "unknown", "stance": "report", "evidence": "none", "note": "Warns users about fake refund links."},
-   {"url": "https://x.com/hazae41/status/2123648034194239946", "stance": "report", "evidence": "onchain", "note": "Thread on the drain path through the relayer and a consolidation address."}
+   {"url": "https://x.com/hazae41/status/2123648034194239946", "role": "investigator", "stance": "report", "evidence": "onchain", "note": "Describes observed unauthorized relayer payouts."}
   ],
   "postmortem": null,
   "links": [{"label": "Bitquery investigation", "url": "https://www.bitquery.io/investigations/fluidkey-hack"},
+            {"label": "Fluidkey impersonation warning", "url": "https://x.com/fluidkey/status/2123701122208870665"},
             {"label": "Search X", "url": "https://x.com/search?f=live&q=Fluidkey"}]
  },
  {
@@ -21,15 +22,20 @@
   "posts": [
    {"url": "https://x.com/0xLegendman/status/2123673331341709788", "role": "unknown", "stance": "report", "evidence": "none", "note": "Early exploit claim, ~$13M."},
    {"url": "https://x.com/m3aadh/status/2123673623978516660", "role": "user", "stance": "speculation", "evidence": "none", "note": "Asks whether it is an exit rug."},
-   {"url": "https://x.com/crypto_banter/status/2123674436033294701", "stance": "report", "evidence": "onchain", "note": "Relays Lookonchain's attacker wallet and ETH purchases."},
-   {"url": "https://x.com/GoPlusSecurity/status/2123694304959021131", "stance": "report", "evidence": "onchain", "note": "Suspected exploit; deployer moved 5.2M XMR1; proceeds ~7,300 ETH bridged."},
-   {"url": "https://x.com/CryptoTimes_io/status/2123710046450090318", "stance": "report", "evidence": "link", "note": "Cites a CertiK flag; cause unconfirmed."},
-   {"url": "https://x.com/XBToshi/status/2123750837931639036", "stance": "report", "evidence": "none", "note": "Timeline; hack or exit scam unresolved."},
-   {"url": "https://x.com/PerpetualCow/status/2123760480061718801", "role": "official", "stance": "confirm", "evidence": "none", "note": "Operator attributes it to a hosting-provider breach exposing the deployer key; promises refunds."},
-   {"url": "https://x.com/crypto_banter/status/2123769914678759459", "stance": "update", "evidence": "link", "note": "Relays the hosting-provider explanation."},
-   {"url": "https://x.com/DailyDarkWeb/status/2123786350730137992", "stance": "report", "evidence": "link", "note": "Summary citing CoinDesk."}
+   {"url": "https://x.com/lookonchain/status/2123656301561667859", "role": "investigator", "stance": "report", "evidence": "onchain", "note": "Traces XMR1 sales and about $13.2 million in subsequent ETH purchases."},
+   {"url": "https://x.com/crypto_banter/status/2123674436033294701", "role": "media", "stance": "report", "evidence": "link", "note": "Relays Lookonchain's transaction analysis."},
+   {"url": "https://x.com/GoPlusSecurity/status/2123694304959021131", "role": "security", "stance": "report", "evidence": "onchain", "note": "Reports suspicious transfers from the deployer and conversion of proceeds."},
+   {"url": "https://x.com/CryptoTimes_io/status/2123710046450090318", "role": "media", "stance": "report", "evidence": "link", "note": "Cites a CertiK flag; cause unconfirmed."},
+   {"url": "https://x.com/PeckShieldAlert/status/2123717364827267434", "role": "security", "stance": "report", "evidence": "onchain", "note": "Traces the deployer transfer, token price collapse and conversion of proceeds."},
+   {"url": "https://x.com/emeraldsXBT/status/2123733309150912646", "role": "user", "stance": "report", "evidence": "none", "note": "Says they held XMR1 on Hyperliquid during the sell-off."},
+   {"url": "https://x.com/PerpetualCow/status/2123740930838589734", "role": "official", "stance": "update", "evidence": "none", "note": "Promises reimbursement for XMR1 market makers but gives no timetable."},
+   {"url": "https://x.com/XBToshi/status/2123750837931639036", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Reports the operator's reimbursement pledge."},
+   {"url": "https://x.com/PerpetualCow/status/2123760480061718801", "role": "official", "stance": "postmortem", "evidence": "none", "note": "Attributes the compromise to a deployer key exposed through a breached hosting provider."},
+   {"url": "https://x.com/crypto_banter/status/2123769914678759459", "role": "media", "stance": "update", "evidence": "link", "note": "Relays the hosting-provider explanation."},
+   {"url": "https://x.com/DailyDarkWeb/status/2123786350730137992", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Summary citing CoinDesk."},
+   {"url": "https://x.com/TheBlockCo/status/2123798920992047227", "role": "media", "stance": "report", "evidence": "link", "note": "Reports the sell-off, the founder's explanation and the proposed refunds."}
   ],
-  "postmortem": null,
+  "postmortem": {"url": "https://x.com/PerpetualCow/status/2123760480061718801", "label": "Wagyu operator’s post-mortem", "date": "2026-11-20T12:48:50Z"},
   "links": [{"label": "Bitquery investigation", "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"},
             {"label": "The Block", "url": "https://www.theblock.co/news/defi/2026-11-20-wagyus-xmr1-wrapped-monero-plunges-99-after-13-million-hack-founder-promises-refunds-444747"},
             {"label": "Search X", "url": "https://x.com/search?f=live&q=Wagyu%20XMR1"}]

@@ -40,18 +40,15 @@
   "patterns": ["data-exposure"]
  },
  "Fluidkey": {
-  "summary": "Unauthorized transactions drained Fluidkey privacy-wallet users across seven chains in roughly 25 minutes. Every drain passed through Fluidkey's own relayer with valid signatures, which points to compromised signing capability rather than an on-chain contract bug.",
+  "summary": "Bitquery traced at least $1.58 million in unauthorized Fluidkey payouts across six chains in about 36 minutes. Fluidkey said it took its services offline at 18:05 UTC and is investigating with SEAL 911; the root cause remains unknown.",
   "attack_chain": [
-   "Initial access: unknown. Community speculation covers a supply-chain compromise of the web app or a DNS hijack; neither is confirmed.",
-   "Attacker obtains the ability to produce valid user signatures (keys, or a compromised client that signs on the user's behalf).",
-   "Drain transactions are submitted through Fluidkey's relayer on seven chains within about 25 minutes.",
-   "Proceeds are routed to Tornado Cash.",
+   "Initial access and the cause of the unauthorized payouts are unknown.",
+   "Bitquery traced unauthorized payouts through Fluidkey's relayer across six chains.",
    "Fluidkey takes its website, app and services offline at 18:05 UTC on November 19; no unauthorized transactions are reported after that."
   ],
   "open_questions": [
-   "How signing material was exposed",
-   "Total loss (victim estimates start at about $1.6M)",
-   "Whether a post-mortem will confirm a supply-chain vector"
+   "What allowed the unauthorized payouts?",
+   "What is the final loss after unclassified transactions are reconciled?"
   ],
   "mitigations": [
    "Pin and verify front-end builds (subresource integrity, reproducible builds)",
@@ -61,18 +58,20 @@
   ],
   "sources": [
    {
-    "label": "X thread",
-    "url": "https://x.com/hazae41/status/2123648034194239946"
+    "label": "Bitquery investigation",
+    "url": "https://www.bitquery.io/investigations/fluidkey-hack"
+   },
+   {
+    "label": "Fluidkey incident update",
+    "url": "https://x.com/fluidkey/status/2123510970165436704"
    }
   ],
   "patterns": [
-   "key-compromise",
-   "supply-chain",
    "outage"
   ]
  },
  "Wagyu (XMR1)": {
-  "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
+  "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after roughly $13.5 million in sales. In a post-mortem, Wagyu's operator attributed the loss to a deployer key exposed in a breach at 1984.hosting; on-chain data corroborates the sales but not how the key was obtained.",
   "attack_chain": [
    "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
    "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
@@ -94,7 +93,7 @@
     "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
    },
    {
-    "label": "Operator on X",
+    "label": "Wagyu operator’s post-mortem",
     "url": "https://x.com/PerpetualCow/status/2123760480061718801"
    }
   ],
@@ -104,7 +103,7 @@
   ]
  },
  "Wagyu XMR1": {
-  "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
+  "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after roughly $13.5 million in sales. In a post-mortem, Wagyu's operator attributed the loss to a deployer key exposed in a breach at 1984.hosting; on-chain data corroborates the sales but not how the key was obtained.",
   "attack_chain": [
    "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
    "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
@@ -126,7 +125,7 @@
     "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
    },
    {
-    "label": "Operator on X",
+    "label": "Wagyu operator’s post-mortem",
     "url": "https://x.com/PerpetualCow/status/2123760480061718801"
    }
   ],

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T21:07:25Z",
+ "generated": "2026-11-20T21:23:41Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -1196,7 +1196,7 @@
  "ransomware": {
   "count_24h": 21,
   "count_7d": 377,
-  "count_30d": 1255,
+  "count_30d": 1254,
   "groups_7d": [
    [
     "N0n",
@@ -1490,7 +1490,7 @@
     "desc": null
    }
   ],
-  "coverage_days": 30.0,
+  "coverage_days": 29.9,
   "series": [
    [
     "2026-10-22",
@@ -4020,6 +4020,16 @@
    "amount_usd_claimed": 13500000,
    "posts": [
     {
+     "date": "2026-11-20T05:54:52Z",
+     "handle": "lookonchain",
+     "role": "investigator",
+     "w": 0.9,
+     "stance": "report",
+     "evidence": "onchain",
+     "url": "https://x.com/lookonchain/status/2123656301561667859",
+     "note": "Traces XMR1 sales and about $13.2 million in subsequent ETH purchases."
+    },
+    {
      "date": "2026-11-20T07:02:32Z",
      "handle": "0xLegendman",
      "role": "unknown",
@@ -4043,11 +4053,11 @@
      "date": "2026-11-20T07:06:56Z",
      "handle": "crypto_banter",
      "role": "media",
-     "w": 0.59,
+     "w": 0.46,
      "stance": "report",
-     "evidence": "onchain",
+     "evidence": "link",
      "url": "https://x.com/crypto_banter/status/2123674436033294701",
-     "note": "Relays Lookonchain's attacker wallet and ETH purchases."
+     "note": "Relays Lookonchain's transaction analysis."
     },
     {
      "date": "2026-11-20T08:25:53Z",
@@ -4057,7 +4067,7 @@
      "stance": "report",
      "evidence": "onchain",
      "url": "https://x.com/GoPlusSecurity/status/2123694304959021131",
-     "note": "Suspected exploit; deployer moved 5.2M XMR1; proceeds ~7,300 ETH bridged."
+     "note": "Reports suspicious transfers from the deployer and conversion of proceeds."
     },
     {
      "date": "2026-11-20T09:28:26Z",
@@ -4070,6 +4080,36 @@
      "note": "Cites a CertiK flag; cause unconfirmed."
     },
     {
+     "date": "2026-11-20T09:57:31Z",
+     "handle": "PeckShieldAlert",
+     "role": "security",
+     "w": 0.9,
+     "stance": "report",
+     "evidence": "onchain",
+     "url": "https://x.com/PeckShieldAlert/status/2123717364827267434",
+     "note": "Traces the deployer transfer, token price collapse and conversion of proceeds."
+    },
+    {
+     "date": "2026-11-20T11:00:52Z",
+     "handle": "emeraldsXBT",
+     "role": "user",
+     "w": 0.12,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/emeraldsXBT/status/2123733309150912646",
+     "note": "Says they held XMR1 on Hyperliquid during the sell-off."
+    },
+    {
+     "date": "2026-11-20T11:31:09Z",
+     "handle": "PerpetualCow",
+     "role": "official",
+     "w": 1.0,
+     "stance": "update",
+     "evidence": "none",
+     "url": "https://x.com/PerpetualCow/status/2123740930838589734",
+     "note": "Promises reimbursement for XMR1 market makers but gives no timetable."
+    },
+    {
      "date": "2026-11-20T12:10:31Z",
      "handle": "XBToshi",
      "role": "aggregator",
@@ -4077,17 +4117,17 @@
      "stance": "report",
      "evidence": "none",
      "url": "https://x.com/XBToshi/status/2123750837931639036",
-     "note": "Timeline; hack or exit scam unresolved."
+     "note": "Reports the operator's reimbursement pledge."
     },
     {
      "date": "2026-11-20T12:48:50Z",
      "handle": "PerpetualCow",
      "role": "official",
      "w": 1.0,
-     "stance": "confirm",
+     "stance": "postmortem",
      "evidence": "none",
      "url": "https://x.com/PerpetualCow/status/2123760480061718801",
-     "note": "Operator attributes it to a hosting-provider breach exposing the deployer key; promises refunds."
+     "note": "Attributes the compromise to a deployer key exposed through a breached hosting provider."
     },
     {
      "date": "2026-11-20T13:26:20Z",
@@ -4108,9 +4148,23 @@
      "evidence": "link",
      "url": "https://x.com/DailyDarkWeb/status/2123786350730137992",
      "note": "Summary citing CoinDesk."
+    },
+    {
+     "date": "2026-11-20T15:21:35Z",
+     "handle": "TheBlockCo",
+     "role": "media",
+     "w": 0.46,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/TheBlockCo/status/2123798920992047227",
+     "note": "Reports the sell-off, the founder's explanation and the proposed refunds."
     }
    ],
-   "postmortem": null,
+   "postmortem": {
+    "url": "https://x.com/PerpetualCow/status/2123760480061718801",
+    "label": "Wagyu operator\u2019s post-mortem",
+    "date": "2026-11-20T12:48:50Z"
+   },
    "links": [
     {
      "label": "Bitquery investigation",
@@ -4125,39 +4179,32 @@
      "url": "https://x.com/search?f=live&q=Wagyu%20XMR1"
     }
    ],
-   "first": "2026-11-20T07:02:32Z",
-   "date": "2026-11-20T07:02:32Z",
+   "first": "2026-11-20T05:54:52Z",
+   "date": "2026-11-20T05:54:52Z",
    "outcome": null,
-   "score": 99,
-   "stage": "Confirmed",
-   "accounts": 8,
-   "credible": 3,
+   "score": 100,
+   "stage": "Post-mortem",
+   "accounts": 12,
+   "credible": 4,
    "official": true,
    "history": [
     {
-     "t": "2026-11-20T07:02:32Z",
-     "stage": "Rumour",
-     "by": "@0xLegendman",
-     "url": "https://x.com/0xLegendman/status/2123673331341709788",
-     "eid": null
-    },
-    {
-     "t": "2026-11-20T07:06:56Z",
-     "stage": "Claimed",
-     "by": "@crypto_banter",
-     "url": "https://x.com/crypto_banter/status/2123674436033294701",
-     "eid": null
-    },
-    {
-     "t": "2026-11-20T08:25:53Z",
+     "t": "2026-11-20T05:54:52Z",
      "stage": "Corroborated",
-     "by": "@GoPlusSecurity",
-     "url": "https://x.com/GoPlusSecurity/status/2123694304959021131",
+     "by": "@lookonchain",
+     "url": "https://x.com/lookonchain/status/2123656301561667859",
+     "eid": null
+    },
+    {
+     "t": "2026-11-20T11:31:09Z",
+     "stage": "Confirmed",
+     "by": "@PerpetualCow",
+     "url": "https://x.com/PerpetualCow/status/2123740930838589734",
      "eid": null
     },
     {
      "t": "2026-11-20T12:48:50Z",
-     "stage": "Confirmed",
+     "stage": "Post-mortem",
      "by": "@PerpetualCow",
      "url": "https://x.com/PerpetualCow/status/2123760480061718801",
      "eid": null
@@ -4176,10 +4223,10 @@
     }
    ],
    "press": [],
-   "hours_to_confirm": 5.8,
+   "hours_to_confirm": 5.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 14.1,
+   "age_h": 15.5,
    "eid": "x-37d402a7"
   },
   {
@@ -4189,7 +4236,7 @@
     "Fluidkey"
    ],
    "category": "crypto",
-   "claim": "Users of the Fluidkey privacy wallet lost funds across six chains in about 36 minutes, paid out by Fluidkey's own relayer. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911. The entry point is unconfirmed; supply-chain or frontend compromise is speculation pending a post-mortem.",
+   "claim": "Bitquery traced at least $1.58 million in unauthorized Fluidkey payouts across six chains over about 36 minutes. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911; the entry point remains unknown.",
    "amount_usd_claimed": 1580000,
    "posts": [
     {
@@ -4213,14 +4260,14 @@
      "note": "Reports the notice; loss not stated."
     },
     {
-     "date": "2026-11-19T20:17:39Z",
+     "date": "2026-11-19T20:17:22Z",
      "handle": "fluidkey",
      "role": "official",
      "w": 1.0,
      "stance": "update",
      "evidence": "none",
-     "url": "https://x.com/fluidkey/status/2123511041791349059",
-     "note": "No unauthorized transactions since 18:05 UTC; working with SEAL 911; post-mortem to follow."
+     "url": "https://x.com/fluidkey/status/2123510970165436704",
+     "note": "Reports no further unauthorized transactions after shutdown and says SEAL 911 is assisting."
     },
     {
      "date": "2026-11-19T20:58:11Z",
@@ -4240,7 +4287,7 @@
      "stance": "report",
      "evidence": "onchain",
      "url": "https://x.com/hazae41/status/2123648034194239946",
-     "note": "Thread on the drain path through the relayer and a consolidation address."
+     "note": "Describes observed unauthorized relayer payouts."
     }
    ],
    "postmortem": null,
@@ -4248,6 +4295,10 @@
     {
      "label": "Bitquery investigation",
      "url": "https://www.bitquery.io/investigations/fluidkey-hack"
+    },
+    {
+     "label": "Fluidkey impersonation warning",
+     "url": "https://x.com/fluidkey/status/2123701122208870665"
     },
     {
      "label": "Search X",
@@ -4288,7 +4339,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 26.8,
+   "age_h": 27.1,
    "eid": "x-7b9a9595"
   }
  ],
@@ -4564,7 +4615,7 @@
    "t": "2026-11-20T05:00:00Z",
    "ransomware": 1,
    "news": 1,
-   "x": 0
+   "x": 1
   },
   {
    "t": "2026-11-20T06:00:00Z",
@@ -4576,7 +4627,7 @@
    "t": "2026-11-20T07:00:00Z",
    "ransomware": 0,
    "news": 0,
-   "x": 1
+   "x": 0
   },
   {
    "t": "2026-11-20T08:00:00Z",
@@ -4664,8 +4715,8 @@
   }
  ],
  "brief": {
-  "updated": "2026-11-20T20:22:54Z",
-  "headline": "Have I Been Pwned indexed 3.6 million email addresses in a dataset attributed to Careers360, while SBC Medical Group disclosed a breach affecting about 1.6 million people. Wagyu's XMR1 fell to around $1 after $13.5 million in sales, and CISA added an actively exploited VMware vCenter flaw to its catalog.",
+  "updated": "2026-11-20T21:23:00Z",
+  "headline": "A dataset attributed to Careers360 contains 3.6 million unique email addresses, and SBC Medical Group disclosed a breach affecting about 1.6 million people. Wagyu\u2019s XMR1 fell to about $1 after $13.5 million in sales, while CISA added actively exploited flaws in VMware vCenter, SAP NetWeaver and Cisco Expressway.",
   "incidents": [
    {
     "org": "Careers360",
@@ -4751,14 +4802,13 @@
     "eid": "n-cd038ca0"
    },
    {
-    "org": "Irish credit unions",
-    "what": "More than 40 breach notifications after a Belfast-based data processor was breached, unnoticed for six weeks.",
-    "scale": "40+ organisations",
+    "org": "SAP NetWeaver",
+    "what": "CISA added CVE-2025-42884, an actively exploited flaw that can expose or allow changes to server information in NetWeaver Enterprise Portal.",
+    "scale": "Exploited",
     "patterns": [
-     "supply-chain",
-     "data-exposure"
+     "enterprise-platform"
     ],
-    "eid": "n-c21f2f09"
+    "eid": "k-8e30ace2"
    },
    {
     "org": "N-able",
@@ -4934,7 +4984,24 @@
    "patterns": [
     "outage"
    ],
-   "related": []
+   "related": [
+    {
+     "id": "x-7b9a9595",
+     "kind": "x",
+     "title": "Fluidkey",
+     "date": "2026-11-19T18:20:00Z",
+     "score": 0.33,
+     "why": "same pattern: Disruption and outages; terms: offline"
+    },
+    {
+     "id": "c-7b9a9595",
+     "kind": "crypto",
+     "title": "Fluidkey",
+     "date": "2026-11-19",
+     "score": 0.33,
+     "why": "same pattern: Disruption and outages; terms: offline"
+    }
+   ]
   },
   "n-cd038ca0": {
    "patterns": [
@@ -5014,7 +5081,7 @@
      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
      "date": "2026-11-19T17:16:31Z",
      "score": 0.28,
-     "why": "same pattern: Data exposure and theft; terms: visa, mastercard, chase"
+     "why": "same pattern: Data exposure and theft; terms: visa, chase, mastercard"
     },
     {
      "id": "c-2336d4da",
@@ -5751,7 +5818,7 @@
      "id": "x-37d402a7",
      "kind": "x",
      "title": "Wagyu XMR1",
-     "date": "2026-11-20T07:02:32Z",
+     "date": "2026-11-20T05:54:52Z",
      "score": 0.24,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: compromise, compromised"
     },
@@ -5932,7 +5999,7 @@
      "id": "x-37d402a7",
      "kind": "x",
      "title": "Wagyu XMR1",
-     "date": "2026-11-20T07:02:32Z",
+     "date": "2026-11-20T05:54:52Z",
      "score": 0.66,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: xmr1, wagyu, deployer"
     },
@@ -5982,7 +6049,7 @@
    ],
    "cluster": "cl-7fee46",
    "analysis": {
-    "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
+    "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after roughly $13.5 million in sales. In a post-mortem, Wagyu's operator attributed the loss to a deployer key exposed in a breach at 1984.hosting; on-chain data corroborates the sales but not how the key was obtained.",
     "attack_chain": [
      "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
      "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
@@ -6004,7 +6071,7 @@
       "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
      },
      {
-      "label": "Operator on X",
+      "label": "Wagyu operator\u2019s post-mortem",
       "url": "https://x.com/PerpetualCow/status/2123760480061718801"
      }
     ],
@@ -6076,8 +6143,6 @@
   },
   "c-7b9a9595": {
    "patterns": [
-    "key-compromise",
-    "supply-chain",
     "outage"
    ],
    "related": [
@@ -6087,56 +6152,29 @@
      "title": "Fluidkey",
      "date": "2026-11-19T18:20:00Z",
      "score": 0.71,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; shared: fluidkey; terms: fluidkey, seal, privacy"
+     "why": "same pattern: Disruption and outages; shared: fluidkey; terms: fluidkey, seal, offline"
     },
     {
-     "id": "c-1921c187",
-     "kind": "crypto",
-     "title": "FLOKI Trading Bot",
-     "date": "2026-11-05",
-     "score": 0.27,
-     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
-    },
-    {
-     "id": "x-37d402a7",
-     "kind": "x",
-     "title": "Wagyu XMR1",
-     "date": "2026-11-20T07:02:32Z",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
-    },
-    {
-     "id": "c-9e95d8b0",
-     "kind": "crypto",
-     "title": "Wagyu (XMR1)",
-     "date": "2026-11-20",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
-    },
-    {
-     "id": "c-9c5869b8",
-     "kind": "crypto",
-     "title": "Swarm",
-     "date": "2026-11-09",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
+     "id": "n-755bf327",
+     "kind": "news",
+     "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
+     "date": "2026-11-20T18:44:27Z",
+     "score": 0.33,
+     "why": "same pattern: Disruption and outages; terms: offline"
     }
    ],
    "precedents": [],
    "cluster": "cl-28f79e",
    "analysis": {
-    "summary": "Unauthorized transactions drained Fluidkey privacy-wallet users across seven chains in roughly 25 minutes. Every drain passed through Fluidkey's own relayer with valid signatures, which points to compromised signing capability rather than an on-chain contract bug.",
+    "summary": "Bitquery traced at least $1.58 million in unauthorized Fluidkey payouts across six chains in about 36 minutes. Fluidkey said it took its services offline at 18:05 UTC and is investigating with SEAL 911; the root cause remains unknown.",
     "attack_chain": [
-     "Initial access: unknown. Community speculation covers a supply-chain compromise of the web app or a DNS hijack; neither is confirmed.",
-     "Attacker obtains the ability to produce valid user signatures (keys, or a compromised client that signs on the user's behalf).",
-     "Drain transactions are submitted through Fluidkey's relayer on seven chains within about 25 minutes.",
-     "Proceeds are routed to Tornado Cash.",
+     "Initial access and the cause of the unauthorized payouts are unknown.",
+     "Bitquery traced unauthorized payouts through Fluidkey's relayer across six chains.",
      "Fluidkey takes its website, app and services offline at 18:05 UTC on November 19; no unauthorized transactions are reported after that."
     ],
     "open_questions": [
-     "How signing material was exposed",
-     "Total loss (victim estimates start at about $1.6M)",
-     "Whether a post-mortem will confirm a supply-chain vector"
+     "What allowed the unauthorized payouts?",
+     "What is the final loss after unclassified transactions are reconciled?"
     ],
     "mitigations": [
      "Pin and verify front-end builds (subresource integrity, reproducible builds)",
@@ -6146,13 +6184,15 @@
     ],
     "sources": [
      {
-      "label": "X thread",
-      "url": "https://x.com/hazae41/status/2123648034194239946"
+      "label": "Bitquery investigation",
+      "url": "https://www.bitquery.io/investigations/fluidkey-hack"
+     },
+     {
+      "label": "Fluidkey incident update",
+      "url": "https://x.com/fluidkey/status/2123510970165436704"
      }
     ],
     "patterns": [
-     "key-compromise",
-     "supply-chain",
      "outage"
     ]
    }
@@ -6373,7 +6413,7 @@
      "id": "x-37d402a7",
      "kind": "x",
      "title": "Wagyu XMR1",
-     "date": "2026-11-20T07:02:32Z",
+     "date": "2026-11-20T05:54:52Z",
      "score": 0.23,
      "why": "same pattern: Key and credential compromise; terms: deployer, sold, key"
     }
@@ -7096,7 +7136,7 @@
      "id": "x-37d402a7",
      "kind": "x",
      "title": "Wagyu XMR1",
-     "date": "2026-11-20T07:02:32Z",
+     "date": "2026-11-20T05:54:52Z",
      "score": 0.26,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: provider, server, account"
     },
@@ -7479,7 +7519,7 @@
      "id": "x-37d402a7",
      "kind": "x",
      "title": "Wagyu XMR1",
-     "date": "2026-11-20T07:02:32Z",
+     "date": "2026-11-20T05:54:52Z",
      "score": 0.3,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
     },
@@ -7498,14 +7538,6 @@
      "date": "2026-11-18T06:45:26Z",
      "score": 0.25,
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: versions, published, malicious"
-    },
-    {
-     "id": "c-7b9a9595",
-     "kind": "crypto",
-     "title": "Fluidkey",
-     "date": "2026-11-19",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
     }
    ],
    "precedents": [
@@ -7708,7 +7740,7 @@
      "amount": 4208000,
      "technique": "Key Leaked via Infrastructure",
      "classification": "Frontend & Infrastructure",
-     "score": 0.14,
+     "score": 0.15,
      "why": "mayan, unconfirmed, subsequently"
     }
    ]
@@ -7935,22 +7967,6 @@
     "outage"
    ],
    "related": [
-    {
-     "id": "c-7b9a9595",
-     "kind": "crypto",
-     "title": "Fluidkey",
-     "date": "2026-11-19",
-     "score": 0.27,
-     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
-    },
-    {
-     "id": "x-7b9a9595",
-     "kind": "x",
-     "title": "Fluidkey",
-     "date": "2026-11-19T18:20:00Z",
-     "score": 0.27,
-     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
-    },
     {
      "id": "c-9a202e8d",
      "kind": "crypto",
@@ -11005,25 +11021,25 @@
      "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: provider, server, account"
     },
     {
-     "id": "c-7b9a9595",
-     "kind": "crypto",
-     "title": "Fluidkey",
-     "date": "2026-11-19",
+     "id": "n-1df53018",
+     "kind": "news",
+     "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
+     "date": "2026-11-18T06:45:26Z",
      "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
+     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: compromise, compromised"
     },
     {
-     "id": "x-7b9a9595",
-     "kind": "x",
-     "title": "Fluidkey",
-     "date": "2026-11-19T18:20:00Z",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet, compromise"
+     "id": "c-b3750593",
+     "kind": "crypto",
+     "title": "LiquidCore",
+     "date": "2026-11-07",
+     "score": 0.23,
+     "why": "same pattern: Key and credential compromise; terms: deployer, hyperliquid, key"
     }
    ],
    "cluster": "cl-7fee46",
    "analysis": {
-    "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
+    "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after roughly $13.5 million in sales. In a post-mortem, Wagyu's operator attributed the loss to a deployer key exposed in a breach at 1984.hosting; on-chain data corroborates the sales but not how the key was obtained.",
     "attack_chain": [
      "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
      "On-chain records show XMR1 transferred out of the deployer-controlled account; new minting was not established.",
@@ -11045,7 +11061,7 @@
       "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
      },
      {
-      "label": "Operator on X",
+      "label": "Wagyu operator\u2019s post-mortem",
       "url": "https://x.com/PerpetualCow/status/2123760480061718801"
      }
     ],
@@ -11057,8 +11073,6 @@
   },
   "x-7b9a9595": {
    "patterns": [
-    "key-compromise",
-    "supply-chain",
     "outage"
    ],
    "related": [
@@ -11068,55 +11082,28 @@
      "title": "Fluidkey",
      "date": "2026-11-19",
      "score": 0.71,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; shared: fluidkey; terms: fluidkey, seal, privacy"
+     "why": "same pattern: Disruption and outages; shared: fluidkey; terms: fluidkey, seal, offline"
     },
     {
-     "id": "c-1921c187",
-     "kind": "crypto",
-     "title": "FLOKI Trading Bot",
-     "date": "2026-11-05",
-     "score": 0.27,
-     "why": "same pattern: Key and credential compromise, Disruption and outages; terms: offline, took"
-    },
-    {
-     "id": "c-9e95d8b0",
-     "kind": "crypto",
-     "title": "Wagyu (XMR1)",
-     "date": "2026-11-20",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: frontend, wallet"
-    },
-    {
-     "id": "x-37d402a7",
-     "kind": "x",
-     "title": "Wagyu XMR1",
-     "date": "2026-11-20T07:02:32Z",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet, compromise"
-    },
-    {
-     "id": "c-9c5869b8",
-     "kind": "crypto",
-     "title": "Swarm",
-     "date": "2026-11-09",
-     "score": 0.24,
-     "why": "same pattern: Key and credential compromise, Supply chain and third parties; terms: wallet"
+     "id": "n-755bf327",
+     "kind": "news",
+     "title": "U.S. Department of Agriculture grapples with security breach as IT staff take multiple systems offline",
+     "date": "2026-11-20T18:44:27Z",
+     "score": 0.33,
+     "why": "same pattern: Disruption and outages; terms: offline"
     }
    ],
    "cluster": "cl-28f79e",
    "analysis": {
-    "summary": "Unauthorized transactions drained Fluidkey privacy-wallet users across seven chains in roughly 25 minutes. Every drain passed through Fluidkey's own relayer with valid signatures, which points to compromised signing capability rather than an on-chain contract bug.",
+    "summary": "Bitquery traced at least $1.58 million in unauthorized Fluidkey payouts across six chains in about 36 minutes. Fluidkey said it took its services offline at 18:05 UTC and is investigating with SEAL 911; the root cause remains unknown.",
     "attack_chain": [
-     "Initial access: unknown. Community speculation covers a supply-chain compromise of the web app or a DNS hijack; neither is confirmed.",
-     "Attacker obtains the ability to produce valid user signatures (keys, or a compromised client that signs on the user's behalf).",
-     "Drain transactions are submitted through Fluidkey's relayer on seven chains within about 25 minutes.",
-     "Proceeds are routed to Tornado Cash.",
+     "Initial access and the cause of the unauthorized payouts are unknown.",
+     "Bitquery traced unauthorized payouts through Fluidkey's relayer across six chains.",
      "Fluidkey takes its website, app and services offline at 18:05 UTC on November 19; no unauthorized transactions are reported after that."
     ],
     "open_questions": [
-     "How signing material was exposed",
-     "Total loss (victim estimates start at about $1.6M)",
-     "Whether a post-mortem will confirm a supply-chain vector"
+     "What allowed the unauthorized payouts?",
+     "What is the final loss after unclassified transactions are reconciled?"
     ],
     "mitigations": [
      "Pin and verify front-end builds (subresource integrity, reproducible builds)",
@@ -11126,13 +11113,15 @@
     ],
     "sources": [
      {
-      "label": "X thread",
-      "url": "https://x.com/hazae41/status/2123648034194239946"
+      "label": "Bitquery investigation",
+      "url": "https://www.bitquery.io/investigations/fluidkey-hack"
+     },
+     {
+      "label": "Fluidkey incident update",
+      "url": "https://x.com/fluidkey/status/2123510970165436704"
      }
     ],
     "patterns": [
-     "key-compromise",
-     "supply-chain",
      "outage"
     ]
    }
@@ -11552,15 +11541,13 @@
     "Fluidkey"
    ],
    "patterns": [
-    "key-compromise",
-    "supply-chain",
     "outage"
    ],
    "terms": [
     "fluidkey",
     "seal",
-    "privacy",
-    "offline"
+    "offline",
+    "took"
    ],
    "kinds": {
     "crypto": 1,
@@ -11594,7 +11581,7 @@
     "crypto": 1,
     "x": 1
    },
-   "latest": "2026-11-20T07:02:32Z",
+   "latest": "2026-11-20T05:54:52Z",
    "cohesion": 0.66
   },
   {
@@ -11805,13 +11792,13 @@
    "id": "key-compromise",
    "label": "Key and credential compromise",
    "news": 2,
-   "crypto": 13,
+   "crypto": 12,
    "kev": 9,
-   "x": 2,
+   "x": 1,
    "breach": 0,
    "usd": 16272367.0,
-   "total": 26,
-   "recent7": 11
+   "total": 24,
+   "recent7": 9
   },
   {
    "id": "supply-chain",
@@ -11910,6 +11897,18 @@
    "recent7": 1
   },
   {
+   "id": "outage",
+   "label": "Disruption and outages",
+   "news": 1,
+   "crypto": 1,
+   "kev": 0,
+   "x": 1,
+   "breach": 0,
+   "usd": 0,
+   "total": 3,
+   "recent7": 3
+  },
+  {
    "id": "ai",
    "label": "AI systems and agents",
    "news": 2,
@@ -11920,18 +11919,6 @@
    "usd": 0,
    "total": 3,
    "recent7": 3
-  },
-  {
-   "id": "outage",
-   "label": "Disruption and outages",
-   "news": 1,
-   "crypto": 0,
-   "kev": 0,
-   "x": 0,
-   "breach": 0,
-   "usd": 0,
-   "total": 1,
-   "recent7": 1
   },
   {
    "id": "phishing",
