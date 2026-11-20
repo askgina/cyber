@@ -1,0 +1,98 @@
+{
+ "Fluidkey": {
+  "summary": "Unauthorized transactions drained Fluidkey privacy-wallet users across seven chains in roughly 25 minutes. Every drain passed through Fluidkey's own relayer with valid signatures, which points to compromised signing capability rather than an on-chain contract bug.",
+  "attack_chain": [
+   "Initial access: unknown. Community speculation covers a supply-chain compromise of the web app or a DNS hijack; neither is confirmed.",
+   "Attacker obtains the ability to produce valid user signatures (keys, or a compromised client that signs on the user's behalf).",
+   "Drain transactions are submitted through Fluidkey's relayer on seven chains within about 25 minutes.",
+   "Proceeds are routed to Tornado Cash.",
+   "Fluidkey takes its website, app and services offline at 18:05 UTC on November 19; no unauthorized transactions are reported after that."
+  ],
+  "open_questions": [
+   "How signing material was exposed",
+   "Total loss (victim estimates start at about $1.6M)",
+   "Whether a post-mortem will confirm a supply-chain vector"
+  ],
+  "mitigations": [
+   "Pin and verify front-end builds (subresource integrity, reproducible builds)",
+   "Monitor DNS and registrar changes",
+   "Rate-limit and anomaly-check relayer submissions per account",
+   "Keep a tested kill switch for relayers"
+  ],
+  "sources": [
+   {
+    "label": "X thread",
+    "url": "https://x.com/hazae41/status/2123648034194239946"
+   }
+  ],
+  "patterns": [
+   "key-compromise",
+   "supply-chain",
+   "outage"
+  ]
+ },
+ "Wagyu (XMR1)": {
+  "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
+  "attack_chain": [
+   "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
+   "Attacker uses the deployer key to obtain or mint XMR1.",
+   "Roughly $13.5M of XMR1 is sold into Hyperliquid liquidity, collapsing the price from about $500 to $1.",
+   "Proceeds are moved out; PeckShield reported about 640 ETH bridged to Hyperliquid by the attacker."
+  ],
+  "open_questions": [
+   "Which hosting provider was breached",
+   "Whether the deployer key had mint authority by design"
+  ],
+  "mitigations": [
+   "Keep deployer and mint keys in HSM or multisig, never on hosting infrastructure",
+   "Remove or time-lock mint authority after deployment",
+   "Alert on mints and large sells from privileged addresses"
+  ],
+  "sources": [
+   {
+    "label": "Bitquery analysis",
+    "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
+   },
+   {
+    "label": "Operator on X",
+    "url": "https://x.com/PerpetualCow/status/2123760480061718801"
+   }
+  ],
+  "patterns": [
+   "key-compromise",
+   "supply-chain"
+  ]
+ },
+ "Wagyu XMR1": {
+  "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after an attacker sold roughly $13.5M of tokens. Wagyu's operator attributes it to a deployer key exposed in a hosting-provider breach; on-chain data confirms the sales but not how the key was obtained.",
+  "attack_chain": [
+   "Initial access (claimed): deployer key exposed through a breach at a hosting provider.",
+   "Attacker uses the deployer key to obtain or mint XMR1.",
+   "Roughly $13.5M of XMR1 is sold into Hyperliquid liquidity, collapsing the price from about $500 to $1.",
+   "Proceeds are moved out; PeckShield reported about 640 ETH bridged to Hyperliquid by the attacker."
+  ],
+  "open_questions": [
+   "Which hosting provider was breached",
+   "Whether the deployer key had mint authority by design"
+  ],
+  "mitigations": [
+   "Keep deployer and mint keys in HSM or multisig, never on hosting infrastructure",
+   "Remove or time-lock mint authority after deployment",
+   "Alert on mints and large sells from privileged addresses"
+  ],
+  "sources": [
+   {
+    "label": "Bitquery analysis",
+    "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
+   },
+   {
+    "label": "Operator on X",
+    "url": "https://x.com/PerpetualCow/status/2123760480061718801"
+   }
+  ],
+  "patterns": [
+   "key-compromise",
+   "supply-chain"
+  ]
+ }
+}

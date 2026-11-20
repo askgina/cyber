@@ -19,6 +19,7 @@
   <a class="wordmark" href="#top" aria-label="Breach Ledger, top of page">Breach Ledger</a>
   <nav aria-label="Sections">
     <a href="#today">Today</a>
+    <a href="#patterns">Patterns</a>
     <a href="#crypto">Crypto</a>
     <a href="#ransomware">Ransomware</a>
     <a href="#exploited">Exploited</a>
@@ -55,6 +56,8 @@
       <ol>
         <li><a href="#today">Today</a>
           <ol><li><a href="#news">Reported</a></li><li><a href="#x-signals">Early signals on X</a></li></ol></li>
+        <li><a href="#patterns">Attack patterns</a>
+          <ol><li><a href="#clusters">Related incidents</a></li></ol></li>
         <li><a href="#crypto">Crypto exploits</a></li>
         <li><a href="#ransomware">Ransomware claims</a>
           <ol><li><a href="#groups">Groups</a></li><li><a href="#sectors">Sectors and countries</a></li></ol></li>
@@ -74,6 +77,20 @@
         <h3 id="x-signals">Early signals on X</h3>
         <p class="lede">Claims surface on X before they reach news desks or databases. Each signal carries a confidence stage and links to the original posts; we keep extracted facts, not copies of posts.</p>
         <div id="x-list" class="entries"></div>
+      </section>
+
+      <section id="patterns">
+        <h2>Attack patterns</h2>
+        <p class="lede" id="patterns-lede"></p>
+        <div class="filter">
+          <label for="q" class="sr">Filter incidents</label>
+          <input id="q" type="search" placeholder="Filter by name, vendor, chain or technique" autocomplete="off">
+          <button type="button" class="clear" id="clear-filter" hidden>Clear filter</button>
+        </div>
+        <table class="tbl pat" id="patterns-tbl"></table>
+        <h3 id="clusters">Related incidents</h3>
+        <p class="lede">Reports that describe the same campaign, product or technique, grouped by text and pattern similarity. Open any entry for its closest matches and, for crypto, earlier attacks that worked the same way.</p>
+        <div id="cluster-list" class="entries"></div>
       </section>
 
       <section id="crypto">
@@ -97,7 +114,7 @@
       <section id="exploited">
         <h2>Exploited vulnerabilities</h2>
         <p class="lede" id="kev-lede"></p>
-        <table class="tbl kev" id="kev-tbl"></table>
+        <div id="kev-list" class="entries"></div>
       </section>
 
       <section id="method">
@@ -110,6 +127,7 @@
           <div><dt>Confirmed</dt><dd>A post-mortem, regulator filing, CISA KEV listing or equivalent authoritative record.</dd></div>
         </dl>
         <p>Ransomware leak-site listings are claims by criminal groups and are shown only as counts by group, sector and country. Victim names are deliberately omitted.</p>
+        <p>Attack patterns are assigned by rules over each entry's text, DefiLlama's classification and CISA's CWE codes. Similarity combines text overlap (TF-IDF cosine) with shared patterns and shared vendors or chains; groups are entries whose similarity clears a fixed threshold. Crypto entries are also compared with DefiLlama's full archive of past hacks. Where an incident is significant, a written analysis with the attack chain, open questions and mitigations is added and may correct the automatic tags.</p>
         <h3 id="sources">Sources</h3>
         <ul class="sources">
           <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Known Exploited Vulnerabilities catalog</a>, JSON feed.</li>
@@ -136,6 +154,7 @@
   <span id="foot-asof"></span>
 </footer>
 
+<div class="fbar" id="fbar" hidden><span id="fbar-text"></span><button type="button" id="fbar-clear">Clear</button></div>
 <button class="ask-pop" id="ask-pop" type="button" hidden>Ask Perplexity</button>
 
 <script src="app.js"></script>

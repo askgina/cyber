@@ -37,7 +37,7 @@ try:
                 "id": v["cveID"], "date": v["dateAdded"], "vendor": v["vendorProject"],
                 "product": v["product"], "name": v["vulnerabilityName"],
                 "desc": v["shortDescription"], "ransomware": v.get("knownRansomwareCampaignUse") == "Known",
-                "due": v.get("dueDate"),
+                "due": v.get("dueDate"), "cwes": v.get("cwes") or [], "action": v.get("requiredAction"),
                 "links": [
                     {"label": "NVD", "url": f"https://nvd.nist.gov/vuln/detail/{v['cveID']}"},
                     {"label": "CISA KEV", "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog?search_api_fulltext=" + v["cveID"]},
@@ -95,10 +95,15 @@ if victims:
 
 # ---- DefiLlama hacks
 crypto = []
+crypto_hist = []
 try:
     for h in json.loads(get("https://api.llama.fi/hacks")):
         d0 = dt.datetime.fromtimestamp(h["date"], dt.timezone.utc)
-        if days_ago(d0) <= 30:
+        if days_ago(d0) > 30:
+            if h.get("description"):
+                h["_date"] = d0.strftime("%Y-%m-%d"); crypto_hist.append(h)
+            continue
+        if True:
             links = [{"label": "DefiLlama", "url": "https://defillama.com/hacks"},
                      {"label": "Search X", "url": xsearch(f"{h['name']} (exploit OR hack OR drained)")}]
             if h.get("source"): links.insert(0, {"label": "Source", "url": h["source"]})
@@ -157,16 +162,31 @@ def daily(rows, key):
     return out
 
 c30 = crypto
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from enrich import enrich
+news_out, crypto_out, kev_out = news[:40], crypto[:60], kev[:40]
+incidents, clusters, pattern_stats, pattern_defs = enrich(
+    news_out, crypto_out, kev_out, xsig, history=crypto_hist,
+    notes_path=os.path.join(ROOT, "pipeline", "analysis_notes.json"))
+by_kind = {"news": news_out, "crypto": crypto_out, "kev": kev_out, "x": xsig}
+pos = {"news": 0, "crypto": 0, "kev": 0, "x": 0}
+details = {}
+for inc in incidents:
+    item = by_kind[inc["kind"]][pos[inc["kind"]]]; pos[inc["kind"]] += 1
+    item["eid"] = inc["id"]
+    details[inc["id"]] = {k: inc[k] for k in ("patterns", "related", "precedents", "cluster", "cwes", "analysis", "action") if k in inc}
 data = {
     "generated": iso(NOW), "errors": errors,
     "kev": {"total_catalog": kev_total, "count_7d": len(window(kev, 7)), "count_30d": len(kev),
-            "ransomware_linked_30d": sum(k["ransomware"] for k in kev), "items": kev[:40],
+            "ransomware_linked_30d": sum(k["ransomware"] for k in kev), "items": kev_out,
             "series": daily(kev, "date")},
     "ransomware": {**ransom, "coverage_days": ransom_coverage_days, "series": daily(victims, "date")},
     "crypto": {"count_7d": len([c for c in c30 if days_ago(parse_iso(c["date"])) <= 7]), "count_30d": len(c30),
                "usd_7d": sum((c["amount"] or 0) for c in c30 if days_ago(parse_iso(c["date"])) <= 7),
-               "usd_30d": sum((c["amount"] or 0) for c in c30), "items": c30[:60], "series": daily(c30, "date")},
-    "news": news[:40], "x": xsig,
+               "usd_30d": sum((c["amount"] or 0) for c in c30), "items": crypto_out, "series": daily(c30, "date"),
+               "history_size": len(crypto_hist)},
+    "news": news_out, "x": xsig,
+    "details": details, "clusters": clusters[:12], "patterns": pattern_stats, "pattern_defs": pattern_defs,
 }
 json.dump(data, open(OUT, "w"), indent=1)
 print("ok", {k: (len(v["items"]) if isinstance(v, dict) and "items" in v else None) for k, v in data.items()}, "news", len(news), "errors", errors)
