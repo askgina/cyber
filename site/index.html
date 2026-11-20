@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Breach Ledger — A daily record of cyber incidents</title>
+<meta name="description" content="An hourly-updated register of cyber security incidents: crypto exploits, ransomware leak-site claims, exploited vulnerabilities, news and early signals from X.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect x=%222%22 y=%225%22 width=%2212%22 height=%226%22 fill=%22%23000443%22/%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site">
+  <a class="wordmark" href="#top" aria-label="Breach Ledger, top of page">Breach Ledger</a>
+  <nav aria-label="Sections">
+    <a href="#today">Today</a>
+    <a href="#crypto">Crypto</a>
+    <a href="#ransomware">Ransomware</a>
+    <a href="#exploited">Exploited</a>
+    <a href="#method">Method</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="opening" id="top">
+    <h1>Breach Ledger:<br>A Daily Record of Cyber Incidents</h1>
+    <div class="abstract-wrap">
+      <p class="abstract" id="abstract">Loading the latest record…</p>
+      <dl class="meta">
+        <div><dt class="sr">Type</dt><dd>Daily register</dd></div>
+        <div><dt class="sr">Cadence</dt><dd>Updated hourly</dd></div>
+        <div><dt class="sr">As of</dt><dd id="asof">—</dd></div>
+      </dl>
+      <div class="actions">
+        <a class="btn" id="ask-today" href="#" target="_blank" rel="noopener">Ask Perplexity about today</a>
+        <a class="link" href="#method">Read the method</a>
+      </div>
+      <p class="hint">Select any text on this page to ask Perplexity about it.</p>
+    </div>
+  </section>
+
+  <figure class="fig" id="fig1">
+    <div class="ticks" id="ticks" aria-label="Headline counts"></div>
+    <div class="series" id="series"></div>
+    <figcaption><b>Figure 1:</b> Daily counts over the last 30 days, by source. Squares are days; size is relative to each series' busiest day.</figcaption>
+  </figure>
+
+  <div class="body">
+    <aside class="toc" aria-label="Contents">
+      <ol>
+        <li><a href="#today">Today</a>
+          <ol><li><a href="#news">Reported</a></li><li><a href="#x-signals">Early signals on X</a></li></ol></li>
+        <li><a href="#crypto">Crypto exploits</a></li>
+        <li><a href="#ransomware">Ransomware claims</a>
+          <ol><li><a href="#groups">Groups</a></li><li><a href="#sectors">Sectors and countries</a></li></ol></li>
+        <li><a href="#exploited">Exploited vulnerabilities</a></li>
+        <li><a href="#method">Method</a>
+          <ol><li><a href="#stages">Confidence stages</a></li><li><a href="#sources">Sources</a></li><li><a href="#limits">Limitations</a></li></ol></li>
+        <li><a href="#cite">Citation</a></li>
+      </ol>
+    </aside>
+
+    <article class="doc">
+      <section id="today">
+        <h2>Today</h2>
+        <p class="lede" id="today-lede"></p>
+        <h3 id="news">Reported</h3>
+        <div id="news-list" class="entries"></div>
+        <h3 id="x-signals">Early signals on X</h3>
+        <p class="lede">Claims surface on X before they reach news desks or databases. Each signal carries a confidence stage and links to the original posts; we keep extracted facts, not copies of posts.</p>
+        <div id="x-list" class="entries"></div>
+      </section>
+
+      <section id="crypto">
+        <h2>Crypto exploits</h2>
+        <p class="lede" id="crypto-lede"></p>
+        <div id="crypto-list" class="entries"></div>
+      </section>
+
+      <section id="ransomware">
+        <h2>Ransomware claims</h2>
+        <p class="lede" id="ransom-lede"></p>
+        <h3 id="groups">Groups</h3>
+        <table class="tbl" id="groups-tbl"></table>
+        <h3 id="sectors">Sectors and countries</h3>
+        <div class="two">
+          <table class="tbl" id="sectors-tbl"></table>
+          <table class="tbl" id="countries-tbl"></table>
+        </div>
+      </section>
+
+      <section id="exploited">
+        <h2>Exploited vulnerabilities</h2>
+        <p class="lede" id="kev-lede"></p>
+        <table class="tbl kev" id="kev-tbl"></table>
+      </section>
+
+      <section id="method">
+        <h2>Method</h2>
+        <p>Breach Ledger is rebuilt every hour from public feeds. Each run pulls the sources below, removes duplicates, recomputes the 24-hour, 7-day and 30-day counts, and republishes this page. Nothing here is a verdict: an entry records what a source claims, how far that claim has been corroborated, and where to read more.</p>
+        <h3 id="stages">Confidence stages</h3>
+        <dl class="stages">
+          <div><dt>Claimed</dt><dd>A single post, leak-site listing or unverified report. Treat as a lead.</dd></div>
+          <div><dt>Corroborated</dt><dd>Independent confirmation: a second credible source, on-chain transactions, or a statement from the affected party.</dd></div>
+          <div><dt>Confirmed</dt><dd>A post-mortem, regulator filing, CISA KEV listing or equivalent authoritative record.</dd></div>
+        </dl>
+        <p>Ransomware leak-site listings are claims by criminal groups and are shown only as counts by group, sector and country. Victim names are deliberately omitted.</p>
+        <h3 id="sources">Sources</h3>
+        <ul class="sources">
+          <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Known Exploited Vulnerabilities catalog</a>, JSON feed.</li>
+          <li><a href="https://www.ransomware.live" target="_blank" rel="noopener">ransomware.live</a> leak-site index, v2 API.</li>
+          <li><a href="https://defillama.com/hacks" target="_blank" rel="noopener">DefiLlama hacks dataset</a>, for crypto losses, chains and technique.</li>
+          <li>News: <a href="https://therecord.media" target="_blank" rel="noopener">The Record</a>, <a href="https://thehackernews.com" target="_blank" rel="noopener">The Hacker News</a>, <a href="https://www.bleepingcomputer.com" target="_blank" rel="noopener">BleepingComputer</a>, <a href="https://databreaches.net" target="_blank" rel="noopener">DataBreaches.net</a>, <a href="https://krebsonsecurity.com" target="_blank" rel="noopener">Krebs on Security</a>, <a href="https://rekt.news" target="_blank" rel="noopener">rekt</a>.</li>
+          <li>X: curated signals plus a live search link on every entry.</li>
+        </ul>
+        <h3 id="limits">Limitations</h3>
+        <p>Feeds lag reality by minutes to days, and coverage is uneven: crypto and ransomware are well instrumented; most corporate breaches surface only through disclosure. Loss figures are as reported and often revised. News items are filtered by keyword and may include advisories rather than incidents.</p>
+        <p class="status" id="status"></p>
+      </section>
+
+      <section id="cite">
+        <h2>Citation</h2>
+        <pre class="cite" id="cite-block"></pre>
+      </section>
+    </article>
+  </div>
+</main>
+
+<footer class="site">
+  <span>Breach Ledger</span>
+  <span id="foot-asof"></span>
+</footer>
+
+<button class="ask-pop" id="ask-pop" type="button" hidden>Ask Perplexity</button>
+
+<script src="app.js"></script>
+</body>
+</html>

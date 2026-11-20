@@ -1,0 +1,8 @@
+[
+ {"date": "2026-11-19T19:30:00Z", "subject": "Fluidkey", "category": "crypto",
+  "stage": "Corroborated",
+  "claim": "Users of the Fluidkey privacy wallet report funds drained across seven chains in about 25 minutes, routed through Fluidkey's own relayer with valid signatures. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911. Cause is unconfirmed; supply-chain compromise is speculation pending a post-mortem.",
+  "amount_usd_claimed": 1600000,
+  "links": [{"label": "X thread", "url": "https://x.com/hazae41/status/2123648034194239946"},
+            {"label": "Search X", "url": "https://x.com/search?f=live&q=Fluidkey"}]}
+]
