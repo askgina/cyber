@@ -1,17 +1,7 @@
 {
- "updated": "2026-11-21T10:28:45Z",
- "headline": "Marui Group reported exposure of about 17.33 million records through a marketing vendor. Chainflip paused operations while investigating a potential vault exploit; Onchain Lens reported $4.86 million in outflows that Chainflip has not confirmed.",
+ "updated": "2026-11-21T11:25:41Z",
+ "headline": "Chainflip paused operations to investigate a possible vault exploit; it has not confirmed the $4.86 million outflow reported by Onchain Lens. CNN reported a suspected intrusion into the FBI’s national crime database, but the bureau has not publicly confirmed the scope.",
  "incidents": [
-  {
-   "org": "Marui Group (Marui and Epos Card)",
-   "what": "Marui Group confirmed that unauthorized access at marketing vendor PLAID exposed Marui retail and Epos Card data.",
-   "scale": "8.83M Marui records and 8.5M Epos records; not a unique-person count",
-   "patterns": [
-    "supply-chain",
-    "data-exposure"
-   ],
-   "eid": "n-e8e9ed7e"
-  },
   {
    "org": "Chainflip Ethereum vault",
    "what": "Chainflip paused deposits, withdrawals, swaps and quotes while investigating a potential vault exploit; it has not confirmed the reported outflow or its cause.",
@@ -57,25 +47,6 @@
    "eid": "n-65751ff7"
   },
   {
-   "org": "Gothia Towers",
-   "what": "Gothia Towers disclosed a website intrusion that may have exposed customer contact information and some ticket-order details.",
-   "scale": "About 14,000 potentially affected",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-7e92b00a"
-  },
-  {
-   "org": "MoEngage / ZebPay",
-   "what": "ZebPay told customers some contact, device and recent activity data was taken in the MoEngage incident, while the vendor’s earlier notice said customer data was not accessed.",
-   "scale": "Number unreported; ZebPay says funds unaffected",
-   "patterns": [
-    "supply-chain",
-    "data-exposure"
-   ],
-   "eid": "n-13954722"
-  },
-  {
    "org": "Austrian foreign ministry",
    "what": "Austria’s foreign ministry said intruders accessed its externally hosted website and viewed staff names and work contact details.",
    "scale": "Staff count not disclosed",
@@ -93,26 +64,58 @@
    "eid": "n-959a4579"
   },
   {
-   "org": "Dtravel",
-   "what": "Dtravel said it was checking affected Base staking positions against the chain before restoring them.",
-   "scale": "35,656,691 TRVL originally stolen; no dollar estimate",
+   "org": "US Department of Agriculture",
+   "what": "A USDA undersecretary confirmed a cyberthreat and said no data was lost, while press reports describe suspected access to a farm-payment system.",
+   "scale": "Loans and payments disrupted; access scope unconfirmed",
    "patterns": [
-    "key-compromise"
+    "outage"
    ],
-   "eid": "x-134eaec8",
+   "eid": "n-62a6f6b1",
    "update": true,
    "since": "2026-11-16"
   },
   {
+   "org": "Fluidkey",
+   "what": "Fluidkey restored wallet service on an updated app and attributed the incident to session data exposed through a logging tool.",
+   "scale": "At least $1.58M traced by Bitquery",
+   "patterns": [
+    "supply-chain"
+   ],
+   "eid": "x-7b9a9595",
+   "update": true,
+   "since": "2026-11-19"
+  },
+  {
+   "org": "Optimizely (Configured Commerce)",
+   "what": "Optimizely said it shut down a compromised legacy deployment server and removed an injected script from two sites.",
+   "scale": "Two sites with script removal; data access unknown",
+   "patterns": [
+    "supply-chain"
+   ],
+   "update": true,
+   "since": "2026-11-10"
+  },
+  {
    "org": "Rokkatei",
-   "what": "Rokkatei said personal information may have been exposed in addition to payment card details in the previously disclosed store intrusion.",
-   "scale": "About 8,000 card records initially reported; personal-data count unknown",
+   "what": "Rokkatei confirmed one case of card misuse and said that personal information may also have been exposed in the earlier checkout breach.",
+   "scale": "One misuse confirmed; about 8,000 card records potentially exposed",
    "patterns": [
     "data-exposure"
    ],
+   "eid": "n-2451e7f6",
    "update": true,
-   "since": "2026-10-21",
-   "eid": "x-14355224"
+   "since": "2026-10-21"
+  },
+  {
+   "org": "DeFiChain",
+   "what": "DeFiChain expects to reverse the effects of its November exploit and deploy a fix in December, but did not give a wallet reopening date.",
+   "scale": "December target; not a reopening date",
+   "patterns": [
+    "contract-logic"
+   ],
+   "eid": "x-5ed6a51c",
+   "update": true,
+   "since": "2026-11-03"
   }
  ]
 }
