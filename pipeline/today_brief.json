@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-21T14:27:09Z",
- "headline": "Chainflip kept swaps and withdrawals paused while investigating an Ethereum vault outflow estimated at $4.86 million by trackers. CNN reported a suspected FBI crime-database intrusion, and Nissan confirmed unauthorized access to part of its dealer diagnostics system.",
+ "updated": "2026-11-21T15:25:25Z",
+ "headline": "Chainflip paused swaps while investigating an Ethereum vault outflow that trackers estimated at $4.86 million. CNN reported a suspected FBI crime-database intrusion, and Nissan confirmed unauthorized access to part of its dealer diagnostics system.",
  "incidents": [
   {
    "org": "Chainflip Ethereum vault",
-   "what": "Chainflip paused deposits, withdrawals, swaps and quotes while investigating a potential vault exploit; it has not confirmed the reported outflow or its cause.",
+   "what": "Chainflip put its protocol in safe mode after trackers flagged an estimated $4.86 million in Ethereum vault outflows.",
    "scale": "$4.86M reported",
    "patterns": [
     "bridge"
@@ -66,22 +66,22 @@
    "eid": "n-1434bdb8"
   },
   {
+   "org": "Eskenazi Health",
+   "what": "Eskenazi Health disclosed that patient information may have been accessed after two employee email accounts were compromised in September.",
+   "scale": "Affected count not disclosed",
+   "patterns": [
+    "phishing",
+    "data-exposure"
+   ],
+   "eid": "n-a5c76ba9"
+  },
+  {
    "org": "YMCA of Singapore",
    "what": "YMCA reported a breach of its Youth For Causes portal and database but could not determine whether personal data was taken.",
    "scale": "Scope unknown",
    "patterns": [
     "data-exposure"
    ]
-  },
-  {
-   "org": "OpenRouter / MiniMax",
-   "what": "OpenRouter customers reported receiving warnings that a third party may have read prompts sent to MiniMax, but the number affected is unknown.",
-   "scale": "Scope unknown",
-   "patterns": [
-    "ai",
-    "data-exposure"
-   ],
-   "eid": "x-2d44e830"
   },
   {
    "org": "US Department of Agriculture",
@@ -106,14 +106,16 @@
    "since": "2026-11-19"
   },
   {
-   "org": "Optimizely (Configured Commerce)",
-   "what": "Optimizely said it shut down a compromised legacy deployment server and removed an injected script from two sites.",
-   "scale": "Two sites with script removal; data access unknown",
+   "org": "Triple Whale",
+   "what": "Triple Whale said it contained a late-October breach and notified affected parties; customer Sneak Energy had already notified its own users.",
+   "scale": "Overall scope not disclosed",
    "patterns": [
-    "supply-chain"
+    "supply-chain",
+    "data-exposure"
    ],
    "update": true,
-   "since": "2026-11-10"
+   "since": "2026-10-30",
+   "eid": "x-97a62f1a"
   }
  ]
 }
