@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-21T18:25:36Z",
- "headline": "Trackers estimate $4.86 million left Chainflip’s Ethereum vault as the protocol investigates. Multiple outlets report an apparent intrusion into the FBI’s national crime database; the FBI has not publicly confirmed the breach or its scope.",
+ "updated": "2026-11-21T19:26:44Z",
+ "headline": "Investigators traced a $4.86 million outflow from Chainflip’s Ethereum vault, but have not established how the withdrawal was authorized. Microsoft says it fixed a flaw that exposed Entra Connect Health tenant metadata; the FBI has not publicly confirmed the reported intrusion into its national crime database.",
  "incidents": [
   {
    "org": "Chainflip Ethereum vault",
-   "what": "Chainflip paused deposits, withdrawals and swaps while investigating an Ethereum vault outflow that trackers estimated at $4.86 million.",
+   "what": "Chainflip paused the protocol after on-chain investigators identified a $4.86 million Ethereum vault outflow; how the vault authorized the transfer remains unknown.",
    "scale": "$4.86M reported",
    "patterns": [
     "bridge"
    ],
-   "eid": "x-6dc2fbf8"
+   "eid": "c-2a3dab8c"
+  },
+  {
+   "org": "Microsoft Entra Connect Health",
+   "what": "Microsoft said a server-side flaw let an unauthorized party read administrator email addresses and tenant metadata, with no unauthorized configuration changes found.",
+   "scale": "Tenant count not disclosed",
+   "patterns": [
+    "enterprise-platform",
+    "data-exposure"
+   ],
+   "eid": "n-1e1dbef9"
   },
   {
    "org": "Federal Bureau of Investigation (FBI)",
    "what": "CNN, AP and Fox News independently cited sources describing an apparent intrusion into the FBI’s national crime database; the FBI declined to comment to AP.",
    "scale": "Scope and access unconfirmed",
    "patterns": [],
-   "eid": "n-a6a45a1f"
-  },
-  {
-   "org": "Microsoft Entra Connect Health",
-   "what": "Microsoft customer notices reproduced publicly say outsiders read administrator email addresses and tenant metadata through a flaw that Microsoft fixed server-side.",
-   "scale": "Tenant count not disclosed",
-   "patterns": [
-    "enterprise-platform",
-    "data-exposure"
-   ],
-   "eid": "x-565d5495"
+   "eid": "x-e442a7e4"
   },
   {
    "org": "Germany’s Federal Employment Agency",
@@ -53,7 +53,7 @@
    "patterns": [
     "data-exposure"
    ],
-   "eid": "n-7d9fce1b"
+   "eid": "x-b0bed11b"
   },
   {
    "org": "Optimizely (Configured Commerce)",
@@ -72,6 +72,15 @@
     "data-exposure"
    ],
    "eid": "n-a5c76ba9"
+  },
+  {
+   "org": "YMCA of Singapore",
+   "what": "YMCA said its Youth For Causes registration portal and database were compromised, but investigators could not establish whether personal data was copied.",
+   "scale": "Access to personal data unconfirmed",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "n-4945b68d"
   },
   {
    "org": "GoFundMe Pro",
@@ -103,20 +112,9 @@
    "patterns": [
     "data-exposure"
    ],
-   "eid": "n-2451e7f6",
+   "eid": "x-14355224",
    "update": true,
    "since": "2026-10-21"
-  },
-  {
-   "org": "TAKKT",
-   "what": "TAKKT lowered its earnings outlook after its October cyberattack, although order processing, deliveries and invoicing were largely restored.",
-   "scale": "Partial operational recovery",
-   "patterns": [
-    "outage"
-   ],
-   "update": true,
-   "since": "2026-10-21",
-   "eid": "n-81ebb696"
   }
  ]
 }
