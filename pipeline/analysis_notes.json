@@ -568,5 +568,91 @@
  "Microsoft customer notices describe unauthorized access to Entra Connect Health tenant metadata": {"summary":"Microsoft customer notices reproduced publicly say a flaw in Entra Connect Health allowed unauthorized read-only access to administrator and technical-contact email addresses and tenant configuration metadata. The notices say Microsoft fixed the service on November 19, found no configuration changes or credential exposure, and did not disclose how many tenants were affected.","attack_chain":["Initial access and the actor's identity were not disclosed in the reproduced notice.","The notice says unauthorized parties read selected tenant and service-monitoring metadata.","Microsoft says its server-side fix prevented further access; investigators reported no unauthorized configuration changes."],"open_questions":["How many tenants were affected?","When did unauthorized access begin?","Which affected tenants received a notice in their authenticated Microsoft portal?"],"mitigations":["Verify any incident notice through Microsoft’s authenticated admin portal, not links in unsolicited mail.","Review Entra audit and sign-in logs for anomalous administrative activity and unexpected Connect Health configuration changes.","Protect privileged accounts with phishing-resistant MFA and time-limited activation, and warn administrators about targeted phishing."],"sources":[{"label":"Microsoft notice reproduced by a customer","url":"https://www.reddit.com/r/sysadmin/comments/1y1of2u/important_security_notification_regarding/"},{"label":"BornCity reporting on the customer notice","url":"https://borncity.com/blog/2026/11/21/sicherheitsvorfall-bei-microsoft-entra-connect-health-21-11-2026/"},{"label":"Dave Kennedy on X","url":"https://x.com/HackingDave/status/2123954468043866187"}],"patterns":["enterprise-platform","data-exposure"]},
  "Rakuten Securities reports possible exposure of customer account identifiers and profile data": {"summary":"Rakuten Securities disclosed unauthorized access to a test environment. The company said data for millions of customer accounts may have been exposed, but it did not identify confirmed losses, password exposure or trading PIN exposure.","attack_chain":["The company traced unauthorized access to a test environment; the initial access method has not been publicly established.","The affected environment held account identifiers and some more detailed client information.","Potential exposure prompted public disclosure; unauthorized trades tied to the incident were not reported at disclosure."],"open_questions":["How many accounts were actually accessed?","Was any affected data copied or used for fraud?"],"mitigations":["Do not use unmasked customer data in test environments.","Separate test access from production identity and network privileges, and alert on abnormal reads or exports.","Warn customers about targeted phishing and monitor for suspicious account recovery requests."],"sources":[{"label":"Rakuten Securities","url":"https://www.rakuten-sec.co.jp/web/info/info20261117-02.html"}],"patterns":["data-exposure"]},
  "Rakuten Securities discloses data leak from a test environment": {"summary":"Rakuten Securities disclosed unauthorized access to a test environment. The company said data for millions of customer accounts may have been exposed, but it did not identify confirmed losses, password exposure or trading PIN exposure.","attack_chain":["The company traced unauthorized access to a test environment; the initial access method has not been publicly established.","The affected environment held account identifiers and some more detailed client information.","Potential exposure prompted public disclosure; unauthorized trades tied to the incident were not reported at disclosure."],"open_questions":["How many accounts were actually accessed?","Was any affected data copied or used for fraud?"],"mitigations":["Do not use unmasked customer data in test environments.","Separate test access from production identity and network privileges, and alert on abnormal reads or exports.","Warn customers about targeted phishing and monitor for suspicious account recovery requests."],"sources":[{"label":"Rakuten Securities","url":"https://www.rakuten-sec.co.jp/web/info/info20261117-02.html"}],"patterns":["data-exposure"]},
- "Bragg Creek Community Association seeks recovery after cyber theft": {"summary":"The Bragg Creek Community Association said unauthorized transfers drained its three bank accounts on November 5. It did not disclose the exact loss or identify how the transfers were initiated.","attack_chain":["The access method and identity of the party responsible were not established.","The association reported unauthorized transfers from its bank accounts.","It contacted its financial institution and police and sought support to maintain local services."],"open_questions":["What access or authorization failed?","Can the bank recover any funds?"],"mitigations":["Require approval by two different people for transfers and changes to recipients.","Use independent alerts for unexpected payment activity and limit routine transfer privileges.","Keep a tested plan to contact the bank immediately, preserve audit records and continue critical operations."],"sources":[{"label":"Global News, quoting the association","url":"https://globalnews.ca/news/12156786/bragg-creek-community-association-cyber-theft/"}]}
+ "Bragg Creek Community Association seeks recovery after cyber theft": {"summary":"The Bragg Creek Community Association said unauthorized transfers drained its three bank accounts on November 5. It did not disclose the exact loss or identify how the transfers were initiated.","attack_chain":["The access method and identity of the party responsible were not established.","The association reported unauthorized transfers from its bank accounts.","It contacted its financial institution and police and sought support to maintain local services."],"open_questions":["What access or authorization failed?","Can the bank recover any funds?"],"mitigations":["Require approval by two different people for transfers and changes to recipients.","Use independent alerts for unexpected payment activity and limit routine transfer privileges.","Keep a tested plan to contact the bank immediately, preserve audit records and continue critical operations."],"sources":[{"label":"Global News, quoting the association","url":"https://globalnews.ca/news/12156786/bragg-creek-community-association-cyber-theft/"}]},
+ "RESERViSiON reports unauthorized access to restaurant reservation data": {
+  "summary": "RESERViSiON disclosed that restaurant reservation data was accessed without authorization and used in fraudulent payment messages. The company has not published the number of affected guests and said it could not rule out deeper compromise.",
+  "attack_chain": [
+   "RESERViSiON attributed the initial access to a customer account.",
+   "Guest reservation data was accessed and used in fraudulent payment messages."
+  ],
+  "open_questions": [
+   "How many guests and businesses were affected?",
+   "Did the access extend beyond reservation data?"
+  ],
+  "mitigations": [
+   "Require MFA on reservation-system accounts and revoke sessions suspected of compromise.",
+   "Verify tenant separation with access-control regression tests and alert on unusual bulk access.",
+   "Tell affected customers to verify payment requests using a known restaurant phone number or site."
+  ],
+  "sources": [
+   {
+    "label": "RESERViSiON incident notice",
+    "url": "https://reservision.world/cyberangriff-phishing-reservierungsdaten/"
+   },
+   {
+    "label": "Chiemgau24 reporting",
+    "url": "https://www.chiemgau24.de/chiemgau/traunstein/grassau-uebersee-hacker-angriff-auf-restaurant-reservierungen-94596275.html"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure",
+   "phishing"
+  ]
+ },
+ "Auch Promis wie Cathy Hummels betroffen? Betrüger nehmen Gäste von Chiemgauer Top-Hotels ins Visier": {
+  "summary": "RESERViSiON disclosed that restaurant reservation data was accessed without authorization and used in fraudulent payment messages. The company has not published the number of affected guests and said it could not rule out deeper compromise.",
+  "attack_chain": [
+   "RESERViSiON attributed the initial access to a customer account.",
+   "Guest reservation data was accessed and used in fraudulent payment messages."
+  ],
+  "open_questions": [
+   "How many guests and businesses were affected?",
+   "Did the access extend beyond reservation data?"
+  ],
+  "mitigations": [
+   "Require MFA on reservation-system accounts and revoke sessions suspected of compromise.",
+   "Verify tenant separation with access-control regression tests and alert on unusual bulk access.",
+   "Tell affected customers to verify payment requests using a known restaurant phone number or site."
+  ],
+  "sources": [
+   {
+    "label": "RESERViSiON incident notice",
+    "url": "https://reservision.world/cyberangriff-phishing-reservierungsdaten/"
+   },
+   {
+    "label": "Chiemgau24 reporting",
+    "url": "https://www.chiemgau24.de/chiemgau/traunstein/grassau-uebersee-hacker-angriff-auf-restaurant-reservierungen-94596275.html"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure",
+   "phishing"
+  ]
+ },
+ "Germany's Federal Employment Agency confirms cyberattack on property-management unit": {
+  "summary": "Germany’s Federal Employment Agency confirmed a cyberattack on its property-management unit, which uses separate IT infrastructure. The agency said sensitive benefits-recipient data was not known to have been affected; the entry point and damage were not disclosed.",
+  "attack_chain": [
+   "Initial access method and date are unknown.",
+   "The agency identified an attack targeting its property unit and referred it to the German Federal Office for Information Security."
+  ],
+  "open_questions": [
+   "Which systems in the property unit were reached?",
+   "Were rental agreements or service-provider contracts accessed?"
+  ],
+  "mitigations": [
+   "Preserve property-system access logs and review for unauthorized downloads.",
+   "Verify that acquired systems do not share administrative identities or trust relationships before connecting networks."
+  ],
+  "sources": [
+   {
+    "label": "dpa report quoting the Federal Employment Agency",
+    "url": "https://stage.flz.de/hackerangriff-auf-immobilienverwaltung-der-bundesagentur/cnt-id-ps-ecf953f8-d9c0-41b1-bc01-78131fdf15eb"
+   }
+  ],
+  "patterns": [
+   "enterprise-platform"
+  ]
+ }
 }

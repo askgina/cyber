@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T17:27:01Z",
- "headline": "Trackers estimate $4.86 million left Chainflip’s Ethereum vault, and AP and CNN report an apparent intrusion into the FBI’s national crime database. Reproduced Microsoft customer notices describe unauthorized access to Entra Connect Health tenant metadata; the affected count is unknown.",
+ "updated": "2026-11-21T18:25:36Z",
+ "headline": "Trackers estimate $4.86 million left Chainflip’s Ethereum vault as the protocol investigates. Multiple outlets report an apparent intrusion into the FBI’s national crime database; the FBI has not publicly confirmed the breach or its scope.",
  "incidents": [
   {
    "org": "Chainflip Ethereum vault",
@@ -13,10 +13,10 @@
   },
   {
    "org": "Federal Bureau of Investigation (FBI)",
-   "what": "CNN and the Associated Press reported an apparent intrusion into the FBI’s national crime database; the bureau has not publicly confirmed the intrusion or its scope.",
+   "what": "CNN, AP and Fox News independently cited sources describing an apparent intrusion into the FBI’s national crime database; the FBI declined to comment to AP.",
    "scale": "Scope and access unconfirmed",
    "patterns": [],
-   "eid": "n-5d3dcae9"
+   "eid": "n-a6a45a1f"
   },
   {
    "org": "Microsoft Entra Connect Health",
@@ -29,13 +29,13 @@
    "eid": "x-565d5495"
   },
   {
-   "org": "SAP NetWeaver",
-   "what": "CISA confirmed that attackers are exploiting a vulnerability in SAP NetWeaver.",
-   "scale": "Known exploited vulnerability; victim count not disclosed",
+   "org": "Germany’s Federal Employment Agency",
+   "what": "Germany’s Federal Employment Agency confirmed an attack on its separately run property-management systems and said benefits-recipient data was not known to be affected.",
+   "scale": "Damage not disclosed",
    "patterns": [
     "enterprise-platform"
    ],
-   "eid": "k-8e30ace2"
+   "eid": "n-959a4579"
   },
   {
    "org": "Nissan",
@@ -74,15 +74,16 @@
    "eid": "n-a5c76ba9"
   },
   {
-   "org": "Ledger / CryptoBilis",
-   "what": "New reporting cited an unverified $95.35 million loss tally for the October wallet-tampering incident; Ledger confirmed an implant in one device.",
-   "scale": "$95.35M externally estimated",
+   "org": "GoFundMe Pro",
+   "what": "GoFundMe confirmed some donor contact data was accessed and said Salesforce restored its software packages while the integration remained disabled.",
+   "scale": "Affected count not disclosed",
    "patterns": [
+    "data-exposure",
     "supply-chain"
    ],
    "update": true,
-   "since": "2026-10-07",
-   "eid": "x-886c7455"
+   "since": "2026-10-10",
+   "eid": "x-d309dfe3"
   },
   {
    "org": "US Department of Agriculture",
@@ -96,18 +97,6 @@
    "since": "2026-11-16"
   },
   {
-   "org": "Orchestra",
-   "what": "Travelsoft confirmed a cyberattack on its Orchestra booking platform and began restoring services used by French travel agencies.",
-   "scale": "Booking disruption",
-   "patterns": [
-    "supply-chain",
-    "outage"
-   ],
-   "eid": "n-40f1cb58",
-   "update": true,
-   "since": "2026-11-19"
-  },
-  {
    "org": "Rokkatei",
    "what": "Rokkatei expanded the potential scope of its online-shop breach to customer contact details and reported one confirmed case of fraudulent card use.",
    "scale": "One fraud case confirmed",
@@ -117,6 +106,17 @@
    "eid": "n-2451e7f6",
    "update": true,
    "since": "2026-10-21"
+  },
+  {
+   "org": "TAKKT",
+   "what": "TAKKT lowered its earnings outlook after its October cyberattack, although order processing, deliveries and invoicing were largely restored.",
+   "scale": "Partial operational recovery",
+   "patterns": [
+    "outage"
+   ],
+   "update": true,
+   "since": "2026-10-21",
+   "eid": "n-81ebb696"
   }
  ]
 }
