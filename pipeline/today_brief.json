@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T07:26:38Z",
- "headline": "Marui Group disclosed that the breach of PLAID’s KARTE platform exposed 8.83 million Marui records and 8.5 million Epos Card records, with possible overlap. Illinois is investigating an apparent cyberattack attempt at Algonquin Dam and says the dam remained operational.",
+ "updated": "2026-11-21T08:26:52Z",
+ "headline": "Marui Group reported exposure of 8.83 million Marui records and 8.5 million Epos Card records in the KARTE breach; the counts may overlap. The FBI is reportedly investigating an apparent intrusion into its national crime database, and Germany confirmed an attack on its federal employment agency’s property-management unit.",
  "incidents": [
   {
    "org": "Marui Group (Marui and Epos Card)",
@@ -14,7 +14,7 @@
   },
   {
    "org": "Federal Bureau of Investigation (FBI)",
-   "what": "Reuters relayed CNN’s report of an investigation into apparent unauthorized access to the national crime database and said the FBI did not respond to its request for comment.",
+   "what": "CNN and NBC News reported that the FBI is investigating an apparent intrusion into its national crime database; the bureau had not publicly confirmed it.",
    "scale": "Scope and access unconfirmed",
    "patterns": [],
    "eid": "n-08e8aace"
@@ -67,34 +67,41 @@
    "eid": "n-fbd0be68"
   },
   {
-   "org": "Tigerfish",
-   "what": "Tigerfish secured a publicly exposed storage system holding customer transcription material after being alerted to the issue.",
-   "scale": "Affected count not disclosed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-91f1fffc"
+   "org": "Germany’s Federal Employment Agency",
+   "what": "The agency confirmed a cyberattack on its separate property-management systems and said it had no indication that sensitive benefits-recipient data was affected.",
+   "scale": "Damage not disclosed",
+   "patterns": [],
+   "eid": "n-959a4579"
   },
   {
-   "org": "Kurly",
-   "what": "Kurly said unauthorized access exposed curator-program data and two other customers’ member numbers.",
-   "scale": "10,701 people",
+   "org": "GlobeTopper (iQSTEL)",
+   "what": "A new SEC filing says an October breach of the gift-card platform exposed some business customers’ integration credentials and led to unauthorized redemptions.",
+   "scale": "About $70,000 in unauthorized redemptions",
    "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-46f1d666"
+    "data-exposure",
+    "outage"
+   ]
   },
   {
-   "org": "US Department of Agriculture",
-   "what": "NBC News reported that unauthorized parties accessed a farmer-payment system in the incident that disrupted USDA systems earlier in the week.",
-   "scale": "Extent of access unconfirmed",
+   "org": "DentaQuest",
+   "what": "A Texas filing put the toll from the May breach at 29 million nationally, compared with 15 million in other filings.",
+   "scale": "29M in Texas filing, including 5.175M in Texas",
    "patterns": [
-    "outage",
     "data-exposure"
    ],
-   "eid": "n-62a6f6b1",
    "update": true,
-   "since": "2026-11-16"
+   "since": "2026-05-17"
+  },
+  {
+   "org": "Wagyu (XMR1)",
+   "what": "Bitquery traced $13.51 million in suspicious XMR1 sales and could not independently establish how the deployer key was obtained.",
+   "scale": "$13.51M in suspect sales",
+   "patterns": [
+    "key-compromise"
+   ],
+   "eid": "x-37d402a7",
+   "update": true,
+   "since": "2026-11-20"
   },
   {
    "org": "SEGA Fave",
@@ -106,17 +113,6 @@
    "eid": "n-0c6d63df",
    "update": true,
    "since": "2026-11-01"
-  },
-  {
-   "org": "Rokkatei",
-   "what": "Rokkatei’s second notice said customer personal information may also have been exposed in the online shop incident.",
-   "scale": "No revised count disclosed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "x-14355224",
-   "update": true,
-   "since": "2026-10-21"
   }
  ]
 }
