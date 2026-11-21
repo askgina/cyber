@@ -1,4 +1,32 @@
 {
+ "ZOZO confirms ZOZOTOWN and WEAR customer data exposure via KARTE": {
+  "summary":"ZOZO reported exposure of member data through PLAID’s KARTE marketing platform. It gave separate counts of about 15.18 million ZOZOTOWN members and 13.93 million WEAR members, with overlap unknown.",
+  "attack_chain":["Unauthorized access occurred at the third-party marketing platform.","ZOZO learned of the intrusion and stopped data transfers to KARTE.","ZOZO confirmed some connected customer and business contact information had been exposed. Passwords and payment-card details were not affected."],
+  "open_questions":["How many people appear in both affected groups?","What retained vendor data can be removed to limit future exposure?"],
+  "mitigations":["Share only fields required by vendor integrations and remove data associated with closed accounts where retention is not required.","Revoke unused integration access and review vendor audit records.","Warn affected customers about targeted phishing and publish notification instructions on official channels."],
+  "sources":[{"label":"Yahoo! News Japan reporting on ZOZO’s disclosure","url":"https://news.yahoo.co.jp/articles/1739163b2e1fd496107c05cb8b455d37d52be5d9"}],"patterns":["supply-chain","data-exposure"]
+ },
+ "Equinor cyberattack linked to Azure API Management exploitation": {
+  "summary":"Norway’s National Security Authority said attackers exploited Microsoft Azure API Management against Equinor and other organisations. The authority said the flaw was fixed; Equinor said it stopped the intrusion and reported no indication of stolen data or production impact.",
+  "attack_chain":["The regulator attributed the intrusion to a vulnerability in a managed Azure service.","Equinor detected unauthorized activity on November 17 and mobilized its response teams.","Equinor announced containment on November 20; Norway’s regulator said the flaw had been fixed."],
+  "open_questions":["Which customer environments were affected?","What evidence is available to customers to determine whether their own environments were reached?"],
+  "mitigations":["Review communications and exposure guidance from Microsoft and the national security authority.","Preserve Azure activity, identity and gateway logs and investigate anomalous management actions.","Review privileged roles and rotate any secrets shown by investigation to be exposed."],
+  "sources":[{"label":"Reuters on the regulator’s findings","url":"https://www.fidelity.com/news/article/technology/202611201211RTRSNEWSCOMBINED_S8N45S04Q_1"},{"label":"Equinor statement","url":"https://web-equinor-web-sites-prod.c2.radix.equinor.com/news/20261711-equinor-detected-cyber-attack"}],"patterns":["enterprise-platform"]
+ },
+ "Peach Aviation discloses Cuenote vendor breach": {
+  "summary":"Peach Aviation reported 8,997,106 affected customer records after a breach at email vendor Yumirulink. The count does not establish unique individuals, and the airline said passport and payment-card information was not affected.",
+  "attack_chain":["Initial intrusion method: not disclosed in Peach’s notice.","Unauthorized access occurred at the service provider on October 18; Peach later confirmed the scope of its affected records.","Peach said it would begin notifying affected customers on November 20."],
+  "open_questions":["How did unauthorized access begin?","How many unique people do the records represent?"],
+  "mitigations":["Minimize customer data stored in email-delivery services and enforce retention limits.","Review vendor access and audit logs, and conduct joint incident response exercises.","Direct customers to verified company channels and warn about breach-themed impersonation."],
+  "sources":[{"label":"Peach Aviation official disclosure","url":"https://www.flypeach.com/application/files/5417/9515/4415/20261120_INFO_EN.pdf"}],"patterns":["supply-chain","data-exposure"]
+ },
+ "Microsoft Agent Framework PyPI supply-chain compromise": {
+  "summary":"Researchers identified unauthorized Microsoft Agent Framework releases on PyPI that targeted cloud and CI credentials. The releases were quarantined, but affected organizations still need to assess whether credentials were exposed.",
+  "attack_chain":["Unauthorized package releases appeared on PyPI on November 17; how the publisher was compromised was not established.","The releases could expose credentials when run in affected environments.","PyPI quarantined the releases."],
+  "open_questions":["Which downstream systems ran the affected releases?","What credentials were reachable and which were used?"],
+  "mitigations":["Remove affected releases, rebuild from reviewed dependencies, and purge affected caches.","Rotate credentials accessible to affected workloads and check their audit trails.","Use short-lived CI credentials and verify package provenance before installation."],
+  "sources":[{"label":"Wiz investigation","url":"https://www.wiz.io/blog/malicious-version-of-microsofts-agent-framework-published-to-pypi"}],"patterns":["supply-chain"]
+ },
  "Binance CEX": {
   "summary": "Binance reported roughly $6.3 billion stolen in the October 29 incident. It obtained court orders to help recover assets, and blockchain monitors reported additional movements of funds attributed to the theft; these are developments in the original case, not a new loss.",
   "attack_chain": ["Binance’s preliminary findings describe social engineering and compromise of employee devices.", "Binance said the attacker misused an internal tool and gained unauthorized access to wallet signing operations.", "Binance reported unauthorized transfers, then said it rebuilt the affected wallet environment, replaced devices and retired compromised credentials."],
@@ -104,19 +132,19 @@
   "patterns": ["data-exposure"]
  },
  "Fluidkey": {
-  "summary": "Bitquery traced at least $1.58 million in unauthorized Fluidkey payouts across six chains in about 36 minutes. Fluidkey said it took its services offline at 18:05 UTC and is investigating with SEAL 911; the root cause remains unknown.",
+  "summary": "Bitquery traced at least $1.58 million in unauthorized payouts across six chains. Fluidkey attributed the incident to exposed session data involving a third-party logging tool and restored service on an updated app. It says user keys remained on their devices; a full post-mortem is pending.",
   "attack_chain": [
-   "Initial access and the cause of the unauthorized payouts are unknown.",
+   "Fluidkey attributed exposure of session data to a third-party logging tool; it has not yet released a full technical account.",
    "Bitquery traced unauthorized payouts through Fluidkey's relayer across six chains.",
-   "Fluidkey takes its website, app and services offline at 18:05 UTC on November 19; no unauthorized transactions are reported after that."
+   "Fluidkey took services offline on November 19 and later restored access on v1.79.22 with older versions blocked."
   ],
   "open_questions": [
-   "What allowed the unauthorized payouts?",
+   "What is the complete timeline and scope of the logging-tool exposure?",
    "What is the final loss after unclassified transactions are reconciled?"
   ],
   "mitigations": [
-   "Pin and verify front-end builds (subresource integrity, reproducible builds)",
-   "Monitor DNS and registrar changes",
+   "Prevent session credentials from entering third-party logs and scope access to logging platforms.",
+   "Require explicit, independently verified confirmation for transactions.",
    "Rate-limit and anomaly-check relayer submissions per account",
    "Keep a tested kill switch for relayers"
   ],
@@ -126,8 +154,8 @@
     "url": "https://www.bitquery.io/investigations/fluidkey-hack"
    },
    {
-    "label": "Fluidkey incident update",
-    "url": "https://x.com/fluidkey/status/2123510970165436704"
+    "label": "Fluidkey recovery and preliminary findings",
+    "url": "https://x.com/fluidkey/status/2123811285934506413"
    }
   ],
   "patterns": [

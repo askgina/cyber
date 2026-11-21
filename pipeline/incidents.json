@@ -1,6 +1,16 @@
 {
- "updated": "2026-11-21T01:19:03Z",
+ "updated": "2026-11-21T01:26:00Z",
  "incidents": [
+  {"id":"fluidkey-november-transfer-incident","org":"Fluidkey","title":"Fluidkey restores access after unauthorized payouts","first_reported":"2026-11-19T18:05:00Z","event_date":"2026-11-19","type":"crypto exploit","sector":"crypto","country":"multi","records":null,"usd":1580000,"status":"contained","actor":null,"vector":"session data exposed via third-party logging tool","summary":"Bitquery traced at least $1.58 million in unauthorized payouts. Fluidkey attributed the incident to session data exposed through a logging tool and restored access on a new app version. It said user keys remained on their devices and that a full post-mortem would follow.","match":["Fluidkey"],"sources":[{"label":"Fluidkey recovery and preliminary findings","url":"https://x.com/fluidkey/status/2123811285934506413"},{"label":"Bitquery investigation","url":"https://www.bitquery.io/investigations/fluidkey-hack"}],"updates":[{"date":"2026-11-20T00:00:00Z","text":"Fluidkey restored service on v1.79.22 and shared its preliminary finding involving a third-party logging tool.","url":"https://x.com/fluidkey/status/2123811285934506413"}]},
+  {"id":"belo-horizonte-payment-diversion","org":"City of Belo Horizonte","title":"Belo Horizonte confirms municipal payment diversion","first_reported":"2026-11-16T00:00:00Z","event_date":"2026-11-14","type":"other","sector":"government","country":"BR","records":null,"usd":null,"status":"contained","actor":null,"vector":"altered municipal payment forms","summary":"Belo Horizonte reported that a cyberattack on its payment-form issuance system diverted some Pix payments. The municipality said it identified the affected payments; local reporting said refunds were underway.","match":["Prefeitura de Belo Horizonte","sistema da Prefeitura de BH","ataque hacker bancos começam a devolver"],"sources":[{"label":"City of Belo Horizonte","url":"https://prefeitura.pbh.gov.br/emissao-de-guias-de-pagamento-nota-oficial"},{"label":"NC News","url":"https://ncnews.com.br/2026/11/20/apos-ataque-hacker-bancos-comecam-a-devolver-dinheiro-de-250-contribuintes-de-bh/"}],"updates":[{"date":"2026-11-20T00:00:00Z","text":"Local reporting says refunds for diverted Pix payments began; taxpayers still need to repay their municipal bills.","url":"https://ncnews.com.br/2026/11/20/apos-ataque-hacker-bancos-comecam-a-devolver-dinheiro-de-250-contribuintes-de-bh/"}]},
+  {"id":"brenner-base-tunnel-breach","org":"Brenner Base Tunnel SE","title":"Brenner Base Tunnel SE confirms unauthorized access to company data","first_reported":"2026-10-17T03:05:00Z","event_date":"2026-10-17","type":"extortion claim","sector":"transport","country":"multi","records":null,"usd":null,"status":"confirmed","actor":"Everest (claimed)","vector":null,"summary":"Brenner Base Tunnel SE confirmed unauthorized access to company data. Everest claimed to have stolen 812 GB, a figure the operator did not confirm; daily operations were reported unaffected.","match":["Brenner Base Tunnel","Brenner-Basistunnel","Brennerbasistunnel"],"sources":[{"label":"SC Media","url":"https://www.scworld.com/brief/brenner-base-tunnel-se-confirms-data-breach-as-everest-group-claims-theft"},{"label":"GAT Report","url":"https://www.gat.report/95038/hacker-attack-on-brenner-tunnel/"},{"label":"Ransomware.live","url":"https://www.ransomware.live/id/QnJlbm5lciBCYXNlIFR1bm5lbEBldmVyZXN0"}],"updates":[{"date":"2026-11-08T00:00:00Z","text":"SC Media reports the operator confirmed company data was accessed without authorization.","url":"https://www.scworld.com/brief/brenner-base-tunnel-se-confirms-data-breach-as-everest-group-claims-theft"}]},
+  {"id":"1984-hosting-cyberattack","org":"1984 Hosting","title":"Icelandic host 1984 suspends services after cyberattack","first_reported":"2026-11-20T15:40:00Z","event_date":null,"type":"DDoS/outage","sector":"technology","country":"IS","records":null,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"Icelandic hosting provider 1984 shut down services after a cyberattack and worked with CERT-IS. The company expected email and DNS to be restored first; the extent of any data exposure was not confirmed.","match":["1984.hosting","1984 ehf","web host 1984","хостинг «1984»","vefþjónustufyrirtækið 1984"],"sources":[{"label":"RÚV","url":"https://www.ruv.is/english/2026-11-20-serious-cyberattack-thought-backed-by-wealthy-operators-493411"},{"label":"Iceland Insider","url":"https://icelandinsider.is/news/icelandic-web-host-1984-suspends-all-services-after-cyberattack/"}],"updates":[]},
+  {"id":"contabo-unauthorized-access","org":"Contabo","title":"Contabo investigates unauthorized access detected November 14","first_reported":"2026-11-17T00:00:00Z","event_date":"2026-11-14","type":"other","sector":"technology","country":"DE","records":null,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"Contabo said it detected unauthorized access and reset remote-console passwords and rotated internal credentials. Its November 20 update said forensic work continued and it had no new findings to report.","match":["Contabo"],"sources":[{"label":"Contabo incident advisory","url":"https://help.contabo.com/en/support/solutions/articles/103000426255-potential-security-incident-of-14-november-2026"},{"label":"Dark Web Intelligence reporting","url":"https://x.com/DailyDarkWeb/status/2122664355221106775"}],"updates":[]},
+  {"id":"onchain-technologies-casino-wallets","org":"ONCHAIN Technologies casinos","title":"Several crypto casinos go offline after reported shared-wallet drain","first_reported":"2026-11-19T00:00:00Z","event_date":"2026-11-17","type":"crypto exploit","sector":"gambling","country":"multi","records":null,"usd":5260000,"status":"claimed","actor":null,"vector":null,"summary":"FairGambling traced approximately $5.26 million moving out of a shared crypto casino bankroll and related wallets. It reported that most of the funds were frozen and several sites were offline; the final loss was not established.","match":["ONCHAIN Technologies","crypto casinos offline","shared bankroll"],"sources":[{"label":"FairGambling","url":"https://www.fairgambling.com/news/nine-crypto-casinos-offline-as-5-3m-bankroll-drained"},{"label":"iGaming Republic","url":"https://www.igamingrepublic.com/5-26m-drain-hits-9-anjouan-crypto-casinos/"}],"updates":[]},
+  {"id":"recruit-ring-karte","org":"Recruit","title":"Recruit reports possible Ring program data exposure through KARTE","first_reported":"2026-11-20T00:00:00Z","event_date":"2026-11-13","type":"third-party breach","sector":"professional services","country":"JP","records":21900,"usd":null,"status":"investigating","actor":null,"vector":"compromised third-party analytics service","summary":"Recruit identified 21,900 Ring program records potentially affected by the intrusion at PLAID's KARTE platform. Entries include names, email addresses or company names; payment information was not included.","match":["Recruit warns 21,900","Recruit Ring program","リクルート、個人情報2万1900件","リクルートの新規事業提案制度"],"sources":[{"label":"Recruit official notice","url":"https://www.recruit.co.jp/newsroom/pressrelease/2026/1120_149528.html"},{"label":"Now Hacked","url":"https://now-hacked.com/en/category/data_leak"}],"updates":[]},
+  {"id":"bausch-health-june-breach","org":"Bausch Health","title":"Bausch Health files California breach notice","first_reported":"2026-11-20T00:00:00Z","event_date":"2026-06-24","type":"data breach","sector":"healthcare","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Bausch Health submitted a breach notice to the California Attorney General identifying June 24 as the incident date. The public filing page does not provide a victim count.","match":["Bausch Health"],"sources":[{"label":"California Attorney General","url":"https://oag.ca.gov/ecrime/databreach/reports/sb24-633182"},{"label":"MedSecLedger","url":"https://medsecledger.com/breach/bausch-health-companies-inc-5f0c8645"}],"updates":[]},
+  {"id":"cirrus-aircraft-data-breach","org":"Cirrus Aircraft","title":"Cirrus Aircraft discloses exposure of personal records following July intrusion","first_reported":"2026-11-12T00:00:00Z","event_date":null,"type":"data breach","sector":"aviation","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Cirrus Aircraft said an intruder gained access to its systems in July. AOPA reported that financial, medical and identification records were among the affected information.","match":["Cirrus Aircraft","Cirrus data breach"],"sources":[{"label":"Aircraft Owners and Pilots Association","url":"https://aopa.org/news-and-media/all-news/2026/november/19/cirrus-data-breach"},{"label":"BeyondMachines","url":"https://beyondmachines.net/event_details/cirrus-aircraft-reports-data-breach-following-social-engineering-incident-f-a-j-7-r"}],"updates":[{"date":"2026-11-19T17:51:52Z","text":"AOPA reports the types of information involved and cites 3,903 individuals based on a Texas filing; the nationwide total was not specified by Cirrus to AOPA.","url":"https://aopa.org/news-and-media/all-news/2026/november/19/cirrus-data-breach"}]},
+  {"id":"tallinna-linnatransport-website","org":"Tallinna Linnatransport","title":"Tallinn municipal transport operator reports breach of public website","first_reported":"2026-11-19T00:00:00Z","event_date":"2026-11-16","type":"data breach","sector":"transport","country":"EE","records":null,"usd":null,"status":"confirmed","actor":null,"vector":"outdated website plugin","summary":"Tallinna Linnatransport said a cyberattack against its public website compromised the personal data of several thousand people. The company attributed the incident to a vulnerability in an outdated plugin.","match":["Tallinna Linnatransport","Tallinn City Transport","cyberattack on TLT website","cyberattack exposes data of thousands at TLT"],"sources":[{"label":"ERR","url":"https://news.err.ee/1610200210/hackers-obtain-personal-data-of-thousands-in-cyberattack-on-tlt-website"},{"label":"Daily Baltic","url":"https://www.dailybaltic.com/45060/cyberattack-exposes-data-of-thousands-at-tlt/"}],"updates":[]},
   {
    "id": "kurly-curator-breach",
    "org": "Kurly",
@@ -267,7 +277,7 @@
    "status": "confirmed",
    "actor": null,
    "vector": "compromised third-party marketing platform (KARTE)",
-   "summary": "ZOZO said data on about 15.18 million current and former ZOZOTOWN users and 13.93 million WEAR users may have leaked through the unauthorised access to PLAID's KARTE platform. Passwords and card details were not affected.",
+   "summary": "ZOZO confirmed exposure of data for about 15.18 million current and former ZOZOTOWN members and 13.93 million WEAR members through PLAID’s KARTE platform. The counts may overlap and should not be added as unique people; passwords and card details were not affected.",
    "match": [
     "ZOZO",
     "ZOZOTOWN",
@@ -357,18 +367,18 @@
   {
    "id": "peach-aviation-ymirlink",
    "org": "Peach Aviation",
-   "title": "Peach Aviation says 8.99 million customer records leaked via email vendor Ymirlink",
+   "title": "Peach Aviation says 8,997,106 customer records were affected by Yumirulink breach",
    "first_reported": "2026-11-20T05:00:00Z",
-   "event_date": "2026-10-16",
+   "event_date": "2026-10-18",
    "type": "third-party breach",
    "sector": "transport",
    "country": "JP",
-   "records": 8990000,
+   "records": 8997106,
    "usd": null,
    "status": "confirmed",
    "actor": null,
    "vector": "compromised email-delivery vendor",
-   "summary": "Low-cost carrier Peach Aviation said about 8.99 million customer records leaked through the breach of its email-delivery contractor Ymirlink's Cuenote FC service. Passport and card information were not affected.",
+   "summary": "Peach Aviation reported 8,997,106 affected customer records after an October 18 intrusion involving its email-delivery contractor Yumirulink. The total is a record count, not a verified unique-person count; passport and card information were not affected.",
    "match": [
     "Peach Aviation",
     "Ｐｅａｃｈ",
@@ -377,6 +387,10 @@
     "ピーチ、"
    ],
    "sources": [
+    {
+     "label": "Peach Aviation official notice",
+     "url": "https://www.flypeach.com/application/files/5417/9515/4415/20261120_INFO_EN.pdf"
+    },
     {
      "label": "Tokyo Dispatch",
      "url": "https://tokyodispatch.com/tech/peach-customer-data-leak-yumirink"
@@ -1084,7 +1098,9 @@
     "Commissione Ue",
     "AB Komisyonuna",
     "Avrupa Komisyonuna",
-    "Avrupa Birliği Komisyonu"
+    "Avrupa Birliği Komisyonu",
+    "歐盟委員會證實遭AI工具網絡攻擊",
+    "Avrupa Birliği'nde siber saldırı paniği"
    ],
    "sources": [
     {
@@ -2076,15 +2092,14 @@
     "JPMorganChase",
     "Chase Bank",
     "Chase customers",
-    "Mastercard",
+    "Chase, Visa, Mastercard",
     "Visa confirme",
     "Visa confirms",
     "Visa customers",
     "Visa-Kunden",
     "US banking and payment firms",
-    "Bancos sufren un ciberataque",
-    "três gigantes do setor financeiro",
-    "Major Financial Firms",
+    "Mastercard data breach",
+    "Mastercard customer data",
     "ＪＰモルガン",
     "JP Morgan",
     "J.P. Morgan",
@@ -2093,7 +2108,10 @@
     "Visa Confirms",
     "Chase as a Victim",
     "Visa, Mastercard",
-    "マスターカード"
+    "マスターカード",
+    "摩根大通、Visa和萬事達卡",
+    "摩根大通、Visa及萬事達卡",
+    "JPモルガンやビザ、顧客情報"
    ],
    "sources": [
     {
@@ -2559,12 +2577,10 @@
     "178 empresas",
     "178 grandi",
     "178 sites web",
-    "Ikea",
+    "Ikea sites",
     "CNN, BBC",
     "BBC, IKEA",
     "BBC, CNN",
-    "most-visited websites",
-    "most visited websites",
     "Nearly 180 Sites",
     "200 webs",
     "200 Websites",
@@ -2828,7 +2844,7 @@
    "org": "Carnegie Endowment for International Peace",
    "title": "Carnegie Endowment discloses breach at donation vendor exposing donor contact data",
    "first_reported": "2026-11-20T12:00:00Z",
-   "event_date": null,
+   "event_date": "2026-10-28",
    "type": "third-party breach",
    "sector": "other",
    "country": "US",

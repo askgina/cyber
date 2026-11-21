@@ -69,5 +69,15 @@
  "therecord_media": "media",
  "SecurityWeek": "media",
  "DarkReading": "media",
- "TechCrunch": "media"
+ "TechCrunch": "media",
+ "wiz_io": "security",
+ "SocketSecurity": "security",
+ "unibet": "official",
+ "Trezor": "official",
+ "47news_official": "media",
+ "nikkei": "media",
+ "newsis": "media",
+ "fairgambling": "media",
+ "ameliaknisely": "media",
+ "LoriKerseyWV": "media"
 }
