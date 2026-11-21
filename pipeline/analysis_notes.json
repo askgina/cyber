@@ -514,46 +514,42 @@
  "佐川急便、新たに別の不正アクセス（時事通信）": {"summary":"Sagawa Express confirmed unauthorized access to its baggage storage reservations on November 14. Information from 13,059 bookings may have been exposed; this figure counts reservations, not customers.","attack_chain":["Initial entry into the baggage reservation system is not known.","Sagawa confirmed unauthorized access and is investigating possible exposure of booking information."],"open_questions":["Which booking records, if any, were acquired?"],"mitigations":["Review booking-system access and data exports, and separate reservation data from payment data.","Apply retention limits and independently verify customer notification contacts."],"sources":[{"label":"Sagawa Express FAQ","url":"https://www2.sagawa-exp.co.jp/information/detail/439/"},{"label":"LNEWS","url":"https://www.lnews.jp/2026/11/s1120708.html"}],"patterns":["data-exposure"]},
  "Fort Smith officials release full report on August cyberattack": {"summary":"Fort Smith detected suspicious activity in August; investigators traced initial access to July 24. Reporting on the city's findings says attackers took 5.7 terabytes of data, but the city has not established the number of affected people.","attack_chain":["The city investigation traced initial access to a deceptive prompt that enabled remote access.","Investigators confirmed data was copied and files were then locked."],"open_questions":["Which specific records were affected?","How many people need notification?"],"mitigations":["Limit remote access to approved devices and enforce phishing-resistant MFA.","Segment city networks, maintain offline backups, and monitor unusual outbound transfers."],"sources":[{"label":"River Valley Democrat-Gazette","url":"https://www.rivervalleydemocratgazette.com/news/2026/nov/19/fort-smith-officials-release-full-report-on/"},{"label":"5NEWS via Yahoo","url":"https://www.yahoo.com/news/us/articles/fort-smith-cyberattack-began-due-222455548.html"}],"patterns":["phishing","ransomware","data-exposure"]},
  "Onchain Lens reports a $4.86 million outflow from Chainflip’s Ethereum vault": {
-  "summary": "On-chain investigators estimate that $4.86 million in assets left Chainflip’s Ethereum vault. Bitquery found that the vault accepted a valid signature outside the normal payout process. Chainflip paused the protocol, and the origin of the signature remains unknown.",
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
   "attack_chain": [
-   "Initial access and the origin of the accepted signature have not been established.",
-   "Bitquery documented a single unauthorized outflow of ETH and stablecoins from the Ethereum vault.",
-   "Chainflip disabled deposits, withdrawals, swaps and quotes while investigating."
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
   ],
   "open_questions": [
-   "Were signers or supporting infrastructure compromised?",
-   "Which balances, assets and customers are affected?",
-   "What loss, if any, will remain after recovery?"
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
   ],
   "mitigations": [
-   "Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.",
-   "Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.",
-   "Alert on deviations in vault outflows and signing activity."
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
   ],
   "sources": [
    {
-    "label": "Chainflip safe-mode announcement",
-    "url": "https://x.com/Chainflip/status/2124068986845532605"
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
    },
    {
-    "label": "Onchain Lens",
-    "url": "https://x.com/OnchainLens/status/2124048730337026360"
-   },
-   {
-    "label": "Bitquery on-chain investigation",
+    "label": "Bitquery Ethereum analysis",
     "url": "https://bitquery.io/investigations/chainflip-hack"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
    }
   ],
   "patterns": [
-   "bridge"
+   "bridge",
+   "key-compromise"
   ]
  },
  "PLAID KARTE customer-data breach": {"summary":"PLAID’s investigation found a flaw in part of KARTE’s public data-access process. The intruder obtained credentials and used them to access the administration interface; several customer data categories and external integration credentials were affected.","attack_chain":["A flaw in a public-facing process allowed unauthorized access to some data.","The intruder obtained credentials and used them to reach the KARTE administration interface.","Company data and integration credentials were exposed; some cache exposure could not be determined precisely."],"open_questions":["Which customer datasets overlap across the reported categories?","Did anyone misuse exposed integration credentials before revocation?"],"mitigations":["Revoke and rotate affected vendor integration credentials, then audit their prior use.","Isolate administrative access from public-facing services and enforce strong identity controls.","Remove expired customer datasets on schedule and retain sufficient audit logs to scope exposure."],"sources":[{"label":"Goldwin’s initial notice","url":"https://about.goldwin.co.jp/news/page-41040"},{"label":"Goldwin’s revised scope notice","url":"https://about.goldwin.co.jp/news/page-41053"},{"label":"Marui Group company notice","url":"https://www.0101maruigroup.co.jp/nr/26_1120_1"},{"label":"PLAID investigation findings","url":"https://plaid.co.jp/news/20261120/"}],"patterns":["supply-chain","data-exposure"]},
@@ -563,90 +559,120 @@
  "WhatsApp Patches 3 Security Flaws, Including Android Bug Suspected of Use in Scams": {"summary":"WhatsApp patched CVE-2026-23871, which could expose a recipient’s IP address on Android. The company said it may have been abused in specific spam messages, but did not confirm exploitation or disclose an impact count.","attack_chain":["WhatsApp linked possible abuse to specific spam messages.","The flaw could disclose a recipient’s IP address; the advisory did not establish actual impact."],"open_questions":["Was the issue exploited successfully, and how many recipients were affected?"],"mitigations":["Update WhatsApp and WhatsApp Business for Android to version 2.26.17.4 or later.","Use managed-device inventories to verify app versions and encourage spam reporting."],"sources":[{"label":"WhatsApp security advisories","url":"https://www.whatsapp.com/security/advisories/2026"},{"label":"Cyber Security News","url":"https://cybersecuritynews.com/whatsapp-android-flaws/"}],"patterns":["data-exposure"]},
  "CVE-2026-132224": {"summary":"Optimizely attributed the November 16 Web Experimentation supply-chain compromise to a flaw in its account signup flow. It said it blocked delivery, fixed the flaw within three hours of detection and removed the injected code.","attack_chain":["An unauthorized party exploited a signup-flow flaw to impersonate users of targeted accounts.","The attacker inserted malicious scripts in affected customer projects distributed to some customer sites.","Optimizely removed the code and secured affected accounts; customers are assessing downstream visitor impact."],"open_questions":["How many visitors received the compromised scripts?","Was visitor data collected on each affected site?"],"mitigations":["Disable or isolate third-party experimentation scripts until their integrity is verified.","Review script change history, preserve evidence and investigate affected browser sessions.","Limit third-party scripts on sensitive pages and alert on unexpected changes to approved scripts."],"sources":[{"label":"Optimizely official incident report","url":"https://status.optimizely.com/incidents/ftw0fh9wx43z?ref=report-uri.ghost.io"},{"label":"Salesforce incident response","url":"https://www.salesforce.com/blog/our-response-to-the-optimizely-optimjack-supply-chain-compromise/"}],"patterns":["supply-chain","data-exposure"]},
  "Chainflip: $4.86M Exploit Drains Ethereum Vault": {
-  "summary": "On-chain investigators estimate that $4.86 million in assets left Chainflip’s Ethereum vault. Bitquery found that the vault accepted a valid signature outside the normal payout process. Chainflip paused the protocol, and the origin of the signature remains unknown.",
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
   "attack_chain": [
-   "Initial access and the origin of the accepted signature have not been established.",
-   "Bitquery documented a single unauthorized outflow of ETH and stablecoins from the Ethereum vault.",
-   "Chainflip disabled deposits, withdrawals, swaps and quotes while investigating."
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
   ],
   "open_questions": [
-   "Were signers or supporting infrastructure compromised?",
-   "Which balances, assets and customers are affected?",
-   "What loss, if any, will remain after recovery?"
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
   ],
   "mitigations": [
-   "Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.",
-   "Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.",
-   "Alert on deviations in vault outflows and signing activity."
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
   ],
   "sources": [
    {
-    "label": "Chainflip safe-mode announcement",
-    "url": "https://x.com/Chainflip/status/2124068986845532605"
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
    },
    {
-    "label": "Onchain Lens",
-    "url": "https://x.com/OnchainLens/status/2124048730337026360"
-   },
-   {
-    "label": "Bitquery on-chain investigation",
+    "label": "Bitquery Ethereum analysis",
     "url": "https://bitquery.io/investigations/chainflip-hack"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
    }
   ],
   "patterns": [
-   "bridge"
+   "bridge",
+   "key-compromise"
   ]
  },
- "Chainflip遭黑客攻击，损失约486万美元": {"summary":"Chainflip put the protocol in full safe mode while investigating a potential vault exploit. Onchain Lens estimated unauthorized Ethereum vault outflows at $4.86 million; Chainflip did not confirm that amount or the cause.","attack_chain":["Initial access and how signing authority was obtained are unknown.","Onchain Lens reports that signed transactions transferred ETH and stablecoins from the Ethereum vault.","Chainflip confirmed that it disabled deposits, withdrawals, swaps and quotes as a precaution."],"open_questions":["Were signers or supporting infrastructure compromised?","Which balances, assets and customers are affected?","What loss, if any, will remain after recovery?"],"mitigations":["Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.","Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.","Alert on deviations in vault outflows and signing activity."],"sources":[{"label":"Chainflip safe-mode announcement","url":"https://x.com/Chainflip/status/2124068986845532605"},{"label":"The Defiant","url":"https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"},{"label":"Onchain Lens","url":"https://x.com/OnchainLens/status/2124048730337026360"}],"patterns":["bridge"]},
- "Chainflip Halts Swaps Over Potential Vault Exploit": {
-  "summary": "On-chain investigators estimate that $4.86 million in assets left Chainflip’s Ethereum vault. Bitquery found that the vault accepted a valid signature outside the normal payout process. Chainflip paused the protocol, and the origin of the signature remains unknown.",
+ "Chainflip遭黑客攻击，损失约486万美元": {
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
   "attack_chain": [
-   "Initial access and the origin of the accepted signature have not been established.",
-   "Bitquery documented a single unauthorized outflow of ETH and stablecoins from the Ethereum vault.",
-   "Chainflip disabled deposits, withdrawals, swaps and quotes while investigating."
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
   ],
   "open_questions": [
-   "Were signers or supporting infrastructure compromised?",
-   "Which balances, assets and customers are affected?",
-   "What loss, if any, will remain after recovery?"
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
   ],
   "mitigations": [
-   "Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.",
-   "Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.",
-   "Alert on deviations in vault outflows and signing activity."
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
   ],
   "sources": [
    {
-    "label": "Chainflip safe-mode announcement",
-    "url": "https://x.com/Chainflip/status/2124068986845532605"
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
    },
    {
-    "label": "Onchain Lens",
-    "url": "https://x.com/OnchainLens/status/2124048730337026360"
-   },
-   {
-    "label": "Bitquery on-chain investigation",
+    "label": "Bitquery Ethereum analysis",
     "url": "https://bitquery.io/investigations/chainflip-hack"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
    }
   ],
   "patterns": [
-   "bridge"
+   "bridge",
+   "key-compromise"
+  ]
+ },
+ "Chainflip Halts Swaps Over Potential Vault Exploit": {
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
+  "attack_chain": [
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
+  ],
+  "open_questions": [
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
+  ],
+  "mitigations": [
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
+  ],
+  "sources": [
+   {
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
+   },
+   {
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
+   },
+   {
+    "label": "Bitquery Ethereum analysis",
+    "url": "https://bitquery.io/investigations/chainflip-hack"
+   },
+   {
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
+   }
+  ],
+  "patterns": [
+   "bridge",
+   "key-compromise"
   ]
  },
  "Dtravel confirms theft of 35,656,691 TRVL from Base staking vaults": {"summary":"Dtravel confirmed the theft of 35,656,691 TRVL tokens from its Base staking vaults on November 16 and attributed it to malware and compromised credentials. It announced that it would restore positions in a multisignature-controlled vault; restoration was not complete in its last update. The TRVL count is not a dollar figure.","attack_chain":["Dtravel traced initial access to credential theft after malware infected an engineer’s computer.","The compromise exposed production credentials; Dtravel confirmed unauthorized transfers from Base staking vaults.","Dtravel revoked compromised access and is reconciling affected positions for restoration."],"open_questions":["When will eligible stakers regain access to restored positions?","How will the new vault’s approval and audit controls be independently verified?"],"mitigations":["Use separate multisignature approvals for vault administration and revoke affected credentials and sessions.","Remove production secrets from general build environments; require code review and restrict repository access.","Verify the balance snapshot and publish trusted instructions to reduce refund impersonation."],"sources":[{"label":"Dtravel incident investigation","url":"https://x.com/DtravelDAO/status/2122785114727834019"},{"label":"Dtravel recovery update","url":"https://x.com/DtravelDAO/status/2123883110672523467"},{"label":"Dtravel’s disclosure","url":"https://x.com/DtravelDAO/status/2122434294442348665"}],"patterns":["key-compromise","supply-chain"]},
@@ -660,46 +686,42 @@
  "Amazon says Chinese hackers used Cairn AI tool to discover apparent zero-day during attack on university": {"summary":"Amazon traced a September campaign against educational institutions in East Asia to a suspected China-linked actor using the Cairn AI agent framework. Reporting and the CVE listing identify MONAI Label as the affected software; an attacker gained control of a university server. The victim and extent of any data exposure are unknown.","attack_chain":["Amazon traced a September campaign targeting university servers.","One server running vulnerable MONAI Label software was compromised. The operator gained privileged access."],"open_questions":["Which other deployments were affected?","Did the operator access or remove any data?"],"mitigations":["Apply the maintainer’s fix when available for your installation; the advisory does not list a patched package version.","Restrict access to trusted networks, require authentication, and run the service with least privilege.","Review logs and host integrity for previously exposed instances."],"sources":[{"label":"AWS Security Blog","url":"https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/"},{"label":"MONAI Label maintainer advisory","url":"https://github.com/Project-MONAI/MONAILabel/security/advisories/GHSA-qc22-rmgc-vg94"},{"label":"NIST vulnerability listing","url":"https://nvd.nist.gov/vuln/detail/cve-2026-133968"},{"label":"BleepingComputer","url":"https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/"}],"patterns":["ai","injection-rce"]},
  "Hackers use autonomous AI tool Cairn to find zero-day, take over server": {"summary":"Amazon traced a September campaign against educational institutions in East Asia to a suspected China-linked actor using the Cairn AI agent framework. Reporting and the CVE listing identify MONAI Label as the affected software; an attacker gained control of a university server. The victim and extent of any data exposure are unknown.","attack_chain":["Amazon traced a September campaign targeting university servers.","One server running vulnerable MONAI Label software was compromised. The operator gained privileged access."],"open_questions":["Which other deployments were affected?","Did the operator access or remove any data?"],"mitigations":["Apply the maintainer’s fix when available for your installation; the advisory does not list a patched package version.","Restrict access to trusted networks, require authentication, and run the service with least privilege.","Review logs and host integrity for previously exposed instances."],"sources":[{"label":"AWS Security Blog","url":"https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/"},{"label":"MONAI Label maintainer advisory","url":"https://github.com/Project-MONAI/MONAILabel/security/advisories/GHSA-qc22-rmgc-vg94"},{"label":"NIST vulnerability listing","url":"https://nvd.nist.gov/vuln/detail/cve-2026-133968"},{"label":"BleepingComputer","url":"https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/"}],"patterns":["ai","injection-rce"]},
  "Chainflip loses $4.86M from Ethereum vault, trackers say": {
-  "summary": "On-chain investigators estimate that $4.86 million in assets left Chainflip’s Ethereum vault. Bitquery found that the vault accepted a valid signature outside the normal payout process. Chainflip paused the protocol, and the origin of the signature remains unknown.",
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
   "attack_chain": [
-   "Initial access and the origin of the accepted signature have not been established.",
-   "Bitquery documented a single unauthorized outflow of ETH and stablecoins from the Ethereum vault.",
-   "Chainflip disabled deposits, withdrawals, swaps and quotes while investigating."
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
   ],
   "open_questions": [
-   "Were signers or supporting infrastructure compromised?",
-   "Which balances, assets and customers are affected?",
-   "What loss, if any, will remain after recovery?"
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
   ],
   "mitigations": [
-   "Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.",
-   "Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.",
-   "Alert on deviations in vault outflows and signing activity."
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
   ],
   "sources": [
    {
-    "label": "Chainflip safe-mode announcement",
-    "url": "https://x.com/Chainflip/status/2124068986845532605"
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
    },
    {
-    "label": "Onchain Lens",
-    "url": "https://x.com/OnchainLens/status/2124048730337026360"
-   },
-   {
-    "label": "Bitquery on-chain investigation",
+    "label": "Bitquery Ethereum analysis",
     "url": "https://bitquery.io/investigations/chainflip-hack"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
    }
   ],
   "patterns": [
-   "bridge"
+   "bridge",
+   "key-compromise"
   ]
  },
  "USDA Confirms Cyberthreat on Loan Software Amid Widespread Systems Outages": {"summary":"A USDA undersecretary confirmed a cyberthreat disrupted farm payments, loan processing and conservation work and said no data was lost. NBC and ABC separately reported suspected unauthorized access, but the extent of access remains unconfirmed.","attack_chain":["USDA identified a security incident; initial access is not publicly known.","USDA reset credentials and took applications offline during the response.","Loan, payment and conservation workflows were disrupted; press reports of access do not establish data loss."],"open_questions":["Which systems, if any, were accessed without authorization?","What access did system and audit logs record?","When did all affected services recover?"],"mitigations":["Audit access to payment and loan systems and reconcile changed payee details before resuming batches.","Segment payment workflows, rotate affected credentials and revoke active sessions.","Use a tested offline continuity process for time-sensitive payments."],"sources":[{"label":"DTN interview with USDA undersecretary","url":"https://www.dtnpf.com/agriculture/web/AG/columns/washington-insider/article/2026/11/19/usda-loan-software-systems-face-amid"},{"label":"NBC News","url":"https://www.nbcnews.com/politics/national-security/agriculture-department-breached-hackers-sources-say-rcna610497"},{"label":"ABC News","url":"https://abcnews.com/food/story/new-government-report-sparks-concern-potential-cyberattack-us?id=138316014"}],"patterns":["outage"]},
@@ -926,132 +948,120 @@
   "patterns": []
  },
  "Chainflip exploited for roughly $4.86 million as attacker funnels 2,909 ETH into Tornado Cash": {
-  "summary": "On-chain investigators estimate that $4.86 million in assets left Chainflip’s Ethereum vault. Bitquery found that the vault accepted a valid signature outside the normal payout process. Chainflip paused the protocol, and the origin of the signature remains unknown.",
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
   "attack_chain": [
-   "Initial access and the origin of the accepted signature have not been established.",
-   "Bitquery documented a single unauthorized outflow of ETH and stablecoins from the Ethereum vault.",
-   "Chainflip disabled deposits, withdrawals, swaps and quotes while investigating."
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
   ],
   "open_questions": [
-   "Were signers or supporting infrastructure compromised?",
-   "Which balances, assets and customers are affected?",
-   "What loss, if any, will remain after recovery?"
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
   ],
   "mitigations": [
-   "Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.",
-   "Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.",
-   "Alert on deviations in vault outflows and signing activity."
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
   ],
   "sources": [
    {
-    "label": "Chainflip safe-mode announcement",
-    "url": "https://x.com/Chainflip/status/2124068986845532605"
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
    },
    {
-    "label": "Onchain Lens",
-    "url": "https://x.com/OnchainLens/status/2124048730337026360"
-   },
-   {
-    "label": "Bitquery on-chain investigation",
+    "label": "Bitquery Ethereum analysis",
     "url": "https://bitquery.io/investigations/chainflip-hack"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
    }
   ],
   "patterns": [
-   "bridge"
+   "bridge",
+   "key-compromise"
   ]
  },
  "Chainflip: $4.86M Hack Funds Moved to TornadoCash": {
-  "summary": "On-chain investigators estimate that $4.86 million in assets left Chainflip’s Ethereum vault. Bitquery found that the vault accepted a valid signature outside the normal payout process. Chainflip paused the protocol, and the origin of the signature remains unknown.",
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
   "attack_chain": [
-   "Initial access and the origin of the accepted signature have not been established.",
-   "Bitquery documented a single unauthorized outflow of ETH and stablecoins from the Ethereum vault.",
-   "Chainflip disabled deposits, withdrawals, swaps and quotes while investigating."
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
   ],
   "open_questions": [
-   "Were signers or supporting infrastructure compromised?",
-   "Which balances, assets and customers are affected?",
-   "What loss, if any, will remain after recovery?"
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
   ],
   "mitigations": [
-   "Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.",
-   "Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.",
-   "Alert on deviations in vault outflows and signing activity."
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
   ],
   "sources": [
    {
-    "label": "Chainflip safe-mode announcement",
-    "url": "https://x.com/Chainflip/status/2124068986845532605"
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
    },
    {
-    "label": "Onchain Lens",
-    "url": "https://x.com/OnchainLens/status/2124048730337026360"
-   },
-   {
-    "label": "Bitquery on-chain investigation",
+    "label": "Bitquery Ethereum analysis",
     "url": "https://bitquery.io/investigations/chainflip-hack"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
    }
   ],
   "patterns": [
-   "bridge"
+   "bridge",
+   "key-compromise"
   ]
  },
  "Chainflip": {
-  "summary": "On-chain investigators estimate that $4.86 million in assets left Chainflip’s Ethereum vault. Bitquery found that the vault accepted a valid signature outside the normal payout process. Chainflip paused the protocol, and the origin of the signature remains unknown.",
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
   "attack_chain": [
-   "Initial access and the origin of the accepted signature have not been established.",
-   "Bitquery documented a single unauthorized outflow of ETH and stablecoins from the Ethereum vault.",
-   "Chainflip disabled deposits, withdrawals, swaps and quotes while investigating."
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
   ],
   "open_questions": [
-   "Were signers or supporting infrastructure compromised?",
-   "Which balances, assets and customers are affected?",
-   "What loss, if any, will remain after recovery?"
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
   ],
   "mitigations": [
-   "Preserve signer and vault telemetry; isolate suspected signers and review how approvals were authorized before any key rotation.",
-   "Reconcile vault balances and in-flight transfers before resuming operations. Use independent approvals to restore routes in stages.",
-   "Alert on deviations in vault outflows and signing activity."
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
   ],
   "sources": [
    {
-    "label": "Chainflip safe-mode announcement",
-    "url": "https://x.com/Chainflip/status/2124068986845532605"
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/security/chainflip-halts-swaps-over-potential-vault-exploit"
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
    },
    {
-    "label": "Onchain Lens",
-    "url": "https://x.com/OnchainLens/status/2124048730337026360"
-   },
-   {
-    "label": "Bitquery on-chain investigation",
+    "label": "Bitquery Ethereum analysis",
     "url": "https://bitquery.io/investigations/chainflip-hack"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-chainflips-flip-drops-34-after-attacker-drains-4-86-million-from-vault-with-suspected-key-compromise-444804"
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
    }
   ],
   "patterns": [
-   "bridge"
+   "bridge",
+   "key-compromise"
   ]
  },
  "YMCA of Singapore discloses a compromise of its Youth For Causes portal": {
@@ -1343,6 +1353,317 @@
    "phishing",
    "supply-chain",
    "data-exposure"
+  ]
+ },
+ "Chainflip confirms Bitcoin and Ethereum vault theft": {
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
+  "attack_chain": [
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
+  ],
+  "open_questions": [
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
+  ],
+  "mitigations": [
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
+  ],
+  "sources": [
+   {
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
+   },
+   {
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
+   },
+   {
+    "label": "Bitquery Ethereum analysis",
+    "url": "https://bitquery.io/investigations/chainflip-hack"
+   },
+   {
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
+   }
+  ],
+  "patterns": [
+   "bridge",
+   "key-compromise"
+  ]
+ },
+ "Chainflip Offers 10% Bounty for Return of Stolen Funds": {
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
+  "attack_chain": [
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
+  ],
+  "open_questions": [
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
+  ],
+  "mitigations": [
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
+  ],
+  "sources": [
+   {
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
+   },
+   {
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
+   },
+   {
+    "label": "Bitquery Ethereum analysis",
+    "url": "https://bitquery.io/investigations/chainflip-hack"
+   },
+   {
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
+   }
+  ],
+  "patterns": [
+   "bridge",
+   "key-compromise"
+  ]
+ },
+ "Cyber (CyberConnect)": {
+  "summary": "Cyber confirmed unexpected minting on Solana followed by a transfer from its Ethereum bridge reserves. The Defiant reported that approximately 5.21 million CYBER left the reserve; Upbit and Bithumb paused transfers. The cause and final loss are not established.",
+  "attack_chain": [
+   "The project observed unexpected issuance and subsequent outflow from its bridge reserve.",
+   "Upbit and Bithumb paused deposits and withdrawals."
+  ],
+  "open_questions": [
+   "What caused the unexpected issuance?",
+   "Which users and bridge routes were affected, and what is the final loss?"
+  ],
+  "mitigations": [
+   "Avoid the CYBER bridge and exchange deposits of CYBER until the project clears them.",
+   "Cyber says no token migration, wallet connection or signature is required.",
+   "Bridge operators should reconcile supply and reserves before reopening affected routes."
+  ],
+  "sources": [
+   {
+    "label": "Cyber project statement",
+    "url": "https://x.com/i/status/2124207519581327394"
+   },
+   {
+    "label": "The Defiant",
+    "url": "https://thedefiant.io/news/hacks/cyber-warns-against-bridge-use-after-unexpected-minting"
+   },
+   {
+    "label": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810"
+   }
+  ],
+  "patterns": [
+   "bridge"
+  ]
+ },
+ "Cyber investigates unexpected CYBER minting and bridge outflow": {
+  "summary": "Cyber confirmed unexpected minting on Solana followed by a transfer from its Ethereum bridge reserves. The Defiant reported that approximately 5.21 million CYBER left the reserve; Upbit and Bithumb paused transfers. The cause and final loss are not established.",
+  "attack_chain": [
+   "The project observed unexpected issuance and subsequent outflow from its bridge reserve.",
+   "Upbit and Bithumb paused deposits and withdrawals."
+  ],
+  "open_questions": [
+   "What caused the unexpected issuance?",
+   "Which users and bridge routes were affected, and what is the final loss?"
+  ],
+  "mitigations": [
+   "Avoid the CYBER bridge and exchange deposits of CYBER until the project clears them.",
+   "Cyber says no token migration, wallet connection or signature is required.",
+   "Bridge operators should reconcile supply and reserves before reopening affected routes."
+  ],
+  "sources": [
+   {
+    "label": "Cyber project statement",
+    "url": "https://x.com/i/status/2124207519581327394"
+   },
+   {
+    "label": "The Defiant",
+    "url": "https://thedefiant.io/news/hacks/cyber-warns-against-bridge-use-after-unexpected-minting"
+   },
+   {
+    "label": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810"
+   }
+  ],
+  "patterns": [
+   "bridge"
+  ]
+ },
+ "Cyber Warns Against Bridge Use After Unexpected Minting": {
+  "summary": "Cyber confirmed unexpected minting on Solana followed by a transfer from its Ethereum bridge reserves. The Defiant reported that approximately 5.21 million CYBER left the reserve; Upbit and Bithumb paused transfers. The cause and final loss are not established.",
+  "attack_chain": [
+   "The project observed unexpected issuance and subsequent outflow from its bridge reserve.",
+   "Upbit and Bithumb paused deposits and withdrawals."
+  ],
+  "open_questions": [
+   "What caused the unexpected issuance?",
+   "Which users and bridge routes were affected, and what is the final loss?"
+  ],
+  "mitigations": [
+   "Avoid the CYBER bridge and exchange deposits of CYBER until the project clears them.",
+   "Cyber says no token migration, wallet connection or signature is required.",
+   "Bridge operators should reconcile supply and reserves before reopening affected routes."
+  ],
+  "sources": [
+   {
+    "label": "Cyber project statement",
+    "url": "https://x.com/i/status/2124207519581327394"
+   },
+   {
+    "label": "The Defiant",
+    "url": "https://thedefiant.io/news/hacks/cyber-warns-against-bridge-use-after-unexpected-minting"
+   },
+   {
+    "label": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810"
+   }
+  ],
+  "patterns": [
+   "bridge"
+  ]
+ },
+ "Cyber investigating suspected $1 million bridge exploit as Upbit, Bithumb freeze transfers": {
+  "summary": "Cyber confirmed unexpected minting on Solana followed by a transfer from its Ethereum bridge reserves. The Defiant reported that approximately 5.21 million CYBER left the reserve; Upbit and Bithumb paused transfers. The cause and final loss are not established.",
+  "attack_chain": [
+   "The project observed unexpected issuance and subsequent outflow from its bridge reserve.",
+   "Upbit and Bithumb paused deposits and withdrawals."
+  ],
+  "open_questions": [
+   "What caused the unexpected issuance?",
+   "Which users and bridge routes were affected, and what is the final loss?"
+  ],
+  "mitigations": [
+   "Avoid the CYBER bridge and exchange deposits of CYBER until the project clears them.",
+   "Cyber says no token migration, wallet connection or signature is required.",
+   "Bridge operators should reconcile supply and reserves before reopening affected routes."
+  ],
+  "sources": [
+   {
+    "label": "Cyber project statement",
+    "url": "https://x.com/i/status/2124207519581327394"
+   },
+   {
+    "label": "The Defiant",
+    "url": "https://thedefiant.io/news/hacks/cyber-warns-against-bridge-use-after-unexpected-minting"
+   },
+   {
+    "label": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810"
+   }
+  ],
+  "patterns": [
+   "bridge"
+  ]
+ },
+ "PILLAR Libraries confirms patron account access through two vendors": {
+  "summary": "PILLAR says an outside party obtained unauthorized access to patron account data through two service vendors. Contact details, library identifiers and dates of birth may be affected. PILLAR does not believe usable passwords or borrowing history were accessed; no count was given.",
+  "attack_chain": [
+   "Two vendor services were involved in unauthorized access to patron account data."
+  ],
+  "open_questions": [
+   "Which libraries and patrons were affected, and what data was actually copied?"
+  ],
+  "mitigations": [
+   "Reset your library account PIN or password using PILLAR’s official notice, and report unusual activity to your library.",
+   "Treat unexpected emails or calls about the incident with caution."
+  ],
+  "sources": [
+   {
+    "label": "PILLAR official notice",
+    "url": "https://pillarlibraries.org/press/cybersecurity-incident-november-2026/"
+   },
+   {
+    "label": "NorthJersey.com",
+    "url": "https://www.northjersey.com/story/news/morris/parsippany-troy-hills/2026/11/20/parsippany-nj-library-hacked-cybersecurity-breach-vendor/92884475007/"
+   },
+   {
+    "label": "Denville Now",
+    "url": "https://denvillenow.com/news/community/denville-library-pillar-data-breach/"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "Morris County library hit with cybersecurity breach through vendor": {
+  "summary": "PILLAR says an outside party obtained unauthorized access to patron account data through two service vendors. Contact details, library identifiers and dates of birth may be affected. PILLAR does not believe usable passwords or borrowing history were accessed; no count was given.",
+  "attack_chain": [
+   "Two vendor services were involved in unauthorized access to patron account data."
+  ],
+  "open_questions": [
+   "Which libraries and patrons were affected, and what data was actually copied?"
+  ],
+  "mitigations": [
+   "Reset your library account PIN or password using PILLAR’s official notice, and report unusual activity to your library.",
+   "Treat unexpected emails or calls about the incident with caution."
+  ],
+  "sources": [
+   {
+    "label": "PILLAR official notice",
+    "url": "https://pillarlibraries.org/press/cybersecurity-incident-november-2026/"
+   },
+   {
+    "label": "NorthJersey.com",
+    "url": "https://www.northjersey.com/story/news/morris/parsippany-troy-hills/2026/11/20/parsippany-nj-library-hacked-cybersecurity-breach-vendor/92884475007/"
+   },
+   {
+    "label": "Denville Now",
+    "url": "https://denvillenow.com/news/community/denville-library-pillar-data-breach/"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "Chainflip AMM": {
+  "summary": "Chainflip Labs says 122.86137042 BTC, 520.2243399 ETH, 3,249,631.41 USDC and 758,141.33 USDT were taken. The earlier $4.86 million estimate covered only the Ethereum vault. Chainflip offered a 10% bounty for return of the funds; recovery was not confirmed.",
+  "attack_chain": [
+   "Unauthorized outflows affected both Bitcoin and Ethereum vaults.",
+   "Chainflip paused swaps, deposits, withdrawals and quotes.",
+   "Chainflip attributed the incident to key exposure, without publishing a root-cause analysis."
+  ],
+  "open_questions": [
+   "How was signing authority exposed?",
+   "Which routes can be restored safely, and what funds will ultimately be recovered?"
+  ],
+  "mitigations": [
+   "Check the official Chainflip status page before attempting swaps, deposits or withdrawals.",
+   "Avoid purported recovery or migration links; use official channels for service updates.",
+   "Operators should preserve signing and custody logs and reconcile vault balances before re-enabling routes."
+  ],
+  "sources": [
+   {
+    "label": "Chainflip Labs disclosure",
+    "url": "https://chainflip.io/return"
+   },
+   {
+    "label": "The Defiant on Bitcoin theft",
+    "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds"
+   },
+   {
+    "label": "Bitquery Ethereum analysis",
+    "url": "https://bitquery.io/investigations/chainflip-hack"
+   },
+   {
+    "label": "Chainflip status page",
+    "url": "https://status.chainflip.io"
+   }
+  ],
+  "patterns": [
+   "bridge",
+   "key-compromise"
   ]
  }
 }

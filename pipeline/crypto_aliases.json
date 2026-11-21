@@ -9,7 +9,8 @@
   "Hyperliquid token crash",
   "Monero-Linked Token",
   "wrapped XMR1",
-  "encapsulated Monero"
+  "encapsulated Monero",
+  "Wagyu XMR1"
  ],
  "Binance CEX": [
   "Binance hack",
@@ -22,6 +23,15 @@
  ],
  "Chainflip": [
   "Chainflip Ethereum vault",
-  "Chainflip vault drain"
+  "Chainflip vault drain",
+  "Chainflip Labs",
+  "Chainflip vaults"
+ ],
+ "Chainflip AMM": [
+  "Chainflip",
+  "Chainflip Ethereum vault",
+  "Chainflip vault drain",
+  "Chainflip Labs",
+  "Chainflip vaults"
  ]
 }
