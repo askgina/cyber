@@ -1,6 +1,30 @@
 {
- "generated": "2026-11-21T21:29:19Z",
+ "generated": "2026-11-21T22:28:45Z",
  "queue": [
+  {
+   "date": "2026-11-21T15:06:39Z",
+   "title": "WOW -- Trump says the FBI getting hacked has a silver lining because \"maybe we'll learn things we would've never learned otherwise. You had the Russia Russia Russia hoax. We call it Ukraine. The Ukraine Ukraine Ukraine hoax. The perfect phone call. May",
+   "source": "X",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1yek1DUGRoMTRmS2o4bE9vcW1lWmJqeEtZUVZZWWZ1Y2ZyN21hT2lnS09GcDRFLUVvV2hCQ3c0dHR3WG5WQlpXcnNwZ3pYcWxWVlpLZUlfaXRwcGFRQVUzRUNrb0pXSVE?oc=5",
+   "n_outlets": 12,
+   "also": [
+    "Trump says ‘maybe we’ll learn things’ after FBI is hacked again",
+    "Trump says ‘maybe we’ll learn things’ after FBI is hacked again",
+    "Trump says ‘maybe we’ll learn things’ after FBI is hacked again"
+   ]
+  },
+  {
+   "date": "2026-11-21T15:47:41Z",
+   "title": "Trump says reported FBI database hack is ‘not good’",
+   "source": "TechCrunch",
+   "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
+   "n_outlets": 12,
+   "also": [
+    "Trump says news of another FBI cyberattack 'not good'",
+    "Trump says news of another FBI cyberattack 'not good'",
+    "FBI Database Hacked, Trump Confirms: 'I Will Say That It's Not Good'"
+   ]
+  },
   {
    "date": "2026-11-20T11:31:49Z",
    "title": "Dutch public prosecutor hacked Tata Steel for environmental investigation",
@@ -11,6 +35,18 @@
     "Dutch public prosecutor hacked Tata Steel for environmental investigation",
     "Na jaren is de strafzaak tegen Tata Steel van start. OM gebruikte telefoontaps en hack in onderzoek ‘vuurvlieg’",
     "Public Prosecution Service hacked Tata Steel computers"
+   ]
+  },
+  {
+   "date": "2026-11-21T15:47:00Z",
+   "title": "Trump Rants About Russia and Voter Fraud Over FBI Hack",
+   "source": "Mediaite",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxPS3kwSWRRSk8wOTg5ZkZmc2p6UDU3VF9xSmkyYWg4QTdpSkJjalpzbnBaZUNVbE5nQnBlTUFicUVpQkJVS2FoNHBtTExndDFWWkNhSWl0WUJsNUhvU3ctZ2NFZjhud0FZUGlFZ0JVbEdIVWUxTDBnUE1ENlJKSWxWT0sxcGRmZW00bmdTdTZtVXpXZUJiWUxQLXRZa3ZDZC1oY0xxOXM2X1pvTTBNT0xLQTBqMnZPc3JkRUFJNFVDcUQ1ck9KWElPT0JRTi1FQjFKYjBQbnQwOGV3c21ZWVo5RXZic2g3OWFqSXNTSmRDTkRTNTBYV1lR?oc=5",
+   "n_outlets": 6,
+   "also": [
+    "Trump Rants About Russia ‘Hoax,’ Ukraine, and More When Asked About FBI Getting Hacked: ‘I Always Like to Put Things in a Positive Spin’",
+    "Trump says FBI hack might expose Russia \"hoax\"",
+    "Trump Warns FBI Breach Could Expose Russia Files"
    ]
   },
   {
@@ -74,6 +110,18 @@
    ]
   },
   {
+   "date": "2026-11-21T19:36:00Z",
+   "title": "Trump on reported FBI hack: ‘I always like to put things in a positive spin’",
+   "source": "The Hill",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQdldrb3NIOE1tckItU3RidnR1OWg1UVRBTUxpUmNhZUg0ZFd3bEZ0ei13VmRZQWRHdEtOY3J2bl9nYXViamZRdVR4RHdtM0JOMGdPNHliMUhaRlJkVVBvTTU3UUljYzRoNnluVDQwaU5MNG0tWERRb3hodVd0dVdxSUk3dWluQTF2VWlhWGFCTznSAZYBQVVfeXFMT0JzQ0hSdUFqajNkbkNmbC1HNVZnaDRzS3pHbEUzb3A5Z2ZHWWc3UzZCTjVMMmFqTERHRFBZZUpQak1MQm4tSHJwbVM4NkliR25fdllvZzhwaVJIMlM3Rk9abC1DbnRkNmVES1BoSThhbHVNTWJLVk1BdWg2T2JQekROLTVkNVFERkJOZXZGQ0oxX0lnaFVn?oc=5",
+   "n_outlets": 4,
+   "also": [
+    "Trump says latest FBI hack could have ‘positive’ impacts",
+    "Trump downplays FBI data breach of NCIC, adds 'positive spin'",
+    "Trump downplays FBI data breach of NCIC, adds 'positive spin'"
+   ]
+  },
+  {
    "date": "2026-11-20T00:14:00Z",
    "title": "Stryker Sticks to Growth Goals Despite Cyberattack and Slower Orthopedic Market",
    "source": "TradingView",
@@ -104,36 +152,6 @@
    "also": [
     "Expert: Data breaches will become more common",
     "Expert: Data breaches will become more common"
-   ]
-  },
-  {
-   "date": "2026-11-19T21:30:00Z",
-   "title": "New Windows 11 lock screen zero-day unlocks BitLocker-protected PCs with just a few keystrokes — Win+U keyboard trick lets physical attackers run USB payloads or create new admin accounts",
-   "source": "Tom's Hardware",
-   "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQWnl6YThydHlDMlRHekJrU3FPaGh4ZlZVcjV6VWtFV1R6S1h1YVo0UTdhUjIxbi1ubkFlV1RRS1BtOWl2YThrd084bGYxTUR1cFNOZmFTX0ZMMTVWSmRpNS1NTXZkbnVjQmZwV0Z2YlhmaGtsU0VEZGNQMFotQVFzN3NLLTExQkRMN0NNRXdPQVVFcU9fVEFyMV80LXdzc1JtX1hEbXRFRzhZOXZlQkxZUGxESllCSjAweE9acTJJTkJ1enc0b1RDWk5zcUJoVnFaVGJRWC13VG1fdEhUZk9LSTNXMUdNZTBIX3NDZTB1YWdCNVJTYndUWWdyVmV5RkJZc2VRd2kxc1BiUlF2aWp0bGUtTWVBOXBVR1VkZFYwVnc3SnFnelFweUVNRWFmYTFvSDlMSUJseXJrNEdMcGJHbC1rVVotd3VpY29uTXQzQnBiNkdTNmlNV19xUkVEVTdt?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "New Windows 11 Zero-Day Vulnerability Lets Attackers Bypass Lock Screen and Execute Code"
-   ]
-  },
-  {
-   "date": "2026-11-19T22:10:37Z",
-   "title": "Cyber Security Researcher Ebubekir Bastama: “Restarting Phones Once a Week Can Reduce the Risk of Cyber Attacks”",
-   "source": "cumha.com.tr",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOUklvQmhQRnZmVy1DTG83d3lzbWZYdC1ERUlUVE1zMHB5b0lLRU1IYWJqY3Fmc1ljLXJncFZxWkg3TnloOG05LVZLWFVyV1R4WU51Mk53NlprYVZQVXh0dERXeFRwMmNJTWFRX2RUQk9WTzNZTGMzSHdiRHFMbmVxZkp4Tzh3bTI0VlE4eHdOM3FmcW9qM1FJc0ZVTTBSS0pnM1FldEt6NTJ1aXl6eWgxMGIyX2lJSU5CZHFCdHMzNEYxNU8tR21zN1VOS3dFUXhuNGR1czRWaUpCQQ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Cyber Security Researcher Ebubekir Bastama: “Restarting Phones Once a Week Can Reduce the Risk of Cyber Attacks”"
-   ]
-  },
-  {
-   "date": "2026-11-19T22:12:37Z",
-   "title": "Google Releases Emergency Fix For Chrome Zero-Day Flaw – Users Should Update Now",
-   "source": "TechRepublic",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNa29MbGMxeC1lek5XY3FyU2syeUIwTGZ5LUpvQXJ3aElPV2ZFaEtSQ0hvejJ1RlR6WTZCeXlNTWJVS09yV2xNZTNQMDROMHRXMHZpYjNONi1UemdESWt1Y0E2MVo2d3dXcUFqdGFDNHpiZENsaUxnZHlhMl84T3UtMXU4SVVEMU9qYmVIeXBvV2RqQkxE?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "What should companies do now after a series of cyber attacks?"
    ]
   },
   {
@@ -257,6 +275,16 @@
    ]
   },
   {
+   "date": "2026-11-20T05:49:42Z",
+   "title": "Will the USDA hack delay farm payments? What farmers should know before the Dec. 11 deadline",
+   "source": "Nacionale",
+   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSEdCc0R2OUlmdnZUUjdtd2N3anJyYTF5cTJkMUhTU21kX25sUHM0b2czSUU1VFUzckJ2UFBCdE5SNkRJZ25BekdQSkp1YlZkLVRRcGpXWHZEU1c2MFZvNEpKazZFSWlvVXgxYkxkNjEwRThaQjZqSDRJUnUxUWVMSTRVZUx1ZDZGeWNEZzNSbEktRHVBRHdhQ0tOcGR3QXJsV3laWjFwRDRSek9mNzVCTVJ4MG0?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "UPDATE: USDA Cyber Incident Disrupts Farm Payments as Dec. 11 Signup Deadline Nears"
+   ]
+  },
+  {
    "date": "2026-11-20T06:00:00Z",
    "title": "Kagawa Prefectural Police holds police chief meeting to confirm priority issues such as unauthorized access and special fraud | Okayama/Kagawa News | Weather | RSK Sanyo Broadcasting",
    "source": "TBS NEWS DIG",
@@ -364,6 +392,16 @@
    "n_outlets": 2,
    "also": [
     "Petronas data leak trial: Forensic analyst defends chain-of-custody procedures"
+   ]
+  },
+  {
+   "date": "2026-11-20T12:47:14Z",
+   "title": "UK conducting offensive cyber operations as it counters threats from Russia, China, Iran and North Korea",
+   "source": "ADS Advance",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1xcnR5VFl6cHpPc2FBelhtUHlOWFBWdFJyZWtKQTZmTktSeVlINTFuQkNEb1pBcXpZV2FaeUVKbThZVFdmdl9lX2hyNVh5NmJVVlptT3N3WWhXVmNfWXZuREVaV1h1U21ZbEV3ZnNxUjhXa3BMUWFjeXAtdw?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "UK conducting offensive cyber operations as it counters threats from Russia, China, Iran and North Korea"
    ]
   },
   {
@@ -497,6 +535,26 @@
    ]
   },
   {
+   "date": "2026-11-21T07:21:00Z",
+   "title": "New wave of cyberattack in the United States: the Ministry of Agriculture and the FBI affected",
+   "source": "La Libre.be",
+   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNRWJuWWlFRWlKaDRuVGJhSUtqLUc0a3VPaWxrUW9QcmRPOVRSUkRPRG9MaUdsLWZTYXlxbU5OUUMzUVV6clRtTzBYTEhuVW50c2x5bUVqbG9MRm5KSVRYRmVpVFRINlFOZFpGam43eDNLT1l5VjUtNTlFNHZFbGVfVG00UGVUR3NDYWtpNXNEc3R2Y3lpMFRXQ2F5VG5BRE1ZQjhQRmNOLVBWZUVUWEg3OXloVFVHdWVzOGdLUUU0cWd4ZTBfMWNKazNkZXhqdHEyMURFMTZUWGhkeW80WGtfX1BIR1lQREJNcWV0N2VFSFVHZElEUGZMUEI1UnVQd1EzLU5UeTdGNEE?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "The FBI investigates a cyberattack on its database amid a wave of failures in the United States"
+   ]
+  },
+  {
+   "date": "2026-11-21T07:49:50Z",
+   "title": "Nonsan City, tours 15 towns, villages, and districts for ‘visiting personal information protection education’ for Lees and bank accounts",
+   "source": "충남일보",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5weUxsSmt1V3VoUDhPT2d3UDNhSkswOHRvOVZxMVVnZlVxQURmbmotZVZ4ZUxJUEZxemtFbVV6WTBueHNKY2NSd29KVTFScUNWekFwdzVUZkJ6TXMwQks2ZFFOSnVGUzI1b0xyQkQ0T1RMWGs?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Nonsan City, personal information protection training for bank accounts... Tour of 15 towns, villages and villages"
+   ]
+  },
+  {
    "date": "2026-11-21T09:19:44Z",
    "title": "The 2026 Nantou Mountain Digital Hackathon and the 4th Macathon Showdown are here. Taiwan’s technological elites gather to compete in creativity (Photo 5 provided by the county government)",
    "source": "元丰傳媒",
@@ -547,82 +605,20 @@
    ]
   },
   {
-   "date": "2026-11-19T21:30:00Z",
-   "title": "Charter Customers Drop Lawsuit Over ShinyHunters Data Breach",
-   "source": "Bloomberg Law News",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNSkw4QUN2VmtrWVVWemJXOVVuQy0ySVZFN3FzeGdPd2JnLU50ZUFwSm5HU3FjSk1TV2ZJY0Y2Y1ctLXVSOGE3cE54dnJCREZ5QnFYaWhuNWxwWGpNYjllUGRrZDBaRWVrVUQ2bGFGcmh4QU9mUFMyVHhmSmkwT1ZfSms1d3BpanRZZGREc3BXNXRZRUlGY0lxQzVtLU9QSTlFWElWcWdmUmhwblJCb1E1NnNB?oc=5",
-   "n_outlets": 1,
-   "also": []
+   "date": "2026-11-21T20:57:00Z",
+   "title": "Trump admits concern about suspected hacker attack on FBI system",
+   "source": "Brasil 247",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNMmdzTDVON3F5RllSZnZXNDJmNjY5Y1REU1VZeDZNZkI3NDJNbzA3WFgtR245cmtaUHBreFNEUWxWTThYQmN6c1FWVUZXZkVoTjBic0Zqb2xSMEh3dlZQNzFhc0tXSll1OWpmbmtWVVdmR2M1dExmbFJOOWJGaW1ZYnQ2NW1mbUdiQ3VwM0lyX3ZybGhSU2NERXJudmNZTmFFWWR1VEJPNnZEOTN6NlpSYQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Trump comments on suspected hacker attack on the FBI"
+   ]
   },
   {
-   "date": "2026-11-19T21:30:37Z",
-   "title": "Life sentence for hammer murderers + hacker attack on restaurants + no more strikes at Regiobus",
-   "source": "HAZ",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPVnJheDc1N2Y0cm1xYXhwOXExSVZsbUhlVWdvSTJfemlVUkdhTlNUY2JxVkNhZDE1YTVUM1o1eHRQWF9qaGxXVVRlemVtSWs1QlRjd0prTXJWM1k3WVg4Smp5WW14aVBQajV6TkhxTkRLWW1JMnBLc3Joc0dhSldIRHBhNjRhQkdkX3Q5SmNjV05ka2xQSHQtalBDNWQzOFN2MXBMTG9VNG5EY2ctSjFFeUJCZUZqX1dHZDJESDZnNHowOHFxRHVIdTdnUkN5SVJ1SEdzSDZ3V3VEbkNPLXJtMHA1U1IxM29sUmZqNmlsdTZjUdIBjgJBVV95cUxNdlM1WjJvdGVKZV85VGFaVldXOGlYYng3V3VUbG1GZHRxZ2NJOVRWTUhTSi1tUUkwY0ROZVloNjBXNEZJSHozd3FCMi1XTE5tQVg4YzNCNlc2bmo0NzNFU2JMWFZTZV9XVVJBSGVlNENWUHZadzJ6djBnOGRIWTJmUjJMN2VrVFJqcmxHcGd4Rk9wZlZKMmZ1bDdnbUlKX0RRMkRpQW5sUVY1S2ZRMmNyOXJNZWdBOVhvTmw4RGZVTVNzeU9TemtEbkVjbFdPWTZtTFl1SFM5aW02UHh5TF96UnhhWXBvbFJTQWNqdEFGQkJ5aWdjY01xTmlFZlEwZFBiRUlnUmFodEpJUzFvNUE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T21:30:57Z",
-   "title": "ThreatsDay roundup covers AI model safety gaps, ransomware cases and phishing kits",
-   "source": "news.lavx.hu",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOcHhOUkc5cVdLc2tlZU9WMnFoRDlrcmpyb2Z4N2w1QlpfUlRYNjFaelR4VkxnNVltajYtTUowc2R2bEY5c1FvYjhjdWtZY0J0Q3M3aHhDYmh1clc1V2JhVDVsQWFrZHdsTlNySks5ODNpdWR2bk53VDdyaE9wVHNsYm1zMi1ldW9BeWZaOTc2dUZITmZJTW53RDRXQ2V2SlBPV3ZTcTdTUV91ejhZNlVz?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T21:41:00Z",
-   "title": "🔴Pilot gives 'mayday' during landing at Schiphol • FNV critical of OM after Tata Steel hack",
-   "source": "NH Nieuws",
-   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxORUE2MTJiTHFQWG04dFJVcldIbzh2azZHUkRNcEhQQktWd0xjMmlOLXdWMGxtVUNVdE40VFFMNDBENlpXZU54WVpkLU1FTmY0c1hBNEo5akFJUXBQTkFnWWFPU3drbnBTaG9rMTl6ay14RHhkcGJoMGFiMnJEVEgwNmVOemU5d0lEclAzVGxacGZ2VXZNSXNadDQ2Zm9qTXJYYThhVVdoNXJhNmZ1TFZaVFV3NnUwT20wMnFSUXR5U0U?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T21:43:09Z",
-   "title": "Chaotic Eclipse Releases FastUnlock, a New Windows Zero-Day Vulnerability",
-   "source": "Security Affairs",
-   "url": "https://securityaffairs.com/203537/hacking/chaotic-eclipse-releases-fastunlock-a-new-windows-zero-day-vulnerability.html",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T22:00:06Z",
-   "title": "When hackers target grocery stores",
-   "source": "Tech Xplore",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5UcHlValdWMFRrYnJVSWZHY3Z1S25kc2psR0lYS0hTbGhXVHZOemQyTndWZklhZXhrZGxIS1BpVjZrZjVGSlZiUzV1RkJEeUVGMnQyMFVVTmU3Y0tIc2NWaUtQLVVJck0?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T22:01:18Z",
-   "title": "When apps stop working",
-   "source": "KRXI",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPc1ZKa2ZpeTI1QVVicHFFbUpVYzNrWTBLZlUzMHE1TjFVTmJxUVVmbjZNMEdrTnRGbVNyQmprOElZbXJhSUIway1SUmZNZksxTzhfVVdRcUFVVG51R05aSzl2dDd1WDVoTXVMeGZYaG9wNzBlazBtZWtaS2xsQ0lmTEIzdkZYaVkxd0ZHLWlKT3dWVkFHRW5MVjNtc2FxTEZiSHdB?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T22:03:10Z",
-   "title": "FBI Leads Federal Team Protecting Quantum Research From Foreign Threats",
-   "source": "ExecutiveGov",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPM1AxVkRjYy1rdXhnQ0N2cE1jTDU3ZGhUZGJlLW5MUjhZWXZPMWhBY0pwZzEtZFVYVTN4bzNLdV9PaEVVdG9IaWdTUjFXRUN5T2lxQUF0X0tPdFluS0RidVhHZzhRZmVFRlllRGNHS04teF9jSEhoZ3prZlpSUEwzeUltenNFTmE4LXJCQW1yNnJETE0teTcxWDctbWRTSUd5dElCaw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T22:06:21Z",
-   "title": "Ukrainian authorities arrest four suspects in international ransomware operation",
-   "source": "SC Media",
-   "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNNTJ5QWhPbkRKRTJPcENDSDJEQ0gzc0lFNWhxY283c1gtNTdyaUZOdDE1NTFCbWxuRFJHU3dLdWJnWlg3M2lQZ0hodjc2S0pFRkVTclZieVN1Z3BYUm9QZDdMamJoMjFBVmZrZzVhU1BaT0xQOGZRMmt6RU1DQW5jX1lBdTJoWU9VbzExM1k3aU5od3VzOWdwQzVHRzc3SFpGeE9pYWdFM1dXc2hRMmlv?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T22:28:17Z",
-   "title": "Cyberattacks can put your personal information at risk, password managers can help protect your accounts",
-   "source": "Click2Houston",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxQcTBGUDJ5SUIxZENfbVl1YVV4TG5xODVTNlBPSXowMkpscWVrWVN0by1ZMXo4OFlVWXNCcmYxVU1Va1hpSHBCZTA3MW1jMEExblVVMGJZcUVKSWpVdTVQbnM1bGdpeHNYdXFzMHVGVG8tSlE5aWFJal84ZjU4R1l0X21BYjdZZjNxRkJCSUZ6d0p3bC02cTVCNjlkQ3lRVGdkMGdQMFplN2d0ZzNTWEhDREVyNXV4NnhoQXBYTWR3VDNtdWNRQUNaNUJoclp1ZHV1TUJVbEM3ODc2Q0plZl9RUndKekR2X0VoYml4ODJSSEYxdw?oc=5",
+   "date": "2026-11-19T22:46:14Z",
+   "title": "What happens when things fall apart?",
+   "source": "Manila Bulletin",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE1JaG42dTVWNU94Z1NOTFQwbGZXLVhxd0JFaVBXR0RoNUx0enVYSGE2eEU0ZG9YTkRWa055U005Qk5oaFZ6bGtKUVAtaVNiRDUyYmFNdENlV2NDNW1HQmZDbGhBUE9oTE9QaXRwOW9JbFZEdw?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -735,14 +731,6 @@
    "title": "Jensen Huang, Chinese Hackers & the AI Arms Race",
    "source": "Quillette",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ0FkWHk5dkFEeXRtRDVPNFFldzNzZEppMVVhME5QN2JQemlMUmJ4bXQtNUQ1LWRLdTBzTWwwNGgwcXI3Q2licXlraE45Q2x6MG1YTURpU2M5TmNsbVVFem9ZbkN6QmFoN2t2Z094TmRHVDFOdFl4OUJsR1V0SnRHUDdFZmI0ajhacWljN1ItZDExU3FaX1J4eEhn?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T01:50:00Z",
-   "title": "Pohang University of Science and Technology, personal information leaked... About 20,000 items including university integrated account and university affiliation information were leaked",
-   "source": "보안뉴스",
-   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5TSWx0LXlDLUU0dDRHVFZlR29CakZTVkFnOE5oYngySnl3WVNnOGoxT2d2d1dQRXlWdlZNNW81Sl9qWENqUU1FdW55Z0dNbU5faXNQV1NUV3R5TDJJUmgtaGxoS1pERjREMzY4?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -955,6 +943,14 @@
    "also": []
   },
   {
+   "date": "2026-11-20T05:30:02Z",
+   "title": "Visa confirms data breach linked to service provider in Asia-Pacific",
+   "source": "Génération NT",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNUN5UkFXY19NUHpGU2VaSmsyck5PWmtYVnk3LWo4SlM4ZDBmTEN5b1E1anJLMGM0Rk1NQ1FNY2pIbFdWMnZaTnM4SHdFNFF5M0ZLYWxJV0QtWjV1dlczckpEVVdpcnpJTmVhQmZmSWFaakFGa0Vfa3JDU3hfbDZBaXlmaEdsRDJudlVkaNIBkgFBVV95cUxQdVJmcEh0VmZJemM3NnhlNE53V2V2bzBCVUJtX29faUhKcGdNZ2FpdDU1SlNnWjROQ1ZEdGVzUWxnRThOeVE4NnB5aGVaZGVaZkp2SHpjNXNWcmJ3S2NIcHF1Qm1PdGo3RE02ZXp2TGxZcFB0bU93d3lHeDVYeGtFVlZzUTVRZVFkaE02ekFpdGVpUQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-20T05:36:14Z",
    "title": "French historian called Russian and Iranian cyber attacks more dangerous than bombings",
    "source": "Techora.ru",
@@ -967,14 +963,6 @@
    "title": "Almere must show how it protects residents' data",
    "source": "1Almere",
    "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQdVJkOW1IR3N0cTZVdzFPallEYzA3SUJzUHBtU25xRTBCSTFwNUx2MnMyMHlra3pFU0l5X1piZGk2WkpPUEVMYzljejVKRVdCbnlIV0NON0x1Q21vMnA5WkFTaHU4SVRLVTVQaUNxS19KZDd5Yk5kTkpVS1pOMGdHWGRyOVI1VzR1VnNmcnNyajg1VnA1OTUzTm8ybUVRWkpf?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T05:49:42Z",
-   "title": "Will the USDA hack delay farm payments? What farmers should know before the Dec. 11 deadline",
-   "source": "Nacionale",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOSEdCc0R2OUlmdnZUUjdtd2N3anJyYTF5cTJkMUhTU21kX25sUHM0b2czSUU1VFUzckJ2UFBCdE5SNkRJZ25BekdQSkp1YlZkLVRRcGpXWHZEU1c2MFZvNEpKazZFSWlvVXgxYkxkNjEwRThaQjZqSDRJUnUxUWVMSTRVZUx1ZDZGeWNEZzNSbEktRHVBRHdhQ0tOcGR3QXJsV3laWjFwRDRSek9mNzVCTVJ4MG0?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1015,6 +1003,14 @@
    "title": "Researchers and public health advocates working to reduce the harms of cigarettes and e-cigarettes are facing cyberattacks, malicious complaints and even physical threats, new research reveals. #electronic cigarette #smoking control #cyberbullying",
    "source": "Facebook",
    "url": "https://news.google.com/rss/articles/CBMiuAZBVV95cUxQU1piSzN3d0E4UW5sczdMVnJXd3ZFN0g0TXQ1WVMxTHZ2MFNTRXplUjFhU1VDV3NZekpWd2h1Y0t0cXVqQzVMVzUtVHFKVjlIcWRWZ2U2RTM4cUozQkNHSWt2MkNwTm81aWhwVDFKZ2ZzRF9rNEtXYU9tRE5uNkIydThiOXFfemNDZzhGeVFWY0JKNG5EckZuN1pFbU5GMWZ2VTJ4dzl3ZjFWc3BkdEVtUzNQRHZMZlBLMHl3X3UxQjhhdVdFbDE2bG9hNjBKMEUxb0RJZWk4Y0NmSnNxU1ZkLTljTFlFcVJxWUY3bGppZndDb3BGSFlUUUpzbTRuZDg1djcxdEpkQkNUNnh5b2ppbWZ4Wm96S3FvYWlFUWJRemQzSlBoM2R0b0NMaUdBbGF3eDZmY3p5WnU3ZkhfMll1OG5ZY2N5X1pVbGJ2R0FFT2xtbVVzX3Q3X0lJbmFFTDl2bXRQLVMtWXhsMmFHencyT2JkM3VKRTh3WlozdkpnQ2NRaWpTbW5nXzdSUkFRS3JpdjFBcnNkalN1Z2M5U1VkODIwbGFEclpjWFdyR09DM3NPNUFpMlhrZkg4czZpbUJjeExjNWRKbEs0bXdCWkVoTjhld2l3bFhWczRsZ1RVWnlUdDFST0ZJVUpjTUJfLXR0RXpYS18zX2dZVEstT09fUnhTcmtVd01kcDVjX091VmdRaVRQeXpGWkhHSFVyeFNHNGJPU0hnUTE0U05RN2lBdTNNcWpONjlhelJZLWRGT0pYdXB2aGt2Q3p4c3pRVzBoWDZzNUFYUUYzM2Z3WWNoRURpUWF0MGpRQVVMdlZ4Mmt4LUdaWEVqNGZzQU1qWDFpSk9kOVgwbkJaUUdiMFJyVGlyOXFqUEtlbElPdXhOVXJYWW9BWFdVanFkV0ZEVmxrZFFfYVNkakl4eWVFVlk3TjEwSndyckhOUUFMZnlKR2F2Rm1rR0EyX05Tam5ta3pjRWhheTdlMGVWUVJEZXM1cEJQS0FiZ0RGd3hoaURpWmRrUDJKR3ZRQ3dHM0NRQUpGWXpiWlQ3ekpLN0tkb002ZktPZzN4QmdnNE5USWotZU9tajRnc1NWXw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T06:04:09Z",
+   "title": "Swindon Council raises alarm over increased cyber attack risk amid rising threat",
+   "source": "Rayo",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQNFdWZ0xFVHRyTV95Vmdqc0xjZEM1M3VmYzluSmxoSllGYnR4eGIzc2NPaUJzTUVQVWsxVWtYNFgyUWJJOHQ1VkVQWXRUcjlrM2ZUOUdJd3o3TG41QnNyVVNzeGx4MTEtdFhpVW9pTnJTektKYnl3WExpV192VTRLUWh3TVBBN0xKN3kxQmZVQ3U2Zw?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1467,6 +1463,14 @@
    "also": []
   },
   {
+   "date": "2026-11-20T11:00:47Z",
+   "title": "25,000 email addresses leaked in Nishinomiya City, 17,000 in Amagasaki City, unauthorized access to online application service Hyogo (Kobe Shimbun NEXT)",
+   "source": "Yahoo!ニュース",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRSjZnRDBiMVNWWF94SkNQMW9aUDFtWS1sMi1kMVozYlhZQTNvdHpsZTc5TWNBdlhmdlh6MWFiNUdmaGlFb3d1SG5WemxkVnFkQTNJR2o4ck1KQWhrWmZSSUtJSXUtLXhYVWJ2NUFJVm90Ynk2MTE5Q1h1b0Q3Q0k?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-20T11:03:00Z",
    "title": "Don’t blame cyber-attacks for recent outages. The real villain is the US economy | Bruce Schneier",
    "source": "The Guardian",
@@ -1675,14 +1679,6 @@
    "also": []
   },
   {
-   "date": "2026-11-20T12:47:14Z",
-   "title": "UK launches cyber attack operations in response to Russia and its allies",
-   "source": "QHA - Kırım Haber Ajansı",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPQkw0QmtIb2xlYXhfNDBNbVg2Mm1KaGtoclJ3TFhvTnNDZjRncHdNYU9NSTl6dGN5am9abXlfbjlFcGIyaTZZUWtMV0xmUFFsMjlVZV9tUkZiLVh4NzdCUXpWREV4NXN5ZllCZWUxdWVMaG5PLUNhSFRITUtoUDRsTHBPdmVxWjU4clFYYlNHeEdrLW51aEI0STNyYXdYdGhJU0xPM3BBMGhwY2dSbTNCZFNfZzdzZmw2YlIwYjB5cWpUajd2eEFnTWtaR3BuRUJYRTkw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-20T12:53:42Z",
    "title": "A cyber attack affects not only IT, but can also stop the operation of heavy equipment",
    "source": "Деловые ведомости",
@@ -1719,6 +1715,30 @@
    "title": "Video | Supreme Court Allows Karthigai Deepam At Thiruparankundram On November 24",
    "source": "NDTV",
    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONHJDeUROS3pPbHRsTzZCb2poaDg5R3Vab2RhTjVsTEtKUnF0Q2RhNXkzdlhFOW4tVkJiXzQ0NHl4TGR2OTduU2pSSVpaZFJqc01BSE1lUTMwNDlZWkljMEttajVhWDdxY0R0ZVJHSG0xZkhTMjBLQWRFa1VlQkVhRUZsZDFneld5M3d2enFmNm5zOU05N0ZGMnI2QS1kU2ZrNm4tYUZ6Q2c4cjlD?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:03:00Z",
+   "title": "Four years after the gigantic GTA 6 hack, the case suddenly takes a striking turn",
+   "source": "XGN.nl",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWE5BNFF6b0ZfdTVkVm9IVm1EdTVPb0xjdGxJVUs4MnBhSVBqdmxpS3djZjlsSzg2TjNtcWVwdzRMZEg3bzFOcUMyQndZQWYyVUk5QkhLZG9QenZwRlNoTTJMVGU0eFJCN1J5X21QMUFUekVsWWQzSDVqUzBKQW8yYWVCRk0zUHZ4TWo2ZjlESVFoSFFxWjhqY2p6SjFJT2lkWTFXU3g4TzY2UQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:03:21Z",
+   "title": "Andhra Pradesh Attracts Korean Investors; DMK Alleges Data Leak and Investment Poaching",
+   "source": "The Hans India",
+   "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOGo1OEE0VFZKbE5CS3U3V1FDMU5nd3ZXRFV0bFJKWVFKY3dSLXNoTnhwZnJwaEhvRjdoX1Rtc0owSHc2VHBBdWR6V0Nuc0JPWWFwT0N4TlRMQzAzWTNOaG1iaDFGTHpnaVYzNTNONHlnR1p5cU5xT0UwdW9LYXdfSGdkVW9hWTRzbUQ5TWtjRGxzMS1vYjNlZ0J5VF9raGh1anFHLVFLYzdKOTJtRGl6eEMyRVA4eVNnd3lyeWR6YklPTm5JX1VXTmRvOVlCRE44YmZ1R9IB2gFBVV95cUxNT3pGZkc2UkktenpjaktxT3RsdHNhWXpHUFdSOXgwTzVhS0VuS2ZLcnVIdEZzZG5aNGlsZ25NdmdjdkhOZEJHX1NZbnpNdFhGSV82UUdocHZWWTFuNWpqUFhjejltN0pIbGJOcUR6THU3X0h6aWVjcjVNSFA3T01lRV9GOC1ERERRZmxZWkg3dHQwVnR3ZDN1RzFlc09UTHk0VGMyVUFEcXhMajFxdF8xQ29NZ3R1U2F0NmE0WW1xYUNxTmhkS0hRNXZJX0twTG1qSkpzenVIcS1oUQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:06:00Z",
+   "title": "Cyber attack threat in England: Thousands of cooling devices disabled",
+   "source": "Van Olay",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNYUUzR2w3TEphZkVjR2daVFEzX2h4X01UODlpLWZkLWtGeEF1aDdyQXFBVHN5WmEtdkItdDM3YWsyUXlyWGhGdkZaUXdQSDR1V3FVaUdmTUNDcDE4YW9ydlZKbHk1UzBsTFNFbXdMNWJmcWx5NGpjYkN4YjNuSnp2eGJWOWswenBOZHhrNW4zY0RYckdBclFUMndBTko3LVFoSmc1VA?oc=5",
    "n_outlets": 1,
    "also": []
   }

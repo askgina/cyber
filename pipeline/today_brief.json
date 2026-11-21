@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T21:25:46Z",
- "headline": "Chainflip confirmed that 122.86 BTC was stolen in addition to the Ethereum vault outflow previously estimated at $4.86 million. Microsoft confirmed exploitation of Entra Connect Health, and Cyber advised users to avoid its token bridge while it investigates unexpected minting.",
+ "updated": "2026-11-21T22:28:45Z",
+ "headline": "Chainflip disclosed that 122.86 BTC was stolen in addition to an Ethereum vault outflow estimated at $4.86 million; Cyber confirmed unexpected token minting and told users not to use its bridge. Microsoft notified customers of exploitation affecting Entra Connect Health, while the scope of the reported FBI database intrusion remains unconfirmed.",
  "incidents": [
   {
    "org": "Chainflip",
@@ -82,6 +82,27 @@
    "eid": "n-a5c76ba9"
   },
   {
+   "org": "Clevermate",
+   "what": "French reports described an unverified claim involving student and tutor data, including contact and bank-account details.",
+   "scale": "Unverified claim",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "x-0cd68e71"
+  },
+  {
+   "org": "Orchestra (Travelsoft)",
+   "what": "Travelsoft began restoring the bookings platform in phases after shutting it down following unauthorized access.",
+   "scale": "Booking disruption",
+   "patterns": [
+    "supply-chain",
+    "outage"
+   ],
+   "eid": "n-40f1cb58",
+   "update": true,
+   "since": "2026-11-19"
+  },
+  {
    "org": "1984 Hosting",
    "what": "The Icelandic provider’s managing director said seven websites were destroyed in the attack and that services would return in phases.",
    "scale": "Seven sites reported destroyed",
@@ -90,29 +111,6 @@
    "since": "2026-11-20",
    "url": "https://icelandmonitor.mbl.is/news/news/2026/11/21/pro_palestinian_websites_targeted_in_cyberattack_on",
    "eid": "x-afb3de62"
-  },
-  {
-   "org": "GoFundMe Pro",
-   "what": "GoFundMe confirmed some donor contact data was accessed and said Salesforce restored its software packages while the integration remained disabled.",
-   "scale": "Affected count not disclosed",
-   "patterns": [
-    "data-exposure",
-    "supply-chain"
-   ],
-   "update": true,
-   "since": "2026-10-10",
-   "eid": "x-d309dfe3"
-  },
-  {
-   "org": "DeFiChain",
-   "what": "DeFiChain said it expects to reverse the effects of its November exploit and deploy a fix in December, with no date yet for reopening affected wallet services.",
-   "scale": "Recovery timeline",
-   "patterns": [
-    "bridge"
-   ],
-   "eid": "x-5ed6a51c",
-   "update": true,
-   "since": "2026-11-03"
   }
  ]
 }

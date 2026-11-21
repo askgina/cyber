@@ -1665,5 +1665,268 @@
    "bridge",
    "key-compromise"
   ]
+ },
+ "Ownkube reports blocking automated attacks against its platform": {
+  "summary": "Ownkube’s founder said automated attempts against its platform were blocked and the accounts involved were locked. He said customer data was not affected.",
+  "attack_chain": [
+   "Ownkube reported automated attempts against its platform.",
+   "The company said it blocked the attempts and locked the associated accounts; it did not report a compromise."
+  ],
+  "open_questions": [
+   "Was the attack independently verified?",
+   "Was another related service affected?"
+  ],
+  "mitigations": [
+   "Review authentication, tenant isolation and account-abuse alerts.",
+   "Validate that containment and notification procedures work when repeated attempts are detected."
+  ],
+  "sources": [
+   {
+    "label": "Ownkube founder",
+    "url": "https://x.com/abhijaazz/status/2123707793995641157"
+   }
+  ]
+ },
+ "POSTECH confirms exposure across university portals": {
+  "summary": "POSTECH confirmed exposure in three university portals. Its November 20 update listed 25,551 additional administrative portal records, on top of 19,500 research equipment records and 478 IT service records; the combined figure is not a count of distinct people.",
+  "attack_chain": [
+   "POSTECH said an external attacker obtained administrative privileges.",
+   "The university confirmed records exposed in multiple portals and issued an expanded notice."
+  ],
+  "open_questions": [
+   "What was the initial access path?",
+   "How many distinct individuals were affected?"
+  ],
+  "mitigations": [
+   "Require resets for affected credentials and monitor for suspicious reuse.",
+   "Isolate affected portals and review administrative logins and access controls."
+  ],
+  "sources": [
+   {
+    "label": "POSTECH second notice",
+    "url": "https://www.postech.ac.kr/eng/news-center/university_announcement.do?mode=view&articleNo=56101&title=Second+Notice+Regarding+Additional+Personal+Information+Breach"
+   },
+   {
+    "label": "POSTECH initial notice",
+    "url": "https://www.postech.ac.kr/eng/news-center/university_announcement.do?mode=view&articleNo=56081&title=Notice+of+Personal+Data+Breach+Resulting+from+the+Hacking+of+the+Research+Equipment+Support+Portal+and+IT+Service+Portal"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Norwegian Air warns customers about possible payment card exposure": {
+  "summary": "Norwegian Air Shuttle warned about 5,000 customers that payment card details entered on its website on November 16 may have been exposed. Those contacted were advised to block their cards.",
+  "attack_chain": [
+   "The airline attributed the incident to a website supplier.",
+   "Card details entered during the affected period may have been exposed."
+  ],
+  "open_questions": [
+   "Was any captured payment data subsequently used?"
+  ],
+  "mitigations": [
+   "Monitor changes and enforce an allowlist of scripts on payment pages.",
+   "Coordinate with issuers and provide affected customers with clear notification and card replacement instructions."
+  ],
+  "sources": [
+   {
+    "label": "The Local",
+    "url": "https://www.thelocal.no/20261120/norwegian-airline-warns-thousands-of-customers-over-data-breach"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "Unverified data exposure claim involving Clevermate": {
+  "summary": "An unverified claim says student and tutor information, including contact and bank-account details, was exposed. Clevermate has not publicly confirmed an incident.",
+  "attack_chain": [
+   "The claim is public, but the access path, affected systems and scope have not been established."
+  ],
+  "open_questions": [
+   "Can the affected organisation verify that the data is authentic and tied to a new incident?"
+  ],
+  "mitigations": [
+   "Preserve relevant access logs and review unusual sign-ins or bulk exports.",
+   "Use official channels for any customer notices and warn against phishing tied to the claim."
+  ],
+  "sources": [
+   {
+    "label": "Cyberattaque.org",
+    "url": "https://www.cyberattaque.org/clevermate-vise-par-des-hackers-des-donnees-personnelles-des-iban-et-cartes-etudiantes-exposes/"
+   },
+   {
+    "label": "FrenchBreaches",
+    "url": "https://frenchbreaches.com/alertes/clevermate-piratage-fuite-donnees-iban-diplomes-mwqhk4jhz05mfutusn"
+   },
+   {
+    "label": "VECERT Analyzer, reporting the claim",
+    "url": "https://x.com/VECERTRadar/status/2124190812711858251"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Unverified data exposure claim involving GoTronic": {
+  "summary": "A threat monitor reported a claim about GoTronic customer data. GoTronic has not publicly confirmed the intrusion or the authenticity of the data.",
+  "attack_chain": [
+   "The claim is public, but the access path, affected systems and scope have not been established."
+  ],
+  "open_questions": [
+   "Can the affected organisation verify that the data is authentic and tied to a new incident?"
+  ],
+  "mitigations": [
+   "Preserve relevant access logs and review unusual sign-ins or bulk exports.",
+   "Use official channels for any customer notices and warn against phishing tied to the claim."
+  ],
+  "sources": [
+   {
+    "label": "FrenchBreaches",
+    "url": "https://frenchbreaches.com/alertes/gotronic-piratage-fuite-donnees-clients-commandes-mwqiij0l351ddo81adu"
+   },
+   {
+    "label": "Pasivite alert feed, citing FrenchBreaches",
+    "url": "https://pasivite.fr/alertes"
+   },
+   {
+    "label": "VECERT Analyzer, reporting the claim",
+    "url": "https://x.com/VECERTRadar/status/2124190812711858251"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Unverified data exposure claim involving La Maison des Travaux": {
+  "summary": "A threat monitor reported a claim about customer data linked to La Maison des Travaux. The company has not publicly confirmed the intrusion or scope.",
+  "attack_chain": [
+   "The claim is public, but the access path, affected systems and scope have not been established."
+  ],
+  "open_questions": [
+   "Can the affected organisation verify that the data is authentic and tied to a new incident?"
+  ],
+  "mitigations": [
+   "Preserve relevant access logs and review unusual sign-ins or bulk exports.",
+   "Use official channels for any customer notices and warn against phishing tied to the claim."
+  ],
+  "sources": [
+   {
+    "label": "FrenchBreaches",
+    "url": "https://frenchbreaches.com/alertes/la-maison-des-travaux-piratage-fuite-donnees-clients-mwqim3512cssbwz8jde"
+   },
+   {
+    "label": "Pasivite alert feed, citing FrenchBreaches",
+    "url": "https://pasivite.fr/alertes"
+   },
+   {
+    "label": "VECERT Analyzer, reporting the claim",
+    "url": "https://x.com/VECERTRadar/status/2124190812711858251"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Unverified data exposure claim involving Robot Advance": {
+  "summary": "A threat monitor reported a claim about Robot Advance customer data. The company has not publicly confirmed that its data or systems were compromised.",
+  "attack_chain": [
+   "The claim is public, but the access path, affected systems and scope have not been established."
+  ],
+  "open_questions": [
+   "Can the affected organisation verify that the data is authentic and tied to a new incident?"
+  ],
+  "mitigations": [
+   "Preserve relevant access logs and review unusual sign-ins or bulk exports.",
+   "Use official channels for any customer notices and warn against phishing tied to the claim."
+  ],
+  "sources": [
+   {
+    "label": "FrenchBreaches",
+    "url": "https://frenchbreaches.com/alertes/robot-advance-piratage-fuite-donnees-clients-mots-de-passe-mwqip71q8i2uxq55z1x"
+   },
+   {
+    "label": "Pasivite alert feed, citing FrenchBreaches",
+    "url": "https://pasivite.fr/alertes"
+   },
+   {
+    "label": "VECERT Analyzer, reporting the claim",
+    "url": "https://x.com/VECERTRadar/status/2124190812711858251"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Unverified claim involving records attributed to SFR": {
+  "summary": "A threat monitor relayed a claim that millions of records were linked to the French telecom company SFR. Neither the number nor whether this concerns a new intrusion has been independently established.",
+  "attack_chain": [
+   "The claim is public, but the access path, affected systems and scope have not been established."
+  ],
+  "open_questions": [
+   "Can the affected organisation verify that the data is authentic and tied to a new incident?"
+  ],
+  "mitigations": [
+   "Preserve relevant access logs and review unusual sign-ins or bulk exports.",
+   "Use official channels for any customer notices and warn against phishing tied to the claim."
+  ],
+  "sources": [
+   {
+    "label": "VECERT Analyzer, reporting the claim",
+    "url": "https://x.com/VECERTRadar/status/2124190812711858251"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Unverified extortion claim involving FIFA": {
+  "summary": "A group claimed it held FIFA data and subsequently claimed to have published it. FIFA has not confirmed an intrusion or the authenticity or volume of the material.",
+  "attack_chain": [
+   "The claim is public, but the access path, affected systems and scope have not been established."
+  ],
+  "open_questions": [
+   "Can the affected organisation verify that the data is authentic and tied to a new incident?"
+  ],
+  "mitigations": [
+   "Preserve relevant access logs and review unusual sign-ins or bulk exports.",
+   "Use official channels for any customer notices and warn against phishing tied to the claim."
+  ],
+  "sources": [
+   {
+    "label": "Escudo Digital",
+    "url": "https://www.escudodigital.com/en/cybersecurity/new-cybercrime-group-threatens-fifa-with-data-leak-over-ransom.html"
+   },
+   {
+    "label": "VECERT Analyzer, reporting the claim",
+    "url": "https://x.com/VECERTRadar/status/2124190812711858251"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Unverified data exposure claim involving Gigafit": {
+  "summary": "A threat monitor relayed a claim that data linked to French gym chain Gigafit had been exposed. Gigafit has not publicly confirmed the incident or the claimed scope.",
+  "attack_chain": [
+   "The claim is public, but the access path, affected systems and scope have not been established."
+  ],
+  "open_questions": [
+   "Can the affected organisation verify that the data is authentic and tied to a new incident?"
+  ],
+  "mitigations": [
+   "Preserve relevant access logs and review unusual sign-ins or bulk exports.",
+   "Use official channels for any customer notices and warn against phishing tied to the claim."
+  ],
+  "sources": [
+   {
+    "label": "VECERT Analyzer, reporting the claim",
+    "url": "https://x.com/VECERTRadar/status/2124190812711858251"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
  }
 }
