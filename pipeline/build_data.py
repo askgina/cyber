@@ -181,9 +181,19 @@ for name, url in FEEDS:
             ncache[l] = {"date": iso(d0), "source": name, "title": t, "url": l, "summary": desc}
     except Exception as e:
         errors.append(f"news {name}: {e}")
+# ---- mainstream, finance and non-English press via Google News search (security trade press misses many incidents)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import gnews
+try:
+    for g in gnews.collect(NOW, get, errors):
+        if g["url"] not in ncache: ncache[g["url"]] = g
+except Exception as e:
+    errors.append(f"gnews: {e}")
 ncache = {k: v for k, v in ncache.items() if days_ago(parse_iso(v["date"])) <= 10}
 json.dump(ncache, open(NC, "w"))
-news = [v for v in ncache.values() if days_ago(parse_iso(v["date"])) <= 7]
+headlines = [v for v in ncache.values() if days_ago(parse_iso(v["date"])) <= 7]
+# one row per story, with every outlet that covered it
+news = gnews.stories(headlines)
 news.sort(key=lambda x: x["date"], reverse=True)
 
 
@@ -307,7 +317,11 @@ def hourly_bins():
 hourly = hourly_bins()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from enrich import enrich
-news_out, crypto_out, kev_out = news[:120], crypto[:60], kev[:40]
+# keep every story covered by 2+ outlets or by the security trade press, then the newest single-outlet ones
+_keep = [n for n in news if n.get("n_outlets", 1) >= 2 or n["source"] in gnews.TRADE]
+_rest = [n for n in news if n not in _keep][: max(0, 450 - len(_keep))]
+news_out = sorted(_keep + _rest, key=lambda n: n["date"], reverse=True)
+crypto_out, kev_out = crypto[:60], kev[:40]
 incidents, clusters, pattern_stats, pattern_defs = enrich(
     news_out, crypto_out, kev_out, xsig, history=crypto_hist, breaches=breaches,
     notes_path=os.path.join(ROOT, "pipeline", "analysis_notes.json"))
@@ -343,6 +357,23 @@ if brief:
         if d0:
             i["since"] = d0[:10]
             i["update"] = bool(i.get("update")) or days_ago(parse_iso(d0 if len(d0) > 10 else d0 + "T23:59:59Z")) > 3
+# ---- official breach notices (state AGs, HHS, SEC 8-K Item 1.05, press-reported attacks)
+notices = []
+try:
+    import official
+    notices = official.collect(NOW, get, errors)
+except ImportError:
+    pass
+except Exception as e:
+    errors.append(f"official: {e}")
+# ---- incident registry: curated records with every matching story and notice attached
+import registry
+REG = os.path.join(ROOT, "pipeline", "incidents.json")
+reg_recs, unmatched = registry.attach(registry.load(REG), news, notices, NOW)
+tq = registry.triage_queue(unmatched, NOW)
+# outlets are kept in full for matching above; the page only needs the first few per story
+news_out = [dict(n, outlets=n.get("outlets", [])[:10]) if len(n.get("outlets", [])) > 10 else n for n in news_out]
+json.dump({"generated": iso(NOW), "queue": tq}, open(os.path.join(ROOT, "pipeline", "triage_queue.json"), "w"), indent=1, ensure_ascii=False)
 # ---- counts by window: last hour, 24h, 7d, month to date, year to date
 def win_bounds():
     som = NOW.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
@@ -379,7 +410,11 @@ for w in WB:
     else: kw[w] = {"n": sum(1 for a in kev_all if a >= WB[w])}
 windows["rows"]["kev"] = kw
 windows["rows"]["breach"] = {w: {"n": sum(1 for d, _ in hibp_all if d >= WB[w]), "acc": sum(c for d, c in hibp_all if d >= WB[w])} for w in WB}
-windows["rows"]["news"] = {w: {"n": sum(1 for n in news if parse_iso(n["date"]) >= WB[w])} for w in ("1h", "24h", "7d")}
+windows["rows"]["news"] = {w: {"n": sum(1 for n in news if parse_iso(n["date"]) >= WB[w]),
+                               "headlines": sum(1 for n in headlines if parse_iso(n["date"]) >= WB[w])} for w in ("1h", "24h", "7d")}
+windows["rows"]["incidents"] = {w: {"n": sum(1 for r in reg_recs if parse_iso(r["first_reported"]) >= WB[w])} for w in WB}
+# notices carry a day, not a time: a notice dated today counts as last 24h (not last hour)
+windows["rows"]["notices"] = {w: {"n": sum(1 for o in notices if (parse_iso(o["date"]) + dt.timedelta(hours=23, minutes=59)) >= WB[w] and (w != "1h" or o["date"][11:19] != "00:00:00"))} for w in ("1h", "24h", "7d")}
 windows["rows"]["x"] = {w: {"n": sum(1 for x in xsig if parse_iso(x["first"]) >= WB[w])} for w in ("1h", "24h", "7d")}
 
 data = {
@@ -392,7 +427,7 @@ data = {
                "usd_7d": sum((c["amount"] or 0) for c in c30 if days_ago(parse_iso(c["date"])) <= 7),
                "usd_30d": sum((c["amount"] or 0) for c in c30), "items": crypto_out, "series": daily(c30, "date"),
                "history_size": len(crypto_hist)},
-    "news": news_out, "x": xsig,
+    "news": news_out, "news_headlines_7d": len(headlines), "registry": reg_recs, "notices": notices[:300], "triage_n": len(tq), "x": xsig,
     "breaches": {"count_30d": len(breaches), "accounts_30d": sum(b["count"] or 0 for b in breaches), "items": breaches},
     "hourly": hourly, "windows": windows,
     "brief": brief,

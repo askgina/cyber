@@ -4,8 +4,8 @@
   const B = window.BL;
   const { el } = B;
   const $ = (s, r = document) => r.querySelector(s);
-  const T = { tab: "crypto", prevKpi: {}, seenFeed: null, panel: 0, q: "" };
-  const KIND_S = { news: "NEWS", crypto: "CRYPTO", kev: "CVE", x: "X", breach: "BREACH", ransom: "RANSOM" };
+  const T = { tab: "inc", prevKpi: {}, seenFeed: null, panel: 0, q: "" };
+  const KIND_S = { notice: "NOTICE", news: "NEWS", crypto: "CRYPTO", kev: "CVE", x: "X", breach: "BREACH", ransom: "RANSOM" };
   const hm = (s) => new Date(s.length === 10 ? s + "T12:00:00Z" : s).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "UTC" });
   const when = (s) => s.length === 10 ? B.fmtDate(s) : (B.hoursAgo(s) < 24 ? hm(s) : B.fmtDate(s));
 
@@ -34,6 +34,7 @@
     D.crypto.items.forEach((it) => ix[it.eid] = { it, kind: "crypto", title: it.name, text: it.desc, date: it.date });
     D.kev.items.forEach((it) => ix[it.eid] = { it, kind: "kev", title: `${it.id}: ${it.name}`, text: it.desc, date: it.date });
     (D.x || []).forEach((it) => ix[it.eid] = { it, kind: "x", title: it.subject, text: it.claim, date: it.date });
+    (D.registry || []).forEach((it) => ix["r-" + it.id] = { it, kind: "inc", title: it.org, text: [it.title, it.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: it.first_reported, url: null });
     ((D.breaches || {}).items || []).forEach((it) => ix[it.eid] = { it, kind: "breach", title: it.title, text: it.desc, date: it.added });
     return ix;
   }
@@ -63,7 +64,7 @@
     const out = {};
     WINS.forEach(([w]) => {
       const g = (k) => (W[k] || {})[w] || null;
-      const r = { crypto: g("crypto"), ransomware: g("ransomware"), kev: g("kev"), breach: g("breach") };
+      const r = { crypto: g("crypto"), ransomware: g("ransomware"), kev: g("kev"), breach: g("breach"), inc: g("incidents"), notices: g("notices") };
       if (w === "1h" || w === "24h") {
         const cut = now - (w === "1h" ? 36e5 : 864e5);
         const seen = (o) => o.listed_at ? tms(o.listed_at) >= cut : (w === "24h" && tms(o.date) >= yday);
@@ -73,6 +74,8 @@
         r.kev = { n: D.kev.items.filter(seen).length };
         const br = ((D.breaches || {}).items || []).filter((b) => tms(b.added) >= cut);
         r.breach = { n: br.length, acc: br.reduce((a, b) => a + (b.count || 0), 0) };
+        r.inc = { n: (D.registry || []).filter((x) => tms(x.first_reported) >= cut).length };
+        r.notices = { n: (D.notices || []).filter((x) => w === "24h" ? tms(x.date) + 86399e3 >= cut : tms(x.date) >= cut && !x.date.endsWith("T00:00:00Z")).length };
         r.cut = cut;
       }
       // anything picked up live since the last build
@@ -81,7 +84,7 @@
         if (e.kind === "crypto" && r.crypto) { r.crypto = { ...r.crypto, n: r.crypto.n + 1, usd: (r.crypto.usd || 0) + (e.amount || 0) }; }
         if (e.kind === "breach" && r.breach) { r.breach = { ...r.breach, n: r.breach.n + 1, acc: (r.breach.acc || 0) + (e.count || 0) }; }
       });
-      r.total = ["crypto", "ransomware", "kev", "breach"].reduce((a, k) => a + (r[k] ? r[k].n : 0), 0);
+      r.total = [...(w === "30d" || w === "ytd" ? [] : ["inc"]), "crypto", "ransomware", "kev", "breach"].reduce((a, k) => a + (r[k] ? r[k].n : 0), 0);
       out[w] = r;
     });
     return out;
@@ -98,14 +101,15 @@
       const cr = r.crypto ? `${r.crypto.n}${r.crypto.usd ? " · " + B.fmtUSD(r.crypto.usd) : ""}` : "n/a";
       const top = r.crypto && r.crypto.top && r.crypto.top.usd >= 1e7 && (w === "7d" || w === "30d" || w === "ytd") ? r.crypto.top : null;
       const br = r.breach ? `${r.breach.n}${r.breach.acc ? " · " + B.compact(r.breach.acc) : ""}` : "n/a";
-      return el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: "Crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP" },
+      return el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: "Press-reported incidents (curated registry, one per incident), crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP. Official notices are listed but not added to the total." },
         el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, "incidents")),
         el("div", { class: "wb" },
+          line("Press-reported", r.inc && (w === "1h" || w === "24h" || w === "7d") ? String(r.inc.n) : "n/a"),
           line("Crypto", cr),
           line("Ransomware", r.ransomware ? r.ransomware.n.toLocaleString("en-US") : "n/a"),
           line("Exploited CVEs", r.kev ? String(r.kev.n) : "n/a"),
           line("Breaches", br),
-          null),
+          r.notices && r.notices.n ? line("Official notices", String(r.notices.n)) : null),
         top ? el("div", { class: "wt" }, el("em", {}, "Largest "), `${top.name.replace(/ CEX$/, "")} ${B.fmtUSD(top.usd)}, ${B.fmtDate(top.date)}`) : null);
     }));
   }
@@ -124,15 +128,15 @@
     t.rows.forEach((r) => box.append(row([
       c("c-org", el("b", {}, r.org), el("small", {}, r.what)),
       c("c-sc", r.scale || ""),
-      c("c-pt", (r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : ""),
-    ], { id: r.eid })));
+      c("c-pt", r.type || ((r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : "")),
+    ], { id: r.rid || r.eid, url: r.url, cls: r.url && !r.rid ? "dim" : null })));
     if ((t.ups || []).length) {
       box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-org", "Developments on older incidents"), c("c-sc", "Began"), c("c-pt", "")));
       t.ups.forEach((r) => box.append(row([
         c("c-org", el("b", {}, r.org), el("small", {}, r.what)),
         c("c-sc", r.since ? B.fmtDate(r.since) : ""),
-        c("c-pt", (r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : ""),
-      ], { id: r.eid, cls: "dim" })));
+        c("c-pt", r.type || ((r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : "")),
+      ], { id: r.rid || r.eid, cls: "dim" })));
     }
     if ((t.named || []).length) box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-org", "Named on ransomware leak sites"), c("c-sc", ""), c("c-pt", "")));
     (t.named || []).forEach((v) => box.append(row([
@@ -191,7 +195,7 @@
     });
   }
 
-  const TABS = { crypto: "Crypto", ransom: "Ransom", kev: "KEV", breach: "Breach" };
+  const TABS = { inc: "Incidents 7d", crypto: "Crypto", ransom: "Ransom", kev: "KEV", breach: "Breach" };
   function drawMkt(D) {
     $("#t-tabs").replaceChildren(...Object.entries(TABS).map(([k, l]) => {
       const b = el("button", { type: "button", role: "tab", "aria-selected": String(T.tab === k), class: T.tab === k ? "on" : null }, l);
@@ -199,7 +203,13 @@
       return b;
     }));
     const box = $("#t-mkt"); box.replaceChildren();
-    if (T.tab === "crypto") {
+    if (T.tab === "inc") {
+      const now = Date.now();
+      const items = (D.registry || []).filter((r) => now - new Date(r.latest).getTime() <= 7 * 864e5);
+      items.forEach((r) => box.append(row([c("c-t", B.fmtDate(r.first_reported)), c("c-org", el("b", {}, r.org), el("small", {}, `${r.type}${r.country ? " · " + r.country : ""} · ${r.n_outlets} outlet${r.n_outlets === 1 ? "" : "s"}`)),
+        c("c-sc", r.usd ? B.fmtUSD(r.usd) : r.records ? B.compact(r.records) : r.status)], { id: "r-" + r.id })));
+      $("#t-mkt-m").textContent = `${items.length} incidents`;
+    } else if (T.tab === "crypto") {
       const items = [...D.crypto.items].sort((a, b) => (b.amount || 0) - (a.amount || 0));
       items.forEach((i) => box.append(row([c("c-t", B.fmtDate(i.date)), c("c-org", el("b", {}, i.name), el("small", {}, [i.technique, i.chains.slice(0, 2).join(", ")].filter((x) => x && x !== "Unknown").join(" · "))), c("c-sc", B.fmtUSD(i.amount))], { id: i.eid })));
       $("#t-mkt-m").textContent = `${D.crypto.count_30d} · ${B.fmtUSD(D.crypto.usd_30d)}`;
