@@ -1,120 +1,113 @@
 {
- "updated": "2026-11-21T19:26:44Z",
- "headline": "Investigators traced a $4.86 million outflow from Chainflip’s Ethereum vault, but have not established how the withdrawal was authorized. Microsoft says it fixed a flaw that exposed Entra Connect Health tenant metadata; the FBI has not publicly confirmed the reported intrusion into its national crime database.",
- "incidents": [
-  {
-   "org": "Chainflip Ethereum vault",
-   "what": "Chainflip paused the protocol after on-chain investigators identified a $4.86 million Ethereum vault outflow; how the vault authorized the transfer remains unknown.",
-   "scale": "$4.86M reported",
-   "patterns": [
-    "bridge"
-   ],
-   "eid": "c-2a3dab8c"
-  },
-  {
-   "org": "Microsoft Entra Connect Health",
-   "what": "Microsoft said a server-side flaw let an unauthorized party read administrator email addresses and tenant metadata, with no unauthorized configuration changes found.",
-   "scale": "Tenant count not disclosed",
-   "patterns": [
-    "enterprise-platform",
-    "data-exposure"
-   ],
-   "eid": "n-1e1dbef9"
-  },
-  {
-   "org": "Federal Bureau of Investigation (FBI)",
-   "what": "CNN, AP and Fox News independently cited sources describing an apparent intrusion into the FBI’s national crime database; the FBI declined to comment to AP.",
-   "scale": "Scope and access unconfirmed",
-   "patterns": [],
-   "eid": "x-e442a7e4"
-  },
-  {
-   "org": "Germany’s Federal Employment Agency",
-   "what": "Germany’s Federal Employment Agency confirmed an attack on its separately run property-management systems and said benefits-recipient data was not known to be affected.",
-   "scale": "Damage not disclosed",
-   "patterns": [
-    "enterprise-platform"
-   ],
-   "eid": "n-959a4579"
-  },
-  {
-   "org": "Nissan",
-   "what": "Nissan suspended part of its global dealer diagnostics system after detecting unauthorized access, delaying some repairs and replacement-key programming.",
-   "scale": "Partial outage",
-   "patterns": [
-    "outage"
-   ],
-   "eid": "n-1e18c46b"
-  },
-  {
-   "org": "Staples Canada",
-   "what": "Staples Canada said unauthorized access at its print website exposed contact information, order summaries and encrypted passwords.",
-   "scale": "Count not disclosed; no financial data reported exposed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "x-b0bed11b"
-  },
-  {
-   "org": "Optimizely (Configured Commerce)",
-   "what": "Optimizely shut down a legacy deployment server and removed an injected script from two sites after finding unauthorized access.",
-   "scale": "Two sites identified",
-   "patterns": [
-    "supply-chain"
-   ]
-  },
-  {
-   "org": "Eskenazi Health",
-   "what": "Eskenazi Health disclosed that patient information may have been accessed after two employee email accounts were compromised in September.",
-   "scale": "Affected count not disclosed",
-   "patterns": [
-    "phishing",
-    "data-exposure"
-   ],
-   "eid": "n-a5c76ba9"
-  },
-  {
-   "org": "YMCA of Singapore",
-   "what": "YMCA said its Youth For Causes registration portal and database were compromised, but investigators could not establish whether personal data was copied.",
-   "scale": "Access to personal data unconfirmed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-4945b68d"
-  },
-  {
-   "org": "GoFundMe Pro",
-   "what": "GoFundMe confirmed some donor contact data was accessed and said Salesforce restored its software packages while the integration remained disabled.",
-   "scale": "Affected count not disclosed",
-   "patterns": [
-    "data-exposure",
-    "supply-chain"
-   ],
-   "update": true,
-   "since": "2026-10-10",
-   "eid": "x-d309dfe3"
-  },
-  {
-   "org": "US Department of Agriculture",
-   "what": "A USDA undersecretary confirmed a cyberthreat and said no data was lost, while press reports describe suspected access to a farm-payment system.",
-   "scale": "Loans and payments disrupted; access scope unconfirmed",
-   "patterns": [
-    "outage"
-   ],
-   "eid": "n-62a6f6b1",
-   "update": true,
-   "since": "2026-11-16"
-  },
-  {
-   "org": "Rokkatei",
-   "what": "Rokkatei expanded the potential scope of its online-shop breach to customer contact details and reported one confirmed case of fraudulent card use.",
-   "scale": "One fraud case confirmed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "x-14355224",
-   "update": true,
-   "since": "2026-10-21"
-  }
- ]
+  "updated": "2026-11-21T20:25:53Z",
+  "headline": "Investigators traced a $4.86 million outflow from Chainflip’s Ethereum vault but have not established how it was authorized. Microsoft confirmed exploitation of Entra Connect Health, while the FBI has not publicly confirmed reports of an intrusion into its national crime database.",
+  "incidents": [
+    {
+      "org": "Chainflip Ethereum vault",
+      "what": "Chainflip paused the protocol after on-chain investigators identified a $4.86 million Ethereum vault outflow; how the vault authorized the transfer remains unknown.",
+      "scale": "$4.86M reported",
+      "patterns": [
+        "bridge"
+      ],
+      "eid": "c-2a3dab8c"
+    },
+    {
+      "org": "Microsoft Entra Connect Health",
+      "what": "Microsoft said a server-side flaw let an unauthorized party read administrator email addresses and tenant metadata, with no unauthorized configuration changes found.",
+      "scale": "Tenant count not disclosed",
+      "patterns": [
+        "enterprise-platform",
+        "data-exposure"
+      ],
+      "eid": "n-1e1dbef9"
+    },
+    {
+      "org": "Federal Bureau of Investigation (FBI)",
+      "what": "CNN, AP and Fox News independently cited sources describing an apparent intrusion into the FBI’s national crime database; the FBI declined to comment to AP.",
+      "scale": "Scope and access unconfirmed",
+      "patterns": [],
+      "eid": "x-e442a7e4"
+    },
+    {
+      "org": "Germany’s Federal Employment Agency",
+      "what": "Germany’s Federal Employment Agency confirmed an attack on its separately run property-management systems and said benefits-recipient data was not known to be affected.",
+      "scale": "Damage not disclosed",
+      "patterns": [
+        "enterprise-platform"
+      ],
+      "eid": "n-959a4579"
+    },
+    {
+      "org": "Staples Canada",
+      "what": "Staples Canada said unauthorized access at its print website exposed contact information, order summaries and encrypted passwords.",
+      "scale": "Count not disclosed; no financial data reported exposed",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "x-b0bed11b"
+    },
+    {
+      "org": "Optimizely (Configured Commerce)",
+      "what": "Optimizely shut down a legacy deployment server and removed an injected script from two sites after finding unauthorized access.",
+      "scale": "Two sites identified",
+      "patterns": [
+        "supply-chain"
+      ]
+    },
+    {
+      "org": "Illinois Department of Natural Resources",
+      "what": "Illinois disclosed an apparent intrusion attempt at the Algonquin Dam on the Fox River and said the dam continued to operate.",
+      "scale": "No operational disruption reported",
+      "patterns": [],
+      "eid": "n-fbd0be68"
+    },
+    {
+      "org": "Eskenazi Health",
+      "what": "Eskenazi Health disclosed that patient information may have been accessed after two employee email accounts were compromised in September.",
+      "scale": "Affected count not disclosed",
+      "patterns": [
+        "phishing",
+        "data-exposure"
+      ],
+      "eid": "n-a5c76ba9"
+    },
+    {
+      "org": "YMCA of Singapore",
+      "what": "YMCA said its Youth For Causes registration portal and database were compromised, but investigators could not establish whether personal data was copied.",
+      "scale": "More than 13,000 potentially affected; personal-data access unconfirmed",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "n-4945b68d"
+    },
+    {
+      "org": "Sunfun Info",
+      "what": "Sunfun Info said it detected unauthorized access to its systems and activated its response plan without any material impact on operations reported.",
+      "scale": "Data exposure not disclosed",
+      "patterns": []
+    },
+    {
+      "org": "GoFundMe Pro",
+      "what": "GoFundMe confirmed some donor contact data was accessed and said Salesforce restored its software packages while the integration remained disabled.",
+      "scale": "Affected count not disclosed",
+      "patterns": [
+        "data-exposure",
+        "supply-chain"
+      ],
+      "update": true,
+      "since": "2026-10-10",
+      "eid": "x-d309dfe3"
+    },
+    {
+      "org": "DeFiChain",
+      "what": "DeFiChain said it expects to reverse the effects of its November exploit and deploy a fix in December, with no date yet for reopening affected wallet services.",
+      "scale": "Recovery timeline",
+      "patterns": [
+        "bridge"
+      ],
+      "eid": "x-5ed6a51c",
+      "update": true,
+      "since": "2026-11-03"
+    }
+  ]
 }

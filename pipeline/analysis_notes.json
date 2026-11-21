@@ -1192,5 +1192,157 @@
    "supply-chain",
    "data-exposure"
   ]
+ },
+ "Kaspersky identifies Operation ShadowCloud targeting government networks": {
+  "summary": "Kaspersky identified a cyberespionage campaign affecting government organizations in Asia and Africa. The campaign abused remote management software and legitimate cloud services to conceal activity. The operators and individual victims were not publicly identified.",
+  "attack_chain": [
+   "The initial entry path is not confirmed. Kaspersky observed abuse of remote-management software on affected networks.",
+   "Malware communicated through legitimate cloud services; the full scope of the information collected is unknown."
+  ],
+  "open_questions": [
+   "How was the earliest foothold obtained, and what data was accessed?"
+  ],
+  "mitigations": [
+   "Inventory permitted remote-management software and alert on unexpected installs. Restrict outbound connections from servers and review newly created cloud identities and unusual external tenants."
+  ],
+  "sources": [
+   {
+    "label": "Kaspersky campaign announcement",
+    "url": "https://me-en.kaspersky.com/about/press-releases/kaspersky-operation-shadowcloud-targets-government-networks-across-asia-and-africa"
+   },
+   {
+    "label": "Kaspersky investigation, part 1",
+    "url": "https://securelist.com/operation-shadowcloud-gitdoor/122004/"
+   },
+   {
+    "label": "Kaspersky investigation, part 2",
+    "url": "https://securelist.com/operation-shadowcloud-graphdoor/122005/"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "ShadowCloud GitHub and SharePoint C2 backdoors": {
+  "summary": "Kaspersky identified a cyberespionage campaign affecting government organizations in Asia and Africa. The campaign abused remote management software and legitimate cloud services to conceal activity. The operators and individual victims were not publicly identified.",
+  "attack_chain": [
+   "The initial entry path is not confirmed. Kaspersky observed abuse of remote-management software on affected networks.",
+   "Malware communicated through legitimate cloud services; the full scope of the information collected is unknown."
+  ],
+  "open_questions": [
+   "How was the earliest foothold obtained, and what data was accessed?"
+  ],
+  "mitigations": [
+   "Inventory permitted remote-management software and alert on unexpected installs. Restrict outbound connections from servers and review newly created cloud identities and unusual external tenants."
+  ],
+  "sources": [
+   {
+    "label": "Kaspersky campaign announcement",
+    "url": "https://me-en.kaspersky.com/about/press-releases/kaspersky-operation-shadowcloud-targets-government-networks-across-asia-and-africa"
+   },
+   {
+    "label": "Kaspersky investigation, part 1",
+    "url": "https://securelist.com/operation-shadowcloud-gitdoor/122004/"
+   },
+   {
+    "label": "Kaspersky investigation, part 2",
+    "url": "https://securelist.com/operation-shadowcloud-graphdoor/122005/"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "MPOWERHealth Data Breach Exposes Personal Information: Murphy Law Firm Investigates Legal Claims": {
+  "summary": "MPOWERHealth said it detected unauthorized access to a limited part of its internal network in June 2025 and began notifying people in November 2026. Files may have contained personal, financial, medical and health-insurance information. A copy of its Texas filing lists 1,831,295 affected people overall, including 88,200 Texans.",
+  "attack_chain": [
+   "An unauthorized party accessed a limited portion of the internal network; the route was not disclosed.",
+   "An investigation and document review identified files containing potentially affected personal and medical information."
+  ],
+  "open_questions": [
+   "Which systems provided initial access? What information, if any, was copied?"
+  ],
+  "mitigations": [
+   "Segment systems storing protected health information. Review access logs and retention controls, and follow the organization’s notification and support guidance."
+  ],
+  "sources": [
+   {
+    "label": "MPOWERHealth November 13 notice",
+    "url": "https://mpowerhealth.com/notice-of-data-security-incident/"
+   },
+   {
+    "label": "California Attorney General notice",
+    "url": "https://oag.ca.gov/ecrime/databreach/reports/sb24-632869"
+   },
+   {
+    "label": "BreachTally copy of Texas filing BR-0005525",
+    "url": "https://breachtally.com/notice/tx-ag/BR-0005525"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "MPOWERHealth discloses potential exposure of personal and medical information": {
+  "summary": "MPOWERHealth said it detected unauthorized access to a limited part of its internal network in June 2025 and began notifying people in November 2026. Files may have contained personal, financial, medical and health-insurance information. A copy of its Texas filing lists 1,831,295 affected people overall, including 88,200 Texans.",
+  "attack_chain": [
+   "An unauthorized party accessed a limited portion of the internal network; the route was not disclosed.",
+   "An investigation and document review identified files containing potentially affected personal and medical information."
+  ],
+  "open_questions": [
+   "Which systems provided initial access? What information, if any, was copied?"
+  ],
+  "mitigations": [
+   "Segment systems storing protected health information. Review access logs and retention controls, and follow the organization’s notification and support guidance."
+  ],
+  "sources": [
+   {
+    "label": "MPOWERHealth November 13 notice",
+    "url": "https://mpowerhealth.com/notice-of-data-security-incident/"
+   },
+   {
+    "label": "California Attorney General notice",
+    "url": "https://oag.ca.gov/ecrime/databreach/reports/sb24-632869"
+   },
+   {
+    "label": "BreachTally copy of Texas filing BR-0005525",
+    "url": "https://breachtally.com/notice/tx-ag/BR-0005525"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "ASOS Breach: Names Accessed, Passwords Not Accessed [2026]": {
+  "summary": "ASOS’s completed investigation found that an intruder impersonated a trusted contact to obtain employee credentials and accessed customer contact data on third-party platforms. ASOS found no access to payment-card information or account passwords.",
+  "attack_chain": [
+   "A trusted contact was impersonated and an employee account compromised.",
+   "The account was used to access customer communications platforms and send an unauthorized customer notification."
+  ],
+  "open_questions": [
+   "How many customers were affected?"
+  ],
+  "mitigations": [
+   "Require phishing-resistant MFA and enforce least privilege on customer communications platforms. Review employee and vendor access logs after suspected account takeover."
+  ],
+  "sources": [
+   {
+    "label": "ASOS investigation findings and customer guidance",
+    "url": "https://www.asos.com/us/customer-care/engagement/unauthorized-asos-notification/"
+   },
+   {
+    "label": "ASOS October 6 stock exchange notice",
+    "url": "https://www.londonstockexchange.com/en/news/article/ASC/update-regarding-cyber-incident/17822931"
+   },
+   {
+    "label": "UK National Cyber Security Centre",
+    "url": "https://www.ncsc.gov.uk/news/incident-affecting-asos-customers"
+   }
+  ],
+  "patterns": [
+   "phishing",
+   "supply-chain",
+   "data-exposure"
+  ]
  }
 }
