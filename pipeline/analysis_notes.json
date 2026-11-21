@@ -372,5 +372,165 @@
    "key-compromise",
    "supply-chain"
   ]
+ },
+ "WOW WORLD confirms exposure of about 49,000 client records": {
+  "summary":"WOW WORLD confirmed that unauthorized access to servers used for its services exposed about 49,000 records held for four clients. The total may include duplicates; confirmed exposed data did not include payment cards or Japan’s My Number identifiers.",
+  "attack_chain":["WOW WORLD detected unauthorized access on servers used to operate its services.","The company blocked that access and found that some client records, including email addresses, had leaked."],
+  "open_questions":["What was the initial access route, and how many unique people were affected?"],
+  "mitigations":["Review service access and egress logs and revoke suspicious sessions.","Notify impacted customers and review how long contact data is retained."],
+  "sources":[{"label":"WOW WORLD first notice","url":"https://www.wow-world.co.jp/release/001621.html"}],
+  "patterns":["supply-chain","data-exposure"]
+ },
+ "Threshold Network reviews the tBTC bridge pause": {
+  "summary":"Threshold paused new deposits and redemptions from October 30 to November 10 and restored the service in stages. Its post-mortem found no unexplained Bitcoin outflow or newly unbacked tBTC.",
+  "attack_chain":["Threshold paused bridge functions after identifying security concerns.","Operators patched infrastructure, reviewed bridge activity and restored functionality in stages."],
+  "open_questions":["Threshold did not establish whether the suspicious events were related."],
+  "mitigations":["Use independent reconciliation for bridge balances and minted supply.","Test staged pause and restoration procedures with monitoring for mismatches."],
+  "sources":[{"label":"Threshold Network post-mortem","url":"https://www.threshold.network/blog/post-mortem-the-tbtc-bridge-pause"}],
+  "patterns":["bridge","outage"]
+ },
+ "Post-mortem report on the tBTC bridge pause": {
+  "summary":"Threshold paused new deposits and redemptions from October 30 to November 10 and restored the service in stages. Its post-mortem found no unexplained Bitcoin outflow or newly unbacked tBTC.",
+  "attack_chain":["Threshold paused bridge functions after identifying security concerns.","Operators patched infrastructure, reviewed bridge activity and restored functionality in stages."],
+  "open_questions":["Threshold did not establish whether the suspicious events were related."],
+  "mitigations":["Use independent reconciliation for bridge balances and minted supply.","Test staged pause and restoration procedures with monitoring for mismatches."],
+  "sources":[{"label":"Threshold Network post-mortem","url":"https://www.threshold.network/blog/post-mortem-the-tbtc-bridge-pause"}],
+  "patterns":["bridge","outage"]
+ },
+ "Kaspersky reports AuditTeam ransomware activity across seven countries and territories": {
+  "summary":"Kaspersky linked AuditTeam to compromises at dozens of organizations between January and October 2026. Its researchers identified the OpsAgent malware framework in the observed attacks.",
+  "attack_chain":["Kaspersky observed intrusions followed by ransomware and extortion.","The group described its demands as audit and consulting fees."],
+  "open_questions":["Which sectors were most affected?","Initial access may differ across victims."],
+  "mitigations":["Alert on unexpected loss of endpoint protection or log collection.","Test isolated backups and route unsolicited security invoices through incident response."],
+  "sources":[{"label":"Kaspersky campaign announcement","url":"https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-auditteam-ransomware-campaign-spanning-europe-asia-and-africa"}],
+  "patterns":["ransomware"]
+ },
+ "Hackers Use OpsAgent Malware to Disable Antivirus Protection and Launch Ransomware Attacks": {
+  "summary":"Kaspersky linked AuditTeam to compromises at dozens of organizations between January and October 2026. Its researchers identified the OpsAgent malware framework in the observed attacks.",
+  "attack_chain":["Kaspersky observed intrusions followed by ransomware and extortion.","The group described its demands as audit and consulting fees."],
+  "open_questions":["Which sectors were most affected?","Initial access may differ across victims."],
+  "mitigations":["Alert on unexpected loss of endpoint protection or log collection.","Test isolated backups and route unsolicited security invoices through incident response."],
+  "sources":[{"label":"Kaspersky campaign announcement","url":"https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-auditteam-ransomware-campaign-spanning-europe-asia-and-africa"}],
+  "patterns":["ransomware"]
+ },
+ "New OpsAgent Malware Framework Gives Ransomware Hackers Cobalt Strike-Like Attack Capabilities": {
+  "summary":"Kaspersky linked AuditTeam to compromises at dozens of organizations between January and October 2026. Its researchers identified the OpsAgent malware framework in the observed attacks.",
+  "attack_chain":["Kaspersky observed intrusions followed by ransomware and extortion.","The group described its demands as audit and consulting fees."],
+  "open_questions":["Which sectors were most affected?","Initial access may differ across victims."],
+  "mitigations":["Alert on unexpected loss of endpoint protection or log collection.","Test isolated backups and route unsolicited security invoices through incident response."],
+  "sources":[{"label":"Kaspersky campaign announcement","url":"https://www.kaspersky.com/about/press-releases/kaspersky-uncovers-auditteam-ransomware-campaign-spanning-europe-asia-and-africa"}],
+  "patterns":["ransomware"]
+ },
+ "Japan Digital Agency investigates possible GSS file exposure": {
+  "summary":"Japan’s Digital Agency identified unauthorized access affecting files on its GSS file-sharing service between July 30 and November 12. It blocked external access and is investigating which files may have leaked.",
+  "attack_chain":["The agency detected possible access by someone other than an intended recipient.","It blocked external communications for the affected service and reviewed the access history."],
+  "open_questions":["How many documents were accessed or copied?","Were credentials or sharing links involved?"],
+  "mitigations":["Restrict sensitive file sharing to named recipients and require sign-in.","Retain and review access logs, and expire old external shares."],
+  "sources":[{"label":"Japan Digital Agency incident notice","url":"https://www.digital.go.jp/press/a966ee61-478c-4194-8f13-f97599fae986"}],
+  "patterns":["data-exposure"]
+ },
+ "Universeum reports guest data exposure at booking supplier": {
+  "summary":"Universeum notified guests that an unauthorized party accessed customer data after an attack at its booking supplier, Visit Group International. Reporting describes about 280,000 guest contact records, without establishing a unique-person count; the notice reported no payment data exposure.",
+  "attack_chain":["A booking supplier was attacked.","An unauthorized party accessed guest contact data that Universeum held with the supplier."],
+  "open_questions":["What dates and customer fields were involved?","Was any material copied?"],
+  "mitigations":["Review access logs with the booking supplier and reduce retained guest data.","Warn guests through verified channels about targeted phishing."],
+  "sources":[{"label":"SVT, quoting Universeum’s customer notice","url":"https://www.svt.se/nyheter/lokalt/vast/dataintrang-hos-universeum-varnar-for-bedrageriforsok"},{"label":"Sweden Herald","url":"https://swedenherald.com/article/universeum-booking-system-hacked-exposing-data-of-280000-guests"}],
+  "patterns":["supply-chain","data-exposure"]
+ },
+ "Dataintrång hos Universeum – 280 000 kontaktuppgifter har läck": {
+  "summary":"Universeum notified guests that an unauthorized party accessed customer data after an attack at its booking supplier, Visit Group International. Reporting describes about 280,000 guest contact records, without establishing a unique-person count; the notice reported no payment data exposure.",
+  "attack_chain":["A booking supplier was attacked.","An unauthorized party accessed guest contact data that Universeum held with the supplier."],
+  "open_questions":["What dates and customer fields were involved?","Was any material copied?"],
+  "mitigations":["Review access logs with the booking supplier and reduce retained guest data.","Warn guests through verified channels about targeted phishing."],
+  "sources":[{"label":"SVT, quoting Universeum’s customer notice","url":"https://www.svt.se/nyheter/lokalt/vast/dataintrang-hos-universeum-varnar-for-bedrageriforsok"},{"label":"Sweden Herald","url":"https://swedenherald.com/article/universeum-booking-system-hacked-exposing-data-of-280000-guests"}],
+  "patterns":["supply-chain","data-exposure"]
+ },
+ "Amplifon Americas discloses theft of health, insurance and identity data": {
+  "summary":"Amplifon said unauthorized access between January 18 and February 8 involved files containing medical, insurance and identifying information. A November 6 Texas filing lists 1,332,826 people nationwide, including 85,804 Texas residents.",
+  "attack_chain":["An unauthorized party obtained files from company systems.","Amplifon reviewed the files and notified affected people and regulators."],
+  "open_questions":["What was the initial access method, and how did it go undetected during the access window?"],
+  "mitigations":["Limit routine access to files containing health and insurance data and watch for bulk transfers.","Coordinate notice and fraud monitoring for affected individuals."],
+  "sources":[{"label":"Texas filing indexed by BreachTally","url":"https://www.breachtally.com/notice/tx-ag/BR-0005495"}],
+  "patterns":["data-exposure"]
+ },
+ "MapleStory Universe reports emergency maintenance after blocked attacks": {
+  "summary":"MapleStory Universe said repeated attacks prompted emergency maintenance, including a November 18 attempt that it blocked. Its checks found no compromise of player assets or sensitive information.",
+  "attack_chain":["The service detected and blocked attempted attacks.","The operator briefly paused the service and checked the integrity of player assets and data."],
+  "open_questions":["What was the duration of the disruption?","The operator did not identify the source of the attempts."],
+  "mitigations":["Test maintaining read-only access during emergency maintenance.","Reconcile account and asset records before reopening."],
+  "sources":[{"label":"MapleStory Universe official notice","url":"https://x.com/MaplestoryU/status/2123401164096184396"}],
+  "patterns":["outage"]
+ },
+ "Researchers report intrusions using stolen VPN credentials": {
+  "summary":"Cyderes attributed observed network intrusions to an operator it tracks as tcherber. Researchers reported misuse of valid VPN credentials, not a newly exploited product vulnerability.",
+  "attack_chain":["The operator obtained valid VPN credentials by means not established for every victim.","Researchers documented unauthorized connections to several organizations."],
+  "open_questions":["How were affected credentials obtained?","Which organizations have completed incident review?"],
+  "mitigations":["Require phishing-resistant MFA for remote access and invalidate exposed credentials.","Audit remote sign-ins and revoke suspicious sessions."],
+  "sources":[{"label":"CyPro summary of the Howler Cell investigation","url":"https://cypro.co.uk/insights/cyber-bulletins/stolen-fortigate-vpn-credentials-fuel-attacks/"},{"label":"Bright Nexus","url":"https://www.brightnexus.com/cybersecurity-advisory/article/3550/hackers-abuse-fortigate-and-sonicwall-vpn-access-to-infiltrate-enterprise-networks?cat=global-threats"}],
+  "patterns":["key-compromise"]
+ },
+ "Hackers Use Stolen FortiGate VPN Credentials to Access Corporate Networks and Deploy Custom Malware": {
+  "summary":"Cyderes attributed observed network intrusions to an operator it tracks as tcherber. Researchers reported misuse of valid VPN credentials, not a newly exploited product vulnerability.",
+  "attack_chain":["The operator obtained valid VPN credentials by means not established for every victim.","Researchers documented unauthorized connections to several organizations."],
+  "open_questions":["How were affected credentials obtained?","Which organizations have completed incident review?"],
+  "mitigations":["Require phishing-resistant MFA for remote access and invalidate exposed credentials.","Audit remote sign-ins and revoke suspicious sessions."],
+  "sources":[{"label":"CyPro summary of the Howler Cell investigation","url":"https://cypro.co.uk/insights/cyber-bulletins/stolen-fortigate-vpn-credentials-fuel-attacks/"},{"label":"Bright Nexus","url":"https://www.brightnexus.com/cybersecurity-advisory/article/3550/hackers-abuse-fortigate-and-sonicwall-vpn-access-to-infiltrate-enterprise-networks?cat=global-threats"}],
+  "patterns":["key-compromise"]
+ },
+ "Marui Group quantifies Marui Web Channel and Epos Card exposure through KARTE": {
+  "summary":"Marui Group confirmed exposure through PLAID’s KARTE: about 8.83 million Marui Web Channel and promotional-email records and about 8.5 million Epos Card records. The groups may overlap, and the company has not confirmed exposure of payment-card numbers, PINs or security codes.",
+  "attack_chain":["Unauthorized access affected the shared KARTE vendor platform, not Marui’s own systems.","Marui cut its connection to KARTE and used the vendor’s findings to determine which data categories were exposed."],
+  "open_questions":["How much overlap is there between the Marui and Epos records?","Which of the approximately 60,000 Epos records included additional fields?"],
+  "mitigations":["Minimize personal data imported into marketing platforms and separate retail and financial data feeds.","Review vendor access logs and confirm notification workflows with each subsidiary."],
+  "sources":[{"label":"Marui Group company notice","url":"https://www.0101maruigroup.co.jp/nr/26_1120_1"},{"label":"Impress Watch","url":"https://www.watch.impress.co.jp/docs/news/2158411.html"}],
+  "patterns":["supply-chain","data-exposure"]
+ },
+ "CVE-2025-42884": {
+  "summary":"CISA added CVE-2025-42884 in SAP NetWeaver to its Known Exploited Vulnerabilities Catalog on November 20 based on evidence of active exploitation. The alert did not identify victims or the scope of compromise.",
+  "attack_chain":["CISA confirmed active exploitation of the affected product.","The alert did not describe victim impact or publish an incident timeline."],
+  "open_questions":["Which affected deployments show signs of compromise?"],
+  "mitigations":["Inventory affected deployments and apply vendor updates or mitigations.","Restrict unnecessary access and review authentication and application logs for anomalies."],
+  "sources":[{"label":"CISA November 20 KEV alert","url":"https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"}],
+  "patterns":["enterprise-platform"]
+ },
+ "CISA confirms active exploitation of SAP NetWeaver vulnerability CVE-2025-42884": {
+  "summary":"CISA added CVE-2025-42884 in SAP NetWeaver to its Known Exploited Vulnerabilities Catalog on November 20 based on evidence of active exploitation. The alert did not identify victims or the scope of compromise.",
+  "attack_chain":["CISA confirmed active exploitation of the affected product.","The alert did not describe victim impact or publish an incident timeline."],
+  "open_questions":["Which affected deployments show signs of compromise?"],
+  "mitigations":["Inventory affected deployments and apply vendor updates or mitigations.","Restrict unnecessary access and review authentication and application logs for anomalies."],
+  "sources":[{"label":"CISA November 20 KEV alert","url":"https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"}],
+  "patterns":["enterprise-platform"]
+ },
+ "CVE-2026-76466": {
+  "summary":"CISA added CVE-2026-76466 in Cisco Expressway Series to its Known Exploited Vulnerabilities Catalog on November 20 based on evidence of active exploitation. The alert did not identify victims or the scope of compromise.",
+  "attack_chain":["CISA confirmed active exploitation of the affected product.","The alert did not describe victim impact or publish an incident timeline."],
+  "open_questions":["Which affected deployments show signs of compromise?"],
+  "mitigations":["Inventory affected deployments and apply vendor updates or mitigations.","Restrict unnecessary access and review authentication and application logs for anomalies."],
+  "sources":[{"label":"CISA November 20 KEV alert","url":"https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"}],
+  "patterns":["enterprise-platform"]
+ },
+ "CISA confirms active exploitation of Cisco Expressway Series vulnerability CVE-2026-76466": {
+  "summary":"CISA added CVE-2026-76466 in Cisco Expressway Series to its Known Exploited Vulnerabilities Catalog on November 20 based on evidence of active exploitation. The alert did not identify victims or the scope of compromise.",
+  "attack_chain":["CISA confirmed active exploitation of the affected product.","The alert did not describe victim impact or publish an incident timeline."],
+  "open_questions":["Which affected deployments show signs of compromise?"],
+  "mitigations":["Inventory affected deployments and apply vendor updates or mitigations.","Restrict unnecessary access and review authentication and application logs for anomalies."],
+  "sources":[{"label":"CISA November 20 KEV alert","url":"https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"}],
+  "patterns":["enterprise-platform"]
+ },
+ "CVE-2026-129448": {
+  "summary":"CISA added CVE-2026-129448 in Apache Roller to its Known Exploited Vulnerabilities Catalog on November 20 based on evidence of active exploitation. The alert did not identify victims or the scope of compromise.",
+  "attack_chain":["CISA confirmed active exploitation of the affected product.","The alert did not describe victim impact or publish an incident timeline."],
+  "open_questions":["Which affected deployments show signs of compromise?"],
+  "mitigations":["Inventory affected deployments and apply vendor updates or mitigations.","Restrict unnecessary access and review authentication and application logs for anomalies."],
+  "sources":[{"label":"CISA November 20 KEV alert","url":"https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"}],
+  "patterns":["enterprise-platform"]
+ },
+ "CISA confirms active exploitation of Apache Roller vulnerability CVE-2026-129448": {
+  "summary":"CISA added CVE-2026-129448 in Apache Roller to its Known Exploited Vulnerabilities Catalog on November 20 based on evidence of active exploitation. The alert did not identify victims or the scope of compromise.",
+  "attack_chain":["CISA confirmed active exploitation of the affected product.","The alert did not describe victim impact or publish an incident timeline."],
+  "open_questions":["Which affected deployments show signs of compromise?"],
+  "mitigations":["Inventory affected deployments and apply vendor updates or mitigations.","Restrict unnecessary access and review authentication and application logs for anomalies."],
+  "sources":[{"label":"CISA November 20 KEV alert","url":"https://www.cisa.gov/news-events/alerts/2026/11/20/cisa-adds-four-known-exploited-vulnerabilities-catalog"}],
+  "patterns":["enterprise-platform"]
  }
 }
