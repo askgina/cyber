@@ -220,6 +220,7 @@
   }
 
   function jumpTo(id) {
+    if (document.body.classList.contains("view-term") && window.BL && BL.inspect) return BL.inspect(id);
     let n = document.getElementById("e-" + id);
     if (!n) {
       const key = ITEM[id]; if (!key) return;
@@ -478,6 +479,7 @@
     });
     if (H.length) rows.push(el("div", { class: "axis" }, el("span"), el("span", {}, el("span", {}, "24h ago"), el("span", {}, "12h"), el("span", {}, "Now")), el("span")));
     $("#hours").replaceChildren(...rows);
+    setTimeout(() => window.BL && BL.onRender && BL.onRender(D0), 0);
   }
 
   function drawGlance(D) {
@@ -542,6 +544,7 @@
     rows.forEach((r) => (r.patterns || []).forEach((p) => { cnt[p] = (cnt[p] || 0) + 1; }));
     if (rv.length) cnt.ransomware = (cnt.ransomware || 0) + rv.length;
     const pr = Object.entries(cnt).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    LIVE.today = { rows, rv, named, usd, acc, cr, br, kv, nw, pats: pr };
     const max = Math.max(1, ...pr.map((p) => p[1]));
     $("#g-pat").replaceChildren(...pr.map(([p, n]) => {
       const b = el("button", { type: "button", class: "gpr" }, el("span", { class: "gl" }, LABEL[p] || p), el("span", { class: "gb" }, el("i", { style: `--w:${Math.max(4, (n / max) * 100)}%` })), el("span", { class: "gn" }, String(n)));
@@ -558,6 +561,7 @@
   }
 
   function tick() {
+    window.BL && BL.onTick && BL.onTick();
     document.querySelectorAll("[data-ago]").forEach((n) => { n.textContent = ago(n.dataset.ago); });
     if (LIVE.checked) {
       const s = Math.round((Date.now() - LIVE.checked) / 1000);
@@ -626,5 +630,11 @@
     $("#clear-filter").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
     $("#fbar-clear").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
 
+  window.BL = Object.assign(window.BL || {}, {
+    get D() { return D0; }, get DET() { return DET; }, LABEL, KIND, LIVE, ROLE, STAGES,
+    detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, xSearch, escape, hoursAgo,
+    setFilter, jumpTo: (id) => jumpTo(id), events: () => [...LIVE.extra, ...events(D0)],
+    pollAll: () => { pollLlama(); pollHIBP(); pollData(false); },
+  });
   pollData(true);
 })();
