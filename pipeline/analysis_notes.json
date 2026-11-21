@@ -1928,5 +1928,124 @@
   "patterns": [
    "data-exposure"
   ]
+ },
+ "GL.iNet confirms cloud-management exploitation affecting some routers and KVMs": {
+  "summary": "GL.iNet said an unauthorized party exploited a flaw in its cloud remote management service and installed malware on some routers and KVM devices. It fixed the cloud flaw but said the fix does not clean infected devices. The number of devices and any effect on attached computers are still being investigated.",
+  "attack_chain": [
+   "The vendor identified misuse of its remote management service.",
+   "Some managed devices received malware; whether connected computers were affected remains unknown."
+  ],
+  "open_questions": [
+   "Which models and how many devices were infected?",
+   "Did any attached systems require remediation?"
+  ],
+  "mitigations": [
+   "Inventory GL.iNet routers and KVMs and review the model-specific vendor notice.",
+   "Isolate devices that show signs of compromise and apply vendor cleanup guidance.",
+   "Record the installed firmware version and verify that security updates are applied."
+  ],
+  "sources": [
+   {
+    "label": "GL.iNet security notice",
+    "url": "https://www.gl-inet.com/blogs/blog/glinet-security-notice-2026-11-20"
+   },
+   {
+    "label": "GL.iNet forum advisory and firmware guidance",
+    "url": "https://forum.gl-inet.com/t/gl-inet-security-notice-2026-11-20/73056"
+   }
+  ],
+  "patterns": [
+   "edge-device"
+  ]
+ },
+ "Chain Games": {
+  "summary": "Chain Games said an attacker took about 38 million CHAIN from legacy Polygon staking contracts on November 15. SlowMist estimated losses at about $20,000. The project disabled delegation and said affected users would be reimbursed.",
+  "attack_chain": [
+   "A legacy staking contract’s accounting did not enforce the expected reward balances.",
+   "On-chain reporting showed an outflow and the project disabled delegation."
+  ],
+  "open_questions": [
+   "When will reimbursements be completed?"
+  ],
+  "mitigations": [
+   "Test staking balance conservation across transfers and withdrawals.",
+   "Disable deprecated contracts where practical and monitor legacy balances for anomalous claims."
+  ],
+  "sources": [
+   {
+    "label": "Chain Games disclosure",
+    "url": "https://x.com/RealChainGames/status/2122112343970808002"
+   },
+   {
+    "label": "SlowMist investigation",
+    "url": "https://x.com/SlowMist_Team/status/2122271777825128691"
+   },
+   {
+    "label": "Olympix research",
+    "url": "https://olympix.security/exploits/chain-games-20-3k-loss-and-how-olympix-would-have-prevented-it"
+   }
+  ],
+  "patterns": [
+   "contract-logic"
+  ]
+ },
+ "Chain Games confirms exploitation of legacy Polygon staking contracts": {
+  "summary": "Chain Games said an attacker took about 38 million CHAIN from legacy Polygon staking contracts on November 15. SlowMist estimated losses at about $20,000. The project disabled delegation and said affected users would be reimbursed.",
+  "attack_chain": [
+   "A legacy staking contract’s accounting did not enforce the expected reward balances.",
+   "On-chain reporting showed an outflow and the project disabled delegation."
+  ],
+  "open_questions": [
+   "When will reimbursements be completed?"
+  ],
+  "mitigations": [
+   "Test staking balance conservation across transfers and withdrawals.",
+   "Disable deprecated contracts where practical and monitor legacy balances for anomalous claims."
+  ],
+  "sources": [
+   {
+    "label": "Chain Games disclosure",
+    "url": "https://x.com/RealChainGames/status/2122112343970808002"
+   },
+   {
+    "label": "SlowMist investigation",
+    "url": "https://x.com/SlowMist_Team/status/2122271777825128691"
+   },
+   {
+    "label": "Olympix research",
+    "url": "https://olympix.security/exploits/chain-games-20-3k-loss-and-how-olympix-would-have-prevented-it"
+   }
+  ],
+  "patterns": [
+   "contract-logic"
+  ]
+ },
+ "Infoblox confirms unauthorized access through a data migration vendor": {
+  "summary": "Infoblox said a compromised data migration vendor enabled unauthorized access to company information. It said it had no indication that its products, cloud services or software releases were involved. The number of affected customers and the final scope were not disclosed.",
+  "attack_chain": [
+   "A third-party vendor was compromised.",
+   "The attacker accessed company information through the vendor; confirmed customer scope was not disclosed."
+  ],
+  "open_questions": [
+   "What files and customers were affected?"
+  ],
+  "mitigations": [
+   "Use scoped, expiring migration permissions.",
+   "Review vendor access and file export logs, and revoke unnecessary sharing grants."
+  ],
+  "sources": [
+   {
+    "label": "TechCrunch, quoting Infoblox",
+    "url": "https://techcrunch.com/2026/11/16/cyber-giant-infoblox-confirms-security-incident-after-hackers-access-company-information/"
+   },
+   {
+    "label": "The Register, quoting Infoblox",
+    "url": "https://www.theregister.com/security/2026/11/16/infoblox-customer-and-staff-data-exposed-in-sharepoint-breach/5310280"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure"
+  ]
  }
 }

@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T22:28:45Z",
- "headline": "Chainflip disclosed that 122.86 BTC was stolen in addition to an Ethereum vault outflow estimated at $4.86 million; Cyber confirmed unexpected token minting and told users not to use its bridge. Microsoft notified customers of exploitation affecting Entra Connect Health, while the scope of the reported FBI database intrusion remains unconfirmed.",
+ "updated": "2026-11-21T23:28:54Z",
+ "headline": "Chainflip disclosed theft of 122.86 BTC in addition to an Ethereum vault outflow estimated at $4.86 million, and Cyber warned users to avoid its bridge after unexpected token minting. GL.iNet confirmed malware on some routers and KVM devices, and OpenRouter warned of possible exposure of prompts sent to MiniMax.",
  "incidents": [
   {
    "org": "Chainflip",
@@ -22,6 +22,15 @@
    "eid": "n-1e1dbef9"
   },
   {
+   "org": "GL.iNet",
+   "what": "GL.iNet said attackers exploited its cloud management service to install malware on some routers and KVM devices.",
+   "scale": "Scope unknown",
+   "patterns": [
+    "edge-device"
+   ],
+   "url": "https://www.gl-inet.com/blogs/blog/glinet-security-notice-2026-11-20"
+  },
+  {
    "org": "Federal Bureau of Investigation (FBI)",
    "what": "CNN, AP and Fox News independently cited sources describing an apparent intrusion into the FBI’s national crime database; the FBI declined to comment to AP.",
    "scale": "Scope and access unconfirmed",
@@ -29,13 +38,14 @@
    "eid": "x-e442a7e4"
   },
   {
-   "org": "Germany’s Federal Employment Agency",
-   "what": "Germany’s Federal Employment Agency confirmed an attack on its separately run property-management systems and said it had no evidence that benefits-recipient data was affected.",
-   "scale": "Damage not disclosed",
+   "org": "Cyber (CyberConnect)",
+   "what": "Cyber confirmed unexpected token minting on Solana and an outflow from its Ethereum bridge reserve, and told users to avoid the bridge and exchange deposits.",
+   "scale": "About 5.21M CYBER moved; final loss unknown",
    "patterns": [
-    "enterprise-platform"
+    "bridge"
    ],
-   "eid": "n-959a4579"
+   "url": "https://x.com/i/status/2124207519581327394",
+   "eid": "x-57f29b3f"
   },
   {
    "org": "Staples Canada",
@@ -47,14 +57,15 @@
    "eid": "x-b0bed11b"
   },
   {
-   "org": "Cyber (CyberConnect)",
-   "what": "Cyber confirmed unexpected token minting on Solana and an outflow from its Ethereum bridge reserve, and told users to avoid the bridge and exchange deposits.",
-   "scale": "About 5.21M CYBER moved; final loss unknown",
+   "org": "OpenRouter / MiniMax",
+   "what": "OpenRouter warned customers that some prompts sent to MiniMax may have been read and removed the affected endpoints’ zero-retention label.",
+   "scale": "Scope unknown",
    "patterns": [
-    "bridge"
+    "supply-chain",
+    "data-exposure",
+    "ai"
    ],
-   "url": "https://x.com/i/status/2124207519581327394",
-   "eid": "x-57f29b3f"
+   "eid": "x-2d44e830"
   },
   {
    "org": "Optimizely (Configured Commerce)",
@@ -70,16 +81,6 @@
    "scale": "No operational disruption reported",
    "patterns": [],
    "eid": "n-fbd0be68"
-  },
-  {
-   "org": "Eskenazi Health",
-   "what": "Eskenazi Health disclosed that patient information may have been accessed after two employee email accounts were compromised in September.",
-   "scale": "Affected count not disclosed",
-   "patterns": [
-    "phishing",
-    "data-exposure"
-   ],
-   "eid": "n-a5c76ba9"
   },
   {
    "org": "Clevermate",
