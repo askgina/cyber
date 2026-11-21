@@ -1,10 +1,66 @@
 {
+ "Illinois officials investigating \"apparent cyberattack\" on Monday at Algonquin Dam on Fox River": {
+  "summary":"Illinois is investigating an apparent cyberattack at Algonquin Dam. The facility remained operational; authorities did not confirm that an intrusion succeeded.",
+  "attack_chain":["The state said the apparent incident occurred Monday, November 16.","Personnel acted to prevent unauthorized access and keep the facility operating.","State and federal agencies investigated."],
+  "open_questions":["Did anyone gain access?","Were business or control systems involved?"],
+  "mitigations":["Review and preserve remote-access and control-system logs.","Separate operational networks from internet-facing services and test fallback operating procedures."],
+  "sources":[{"label":"CBS Chicago","url":"https://www.cbsnews.com/chicago/news/algonquin-dam-fox-river-cyberattack/"}]
+ },
+ "A transcription firm used by police, prosecutors, and tech giants exposed customer data online": {
+  "summary":"TechCrunch found publicly accessible customer audio and transcripts. Tigerfish blocked public access after notification; downloads and the number of affected people are unverified.",
+  "attack_chain":["Customer files were stored in a publicly accessible cloud location.","The outlet notified Tigerfish.","Tigerfish blocked public access."],
+  "open_questions":["How long was the storage publicly accessible?","Do access logs show anyone retrieved files?"],
+  "mitigations":["Enforce private storage defaults, restrict public exceptions and review access logs.","Minimize retention of sensitive recordings and transcripts."],
+  "sources":[{"label":"TechCrunch","url":"https://techcrunch.com/2026/11/20/a-transcription-firm-used-by-police-prosecutors-and-tech-giants-exposed-customer-data-online/"}],"patterns":["data-exposure"]
+ },
+ "Proxima Security Incident - Post-Mortem & Full Reimbursement of Affected Users": {
+  "summary":"Proxima’s co-founder said 5,324.2 SOL was stolen across 870 addresses belonging to 181 users and that its treasury covered confirmed losses.",
+  "attack_chain":["Diagnostic logs retained sensitive wallet material.","The logs were accessed and unauthorized transfers followed on November 14.","Proxima moved funds at risk, restored service and made reimbursement available."],
+  "open_questions":["Did all eligible users retrieve their reimbursements?"],
+  "mitigations":["Keep signing material out of logs and isolate signing operations from observability services.","Apply retention limits to diagnostics, restrict access and audit any emergency exceptions."],
+  "sources":[{"label":"Proxima co-founder post-mortem","url":"https://x.com/0xTheo__/status/2121728996631269792"}],"patterns":["key-compromise"]
+ },
+ "CDJapan confirms extraction of historical card data and member information": {
+  "summary":"CDJapan confirmed extraction of historical card records and associated member details, and separately reported possible exposure at desktop checkout.",
+  "attack_chain":["CDJapan identified a bulk data extraction on November 6.","The company found that a desktop payment page was altered during a separate period of exposure.","It blocked unauthorized access and removed the detected malicious code."],
+  "open_questions":["How much recent card data was actually extracted?"],
+  "mitigations":["Review card statements and contact the issuer about unfamiliar charges.","Limit retention of historical payment data and monitor checkout pages for unauthorized changes."],
+  "sources":[{"label":"CDJapan second investigation report","url":"https://www.cdjapan.co.jp/info/20261118"}],"patterns":["data-exposure"]
+ },
+ "Optimizely Web Experimentation supply-chain compromise": {
+  "summary":"Optimizely said unauthorized changes to its experimentation scripts affected some downstream sites. D&D Beyond reported being among the affected customers.",
+  "attack_chain":["An Optimizely service used by customer websites was compromised.","Modified scripts were served on affected sites.","Optimizely removed the injected code and notified customers."],
+  "open_questions":["Which visitors ran the affected scripts?","Which data was exposed at each site?"],
+  "mitigations":["Inventory vendor scripts on critical pages and review logs for the affected time window.","Review script integrity and authorization controls and minimize third-party code on payment pages."],
+  "sources":[{"label":"Optimizely statement","url":"https://x.com/Optimizely/status/2122500375727194333"},{"label":"Wargamer on D&D Beyond","url":"https://www.wargamer.com/dnd/beyond-malware-attack"}],"patterns":["supply-chain"]
+ },
+ "Lighter post-mortem on trader API-key compromise": {
+  "summary":"Lighter attributed the compromise to external signing software used by a trader and said its protocol was unaffected. The exchange reported returning about $5 million USDC; that is a partial recovery, not a new loss.",
+  "attack_chain":["External signing software exposed trader API keys.","Unauthorized transfers led Lighter to pause withdrawals.","Lighter reported a partial recovery and reopened withdrawals."],
+  "open_questions":["What amount remains unrecovered?"],
+  "mitigations":["Rotate affected keys and use maintained signing libraries.","Limit API key permissions and alert on unusual transfers."],
+  "sources":[{"label":"Lighter post-mortem","url":"https://x.com/Lighter_xyz/status/2122394446343946717"},{"label":"Crypto Briefing","url":"https://cryptobriefing.com/lighter-api-key-security-exploit/"}],"patterns":["key-compromise"]
+ },
+ "Gonka confirms bridge incident and reports full return of funds": {
+  "summary":"Gonka confirmed a security incident affecting its Ethereum bridge. It reported that the funds were fully returned.",
+  "attack_chain":["Gonka detected unusual activity on its Ethereum bridge.","Contributors investigated and issued a public warning.","Gonka reported that funds were fully returned."],
+  "open_questions":["Has the operator published verified root-cause findings?"],
+  "mitigations":["Reconcile bridge balances across networks and alert on unexpected changes.","Test pause and recovery procedures before reopening bridge service."],
+  "sources":[{"label":"Gonka incident statement","url":"https://x.com/gonka_ai/status/2123209256182981067"},{"label":"Gonka recovery update","url":"https://x.com/gonka_ai/status/2123344126276149308"}],"patterns":["bridge"]
+ },
+ "湘南美容クリニックのSBCグループに不正アクセス、約162万人の個人情報流出 パスワードは暗号化せず保存（テクノエッジ）": {
+  "summary":"SBC Medical Group disclosed a November 16 intrusion on November 19. It said historical customer information for 1,624,000 people was taken; other disclosed categories may overlap.",
+  "attack_chain":["SBC reported an unauthorized login; the initial access method remains under investigation.","Monitoring detected the incident and SBC isolated the affected server.","The group notified Japan’s data protection authority and said it would contact affected people."],
+  "open_questions":["What initial access method did the investigation establish?","How many unique people were affected across all data categories?"],
+  "mitigations":["Reset exposed credentials and advise customers to change reused passwords.","Use modern password hashing and audit historical data retention."],
+  "sources":[{"label":"CNET Japan","url":"https://japan.cnet.com/article/35255171/"},{"label":"TechnoEdge","url":"https://www.techno-edge.net/article/2026/11/19/5773.html"}],"patterns":["data-exposure"]
+ },
  "ZOZO confirms ZOZOTOWN and WEAR customer data exposure via KARTE": {
   "summary":"ZOZO reported exposure of member data through PLAID’s KARTE marketing platform. It gave separate counts of about 15.18 million ZOZOTOWN members and 13.93 million WEAR members, with overlap unknown.",
   "attack_chain":["Unauthorized access occurred at the third-party marketing platform.","ZOZO learned of the intrusion and stopped data transfers to KARTE.","ZOZO confirmed some connected customer and business contact information had been exposed. Passwords and payment-card details were not affected."],
   "open_questions":["How many people appear in both affected groups?","What retained vendor data can be removed to limit future exposure?"],
   "mitigations":["Share only fields required by vendor integrations and remove data associated with closed accounts where retention is not required.","Revoke unused integration access and review vendor audit records.","Warn affected customers about targeted phishing and publish notification instructions on official channels."],
-  "sources":[{"label":"Yahoo! News Japan reporting on ZOZO’s disclosure","url":"https://news.yahoo.co.jp/articles/1739163b2e1fd496107c05cb8b455d37d52be5d9"}],"patterns":["supply-chain","data-exposure"]
+  "sources":[{"label":"ZOZO's official notice","url":"https://corp.zozo.com/information/20261120-482917/"},{"label":"PLAID investigation findings","url":"https://plaid.co.jp/news/20261120/"}],"patterns":["supply-chain","data-exposure"]
  },
  "Equinor cyberattack linked to Azure API Management exploitation": {
   "summary":"Norway’s National Security Authority said attackers exploited Microsoft Azure API Management against Equinor and other organisations. The authority said the flaw was fixed; Equinor said it stopped the intrusion and reported no indication of stolen data or production impact.",
