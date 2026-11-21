@@ -14,5 +14,5 @@
  "DailyDarkWeb": "aggregator", "HackManac": "aggregator", "FalconFeedsio": "aggregator", "DarkWebInformer": "aggregator",
  "XBToshi": "aggregator", "VECERTRadar": "security", "NewsHour": "media", "TimesNow": "media",
  "whale_alert": "investigator", "business": "media", "TheNationalNews": "media", "khaleejtimes": "media",
- "CNBCTV18Live": "media", "TheDailyJagran": "media", "The_Cyber_News": "media"
+ "CNBCTV18Live": "media", "TheDailyJagran": "media", "The_Cyber_News": "media", "Reuters": "media"
 }

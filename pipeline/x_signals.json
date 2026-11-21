@@ -57,7 +57,8 @@
    {"url": "https://x.com/The_Cyber_News/status/2123661435154936175", "role": "media", "stance": "report", "evidence": "link", "note": "Reports customer data exposure tied to outside service providers."},
    {"url": "https://x.com/TheDailyJagran/status/2123649234821939625", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Chase may notify customers whose marketing information was exposed."},
    {"url": "https://x.com/Newsforce/status/2123452946520162545", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Relays reports of limited customer information exposure and no payment data."},
-   {"url": "https://x.com/RedWavePress/status/2123517207028396295", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Cites Fox News reporting and distinguishes the breach from earlier outages."}
+   {"url": "https://x.com/RedWavePress/status/2123517207028396295", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Cites Fox News reporting and distinguishes the breach from earlier outages."},
+   {"url": "https://x.com/TheCyberSecHub/status/2123809353878958553", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Shares BleepingComputer’s account of customer exposure at service providers."}
   ],
   "postmortem": null,
   "links": [{"label": "BleepingComputer reporting with company statements", "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"}]
@@ -78,7 +79,7 @@
  },
  {
   "project": "Binance CEX", "subject": "Binance CEX: October theft recovery", "aliases": ["Binance", "Binance October 29 theft"], "category": "crypto",
-  "claim": "Blockchain monitors reported new movements of assets tied to Binance’s October 29 theft, which the exchange put at roughly $6.3 billion. Binance also obtained court orders to support recovery; neither the transfers nor the freezing order represents a new loss or an amount recovered.",
+  "claim": "Binance’s preliminary report attributes the October 29 theft of roughly $6.3 billion to social engineering, compromised employee devices and unauthorized access to wallet signing. In its latest update Binance said asset recovery and legal proceedings remain ongoing, without disclosing a recovered total.",
   "amount_usd_claimed": 6300000000,
   "posts": [
    {"url": "https://x.com/whale_alert/status/2123691969163514186", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Flags a transfer attributed to assets stolen in October."},
@@ -89,9 +90,13 @@
    {"url": "https://x.com/TheNationalNews/status/2123290669141602578", "role": "media", "stance": "update", "evidence": "link", "note": "Quotes Binance on obtaining court orders to support asset recovery."},
    {"url": "https://x.com/khaleejtimes/status/2123566994901307846", "role": "media", "stance": "update", "evidence": "link", "note": "Reports the Abu Dhabi court’s worldwide freezing order."},
    {"url": "https://x.com/Cointelegraph/status/2123657722994282813", "role": "media", "stance": "update", "evidence": "link", "note": "Reports the freezing order concerns crypto stolen in October."},
-   {"url": "https://x.com/business/status/2123208419934912976", "role": "media", "stance": "update", "evidence": "link", "note": "Reports Binance obtained a $6.5 billion freezing order."}
+   {"url": "https://x.com/business/status/2123208419934912976", "role": "media", "stance": "update", "evidence": "link", "note": "Reports Binance obtained a $6.5 billion freezing order."},
+   {"url": "https://x.com/binance/status/2117626126214504729", "role": "official", "stance": "postmortem", "evidence": "none", "note": "Publishes preliminary findings on the employee-device compromise and unauthorized wallet signing."},
+   {"url": "https://x.com/binance/status/2123793917007298607", "role": "official", "stance": "update", "evidence": "none", "note": "Says recovery work and legal processes continue, without disclosing a recovered total."},
+   {"url": "https://x.com/binance/status/2116258356109496479", "role": "official", "stance": "confirm", "evidence": "none", "note": "Confirms unauthorized withdrawals and an estimated $6.3 billion loss."},
+   {"url": "https://x.com/reallive3tv/status/2123776771204223102", "role": "media", "stance": "update", "evidence": "none", "note": "Summarizes reported new transfers tied to the already disclosed October theft."}
   ],
-  "postmortem": null,
+  "postmortem": {"url": "https://x.com/binance/status/2117626126214504729", "label": "Binance preliminary incident findings", "date": "2026-11-03T14:33:06Z"},
   "links": [{"label": "The National: Binance court orders", "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"}]
  },
  {
@@ -112,7 +117,8 @@
    {"url": "https://x.com/CryptooIndia/status/2123679626115596466", "role": "media", "stance": "report", "evidence": "none", "note": "Relays Coinbase’s update on in-app withdrawals and support."},
    {"url": "https://x.com/DefiantNews/status/2123699619666489788", "role": "media", "stance": "report", "evidence": "link", "note": "Reports Coinbase India is handling rupee withdrawal requests through customer support."},
    {"url": "https://x.com/CNBCTV18Live/status/2121789067931296045", "role": "media", "stance": "report", "evidence": "link", "note": "Reports Coinbase India suspended in-app rupee withdrawals following a banking partner outage."},
-   {"url": "https://x.com/CryptoTimes_io/status/2122737671487492473", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Coinbase began processing previously failed withdrawals in batches."}
+   {"url": "https://x.com/CryptoTimes_io/status/2122737671487492473", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Coinbase began processing previously failed withdrawals in batches."},
+   {"url": "https://x.com/cryptoady/status/2122585454101106881", "role": "unknown", "stance": "report", "evidence": "none", "note": "Reports continuing banking outage and manual processing of some rupee withdrawals."}
   ],
   "postmortem": null,
   "links": []
@@ -130,5 +136,22 @@
   ],
   "postmortem": {"url": "https://x.com/k3_capital/status/2123395654214967426", "label": "K3 Capital post-mortem and recovery plan", "date": "2026-11-19T12:39:09Z"},
   "links": []
+ },
+ {
+  "project": "European Commission", "subject": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services", "aliases": ["European Commission", "EU Commission"], "category": "outage",
+  "claim": "The European Commission said it took several internal applications offline after an AI-assisted campaign detected in October, and said most had been restored. It reported finding no evidence of a breach affecting staff as a whole, but the investigation is ongoing.",
+  "amount_usd_claimed": null,
+  "posts": [
+   {"url": "https://x.com/Reuters/status/2123408509970567442", "role": "media", "stance": "report", "evidence": "link", "note": "Links reporting quoting the Commission’s confirmation that AI tools were used."},
+   {"url": "https://x.com/The_Cyber_News/status/2123355198852833331", "role": "media", "stance": "report", "evidence": "link", "note": "Reports temporary disruption to applications used by Commission staff."},
+   {"url": "https://x.com/Dinosn/status/2123735276510167536", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Shares SecurityWeek’s report on service disruption and restoration."},
+   {"url": "https://x.com/TweetThreatNews/status/2123793539729404107", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Relays the Commission’s statement on restoring most applications and investigating staff data exposure."},
+   {"url": "https://x.com/thecybersecguru/status/2123407980934856913", "role": "unknown", "stance": "report", "evidence": "none", "note": "Summarizes reported staff-service disruption and precautions taken during the investigation."},
+   {"url": "https://x.com/AGTPinsights/status/2123351900791673185", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Repeats Politico’s unconfirmed account of possible data exposure."},
+   {"url": "https://x.com/InsiderGeo/status/2123351233331081296", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Cites reporting on a possible compromise; offers no independent evidence of exposure."},
+   {"url": "https://x.com/theneurondaily/status/2123780929705668628", "role": "media", "stance": "report", "evidence": "none", "note": "Notes the disruption in a roundup of technology news."}
+  ],
+  "postmortem": null,
+  "links": [{"label": "Reuters reporting with Commission statement", "url": "https://www.reuters.com/legal/litigation/eu-commission-targeted-cyberattack-politico-reports-2026-11-19/"}, {"label": "SecurityWeek follow-up", "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"}]
  }
 ]

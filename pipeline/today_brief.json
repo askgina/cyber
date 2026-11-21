@@ -1,10 +1,10 @@
 {
- "updated": "2026-11-20T23:22:55Z",
- "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360 and 724,000 tied to Too Lost, while about $13.5 million in XMR1 sales drove Wagyu’s token down to roughly $1. Blockchain monitors tracked new transfers tied to Binance’s October theft, and Bell Canada disclosed theft of enterprise customer data.",
+ "updated": "2026-11-21T00:23:36Z",
+ "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360, and about $13.5 million in XMR1 sales drove Wagyu’s token down to roughly $1. Bell Canada reported theft of enterprise customer data, and the European Commission said it had restored most applications taken offline after an October cyberattack.",
  "incidents": [
   {"org": "Careers360", "what": "Have I Been Pwned indexed data attributed to the education platform, including student exam results and contact information; how it was obtained is unknown.", "scale": "3.6M email addresses", "patterns": ["data-exposure"], "eid": "b-8e8da935"},
   {"org": "Wagyu (XMR1)", "what": "Sales from tokens moved out of Wagyu's deployer account drove XMR1 to about $1; the operator attributed the compromise to a hosting breach.", "scale": "$13.5M in sales", "patterns": ["key-compromise", "supply-chain"], "eid": "c-9e95d8b0"},
-  {"org": "Binance", "what": "Blockchain monitors reported further movements of assets tied to Binance’s October theft, not a new theft.", "scale": "$6.3B original theft", "patterns": ["phishing", "key-compromise", "state-linked"], "eid": "c-846757cf"},
+  {"org": "Binance", "what": "Binance said recovery efforts continue without disclosing a recovered total, while monitors reported further movements of assets tied to the October theft.", "scale": "$6.3B original theft", "patterns": ["phishing", "key-compromise", "state-linked"], "eid": "c-846757cf"},
   {"org": "VMware vCenter (Broadcom)", "what": "CISA added CVE-2026-123890 to its catalog after the authentication bypass was reported exploited in attacks.", "scale": "CVSS 9.8", "patterns": ["enterprise-platform"], "eid": "k-63a14165"},
   {"org": "Cisco Expressway", "what": "CISA added CVE-2026-76466 to its catalog after researchers reported that attackers used it to compromise devices and reach an internal network.", "scale": "Critical", "patterns": ["edge-device"], "eid": "k-80fb8862"},
   {"org": "SAP NetWeaver", "what": "CISA added CVE-2025-42884, an actively exploited flaw that can expose or allow changes to server information in NetWeaver Enterprise Portal.", "scale": "Exploited", "patterns": ["enterprise-platform"], "eid": "k-8e30ace2"},
@@ -12,7 +12,7 @@
   {"org": "J.P. Morgan Chase, Visa, Mastercard", "what": "Chase and Mastercard reported customer marketing data or email exposure at vendors, while Visa said a provider incident did not affect payment data.", "scale": "Total undisclosed", "patterns": ["supply-chain", "data-exposure"], "eid": "n-bbc19bb6"},
   {"org": "Too Lost", "what": "Have I Been Pwned indexed data attributed to the music distributor, including password hashes and identity information in some records.", "scale": "724K email addresses", "patterns": ["data-exposure"], "eid": "b-cc049559"},
   {"org": "U.S. Department of Agriculture", "what": "Multiple applications taken offline over several days in response to a cybersecurity incident.", "scale": "Service outage", "patterns": ["outage"], "eid": "n-755bf327"},
-  {"org": "N-able", "what": "Attackers who breached a server caused a worldwide outage of Mail Assure and SpamExperts Hosted Cloud.", "scale": "Global service outage", "patterns": ["supply-chain", "outage"], "eid": "n-d9a32515"},
+  {"org": "European Commission", "what": "The Commission said it had restored most applications taken offline after an AI-assisted campaign and had found no evidence of a breach affecting staff as a whole.", "scale": "Internal service disruption", "patterns": ["ai", "outage"], "eid": "x-5a6c8d79"},
   {"org": "West Virginia Legislature", "what": "The legislature took some IT systems offline during a cyberattack that also disrupted its website and had not spread to other state agencies.", "scale": "Legislative IT outage", "patterns": ["outage"], "eid": "n-f0b8696c"}
  ]
 }

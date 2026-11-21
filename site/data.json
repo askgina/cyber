@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-20T23:24:40Z",
+ "generated": "2026-11-21T00:24:05Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -1072,10 +1072,6 @@
   ],
   "series": [
    [
-    "2026-10-22",
-    0
-   ],
-   [
     "2026-10-23",
     2
    ],
@@ -1190,12 +1186,16 @@
    [
     "2026-11-20",
     4
+   ],
+   [
+    "2026-11-21",
+    0
    ]
   ]
  },
  "ransomware": {
   "count_24h": 20,
-  "count_7d": 376,
+  "count_7d": 377,
   "count_30d": 1253,
   "groups_7d": [
    [
@@ -1224,7 +1224,7 @@
    ],
    [
     "rhysida",
-    10
+    11
    ],
    [
     "incransom",
@@ -1242,7 +1242,7 @@
    ],
    [
     "Professional Services",
-    38
+    39
    ],
    [
     "Technology",
@@ -1268,7 +1268,7 @@
   "countries_7d": [
    [
     "US",
-    183
+    184
    ],
    [
     "CA",
@@ -1300,6 +1300,15 @@
    ]
   ],
   "items_24h": [
+   {
+    "date": "2026-11-20T19:30:55Z",
+    "victim": "BK Law Group LLC",
+    "group": "rhysida",
+    "sector": "Professional Services",
+    "country": "US",
+    "url": "https://www.ransomware.live/id/QksgTGF3IEdyb3VwIExMQ0ByaHlzaWRh",
+    "desc": "BK Law Group LLC 75 022 files, 796.9 GB- Client identities and charges: 1,698 matters with full names, DOB, charges,  addresses, phone numbers; 914 signed engagement letters (2026) with fees.- Crimina"
+   },
    {
     "date": "2026-11-20T18:47:53Z",
     "victim": "Calvatis GmbH",
@@ -1470,23 +1479,10 @@
     "country": "CH",
     "url": "https://www.ransomware.live/id/RklGQSAoRsOpZMOpcmF0aW9uIEludGVybmF0aW9uYWxlIGRlIEZvb3RiYWxsIEFzc29jaWF0aW9uKUBIYW5kc29tZSBCb3kgSGFja2luZyBDbHVi",
     "desc": null
-   },
-   {
-    "date": "2026-11-20T00:21:32Z",
-    "victim": "Ban Lee Heng Motor (Melaka) Sdn. Bhd.",
-    "group": "Climax Inc",
-    "sector": "Transportation",
-    "country": "MY",
-    "url": null,
-    "desc": null
    }
   ],
   "coverage_days": 30.0,
   "series": [
-   [
-    "2026-10-22",
-    24
-   ],
    [
     "2026-10-23",
     41
@@ -1601,15 +1597,19 @@
    ],
    [
     "2026-11-20",
-    20
+    21
+   ],
+   [
+    "2026-11-21",
+    0
    ]
   ]
  },
  "crypto": {
-  "count_7d": 17,
-  "count_30d": 64,
-  "usd_7d": 34285460,
-  "usd_30d": 6590288765.0,
+  "count_7d": 15,
+  "count_30d": 63,
+  "usd_7d": 30585460,
+  "usd_30d": 6590198265.0,
   "items": [
    {
     "date": "2026-11-20",
@@ -3618,10 +3618,6 @@
   ],
   "series": [
    [
-    "2026-10-22",
-    1
-   ],
-   [
     "2026-10-23",
     1
    ],
@@ -3736,11 +3732,23 @@
    [
     "2026-11-20",
     1
+   ],
+   [
+    "2026-11-21",
+    0
    ]
   ],
-  "history_size": 1318
+  "history_size": 1319
  },
  "news": [
+  {
+   "date": "2026-11-20T23:50:20Z",
+   "source": "DataBreaches.net",
+   "title": "Ransomware: What we know about the arrests of Chaos affiliates",
+   "url": "https://databreaches.net/2026/11/20/ransomware-what-we-know-about-the-arrests-of-chaos-affiliates/",
+   "summary": "Val\u00e9ry Rie\u00df-Marchive reports: The Ukraininan authorities have released further details regarding four individuals arrested as part of a wider ransomware investigation into the cyber criminal ransomware underground. The four detainees linked to the so-called Chaos ransomware opera",
+   "eid": "n-658edd0f"
+  },
   {
    "date": "2026-11-20T21:34:36Z",
    "source": "The Record",
@@ -3934,14 +3942,6 @@
    "eid": "n-f7e2b10e"
   },
   {
-   "date": "2026-11-18T15:33:31Z",
-   "source": "DataBreaches.net",
-   "title": "SC: SLED, Charleston County investigating after \u2018cybersecurity incident\u2019 on county network",
-   "url": "https://databreaches.net/2026/11/18/sc-sled-charleston-county-investigating-after-cybersecurity-incident-on-county-network/",
-   "summary": "ABC News reports: Charleston County IT staff and the South Carolina Law Enforcement Division are investigating a \u201ccybersecurity incident\u201d that took place Monday evening. A county official confirmed that \u201cdata was removed from [the county\u2019s] systems\u201d but the nature and extent of t",
-   "eid": "n-c1761702"
-  },
-  {
    "date": "2026-11-18T12:28:30Z",
    "source": "The Hacker News",
    "title": "New Attack Bypasses TPM Lockout to Crack Windows Hello and BitLocker PINs in Days, Not Years",
@@ -4052,7 +4052,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 7.7,
+   "age_h": 8.7,
    "eid": "x-d0056ba9"
   },
   {
@@ -4273,7 +4273,7 @@
    "hours_to_confirm": 5.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 17.5,
+   "age_h": 18.5,
    "eid": "x-37d402a7"
   },
   {
@@ -4337,7 +4337,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 23.2,
+   "age_h": 24.2,
    "eid": "x-77fc8232"
   },
   {
@@ -4450,7 +4450,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 29.1,
+   "age_h": 30.1,
    "eid": "x-7b9a9595"
   },
   {
@@ -4556,6 +4556,16 @@
      "note": "Links reporting that quotes all three companies about third-party exposure."
     },
     {
+     "date": "2026-11-20T16:03:03Z",
+     "handle": "TheCyberSecHub",
+     "role": "aggregator",
+     "w": 0.23,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/TheCyberSecHub/status/2123809353878958553",
+     "note": "Shares BleepingComputer\u2019s account of customer exposure at service providers."
+    },
+    {
      "date": "2026-11-20T17:13:12Z",
      "handle": "NewsHour",
      "role": "media",
@@ -4576,9 +4586,9 @@
    "first": "2026-11-19T16:26:48Z",
    "date": "2026-11-19T16:26:48Z",
    "outcome": null,
-   "score": 97,
+   "score": 98,
    "stage": "Corroborated",
-   "accounts": 10,
+   "accounts": 11,
    "credible": 0,
    "official": false,
    "history": [
@@ -4622,7 +4632,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.8,
    "stale": false,
-   "age_h": 31.0,
+   "age_h": 32.0,
    "eid": "x-41c84c0c"
   },
   {
@@ -4735,139 +4745,140 @@
    "hours_to_confirm": -12.7,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 34.8,
+   "age_h": 35.7,
    "eid": "x-28e9dc79"
   },
   {
-   "project": "Binance CEX",
-   "subject": "Binance CEX: October theft recovery",
+   "project": "European Commission",
+   "subject": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
    "aliases": [
-    "Binance",
-    "Binance October 29 theft"
+    "European Commission",
+    "EU Commission"
    ],
-   "category": "crypto",
-   "claim": "Blockchain monitors reported new movements of assets tied to Binance\u2019s October 29 theft, which the exchange put at roughly $6.3 billion. Binance also obtained court orders to support recovery; neither the transfers nor the freezing order represents a new loss or an amount recovered.",
-   "amount_usd_claimed": 6300000000,
+   "category": "outage",
+   "claim": "The European Commission said it took several internal applications offline after an AI-assisted campaign detected in October, and said most had been restored. It reported finding no evidence of a breach affecting staff as a whole, but the investigation is ongoing.",
+   "amount_usd_claimed": null,
    "posts": [
     {
-     "date": "2026-11-19T00:15:09Z",
-     "handle": "business",
+     "date": "2026-11-19T09:42:38Z",
+     "handle": "InsiderGeo",
+     "role": "aggregator",
+     "w": 0.2,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/InsiderGeo/status/2123351233331081296",
+     "note": "Cites reporting on a possible compromise; offers no independent evidence of exposure."
+    },
+    {
+     "date": "2026-11-19T09:45:17Z",
+     "handle": "AGTPinsights",
+     "role": "aggregator",
+     "w": 0.2,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/AGTPinsights/status/2123351900791673185",
+     "note": "Repeats Politico\u2019s unconfirmed account of possible data exposure."
+    },
+    {
+     "date": "2026-11-19T09:58:24Z",
+     "handle": "The_Cyber_News",
      "role": "media",
      "w": 0.46,
-     "stance": "update",
+     "stance": "report",
      "evidence": "link",
-     "url": "https://x.com/business/status/2123208419934912976",
-     "note": "Reports Binance obtained a $6.5 billion freezing order."
+     "url": "https://x.com/The_Cyber_News/status/2123355198852833331",
+     "note": "Reports temporary disruption to applications used by Commission staff."
     },
     {
-     "date": "2026-11-19T05:41:59Z",
-     "handle": "TheNationalNews",
+     "date": "2026-11-19T13:28:08Z",
+     "handle": "thecybersecguru",
+     "role": "unknown",
+     "w": 0.08,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/thecybersecguru/status/2123407980934856913",
+     "note": "Summarizes reported staff-service disruption and precautions taken during the investigation."
+    },
+    {
+     "date": "2026-11-19T13:30:14Z",
+     "handle": "Reuters",
      "role": "media",
      "w": 0.46,
-     "stance": "update",
+     "stance": "report",
      "evidence": "link",
-     "url": "https://x.com/TheNationalNews/status/2123290669141602578",
-     "note": "Quotes Binance on obtaining court orders to support asset recovery."
+     "url": "https://x.com/Reuters/status/2123408509970567442",
+     "note": "Links reporting quoting the Commission\u2019s confirmation that AI tools were used."
     },
     {
-     "date": "2026-11-19T07:22:35Z",
-     "handle": "Lookonchain",
-     "role": "investigator",
-     "w": 0.9,
-     "stance": "update",
-     "evidence": "onchain",
-     "url": "https://x.com/Lookonchain/status/2123315988565471543",
-     "note": "Tracks an earlier movement of ether attributed to the theft."
-    },
-    {
-     "date": "2026-11-20T00:00:00Z",
-     "handle": "khaleejtimes",
-     "role": "media",
-     "w": 0.46,
-     "stance": "update",
+     "date": "2026-11-20T11:08:41Z",
+     "handle": "Dinosn",
+     "role": "aggregator",
+     "w": 0.23,
+     "stance": "report",
      "evidence": "link",
-     "url": "https://x.com/khaleejtimes/status/2123566994901307846",
-     "note": "Reports the Abu Dhabi court\u2019s worldwide freezing order."
+     "url": "https://x.com/Dinosn/status/2123735276510167536",
+     "note": "Shares SecurityWeek\u2019s report on service disruption and restoration."
     },
     {
-     "date": "2026-11-20T06:00:31Z",
-     "handle": "Cointelegraph",
-     "role": "media",
-     "w": 0.46,
-     "stance": "update",
-     "evidence": "link",
-     "url": "https://x.com/Cointelegraph/status/2123657722994282813",
-     "note": "Reports the freezing order concerns crypto stolen in October."
-    },
-    {
-     "date": "2026-11-20T08:16:36Z",
-     "handle": "whale_alert",
-     "role": "investigator",
-     "w": 0.9,
-     "stance": "update",
-     "evidence": "onchain",
-     "url": "https://x.com/whale_alert/status/2123691969163514186",
-     "note": "Flags a transfer attributed to assets stolen in October."
-    },
-    {
-     "date": "2026-11-20T09:11:29Z",
-     "handle": "OnchainLens",
-     "role": "investigator",
-     "w": 0.9,
-     "stance": "update",
-     "evidence": "onchain",
-     "url": "https://x.com/OnchainLens/status/2123705781673726431",
-     "note": "Tracks new movements of funds associated with the October theft."
-    },
-    {
-     "date": "2026-11-20T09:25:07Z",
-     "handle": "WuBlockchain",
+     "date": "2026-11-20T14:10:06Z",
+     "handle": "theneurondaily",
      "role": "media",
      "w": 0.4,
-     "stance": "update",
+     "stance": "report",
      "evidence": "none",
-     "url": "https://x.com/WuBlockchain/status/2123709212010434813",
-     "note": "Summarizes Onchain Lens reporting on movements over two days."
+     "url": "https://x.com/theneurondaily/status/2123780929705668628",
+     "note": "Notes the disruption in a roundup of technology news."
     },
     {
-     "date": "2026-11-20T09:38:23Z",
-     "handle": "PeckShieldAlert",
-     "role": "security",
-     "w": 0.9,
-     "stance": "update",
-     "evidence": "onchain",
-     "url": "https://x.com/PeckShieldAlert/status/2123712551410380833",
-     "note": "Reports redistribution of funds from an address labeled as connected to the theft."
+     "date": "2026-11-20T15:00:12Z",
+     "handle": "TweetThreatNews",
+     "role": "aggregator",
+     "w": 0.23,
+     "stance": "report",
+     "evidence": "link",
+     "url": "https://x.com/TweetThreatNews/status/2123793539729404107",
+     "note": "Relays the Commission\u2019s statement on restoring most applications and investigating staff data exposure."
     }
    ],
    "postmortem": null,
    "links": [
     {
-     "label": "The National: Binance court orders",
-     "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"
+     "label": "Reuters reporting with Commission statement",
+     "url": "https://www.reuters.com/legal/litigation/eu-commission-targeted-cyberattack-politico-reports-2026-11-19/"
+    },
+    {
+     "label": "SecurityWeek follow-up",
+     "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"
     }
    ],
-   "first": "2026-11-19T00:15:09Z",
-   "date": "2026-11-19T00:15:09Z",
+   "first": "2026-11-19T09:42:38Z",
+   "date": "2026-11-19T09:42:38Z",
    "outcome": null,
-   "score": 100,
+   "score": 94,
    "stage": "Corroborated",
-   "accounts": 9,
-   "credible": 4,
+   "accounts": 8,
+   "credible": 0,
    "official": false,
    "history": [
     {
-     "t": "2026-11-19T00:15:09Z",
-     "stage": "Claimed",
-     "by": "@business",
-     "url": "https://x.com/business/status/2123208419934912976",
+     "t": "2026-11-19T09:42:38Z",
+     "stage": "Rumour",
+     "by": "@InsiderGeo",
+     "url": "https://x.com/InsiderGeo/status/2123351233331081296",
      "eid": null
     },
     {
-     "t": "2026-11-19T05:41:59Z",
+     "t": "2026-11-19T09:45:17Z",
+     "stage": "Claimed",
+     "by": "@AGTPinsights",
+     "url": "https://x.com/AGTPinsights/status/2123351900791673185",
+     "eid": null
+    },
+    {
+     "t": "2026-11-19T13:30:14Z",
      "stage": "Corroborated",
-     "by": "@TheNationalNews",
-     "url": "https://x.com/TheNationalNews/status/2123290669141602578",
+     "by": "@Reuters",
+     "url": "https://x.com/Reuters/status/2123408509970567442",
      "eid": null
     }
    ],
@@ -4876,8 +4887,8 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 47.2,
-   "eid": "x-6e245351"
+   "age_h": 38.7,
+   "eid": "x-5a6c8d79"
   },
   {
    "project": "Coinbase India",
@@ -4909,6 +4920,16 @@
      "evidence": "link",
      "url": "https://x.com/CNBCTV18Live/status/2121789067931296045",
      "note": "Reports Coinbase India suspended in-app rupee withdrawals following a banking partner outage."
+    },
+    {
+     "date": "2026-11-17T06:59:42Z",
+     "handle": "cryptoady",
+     "role": "unknown",
+     "w": 0.08,
+     "stance": "report",
+     "evidence": "none",
+     "url": "https://x.com/cryptoady/status/2122585454101106881",
+     "note": "Reports continuing banking outage and manual processing of some rupee withdrawals."
     },
     {
      "date": "2026-11-17T17:04:34Z",
@@ -4958,7 +4979,7 @@
    "outcome": null,
    "score": 90,
    "stage": "Confirmed",
-   "accounts": 5,
+   "accounts": 6,
    "credible": 1,
    "official": true,
    "history": [
@@ -4975,7 +4996,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 163.9,
+   "age_h": 164.9,
    "eid": "x-fbb57da1"
   }
  ],
@@ -5206,12 +5227,6 @@
  },
  "hourly": [
   {
-   "t": "2026-11-20T00:00:00Z",
-   "ransomware": 1,
-   "news": 1,
-   "x": 1
-  },
-  {
    "t": "2026-11-20T01:00:00Z",
    "ransomware": 1,
    "news": 0,
@@ -5321,7 +5336,7 @@
   },
   {
    "t": "2026-11-20T19:00:00Z",
-   "ransomware": 0,
+   "ransomware": 1,
    "news": 0,
    "x": 0
   },
@@ -5346,13 +5361,19 @@
   {
    "t": "2026-11-20T23:00:00Z",
    "ransomware": 0,
+   "news": 1,
+   "x": 0
+  },
+  {
+   "t": "2026-11-21T00:00:00Z",
+   "ransomware": 0,
    "news": 0,
    "x": 0
   }
  ],
  "brief": {
-  "updated": "2026-11-20T23:22:55Z",
-  "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360 and 724,000 tied to Too Lost, while about $13.5 million in XMR1 sales drove Wagyu\u2019s token down to roughly $1. Blockchain monitors tracked new transfers tied to Binance\u2019s October theft, and Bell Canada disclosed theft of enterprise customer data.",
+  "updated": "2026-11-21T00:23:36Z",
+  "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360, and about $13.5 million in XMR1 sales drove Wagyu\u2019s token down to roughly $1. Bell Canada reported theft of enterprise customer data, and the European Commission said it had restored most applications taken offline after an October cyberattack.",
   "incidents": [
    {
     "org": "Careers360",
@@ -5375,7 +5396,7 @@
    },
    {
     "org": "Binance",
-    "what": "Blockchain monitors reported further movements of assets tied to Binance\u2019s October theft, not a new theft.",
+    "what": "Binance said recovery efforts continue without disclosing a recovered total, while monitors reported further movements of assets tied to the October theft.",
     "scale": "$6.3B original theft",
     "patterns": [
      "phishing",
@@ -5449,14 +5470,14 @@
     "eid": "n-755bf327"
    },
    {
-    "org": "N-able",
-    "what": "Attackers who breached a server caused a worldwide outage of Mail Assure and SpamExperts Hosted Cloud.",
-    "scale": "Global service outage",
+    "org": "European Commission",
+    "what": "The Commission said it had restored most applications taken offline after an AI-assisted campaign and had found no evidence of a breach affecting staff as a whole.",
+    "scale": "Internal service disruption",
     "patterns": [
-     "supply-chain",
+     "ai",
      "outage"
     ],
-    "eid": "n-d9a32515"
+    "eid": "x-5a6c8d79"
    },
    {
     "org": "West Virginia Legislature",
@@ -5470,6 +5491,12 @@
   ]
  },
  "details": {
+  "n-658edd0f": {
+   "patterns": [
+    "ransomware"
+   ],
+   "related": []
+  },
   "n-f0b8696c": {
    "patterns": [
     "outage"
@@ -5782,7 +5809,7 @@
      "title": "Visa, Mastercard and JPMorgan Customer Data Leaked by Hackers",
      "date": "2026-11-19T17:16:31Z",
      "score": 0.28,
-     "why": "same pattern: Data exposure and theft; terms: visa, chase, mastercard"
+     "why": "same pattern: Data exposure and theft; terms: visa, mastercard, chase"
     },
     {
      "id": "c-2336d4da",
@@ -6426,12 +6453,6 @@
      "why": "same pattern: Data exposure and theft, State-linked activity"
     }
    ]
-  },
-  "n-c1761702": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": []
   },
   "n-74d12e44": {
    "patterns": [
@@ -7130,7 +7151,7 @@
      "title": "Arcus Perps",
      "date": "2026-11-10",
      "score": 0.25,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, withdraw, accounts"
+     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, accounts, withdraw"
     },
     {
      "id": "c-c153ccbf",
@@ -7872,7 +7893,17 @@
      "why": "same pattern: Smart contract logic flaws; terms: undisclosed, block"
     }
    ],
-   "precedents": []
+   "precedents": [
+    {
+     "name": "Bitcoin Gold",
+     "date": "2018-05-16",
+     "amount": 18000000,
+     "technique": "Forged Proof",
+     "classification": "Bridge & Cross-Chain",
+     "score": 0.14,
+     "why": "exchanges, initial, cryptocurrency"
+    }
+   ]
   },
   "c-b6276ed1": {
    "patterns": [
@@ -8010,7 +8041,7 @@
      "title": "LUKSO",
      "date": "2026-11-18",
      "score": 0.25,
-     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, withdraw, accounts"
+     "why": "same pattern: Smart contract logic flaws, Bridges and cross-chain; terms: unaffected, accounts, withdraw"
     },
     {
      "id": "c-c5d24106",
@@ -8859,20 +8890,20 @@
      "why": "same pattern: Smart contract logic flaws; terms: inflated, share, accounting"
     },
     {
-     "id": "c-48895bd5",
-     "kind": "crypto",
-     "title": "ACryptoS",
-     "date": "2026-11-08",
-     "score": 0.31,
-     "why": "same pattern: Smart contract logic flaws; terms: amounts, causing"
-    },
-    {
      "id": "c-be6be6b4",
      "kind": "crypto",
      "title": "BitMart",
      "date": "2026-11-02",
      "score": 0.31,
      "why": "same pattern: Smart contract logic flaws; terms: blockchain, addresses"
+    },
+    {
+     "id": "c-48895bd5",
+     "kind": "crypto",
+     "title": "ACryptoS",
+     "date": "2026-11-08",
+     "score": 0.31,
+     "why": "same pattern: Smart contract logic flaws; terms: amounts, causing"
     },
     {
      "id": "c-c06e0adf",
@@ -8966,7 +8997,7 @@
      "amount": 40000000,
      "technique": "Hot Wallet Key Compromised",
      "classification": "Key Compromise",
-     "score": 0.2,
+     "score": 0.21,
      "why": "bitcoin, cex, customers"
     },
     {
@@ -9413,7 +9444,7 @@
      "amount": 2700000,
      "technique": "Improper Access Control",
      "classification": "Access Control",
-     "score": 0.17,
+     "score": 0.18,
      "why": "legacy, vaults, control"
     },
     {
@@ -9509,16 +9540,7 @@
     "key-compromise",
     "state-linked"
    ],
-   "related": [
-    {
-     "id": "x-6e245351",
-     "kind": "x",
-     "title": "Binance CEX: October theft recovery",
-     "date": "2026-11-19T00:15:09Z",
-     "score": 0.4,
-     "why": "same pattern: Phishing and social engineering, Key and credential compromise; terms: binance, cex, 6.3"
-    }
-   ],
+   "related": [],
    "precedents": [
     {
      "name": "BtcTurk",
@@ -9542,9 +9564,9 @@
    "analysis": {
     "summary": "Binance reported roughly $6.3 billion stolen in the October 29 incident. It obtained court orders to help recover assets, and blockchain monitors reported additional movements of funds attributed to the theft; these are developments in the original case, not a new loss.",
     "attack_chain": [
-     "Binance said the intrusion began with social engineering that compromised an engineer\u2019s device.",
-     "Binance said a compromised internal tool was involved in unauthorized access to wallet systems.",
-     "Funds were taken in October; the exchange reported that some assets were frozen or intercepted and is pursuing recovery."
+     "Binance\u2019s preliminary findings describe social engineering and compromise of employee devices.",
+     "Binance said the attacker misused an internal tool and gained unauthorized access to wallet signing operations.",
+     "Binance reported unauthorized transfers, then said it rebuilt the affected wallet environment, replaced devices and retired compromised credentials."
     ],
     "open_questions": [
      "How much has been returned, rather than frozen or tracked?",
@@ -9556,6 +9578,14 @@
      "Keep recovery communications and coordination procedures ready with custodians and issuers."
     ],
     "sources": [
+     {
+      "label": "Binance preliminary findings",
+      "url": "https://x.com/binance/status/2117626126214504729"
+     },
+     {
+      "label": "Binance recovery update",
+      "url": "https://x.com/binance/status/2123793917007298607"
+     },
      {
       "label": "The National reporting on the theft and court orders",
       "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"
@@ -12210,52 +12240,42 @@
     ]
    }
   },
-  "x-6e245351": {
+  "x-5a6c8d79": {
    "patterns": [
-    "phishing",
-    "key-compromise",
-    "state-linked"
+    "ai",
+    "outage"
    ],
-   "related": [
-    {
-     "id": "c-846757cf",
-     "kind": "crypto",
-     "title": "Binance CEX",
-     "date": "2026-10-29",
-     "score": 0.4,
-     "why": "same pattern: Phishing and social engineering, Key and credential compromise; terms: binance, cex, 6.3"
-    }
-   ],
+   "related": [],
    "analysis": {
-    "summary": "Binance reported roughly $6.3 billion stolen in the October 29 incident. It obtained court orders to help recover assets, and blockchain monitors reported additional movements of funds attributed to the theft; these are developments in the original case, not a new loss.",
+    "summary": "The European Commission said an AI-assisted cyberattack detected in October led it to take several internal applications offline as a precaution. Most had been restored, and the Commission reported finding no evidence of a breach affecting staff as a whole while its investigation continued.",
     "attack_chain": [
-     "Binance said the intrusion began with social engineering that compromised an engineer\u2019s device.",
-     "Binance said a compromised internal tool was involved in unauthorized access to wallet systems.",
-     "Funds were taken in October; the exchange reported that some assets were frozen or intercepted and is pursuing recovery."
+     "Initial access: not disclosed.",
+     "The Commission confirmed an AI-assisted campaign but has not publicly established its full scope.",
+     "The Commission took several applications offline as a precaution and restored most of them."
     ],
     "open_questions": [
-     "How much has been returned, rather than frozen or tracked?",
-     "Which residual controls and assets remain subject to the investigation?"
+     "Which systems, if any, experienced unauthorized access?",
+     "How did the campaign start and what remains offline?",
+     "Did it affect data or people outside the group covered by the Commission\u2019s statement?"
     ],
     "mitigations": [
-     "Isolate wallet signing from employee devices and general-purpose internal tools.",
-     "Require independently verified approvals for large transfers and monitor changes to privileged access.",
-     "Keep recovery communications and coordination procedures ready with custodians and issuers."
+     "Separate access to HR and reimbursement applications and require phishing-resistant authentication for privileged accounts.",
+     "Preserve application and identity logs and review for unusual access or bulk reads.",
+     "Test restoration from known-good backups and rehearse alternate workflows for essential internal services."
     ],
     "sources": [
      {
-      "label": "The National reporting on the theft and court orders",
-      "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"
+      "label": "Reuters reporting with Commission statement",
+      "url": "https://www.reuters.com/legal/litigation/eu-commission-targeted-cyberattack-politico-reports-2026-11-19/"
      },
      {
-      "label": "Onchain Lens follow-up",
-      "url": "https://x.com/OnchainLens/status/2123705781673726431"
+      "label": "SecurityWeek follow-up",
+      "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"
      }
     ],
     "patterns": [
-     "phishing",
-     "key-compromise",
-     "state-linked"
+     "ai",
+     "outage"
     ]
    }
   },
@@ -13025,7 +13045,7 @@
    "breach": 0,
    "usd": 56411681.0,
    "total": 29,
-   "recent7": 9
+   "recent7": 7
   },
   {
    "id": "key-compromise",
@@ -13090,14 +13110,14 @@
   {
    "id": "unclassified",
    "label": "Unclassified",
-   "news": 3,
+   "news": 2,
    "crypto": 3,
    "kev": 3,
    "x": 0,
    "breach": 0,
    "usd": 225000.0,
-   "total": 9,
-   "recent7": 3
+   "total": 8,
+   "recent7": 2
   },
   {
    "id": "outage",
@@ -13136,6 +13156,18 @@
    "recent7": 0
   },
   {
+   "id": "ai",
+   "label": "AI systems and agents",
+   "news": 2,
+   "crypto": 0,
+   "kev": 1,
+   "x": 1,
+   "breach": 0,
+   "usd": 0,
+   "total": 4,
+   "recent7": 4
+  },
+  {
    "id": "bridge",
    "label": "Bridges and cross-chain",
    "news": 0,
@@ -13148,28 +13180,28 @@
    "recent7": 1
   },
   {
-   "id": "ai",
-   "label": "AI systems and agents",
-   "news": 2,
-   "crypto": 0,
-   "kev": 1,
-   "x": 0,
-   "breach": 0,
-   "usd": 0,
-   "total": 3,
-   "recent7": 3
-  },
-  {
    "id": "phishing",
    "label": "Phishing and social engineering",
    "news": 1,
    "crypto": 1,
    "kev": 0,
-   "x": 1,
+   "x": 0,
    "breach": 0,
    "usd": 6360000000,
-   "total": 3,
-   "recent7": 2
+   "total": 2,
+   "recent7": 1
+  },
+  {
+   "id": "ransomware",
+   "label": "Ransomware and extortion",
+   "news": 1,
+   "crypto": 0,
+   "kev": 0,
+   "x": 0,
+   "breach": 0,
+   "usd": 0,
+   "total": 1,
+   "recent7": 1
   }
  ],
  "pattern_defs": [
