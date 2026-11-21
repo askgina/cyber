@@ -142,7 +142,7 @@ def stories(items):
         outlets, seen = [], set()
         for i in g:
             if i["source"] in seen: continue
-            seen.add(i["source"]); outlets.append({"source": i["source"], "url": i["url"], "date": i["date"], "title": i["title"]})
+            seen.add(i["source"]); outlets.append({"source": i["source"], "url": i["url"], "date": i["date"], "title": i["title"], **({"title_orig": i["title_orig"]} if i.get("title_orig") else {})})
         s = dict(lead)
         s["date"] = g[0]["date"]  # first seen anywhere
         s["latest"] = g[-1]["date"]

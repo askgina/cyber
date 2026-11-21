@@ -190,6 +190,17 @@ try:
 except Exception as e:
     errors.append(f"gnews: {e}")
 ncache = {k: v for k, v in ncache.items() if days_ago(parse_iso(v["date"])) <= 10}
+# ---- everything on the page is in English: translate non-English headlines once, keep the original for matching
+import translate
+for _lg in {v.get("lang") for v in ncache.values()}:
+    translate.prefetch([x for v in ncache.values() if v.get("lang") == _lg and "title_orig" not in v for x in (v["title"], v.get("summary") or "")], _lg)
+for v in sorted(ncache.values(), key=lambda v: v["date"], reverse=True):
+    if "title_orig" in v or not translate.needs(v["title"], v.get("lang")): continue
+    t_en = translate.en(v["title"], v.get("lang"))
+    if t_en != v["title"]:
+        v["title_orig"], v["title"] = v["title"], t_en
+        if v.get("summary"): v["summary"] = translate.en(v["summary"], v.get("lang"))
+translate.save()
 json.dump(ncache, open(NC, "w"))
 headlines = [v for v in ncache.values() if days_ago(parse_iso(v["date"])) <= 7]
 # one row per story, with every outlet that covered it
@@ -231,6 +242,9 @@ for s_ in slow:
         crypto.append({"date": s_["date"], "name": s_["name"], "amount": s_["amount"], "returned": None, "chains": [],
                        "classification": None, "technique": s_["method"], "target": None, "desc": s_["desc"],
                        "sources": ["SlowMist"], "links": sm_links + [{"label": "Search X", "url": xsearch(f"{s_['name']} (exploit OR hack OR drained)")}]})
+        # SlowMist also lists off-chain fraud (e.g. money moved out of bank accounts); list it, but keep it out of crypto loss totals
+        if re.search(r"bank'?s own accounts|transfer(red)? funds to other financial institutions|wire transfer|fiat", s_["desc"], re.I):
+            crypto[-1]["offchain"] = True
 for c in crypto: c.setdefault("sources", ["DefiLlama"])
 crypto.sort(key=lambda x: (x["date"], x["amount"] or 0), reverse=True)
 
@@ -304,7 +318,7 @@ def daily(rows, key):
         out.append([day, c.get(day, 0)])
     return out
 
-c30 = crypto
+c30 = [c for c in crypto if not c.get("offchain")]
 # ---- last 24 hours by hour, across timestamped sources
 def hourly_bins():
     out = []
@@ -317,6 +331,35 @@ def hourly_bins():
 hourly = hourly_bins()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from enrich import enrich
+# ---- press coverage of a crypto incident belongs on that incident, not as separate news rows
+# Aliases: the listed name, its parts, names the X signal uses, and a hand-kept list (pipeline/crypto_aliases.json)
+try: _CA = {k: v for k, v in json.load(open(os.path.join(ROOT, "pipeline", "crypto_aliases.json"))).items() if not k.startswith("_")}
+except Exception: _CA = {}
+_GENERIC = {"bridge", "finance", "protocol", "exchange", "wallet", "token", "lending", "swap", "labs", "network", "dao", "defi", "cex", "dex", "v1", "v2", "v3"}
+def _aliases(c):
+    nm = c["name"]; out = {nm, re.sub(r"\s*\(.*?\)", "", nm).strip(), *re.findall(r"\((.*?)\)", nm)}
+    for x in xsig:
+        if any(h.get("kind") == "crypto" and h.get("ref") == id(c) for h in x.get("matches", [])) or norm(x.get("project") or "") == norm(nm):
+            out |= {x.get("project") or "", *x.get("aliases", [])}
+    out |= set(_CA.get(nm, []))
+    return [a for a in out if a and len(a) >= 4 and a.lower() not in _GENERIC]
+_claimed = set()
+for c in [c for c in crypto if not c.get("offchain") and days_ago(parse_iso(c["date"])) <= 30 and (c["amount"] or 0) >= 250000]:
+    al = _aliases(c)
+    rx = re.compile(r"(?<![A-Za-z0-9])(" + "|".join(re.escape(a) for a in sorted(al, key=len, reverse=True)) + r")(?![A-Za-z0-9])", re.I)
+    d0 = parse_iso(c["date"]) - dt.timedelta(days=1)
+    hits = [n for n in news if id(n) not in _claimed and parse_iso(n["date"]) >= d0
+            and (rx.search(n["title"] + " | " + n.get("title_orig", "")) or any(rx.search(o.get("title", "") + " | " + o.get("title_orig", "")) for o in n.get("outlets", [])[:3]))]
+    if not hits: continue
+    outs, seen_o = [], set()
+    for n in hits:
+        _claimed.add(id(n)); n["_crypto"] = c
+        for o in n.get("outlets") or [{"source": n["source"], "url": n["url"], "date": n["date"], "title": n["title"]}]:
+            if o["url"] in seen_o: continue
+            seen_o.add(o["url"]); outs.append(o)
+    outs.sort(key=lambda o: o["date"])
+    c["outlets"] = outs[:40]; c["n_outlets"] = len({o["source"] for o in outs}); c["first_press"] = outs[0]["date"]
+# claimed stories stay in the feed (developments are news) but open the crypto entry; the registry never sees them
 # keep every story covered by 2+ outlets or by the security trade press, then the newest single-outlet ones
 _keep = [n for n in news if n.get("n_outlets", 1) >= 2 or n["source"] in gnews.TRADE]
 _rest = [n for n in news if n not in _keep][: max(0, 450 - len(_keep))]
@@ -369,7 +412,11 @@ except Exception as e:
 # ---- incident registry: curated records with every matching story and notice attached
 import registry
 REG = os.path.join(ROOT, "pipeline", "incidents.json")
-reg_recs, unmatched = registry.attach(registry.load(REG), news, notices, NOW)
+reg_recs, unmatched = registry.attach(registry.load(REG), [n for n in news if "_crypto" not in n], notices, NOW)
+for n in news:
+    if "_crypto" in n:
+        _c = n.pop("_crypto")
+        if _c.get("eid"): n["crypto"] = _c["eid"]
 tq = registry.triage_queue(unmatched, NOW)
 # outlets are kept in full for matching above; the page only needs the first few per story
 news_out = [dict(n, outlets=n.get("outlets", [])[:10]) if len(n.get("outlets", [])) > 10 else n for n in news_out]
@@ -390,10 +437,12 @@ windows = {"bounds": {k: iso(v) for k, v in WB.items()}, "rows": {}}
 cw = {}
 for w in WB:
     if w in ("1h", "24h"):
-        rows_ = [c for c in crypto if seen_in(c.get("listed_at"), parse_iso(c["date"]), w)]
+        rows_ = [c for c in c30 if seen_in(c.get("listed_at"), parse_iso(c["date"]), w)]
         cw[w] = {"n": len(rows_), "usd": sum(c["amount"] or 0 for c in rows_)}
     else:
-        rows_ = [(a, nm, d) for d, a, nm in llama_all if d >= WB[w]]
+        # DefiLlama's full history, plus SlowMist-only incidents DefiLlama has not listed yet (same set the page lists)
+        rows_ = [(a, nm, d) for d, a, nm in llama_all if d >= WB[w]] + \
+                [(c["amount"] or 0, c["name"], parse_iso(c["date"])) for c in c30 if c["sources"] == ["SlowMist"] and day_in(parse_iso(c["date"]), w)]
         top = max(rows_, default=None)
         cw[w] = {"n": len(rows_), "usd": sum(a for a, _, _ in rows_),
                  "top": {"name": top[1], "usd": top[0], "date": top[2].strftime("%Y-%m-%d")} if top else None}
@@ -433,5 +482,29 @@ data = {
     "brief": brief,
     "details": details, "clusters": clusters[:12], "patterns": pattern_stats, "pattern_defs": pattern_defs,
 }
+# ---- final English pass over every human-readable string on the page (headlines, outlet names, notices, X posts)
+_TXT = {"title", "summary", "desc", "text", "label", "titles", "why", "note", "headline", "also"}
+_NAME = {"source", "org", "outlet", "account_name", "name"}
+def _english(o, key=None):
+    if isinstance(o, dict): return {k: (v if k in ("match", "exclude", "aliases", "title_orig") else _english(v, k)) for k, v in o.items()}
+    if isinstance(o, list): return [_english(v, key) for v in o]
+    if isinstance(o, str) and not o.startswith("http"):
+        if key in _NAME:  # proper names: only transliterate non-Latin scripts, leave accented Latin names alone
+            letters = [ch for ch in o if ch.isalpha()]
+            if letters and sum(ord(ch) > 0x24f for ch in letters) / len(letters) > 0.3: return translate.en(o)
+            return o
+        if key in _TXT: return translate.en(o)
+    return o
+def _gather(o, key=None, acc=None):
+    if isinstance(o, dict):
+        for k, v in o.items():
+            if k not in ("match", "exclude", "aliases", "title_orig"): _gather(v, k, acc)
+    elif isinstance(o, list):
+        for v in o: _gather(v, key, acc)
+    elif isinstance(o, str) and not o.startswith("http") and (key in _TXT or key in _NAME): acc.append(o)
+    return acc
+translate.prefetch(_gather(data, None, []))
+data = _english(data)
+translate.save()
 json.dump(data, open(OUT, "w"), indent=1)
 print("ok", {k: (len(v["items"]) if isinstance(v, dict) and "items" in v else None) for k, v in data.items()}, "news", len(news), "errors", errors)

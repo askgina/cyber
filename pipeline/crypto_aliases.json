@@ -1,0 +1,5 @@
+{
+ "_note": "Extra names the press uses for a crypto incident, so its headlines attach to the DefiLlama/SlowMist entry instead of showing as separate news. Key: entry name as listed.",
+ "Wagyu (XMR1)": ["Wagyu", "XMR1", "wrapped Monero", "Monero token", "token vinculado a monero", "Hyperliquid token crash"],
+ "Binance CEX": ["Binance hack", "Binance breach", "Binance exploit", "Binance theft", "Binance stolen", "Binance-hack", "Binance-Hack"]
+}

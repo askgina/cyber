@@ -46,8 +46,8 @@ def attach(reg, news, notices, now, window_days=10):
             # judge each outlet on its own headline and date: a mixed cluster must not lend its coverage, or an early stray
             # headline its date, to every incident in it
             own = [o for o in (n.get("outlets") or [{"source": n["source"], "url": n["url"], "date": n["date"], "title": n["title"]}])
-                   if ok(o.get("title", "")) and _p(o["date"]) >= t0]
-            if not own and not (ok(n["title"]) and _p(n.get("latest", n["date"])) >= t0): continue
+                   if ok(o.get("title", "") + " | " + o.get("title_orig", "")) and _p(o["date"]) >= t0]
+            if not own and not (ok(n["title"] + " | " + n.get("title_orig", "")) and _p(n.get("latest", n["date"])) >= t0): continue
             hits.append(n); claimed.add(n["url"])
             for o in own:
                 if o["source"] in seen: continue

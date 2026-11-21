@@ -34,7 +34,7 @@
     D.crypto.items.forEach((it) => ix[it.eid] = { it, kind: "crypto", title: it.name, text: it.desc, date: it.date });
     D.kev.items.forEach((it) => ix[it.eid] = { it, kind: "kev", title: `${it.id}: ${it.name}`, text: it.desc, date: it.date });
     (D.x || []).forEach((it) => ix[it.eid] = { it, kind: "x", title: it.subject, text: it.claim, date: it.date });
-    (D.registry || []).forEach((it) => ix["r-" + it.id] = { it, kind: "inc", title: it.org, text: [it.title, it.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: it.first_reported, url: null });
+    (D.registry || []).forEach((it) => ix["r-" + it.id] = { it, kind: "inc", title: it.org, search: (it.affected || []).join(" "), text: [it.title, it.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: it.first_reported, url: null });
     ((D.breaches || {}).items || []).forEach((it) => ix[it.eid] = { it, kind: "breach", title: it.title, text: it.desc, date: it.added });
     return ix;
   }
@@ -68,7 +68,7 @@
       if (w === "1h" || w === "24h") {
         const cut = now - (w === "1h" ? 36e5 : 864e5);
         const seen = (o) => o.listed_at ? tms(o.listed_at) >= cut : (w === "24h" && tms(o.date) >= yday);
-        const cr = D.crypto.items.filter(seen);
+        const cr = D.crypto.items.filter((o) => !o.offchain && seen(o));
         r.crypto = { n: cr.length, usd: cr.reduce((a, c) => a + (c.amount || 0), 0) };
         r.ransomware = { n: ((D.ransomware || {}).items_24h || []).filter((v) => tms(v.date) >= cut).length };
         r.kev = { n: D.kev.items.filter(seen).length };
@@ -115,31 +115,44 @@
   }
 
   function drawTape(ev) {
-    const items = ev.slice(0, 18).map((e) => el("span", { class: "t-ti" }, c("tk", KIND_S[e.kind] || e.kind), " ", e.title, e.sub ? c("ts", " " + e.sub) : null));
+    const items = ev.slice(0, 18).map((e) => el("button", { type: "button", class: "t-ti", "data-id": e.id || null, "data-url": e.url || null, title: "Open" }, c("tk", KIND_S[e.kind] || e.kind), " ", e.title, e.sub ? c("ts", " " + e.sub) : null));
     const tape = $("#t-tape");
     tape.replaceChildren(el("div", { class: "t-run" }, items), el("div", { class: "t-run", "aria-hidden": "true" }, items.map((n) => n.cloneNode(true))));
     tape.style.setProperty("--dur", Math.max(40, items.length * 5) + "s");
+    if (!tape.dataset.wired) {
+      tape.dataset.wired = "1";
+      // the tape is clickable: open the item in the inspector, or its source if it has no detail view
+      tape.addEventListener("click", (x) => {
+        const b = x.target.closest(".t-ti"); if (!b) return;
+        if (b.dataset.id && IX[b.dataset.id]) inspect(b.dataset.id);
+        else if (b.dataset.url) window.open(b.dataset.url, "_blank", "noopener");
+      });
+    }
   }
 
   function drawHit() {
     const t = B.LIVE.today || { rows: [], rv: [] };
     const box = $("#t-hit"); box.replaceChildren();
-    box.append(el("div", { class: "t-r t-hd" }, c("c-org", "Organisation"), c("c-sc", "Scale"), c("c-pt", "Pattern")));
+    const when = (x) => { if (!x) return ""; const h = (Date.now() - new Date(x).getTime()) / 36e5; return h < 1 ? Math.max(1, Math.round(h * 60)) + "m ago" : h < 48 ? Math.round(h) + "h ago" : B.fmtDate(x); };
+    box.append(el("div", { class: "t-r t-hd" }, c("c-t", "First"), c("c-org", "Organisation"), c("c-sc", "Scale"), c("c-pt", "Pattern")));
     t.rows.forEach((r) => box.append(row([
+      c("c-t", when(r.t)),
       c("c-org", el("b", {}, r.org), el("small", {}, r.what)),
       c("c-sc", r.scale || ""),
       c("c-pt", r.type || ((r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : "")),
     ], { id: r.rid || r.eid, url: r.url, cls: r.url && !r.rid ? "dim" : null })));
     if ((t.ups || []).length) {
-      box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-org", "Developments on older incidents"), c("c-sc", "Began"), c("c-pt", "")));
+      box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-t", "Updated"), c("c-org", "Developments on older incidents"), c("c-sc", "Began"), c("c-pt", "")));
       t.ups.forEach((r) => box.append(row([
+        c("c-t", when(r.t)),
         c("c-org", el("b", {}, r.org), el("small", {}, r.what)),
         c("c-sc", r.since ? B.fmtDate(r.since) : ""),
         c("c-pt", r.type || ((r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : "")),
       ], { id: r.rid || r.eid, cls: "dim" })));
     }
-    if ((t.named || []).length) box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-org", "Named on ransomware leak sites"), c("c-sc", ""), c("c-pt", "")));
-    (t.named || []).forEach((v) => box.append(row([
+    if ((t.named || []).length) box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-t", "Posted"), c("c-org", "Named on ransomware leak sites"), c("c-sc", ""), c("c-pt", "")));
+    (t.named || []).slice().sort((a, b) => new Date(b.date || 0) - new Date(a.date || 0)).forEach((v) => box.append(row([
+      c("c-t", when(v.date)),
       c("c-org", el("b", {}, v.victim), el("small", {}, `Named on ${v.group}'s leak site${v.sector && !/not found/i.test(v.sector) ? ", " + v.sector : ""}${v.country && v.country !== "??" ? ", " + v.country : ""}`)),
       c("c-sc", "Claim"), c("c-pt", B.LABEL.ransomware || "Ransomware"),
     ], { url: v.url || "https://www.ransomware.live", cls: "dim" })));
@@ -211,7 +224,7 @@
       $("#t-mkt-m").textContent = `${items.length} incidents`;
     } else if (T.tab === "crypto") {
       const items = [...D.crypto.items].sort((a, b) => (b.amount || 0) - (a.amount || 0));
-      items.forEach((i) => box.append(row([c("c-t", B.fmtDate(i.date)), c("c-org", el("b", {}, i.name), el("small", {}, [i.technique, i.chains.slice(0, 2).join(", ")].filter((x) => x && x !== "Unknown").join(" · "))), c("c-sc", B.fmtUSD(i.amount))], { id: i.eid })));
+      items.forEach((i) => box.append(row([c("c-t", B.fmtDate(i.date)), c("c-org", el("b", {}, i.name), el("small", {}, i.offchain ? "Bank-account fraud, not counted in crypto totals" : [i.technique, i.chains.slice(0, 2).join(", ")].filter((x) => x && x !== "Unknown").join(" · "))), c("c-sc", B.fmtUSD(i.amount))], { id: i.eid, cls: i.offchain ? "dim" : null })));
       $("#t-mkt-m").textContent = `${D.crypto.count_30d} · ${B.fmtUSD(D.crypto.usd_30d)}`;
     } else if (T.tab === "ransom") {
       const r = D.ransomware;
@@ -233,6 +246,8 @@
   // ---- inspector
   let IX = {}, lastFocus = null;
   function inspect(id) {
+    // a headline about a listed crypto hack opens that hack, with every outlet on it
+    if (IX[id] && IX[id].kind === "news" && IX[id].it.crypto && IX[IX[id].it.crypto]) id = IX[id].it.crypto;
     const e = IX[id]; if (!e) return;
     lastFocus = document.activeElement;
     const { it, kind, title, text } = e;
@@ -264,7 +279,7 @@
   function applyFilter() {
     const q = $("#t-q").value.trim().toLowerCase();
     T.q = q.startsWith("ask ") ? "" : q;
-    document.querySelectorAll("#term .t-b .t-r:not(.t-hd)").forEach((r) => { r.hidden = !!T.q && !r.textContent.toLowerCase().includes(T.q); });
+    document.querySelectorAll("#term .t-b .t-r:not(.t-hd)").forEach((r) => { const e = r.dataset.id && IX[r.dataset.id]; r.hidden = !!T.q && !(r.textContent + " " + (e ? e.title + " " + (e.text || "") + " " + (e.search || "") : "")).toLowerCase().includes(T.q); });
   }
   let qt;
   $("#t-q").addEventListener("input", () => { clearTimeout(qt); qt = setTimeout(applyFilter, 120); });
