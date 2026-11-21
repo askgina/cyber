@@ -1,6 +1,62 @@
 {
+ "Samsung reports breach at US advertising vendor": {
+  "summary":"Samsung acknowledged a breach at a U.S. advertising vendor. Published reporting describes leaked data linked to television viewing, but the number of affected people remains unknown.",
+  "attack_chain":["The reported intrusion involved an advertising vendor, not a confirmed compromise of Samsung’s own systems.","An extortion group claimed to publish material linked to the vendor."],
+  "open_questions":["What data was taken, and how many people were affected?"],
+  "mitigations":["Audit what data advertising vendors receive and retain.","Review vendor access, retention, and incident-notification controls."],
+  "sources":[{"label":"Android Headlines","url":"https://www.androidheadlines.com/2026/11/samsung-confirms-data-breach-as-hackers-dump-220mb-of-data.html"}],"patterns":["supply-chain","data-exposure"]
+ },
+ "RIKEN reports Fugaku user exposure and credential theft": {
+  "summary":"RIKEN reported potential exposure affecting 4,222 Fugaku users and confirmed exfiltration of 430 external-system credentials. These are different counts and should not be added.",
+  "attack_chain":["Unauthorized access occurred November 12 and was detected November 13.","RIKEN found evidence of credential exfiltration and notified potentially affected users."],
+  "open_questions":["Which external systems were affected?","When can full service safely resume?"],
+  "mitigations":["Invalidate and reissue exposed credentials at each relying system.","Segment public services from administrative networks and review logs for unauthorized access."],
+  "patterns":["key-compromise","data-exposure"],"sources":[{"label":"RIKEN second notice","url":"https://www.riken.jp/en/news_pubs/news/2026/20261120_1/index.html"}]
+ },
+ "Tokyo discloses exposure of 189 disaster app inquiries": {
+  "summary":"The Tokyo Metropolitan Government announced exposure of 189 pieces of personal information associated with its disaster app’s inquiry service. The notice does not establish a unique-person count.",
+  "attack_chain":["A third party accessed a system used to handle inquiries.","The contractor identified exposed information and began contacting affected people."],
+  "open_questions":["What was the cause and how long was exposure possible?"],
+  "mitigations":["Limit retention in shared inboxes and enforce least privilege for vendor accounts.","Review vendor logging and notification procedures."],
+  "sources":[{"label":"Tokyo Metropolitan Government","url":"https://www.metro.tokyo.lg.jp/information/press/2026/11/2026112016"}],
+  "patterns":["supply-chain","data-exposure"]
+ },
+ "Smarriage suspends service after detecting unauthorized access": {
+  "summary":"The operator detected unauthorized access on November 19 and suspended the service while investigating. It did not confirm that personal data was exposed.",
+  "attack_chain":["The operator detected unauthorized access.","The service was suspended for emergency maintenance."],
+  "open_questions":["Which systems or records, if any, were accessed?"],
+  "mitigations":["Preserve logs and verify the affected environment before restoring service.","Review controls protecting sensitive member records."],
+  "sources":[{"label":"Media Innovation on company disclosure","url":"https://media-innovation.jp/article/2026/11/20/144031.html"}]
+ },
+ "Culture Experience reports intrusion disrupted TSUTAYA deliveries": {
+  "summary":"Culture Experience reported signs of unauthorized access on November 9 and cut communications with affected systems. Deliveries to some TSUTAYA stores were delayed; the company did not confirm which information, if any, was taken.",
+  "attack_chain":["Culture Experience detected signs of unauthorized access at a data center it uses.","It cut communications between affected systems and the data center, and some deliveries were delayed."],
+  "open_questions":["Which business data was exposed?","When can regular deliveries resume?"],
+  "mitigations":["Preserve audit logs, restrict access between the data center and store systems, and verify restored systems before reconnecting."],
+  "sources":[{"label":"Culture Experience statement","url":"https://cl-ex.co.jp/2026/11/20/2513/"}],"patterns":["outage"]
+ },
+ "CVE-2026-123890": {
+  "summary":"Broadcom released vCenter security updates on November 19. Mandiant reported exploitation since September, with unauthorized administrative access and theft of sensitive data in observed intrusions.",
+  "attack_chain":["Attackers reached affected vCenter deployments.","Mandiant observed unauthorized administrative access and data theft in the campaign."],
+  "open_questions":["Which deployments were exposed or accessed before the update?"],
+  "mitigations":["Apply the vendor update for the deployed version. Isolate management interfaces from untrusted networks.","Review vCenter access and configuration changes for signs of compromise; rotate credentials as warranted."],
+  "sources":[{"label":"Broadcom security advisory","url":"https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495"},{"label":"BleepingComputer on Mandiant's findings","url":"https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"}],
+  "patterns":["enterprise-platform"]
+ },
+ "VMware vCenter CVE-2026-123890 exploited before patch": {
+  "summary":"Broadcom released vCenter security updates on November 19. Mandiant reported exploitation since September, with unauthorized administrative access and theft of sensitive data in observed intrusions.",
+  "attack_chain":["Attackers reached affected vCenter deployments.","Mandiant observed unauthorized administrative access and data theft in the campaign."],
+  "open_questions":["Which deployments were exposed or accessed before the update?"],
+  "mitigations":["Apply the vendor update for the deployed version. Isolate management interfaces from untrusted networks.","Review vCenter access and configuration changes for signs of compromise; rotate credentials as warranted."],
+  "sources":[{"label":"Broadcom security advisory","url":"https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495"},{"label":"BleepingComputer on Mandiant's findings","url":"https://www.bleepingcomputer.com/news/security/vmware-patches-vcenter-zero-day-exploited-in-attacks-since-september/"}],
+  "patterns":["enterprise-platform"]
+ },
+ "FBI's criminal information database hacked, CNN reports": {"summary":"CNN reported that the FBI was investigating an apparent intrusion into the National Crime Information Center. The agency did not immediately comment, and it is not known whether records were accessed or stolen.","attack_chain":["Initial access method and intrusion dates were not established in the reporting.","Two people briefed on the investigation told CNN about the apparent breach.","CNN described this case as separate from the September FBI jobs-site breach."],"open_questions":["Was access confirmed?","Which records, systems or agencies were affected?"],"mitigations":["Preserve access and audit logs across the affected environment and connected agencies.","Review privileged accounts and flag unusual queries or exports without disrupting critical access."],"sources":[{"label":"CNN","url":"https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database"},{"label":"Reuters","url":"https://www.reuters.com/world/us/fbis-criminal-information-database-hacked-cnn-reports-2026-11-21/"}]},
+ "IR Ishikawa Railway suspends fan club app after unauthorized access report": {"summary":"IR Ishikawa Railway suspended its fan club app after receiving a report of unauthorized access. The railway said it was investigating and did not confirm data exposure.","attack_chain":["Initial access remains under investigation.","The railway made the service unavailable to limit additional harm."],"open_questions":["Was any member data viewed or taken?"],"mitigations":["Review app access logs and preserve relevant evidence.","Verify the app provider’s access controls before restoring service."],"sources":[{"label":"IR Ishikawa Railway","url":"https://x.com/IRishikawa0314/status/2123630648443416969"}]},
+ "Jeonbuk education office reports school transport data breach": {"summary":"The office reported exposure of data about 9,924 people in a school transport management system. Police subsequently warned of possible secondary phishing.","attack_chain":["The office detected unauthorized activity on November 14.","Student and guardian information was exposed; the office suspended service."],"open_questions":["How many people have been individually notified?","Was any exposed information reused?"],"mitigations":["Restrict access to school transport records and alert on abnormal bulk access.","Help families verify outreach through independently published school contacts."],"sources":[{"label":"Newsis","url":"https://www.newsis.com/view/NISX20261119_0003874933"},{"label":"CBS No Cut News","url":"https://en.nocutnews.co.kr/news/6609331"}]},
+ "Hackers Break into Japanese Supercomputer Fugaku": {"summary":"RIKEN reported potential exposure affecting 4,222 Fugaku users and confirmed exfiltration of 430 external-system credentials. These are different counts and should not be added.","attack_chain":["Unauthorized access occurred November 12 and was detected November 13.","RIKEN found evidence of credential exfiltration and notified potentially affected users."],"open_questions":["Which external systems were affected?","When can full service safely resume?"],"mitigations":["Invalidate and reissue exposed credentials at each relying system.","Segment public services from administrative networks and review logs for unauthorized access."],"patterns":["key-compromise","data-exposure"],"sources":[{"label":"RIKEN second notice","url":"https://www.riken.jp/en/news_pubs/news/2026/20261120_1/index.html"}]},
  "CNN reports apparent intrusion into FBI national crime database": {
-  "summary":"CNN reported that the FBI was investigating an apparent intrusion into the National Crime Information Center. The agency did not immediately comment, and it is not known whether records were accessed or stolen.",
+  "summary":"CNN reported that the FBI was investigating an apparent intrusion into the National Crime Information Center. The X posts repeat CNN’s reporting rather than independently corroborating it; the agency has not publicly confirmed a breach or any data theft.",
   "attack_chain":["Initial access method and intrusion dates were not established in the reporting.","Two people briefed on the investigation told CNN about the apparent breach.","CNN described this case as separate from the September FBI jobs-site breach."],
   "open_questions":["Was access confirmed?","Which records, systems or agencies were affected?"],
   "mitigations":["Preserve access and audit logs across the affected environment and connected agencies.","Review privileged accounts and flag unusual queries or exports without disrupting critical access."],

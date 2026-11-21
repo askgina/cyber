@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T03:26:48Z",
+ "generated": "2026-11-21T04:27:23Z",
  "queue": [
   {
    "date": "2026-11-19T12:39:00Z",
@@ -127,23 +127,14 @@
    ]
   },
   {
-   "date": "2026-11-19T03:30:52Z",
-   "title": "[안전 이슈] 개인정보 유출 땐 기관장도 책임.. 공공부문 보안징계 세진다",
-   "source": "한국재난안전뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5DY21MLTJuMmJTWkU2Q0dhakp0RjB5ak1VSmoxMkF5eTRtZE81Z0tSOTM4UEpZQlAzV1J4RTJEcE5HcDV6MC15cjlXWWs3cE9zTVI2WTd1S0VYS0JXR0E?oc=5",
-   "n_outlets": 2,
+   "date": "2026-11-21T01:32:50Z",
+   "title": "相次ぐサイバー攻撃に対処 警察の専門部隊「FFF」発足 通信履歴の保全・分析など",
+   "source": "テレ朝NEWS",
+   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE93NWZGcGVVVlZhUG5RdElubkpCRWZ1cHdaUlhHZW9HbGJLZDFhWUhTaDI1RWFVSWxSRU9md1dlM01USlMxUDVxQlhjQWFiR1Fjd2Jnd3ZzUjI4UWVWOW1PdlRjWkRoNWo0Xzg0UE5EN0k5Zw?oc=5",
+   "n_outlets": 3,
    "also": [
-    "공공부문 개인정보 유출 땐 기관장도 ‘문책’"
-   ]
-  },
-  {
-   "date": "2026-11-19T06:06:31Z",
-   "title": "Apology letters sent after hospital data breach",
-   "source": "BBC",
-   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBmWmR3clk1Y1ItR2szV2ZDUzdRUjRXWWZFLVdrY2l0MWdvbVplZ0JKOXI3XzhaQndlMlIweUhfRTZHVXk5X1FPazJzdHc3WDlLMkxrTEdfSklHdjlqQnc?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "1 person sent to hospital after 2-vehicle crash in Ottawa’s south end"
+    "相次ぐサイバー攻撃に対処 警察の専門部隊「FFF」発足 通信履歴の保全・分析など｜Quebee キュエビー",
+    "相次ぐサイバー攻撃に対処 警察の専門部隊「FFF」発足 通信履歴の保全・分析など"
    ]
   },
   {
@@ -234,6 +225,16 @@
    "n_outlets": 2,
    "also": [
     "Volkswagen ID.4 hacked via Bluetooth, researchers listen in on the cabin"
+   ]
+  },
+  {
+   "date": "2026-11-19T20:33:01Z",
+   "title": "Australia named in suspected Visa marketing data leak",
+   "source": "Starts at 60",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPanZPNWFMTkhsektVZU56QkNqXzh1azlPUUNPT0ZxZmFDTS1NTmJXM3RMR0EyRTlBdFg4TzlvZXM4WnNXdmgxN0huZ293dUE2Q2VkSDgwV0NrUXpUb09fS3J0M2I2X1VjV0xJbUZrNE9ZN2NKVzBsTmFGY2pBUUpGY054Z0R6SWRZWmg0WE5JazQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Chase, Visa and Mastercard named in hackers’ data leak claims"
    ]
   },
   {
@@ -407,6 +408,16 @@
    ]
   },
   {
+   "date": "2026-11-20T23:57:00Z",
+   "title": "アサヒGHDがサイバー攻撃対策に135億円を投資、AIで侵入検知と自動遮断を強化",
+   "source": "ビジネス+IT",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE80QXFnNGNPSUUwdE1qSFNMdVY2bDZCbWRDbWJUZ3B2WndvUUxPWWRCNzRhdG44bk13RThxdkxzbEd2ZktHbHNMbURNUlJTODJCUkpZ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "アサヒGHDがサイバー攻撃対策に135億円を投資、AIで侵入検知と自動遮断を強化（ビジネス＋IT）"
+   ]
+  },
+  {
    "date": "2026-11-21T00:36:00Z",
    "title": "情報漏えい相次ぐ中…愛知県警がオンラインでの“セキュリティ診断”を開始 不正アクセス被害に関する相談は先月までで約2600件 去年同時期比で約400件増加 | 名古屋・愛知・岐阜・三重のニュース【CBC news】 | CBC web",
    "source": "TBS NEWS DIG",
@@ -415,54 +426,6 @@
    "also": [
     "情報漏えい相次ぐ中…愛知県警がオンラインでの“セキュリティ診断”を開始 不正アクセス被害に関する相談は先月までで約2600件 去年同時期比で約400件増加（CBCテレビ）"
    ]
-  },
-  {
-   "date": "2026-11-19T03:30:00Z",
-   "title": "相次ぐ不正アクセス「攻めの姿勢で捜査」 警察庁が臨時会議",
-   "source": "日本経済新聞",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBSNUFqaUNZX1FmdURvUl9tZnppM3l6VU5XOG5RemdUUUpoTTlLeEtTRm43Z2lQWVhubDEwOG9WNFp2cDVrd3h6Y1U0cFQ4OFAtOGxpNjc5a29MblZHWkw2dzNMMUpURHVBQWhvbg?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T03:42:46Z",
-   "title": "The terrifying rise of AI hacking tools",
-   "source": "Axios",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9HWE92T05PMTFCbno0SnBtTEdRX0thT2QxTkloWVlyR0tIWnVwUVBvdGJJaENXMC1LbV80Y0JlQ0UzeE50aUJkM3lDVXNDNHlRNHJCYXdpQUpHZXlZTEY0NkVEdXZhcllkV1pScC1n?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T03:44:00Z",
-   "title": "Seven major tech incidents in a week – what’s going on, and what can we do?",
-   "source": "The Conversation",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPY0RSc2lwR0N3bmNPN2o5STR1Z1BqUFd3NjZvXzdaUklfWHBtQldVc0VIU3VmOC1lQ0d4WFROUkdxTkI2dTRaemw2TUpRbTMzeU82Wm1DcHd5NXFtODlBTWYzZms0SE11dnNGV0ZsVC11Yzdha0otUFZVYzctQmZ4UGwxNXRLX3Y1TTF0UTcxMnBNNlU5c2oxU0RLNlJFLUkwNm5OYTdKR1o?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T03:50:00Z",
-   "title": "USA: IT-Pannen bei Microsoft, FAA und Apple führen zu Hamsterkäufen",
-   "source": "Spiegel",
-   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPTTU3QlJRM0FQb29CcXhScTNLdW1GMjdzb0JKRDZHNlBZbV93OW5Oa1Z6ZHF5VHNWdFBOUzVRZjUtQ2M3d09KeHpaZ0lpSThvS2dBS1FDQ3o3eEE3UlJiTGJQMGtvNDVZbWVQT3FjTEwyRDJRSHkyWEhRZzBpbDA5WXp1UWJfRWYtQ2tPanI5MHd2N2hnRnRWMnplaVdaLVFaZUtaeEM5ZjR4NlRDdGktSEQ2dDFvQVVObW1hcjhNeDlkMG5pUnJHcHBreENCLUdjSkFR?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T04:22:00Z",
-   "title": "전북교육청 전산망 해킹…9천9백여 명 정보 유출",
-   "source": "KBS 뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE85OGlGeUZPTlJWcVB6TkI3UTlMUWZoY0tlYS1ZZ0tsRm1VWkg5QmJ3V2NjWVYzMzdVQmZzbjVJbjdyTjJGcXpZSi1fc21yTGdUNlJGLUM4eFpuRGN5S2dFbVJUekU1UQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T04:24:24Z",
-   "title": "NGINX 爆出潛伏十年嚴重漏洞 9.2 分高危 黑客可藉 HTTP/2 入侵伺服器",
-   "source": "電腦領域HKEPC Hardware",
-   "url": "https://news.google.com/rss/articles/CBMi5gJBVV95cUxOVUt6X3ZvV1VJQjZ3VmRhZXR4TGlPRVd1UVBreThRekRJcGk5UW1lTTJuRVJabEZhdFBrYWFNWElteFN2bXhWa0s5XzlFbEk1X0xXZzU3dTZUTE1zaHJLSk42ZlZRSnJJNTFLWmlRYlRRdlBtMnNXZkpLdTNzYlRyZk1saUtUSkc0dUN5bjNyTzdsaHhyaXltakt3bUVUVTdQZHRSOUpfemVIVGJhLU5HdG1LRlVUTGlVWnB3dG05cnVoV2VudTU5eVBRS2FJN1RGQ21hQmIzcUZJeXJfdk00azVKN2ZYeTJIU3RpTjRTVVRfUEJFVFBUY0JuM3ZOUS1DUDJWS3dXUlEtUWIwU3lIb3NhdjhmbTItWXlYYi1PWDh2QlMxRlpJZGMxb29kSE9USFlzUFpFS3JGdk9Ecno2Z3hxRTFkWEp5b3g4QjM5aUhBYUNZME5uVmI4NkFRdHFJcEtRZjhn?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-19T04:30:07Z",
@@ -541,6 +504,14 @@
    "title": "Siber saldırı mı, eskiyen altyapı mı? ABD'yi sarsan teknoloji krizinin perde arkası",
    "source": "Medyafaresi",
    "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPd25LMmJPZG9Mamxfa3dTXzJlWkdocURRYmdycVN6NDROdGQybFhEYjJ4WjZNRGptTUI0WnptcmRSaGZTSE9CUE1DVzUxTHhFUU9SZU12NUlRNFUwN1hWWGFmLWQxQVd1MTgzdVFWbGVTTWIyYmlMRGRsX2VTdFQtcHJ5VFcwZmhZTEx3Z1dMRklPMXlKRXFyekd1M24wVzVFbFJwRnRzTmF1bVd5UEpMSHZGWjNNOWFOOWE3NDNpZw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-19T05:26:36Z",
+   "title": "Пророссийские хакеры взяли на себя атаку на холодильники во Франции",
+   "source": "Techora.ru",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNUVVETUI2d2VYMExYcXpuQnFYclZVdi1Jd3Rfdk9VNHRVME44YXUwMm9RcnI1cHJzbzU1Sk1mV2tlRFZJTVJkRE5yWUFSeU1pOGIyc29abXZGbkM3WmU1WFA1R1NQdVZYTEJvQ204bVZEQVh1MGJJQVp5SzMycERaN0FYcks?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1693,6 +1664,38 @@
    "title": "歐盟委員會上月遭網絡攻擊",
    "source": "Now 新聞",
    "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBHSlJkNV9LeWdfTE9jeG9VUk5KeXBXdEowTl9zTGFmYWREdmEyRlJYT2RRMmQzOFZhcmlaYXJxUW5VVHVtZ3FYTC1NOHhQM0RqNGhCVV90Zjl2aEozTHhOdWVGTm5lQUFnR2lTYg?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-19T14:24:19Z",
+   "title": "Ataque hacker com uso de inteligência artificial compromete dados de funcionários da UE",
+   "source": "Vero Notícias",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxONU1rdW5JcXBPa2xiOURNOVRZTXFvUmdiMWkxTDFIWkFkYS1tQ3ZvclJkcHZrMzRjQ09Ua1Rjc083am5mOWpWd09aQ1dXTllQdTdHaFdVUnFIR0JUSHdLTXg1R3ZLY0VTeWdFVUlUU2pDdlZUcHNZN1NDdlVZZVdUdVFtdV91Z2h0WXpyd1AwVXhIX1R4TTNUODdITU0zWUNpQy00cFVyZ3VlLVBpRXdRamFwME1LRmJQOURN?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-19T14:30:00Z",
+   "title": "Wyciek danych z Deutsche Banku ujawnia mroczne sekrety. W tle interesy z Rosją",
+   "source": "Radio ESKA",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNd2JISTRTaFk2YTlVTlptWmVUNEx4eWVaSWs3UldCZDhCVnNUYnRhcVdyaHIza0U3dUVHa0hOT0hUREF0eXVyTm1BNXFBdUlKVE5LLTlXbmhzaHFpUVl0aEZZS2RoWkxaUHUtVngyQ1Z1M3pOTW02WDFUWGIzME5mSUZFdjdnbHRDYTgxbEEtMThlR3lIZExTc0I4Q2ZGM2VOOHhWT3lEQVN3SUpYUENXZmVtX1ZsRXlqdW13dWpvTGJDLWRZdnB2M0c0Q1U?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-19T14:30:00Z",
+   "title": "Ujawniono 15 milionów dokumentów. Mroczne sekrety Deutsche Banku wyszły na jaw",
+   "source": "Super Biznes",
+   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdEJ0aXd2bHluOS15U0Eyck95Z1BGV0lxRVpBVExVUWk2cDZHNTFvVmNrNVd5RnFUVHE4MWl4ektEM2IyaDdCc3pPUU0xRkVhYzRKemdBNmlBbDV0NFl2dE9TcWFKNmZTaUN3X3JWNFlVQ3diSTNyTlphaUNXbnNZdUg3X3ZybXVGUUdLaG1wOUN1RFdXNFhnUGhOLWpnN0kyOVRhRElJRnhveXgxX1dWckcwZS1yVDlSTXhrbWN6RWdHSXl1SjZxcw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-19T14:42:24Z",
+   "title": "摩根大通稱部分客户信息在供應商遭受的網絡攻擊中泄露",
+   "source": "TradingView",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6djdaSGJzRllYTjRGMnFoNGFoUzV1M0dRVlUzeHh6RFp5Sy1XdlJ1dW1RV0xJa1J4TkVuRlVXNEdiTm1hS1Rabk1PcWIzMXhrVVA3YkZPelhYc3VsQkRXQ3NCNTBoYm5xVkE?oc=5",
    "n_outlets": 1,
    "also": []
   }
