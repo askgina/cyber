@@ -53,7 +53,7 @@
 
   // Counts by window. Last hour and 24h are recomputed in the browser so they stay current between hourly rebuilds;
   // 7d, month and year to date come from the build (full DefiLlama, CISA and HIBP history; ransomware.live monthly stats).
-  const WINS = [["1h", "Last hour"], ["24h", "Last 24h"], ["7d", "Last 7 days"], ["mtd", "This month"], ["ytd", "Year to date"]];
+  const WINS = [["1h", "Last hour"], ["24h", "Last 24h"], ["7d", "Last 7 days"], ["30d", "Last 30 days"], ["ytd", "Year to date"]];
   function windows(D) {
     const W = (D.windows && D.windows.rows) || {};
     const now = Date.now();
@@ -96,6 +96,7 @@
       const changed = T.prevKpi[w] != null && T.prevKpi[w] !== n;
       T.prevKpi[w] = n;
       const cr = r.crypto ? `${r.crypto.n}${r.crypto.usd ? " · " + B.fmtUSD(r.crypto.usd) : ""}` : "n/a";
+      const top = r.crypto && r.crypto.top && r.crypto.top.usd >= 1e7 && (w === "7d" || w === "30d" || w === "ytd") ? r.crypto.top : null;
       const br = r.breach ? `${r.breach.n}${r.breach.acc ? " · " + B.compact(r.breach.acc) : ""}` : "n/a";
       return el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: "Crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP" },
         el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, "incidents")),
@@ -103,7 +104,9 @@
           line("Crypto", cr),
           line("Ransomware", r.ransomware ? r.ransomware.n.toLocaleString("en-US") : "n/a"),
           line("Exploited CVEs", r.kev ? String(r.kev.n) : "n/a"),
-          line("Breaches", br)));
+          line("Breaches", br),
+          null),
+        top ? el("div", { class: "wt" }, el("em", {}, "Largest "), `${top.name.replace(/ CEX$/, "")} ${B.fmtUSD(top.usd)}, ${B.fmtDate(top.date)}`) : null);
     }));
   }
 

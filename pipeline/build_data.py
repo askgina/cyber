@@ -120,7 +120,7 @@ llama_all = []
 try:
     for h in json.loads(get("https://api.llama.fi/hacks")):
         d0 = dt.datetime.fromtimestamp(h["date"], dt.timezone.utc)
-        llama_all.append((d0, h.get("amount") or 0))
+        llama_all.append((d0, h.get("amount") or 0, h.get("name")))
         if days_ago(d0) > 30:
             if h.get("description"):
                 h["_date"] = d0.strftime("%Y-%m-%d"); crypto_hist.append(h)
@@ -347,7 +347,7 @@ if brief:
 def win_bounds():
     som = NOW.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
     soy = som.replace(month=1)
-    return {"1h": NOW - dt.timedelta(hours=1), "24h": NOW - dt.timedelta(hours=24), "7d": NOW - dt.timedelta(days=7), "mtd": som, "ytd": soy}
+    return {"1h": NOW - dt.timedelta(hours=1), "24h": NOW - dt.timedelta(hours=24), "7d": NOW - dt.timedelta(days=7), "30d": NOW - dt.timedelta(days=30), "ytd": soy}
 WB = win_bounds()
 def day_in(d, w):  # day-granular dates count from the start of their day
     return d >= WB[w].replace(hour=0, minute=0, second=0, microsecond=0) if w in ("1h", "24h", "7d") else d >= WB[w]
@@ -362,14 +362,15 @@ for w in WB:
         rows_ = [c for c in crypto if seen_in(c.get("listed_at"), parse_iso(c["date"]), w)]
         cw[w] = {"n": len(rows_), "usd": sum(c["amount"] or 0 for c in rows_)}
     else:
-        rows_ = [a for d, a in llama_all if d >= WB[w]]
-        cw[w] = {"n": len(rows_), "usd": sum(rows_)}
+        rows_ = [(a, nm, d) for d, a, nm in llama_all if d >= WB[w]]
+        top = max(rows_, default=None)
+        cw[w] = {"n": len(rows_), "usd": sum(a for a, _, _ in rows_),
+                 "top": {"name": top[1], "usd": top[0], "date": top[2].strftime("%Y-%m-%d")} if top else None}
 windows["rows"]["crypto"] = cw
 yr, mo = str(NOW.year), NOW.month
 rm = (ransom_monthly.get("months") or {}).get(yr)
-rw = {w: {"n": sum(1 for v in victims if parse_iso(v["date"]) >= WB[w])} for w in ("1h", "24h", "7d")}
+rw = {w: {"n": sum(1 for v in victims if parse_iso(v["date"]) >= WB[w])} for w in ("1h", "24h", "7d", "30d")}
 if rm:
-    rw["mtd"] = {"n": rm[mo - 1], "src": "ransomware.live stats"}
     rw["ytd"] = {"n": sum(rm[:mo]), "src": "ransomware.live stats"}
 windows["rows"]["ransomware"] = rw
 kw = {}
