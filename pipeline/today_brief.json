@@ -1,17 +1,7 @@
 {
- "updated": "2026-11-21T06:29:03Z",
- "headline": "ZOZO and Marui disclosed major exposures tied to PLAID’s KARTE platform, while Peach Aviation reported nearly 9 million records exposed in a separate vendor breach. Bitrise’s full incident report identified unauthorized file access in 15 customer workspaces.",
+ "updated": "2026-11-21T07:26:38Z",
+ "headline": "Marui Group disclosed that the breach of PLAID’s KARTE platform exposed 8.83 million Marui records and 8.5 million Epos Card records, with possible overlap. Illinois is investigating an apparent cyberattack attempt at Algonquin Dam and says the dam remained operational.",
  "incidents": [
-  {
-   "org": "ZOZO",
-   "what": "ZOZO confirmed customer data exposure through KARTE. The ZOZOTOWN and WEAR counts may overlap; passwords and payment cards were not affected.",
-   "scale": "15.18M ZOZOTOWN members; 13.93M WEAR members",
-   "patterns": [
-    "supply-chain",
-    "data-exposure"
-   ],
-   "eid": "n-c15f1b33"
-  },
   {
    "org": "Marui Group (Marui and Epos Card)",
    "what": "Marui Group confirmed that unauthorized access at marketing vendor PLAID exposed Marui retail and Epos Card data.",
@@ -21,16 +11,6 @@
     "data-exposure"
    ],
    "eid": "n-e8e9ed7e"
-  },
-  {
-   "org": "Peach Aviation",
-   "what": "Peach disclosed that an October intrusion at email vendor Yumirulink affected customer records. Passport and card information was not involved.",
-   "scale": "8,997,106 records; unique-person count not disclosed",
-   "patterns": [
-    "supply-chain",
-    "data-exposure"
-   ],
-   "eid": "n-50447cac"
   },
   {
    "org": "Federal Bureau of Investigation (FBI)",
@@ -78,47 +58,65 @@
    "eid": "n-1434bdb8"
   },
   {
-   "org": "WOW WORLD",
-   "what": "WOW WORLD confirmed that unauthorized access to service servers exposed information it held for four clients.",
-   "scale": "About 49,000 records; may include duplicates",
+   "org": "Illinois Department of Natural Resources",
+   "what": "Illinois disclosed an investigation into an apparent cyberattack attempt at Algonquin Dam; the agency said the dam remained operational.",
+   "scale": "No disruption reported",
    "patterns": [
-    "supply-chain",
+    "enterprise-platform"
+   ],
+   "eid": "n-fbd0be68"
+  },
+  {
+   "org": "Tigerfish",
+   "what": "Tigerfish secured a publicly exposed storage system holding customer transcription material after being alerted to the issue.",
+   "scale": "Affected count not disclosed",
+   "patterns": [
     "data-exposure"
    ],
-   "eid": "x-33aa3516"
+   "eid": "n-91f1fffc"
   },
   {
-   "org": "Wagyu (XMR1)",
-   "what": "Wagyu’s operator attributed the incident to a hosting provider and promised reimbursements; the cause has not been independently verified.",
-   "scale": "About $13.5M in earlier sales; no new loss reported",
+   "org": "Kurly",
+   "what": "Kurly said unauthorized access exposed curator-program data and two other customers’ member numbers.",
+   "scale": "10,701 people",
    "patterns": [
-    "key-compromise",
-    "supply-chain"
-   ],
-   "eid": "c-9e95d8b0",
-   "update": true,
-   "since": "2026-11-20"
-  },
-  {
-   "org": "Bitrise",
-   "what": "Bitrise said it restored services and linked its full report, which describes unauthorized file access in 15 customer workspaces.",
-   "scale": "15 customer workspaces",
-   "patterns": [
-    "key-compromise",
     "data-exposure"
    ],
-   "eid": "x-6aec74ba",
-   "update": true,
-   "since": "2026-11-13"
+   "eid": "n-46f1d666"
   },
   {
-   "org": "DeFiChain",
-   "what": "DeFiChain gave a December remediation target and reported progress on Ocean and Light Wallet access.",
-   "scale": "No reopening date announced",
-   "patterns": [],
-   "eid": "x-5ed6a51c",
+   "org": "US Department of Agriculture",
+   "what": "NBC News reported that unauthorized parties accessed a farmer-payment system in the incident that disrupted USDA systems earlier in the week.",
+   "scale": "Extent of access unconfirmed",
+   "patterns": [
+    "outage",
+    "data-exposure"
+   ],
+   "eid": "n-62a6f6b1",
    "update": true,
-   "since": "2026-11-03"
+   "since": "2026-11-16"
+  },
+  {
+   "org": "SEGA Fave",
+   "what": "SEGA Fave began restoring online play for more arcade games on a trial basis after the ALL.Net and Aime outage.",
+   "scale": "Partial restart",
+   "patterns": [
+    "outage"
+   ],
+   "eid": "n-0c6d63df",
+   "update": true,
+   "since": "2026-11-01"
+  },
+  {
+   "org": "Rokkatei",
+   "what": "Rokkatei’s second notice said customer personal information may also have been exposed in the online shop incident.",
+   "scale": "No revised count disclosed",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "x-14355224",
+   "update": true,
+   "since": "2026-10-21"
   }
  ]
 }
