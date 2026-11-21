@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T11:25:41Z",
- "headline": "Chainflip paused operations to investigate a possible vault exploit; it has not confirmed the $4.86 million outflow reported by Onchain Lens. CNN reported a suspected intrusion into the FBI’s national crime database, but the bureau has not publicly confirmed the scope.",
+ "updated": "2026-11-21T12:26:07Z",
+ "headline": "Chainflip halted operations over a possible vault exploit; Onchain Lens reported a $4.86 million outflow that Chainflip had not confirmed. The FBI is reportedly investigating a suspected intrusion into its national crime database; the bureau has not publicly confirmed the intrusion or its scope.",
  "incidents": [
   {
    "org": "Chainflip Ethereum vault",
@@ -64,6 +64,14 @@
    "eid": "n-959a4579"
   },
   {
+   "org": "LovelyBooks",
+   "what": "The German reading community said a cyberattack took its website offline but reported no affected personal data.",
+   "scale": "Website outage",
+   "patterns": [
+    "outage"
+   ]
+  },
+  {
    "org": "US Department of Agriculture",
    "what": "A USDA undersecretary confirmed a cyberthreat and said no data was lost, while press reports describe suspected access to a farm-payment system.",
    "scale": "Loans and payments disrupted; access scope unconfirmed",
@@ -105,17 +113,6 @@
    "eid": "n-2451e7f6",
    "update": true,
    "since": "2026-10-21"
-  },
-  {
-   "org": "DeFiChain",
-   "what": "DeFiChain expects to reverse the effects of its November exploit and deploy a fix in December, but did not give a wallet reopening date.",
-   "scale": "December target; not a reopening date",
-   "patterns": [
-    "contract-logic"
-   ],
-   "eid": "x-5ed6a51c",
-   "update": true,
-   "since": "2026-11-03"
   }
  ]
 }
