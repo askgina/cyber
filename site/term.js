@@ -86,6 +86,15 @@
       c("c-sc", r.scale || ""),
       c("c-pt", (r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : ""),
     ], { id: r.eid })));
+    if ((t.ups || []).length) {
+      box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-org", "Developments on older incidents"), c("c-sc", "Began"), c("c-pt", "")));
+      t.ups.forEach((r) => box.append(row([
+        c("c-org", el("b", {}, r.org), el("small", {}, r.what)),
+        c("c-sc", r.since ? B.fmtDate(r.since) : ""),
+        c("c-pt", (r.patterns || [])[0] ? (B.LABEL[r.patterns[0]] || r.patterns[0]) : ""),
+      ], { id: r.eid, cls: "dim" })));
+    }
+    if ((t.named || []).length) box.append(el("div", { class: "t-r t-hd t-sep" }, c("c-org", "Named on ransomware leak sites"), c("c-sc", ""), c("c-pt", "")));
     (t.named || []).forEach((v) => box.append(row([
       c("c-org", el("b", {}, v.victim), el("small", {}, `Named on ${v.group}'s leak site${v.sector && !/not found/i.test(v.sector) ? ", " + v.sector : ""}${v.country && v.country !== "??" ? ", " + v.country : ""}`)),
       c("c-sc", "Claim"), c("c-pt", B.LABEL.ransomware || "Ransomware"),

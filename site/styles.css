@@ -466,3 +466,6 @@ body.view-term { overflow: hidden; }
 .t-tabs button { white-space: nowrap; }
 @media (max-width: 36rem) { .p-hit .t-r { grid-template-columns: minmax(0, 1fr) 7rem; } .t-k:last-child { grid-column: span 2; } }
 button.t-live{background:none;border:0;padding:0;cursor:pointer;color:inherit}button.t-live:hover #t-checked{text-decoration:underline}
+.t-r.t-hd.t-sep { position: static; background: var(--off); border-top: 1px solid var(--line); }
+.tbl tbody.upd th { text-align: left; font: 500 .6875rem var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); padding-top: 1.2rem; }
+.tbl tbody.upd td { opacity: .78; }

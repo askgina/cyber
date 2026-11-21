@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T00:24:05Z",
+ "generated": "2026-11-21T00:29:18Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -4273,7 +4273,7 @@
    "hours_to_confirm": 5.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 18.5,
+   "age_h": 18.6,
    "eid": "x-37d402a7"
   },
   {
@@ -4337,7 +4337,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 24.2,
+   "age_h": 24.3,
    "eid": "x-77fc8232"
   },
   {
@@ -4450,7 +4450,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 30.1,
+   "age_h": 30.2,
    "eid": "x-7b9a9595"
   },
   {
@@ -4745,7 +4745,7 @@
    "hours_to_confirm": -12.7,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 35.7,
+   "age_h": 35.8,
    "eid": "x-28e9dc79"
   },
   {
@@ -4887,7 +4887,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 38.7,
+   "age_h": 38.8,
    "eid": "x-5a6c8d79"
   },
   {
@@ -4996,7 +4996,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 164.9,
+   "age_h": 165.0,
    "eid": "x-fbb57da1"
   }
  ],
@@ -5382,7 +5382,9 @@
     "patterns": [
      "data-exposure"
     ],
-    "eid": "b-8e8da935"
+    "eid": "b-8e8da935",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "Wagyu (XMR1)",
@@ -5392,7 +5394,9 @@
      "key-compromise",
      "supply-chain"
     ],
-    "eid": "c-9e95d8b0"
+    "eid": "c-9e95d8b0",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "Binance",
@@ -5403,7 +5407,9 @@
      "key-compromise",
      "state-linked"
     ],
-    "eid": "c-846757cf"
+    "eid": "c-846757cf",
+    "since": "2026-10-29",
+    "update": true
    },
    {
     "org": "VMware vCenter (Broadcom)",
@@ -5412,7 +5418,9 @@
     "patterns": [
      "enterprise-platform"
     ],
-    "eid": "k-63a14165"
+    "eid": "k-63a14165",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "Cisco Expressway",
@@ -5421,7 +5429,9 @@
     "patterns": [
      "edge-device"
     ],
-    "eid": "k-80fb8862"
+    "eid": "k-80fb8862",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "SAP NetWeaver",
@@ -5430,7 +5440,9 @@
     "patterns": [
      "enterprise-platform"
     ],
-    "eid": "k-8e30ace2"
+    "eid": "k-8e30ace2",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "Bell Canada",
@@ -5439,7 +5451,9 @@
     "patterns": [
      "data-exposure"
     ],
-    "eid": "n-6c623452"
+    "eid": "n-6c623452",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "J.P. Morgan Chase, Visa, Mastercard",
@@ -5449,7 +5463,9 @@
      "supply-chain",
      "data-exposure"
     ],
-    "eid": "n-bbc19bb6"
+    "eid": "n-bbc19bb6",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "Too Lost",
@@ -5458,7 +5474,9 @@
     "patterns": [
      "data-exposure"
     ],
-    "eid": "b-cc049559"
+    "eid": "b-cc049559",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "U.S. Department of Agriculture",
@@ -5467,7 +5485,9 @@
     "patterns": [
      "outage"
     ],
-    "eid": "n-755bf327"
+    "eid": "n-755bf327",
+    "since": "2026-11-20",
+    "update": false
    },
    {
     "org": "European Commission",
@@ -5477,7 +5497,9 @@
      "ai",
      "outage"
     ],
-    "eid": "x-5a6c8d79"
+    "eid": "x-5a6c8d79",
+    "since": "2026-11-19",
+    "update": false
    },
    {
     "org": "West Virginia Legislature",
@@ -5486,7 +5508,9 @@
     "patterns": [
      "outage"
     ],
-    "eid": "n-f0b8696c"
+    "eid": "n-f0b8696c",
+    "since": "2026-11-20",
+    "update": false
    }
   ]
  },

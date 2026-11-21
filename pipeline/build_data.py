@@ -287,6 +287,18 @@ for x in xsig:
     for h in x.get("matches", []) + x.get("press", []):
         o = by_ref.get(h.pop("ref", None))
         if o is not None: h["eid"] = o.get("eid")
+# Brief entries tied to an incident that started more than 3 days ago are follow-ups, not new hits.
+eid_date = {}
+for kind, rows in by_kind.items():
+    for o in rows:
+        if o.get("eid"):
+            eid_date[o["eid"]] = o.get("first") if kind == "x" else (o.get("added") if kind == "breach" else o.get("date"))
+if brief:
+    for i in brief.get("incidents", []):
+        d0 = eid_date.get(i.get("eid")) or i.get("since")
+        if d0:
+            i["since"] = d0[:10]
+            i["update"] = bool(i.get("update")) or days_ago(parse_iso(d0 if len(d0) > 10 else d0 + "T23:59:59Z")) > 3
 data = {
     "generated": iso(NOW), "errors": errors,
     "kev": {"total_catalog": kev_total, "count_7d": len(window(kev, 7)), "count_30d": len(kev),

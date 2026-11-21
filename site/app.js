@@ -502,7 +502,10 @@
     // Rows: curated first, then anything structured the brief did not cover.
     const rows = [];
     const seen = new Set();
-    if (brief) brief.incidents.forEach((i) => { rows.push({ ...i, patterns: i.patterns || pats(i.eid) }); i.eid && seen.add(i.eid); });
+    // Follow-ups on incidents that began more than 3 days ago are kept apart from today's hits.
+    const ups = [];
+    const isOld = (i) => i.update || (i.since && hoursAgo(i.since + "T23:59:59Z") > 72);
+    if (brief) brief.incidents.forEach((i) => { (isOld(i) ? ups : rows).push({ ...i, patterns: i.patterns || pats(i.eid) }); i.eid && seen.add(i.eid); });
     cr.filter((c) => !seen.has(c.eid)).sort((a, b) => (b.amount || 0) - (a.amount || 0)).forEach((c) =>
       rows.push({ org: c.name, what: `Crypto exploit${c.technique && c.technique !== "Unknown" ? ": " + c.technique.toLowerCase() : ""}${c.chains.length ? " on " + c.chains.slice(0, 2).join(", ") : ""}.`, scale: fmtUSD(c.amount), patterns: pats(c.eid), eid: c.eid, n: c.amount || 0 }));
     br.filter((b) => !seen.has(b.eid)).forEach((b) =>
@@ -533,7 +536,16 @@
       const chips = (r.patterns || []).slice(0, 1).map((p) => { const b = el("button", { type: "button", class: "chip" }, LABEL[p] || p); b.addEventListener("click", () => setFilter({ pattern: p }, true)); return b; });
       tb.append(el("tr", { class: ix >= LIM && !LIVE.allHit ? "more-row" : null, hidden: ix >= LIM && !LIVE.allHit ? "" : null }, el("td", { class: "org" }, name, el("span", { class: "what" }, r.what)), el("td", { class: "num sc" }, r.scale || ""), el("td", { class: "pc" }, chips)));
     });
-    $("#g-hit").replaceChildren(el("thead", {}, el("tr", {}, el("th", {}, "Organisation and what happened"), el("th", { class: "num" }, "Scale"), el("th", { class: "pc" }, "Pattern"))), tb);
+    const ub = el("tbody", { class: "upd" });
+    if (ups.length) {
+      ub.append(el("tr", {}, el("th", { colspan: "3" }, "Developments on older incidents")));
+      ups.forEach((r) => {
+        const name = r.eid ? el("a", { href: `#e-${r.eid}`, class: "jump" }, r.org) : el("span", {}, r.org);
+        if (r.eid) name.addEventListener("click", (x) => { x.preventDefault(); jumpTo(r.eid); });
+        ub.append(el("tr", {}, el("td", { class: "org" }, name, el("span", { class: "what" }, r.what)), el("td", { class: "num sc" }, r.since ? "since " + fmtDate(r.since) : ""), el("td", { class: "pc" })));
+      });
+    }
+    $("#g-hit").replaceChildren(el("thead", {}, el("tr", {}, el("th", {}, "Organisation and what happened"), el("th", { class: "num" }, "Scale"), el("th", { class: "pc" }, "Pattern"))), tb, ub);
     const mb = $("#g-more");
     mb.hidden = rows.length <= LIM;
     mb.textContent = LIVE.allHit ? "Show fewer" : `Show all ${rows.length}`;
@@ -544,7 +556,7 @@
     rows.forEach((r) => (r.patterns || []).forEach((p) => { cnt[p] = (cnt[p] || 0) + 1; }));
     if (rv.length) cnt.ransomware = (cnt.ransomware || 0) + rv.length;
     const pr = Object.entries(cnt).sort((a, b) => b[1] - a[1]).slice(0, 8);
-    LIVE.today = { rows, rv, named, usd, acc, cr, br, kv, nw, pats: pr };
+    LIVE.today = { rows, ups, rv, named, usd, acc, cr, br, kv, nw, pats: pr };
     const max = Math.max(1, ...pr.map((p) => p[1]));
     $("#g-pat").replaceChildren(...pr.map(([p, n]) => {
       const b = el("button", { type: "button", class: "gpr" }, el("span", { class: "gl" }, LABEL[p] || p), el("span", { class: "gb" }, el("i", { style: `--w:${Math.max(4, (n / max) * 100)}%` })), el("span", { class: "gn" }, String(n)));
