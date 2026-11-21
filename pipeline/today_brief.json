@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T13:26:47Z",
- "headline": "Chainflip paused deposits, withdrawals and swaps while it investigates a possible vault exploit; trackers estimated a $4.86 million outflow. CNN reported a suspected intrusion targeting the FBI’s national crime database, but the FBI has not publicly confirmed its scope.",
+ "updated": "2026-11-21T14:27:09Z",
+ "headline": "Chainflip kept swaps and withdrawals paused while investigating an Ethereum vault outflow estimated at $4.86 million by trackers. CNN reported a suspected FBI crime-database intrusion, and Nissan confirmed unauthorized access to part of its dealer diagnostics system.",
  "incidents": [
   {
    "org": "Chainflip Ethereum vault",
@@ -16,7 +16,7 @@
    "what": "CNN and NBC News reported that the FBI is investigating an apparent intrusion into its national crime database; the bureau had not publicly confirmed it.",
    "scale": "Scope and access unconfirmed",
    "patterns": [],
-   "eid": "n-08e8aace"
+   "eid": "n-efef5bd5"
   },
   {
    "org": "SAP NetWeaver",
@@ -28,6 +28,15 @@
    "eid": "k-8e30ace2"
   },
   {
+   "org": "Nissan",
+   "what": "Nissan suspended part of its global dealer diagnostics system after detecting unauthorized access, delaying some repairs and replacement-key programming.",
+   "scale": "Partial outage",
+   "patterns": [
+    "outage"
+   ],
+   "eid": "n-1e18c46b"
+  },
+  {
    "org": "Universeum",
    "what": "Universeum told guests that an attack on booking supplier Visit Group International exposed contact information.",
    "scale": "About 280,000 contact records; no payment data reported exposed",
@@ -36,14 +45,6 @@
     "data-exposure"
    ],
    "eid": "n-f0d36592"
-  },
-  {
-   "org": "YMCA of Singapore",
-   "what": "YMCA reported a breach of its Youth For Causes portal and database but could not determine whether personal data was taken.",
-   "scale": "Scope unknown",
-   "patterns": [
-    "data-exposure"
-   ]
   },
   {
    "org": "Staples Canada",
@@ -65,19 +66,22 @@
    "eid": "n-1434bdb8"
   },
   {
-   "org": "Germany’s Federal Employment Agency",
-   "what": "The agency confirmed a cyberattack on its separate property-management systems and said it had no indication that sensitive benefits-recipient data was affected.",
-   "scale": "Damage not disclosed",
-   "patterns": [],
-   "eid": "n-959a4579"
+   "org": "YMCA of Singapore",
+   "what": "YMCA reported a breach of its Youth For Causes portal and database but could not determine whether personal data was taken.",
+   "scale": "Scope unknown",
+   "patterns": [
+    "data-exposure"
+   ]
   },
   {
-   "org": "LovelyBooks",
-   "what": "The German reading community said a cyberattack took its website offline but reported no affected personal data.",
-   "scale": "Website outage",
+   "org": "OpenRouter / MiniMax",
+   "what": "OpenRouter customers reported receiving warnings that a third party may have read prompts sent to MiniMax, but the number affected is unknown.",
+   "scale": "Scope unknown",
    "patterns": [
-    "outage"
-   ]
+    "ai",
+    "data-exposure"
+   ],
+   "eid": "x-2d44e830"
   },
   {
    "org": "US Department of Agriculture",
