@@ -1,157 +1,758 @@
 [
  {
-  "project": "Fluidkey", "subject": "Fluidkey", "aliases": ["Fluidkey"], "category": "crypto",
+  "project": "Fluidkey",
+  "subject": "Fluidkey",
+  "aliases": [
+   "Fluidkey"
+  ],
+  "category": "crypto",
   "claim": "Bitquery traced at least $1.58 million in unauthorized Fluidkey payouts across six chains over about 36 minutes. Fluidkey took services offline at 18:05 UTC and is working with SEAL 911; the entry point remains unknown.",
   "amount_usd_claimed": 1580000,
   "posts": [
-   {"url": "https://x.com/fluidkey/status/2123481430634492278", "role": "official", "stance": "confirm", "evidence": "none", "note": "Security incident affecting users; avoid website and app."},
-   {"url": "https://x.com/DefiantNews/status/2123487975145378208", "role": "media", "stance": "report", "evidence": "link", "note": "Reports the notice; loss not stated."},
-   {"url": "https://x.com/fluidkey/status/2123510970165436704", "role": "official", "stance": "update", "evidence": "none", "note": "Reports no further unauthorized transactions after shutdown and says SEAL 911 is assisting."},
-   {"url": "https://x.com/ReginaldWatches/status/2123521238534680870", "role": "unknown", "stance": "report", "evidence": "none", "note": "Warns users about fake refund links."},
-   {"url": "https://x.com/hazae41/status/2123648034194239946", "role": "investigator", "stance": "report", "evidence": "onchain", "note": "Describes observed unauthorized relayer payouts."}
+   {
+    "url": "https://x.com/fluidkey/status/2123481430634492278",
+    "role": "official",
+    "stance": "confirm",
+    "evidence": "none",
+    "note": "Security incident affecting users; avoid website and app."
+   },
+   {
+    "url": "https://x.com/DefiantNews/status/2123487975145378208",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Reports the notice; loss not stated."
+   },
+   {
+    "url": "https://x.com/fluidkey/status/2123510970165436704",
+    "role": "official",
+    "stance": "update",
+    "evidence": "none",
+    "note": "Reports no further unauthorized transactions after shutdown and says SEAL 911 is assisting."
+   },
+   {
+    "url": "https://x.com/ReginaldWatches/status/2123521238534680870",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Warns users about fake refund links."
+   },
+   {
+    "url": "https://x.com/hazae41/status/2123648034194239946",
+    "role": "investigator",
+    "stance": "report",
+    "evidence": "onchain",
+    "note": "Describes observed unauthorized relayer payouts."
+   }
   ],
   "postmortem": null,
-  "links": [{"label": "Bitquery investigation", "url": "https://www.bitquery.io/investigations/fluidkey-hack"},
-            {"label": "Fluidkey impersonation warning", "url": "https://x.com/fluidkey/status/2123701122208870665"},
-            {"label": "Search X", "url": "https://x.com/search?f=live&q=Fluidkey"}]
+  "links": [
+   {
+    "label": "Bitquery investigation",
+    "url": "https://www.bitquery.io/investigations/fluidkey-hack"
+   },
+   {
+    "label": "Fluidkey impersonation warning",
+    "url": "https://x.com/fluidkey/status/2123701122208870665"
+   },
+   {
+    "label": "Search X",
+    "url": "https://x.com/search?f=live&q=Fluidkey"
+   }
+  ]
  },
  {
-  "project": "Wagyu (XMR1)", "subject": "Wagyu XMR1", "aliases": ["Wagyu", "XMR1"], "category": "crypto",
+  "project": "Wagyu (XMR1)",
+  "subject": "Wagyu XMR1",
+  "aliases": [
+   "Wagyu",
+   "XMR1"
+  ],
+  "category": "crypto",
   "claim": "About 5.2M XMR1 moved from the token's deployer address to a new wallet and roughly $13.5M was sold into Hyperliquid's order book, crashing the wrapped Monero token about 99.8%. Wagyu's operator says the deployer key sat on a previously deleted server at a compromised hosting provider and promises refunds; the key compromise is his account, not independently verified.",
   "amount_usd_claimed": 13500000,
   "posts": [
-   {"url": "https://x.com/0xLegendman/status/2123673331341709788", "role": "unknown", "stance": "report", "evidence": "none", "note": "Early exploit claim, ~$13M."},
-   {"url": "https://x.com/m3aadh/status/2123673623978516660", "role": "user", "stance": "speculation", "evidence": "none", "note": "Asks whether it is an exit rug."},
-   {"url": "https://x.com/lookonchain/status/2123656301561667859", "role": "investigator", "stance": "report", "evidence": "onchain", "note": "Traces XMR1 sales and about $13.2 million in subsequent ETH purchases."},
-   {"url": "https://x.com/crypto_banter/status/2123674436033294701", "role": "media", "stance": "report", "evidence": "link", "note": "Relays Lookonchain's transaction analysis."},
-   {"url": "https://x.com/GoPlusSecurity/status/2123694304959021131", "role": "security", "stance": "report", "evidence": "onchain", "note": "Reports suspicious transfers from the deployer and conversion of proceeds."},
-   {"url": "https://x.com/CryptoTimes_io/status/2123710046450090318", "role": "media", "stance": "report", "evidence": "link", "note": "Cites a CertiK flag; cause unconfirmed."},
-   {"url": "https://x.com/PeckShieldAlert/status/2123717364827267434", "role": "security", "stance": "report", "evidence": "onchain", "note": "Traces the deployer transfer, token price collapse and conversion of proceeds."},
-   {"url": "https://x.com/emeraldsXBT/status/2123733309150912646", "role": "user", "stance": "report", "evidence": "none", "note": "Says they held XMR1 on Hyperliquid during the sell-off."},
-   {"url": "https://x.com/PerpetualCow/status/2123740930838589734", "role": "official", "stance": "update", "evidence": "none", "note": "Promises reimbursement for XMR1 market makers but gives no timetable."},
-   {"url": "https://x.com/XBToshi/status/2123750837931639036", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Reports the operator's reimbursement pledge."},
-   {"url": "https://x.com/PerpetualCow/status/2123760480061718801", "role": "official", "stance": "postmortem", "evidence": "none", "note": "Attributes the compromise to a deployer key exposed through a breached hosting provider."},
-   {"url": "https://x.com/crypto_banter/status/2123769914678759459", "role": "media", "stance": "update", "evidence": "link", "note": "Relays the hosting-provider explanation."},
-   {"url": "https://x.com/DailyDarkWeb/status/2123786350730137992", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Summary citing CoinDesk."},
-   {"url": "https://x.com/TheBlockCo/status/2123798920992047227", "role": "media", "stance": "report", "evidence": "link", "note": "Reports the sell-off, the founder's explanation and the proposed refunds."}
+   {
+    "url": "https://x.com/0xLegendman/status/2123673331341709788",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Early exploit claim, ~$13M."
+   },
+   {
+    "url": "https://x.com/m3aadh/status/2123673623978516660",
+    "role": "user",
+    "stance": "speculation",
+    "evidence": "none",
+    "note": "Asks whether it is an exit rug."
+   },
+   {
+    "url": "https://x.com/lookonchain/status/2123656301561667859",
+    "role": "investigator",
+    "stance": "report",
+    "evidence": "onchain",
+    "note": "Traces XMR1 sales and about $13.2 million in subsequent ETH purchases."
+   },
+   {
+    "url": "https://x.com/crypto_banter/status/2123674436033294701",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Relays Lookonchain's transaction analysis."
+   },
+   {
+    "url": "https://x.com/GoPlusSecurity/status/2123694304959021131",
+    "role": "security",
+    "stance": "report",
+    "evidence": "onchain",
+    "note": "Reports suspicious transfers from the deployer and conversion of proceeds."
+   },
+   {
+    "url": "https://x.com/CryptoTimes_io/status/2123710046450090318",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Cites a CertiK flag; cause unconfirmed."
+   },
+   {
+    "url": "https://x.com/PeckShieldAlert/status/2123717364827267434",
+    "role": "security",
+    "stance": "report",
+    "evidence": "onchain",
+    "note": "Traces the deployer transfer, token price collapse and conversion of proceeds."
+   },
+   {
+    "url": "https://x.com/emeraldsXBT/status/2123733309150912646",
+    "role": "user",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Says they held XMR1 on Hyperliquid during the sell-off."
+   },
+   {
+    "url": "https://x.com/PerpetualCow/status/2123740930838589734",
+    "role": "official",
+    "stance": "update",
+    "evidence": "none",
+    "note": "Promises reimbursement for XMR1 market makers but gives no timetable."
+   },
+   {
+    "url": "https://x.com/XBToshi/status/2123750837931639036",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Reports the operator's reimbursement pledge."
+   },
+   {
+    "url": "https://x.com/PerpetualCow/status/2123760480061718801",
+    "role": "official",
+    "stance": "postmortem",
+    "evidence": "none",
+    "note": "Attributes the compromise to a deployer key exposed through a breached hosting provider."
+   },
+   {
+    "url": "https://x.com/crypto_banter/status/2123769914678759459",
+    "role": "media",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Relays the hosting-provider explanation."
+   },
+   {
+    "url": "https://x.com/DailyDarkWeb/status/2123786350730137992",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Summary citing CoinDesk."
+   },
+   {
+    "url": "https://x.com/TheBlockCo/status/2123798920992047227",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Reports the sell-off, the founder's explanation and the proposed refunds."
+   }
   ],
-  "postmortem": {"url": "https://x.com/PerpetualCow/status/2123760480061718801", "label": "Wagyu operator’s post-mortem", "date": "2026-11-20T12:48:50Z"},
-  "links": [{"label": "Bitquery investigation", "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"},
-            {"label": "The Block", "url": "https://www.theblock.co/news/defi/2026-11-20-wagyus-xmr1-wrapped-monero-plunges-99-after-13-million-hack-founder-promises-refunds-444747"},
-            {"label": "Search X", "url": "https://x.com/search?f=live&q=Wagyu%20XMR1"}]
+  "postmortem": {
+   "url": "https://x.com/PerpetualCow/status/2123760480061718801",
+   "label": "Wagyu operator’s post-mortem",
+   "date": "2026-11-20T12:48:50Z"
+  },
+  "links": [
+   {
+    "label": "Bitquery investigation",
+    "url": "https://bitquery.io/investigations/xmr1-hyperliquid-hack"
+   },
+   {
+    "label": "The Block",
+    "url": "https://www.theblock.co/news/defi/2026-11-20-wagyus-xmr1-wrapped-monero-plunges-99-after-13-million-hack-founder-promises-refunds-444747"
+   },
+   {
+    "label": "Search X",
+    "url": "https://x.com/search?f=live&q=Wagyu%20XMR1"
+   }
+  ]
  },
  {
   "project": "Chase, Visa and Mastercard vendor breach",
   "subject": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
-  "aliases": ["J.P. Morgan Chase", "Visa", "Mastercard"],
+  "aliases": [
+   "J.P. Morgan Chase",
+   "Visa",
+   "Mastercard"
+  ],
   "category": "breach",
   "claim": "Chase said attackers accessed marketing data held by vendors, and Mastercard confirmed limited email exposure in one benefit program. Visa said a provider in Asia Pacific was affected but its own systems and payment data were not; the providers and total number of people affected have not been confirmed.",
   "amount_usd_claimed": null,
   "posts": [
-   {"url": "https://x.com/SpecialSitsNews/status/2123454468079632585", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Reports claims of vendor attacks affecting customers of the three companies."},
-   {"url": "https://x.com/LTSmash420/status/2123462462414438602", "role": "unknown", "stance": "report", "evidence": "none", "note": "Relays an extortion group's claim that it published customer records."},
-   {"url": "https://x.com/rohanpaul_ai/status/2123591143606878688", "role": "unknown", "stance": "report", "evidence": "none", "note": "Distinguishes vendor compromises from the companies' own systems."},
-   {"url": "https://x.com/TimesNow/status/2123604913381073038", "role": "media", "stance": "report", "evidence": "none", "note": "Reports customer data exposure at vendors and says payment details were not exposed."},
-   {"url": "https://x.com/BleepinComputer/status/2123808174767485321", "role": "media", "stance": "report", "evidence": "link", "note": "Links reporting that quotes all three companies about third-party exposure."},
-   {"url": "https://x.com/NewsHour/status/2123827008530424277", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Chase's statement that vendor-held marketing data was accessed."},
-   {"url": "https://x.com/The_Cyber_News/status/2123661435154936175", "role": "media", "stance": "report", "evidence": "link", "note": "Reports customer data exposure tied to outside service providers."},
-   {"url": "https://x.com/TheDailyJagran/status/2123649234821939625", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Chase may notify customers whose marketing information was exposed."},
-   {"url": "https://x.com/Newsforce/status/2123452946520162545", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Relays reports of limited customer information exposure and no payment data."},
-   {"url": "https://x.com/RedWavePress/status/2123517207028396295", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Cites Fox News reporting and distinguishes the breach from earlier outages."},
-   {"url": "https://x.com/TheCyberSecHub/status/2123809353878958553", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Shares BleepingComputer’s account of customer exposure at service providers."}
+   {
+    "url": "https://x.com/SpecialSitsNews/status/2123454468079632585",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Reports claims of vendor attacks affecting customers of the three companies."
+   },
+   {
+    "url": "https://x.com/LTSmash420/status/2123462462414438602",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Relays an extortion group's claim that it published customer records."
+   },
+   {
+    "url": "https://x.com/rohanpaul_ai/status/2123591143606878688",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Distinguishes vendor compromises from the companies' own systems."
+   },
+   {
+    "url": "https://x.com/TimesNow/status/2123604913381073038",
+    "role": "media",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Reports customer data exposure at vendors and says payment details were not exposed."
+   },
+   {
+    "url": "https://x.com/BleepinComputer/status/2123808174767485321",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Links reporting that quotes all three companies about third-party exposure."
+   },
+   {
+    "url": "https://x.com/NewsHour/status/2123827008530424277",
+    "role": "media",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Reports Chase's statement that vendor-held marketing data was accessed."
+   },
+   {
+    "url": "https://x.com/The_Cyber_News/status/2123661435154936175",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Reports customer data exposure tied to outside service providers."
+   },
+   {
+    "url": "https://x.com/TheDailyJagran/status/2123649234821939625",
+    "role": "media",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Reports Chase may notify customers whose marketing information was exposed."
+   },
+   {
+    "url": "https://x.com/Newsforce/status/2123452946520162545",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Relays reports of limited customer information exposure and no payment data."
+   },
+   {
+    "url": "https://x.com/RedWavePress/status/2123517207028396295",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Cites Fox News reporting and distinguishes the breach from earlier outages."
+   },
+   {
+    "url": "https://x.com/TheCyberSecHub/status/2123809353878958553",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Shares BleepingComputer’s account of customer exposure at service providers."
+   }
   ],
   "postmortem": null,
-  "links": [{"label": "BleepingComputer reporting with company statements", "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"}]
+  "links": [
+   {
+    "label": "BleepingComputer reporting with company statements",
+    "url": "https://www.bleepingcomputer.com/news/security/vendor-data-breach-exposes-chase-visa-mastercard-customer-info/"
+   }
+  ]
  },
  {
   "project": "EDUTEC Chile",
   "subject": "Alleged EDUTEC Chile data exposure",
-  "aliases": ["EDUTEC", "edutec.cl"],
+  "aliases": [
+   "EDUTEC",
+   "edutec.cl"
+  ],
   "category": "breach",
   "claim": "VECERT Analyzer flagged a claim that over 10 GB of data attributed to Chilean education platform EDUTEC includes student and teacher records and photographs. The authenticity, source and number of people affected are unverified.",
   "amount_usd_claimed": null,
   "posts": [
-   {"url": "https://x.com/VECERTRadar/status/2123570233503879373", "role": "security", "stance": "report", "evidence": "none", "note": "Flags an unverified claim of more than 10 GB of education records and photos."},
-   {"url": "https://x.com/JzConstant/status/2123577538597331162", "role": "unknown", "stance": "report", "evidence": "none", "note": "Repeats VECERT's allegation without offering independent evidence."}
+   {
+    "url": "https://x.com/VECERTRadar/status/2123570233503879373",
+    "role": "security",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Flags an unverified claim of more than 10 GB of education records and photos."
+   },
+   {
+    "url": "https://x.com/JzConstant/status/2123577538597331162",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Repeats VECERT's allegation without offering independent evidence."
+   }
   ],
   "postmortem": null,
-  "links": [{"label": "CiberLATAM Radar", "url": "https://ciberlatam.com/en/pulse"}]
+  "links": [
+   {
+    "label": "CiberLATAM Radar",
+    "url": "https://ciberlatam.com/en/pulse"
+   }
+  ]
  },
  {
-  "project": "Binance CEX", "subject": "Binance CEX: October theft recovery", "aliases": ["Binance", "Binance October 29 theft"], "category": "crypto",
+  "project": "Binance CEX",
+  "subject": "Binance CEX: October theft recovery",
+  "aliases": [
+   "Binance",
+   "Binance October 29 theft"
+  ],
+  "category": "crypto",
   "claim": "Binance’s preliminary report attributes the October 29 theft of roughly $6.3 billion to social engineering, compromised employee devices and unauthorized access to wallet signing. In its latest update Binance said asset recovery and legal proceedings remain ongoing, without disclosing a recovered total.",
   "amount_usd_claimed": 6300000000,
   "posts": [
-   {"url": "https://x.com/whale_alert/status/2123691969163514186", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Flags a transfer attributed to assets stolen in October."},
-   {"url": "https://x.com/OnchainLens/status/2123705781673726431", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Tracks new movements of funds associated with the October theft."},
-   {"url": "https://x.com/PeckShieldAlert/status/2123712551410380833", "role": "security", "stance": "update", "evidence": "onchain", "note": "Reports redistribution of funds from an address labeled as connected to the theft."},
-   {"url": "https://x.com/Lookonchain/status/2123315988565471543", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Tracks an earlier movement of ether attributed to the theft."},
-   {"url": "https://x.com/WuBlockchain/status/2123709212010434813", "role": "media", "stance": "update", "evidence": "none", "note": "Summarizes Onchain Lens reporting on movements over two days."},
-   {"url": "https://x.com/TheNationalNews/status/2123290669141602578", "role": "media", "stance": "update", "evidence": "link", "note": "Quotes Binance on obtaining court orders to support asset recovery."},
-   {"url": "https://x.com/khaleejtimes/status/2123566994901307846", "role": "media", "stance": "update", "evidence": "link", "note": "Reports the Abu Dhabi court’s worldwide freezing order."},
-   {"url": "https://x.com/Cointelegraph/status/2123657722994282813", "role": "media", "stance": "update", "evidence": "link", "note": "Reports the freezing order concerns crypto stolen in October."},
-   {"url": "https://x.com/business/status/2123208419934912976", "role": "media", "stance": "update", "evidence": "link", "note": "Reports Binance obtained a $6.5 billion freezing order."},
-   {"url": "https://x.com/binance/status/2117626126214504729", "role": "official", "stance": "postmortem", "evidence": "none", "note": "Publishes preliminary findings on the employee-device compromise and unauthorized wallet signing."},
-   {"url": "https://x.com/binance/status/2123793917007298607", "role": "official", "stance": "update", "evidence": "none", "note": "Says recovery work and legal processes continue, without disclosing a recovered total."},
-   {"url": "https://x.com/binance/status/2116258356109496479", "role": "official", "stance": "confirm", "evidence": "none", "note": "Confirms unauthorized withdrawals and an estimated $6.3 billion loss."},
-   {"url": "https://x.com/reallive3tv/status/2123776771204223102", "role": "media", "stance": "update", "evidence": "none", "note": "Summarizes reported new transfers tied to the already disclosed October theft."}
+   {
+    "url": "https://x.com/whale_alert/status/2123691969163514186",
+    "role": "investigator",
+    "stance": "update",
+    "evidence": "onchain",
+    "note": "Flags a transfer attributed to assets stolen in October."
+   },
+   {
+    "url": "https://x.com/OnchainLens/status/2123705781673726431",
+    "role": "investigator",
+    "stance": "update",
+    "evidence": "onchain",
+    "note": "Tracks new movements of funds associated with the October theft."
+   },
+   {
+    "url": "https://x.com/PeckShieldAlert/status/2123712551410380833",
+    "role": "security",
+    "stance": "update",
+    "evidence": "onchain",
+    "note": "Reports redistribution of funds from an address labeled as connected to the theft."
+   },
+   {
+    "url": "https://x.com/Lookonchain/status/2123315988565471543",
+    "role": "investigator",
+    "stance": "update",
+    "evidence": "onchain",
+    "note": "Tracks an earlier movement of ether attributed to the theft."
+   },
+   {
+    "url": "https://x.com/WuBlockchain/status/2123709212010434813",
+    "role": "media",
+    "stance": "update",
+    "evidence": "none",
+    "note": "Summarizes Onchain Lens reporting on movements over two days."
+   },
+   {
+    "url": "https://x.com/TheNationalNews/status/2123290669141602578",
+    "role": "media",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Quotes Binance on obtaining court orders to support asset recovery."
+   },
+   {
+    "url": "https://x.com/khaleejtimes/status/2123566994901307846",
+    "role": "media",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Reports the Abu Dhabi court’s worldwide freezing order."
+   },
+   {
+    "url": "https://x.com/Cointelegraph/status/2123657722994282813",
+    "role": "media",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Reports the freezing order concerns crypto stolen in October."
+   },
+   {
+    "url": "https://x.com/business/status/2123208419934912976",
+    "role": "media",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Reports Binance obtained a $6.5 billion freezing order."
+   },
+   {
+    "url": "https://x.com/binance/status/2117626126214504729",
+    "role": "official",
+    "stance": "postmortem",
+    "evidence": "none",
+    "note": "Publishes preliminary findings on the employee-device compromise and unauthorized wallet signing."
+   },
+   {
+    "url": "https://x.com/binance/status/2123793917007298607",
+    "role": "official",
+    "stance": "update",
+    "evidence": "none",
+    "note": "Says recovery work and legal processes continue, without disclosing a recovered total."
+   },
+   {
+    "url": "https://x.com/binance/status/2116258356109496479",
+    "role": "official",
+    "stance": "confirm",
+    "evidence": "none",
+    "note": "Confirms unauthorized withdrawals and an estimated $6.3 billion loss."
+   },
+   {
+    "url": "https://x.com/reallive3tv/status/2123776771204223102",
+    "role": "media",
+    "stance": "update",
+    "evidence": "none",
+    "note": "Summarizes reported new transfers tied to the already disclosed October theft."
+   }
   ],
-  "postmortem": {"url": "https://x.com/binance/status/2117626126214504729", "label": "Binance preliminary incident findings", "date": "2026-11-03T14:33:06Z"},
-  "links": [{"label": "The National: Binance court orders", "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"}]
+  "postmortem": {
+   "url": "https://x.com/binance/status/2117626126214504729",
+   "label": "Binance preliminary incident findings",
+   "date": "2026-11-03T14:33:06Z"
+  },
+  "links": [
+   {
+    "label": "The National: Binance court orders",
+    "url": "https://www.thenationalnews.com/business/money/2026/11/19/binance-receives-abu-dhabi-court-order-to-freeze-assets-after-63bn-heist/"
+   }
+  ]
  },
  {
-  "project": "Trubank and unnamed hosting provider", "subject": "Alleged hosting intrusion and Trubank exposure", "aliases": ["Trubank"], "category": "breach",
+  "project": "Trubank and unnamed hosting provider",
+  "subject": "Alleged hosting intrusion and Trubank exposure",
+  "aliases": [
+   "Trubank"
+  ],
+  "category": "breach",
   "claim": "VECERT Analyzer relayed an unverified claim of access to 1,331 databases at an unnamed multi-tenant hosting provider and to a system attributed to Trubank. The provider’s identity, any unauthorized access, and the number of people affected have not been established.",
   "amount_usd_claimed": null,
-  "posts": [{"url": "https://x.com/VECERTRadar/status/2123804741662625896", "role": "security", "stance": "report", "evidence": "none", "note": "Summarizes an unverified claim involving an unnamed hosting provider and a system attributed to Trubank."}],
+  "posts": [
+   {
+    "url": "https://x.com/VECERTRadar/status/2123804741662625896",
+    "role": "security",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Summarizes an unverified claim involving an unnamed hosting provider and a system attributed to Trubank."
+   }
+  ],
   "postmortem": null,
   "links": []
  },
  {
-  "project": "Coinbase India", "subject": "Coinbase India INR withdrawal outage", "aliases": ["Coinbase India", "Coinbase INR"], "category": "outage",
+  "project": "Coinbase India",
+  "subject": "Coinbase India INR withdrawal outage",
+  "aliases": [
+   "Coinbase India",
+   "Coinbase INR"
+  ],
+  "category": "outage",
   "claim": "Coinbase India said its banking partner’s outage continued to block in-app rupee withdrawals, while support handled withdrawal requests and batches of payouts continued. Coinbase said funds remained safe; no breach or theft has been substantiated.",
   "amount_usd_claimed": null,
   "posts": [
-   {"url": "https://x.com/CoinbaseIndia/status/2121445515946807609", "role": "official", "stance": "confirm", "evidence": "none", "note": "Confirms rupee withdrawals are unavailable due to an outage at a banking partner."},
-   {"url": "https://x.com/CoinbaseIndia/status/2123677401175478677", "role": "official", "stance": "update", "evidence": "none", "note": "Says batch payouts continue and new withdrawal requests can go through support."},
-   {"url": "https://x.com/CryptooIndia/status/2123679626115596466", "role": "media", "stance": "report", "evidence": "none", "note": "Relays Coinbase’s update on in-app withdrawals and support."},
-   {"url": "https://x.com/DefiantNews/status/2123699619666489788", "role": "media", "stance": "report", "evidence": "link", "note": "Reports Coinbase India is handling rupee withdrawal requests through customer support."},
-   {"url": "https://x.com/CNBCTV18Live/status/2121789067931296045", "role": "media", "stance": "report", "evidence": "link", "note": "Reports Coinbase India suspended in-app rupee withdrawals following a banking partner outage."},
-   {"url": "https://x.com/CryptoTimes_io/status/2122737671487492473", "role": "media", "stance": "report", "evidence": "none", "note": "Reports Coinbase began processing previously failed withdrawals in batches."},
-   {"url": "https://x.com/cryptoady/status/2122585454101106881", "role": "unknown", "stance": "report", "evidence": "none", "note": "Reports continuing banking outage and manual processing of some rupee withdrawals."}
+   {
+    "url": "https://x.com/CoinbaseIndia/status/2121445515946807609",
+    "role": "official",
+    "stance": "confirm",
+    "evidence": "none",
+    "note": "Confirms rupee withdrawals are unavailable due to an outage at a banking partner."
+   },
+   {
+    "url": "https://x.com/CoinbaseIndia/status/2123677401175478677",
+    "role": "official",
+    "stance": "update",
+    "evidence": "none",
+    "note": "Says batch payouts continue and new withdrawal requests can go through support."
+   },
+   {
+    "url": "https://x.com/CryptooIndia/status/2123679626115596466",
+    "role": "media",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Relays Coinbase’s update on in-app withdrawals and support."
+   },
+   {
+    "url": "https://x.com/DefiantNews/status/2123699619666489788",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Reports Coinbase India is handling rupee withdrawal requests through customer support."
+   },
+   {
+    "url": "https://x.com/CNBCTV18Live/status/2121789067931296045",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Reports Coinbase India suspended in-app rupee withdrawals following a banking partner outage."
+   },
+   {
+    "url": "https://x.com/CryptoTimes_io/status/2122737671487492473",
+    "role": "media",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Reports Coinbase began processing previously failed withdrawals in batches."
+   },
+   {
+    "url": "https://x.com/cryptoady/status/2122585454101106881",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Reports continuing banking outage and manual processing of some rupee withdrawals."
+   }
   ],
   "postmortem": null,
   "links": []
  },
  {
-  "project": "K3 Capital", "subject": "K3 Capital", "aliases": ["K3 Capital", "sBOLD", "sBOLD Vault"], "category": "crypto",
+  "project": "K3 Capital",
+  "subject": "K3 Capital",
+  "aliases": [
+   "K3 Capital",
+   "sBOLD",
+   "sBOLD Vault"
+  ],
+  "category": "crypto",
   "claim": "K3 Capital’s post-mortem attributes the November 18 sBOLD vault drain of about 3.43 million BOLD to a flaw in the vault’s handling of collateral swaps. The vault was paused, and K3 says it is pursuing partial recovery; losses were confined to sBOLD rather than Liquity V2.",
   "amount_usd_claimed": 3420000,
   "posts": [
-   {"url": "https://x.com/k3_capital/status/2123395654214967426", "role": "official", "stance": "postmortem", "evidence": "none", "note": "Attributes the drain to the vault’s swap workflow and outlines a recovery effort."},
-   {"url": "https://x.com/LiquityProtocol/status/2123408020579496280", "role": "unknown", "stance": "update", "evidence": "link", "note": "Says Liquity V2 and BOLD were unaffected and points to K3’s report."},
-   {"url": "https://x.com/tracefast_xyz/status/2123417830997557736", "role": "investigator", "stance": "update", "evidence": "onchain", "note": "Reports tracing subsequent funds movements associated with the vault drain."},
-   {"url": "https://x.com/3liXBT/status/2123430399846346919", "role": "unknown", "stance": "report", "evidence": "none", "note": "Comments on the elapsed time between the drain and the vault pause."},
-   {"url": "https://x.com/DefiantNews/status/2123401909625290952", "role": "media", "stance": "report", "evidence": "link", "note": "Reports the vault lost almost all its assets while Liquity V2 remained unaffected."}
+   {
+    "url": "https://x.com/k3_capital/status/2123395654214967426",
+    "role": "official",
+    "stance": "postmortem",
+    "evidence": "none",
+    "note": "Attributes the drain to the vault’s swap workflow and outlines a recovery effort."
+   },
+   {
+    "url": "https://x.com/LiquityProtocol/status/2123408020579496280",
+    "role": "unknown",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Says Liquity V2 and BOLD were unaffected and points to K3’s report."
+   },
+   {
+    "url": "https://x.com/tracefast_xyz/status/2123417830997557736",
+    "role": "investigator",
+    "stance": "update",
+    "evidence": "onchain",
+    "note": "Reports tracing subsequent funds movements associated with the vault drain."
+   },
+   {
+    "url": "https://x.com/3liXBT/status/2123430399846346919",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Comments on the elapsed time between the drain and the vault pause."
+   },
+   {
+    "url": "https://x.com/DefiantNews/status/2123401909625290952",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Reports the vault lost almost all its assets while Liquity V2 remained unaffected."
+   }
   ],
-  "postmortem": {"url": "https://x.com/k3_capital/status/2123395654214967426", "label": "K3 Capital post-mortem and recovery plan", "date": "2026-11-19T12:39:09Z"},
+  "postmortem": {
+   "url": "https://x.com/k3_capital/status/2123395654214967426",
+   "label": "K3 Capital post-mortem and recovery plan",
+   "date": "2026-11-19T12:39:09Z"
+  },
   "links": []
  },
  {
-  "project": "European Commission", "subject": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services", "aliases": ["European Commission", "EU Commission"], "category": "outage",
+  "project": "European Commission",
+  "subject": "European Commission Confirms AI-Assisted Cyberattack Disrupted Services",
+  "aliases": [
+   "European Commission",
+   "EU Commission"
+  ],
+  "category": "outage",
   "claim": "The European Commission said it took several internal applications offline after an AI-assisted campaign detected in October, and said most had been restored. It reported finding no evidence of a breach affecting staff as a whole, but the investigation is ongoing.",
   "amount_usd_claimed": null,
   "posts": [
-   {"url": "https://x.com/Reuters/status/2123408509970567442", "role": "media", "stance": "report", "evidence": "link", "note": "Links reporting quoting the Commission’s confirmation that AI tools were used."},
-   {"url": "https://x.com/The_Cyber_News/status/2123355198852833331", "role": "media", "stance": "report", "evidence": "link", "note": "Reports temporary disruption to applications used by Commission staff."},
-   {"url": "https://x.com/Dinosn/status/2123735276510167536", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Shares SecurityWeek’s report on service disruption and restoration."},
-   {"url": "https://x.com/TweetThreatNews/status/2123793539729404107", "role": "aggregator", "stance": "report", "evidence": "link", "note": "Relays the Commission’s statement on restoring most applications and investigating staff data exposure."},
-   {"url": "https://x.com/thecybersecguru/status/2123407980934856913", "role": "unknown", "stance": "report", "evidence": "none", "note": "Summarizes reported staff-service disruption and precautions taken during the investigation."},
-   {"url": "https://x.com/AGTPinsights/status/2123351900791673185", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Repeats Politico’s unconfirmed account of possible data exposure."},
-   {"url": "https://x.com/InsiderGeo/status/2123351233331081296", "role": "aggregator", "stance": "report", "evidence": "none", "note": "Cites reporting on a possible compromise; offers no independent evidence of exposure."},
-   {"url": "https://x.com/theneurondaily/status/2123780929705668628", "role": "media", "stance": "report", "evidence": "none", "note": "Notes the disruption in a roundup of technology news."}
+   {
+    "url": "https://x.com/Reuters/status/2123408509970567442",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Links reporting quoting the Commission’s confirmation that AI tools were used."
+   },
+   {
+    "url": "https://x.com/The_Cyber_News/status/2123355198852833331",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Reports temporary disruption to applications used by Commission staff."
+   },
+   {
+    "url": "https://x.com/Dinosn/status/2123735276510167536",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Shares SecurityWeek’s report on service disruption and restoration."
+   },
+   {
+    "url": "https://x.com/TweetThreatNews/status/2123793539729404107",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Relays the Commission’s statement on restoring most applications and investigating staff data exposure."
+   },
+   {
+    "url": "https://x.com/thecybersecguru/status/2123407980934856913",
+    "role": "unknown",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Summarizes reported staff-service disruption and precautions taken during the investigation."
+   },
+   {
+    "url": "https://x.com/AGTPinsights/status/2123351900791673185",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Repeats Politico’s unconfirmed account of possible data exposure."
+   },
+   {
+    "url": "https://x.com/InsiderGeo/status/2123351233331081296",
+    "role": "aggregator",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Cites reporting on a possible compromise; offers no independent evidence of exposure."
+   },
+   {
+    "url": "https://x.com/theneurondaily/status/2123780929705668628",
+    "role": "media",
+    "stance": "report",
+    "evidence": "none",
+    "note": "Notes the disruption in a roundup of technology news."
+   }
   ],
   "postmortem": null,
-  "links": [{"label": "Reuters reporting with Commission statement", "url": "https://www.reuters.com/legal/litigation/eu-commission-targeted-cyberattack-politico-reports-2026-11-19/"}, {"label": "SecurityWeek follow-up", "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"}]
+  "links": [
+   {
+    "label": "Reuters reporting with Commission statement",
+    "url": "https://www.reuters.com/legal/litigation/eu-commission-targeted-cyberattack-politico-reports-2026-11-19/"
+   },
+   {
+    "label": "SecurityWeek follow-up",
+    "url": "https://www.securityweek.com/european-commission-confirms-ai-assisted-cyberattack-disrupted-services/"
+   }
+  ]
+ },
+ {
+  "project": "Cursor",
+  "subject": "Cursor marketplace served backdoored Claude Code extension after Fireworks AI key exposure",
+  "aliases": [
+   "Cursor",
+   "cursor_ai",
+   "Anysphere",
+   "Fireworks AI",
+   "Fireworks",
+   "anthropic.claude-code"
+  ],
+  "category": "breach",
+  "claim": "Cursor confirmed tampered copies of the Claude Code extension (2.1.312 and 2.1.313) were served from its marketplace cache for about 11 hours on October 29, reaching at most 5,000 users. Its November 13 update traced the attack to an access key exposed at its vendor Fireworks AI, which led to coding-agent traces with unredacted credentials and then to internal SaaS tools. Uber and Notion have also reported data exposed through Fireworks.",
+  "amount_usd_claimed": null,
+  "posts": [
+   {
+    "url": "https://x.com/cursor_ai/status/2116074289053175808",
+    "role": "official",
+    "stance": "confirm",
+    "evidence": "link",
+    "note": "Cursor confirms malicious extension in its marketplace, at most 5,000 users."
+   },
+   {
+    "url": "https://x.com/mntruell/status/2116075234763866460",
+    "role": "official",
+    "stance": "confirm",
+    "evidence": "link",
+    "note": "Cursor CEO repeats the incident statement."
+   },
+   {
+    "url": "https://x.com/MsftSecIntel/status/2116336930967240954",
+    "role": "security",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Microsoft analysed the loader: SSH key, reverse tunnel, persistence; official channels unaffected."
+   },
+   {
+    "url": "https://x.com/DailyDarkWeb/status/2116473045305180437",
+    "role": "aggregator",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Relays revised IOCs and Expel findings on affected Macs."
+   },
+   {
+    "url": "https://x.com/devopsdotcom/status/2116270174705787367",
+    "role": "media",
+    "stance": "report",
+    "evidence": "link",
+    "note": "Summarises backdoor behaviour and checks for developers."
+   },
+   {
+    "url": "https://x.com/cursor_ai/status/2121411147714970092",
+    "role": "official",
+    "stance": "postmortem",
+    "evidence": "link",
+    "note": "Links Cursor's root-cause update tracing the attack to Fireworks."
+   },
+   {
+    "url": "https://x.com/IntCyberDigest/status/2121940024728113370",
+    "role": "media",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Summarises the Fireworks key to extension chain."
+   },
+   {
+    "url": "https://x.com/AGTPinsights/status/2121498256827961516",
+    "role": "aggregator",
+    "stance": "update",
+    "evidence": "link",
+    "note": "Summary of the post-mortem with a backdoor check command."
+   }
+  ],
+  "postmortem": {
+   "url": "https://cursor.com/en-US/blog/security-incident-update",
+   "label": "Cursor: An update on our recent security incident",
+   "date": "2026-11-14T01:13:00Z"
+  },
+  "outcome": null,
+  "links": [
+   {
+    "label": "Cursor update",
+    "url": "https://cursor.com/en-US/blog/security-incident-update"
+   },
+   {
+    "label": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/cursor-confirms-security-breach-led-to-malicious-claude-code-extension/"
+   },
+   {
+    "label": "Notion advisory",
+    "url": "https://www.notion.com/en-us/security/advisories/security-incident-involving-a-third-party-ai-vendor"
+   },
+   {
+    "label": "The Register on Uber",
+    "url": "https://www.theregister.com/security/2026/11/17/hackers-smash-n-grab-ai-vendor-take-off-with-license-data-of-uber-drivers/5310464"
+   }
+  ]
  }
 ]

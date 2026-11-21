@@ -137,32 +137,53 @@ try:
 except Exception as e:
     errors.append(f"defillama: {e}")
 
-# ---- News RSS
+# ---- News RSS/Atom. Feeds only carry their latest items, so every hit is kept in a 10-day cache;
+# otherwise stories drop out of the 7-day window as soon as the feed rolls over.
 FEEDS = [("The Record", "https://therecord.media/feed"),
          ("The Hacker News", "https://feeds.feedburner.com/TheHackersNews"),
          ("DataBreaches.net", "https://databreaches.net/feed/"),
          ("rekt", "https://rekt.news/rss/feed.xml"),
          ("BleepingComputer", "https://www.bleepingcomputer.com/feed/"),
-         ("Krebs on Security", "https://krebsonsecurity.com/feed/")]
-KW = re.compile(r"\b(hack|hacked|hackers?|breach|breached|ransomware|exploit|exploited|stolen|leak|leaked|attack|compromise[sd]?|drain(ed)?|zero-day|0-day|extortion|intrusion|stole|outage|incident)\b", re.I)
+         ("Krebs on Security", "https://krebsonsecurity.com/feed/"),
+         ("SecurityWeek", "https://www.securityweek.com/feed/"),
+         ("Dark Reading", "https://www.darkreading.com/rss.xml"),
+         ("CyberScoop", "https://cyberscoop.com/feed/"),
+         ("Help Net Security", "https://www.helpnetsecurity.com/feed/"),
+         ("Infosecurity Magazine", "https://www.infosecurity-magazine.com/rss/news/"),
+         ("TechCrunch", "https://techcrunch.com/category/security/feed/"),
+         ("SC Media", "https://www.scworld.com/rss"),
+         ("Security Affairs", "https://securityaffairs.com/feed"),
+         ("CSO Online", "https://www.csoonline.com/feed/")]
+KW = re.compile(r"\b(hack|hacked|hackers?|breach|breached|breaches|ransomware|exploit|exploited|exploits|stolen|steal|leak|leaked|attack|attacks|compromise[sd]?|drain(ed)?|zero-day|0-day|extortion|intrusion|stole|outage|incident|backdoor(ed)?|malicious|trojani[sz]ed|data exposure|exposed)\b", re.I)
 news = []
-SKIP = re.compile(r"(webinar|sponsored|\bhow to\b|you.re flying blind|\bguide\b|\bpodcast\b|week in review|\bweekly recap\b)", re.I)
+SKIP = re.compile(r"(webinar|sponsored|\bhow to\b|you.re flying blind|\bguide\b|\bpodcast\b|week in review|\bweekly recap\b|\bsponsor\b|\bpartner content\b|\bbest\b.*\btools\b)", re.I)
 from email.utils import parsedate_to_datetime
 def clean(s): return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", s or ""))).strip()
+NC = os.path.join(ROOT, "pipeline", "news_cache.json")
+ncache = json.load(open(NC)) if os.path.exists(NC) else {}
+def feed_items(root):
+    for it in root.iter("item"):
+        yield clean(it.findtext("title")), (it.findtext("link") or "").strip(), it.findtext("pubDate"), it.findtext("description")
+    A = "{http://www.w3.org/2005/Atom}"
+    for it in root.iter(A + "entry"):
+        ln = next((l.get("href") for l in it.findall(A + "link") if l.get("rel") in (None, "alternate")), "")
+        yield clean(it.findtext(A + "title")), ln, it.findtext(A + "updated") or it.findtext(A + "published"), it.findtext(A + "summary") or it.findtext(A + "content")
 for name, url in FEEDS:
     try:
         root = ET.fromstring(get(url, 30))
-        for it in root.iter("item"):
-            t = clean(it.findtext("title")); l = (it.findtext("link") or "").strip()
-            pd = it.findtext("pubDate")
+        for t, l, pd, desc in feed_items(root):
             if not (t and l and pd): continue
-            d0 = parsedate_to_datetime(pd)
-            if days_ago(d0) > 7: continue
-            desc = clean(it.findtext("description"))[:280]
+            try: d0 = parsedate_to_datetime(pd)
+            except Exception: d0 = parse_iso(pd[:19] + "Z" if "T" in pd else pd)
+            if days_ago(d0) > 10 or l in ncache: continue
+            desc = clean(desc)[:280]
             if not KW.search(t) or SKIP.search(t + " " + desc): continue
-            news.append({"date": iso(d0), "source": name, "title": t, "url": l, "summary": desc})
+            ncache[l] = {"date": iso(d0), "source": name, "title": t, "url": l, "summary": desc}
     except Exception as e:
         errors.append(f"news {name}: {e}")
+ncache = {k: v for k, v in ncache.items() if days_ago(parse_iso(v["date"])) <= 10}
+json.dump(ncache, open(NC, "w"))
+news = [v for v in ncache.values() if days_ago(parse_iso(v["date"])) <= 7]
 news.sort(key=lambda x: x["date"], reverse=True)
 
 
@@ -259,7 +280,7 @@ if os.path.exists(XFILE):
                                        and norm(c["name"]) in {norm(x.get("project") or x["subject"]), *map(norm, x.get("aliases", []))}), None)
                 if h.get("listed_at"):
                     h["lag_h"] = round((parse_iso(h["listed_at"]) - parse_iso(x["first"])).total_seconds() / 3600, 1)
-        xsig = [x for x in scored if days_ago(parse_iso(x["date"])) <= 7]
+        xsig = [x for x in scored if days_ago(parse_iso(x.get("last") or x["date"])) <= 7]  # still active in the last week
         xsig.sort(key=lambda x: x["date"], reverse=True)
     except Exception as e:
         errors.append(f"x: {e}")
@@ -286,7 +307,7 @@ def hourly_bins():
 hourly = hourly_bins()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from enrich import enrich
-news_out, crypto_out, kev_out = news[:40], crypto[:60], kev[:40]
+news_out, crypto_out, kev_out = news[:120], crypto[:60], kev[:40]
 incidents, clusters, pattern_stats, pattern_defs = enrich(
     news_out, crypto_out, kev_out, xsig, history=crypto_hist, breaches=breaches,
     notes_path=os.path.join(ROOT, "pipeline", "analysis_notes.json"))

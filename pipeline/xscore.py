@@ -140,7 +140,7 @@ def score_signals(xsig, crypto, breaches, kev, news, registry_path, now):
             hist.append({"t": s.get("outcome_date") or iso(now), "stage": cur["stage"], "by": "outcome", "url": s.get("outcome_url")})
         conf_t = next((h["t"] for h in hist if h["stage"] in ("Confirmed", "Post-mortem")), None)
         s.update({
-            "date": s["first"], "posts": [{k: p.get(k) for k in ("date", "handle", "role", "w", "stance", "evidence", "url", "note")} for p in posts],
+            "date": s["first"], "last": max([p["date"] for p in posts] + [(pm or {}).get("date") or s["first"]]), "posts": [{k: p.get(k) for k in ("date", "handle", "role", "w", "stance", "evidence", "url", "note")} for p in posts],
             "postmortem": pm, "outcome": s.get("outcome"),
             "score": cur["score"], "stage": cur["stage"], "accounts": cur["accounts"], "credible": cur["credible"],
             "official": cur["official"], "history": hist, "matches": hits, "press": press[:6],
