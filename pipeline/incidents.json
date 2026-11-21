@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T05:28:55Z",
+ "updated": "2026-11-21T06:29:03Z",
  "incidents": [
   {"id":"del-monte-foods-february-2026","org":"Del Monte Foods Corporation II","title":"Del Monte Foods discloses February intrusion involving personal information","first_reported":"2026-10-30T00:00:00Z","event_date":null,"type":"data breach","sector":"food manufacturing","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Del Monte said a network disruption on February 9 prompted an investigation that found unauthorized access to files involving personal information. Public reporting on the regulatory notice identifies Social Security numbers among the exposed information.","match":["Del Monte Foods Data Breach","Del Monte Foods Corporation II"],"sources":[{"label":"Del Monte notice filed with California AG","url":"https://oag.ca.gov/system/files/(CA)%20Del%20Monte%20Notice%20of%20Data%20Breach%20(1)_0.pdf"},{"label":"Claim Depot","url":"https://www.claimdepot.com/data-breach/del-monte-foods-2026"}],"updates":[]},
   {"id":"rathbones-client-data","org":"Rathbones","title":"Rathbones reportedly notified clients after unauthorized data access","first_reported":"2026-11-09T00:00:00Z","event_date":null,"type":"data breach","sector":"wealth management","country":"GB","records":null,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"Citywire reported that client data was accessed and Rathbones notified affected customers after an incident in early November. The public reports do not establish the number of people affected.","match":["Rathbones client data","wealth managers in cyberattack","Rathbones Cyber Attack"],"sources":[{"label":"Citywire initial report","url":"https://citywire.com/new-model-adviser/news/exclusive-rathbones-client-data-accessed-in-cyber-attack/a2502919"},{"label":"CyPro follow-up","url":"https://cypro.co.uk/insights/cyber-bulletins/client-data-reportedly-accessed-in-rathbones-cyber-attack/"}],"updates":[]},
@@ -58,7 +58,7 @@
   {"id":"1984-hosting-cyberattack","org":"1984 Hosting","title":"Icelandic host 1984 suspends services after cyberattack","first_reported":"2026-11-20T15:40:00Z","event_date":null,"type":"DDoS/outage","sector":"technology","country":"IS","records":null,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"Icelandic hosting provider 1984 shut down services after a cyberattack and worked with CERT-IS. The company expected email and DNS to be restored first; the extent of any data exposure was not confirmed.","match":["1984.hosting","1984 ehf","web host 1984","хостинг «1984»","vefþjónustufyrirtækið 1984"],"sources":[{"label":"RÚV","url":"https://www.ruv.is/english/2026-11-20-serious-cyberattack-thought-backed-by-wealthy-operators-493411"},{"label":"Iceland Insider","url":"https://icelandinsider.is/news/icelandic-web-host-1984-suspends-all-services-after-cyberattack/"}],"updates":[]},
   {"id":"contabo-unauthorized-access","org":"Contabo","title":"Contabo investigates unauthorized access detected November 14","first_reported":"2026-11-17T00:00:00Z","event_date":"2026-11-14","type":"other","sector":"technology","country":"DE","records":null,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"Contabo said it detected unauthorized access and reset remote-console passwords and rotated internal credentials. Its November 20 update said forensic work continued and it had no new findings to report.","match":["Contabo"],"sources":[{"label":"Contabo incident advisory","url":"https://help.contabo.com/en/support/solutions/articles/103000426255-potential-security-incident-of-14-november-2026"},{"label":"Dark Web Intelligence reporting","url":"https://x.com/DailyDarkWeb/status/2122664355221106775"}],"updates":[]},
   {"id":"onchain-technologies-casino-wallets","org":"ONCHAIN Technologies casinos","title":"Several crypto casinos go offline after reported shared-wallet drain","first_reported":"2026-11-19T00:00:00Z","event_date":"2026-11-17","type":"crypto exploit","sector":"gambling","country":"multi","records":null,"usd":5260000,"status":"claimed","actor":null,"vector":null,"summary":"FairGambling traced approximately $5.26 million moving out of a shared crypto casino bankroll and related wallets. It reported that most of the funds were frozen and several sites were offline; the final loss was not established.","match":["ONCHAIN Technologies","crypto casinos offline","shared bankroll"],"sources":[{"label":"FairGambling","url":"https://www.fairgambling.com/news/nine-crypto-casinos-offline-as-5-3m-bankroll-drained"},{"label":"iGaming Republic","url":"https://www.igamingrepublic.com/5-26m-drain-hits-9-anjouan-crypto-casinos/"}],"updates":[]},
-  {"id":"recruit-ring-karte","org":"Recruit","title":"Recruit reports possible Ring program data exposure through KARTE","first_reported":"2026-11-20T00:00:00Z","event_date":"2026-11-13","type":"third-party breach","sector":"professional services","country":"JP","records":21900,"usd":null,"status":"investigating","actor":null,"vector":"compromised third-party analytics service","summary":"Recruit identified 21,900 Ring program records potentially affected by the intrusion at PLAID's KARTE platform. Entries include names, email addresses or company names; payment information was not included.","match":["Recruit warns 21,900","Recruit Ring program","リクルート、個人情報2万1900件","リクルートの新規事業提案制度"],"sources":[{"label":"Recruit official notice","url":"https://www.recruit.co.jp/newsroom/pressrelease/2026/1120_149528.html"},{"label":"Now Hacked","url":"https://now-hacked.com/en/category/data_leak"}],"updates":[]},
+  {"id":"recruit-ring-karte","org":"Recruit","title":"Recruit reports possible Ring program data exposure through KARTE","first_reported":"2026-11-20T00:00:00Z","event_date":"2026-11-13","type":"third-party breach","sector":"professional services","country":"JP","records":21900,"usd":null,"status":"investigating","actor":null,"vector":"compromised third-party analytics service","summary":"Recruit identified 21,900 Ring program records potentially affected by the intrusion at PLAID's KARTE platform. Entries include names, email addresses or company names; payment information was not included.","match":["Recruit warns 21,900","Recruit Ring program","リクルート、個人情報2万1900件","リクルートの新規事業提案制度"],"sources":[{"label":"Recruit official notice","url":"https://www.recruit.co.jp/newsroom/pressrelease/2026/1120_149528.html"},{"label":"Now Hacked","url":"https://now-hacked.com/en/category/data_leak"},{"label":"Recruit Air Business Tools notice","url":"https://faq.airreserve.net/hc/ja/articles/64521423533081--%E9%87%8D%E8%A6%81-Air-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%84%E3%83%BC%E3%83%AB%E3%82%BA-%E3%81%8C%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E5%A4%96%E9%83%A8%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9-KARTE-%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E4%BC%B4%E3%81%86%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B-2026-11-20"}],"updates":[{"date":"2026-11-20","text":"Recruit also notified Air Business Tools users that details such as registered store phone numbers and contact names may have been exposed through KARTE.","url":"https://faq.airreserve.net/hc/ja/articles/64521423533081--%E9%87%8D%E8%A6%81-Air-%E3%83%93%E3%82%B8%E3%83%8D%E3%82%B9%E3%83%84%E3%83%BC%E3%83%AB%E3%82%BA-%E3%81%8C%E5%88%A9%E7%94%A8%E3%81%99%E3%82%8B%E5%A4%96%E9%83%A8%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9-KARTE-%E3%81%B8%E3%81%AE%E4%B8%8D%E6%AD%A3%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B9%E3%81%AB%E4%BC%B4%E3%81%86%E5%80%8B%E4%BA%BA%E6%83%85%E5%A0%B1%E6%BC%8F%E3%81%88%E3%81%84%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%81%8A%E8%A9%AB%E3%81%B3%E3%81%A8%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B-2026-11-20"}]},
   {"id":"bausch-health-june-breach","org":"Bausch Health","title":"Bausch Health files California breach notice","first_reported":"2026-11-20T00:00:00Z","event_date":"2026-06-24","type":"data breach","sector":"healthcare","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Bausch Health submitted a breach notice to the California Attorney General identifying June 24 as the incident date. The public filing page does not provide a victim count.","match":["Bausch Health"],"sources":[{"label":"California Attorney General","url":"https://oag.ca.gov/ecrime/databreach/reports/sb24-633182"},{"label":"MedSecLedger","url":"https://medsecledger.com/breach/bausch-health-companies-inc-5f0c8645"}],"updates":[]},
   {"id":"cirrus-aircraft-data-breach","org":"Cirrus Aircraft","title":"Cirrus Aircraft discloses exposure of personal records following July intrusion","first_reported":"2026-11-12T00:00:00Z","event_date":null,"type":"data breach","sector":"aviation","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Cirrus Aircraft said an intruder gained access to its systems in July. AOPA reported that financial, medical and identification records were among the affected information.","match":["Cirrus Aircraft","Cirrus data breach"],"sources":[{"label":"Aircraft Owners and Pilots Association","url":"https://aopa.org/news-and-media/all-news/2026/november/19/cirrus-data-breach"},{"label":"BeyondMachines","url":"https://beyondmachines.net/event_details/cirrus-aircraft-reports-data-breach-following-social-engineering-incident-f-a-j-7-r"}],"updates":[{"date":"2026-11-19T17:51:52Z","text":"AOPA reports the types of information involved and cites 3,903 individuals based on a Texas filing; the nationwide total was not specified by Cirrus to AOPA.","url":"https://aopa.org/news-and-media/all-news/2026/november/19/cirrus-data-breach"}]},
   {"id":"tallinna-linnatransport-website","org":"Tallinna Linnatransport","title":"Tallinn municipal transport operator reports breach of public website","first_reported":"2026-11-19T00:00:00Z","event_date":"2026-11-16","type":"data breach","sector":"transport","country":"EE","records":null,"usd":null,"status":"confirmed","actor":null,"vector":"outdated website plugin","summary":"Tallinna Linnatransport said a cyberattack against its public website compromised the personal data of several thousand people. The company attributed the incident to a vulnerability in an outdated plugin.","match":["Tallinna Linnatransport","Tallinn City Transport","cyberattack on TLT website","cyberattack exposes data of thousands at TLT"],"sources":[{"label":"ERR","url":"https://news.err.ee/1610200210/hackers-obtain-personal-data-of-thousands-in-cyberattack-on-tlt-website"},{"label":"Daily Baltic","url":"https://www.dailybaltic.com/45060/cyberattack-exposes-data-of-thousands-at-tlt/"}],"updates":[]},
@@ -698,33 +698,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "sagawa-tebura",
-   "org": "Sagawa Express",
-   "title": "Sagawa Express luggage-reservation system accessed, 13,059 records exposed",
-   "first_reported": "2026-11-19T12:00:00Z",
-   "event_date": "2026-11-14",
-   "type": "data breach",
-   "sector": "transport",
-   "country": "JP",
-   "records": 13059,
-   "usd": null,
-   "status": "confirmed",
-   "actor": null,
-   "vector": null,
-   "summary": "Sagawa Express said its hands-free luggage reservation system was accessed without authorisation on 14 November, exposing 13,059 records.",
-   "match": [
-    "佐川急便",
-    "Sagawa"
-   ],
-   "sources": [
-    {
-     "label": "Logi-Today",
-     "url": "https://www.logi-today.com/1024281"
-    }
-   ],
-   "updates": []
-  },
+  {"id":"sagawa-tebura","org":"Sagawa Express","title":"Sagawa Express investigates possible exposure of 13,059 baggage reservations","first_reported":"2026-11-19T12:00:00Z","event_date":"2026-11-14","type":"data breach","sector":"transport","country":"JP","records":13059,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"Sagawa Express confirmed unauthorized access to its baggage storage reservations on November 14. Information from 13,059 bookings may have been exposed; this figure counts reservations, not customers.","match":["Sagawa baggage storage","Sagawa luggage reservation","手荷物一時預かり","佐川急便／手荷物預かり"],"sources":[{"label":"Logi-Today","url":"https://www.logi-today.com/1024281"},{"label":"Sagawa Express FAQ","url":"https://www2.sagawa-exp.co.jp/information/detail/439/"}],"updates":[{"date":"2026-11-20","text":"Sagawa clarified the count and said it was contacting affected customers; 36 records included only the final four digits of the card number.","url":"https://www2.sagawa-exp.co.jp/information/detail/439/"}]},
   {
    "id": "kyoto-univ-safety",
    "org": "Kyoto University",
@@ -1158,37 +1132,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "usi-lugano",
-   "org": "Università della Svizzera italiana (USI)",
-   "title": "USI says AI agents breached its online forms system; 8,000 users notified",
-   "first_reported": "2026-11-19T12:00:00Z",
-   "event_date": null,
-   "type": "vulnerability exploitation",
-   "sector": "education",
-   "country": "CH",
-   "records": 8000,
-   "usd": null,
-   "status": "confirmed",
-   "actor": null,
-   "vector": "software flaw exploited by AI agents",
-   "summary": "The Università della Svizzera italiana said attackers using AI agents exploited a software flaw in its online forms system. It notified about 8,000 users.",
-   "match": [
-    "USI",
-    "Università della Svizzera italiana"
-   ],
-   "sources": [
-    {
-     "label": "Corriere del Ticino",
-     "url": "https://www.cdt.ch/news/ticino/lattacco-hacker-allusi-messo-a-segno-da-agenti-ia-abbiamo-avvisato-8-mila-utenti-444981"
-    },
-    {
-     "label": "RSI",
-     "url": "https://www.rsi.ch/info/ticino-grigioni-e-insubria/Attacco-informatico-all%E2%80%99USI--4256078.html"
-    }
-   ],
-   "updates": []
-  },
+  {"id":"usi-lugano","org":"Università della Svizzera italiana (USI)","title":"USI says AI agents breached its online forms system; 8,000 users notified","first_reported":"2026-11-19T12:00:00Z","event_date":"2026-11-09","type":"vulnerability exploitation","sector":"education","country":"CH","records":8000,"usd":null,"status":"confirmed","actor":null,"vector":"software flaw exploited by AI agents","summary":"The Università della Svizzera italiana said attackers using AI agents exploited a software flaw in its online forms system. It notified about 8,000 users.","match":["USI","Università della Svizzera italiana"],"sources":[{"label":"Corriere del Ticino","url":"https://www.cdt.ch/news/ticino/lattacco-hacker-allusi-messo-a-segno-da-agenti-ia-abbiamo-avvisato-8-mila-utenti-444981"},{"label":"RSI","url":"https://www.rsi.ch/info/ticino-grigioni-e-insubria/Attacco-informatico-all%E2%80%99USI--4256078.html"}],"updates":[{"date":"2026-11-20","text":"The university’s chief operating officer said it had notified about 8,000 potentially affected people.","url":"https://www.cdt.ch/news/ticino/lattacco-hacker-allusi-messo-a-segno-da-agenti-ia-abbiamo-avvisato-8-mila-utenti-444981"}]},
   {
    "id": "deutsche-bank-leak",
    "org": "Deutsche Bank",
@@ -1304,32 +1248,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "bundesagentur-immobilien",
-   "org": "Bundesagentur für Arbeit (property management)",
-   "title": "Hackers attack property-management unit of Germany's Federal Employment Agency",
-   "first_reported": "2026-11-20T12:00:00Z",
-   "event_date": null,
-   "type": "other",
-   "sector": "government",
-   "country": "DE",
-   "records": null,
-   "usd": null,
-   "status": "investigating",
-   "actor": null,
-   "vector": null,
-   "summary": "The property-management operation of Germany's Federal Employment Agency was hit by a hacker attack, dpa reported on 20 November.",
-   "match": [
-    "Bundesagentur"
-   ],
-   "sources": [
-    {
-     "label": "dpa via SN Online",
-     "url": "https://www.sn-online.de/wirtschaft/hackerangriff-auf-immobilienverwaltung-der-bundesagentur-fuer-arbeit-J3C5RC7V2RCHXKX5Q6N2AIVO54.html"
-    }
-   ],
-   "updates": []
-  },
+  {"id":"bundesagentur-immobilien","org":"Bundesagentur für Arbeit (property management)","title":"Hackers attack property-management unit of Germany's Federal Employment Agency","first_reported":"2026-11-20T12:00:00Z","event_date":null,"type":"other","sector":"government","country":"DE","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Germany’s Federal Employment Agency confirmed an attack on its property management division, which uses separate IT systems. The agency said it had no indication that sensitive benefits-recipient data was affected.","match":["Hackerangriff auf Immobilienverwaltung der Bundesagentur","Cyberangriff auf die Immobilienverwaltung der Bundesagentur","Hackerangriff trifft Immobilienverwaltung der Bundesagentur","Hackerangriff auf Immobilienverwaltung der Bundesagentur für Arbeit"],"sources":[{"label":"dpa via SN Online","url":"https://www.sn-online.de/wirtschaft/hackerangriff-auf-immobilienverwaltung-der-bundesagentur-fuer-arbeit-J3C5RC7V2RCHXKX5Q6N2AIVO54.html"},{"label":"dpa via Süddeutsche Zeitung","url":"https://www.sueddeutsche.de/politik/it-sicherheit-hackerangriff-auf-immobilienverwaltung-der-bundesagentur-dpa.urn-newsml-dpa-com-20090101-261120-930-28558"}],"updates":[]},
   {
    "id": "greiz-ronneburg-hospital",
    "org": "Kreiskrankenhaus Greiz-Ronneburg",
@@ -1982,131 +1901,8 @@
    ],
    "updates": []
   },
-  {
-   "id": "jpmorgan-visa-mastercard-vendors",
-   "org": "JPMorgan Chase, Visa, Mastercard",
-   "title": "Customer data of JPMorgan Chase, Visa and Mastercard leaked after third-party vendor hacks",
-   "first_reported": "2026-11-17T06:14:17Z",
-   "event_date": null,
-   "type": "third-party breach",
-   "sector": "finance",
-   "country": "US",
-   "records": null,
-   "usd": null,
-   "status": "confirmed",
-   "actor": "n0n (claimed)",
-   "vector": "compromised third-party marketing vendors",
-   "summary": "JPMorgan Chase said on 19 November that third-party service providers had been targeted in a cyberattack, exposing customer marketing data; Visa confirmed a leak tied to a vendor in Asia-Pacific and Mastercard customer data also surfaced. A group calling itself n0n posted data reportedly covering about 16,000 Chase and 6,000 Visa customers.",
-   "match": [
-    "JPMorgan",
-    "JPMorganChase",
-    "Chase Bank",
-    "Chase customers",
-    "Chase, Visa, Mastercard",
-    "Visa confirme",
-    "Visa confirms",
-    "Visa customers",
-    "Visa-Kunden",
-    "US banking and payment firms",
-    "Mastercard data breach",
-    "Mastercard customer data",
-    "ＪＰモルガン",
-    "JP Morgan",
-    "J.P. Morgan",
-    "Chase customer",
-    "Visa data breach",
-    "Visa Confirms",
-    "Chase as a Victim",
-    "Visa, Mastercard",
-    "マスターカード",
-    "摩根大通、Visa和萬事達卡",
-    "摩根大通、Visa及萬事達卡",
-    "JPモルガンやビザ、顧客情報"
-   ],
-   "sources": [
-    {
-     "label": "Reuters",
-     "url": "https://www.reuters.com/legal/government/jpmorgan-says-third-party-vendors-targeted-cyberattack-2026-11-19/"
-    },
-    {
-     "label": "Cybersecurity Dive",
-     "url": "https://www.cybersecuritydive.com/news/jpmorgan-visa-customer-data-leaked-third-party-hacks/875333/"
-    },
-    {
-     "label": "TechSpot",
-     "url": "https://www.techspot.com/news/114637-jpmorgan-visa-mastercard-customer-data-leaked-dark-web.html"
-    }
-   ],
-   "updates": [
-    {
-     "date": "2026-11-20T12:00:00Z",
-     "text": "Researchers say timing fits the Qubole supply-chain campaign claimed by n0n; the vendor link is unconfirmed",
-     "url": "https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478"
-    }
-   ],
-   "exclude": [
-    "non è un attacco",
-    "esclude l'attacco",
-    "not a cyberattack",
-    "not a cyber attack",
-    "no evidence of a cyberattack"
-   ]
-  },
-  {
-   "id": "fireworks-ai-supply-chain",
-   "org": "Fireworks AI (Uber, Cursor, Notion, Mercari)",
-   "title": "Breach of AI inference provider Fireworks AI spills into Uber, Cursor, Notion and Mercari",
-   "first_reported": "2026-11-12T12:00:00Z",
-   "event_date": null,
-   "type": "supply chain",
-   "sector": "technology",
-   "country": "US",
-   "records": null,
-   "usd": null,
-   "status": "confirmed",
-   "actor": null,
-   "vector": "compromised internal credentials at AI inference provider",
-   "summary": "AI inference provider Fireworks AI suffered two October intrusions, the second (23–30 October) reaching account and billing data for all accounts created before 30 October. Downstream, Notion AI chat transcripts were accessed, Cursor traced a malicious Claude Code extension to the breach, Uber said licence data of 149,346 US drivers was stolen, and Mercari said data of 3,796 people may have leaked.",
-   "match": [
-    "Fireworks AI",
-    "Cursor",
-    "Uber",
-    "Notion AI",
-    "Notion customers",
-    "メルカリ",
-    "Mercari"
-   ],
-   "sources": [
-    {
-     "label": "TechCrunch",
-     "url": "https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"
-    },
-    {
-     "label": "SecurityWeek",
-     "url": "https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/"
-    },
-    {
-     "label": "Reuters",
-     "url": "https://www.reuters.com/business/uber-says-us-drivers-license-data-stolen-data-breach-2026-11-13/"
-    },
-    {
-     "label": "BleepingComputer",
-     "url": "https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/"
-    }
-   ],
-   "updates": [
-    {
-     "date": "2026-11-13T12:00:00Z",
-     "text": "Uber says US driver's licence data stolen via vendor",
-     "url": "https://www.reuters.com/business/uber-says-us-drivers-license-data-stolen-data-breach-2026-11-13/"
-    },
-    {
-     "date": "2026-11-20T12:00:00Z",
-     "text": "Mercari says 3,796 people's data may have leaked via Notion AI subcontractor",
-     "url": "https://finwave.jp/archives/10983"
-    }
-   ]
-  },
+  {"id":"jpmorgan-visa-mastercard-vendors","org":"JPMorgan Chase, Visa, Mastercard","title":"Customer data of JPMorgan Chase, Visa and Mastercard leaked after third-party vendor hacks","first_reported":"2026-11-17T06:14:17Z","event_date":null,"type":"third-party breach","sector":"finance","country":"US","records":null,"usd":null,"status":"confirmed","actor":"n0n (claimed)","vector":"compromised third-party marketing vendors","summary":"JPMorgan Chase said on 19 November that third-party service providers had been targeted in a cyberattack, exposing customer marketing data; Visa confirmed a leak tied to a vendor in Asia-Pacific and Mastercard customer data also surfaced. A group calling itself n0n posted data reportedly covering about 16,000 Chase and 6,000 Visa customers.","match":["JPMorgan","JPMorganChase","Chase Bank","Chase customers","Chase, Visa, Mastercard","Visa confirme","Visa confirms","Visa customers","Visa-Kunden","US banking and payment firms","Mastercard data breach","Mastercard customer data","ＪＰモルガン","JP Morgan","J.P. Morgan","Chase customer","Visa data breach","Visa Confirms","Chase as a Victim","Visa, Mastercard","マスターカード","摩根大通、Visa和萬事達卡","摩根大通、Visa及萬事達卡","JPモルガンやビザ、顧客情報"],"sources":[{"label":"Reuters","url":"https://www.reuters.com/legal/government/jpmorgan-says-third-party-vendors-targeted-cyberattack-2026-11-19/"},{"label":"Cybersecurity Dive","url":"https://www.cybersecuritydive.com/news/jpmorgan-visa-customer-data-leaked-third-party-hacks/875333/"},{"label":"TechSpot","url":"https://www.techspot.com/news/114637-jpmorgan-visa-mastercard-customer-data-leaked-dark-web.html"}],"updates":[{"date":"2026-11-20T12:00:00Z","text":"Researchers say timing fits the Qubole supply-chain campaign claimed by n0n; the vendor link is unconfirmed","url":"https://www.theregister.com/cyber-crime/2026/11/20/visa-mastercard-theft-included-info-useful-for-phishing-but-not-draining-bank-accounts-say-researchers/5311478"}],"exclude":["non è un attacco","esclude l'attacco","not a cyberattack","not a cyber attack","no evidence of a cyberattack","JPMorgan Chase Outage Disrupts Payments","Banche Usa in down","Negato attacco hacker"]},
+  {"id":"fireworks-ai-supply-chain","org":"Fireworks AI (Uber, Cursor, Notion, Mercari)","title":"Breach of AI inference provider Fireworks AI spills into Uber, Cursor, Notion and Mercari","first_reported":"2026-11-12T12:00:00Z","event_date":null,"type":"supply chain","sector":"technology","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":"compromised internal credentials at AI inference provider","summary":"AI inference provider Fireworks AI suffered two October intrusions, the second (23–30 October) reaching account and billing data for all accounts created before 30 October. Downstream, Notion AI chat transcripts were accessed, Cursor traced a malicious Claude Code extension to the breach, Uber said licence data of 149,346 US drivers was stolen, and Mercari said data of 3,796 people may have leaked.","match":["Fireworks AI","Cursor","Uber","Notion AI","Notion customers","メルカリ","Mercari"],"sources":[{"label":"Mercari notice","url":"https://about.mercari.com/press/news/articles/20261120_incidentreport/"},{"label":"TechCrunch","url":"https://techcrunch.com/2026/11/12/cyberattack-on-fireworks-ai-allowed-hackers-to-access-notion-customers-chat-transcripts/"},{"label":"SecurityWeek","url":"https://www.securityweek.com/cursor-supply-chain-attack-started-at-fireworks/"},{"label":"Reuters","url":"https://www.reuters.com/business/uber-says-us-drivers-license-data-stolen-data-breach-2026-11-13/"},{"label":"BleepingComputer","url":"https://www.bleepingcomputer.com/news/security/uber-notifies-drivers-of-data-breach-affecting-nearly-150-000-people/"}],"updates":[{"date":"2026-11-13T12:00:00Z","text":"Uber says US driver's licence data stolen via vendor","url":"https://www.reuters.com/business/uber-says-us-drivers-license-data-stolen-data-breach-2026-11-13/"},{"date":"2026-11-20T12:00:00Z","text":"Mercari says 3,796 people's data may have leaked via Notion AI subcontractor","url":"https://finwave.jp/archives/10983"},{"date":"2026-11-20","text":"Mercari reported possible exposure of information on 3,796 people in Notion AI usage records held by Fireworks and said it replaced affected business credentials.","url":"https://about.mercari.com/press/news/articles/20261120_incidentreport/"}]},
   {"id":"usda-security-incident","org":"US Department of Agriculture","title":"USDA takes systems offline after security incident, disrupting farm loans and payments","first_reported":"2026-11-19T21:40:00Z","event_date":null,"type":"other","sector":"government","country":"US","records":null,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"The US Department of Agriculture took multiple IT systems offline after a security incident, disrupting systems used by the Farm Service Agency to process farmer loans and aid payments. USDA described it as a cyberthreat; its undersecretary said no data was lost.","match":["USDA cybersecurity","USDA cyberattack","USDA Cyberthreat","USDA Confirms Cyberthreat","breach at USDA","after USDA Security Incident","USDA takes farm payment systems","USDA grapple","breach USDA system","米農務省へのサイバー攻撃","Departamento de Agricultura de EE. UU. sufre ciberataque"],"sources":[{"label":"Nextgov","url":"https://www.nextgov.com/cybersecurity/2026/11/usda-grapples-security-breach-it-staff-take-multiple-systems-offline/417350/"},{"label":"DTN","url":"https://www.dtnpf.com/agriculture/web/ag/crops/article/2026/11/19/usda-loan-software-systems-face-amid"}],"updates":[{"date":"2026-11-20T18:41:00Z","text":"USDA’s undersecretary described the disruption as a response to a cyberthreat and said no data was lost.","url":"https://www.farmweeknow.com/general/cyberthreat-reaches-farm-offices/article_f29f8aa3-97c2-491c-83ce-43eb6b75d48c.html"}]},
   {
    "id": "nvidia-gentlemen-claim",
@@ -2281,42 +2077,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "eskenazi-health",
-   "org": "Eskenazi Health",
-   "title": "Eskenazi Health reports unauthorised access to patients' electronic health information",
-   "first_reported": "2026-10-29T12:00:00Z",
-   "event_date": null,
-   "type": "data breach",
-   "sector": "healthcare",
-   "country": "US",
-   "records": null,
-   "usd": null,
-   "status": "confirmed",
-   "actor": null,
-   "vector": null,
-   "summary": "Indianapolis health system Eskenazi Health published a notice on 29 October of unauthorised access to some patients' electronic health information, and a substitute notice on 20 November for affected individuals.",
-   "match": [
-    "Eskenazi"
-   ],
-   "sources": [
-    {
-     "label": "Eskenazi Health (Oct 29)",
-     "url": "https://www.eskenazihealth.edu/news/security-incident"
-    },
-    {
-     "label": "Eskenazi Health (Nov 20)",
-     "url": "https://www.eskenazihealth.edu/news/security-incident-nov-2026"
-    }
-   ],
-   "updates": [
-    {
-     "date": "2026-11-20T12:00:00Z",
-     "text": "Substitute data-breach notice published",
-     "url": "https://www.eskenazihealth.edu/news/security-incident-nov-2026"
-    }
-   ]
-  },
+  {"id":"eskenazi-health","org":"Eskenazi Health","title":"Eskenazi Health reports unauthorised access to patients' electronic health information","first_reported":"2026-10-29T12:00:00Z","event_date":"2026-06-03","type":"data breach","sector":"healthcare","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Eskenazi Health’s October 29 notice reported unauthorized access to employee cloud accounts from June 3 through August 31. The September 21 incident was described in a separate November notice.","match":["Eskenazi Health October 29","Eskenazi Health June 3","Eskenazi Health August 31"],"sources":[{"label":"Eskenazi Health October notice","url":"https://www.eskenazihealth.edu/news/security-incident"}],"updates":[]},
   {
    "id": "samsung-ad-vendor",
    "org": "Samsung",
@@ -2373,32 +2134,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "hitachi-vantara",
-   "org": "Hitachi Vantara",
-   "title": "Hitachi Vantara notifies employees of data breach",
-   "first_reported": "2026-11-20T12:00:00Z",
-   "event_date": null,
-   "type": "data breach",
-   "sector": "technology",
-   "country": "US",
-   "records": null,
-   "usd": null,
-   "status": "confirmed",
-   "actor": null,
-   "vector": null,
-   "summary": "Hitachi Vantara informed employees, including in Australia, of a data breach and filed a notice with the California attorney general.",
-   "match": [
-    "Hitachi Vantara"
-   ],
-   "sources": [
-    {
-     "label": "California AG",
-     "url": "https://oag.ca.gov/ecrime/databreach/reports/sb24-633174"
-    }
-   ],
-   "updates": []
-  },
+  {"id":"hitachi-vantara","org":"Hitachi Vantara","title":"Hitachi Vantara notifies employees of data breach","first_reported":"2026-11-20T12:00:00Z","event_date":"2025-04-26","type":"data breach","sector":"technology","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Hitachi Vantara informed employees, including in Australia, of a data breach and filed a notice with the California attorney general.","match":["Hitachi Vantara"],"sources":[{"label":"California AG","url":"https://oag.ca.gov/ecrime/databreach/reports/sb24-633174"}],"updates":[]},
   {
    "id": "n-able-mail-assure",
    "org": "N-able",
@@ -3002,40 +2738,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "staples-canada-print",
-   "org": "Staples Canada (Bureau en Gros)",
-   "title": "Staples Canada print site accessed, customers' data exposed",
-   "first_reported": "2026-11-20T12:00:00Z",
-   "event_date": "2026-11-01",
-   "type": "data breach",
-   "sector": "retail",
-   "country": "CA",
-   "records": null,
-   "usd": null,
-   "status": "confirmed",
-   "actor": null,
-   "vector": null,
-   "summary": "Staples Canada (Bureau en Gros) said its staplesprint.ca site was accessed without authorisation between 1 and 5 November, exposing customer data.",
-   "match": [
-    "Staples Canada",
-    "Staples Print",
-    "staplesprint",
-    "Bureau en Gros",
-    "Staples customers"
-   ],
-   "sources": [
-    {
-     "label": "Global News",
-     "url": "https://globalnews.ca/news/12160464/staples-print-hack/"
-    },
-    {
-     "label": "La Presse",
-     "url": "https://www.lapresse.ca/affaires/entreprises/2026-11-20/bureau-en-gros-affirme-avoir-ete-victime-d-une-fuite-de-donnees.php"
-    }
-   ],
-   "updates": []
-  },
+  {"id":"staples-canada-print","org":"Staples Canada (Bureau en Gros)","title":"Staples Canada print site accessed, customers' data exposed","first_reported":"2026-11-20T23:41:34Z","event_date":"2026-11-01","type":"data breach","sector":"retail","country":"CA","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"Staples Canada said unauthorized access to its print site between November 1 and 5 exposed contact information, order summaries and encrypted passwords. It reported no exposure of financial information.","match":["Staples Canada","Staples Print","staplesprint","Bureau en Gros","Staples customers"],"sources":[{"label":"Global News","url":"https://globalnews.ca/news/12160464/staples-print-hack/"},{"label":"La Presse","url":"https://www.lapresse.ca/affaires/entreprises/2026-11-20/bureau-en-gros-affirme-avoir-ete-victime-d-une-fuite-de-donnees.php"},{"label":"CBC News","url":"http://www.cbc.ca/news/canada/staples-print-website-breach-9.7431120"}],"updates":[]},
   {
    "id": "ifood-second-hack",
    "org": "iFood",
@@ -3752,45 +3455,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "cabonline-booking-data",
-   "org": "Cabonline",
-   "title": "Nordic taxi group Cabonline says booking data stolen via system supplier",
-   "first_reported": "2026-11-19T18:00:00Z",
-   "event_date": null,
-   "type": "third-party breach",
-   "sector": "transport",
-   "country": "SE",
-   "records": null,
-   "usd": null,
-   "status": "investigating",
-   "actor": null,
-   "vector": "compromised system supplier",
-   "summary": "Cabonline, which owns Taxikurir and books cars for Sverigetaxi and other operators, disclosed on 19 November that unauthorised parties accessed taxi-booking information held by one of its system suppliers, including customers' personal details. Swedish police are investigating.",
-   "match": [
-    "Cabonline",
-    "taxibolag",
-    "Taxijätte",
-    "taxijätten",
-    "taxi company",
-    "Taxikurir"
-   ],
-   "sources": [
-    {
-     "label": "SVT",
-     "url": "https://www.svt.se/nyheter/inrikes/taxikunder-drabbade-av-dataintrang-bokningsuppgifter-kan-ha-lackt"
-    },
-    {
-     "label": "Sveriges Radio",
-     "url": "https://www.sverigesradio.se/artikel/dataintrang-hos-cabonline-kunduppgifter-lackta"
-    },
-    {
-     "label": "Sweden Herald",
-     "url": "https://swedenherald.com/article/police-investigate-suspected-theft-of-customer-data-at-cabonline-taxi-company"
-    }
-   ],
-   "updates": []
-  },
+  {"id":"cabonline-booking-data","org":"Cabonline","title":"Nordic taxi group Cabonline says booking data stolen via system supplier","first_reported":"2026-11-19T18:00:00Z","event_date":null,"type":"third-party breach","sector":"transport","country":"SE","records":null,"usd":null,"status":"investigating","actor":null,"vector":"compromised system supplier","summary":"Cabonline, which owns Taxikurir and books cars for Sverigetaxi and other operators, disclosed on 19 November that unauthorised parties accessed taxi-booking information held by one of its system suppliers, including customers' personal details. Swedish police are investigating.","match":["Cabonline","taxibolag","Taxijätte","taxijätten","taxi company","Taxikurir","Polisen utreder misstänkt dataintrång hos taxibolag"],"sources":[{"label":"SVT","url":"https://www.svt.se/nyheter/inrikes/taxikunder-drabbade-av-dataintrang-bokningsuppgifter-kan-ha-lackt"},{"label":"Sveriges Radio","url":"https://www.sverigesradio.se/artikel/dataintrang-hos-cabonline-kunduppgifter-lackta"},{"label":"Sweden Herald","url":"https://swedenherald.com/article/police-investigate-suspected-theft-of-customer-data-at-cabonline-taxi-company"}],"updates":[{"date":"2026-11-20","text":"Police said they were investigating what information could have been taken.","url":"https://www.aftonbladet.se/nyheter/a/dJOQxJ/polisen-utreder-misstankt-dataintrang-hos-taxibolag"}]},
   {
    "id": "autopay-card-data",
    "org": "Autopay",
@@ -5649,42 +5314,7 @@
    ],
    "updates": []
   },
-  {
-   "id": "k3-capital-sbold",
-   "org": "K3 Capital (sBOLD vault)",
-   "title": "K3 Capital's sBOLD vault exploited for about $3.43 million",
-   "first_reported": "2026-11-18T12:00:00Z",
-   "event_date": "2026-11-18",
-   "type": "crypto exploit",
-   "sector": "crypto",
-   "country": "multi",
-   "records": null,
-   "usd": 3430000,
-   "status": "contained",
-   "actor": null,
-   "vector": null,
-   "summary": "K3 Capital's sBOLD savings vault on Ethereum was exploited for about $3.43 million on 18 November, Blockaid said, and K3 paused the contracts. Ethereum block builders captured much of the value through MEV.",
-   "match": [
-    "K3 Capital",
-    "sBOLD",
-    "$3.4 million vault hack"
-   ],
-   "sources": [
-    {
-     "label": "Yahoo Finance",
-     "url": "https://finance.yahoo.com/markets/crypto/articles/k3-capital-pauses-sbold-contracts-163040777.html"
-    },
-    {
-     "label": "CoinDesk",
-     "url": "https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows"
-    },
-    {
-     "label": "crypto.news",
-     "url": "https://crypto.news/gonka-bridge-sbold-vault-ethereum-exploits/"
-    }
-   ],
-   "updates": []
-  },
+  {"id":"k3-capital-sbold","org":"K3 Capital (sBOLD vault)","title":"K3 Capital's sBOLD vault exploited for about $3.43 million","first_reported":"2026-11-18T12:00:00Z","event_date":"2026-11-18","type":"crypto exploit","sector":"crypto","country":"multi","records":null,"usd":3430000,"status":"contained","actor":null,"vector":null,"summary":"K3 Capital's sBOLD savings vault on Ethereum was exploited for about $3.43 million on 18 November, Blockaid said, and K3 paused the contracts. Ethereum block builders captured much of the value through MEV.","match":["K3 Capital","sBOLD","$3.4 million vault hack"],"sources":[{"label":"Yahoo Finance","url":"https://finance.yahoo.com/markets/crypto/articles/k3-capital-pauses-sbold-contracts-163040777.html"},{"label":"CoinDesk","url":"https://www.coindesk.com/tech/2026/11/19/ethereum-block-builders-received-the-most-in-a-usd3-4-million-vault-hack-data-shows"},{"label":"crypto.news","url":"https://crypto.news/gonka-bridge-sbold-vault-ethereum-exploits/"}],"updates":[{"date":"2026-11-19T12:39:09Z","text":"K3’s post-mortem reported about 3.43 million BOLD drained from the sBOLD vault and described efforts to recover funds; it said Liquity V2 was unaffected.","url":"https://x.com/k3_capital/status/2123395654214967426"}]},
   {
    "id": "gonka-bridge",
    "org": "Gonka",
@@ -6082,6 +5712,17 @@
     }
    ],
    "updates": []
-  }
+  },
+  {"id":"bitrise-ci-intrusion","org":"Bitrise","title":"Bitrise post-mortem finds files accessed in 15 customer workspaces","first_reported":"2026-11-14T00:00:00Z","event_date":"2026-11-13","type":"data breach","sector":"developer infrastructure","country":"multi","records":null,"usd":null,"status":"contained","actor":null,"vector":"compromised internal test account","summary":"Bitrise’s post-mortem found that files in 15 customer workspaces were accessed without authorization. It notified those customers and reported full service restoration on November 20.","match":["Bitrise"],"sources":[{"label":"Bitrise incident report","url":"https://bitrise.io/artex-incident-report"},{"label":"Bitrise status update","url":"https://status.bitrise.io/incidents/72jfsl4lc21l"}],"updates":[{"date":"2026-11-20T14:12:00Z","text":"Bitrise reported normal service and linked its full incident report; files in 15 customer workspaces were accessed.","url":"https://status.bitrise.io/incidents/72jfsl4lc21l"}]},
+  {"id":"defichain-november-exploit","org":"DeFiChain","title":"DeFiChain targets December for exploit remediation","first_reported":"2026-11-05T00:00:00Z","event_date":"2026-11-03","type":"crypto exploit","sector":"crypto","country":"multi","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"DeFiChain said it expects to reverse the effects of the November 3 exploit and deploy a fix in December. It reported progress on restoring Ocean and Light Wallet without announcing a reopening date.","match":["DeFiChain"],"sources":[{"label":"DeFiChain November 5 update","url":"https://blog.defichain.com/2026/11/a-final-update-from-marketing-sig.html"},{"label":"DeFiChain recovery update","url":"https://x.com/defichain/status/2123981860015571067"}],"updates":[{"date":"2026-11-21T03:28:31Z","text":"DeFiChain said it expects to reverse the effects of the November 3 exploit and deploy a fix in December. It reported progress on restoring Ocean and Light Wallet without announcing a reopening date.","url":"https://x.com/defichain/status/2123981860015571067"}]},
+  {"id":"rumoi-gis-hokkaido","org":"Rumoi City","title":"Rumoi City investigates possible exposure of resident data at subcontractor","first_reported":"2026-11-19T10:00:00Z","event_date":"2026-11-02","type":"data breach","sector":"government","country":"JP","records":null,"usd":null,"status":"investigating","actor":null,"vector":"malware on GIS subcontractor device","summary":"Rumoi City says a GIS subcontractor’s device was infected with malware. The city is investigating possible exposure of up to 71,002 resident register records and up to 4,503 records about people needing assistance; it has not confirmed a leak.","match":["Rumoi City","留萌市"],"sources":[{"label":"Rumoi City notice","url":"https://www.e-rumoi.jp/soumu/page11_00252.html"},{"label":"Tokyo Dispatch","url":"https://tokyodispatch.com/crime/rumoi-resident-data-leak"}],"updates":[]},
+  {"id":"fast-cr-everest","org":"FAST ČR","title":"Everest claims FAST ČR on its leak site","first_reported":"2026-11-20T22:32:00Z","event_date":null,"type":"extortion claim","sector":null,"country":"CZ","records":null,"usd":null,"status":"claimed","actor":"Everest","vector":null,"summary":"Everest listed FAST ČR on its leak site. The listing does not establish whether the organization was breached or data was taken.","match":["FAST ČR","FAST CR","fastcr.cz"],"sources":[{"label":"RansomLens","url":"https://ransomlens.com/detail.php?source=everest&id=93"}],"updates":[]},
+  {"id":"alla-france-everest","org":"Alla France","title":"Everest claims Alla France on its leak site","first_reported":"2026-11-20T22:03:00Z","event_date":null,"type":"extortion claim","sector":null,"country":"FR","records":null,"usd":null,"status":"claimed","actor":"Everest","vector":null,"summary":"Everest listed Alla France on its leak site. The listing does not establish whether the organization was breached or data was taken.","match":["Alla France","alla-france.com"],"sources":[{"label":"Ransomware.live","url":"https://www.ransomware.live/id/QWxsYSBGcmFuY2VAZXZlcmVzdA"}],"updates":[]},
+  {"id":"wonju-dangu-disclosure","org":"Wonju City","title":"Wonju City council rejects inquiry into resident data disclosure","first_reported":"2026-10-20T10:55:44Z","event_date":null,"type":"data breach","sector":"government","country":"KR","records":1957,"usd":null,"status":"confirmed","actor":null,"vector":"personal information not redacted from planning documents","summary":"Wonju City disclosed resident contact information to a private developer in planning documents. On November 20 the council rejected a proposed inquiry after the reported scope had increased from 1,014 to 1,957 records.","match":["원주시 개인정보 유출","Wonju city official leaks personal data","원주시 단구지구 주민 개인정보"],"sources":[{"label":"The Herald Business","url":"https://mbiz.heraldcorp.com/article/10909102"},{"label":"Newsis","url":"https://www.newsis.com/view/NISX20261120_0003876897"}],"updates":[{"date":"2026-11-20","text":"The council voted against a proposed administrative investigation; the reported figure is 1,957.","url":"https://www.newsis.com/view/NISX20261120_0003876897"}]},
+  {"id":"hunt-credential-theft-603-hosts","org":"Credential theft campaign reported by Hunt.io","title":"Hunt.io reports credential-stealing activity affecting 603 computers","first_reported":"2026-11-18T00:00:00Z","event_date":"2026-10-12","type":"other","sector":"multi","country":"multi","records":null,"usd":null,"status":"confirmed","actor":null,"vector":"malware on victim computers","summary":"Hunt.io observed 603 distinct computers communicating with infrastructure used in a credential-theft operation. The activity exposed access to accounts across sectors; the report does not establish that the account providers were themselves breached.","match":["Hunt.io Uncovers Russian-Speaking Credential Theft","Credential-stealing operation compromises 603 computers","Russian-Speaking Hackers Steal US Bank, IRS and Social Security Login Credentials"],"sources":[{"label":"Hunt.io research","url":"https://hunt.io/blog/us-bank-irs-ssa-logins-stolen-russian-speaking-operator"},{"label":"SC Media","url":"https://www.scworld.com/brief/credential-stealing-operation-compromises-603-computers"}],"updates":[]},
+  {"id":"eskenazi-health-september","org":"Eskenazi Health","title":"Eskenazi Health discloses September compromise of two employee accounts","first_reported":"2026-11-20T22:26:00Z","event_date":"2026-09-21","type":"data breach","sector":"healthcare","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":"phishing","summary":"Eskenazi Health said two employee cloud accounts were accessed on September 21 after a phishing email. Emails and attachments may have contained personal or health information; it did not disclose a patient count.","match":["Eskenazi Health","Eskenazi reports data breach"],"sources":[{"label":"Eskenazi Health November notice","url":"https://www.eskenazihealth.edu/news/security-incident-nov-2026"},{"label":"WTHR","url":"https://www.wthr.com/article/news/local/eskenazi-reports-data-breach-involving-patient-electronic-health-information-suspicious-activity-access/531-6ef8d2be-12bd-4977-b418-8299efae4ad4"}],"updates":[]},
+  {"id":"postech-portals","org":"Pohang University of Science and Technology (POSTECH)","title":"POSTECH confirms additional data exposure after university portal breach","first_reported":"2026-11-19T00:00:00Z","event_date":"2026-11-13","type":"data breach","sector":"education","country":"KR","records":45529,"usd":null,"status":"confirmed","actor":null,"vector":"exploitation of university portal vulnerabilities","summary":"POSTECH confirmed exposure in three university portals. Its November 20 update listed 25,551 additional administrative portal records, on top of 19,500 research equipment records and 478 IT service records; the combined figure is not a count of distinct people.","match":["POSTECH data breach","POSTECH portal","포항공대 해킹","포항공대 개인정보 유출"],"sources":[{"label":"POSTECH second notice","url":"https://www.postech.ac.kr/eng/news-center/university_announcement.do?mode=view&articleNo=56101&title=Second+Notice+Regarding+Additional+Personal+Information+Breach"},{"label":"POSTECH initial notice","url":"https://www.postech.ac.kr/eng/news-center/university_announcement.do?mode=view&articleNo=56081&title=Notice+of+Personal+Data+Breach+Resulting+from+the+Hacking+of+the+Research+Equipment+Support+Portal+and+IT+Service+Portal"}],"updates":[{"date":"2026-11-20","text":"Confirmed 25,551 additional administrative portal records involved and continued individual notifications.","url":"https://www.postech.ac.kr/eng/news-center/university_announcement.do?mode=view&articleNo=56101&title=Second+Notice+Regarding+Additional+Personal+Information+Breach"}]},
+  {"id":"careers360-data-claim","org":"Careers360","title":"Have I Been Pwned indexes data attributed to Careers360","first_reported":"2026-11-14T00:00:00Z","event_date":null,"type":"data breach","sector":"education","country":"IN","records":3609421,"usd":null,"status":"claimed","actor":null,"vector":null,"summary":"Data attributed to Careers360 appeared on a hacking forum and was indexed by Have I Been Pwned. It contains 3,609,421 unique email addresses and other information including academic results; the platform has not confirmed the claim in the sources reviewed.","match":["Careers360"],"sources":[{"label":"Have I Been Pwned","url":"https://haveibeenpwned.com/Breach/Careers360"},{"label":"Helix Threat Watch","url":"https://helix.ml/threat-watch/i/careers360-data-breach"}],"updates":[{"date":"2026-11-20T03:51:04Z","text":"Have I Been Pwned posted that it had indexed the dataset attributed to Careers360.","url":"https://haveibeenpwned.com/Breach/Careers360"}]},
+  {"id":"boston-scientific-may-disclosure","org":"Boston Scientific","title":"Boston Scientific files Texas breach notice affecting 177,789 people","first_reported":"2026-11-19T00:00:00Z","event_date":"2026-05-07","type":"data breach","sector":"medical devices","country":"US","records":177789,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"A Texas breach filing lists 177,789 affected people, including 12,269 Texas residents, and dates the breach to May 7–12. The filing summary lists identifiers and medical and health insurance information among the affected data; it did not state a cause.","match":["Boston Scientific data breach","Boston Scientific breach","Boston Scientific Corporation"],"sources":[{"label":"BreachTally, Texas AG filing summary","url":"https://breachtally.com/notice/tx-ag/BR-0005538"},{"label":"Black Shard","url":"https://blackshard.com.au/threat-map/incident/boston-scientific-2026-05"}],"updates":[]}
  ]
 }
