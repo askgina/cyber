@@ -1,7 +1,10 @@
 {
- "updated": "2026-11-21T02:24:00Z",
+ "updated": "2026-11-21T03:24:00Z",
  "incidents": [
-  {"id":"sbc-medical-group-customer-data","org":"SBC Medical Group","title":"SBC Medical Group discloses theft of customer data after database intrusion","first_reported":"2026-11-19T00:00:00Z","event_date":"2026-11-16","type":"data breach","sector":"healthcare","country":"JP","records":1624000,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"The group said contact and other customer information for 1,624,000 people was taken from historical data. The affected fields varied; some historical passwords were stored without encryption. Other data sets were also affected, but their totals should not be added as unique people. The group had not confirmed exposure from electronic medical record systems or mySBC.","match":["湘南美容クリニックのSBCグループ","湘南美容クリニック」などの個人情報流出","SBC Medical Group data breach","SBCメディカルグループのデータベース"],"sources":[{"label":"CNET Japan","url":"https://japan.cnet.com/article/35255171/"},{"label":"TechnoEdge","url":"https://www.techno-edge.net/article/2026/11/19/5773.html"},{"label":"ITmedia","url":"https://www.itmedia.co.jp/news/article/2611/20/2000003355/"}],"updates":[]},
+  {"id":"fbi-ncic-apparent-intrusion","org":"Federal Bureau of Investigation (FBI)","title":"CNN reports FBI is investigating apparent intrusion into national crime database","first_reported":"2026-11-21T02:12:00Z","event_date":null,"type":"other","sector":"government","country":"US","records":null,"usd":null,"status":"investigating","actor":null,"vector":null,"summary":"CNN cited two people briefed on an investigation into apparent unauthorized access to the National Crime Information Center. The FBI did not immediately comment, and CNN did not establish whether data were stolen. The report described a separate incident from the September breach involving an FBI jobs site.","match":["the breach targeted its crime database","FBI investiga ciberataque contra su base nacional","la intrusión afectó a su base de datos sobre delitos","FBI's NCIC database","FBI’s NCIC database"],"sources":[{"label":"CNN","url":"https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database"},{"label":"CNN en Español","url":"https://cnnespanol.cnn.com/2026/11/20/eeuu/fbi-nuevo-hackeo-base-datos-delitos-trax"}],"updates":[]},
+  {"id":"pk-softech-publica-ransomware","org":"PK Softech / Publica","title":"Publica commissions audit after ransomware attack at pension software supplier","first_reported":"2026-10-22T00:00:00Z","event_date":null,"type":"third-party breach","sector":"pensions","country":"CH","records":null,"usd":null,"status":"investigating","actor":null,"vector":"compromised software provider","summary":"Swiss pension fund Publica said its supplier PK Softech suffered ransomware in late September. It assumes pension member data held in a supplier test environment was leaked but has not established the scope; its production systems were not affected.","match":["PK Softech","PK Softtech","Publica lässt nach Hackerangriff","Publica leitet nach Cyberattacke"],"sources":[{"label":"Publica","url":"https://www.publica.ch/en/cyber-attack-software-supplier"},{"label":"Swiss government announcement","url":"https://www.schweiz-republikkorea.eda.admin.ch/en/newnsb/A40p0VPerHSv"}],"updates":[{"date":"2026-11-19T00:00:00Z","text":"Publica commissioned an independent audit, with an initial report expected by the end of March 2027.","url":"https://www.schweiz-republikkorea.eda.admin.ch/en/newnsb/A40p0VPerHSv"}]},
+  {"id":"skyticket-booking-data","org":"Adventure (skyticket)","title":"skyticket identifies additional booking exposure, including passport details","first_reported":"2026-10-09T05:04:00Z","event_date":"2026-09-20","type":"data breach","sector":"travel","country":"JP","records":1166,"usd":null,"status":"contained","actor":null,"vector":"unintended external access to a booking-related service","summary":"In its fourth report, skyticket identified a separate access route from the one originally disclosed in October. It said September activity exposed 1,045 bookings involving approximately 1,166 people, including passport details for 15 people. It blocked external access on October 28.","match":["スカイチケット、不正アクセス","skyticket data breach","skyticket passport"],"sources":[{"label":"skyticket fourth report","url":"https://skyticket.jp/news/tour/67764"},{"label":"CNET Japan","url":"https://japan.cnet.com/article/35255198/"}],"updates":[{"date":"2026-11-18T00:00:00Z","text":"The fourth company report disclosed additional booking exposure via a separate access route, including passport information for 15 people.","url":"https://skyticket.jp/news/tour/67764"}]},
+  {"id":"enerflo-texas-notice","org":"Enerflo","title":"Enerflo reports personal data exposure affecting 15,918 people","first_reported":"2026-11-19T21:18:21Z","event_date":"2026-09-02","type":"data breach","sector":"technology","country":"US","records":15918,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"A Texas filing lists 15,918 affected people, including 6,741 Texas residents. The filing lists names, addresses, Social Security numbers and dates of birth among the exposed information.","match":["Enerflo data breach","Enerflo, Inc."],"sources":[{"label":"BreachTally copy of Texas filing details","url":"https://breachtally.com/notice/tx-ag/BR-0005541"},{"label":"AcidPeak filing summary","url":"https://www.acidpeak.com/notices/enerflo-inc-2026-11-19/"}],"updates":[]},
   {"id":"opn-healthcare-california-notice","org":"OPN Healthcare, Inc.","title":"OPN Healthcare files breach notice in California","first_reported":"2026-11-20T00:00:00Z","event_date":"2026-06-03","type":"data breach","sector":"healthcare","country":"US","records":null,"usd":null,"status":"confirmed","actor":null,"vector":null,"summary":"California’s breach-notification register lists June 3 as the breach date and November 20 as the reporting date. The public listing does not give the type of data or the number of people affected.","match":["OPN Healthcare"],"sources":[{"label":"California Attorney General","url":"https://oag.ca.gov/ecrime/databreach/reports/sb24-633250"}],"updates":[]},
   {"id":"x-league-comsbi-disclosure","org":"X League","title":"X League confirms LINE account data exposure via COMSBI","first_reported":"2026-11-15T00:00:00Z","event_date":"2026-11-09","type":"third-party breach","sector":"sports","country":"JP","records":13126,"usd":null,"status":"contained","actor":null,"vector":"compromised provider support-account credentials","summary":"The league reported up to 13,126 exposed LINE account records, with dates of birth, addresses or contact details affected in smaller subsets. The vendor revoked unauthorized access; how the credentials were obtained remains under investigation.","match":["X League confirms massive data breach","Xリーグ、LINE登録情報","X League: LINE Official Account"],"sources":[{"label":"X League official notice","url":"https://www.xleague.jp/news/unauthorized-access"},{"label":"American Football International","url":"https://www.americanfootballinternational.com/x-league-confirms-massive-data-breach-exposing-personal-information-of-more-than-13000-supporters/"}],"updates":[]},
   {"id":"cdjapan-neowing-breach","org":"CDJapan (Neowing)","title":"CDJapan confirms extraction of historical card data and member information","first_reported":"2026-11-13T00:00:00Z","event_date":"2026-11-06","type":"data breach","sector":"retail","country":"JP","records":791111,"usd":null,"status":"contained","actor":null,"vector":null,"summary":"CDJapan confirmed that an intruder extracted membership information for 791,111 members and 360,538 historical card records; the two numbers describe different data sets and should not be added. The company also found checkout-page tampering that may have exposed some recent card entries.","match":["CDJapan","Neowing Corporation","ネオウィング 個人情報"],"sources":[{"label":"CDJapan investigation findings","url":"https://www.cdjapan.co.jp/info/20261118"},{"label":"CDJapan initial notice","url":"https://www.cdjapan.co.jp/info/20261113"}],"updates":[{"date":"2026-11-18T00:00:00Z","text":"CDJapan confirmed the historical database extraction and reported likely exposure for some recent desktop checkout submissions.","url":"https://www.cdjapan.co.jp/info/20261118"}]},
@@ -556,26 +559,36 @@
   {
    "id": "sbc-medical",
    "org": "SBC Medical Group",
-   "title": "SBC Medical Group says data of 1.6 million customers stolen in two incidents",
-   "first_reported": "2026-11-18T12:00:00Z",
-   "event_date": null,
+   "title": "SBC Medical Group confirms theft of historical information for 1,624,000 customers",
+   "first_reported": "2026-11-19T00:00:00Z",
+   "event_date": "2026-11-16",
    "type": "data breach",
    "sector": "healthcare",
    "country": "JP",
-   "records": 1600000,
+   "records": 1624000,
    "usd": null,
    "status": "confirmed",
    "actor": null,
    "vector": null,
-   "summary": "Cosmetic-clinic operator SBC Medical Group disclosed in an SEC filing on 18 November that hackers stole data of about 1.6 million customers in two separate incidents.",
+   "summary": "SBC Medical Group confirmed that information for 1,624,000 people was extracted from its historical website data. The group disclosed separate exposure through the Tribeau booking provider. The company did not give a single deduplicated total across categories or incidents.",
    "match": [
     "SBC Medical",
-    "SBCメディカル"
+    "SBCメディカル",
+    "湘南美容クリニックのSBCグループ",
+    "湘南美容クリニック」などの個人情報流出"
    ],
    "sources": [
     {
+     "label": "Company statement carried by AFP",
+     "url": "https://www.afp.com/en/infos/sbc-medical-group-reports-cybersecurity-incidents-japan"
+    },
+    {
      "label": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/hackers-steal-data-of-16-million-sbc-medical-group-customers/"
+    },
+    {
+     "label": "CNET Japan",
+     "url": "https://japan.cnet.com/article/35255171/"
     }
    ],
    "updates": []
@@ -5086,23 +5099,14 @@
    "status": "confirmed",
    "actor": null,
    "vector": "stolen cloud access key; ARTEX AI penetration-testing framework",
-   "summary": "Email-security company Barracuda disclosed that attackers breached its cloud environment earlier in November using a stolen cloud access key and the open-source ARTEX agentic AI framework. The FBI warned the same day that ARTEX has been used to breach networks in under three hours; SecurityWeek reports the tool has become common among Chinese threat actors.",
+   "summary": "Barracuda disclosed that an intruder used a stolen cloud access key and AI tooling to access its cloud environment. The intruder reached a system holding XDR customer integration credentials, but Barracuda reported no evidence that those credentials were accessed or stolen. It asked customers it contacted directly to replace affected integration credentials.",
    "match": [
-    "Barracuda",
-    "FBI says Artex",
-    "ARTEX AI",
-    "Artex AI",
-    "AI tool ARTEX",
-    "AI hacking tool ARTEX",
-    "Artex-Powered",
-    "FBI, ARTEX",
-    "weaponizing ARTEX"
+    "Barracuda links cloud breach",
+    "Barracuda Hacked Amid Surge",
+    "Barracuda cloud breach",
+    "Amazon, Barracuda"
    ],
    "sources": [
-    {
-     "label": "TechCrunch",
-     "url": "https://techcrunch.com/2026/11/16/fbi-says-artex-ai-open-source-hacking-tool-used-to-breach-networks-in-under-three-hours/"
-    },
     {
      "label": "BleepingComputer",
      "url": "https://www.bleepingcomputer.com/news/security/barracuda-links-cloud-breach-to-artex-ai-powered-cyberattack/"

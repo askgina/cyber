@@ -1,4 +1,39 @@
 {
+ "CNN reports apparent intrusion into FBI national crime database": {
+  "summary":"CNN reported that the FBI was investigating an apparent intrusion into the National Crime Information Center. The agency did not immediately comment, and it is not known whether records were accessed or stolen.",
+  "attack_chain":["Initial access method and intrusion dates were not established in the reporting.","Two people briefed on the investigation told CNN about the apparent breach.","CNN described this case as separate from the September FBI jobs-site breach."],
+  "open_questions":["Was access confirmed?","Which records, systems or agencies were affected?"],
+  "mitigations":["Preserve access and audit logs across the affected environment and connected agencies.","Review privileged accounts and flag unusual queries or exports without disrupting critical access."],
+  "sources":[{"label":"CNN","url":"https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database"}]
+ },
+ "The FBI was hacked again, this time the breach targeted its crime database": {
+  "summary":"CNN reported that the FBI was investigating an apparent intrusion into the National Crime Information Center. The agency did not immediately comment, and it is not known whether records were accessed or stolen.",
+  "attack_chain":["Initial access method and intrusion dates were not established in the reporting.","Two people briefed on the investigation told CNN about the apparent breach.","CNN described this case as separate from the September FBI jobs-site breach."],
+  "open_questions":["Was access confirmed?","Which records, systems or agencies were affected?"],
+  "mitigations":["Preserve access and audit logs across the affected environment and connected agencies.","Review privileged accounts and flag unusual queries or exports without disrupting critical access."],
+  "sources":[{"label":"CNN","url":"https://www.cnn.com/2026/11/20/politics/fbi-hacked-again-target-crime-database"}]
+ },
+ "SBC Medical Group confirms theft of historical information for 1,624,000 customers": {
+  "summary":"SBC reported that information for 1,624,000 people was taken from historical website data. A separate incident at booking provider Tribeau affected clinic accounts; the company did not give a deduplicated total across both incidents.",
+  "attack_chain":["SBC detected unauthorized access to website databases on November 16.","The company confirmed data extraction and isolated the affected server.","The company separately learned of intrusion into clinic administrator accounts at Tribeau."],
+  "open_questions":["What was the initial access method?","How many people overlap across data categories and incidents?"],
+  "mitigations":["Require strong MFA for clinic administration accounts and invalidate exposed credentials.","Retire unnecessary historical data and replace insecure password storage with modern password hashing."],
+  "sources":[{"label":"Company statement carried by AFP","url":"https://www.afp.com/en/infos/sbc-medical-group-reports-cybersecurity-incidents-japan"},{"label":"CNET Japan","url":"https://japan.cnet.com/article/35255171/"}],"patterns":["data-exposure"]
+ },
+ "skyticket reports additional booking exposure, including passport details": {
+  "summary":"In its fourth report, skyticket said it found a separate access route involving 1,045 bookings and about 1,166 people. The company reported that 15 people had passport details exposed.",
+  "attack_chain":["skyticket traced the additional unauthorized access to September activity.","The affected records contained booking information, including passport details for a subset.","skyticket reported blocking external access on October 28."],
+  "open_questions":["What initial access controls failed?","Did anyone use the exposed booking or passport information?"],
+  "mitigations":["Review external access to booking systems and preserve access logs.","Restrict access to passport data and retain it only as long as required."],
+  "sources":[{"label":"skyticket fourth report","url":"https://skyticket.jp/news/tour/67764"}],"patterns":["data-exposure"]
+ },
+ "Irish credit unions disclose saved-payee data exposure at Wellington IT": {
+  "summary":"Reporting linked a breach affecting Irish credit unions to shared provider Wellington IT. The provider said it notified customers once the potential risk to data was confirmed; an Irish minister said credit unions were notified weeks after the incident.",
+  "attack_chain":["The initial access method was not established in the reporting.","Credit unions reported that member information was at risk through the shared provider."],
+  "open_questions":["Which records were actually accessed or removed?","How many members were affected across the participating credit unions?"],
+  "mitigations":["Require providers to notify customers promptly of suspected incidents without waiting for the full scope.","Review vendor access to saved-payee data and monitor unusual exports."],
+  "sources":[{"label":"RTÉ News","url":"https://x.com/rtenews/status/2123321659436208229"},{"label":"BBC News NI","url":"https://x.com/BBCNewsNI/status/2123128842210410748"}],"patterns":["supply-chain","data-exposure"]
+ },
  "Illinois officials investigating \"apparent cyberattack\" on Monday at Algonquin Dam on Fox River": {
   "summary":"Illinois is investigating an apparent cyberattack at Algonquin Dam. The facility remained operational; authorities did not confirm that an intrusion succeeded.",
   "attack_chain":["The state said the apparent incident occurred Monday, November 16.","Personnel acted to prevent unauthorized access and keep the facility operating.","State and federal agencies investigated."],
