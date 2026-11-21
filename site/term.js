@@ -227,6 +227,8 @@
     const r = panels()[i].querySelector(".t-r:not(.t-hd):not([hidden])");
     r && r.focus();
   }
+  function refresh() { const c = $("#t-checked"); c.textContent = "refreshing…"; B.pollAll(); }
+  $("#t-live").addEventListener("click", refresh);
   document.addEventListener("keydown", (e) => {
     if (!document.body.classList.contains("view-term")) return;
     if (e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey) return;
@@ -234,6 +236,7 @@
     if (e.key === "Escape") { closeInsp(); return; }
     if (/^[1-5]$/.test(e.key)) { focusPanel(+e.key - 1); return; }
     if (e.key === "r") { location.hash = "#report"; return; }
+    if (e.key === "u") { refresh(); return; }
     if (e.key === "j" || e.key === "k" || e.key === "ArrowDown" || e.key === "ArrowUp") {
       if (!$("#t-insp").hidden && e.target.closest("#t-insp")) return;
       const rows = [...panels()[T.panel].querySelectorAll(".t-r:not(.t-hd):not([hidden])")];
