@@ -51,22 +51,59 @@
   }
   const c = (cls, ...kids) => el("span", { class: cls }, ...kids);
 
+  // Counts by window. Last hour and 24h are recomputed in the browser so they stay current between hourly rebuilds;
+  // 7d, month and year to date come from the build (full DefiLlama, CISA and HIBP history; ransomware.live monthly stats).
+  const WINS = [["1h", "Last hour"], ["24h", "Last 24h"], ["7d", "Last 7 days"], ["mtd", "This month"], ["ytd", "Year to date"]];
+  function windows(D) {
+    const W = (D.windows && D.windows.rows) || {};
+    const now = Date.now();
+    const y0 = new Date(); y0.setUTCHours(0, 0, 0, 0); const yday = y0.getTime() - 864e5;
+    const tms = (s) => new Date(s.length === 10 ? s + "T00:00:00Z" : s).getTime();
+    const extra = (B.LIVE.extra || []);
+    const out = {};
+    WINS.forEach(([w]) => {
+      const g = (k) => (W[k] || {})[w] || null;
+      const r = { crypto: g("crypto"), ransomware: g("ransomware"), kev: g("kev"), breach: g("breach") };
+      if (w === "1h" || w === "24h") {
+        const cut = now - (w === "1h" ? 36e5 : 864e5);
+        const seen = (o) => o.listed_at ? tms(o.listed_at) >= cut : (w === "24h" && tms(o.date) >= yday);
+        const cr = D.crypto.items.filter(seen);
+        r.crypto = { n: cr.length, usd: cr.reduce((a, c) => a + (c.amount || 0), 0) };
+        r.ransomware = { n: ((D.ransomware || {}).items_24h || []).filter((v) => tms(v.date) >= cut).length };
+        r.kev = { n: D.kev.items.filter(seen).length };
+        const br = ((D.breaches || {}).items || []).filter((b) => tms(b.added) >= cut);
+        r.breach = { n: br.length, acc: br.reduce((a, b) => a + (b.count || 0), 0) };
+        r.cut = cut;
+      }
+      // anything picked up live since the last build
+      extra.forEach((e) => {
+        if (r.cut && tms(e.t) < r.cut) return;
+        if (e.kind === "crypto" && r.crypto) { r.crypto = { ...r.crypto, n: r.crypto.n + 1, usd: (r.crypto.usd || 0) + (e.amount || 0) }; }
+        if (e.kind === "breach" && r.breach) { r.breach = { ...r.breach, n: r.breach.n + 1, acc: (r.breach.acc || 0) + (e.count || 0) }; }
+      });
+      r.total = ["crypto", "ransomware", "kev", "breach"].reduce((a, k) => a + (r[k] ? r[k].n : 0), 0);
+      out[w] = r;
+    });
+    return out;
+  }
   function drawKpi(D) {
-    const t = B.LIVE.today || {};
-    const xs = (D.x || []).filter((x) => !["Confirmed", "Post-mortem", "False alarm", "Retracted"].includes(x.stage));
-    const k = [
-      ["hit", (t.rows || []).length + (t.rv || []).length, "Orgs hit", "24h"],
-      ["usd", t.usd ? B.fmtUSD(t.usd) : "$0", "Crypto stolen", `${(t.cr || []).length} exploits`],
-      ["acc", t.acc ? B.compact(t.acc) : "0", "Accounts exposed", "HIBP"],
-      ["kev", (t.kv || []).length, "Exploited CVEs", "CISA"],
-      ["rw", (t.rv || []).length, "Ransomware claims", "leak sites"],
-      ["x", xs.length, "Open X signals", "unconfirmed"],
-      ["usd7", B.fmtUSD(D.crypto.usd_7d), "Crypto, 7d", `${D.crypto.count_7d} exploits`],
-    ];
-    $("#t-kpi").replaceChildren(...k.map(([id, n, l, s]) => {
-      const changed = T.prevKpi[id] != null && T.prevKpi[id] !== String(n);
-      T.prevKpi[id] = String(n);
-      return el("div", { class: "t-k" + (changed ? " chg" : "") }, el("b", {}, String(n)), el("span", {}, l), el("i", {}, s));
+    const X = windows(D);
+    T.win = X;
+    const line = (l, v) => el("span", { class: "wl" }, el("em", {}, l), el("span", {}, v));
+    $("#t-kpi").replaceChildren(...WINS.map(([w, label]) => {
+      const r = X[w];
+      const n = r.total.toLocaleString("en-US");
+      const changed = T.prevKpi[w] != null && T.prevKpi[w] !== n;
+      T.prevKpi[w] = n;
+      const cr = r.crypto ? `${r.crypto.n}${r.crypto.usd ? " · " + B.fmtUSD(r.crypto.usd) : ""}` : "n/a";
+      const br = r.breach ? `${r.breach.n}${r.breach.acc ? " · " + B.compact(r.breach.acc) : ""}` : "n/a";
+      return el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: "Crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP" },
+        el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, "incidents")),
+        el("div", { class: "wb" },
+          line("Crypto", cr),
+          line("Ransomware", r.ransomware ? r.ransomware.n.toLocaleString("en-US") : "n/a"),
+          line("Exploited CVEs", r.kev ? String(r.kev.n) : "n/a"),
+          line("Breaches", br)));
     }));
   }
 

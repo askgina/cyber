@@ -28,10 +28,12 @@ errors = []
 
 # ---- CISA KEV
 kev = []
+kev_all = []
 try:
     d = json.loads(get("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"))
     for v in d["vulnerabilities"]:
         a = parse_iso(v["dateAdded"])
+        kev_all.append(a)
         if days_ago(a) <= 30:
             kev.append({
                 "id": v["cveID"], "date": v["dateAdded"], "vendor": v["vendorProject"],
@@ -99,12 +101,26 @@ if victims:
                              for v in window(victims, 1)), key=lambda v: v["date"], reverse=True)[:200],
     }
 
+# ---- ransomware.live monthly totals (public stats page), for month-to-date and year-to-date
+RM = os.path.join(ROOT, "pipeline", "ransom_monthly.json")
+ransom_monthly = json.load(open(RM)) if os.path.exists(RM) else {}
+try:
+    if not ransom_monthly or days_ago(parse_iso(ransom_monthly.get("fetched", "2000-01-01"))) > 0.2:
+        page = get("https://www.ransomware.live/stats", 40).decode("utf-8", "replace")
+        m_ = re.search(r"monthlyData\s*=\s*(\{.*?\})\s*;", page, re.S)
+        ransom_monthly = {"fetched": iso(NOW), "source": "https://www.ransomware.live/stats", "months": json.loads(m_.group(1))}
+        json.dump(ransom_monthly, open(RM, "w"))
+except Exception as e:
+    errors.append(f"ransomware stats: {e}")
+
 # ---- DefiLlama hacks
 crypto = []
 crypto_hist = []
+llama_all = []
 try:
     for h in json.loads(get("https://api.llama.fi/hacks")):
         d0 = dt.datetime.fromtimestamp(h["date"], dt.timezone.utc)
+        llama_all.append((d0, h.get("amount") or 0))
         if days_ago(d0) > 30:
             if h.get("description"):
                 h["_date"] = d0.strftime("%Y-%m-%d"); crypto_hist.append(h)
@@ -197,8 +213,10 @@ for n in [n for n in news if n["source"] == "rekt"]:
 
 # ---- Have I Been Pwned: breaches added in the last 30 days (CC BY 4.0)
 breaches = []
+hibp_all = []
 try:
     for b in json.loads(get("https://haveibeenpwned.com/api/v3/breaches", 60)):
+        if not (b.get("IsSpamList") or b.get("IsFabricated")): hibp_all.append((parse_iso(b["AddedDate"]), b.get("PwnCount") or 0))
         if days_ago(parse_iso(b["AddedDate"])) > 30 or b.get("IsSpamList") or b.get("IsFabricated"): continue
         breaches.append({"name": b["Name"], "title": b["Title"], "domain": b.get("Domain"), "breach_date": b.get("BreachDate"),
                          "added": b["AddedDate"], "count": b.get("PwnCount"), "classes": b.get("DataClasses") or [],
@@ -218,6 +236,11 @@ for c in crypto:
     k = "c:" + norm(c["name"]) + ":" + c["date"]
     if k not in first_seen: first_seen[k] = None if backfill else iso(NOW)
     c["listed_at"] = first_seen[k]
+kev_backfill = backfill or not any(k.startswith("k:") for k in first_seen)
+for v in kev:
+    k = "k:" + v["id"] + ":" + v["date"]
+    if k not in first_seen: first_seen[k] = None if kev_backfill else iso(NOW)
+    v["listed_at"] = first_seen[k]
 first_seen = {k: v for k, v in first_seen.items() if k.rsplit(":", 1)[-1] >= iso(NOW - dt.timedelta(days=45))[:10]}
 json.dump(first_seen, open(FS, "w"), indent=0)
 
@@ -299,6 +322,44 @@ if brief:
         if d0:
             i["since"] = d0[:10]
             i["update"] = bool(i.get("update")) or days_ago(parse_iso(d0 if len(d0) > 10 else d0 + "T23:59:59Z")) > 3
+# ---- counts by window: last hour, 24h, 7d, month to date, year to date
+def win_bounds():
+    som = NOW.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
+    soy = som.replace(month=1)
+    return {"1h": NOW - dt.timedelta(hours=1), "24h": NOW - dt.timedelta(hours=24), "7d": NOW - dt.timedelta(days=7), "mtd": som, "ytd": soy}
+WB = win_bounds()
+def day_in(d, w):  # day-granular dates count from the start of their day
+    return d >= WB[w].replace(hour=0, minute=0, second=0, microsecond=0) if w in ("1h", "24h", "7d") else d >= WB[w]
+def seen_in(listed, d, w):
+    if w in ("1h", "24h"):
+        return parse_iso(listed) >= WB[w] if listed else (w == "24h" and d >= (NOW - dt.timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0))
+    return day_in(d, w)
+windows = {"bounds": {k: iso(v) for k, v in WB.items()}, "rows": {}}
+cw = {}
+for w in WB:
+    if w in ("1h", "24h"):
+        rows_ = [c for c in crypto if seen_in(c.get("listed_at"), parse_iso(c["date"]), w)]
+        cw[w] = {"n": len(rows_), "usd": sum(c["amount"] or 0 for c in rows_)}
+    else:
+        rows_ = [a for d, a in llama_all if d >= WB[w]]
+        cw[w] = {"n": len(rows_), "usd": sum(rows_)}
+windows["rows"]["crypto"] = cw
+yr, mo = str(NOW.year), NOW.month
+rm = (ransom_monthly.get("months") or {}).get(yr)
+rw = {w: {"n": sum(1 for v in victims if parse_iso(v["date"]) >= WB[w])} for w in ("1h", "24h", "7d")}
+if rm:
+    rw["mtd"] = {"n": rm[mo - 1], "src": "ransomware.live stats"}
+    rw["ytd"] = {"n": sum(rm[:mo]), "src": "ransomware.live stats"}
+windows["rows"]["ransomware"] = rw
+kw = {}
+for w in WB:
+    if w in ("1h", "24h"): kw[w] = {"n": sum(1 for v in kev if seen_in(v.get("listed_at"), parse_iso(v["date"]), w))}
+    else: kw[w] = {"n": sum(1 for a in kev_all if a >= WB[w])}
+windows["rows"]["kev"] = kw
+windows["rows"]["breach"] = {w: {"n": sum(1 for d, _ in hibp_all if d >= WB[w]), "acc": sum(c for d, c in hibp_all if d >= WB[w])} for w in WB}
+windows["rows"]["news"] = {w: {"n": sum(1 for n in news if parse_iso(n["date"]) >= WB[w])} for w in ("1h", "24h", "7d")}
+windows["rows"]["x"] = {w: {"n": sum(1 for x in xsig if parse_iso(x["first"]) >= WB[w])} for w in ("1h", "24h", "7d")}
+
 data = {
     "generated": iso(NOW), "errors": errors,
     "kev": {"total_catalog": kev_total, "count_7d": len(window(kev, 7)), "count_30d": len(kev),
@@ -311,7 +372,7 @@ data = {
                "history_size": len(crypto_hist)},
     "news": news_out, "x": xsig,
     "breaches": {"count_30d": len(breaches), "accounts_30d": sum(b["count"] or 0 for b in breaches), "items": breaches},
-    "hourly": hourly,
+    "hourly": hourly, "windows": windows,
     "brief": brief,
     "details": details, "clusters": clusters[:12], "patterns": pattern_stats, "pattern_defs": pattern_defs,
 }

@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-21T00:29:18Z",
+ "generated": "2026-11-21T00:31:46Z",
  "errors": [],
  "kev": {
   "total_catalog": 1790,
@@ -34,6 +34,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-129448"
      }
     ],
+    "listed_at": null,
     "eid": "k-59f94ae6"
    },
    {
@@ -63,6 +64,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-123890"
      }
     ],
+    "listed_at": null,
     "eid": "k-63a14165"
    },
    {
@@ -92,6 +94,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2025-42884"
      }
     ],
+    "listed_at": null,
     "eid": "k-8e30ace2"
    },
    {
@@ -121,6 +124,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-76466"
      }
     ],
+    "listed_at": null,
     "eid": "k-80fb8862"
    },
    {
@@ -150,6 +154,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2024-10441"
      }
     ],
+    "listed_at": null,
     "eid": "k-c0333fb2"
    },
    {
@@ -179,6 +184,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-40217"
      }
     ],
+    "listed_at": null,
     "eid": "k-7bcb25ac"
    },
    {
@@ -209,6 +215,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-90817"
      }
     ],
+    "listed_at": null,
     "eid": "k-4e2e4a9a"
    },
    {
@@ -238,6 +245,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-90436"
      }
     ],
+    "listed_at": null,
     "eid": "k-5fc268bd"
    },
    {
@@ -268,6 +276,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-115731"
      }
     ],
+    "listed_at": null,
     "eid": "k-ade0fc5a"
    },
    {
@@ -297,6 +306,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-114713"
      }
     ],
+    "listed_at": null,
     "eid": "k-3981d99b"
    },
    {
@@ -327,6 +337,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-123039"
      }
     ],
+    "listed_at": null,
     "eid": "k-e3895843"
    },
    {
@@ -356,6 +367,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-124194"
      }
     ],
+    "listed_at": null,
     "eid": "k-4ab8e010"
    },
    {
@@ -385,6 +397,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-111793"
      }
     ],
+    "listed_at": null,
     "eid": "k-7c463983"
    },
    {
@@ -414,6 +427,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-20320"
      }
     ],
+    "listed_at": null,
     "eid": "k-b0f4b7db"
    },
    {
@@ -443,6 +457,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-111560"
      }
     ],
+    "listed_at": null,
     "eid": "k-d66fb441"
    },
    {
@@ -472,6 +487,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-116606"
      }
     ],
+    "listed_at": null,
     "eid": "k-c555c885"
    },
    {
@@ -501,6 +517,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-125350"
      }
     ],
+    "listed_at": null,
     "eid": "k-20c898aa"
    },
    {
@@ -532,6 +549,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-102895"
      }
     ],
+    "listed_at": null,
     "eid": "k-913a37e6"
    },
    {
@@ -561,6 +579,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-123158"
      }
     ],
+    "listed_at": null,
     "eid": "k-b53976ea"
    },
    {
@@ -592,6 +611,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-116779"
      }
     ],
+    "listed_at": null,
     "eid": "k-f024acc8"
    },
    {
@@ -621,6 +641,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-123218"
      }
     ],
+    "listed_at": null,
     "eid": "k-f3975c8c"
    },
    {
@@ -650,6 +671,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-19868"
      }
     ],
+    "listed_at": null,
     "eid": "k-40b6daf3"
    },
    {
@@ -679,6 +701,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2024-27834"
      }
     ],
+    "listed_at": null,
     "eid": "k-4dbd313c"
    },
    {
@@ -708,6 +731,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-119977"
      }
     ],
+    "listed_at": null,
     "eid": "k-ec785b93"
    },
    {
@@ -737,6 +761,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-118527"
      }
     ],
+    "listed_at": null,
     "eid": "k-dec215a1"
    },
    {
@@ -768,6 +793,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-111357"
      }
     ],
+    "listed_at": null,
     "eid": "k-1b56469e"
    },
    {
@@ -797,6 +823,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-97229"
      }
     ],
+    "listed_at": null,
     "eid": "k-715a28b8"
    },
    {
@@ -826,6 +853,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-76418"
      }
     ],
+    "listed_at": null,
     "eid": "k-1d75a748"
    },
    {
@@ -855,6 +883,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-41709"
      }
     ],
+    "listed_at": null,
     "eid": "k-2695e72f"
    },
    {
@@ -884,6 +913,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-46300"
      }
     ],
+    "listed_at": null,
     "eid": "k-03edb720"
    },
    {
@@ -913,6 +943,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-48356"
      }
     ],
+    "listed_at": null,
     "eid": "k-ba109886"
    },
    {
@@ -943,6 +974,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-111497"
      }
     ],
+    "listed_at": null,
     "eid": "k-85d1e78b"
    },
    {
@@ -976,6 +1008,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-109618"
      }
     ],
+    "listed_at": null,
     "eid": "k-a5097afe"
    },
    {
@@ -1009,6 +1042,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-109619"
      }
     ],
+    "listed_at": null,
     "eid": "k-7626899f"
    },
    {
@@ -1038,6 +1072,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-114625"
      }
     ],
+    "listed_at": null,
     "eid": "k-73d48e68"
    },
    {
@@ -1067,6 +1102,7 @@
       "url": "https://x.com/search?f=live&q=CVE-2026-110447"
      }
     ],
+    "listed_at": null,
     "eid": "k-4a295e35"
    }
   ],
@@ -4052,7 +4088,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 8.7,
+   "age_h": 8.8,
    "eid": "x-d0056ba9"
   },
   {
@@ -4632,7 +4668,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.8,
    "stale": false,
-   "age_h": 32.0,
+   "age_h": 32.1,
    "eid": "x-41c84c0c"
   },
   {
@@ -4745,7 +4781,7 @@
    "hours_to_confirm": -12.7,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 35.8,
+   "age_h": 35.9,
    "eid": "x-28e9dc79"
   },
   {
@@ -5371,6 +5407,119 @@
    "x": 0
   }
  ],
+ "windows": {
+  "bounds": {
+   "1h": "2026-11-20T23:31:46Z",
+   "24h": "2026-11-20T00:31:46Z",
+   "7d": "2026-11-14T00:31:46Z",
+   "mtd": "2026-11-01T00:00:00Z",
+   "ytd": "2026-01-01T00:00:00Z"
+  },
+  "rows": {
+   "crypto": {
+    "1h": {
+     "n": 0,
+     "usd": 0
+    },
+    "24h": {
+     "n": 1,
+     "usd": 13510000
+    },
+    "7d": {
+     "n": 14,
+     "usd": 30585460
+    },
+    "mtd": {
+     "n": 36,
+     "usd": 80701530
+    },
+    "ytd": {
+     "n": 363,
+     "usd": 8816728648.128132
+    }
+   },
+   "ransomware": {
+    "1h": {
+     "n": 0
+    },
+    "24h": {
+     "n": 20
+    },
+    "7d": {
+     "n": 377
+    },
+    "mtd": {
+     "n": 931,
+     "src": "ransomware.live stats"
+    },
+    "ytd": {
+     "n": 9716,
+     "src": "ransomware.live stats"
+    }
+   },
+   "kev": {
+    "1h": {
+     "n": 0
+    },
+    "24h": {
+     "n": 4
+    },
+    "7d": {
+     "n": 9
+    },
+    "mtd": {
+     "n": 24
+    },
+    "ytd": {
+     "n": 306
+    }
+   },
+   "breach": {
+    "1h": {
+     "n": 0,
+     "acc": 0
+    },
+    "24h": {
+     "n": 2,
+     "acc": 4333744
+    },
+    "7d": {
+     "n": 2,
+     "acc": 4333744
+    },
+    "mtd": {
+     "n": 6,
+     "acc": 15813586
+    },
+    "ytd": {
+     "n": 119,
+     "acc": 557023886
+    }
+   },
+   "news": {
+    "1h": {
+     "n": 1
+    },
+    "24h": {
+     "n": 12
+    },
+    "7d": {
+     "n": 33
+    }
+   },
+   "x": {
+    "1h": {
+     "n": 0
+    },
+    "24h": {
+     "n": 2
+    },
+    "7d": {
+     "n": 8
+    }
+   }
+  }
+ },
  "brief": {
   "updated": "2026-11-21T00:23:36Z",
   "headline": "Have I Been Pwned indexed about 3.6 million email addresses tied to Careers360, and about $13.5 million in XMR1 sales drove Wagyu\u2019s token down to roughly $1. Bell Canada reported theft of enterprise customer data, and the European Commission said it had restored most applications taken offline after an October cyberattack.",

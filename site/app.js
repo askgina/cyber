@@ -590,7 +590,7 @@
       all.filter((h) => h.date * 1000 > cut && !known.has(norm(h.name))).forEach((h) => {
         const key = "live-" + norm(h.name);
         if (LIVE.extra.some((e) => e.key === key)) return;
-        LIVE.extra.push({ key, live: true, kind: "crypto", t: new Date().toISOString(), title: h.name, url: "https://defillama.com/hacks",
+        LIVE.extra.push({ key, live: true, kind: "crypto", t: new Date().toISOString(), amount: h.amount || 0, title: h.name, url: "https://defillama.com/hacks",
           sub: `${fmtUSD(h.amount)} · newly listed on DefiLlama, ${fmtDate(new Date(h.date * 1000).toISOString())}` });
       });
       LIVE.checked = Date.now(); drawLive(D0); tick();
@@ -603,7 +603,7 @@
       all.filter((b) => ts(b.AddedDate) > ts(D0.generated) && !known.has(b.Name)).forEach((b) => {
         const key = "live-hibp-" + b.Name;
         if (LIVE.extra.some((e) => e.key === key)) return;
-        LIVE.extra.push({ key, live: true, kind: "breach", t: b.AddedDate, title: b.Title, url: `https://haveibeenpwned.com/Breach/${b.Name}`, sub: `${compact(b.PwnCount || 0)} accounts · just added to HIBP` });
+        LIVE.extra.push({ key, live: true, kind: "breach", t: b.AddedDate, count: b.PwnCount || 0, title: b.Title, url: `https://haveibeenpwned.com/Breach/${b.Name}`, sub: `${compact(b.PwnCount || 0)} accounts · just added to HIBP` });
       });
       LIVE.checked = Date.now(); drawLive(D0); tick();
     } catch (e) {}
