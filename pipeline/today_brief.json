@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T16:25:38Z",
- "headline": "Chainflip remains in safe mode while investigating an Ethereum vault outflow estimated at $4.86 million by trackers. The FBI is reportedly investigating suspected access to its national crime database, and Nissan confirmed unauthorized access to part of its dealer diagnostics system.",
+ "updated": "2026-11-21T17:27:01Z",
+ "headline": "Trackers estimate $4.86 million left Chainflip’s Ethereum vault, and AP and CNN report an apparent intrusion into the FBI’s national crime database. Reproduced Microsoft customer notices describe unauthorized access to Entra Connect Health tenant metadata; the affected count is unknown.",
  "incidents": [
   {
    "org": "Chainflip Ethereum vault",
@@ -13,10 +13,20 @@
   },
   {
    "org": "Federal Bureau of Investigation (FBI)",
-   "what": "CNN and NBC News reported that the FBI is investigating an apparent intrusion into its national crime database; the bureau had not publicly confirmed it.",
+   "what": "CNN and the Associated Press reported an apparent intrusion into the FBI’s national crime database; the bureau has not publicly confirmed the intrusion or its scope.",
    "scale": "Scope and access unconfirmed",
    "patterns": [],
-   "eid": "n-efef5bd5"
+   "eid": "n-5d3dcae9"
+  },
+  {
+   "org": "Microsoft Entra Connect Health",
+   "what": "Microsoft customer notices reproduced publicly say outsiders read administrator email addresses and tenant metadata through a flaw that Microsoft fixed server-side.",
+   "scale": "Tenant count not disclosed",
+   "patterns": [
+    "enterprise-platform",
+    "data-exposure"
+   ],
+   "eid": "x-565d5495"
   },
   {
    "org": "SAP NetWeaver",
@@ -43,17 +53,15 @@
    "patterns": [
     "data-exposure"
    ],
-   "eid": "n-65751ff7"
+   "eid": "n-7d9fce1b"
   },
   {
-   "org": "Austrian foreign ministry",
-   "what": "Austria’s foreign ministry said intruders accessed its externally hosted website and viewed staff names and work contact details.",
-   "scale": "Staff count not disclosed",
+   "org": "Optimizely (Configured Commerce)",
+   "what": "Optimizely shut down a legacy deployment server and removed an injected script from two sites after finding unauthorized access.",
+   "scale": "Two sites identified",
    "patterns": [
-    "supply-chain",
-    "data-exposure"
-   ],
-   "eid": "n-1434bdb8"
+    "supply-chain"
+   ]
   },
   {
    "org": "Eskenazi Health",
@@ -66,12 +74,15 @@
    "eid": "n-a5c76ba9"
   },
   {
-   "org": "YMCA of Singapore",
-   "what": "YMCA reported a breach of its Youth For Causes portal and database but could not determine whether personal data was taken.",
-   "scale": "Scope unknown",
+   "org": "Ledger / CryptoBilis",
+   "what": "New reporting cited an unverified $95.35 million loss tally for the October wallet-tampering incident; Ledger confirmed an implant in one device.",
+   "scale": "$95.35M externally estimated",
    "patterns": [
-    "data-exposure"
-   ]
+    "supply-chain"
+   ],
+   "update": true,
+   "since": "2026-10-07",
+   "eid": "x-886c7455"
   },
   {
    "org": "US Department of Agriculture",
@@ -85,29 +96,6 @@
    "since": "2026-11-16"
   },
   {
-   "org": "Fluidkey",
-   "what": "Fluidkey restored wallet service on an updated app and attributed the incident to session data exposed through a logging tool.",
-   "scale": "At least $1.58M traced by Bitquery",
-   "patterns": [
-    "supply-chain"
-   ],
-   "eid": "x-7b9a9595",
-   "update": true,
-   "since": "2026-11-19"
-  },
-  {
-   "org": "Triple Whale",
-   "what": "Triple Whale said it contained a late-October breach and notified affected parties; customer Sneak Energy had already notified its own users.",
-   "scale": "Overall scope not disclosed",
-   "patterns": [
-    "supply-chain",
-    "data-exposure"
-   ],
-   "update": true,
-   "since": "2026-10-30",
-   "eid": "x-97a62f1a"
-  },
-  {
    "org": "Orchestra",
    "what": "Travelsoft confirmed a cyberattack on its Orchestra booking platform and began restoring services used by French travel agencies.",
    "scale": "Booking disruption",
@@ -118,6 +106,17 @@
    "eid": "n-40f1cb58",
    "update": true,
    "since": "2026-11-19"
+  },
+  {
+   "org": "Rokkatei",
+   "what": "Rokkatei expanded the potential scope of its online-shop breach to customer contact details and reported one confirmed case of fraudulent card use.",
+   "scale": "One fraud case confirmed",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "n-2451e7f6",
+   "update": true,
+   "since": "2026-10-21"
   }
  ]
 }
