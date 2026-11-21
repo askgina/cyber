@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-21T12:26:07Z",
- "headline": "Chainflip halted operations over a possible vault exploit; Onchain Lens reported a $4.86 million outflow that Chainflip had not confirmed. The FBI is reportedly investigating a suspected intrusion into its national crime database; the bureau has not publicly confirmed the intrusion or its scope.",
+ "updated": "2026-11-21T13:26:47Z",
+ "headline": "Chainflip paused deposits, withdrawals and swaps while it investigates a possible vault exploit; trackers estimated a $4.86 million outflow. CNN reported a suspected intrusion targeting the FBI’s national crime database, but the FBI has not publicly confirmed its scope.",
  "incidents": [
   {
    "org": "Chainflip Ethereum vault",
@@ -36,6 +36,14 @@
     "data-exposure"
    ],
    "eid": "n-f0d36592"
+  },
+  {
+   "org": "YMCA of Singapore",
+   "what": "YMCA reported a breach of its Youth For Causes portal and database but could not determine whether personal data was taken.",
+   "scale": "Scope unknown",
+   "patterns": [
+    "data-exposure"
+   ]
   },
   {
    "org": "Staples Canada",
@@ -102,17 +110,6 @@
    ],
    "update": true,
    "since": "2026-11-10"
-  },
-  {
-   "org": "Rokkatei",
-   "what": "Rokkatei confirmed one case of card misuse and said that personal information may also have been exposed in the earlier checkout breach.",
-   "scale": "One misuse confirmed; about 8,000 card records potentially exposed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-2451e7f6",
-   "update": true,
-   "since": "2026-10-21"
   }
  ]
 }

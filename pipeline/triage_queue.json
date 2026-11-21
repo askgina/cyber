@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-21T12:28:08Z",
+ "generated": "2026-11-21T13:28:08Z",
  "queue": [
-  {
-   "date": "2026-11-19T12:39:00Z",
-   "title": "Brüksel'de Siber Saldırılar Nedeniyle Bankacılık Sistemi Risk Altında",
-   "source": "Mersin Haber",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdUotd2c0MmtIVG1vc3hubEhpeHpDVTJ3d1ZSV284LTJaN2Z4YmU0d3dFSjJXNGRWbHJ1bEQzekowZ1ZyeWtWYkpUV09lX1RVTDZmRzNJQmFrRjJkOWFXYk8xTFdVU3RJcXFDbHN4d0MwRktudWtMRUxJbm5GTldqdnBoRW1nZ3JaSXZQRzJ3d0RMaHYyUTNNTkZsbEIwaVFoUWRaRU5ueHVEYjkyeGfSAVdBVV95cUxOenZ5SUFEbGpDQ1R4U3BROVV1QXRkODRZc21XeW03RmNSVlNDOTNCaVRxZnItMmdzV19Rai1uOXJrd3FLTWtfVG9sblE0MzY2ZnY0RXpESlE?oc=5",
-   "n_outlets": 6,
-   "also": [
-    "Avrupa’da siber saldırı endişesi: Bankacılık ve ödeme sistemleri risk altında",
-    "Avrupa'da ödeme sistemleri siber saldırı riski altında | Avrupa Haberleri",
-    "Avrupa'da siber saldırı endişesi: Bankacılık ve ödeme sistemleri risk altında İhlas Haber Ajansı"
-   ]
-  },
   {
    "date": "2026-11-20T11:08:28Z",
    "title": "Two men to stand trial in UK next year over RAF Fairford incident allegedly linked to Iran",
@@ -26,14 +14,15 @@
    ]
   },
   {
-   "date": "2026-11-19T12:42:59Z",
-   "title": "Japan’s BITPOINT crypto exchange to shut down on Dec. 23 as customer assets move to VCTRADE",
-   "source": "Crypto News",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBPaTROeEtRVWZDMllVZGJmOTZxdE9kREFKUG9nY2hrbkhoVkhRRG04ZTFfd0xYRkVzR0xkYXYtcDZpQVF2aldGcjllVklUV2RMQzNNN0V5cGE1anRqQmJ6aHdpZ1NaSEN3eC1WbXZ4cWpMNUtuS2pMOXp2THA?oc=5",
-   "n_outlets": 3,
+   "date": "2026-11-20T10:00:00Z",
+   "title": "How exactly did Trump get so rich on crypto? We explain",
+   "source": "WXXI News",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOGNGbmhyOURTbklZSnc3Y0lGeEhuZVVJdnJRa3NKVl80UjJlekZ2djliTkFxWXVOUXpYYUF5LTl1VUJTNUxQdGU5VVJyYXJuNEUyTW1vZWxiWlNaMzItdGtab3plaDhLZWJfVjZwVVpROHFKbFk1U1UtSVFJM3hoNTFoc2JtYW5ZRXN0TnQ0eDBJNEhHTno3cE56UFBIZEt1?oc=5",
+   "n_outlets": 4,
    "also": [
-    "SBI to Shut BITPOINT on Dec. 23, Migrate Users to VCTRADE",
-    "SBI to Close BITPOINT Exchange on Dec 23, Shift Users to VCTRADE"
+    "How exactly did Trump get so rich on crypto? We explain",
+    "How exactly did Trump get so rich on crypto? We explain",
+    "How exactly did Trump get so rich on crypto? We explain"
    ]
   },
   {
@@ -103,17 +92,6 @@
    ]
   },
   {
-   "date": "2026-11-20T10:00:00Z",
-   "title": "How exactly did Trump get so rich on crypto? We explain",
-   "source": "WXXI News",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOOGNGbmhyOURTbklZSnc3Y0lGeEhuZVVJdnJRa3NKVl80UjJlekZ2djliTkFxWXVOUXpYYUF5LTl1VUJTNUxQdGU5VVJyYXJuNEUyTW1vZWxiWlNaMzItdGtab3plaDhLZWJfVjZwVVpROHFKbFk1U1UtSVFJM3hoNTFoc2JtYW5ZRXN0TnQ0eDBJNEhHTno3cE56UFBIZEt1?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "How exactly did Trump get so rich on crypto? We explain",
-    "How exactly did Trump get so rich on crypto? We explain"
-   ]
-  },
-  {
    "date": "2026-11-21T01:32:50Z",
    "title": "相次ぐサイバー攻撃に対処 警察の専門部隊「FFF」発足 通信履歴の保全・分析など",
    "source": "テレ朝NEWS",
@@ -166,16 +144,6 @@
    ]
   },
   {
-   "date": "2026-11-19T16:25:41Z",
-   "title": "Proveedor externo del banco estadounidense JP Morgan es objeto de un ciberataque",
-   "source": "LatinUS",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQOW15a2xjWm1NbDFXZ0ZMZERqa1hPOUtmRlBXcC04cDFYak1JTlRBdHZsYWNyazJvcEhJWEFVUzVDMzhPVGpzMnJ2cG02OHd0al9md0FQMlQyTzdMWTlXcjlNbVVLM1BZRXp0Z1RUMXF0U3lxaWp0aWFZZ2lmVUFhZHJjcno1eE94bUF6TXBFLVUtLU45bHg1dVFaY2pXYXZhU0NrRFl5R3VlOGJLQ3hCbU9TMUh3ejFiYWtuV1BMX005Z2NjQTVFbUVocw?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "El banco estadounidense Chase sufre un ciberataque"
-   ]
-  },
-  {
    "date": "2026-11-19T17:47:46Z",
    "title": "Volkswagen ID.4 hack exposes Bluetooth security risks",
    "source": "Wards Auto",
@@ -193,16 +161,6 @@
    "n_outlets": 2,
    "also": [
     "New Windows 11 Zero-Day Vulnerability Lets Attackers Bypass Lock Screen and Execute Code"
-   ]
-  },
-  {
-   "date": "2026-11-19T22:50:00Z",
-   "title": "Cyberleek hackers published a Grand Theft Auto VI build",
-   "source": "iXBT.games",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPczBSemVOamhqcnh3YUtfTDB3RnNsanVtMzJGTktDT1pOYjlQaUh5N3pCdm96ZlQ5UVRLU1lGSlUtN1gtNDdOMlR2YS1pY21pcldaRlBDNlIzUUpITjZnMm9WTURXenVCSTNfdGJZdEdicGJseWEySHhHVnMzd1RSN21aRzAxdnFsZ1MtaVFIWVRxMHBlM0dfNGxaZm9DQdIBowFBVV95cUxON2p4UDRiOHhidl85LUZSa3ZqbFRSdjdDVWZoRGI0d3E1b1R3UW15M2dvQlZySW5lX3Bfd2NFcGh2NjJDQ3ZyXzF2RzM1VVRLeFdVN3h4Q1l6c0tDcWJEOHhxUHlhRWVDcXNoU2drYWJnQ2c2WHRGTzhjVG0yN1Bfb1Z2UjVKdldNM0hIdnp0ZlI2UWNnMDBNOHRSTnUxNUI1QWI4?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Grand Theft Auto VI is now playable on a hacked PlayStation 4 console."
    ]
   },
   {
@@ -416,16 +374,6 @@
    ]
   },
   {
-   "date": "2026-11-21T02:00:00Z",
-   "title": "Ciberataque al Gobierno de Estados Unidos: Hackers ingresaron a sistema de pagos del Departamento de Agricultura",
-   "source": "Meganoticias",
-   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNT0MxOUktaGI4RWtOWHBybXVtanZVbWxCYkNZMW92eVNkVHUwbmc3My1KcUxIOXFRM0sxQTVfWDdnbHh4V2NvSC1JQ0ZScmZhTHlzb3VobW45eVAzR1Y1OWlsZjdnak9Vc1hwMGQyOGlQNl9pZXdBaDBmSExTbklRZ3czckZVU0JWYU5INHpoODJERDFYWnBBeU5CeG5PT1VTc2VwZkwzTjZaSWF0SnR1MFdHRnF0cDcyY1F6UGJEbWZtWFHSAcgBQVVfeXFMUEd2b00xWXRwVncwTDlvaGdDRGdZeTNVX2lRaUNfaGhJUlpRMFFKT1JnQThJWHJtRVhvNUN5ZlU0WTZLbFM3ODR1TXlkYW5aTGJpaFBkUHpWN2ltNlhNSGtReVMwWldRSy1mLWJxYVpGYlRGQ2VTU21qU0RwV3BwMVg3U2lOdGRuS3ZkWlVXUHdRbzc3LW1FdVdiblQzMGNuajduRzhGUkptX3NJd29aaXJPVE9scjJCZUJucUItbjBVX0xSUFFtdlg?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Ciberataque al Gobierno de Estados Unidos: hackers vulneraron el sistema de pagos del Departamento de Agricultura"
-   ]
-  },
-  {
    "date": "2026-11-21T05:34:03Z",
    "title": "Hacker greifen Geschäfte und Supermärkte an: Diese neun Schritte machen Kriminellen das Leben",
    "source": "HNA",
@@ -456,92 +404,14 @@
    ]
   },
   {
-   "date": "2026-11-19T12:30:00Z",
-   "title": "Cyberattaque contre Bruxelles : ce que l'outil ARTEX change pour la sécurité des réseaux électriques",
-   "source": "Les Smartgrids",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNd2Z5akhpSTR2TFFwbzNkQmlMcXh5Q1lidFlrNHJhbFdlWmpfZTBJclF5LWh5S1hSV0VzQ0JKT3o3MmlhTDE2R0hzNjlqOFNhYlJXWjlLZkRzT0MzdkJkemliN1hSQjdOU25yem9wY2drd2Q0NllIUnVXMk1BNHU0cElTOF95VGtIMXNJM2Zib3p4bzJPSkxB?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T12:35:27Z",
-   "title": "美情報高官：近期多起技術宕機無關黑客攻擊- 國際",
-   "source": "香港文匯報",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBidVdXd3BLM3N2RmZaQ2xCVjl5ZjBTeDd5ejlqeGc1VnQ4bmZuQVdaYnhZcW14aUE3YmdULWw3dVZuRm5QNVl1eUUwUExHZ0ZuaEg3Q2ROcWhnQ1M4TVBVVFV2dGJHdUZ6N0VFOUstOUlkcEZBYTQ4?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T12:45:50Z",
-   "title": "Sky Protocol Processes $518M in Suspicious Transactions, Stablecoin Reserves at Risk",
-   "source": "ForkLog",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPOUFjSXpyUkZ0dlVGN3lRSVFldnctaGZJZGVyMWM2NlBCYi04WHlOVEpobldjcjNneGUwZmhtLVBkLVVYNndUY2VoTXBJV3NxX1BXelVPWnBzbWNCNDRZakczbUI1QVlzSkFfakFQbmRXa3BHR1I5dl9ramRrYUQ0WDRDeHhzeVhLMjZxNmdhRGRhcEgxNjF4Tkh6UFVZNDRldlE2SW5EalRtQQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:00:00Z",
-   "title": "Scammers Exploit GTA VI Release Hype to Steal Cryptocurrency",
-   "source": "ForkLog",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYTRPMzlpaWNpUzlGazV4SS1hM1c5UWR6UjB4UnUwQkJBRk9pMVBJOHBuYUx0S254MTl0d3hsMlQwZkcyOGltaUNrSHFvT3hnSjFOQ3h3S2x3RENfNjRNVmpXZm9mazREaVRtWTZ3Ri1MOXBXeFFuNV9QeF9DMnlIOWdiVVVJR2VwelN6Sw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:02:00Z",
-   "title": "Nastimir Ananiev for Fakti: What information did hackers steal from Bulgarian institutions? (VIDEO)",
-   "source": "Fakti.bg",
-   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPQUcxNk5SNU5LSTFNdElGWnlUVXhpc2R5Z0h6WllBWURaaTFROEJtMmtydUt6NmV4V3NlM3BfZ2dPUFRwcGpxSDNTeF9oUHloVEl6cTlaRDRGUlFMazZwN0FXWHhYSDVuTktyNzZEVlMyaGM1OTdJVGR6N3drZ3lqdmdmRFpBdzBHb2VHY1ZkYzdOM09RRWtfS0NxNklNNlhCTk1rZlZWVEpkX0dNd2pLdTB4MnZTb25pTzNaRlBCUlZJdHh5eS1xVi1fVFlfUnlsNWc?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:02:47Z",
-   "title": "Germany hit by AI-driven surge in cyber attacks",
-   "source": "Financial Times",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPWmhZVzRWeUgxUXA3SFB5TS14ek9aazQ3Ujkwb2hfSXhqc0dwak1wczcxQmRTYkJoZDJQV19KQVg1enREbmp3UDd4eWRVRVdUWjV6RHlFTHFMLVpzWU5yaHRGazVNbERTdzVjU2FPQTNLdGNtRXRuRnlQbGlYalJ0UE9lNWk?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:05:29Z",
-   "title": "Hackers Steal Over 10 Lakh Credit and Debit Card Records Across 20 Countries",
-   "source": "The 420.in",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE02SGljem42VUd2VlhlOHRmeTBlaDVnWVJiREdCd3FzTnA3bXNiY3ZvNV9vckxpM294YkU1YlRpZDRjWnFaaTBuWWFaVmRFOE9LMWpJaUlUQk9fNnFuaTdEeFJDLVlhWnJQR1d1dEluc1dycHM?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:13:11Z",
-   "title": "Еврокомиссия подверглась масштабной кибератаке",
-   "source": "noi.md",
-   "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBQMjVSWHRYNjFnTm1HeEprcU5NbXlQZUdrWi1ldHJVdWFCTkVzZFhaZVp4aWgzRnAxTkF4MTZXWjhtejA4T0kwc195ZU1mSGMwd29JSGdmSVFVaHg4Um5MSE5TdmptZy1tMG1hbWFGUEpWektDZDlhZGRUWHpoUQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:16:00Z",
-   "title": "銀行遭遇網攻 帳戶餘額會不會消失？",
-   "source": "大紀元",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE02VllfRFlWOGdhZmZRRFc5eVlOWkd0Zk9QMXNTYlRxckFhSGNzYVFuZzVIYlU0Rkc1ejVSdlBRVnhWOGJMUllGM3BVekRLWERNMjZOV1pCcVQzLW43UzNpLU9VM1U1Q03SAWdBVV95cUxNNlZZX0RZVjhnYWZmUURXOXlZTlpHdGZPUDFzU2JUcXJBYUhjc2FRbmc1SGJVNEZHNXo1UnZQUVZ4VjhiTFJZRjNwVXpES1hETTI2TldaQnFUMy1uN1MzaS1PVTNVNUNN?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:24:13Z",
-   "title": "一黑客在Hyperliquid挂出1.38万枚ETH多单，价值2151万美元",
-   "source": "TradingView",
-   "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE50X2FKMHBOVWQwRlFycjlpeHUwQ1NfcWhYVWlTVFVxYXU4Z0NvSl9SY1FlaFZVMENZWC05VzNud2tTWm5FMFB3QTFtVnptckwyWWNENndEeEp3bzRacW4zRlpycVVHQQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:27:03Z",
-   "title": "Initial probe by provider didn't identify breach - ILCU",
-   "source": "RTE.ie",
-   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5BOXA0RmNhRTVoc3NZc3RDMWJhSXR0bExoTTMwQnY3MmR4Rk1wMVcyRGw4T3JyT3BvYlNTVnFLakxhTXExdkFSa3lXX25Fd0I5RkdvdGxqQVNXVkRzcGdIbGdzR0tsTGtVVmZyeWZyMXJ6TFViaEZJczk1OA?oc=5",
-   "n_outlets": 1,
-   "also": []
+   "date": "2026-11-21T11:00:00Z",
+   "title": "Hardware hacker builds open-source portable 3.5-inch floppy Wi-Fi NAS — reads and shares old-school floppies wirelessly or through direct connection",
+   "source": "Tom's Hardware",
+   "url": "https://news.google.com/rss/articles/CBMilAJBVV95cUxPX2RwX3U2SkFGVjZ5T3FwQTN1XzFkU1pJTWI0bUNiQm1CU2xFYTB5VmVNSW5fQ3k4alNwc05tQVBBQUQwOWZCUk9sR2ROTVdSVFh2ZlF6UjE0bXhkbGVPVUE0QkU1UVdTS0pMTUJZU3hZYTlPdVVwbHh0REFCa0Fra2hqYzZKWUZDeFhjOWc2TlA3bXZYQmxybWplNDljNm9qaDdpRWRRY0pTUFdGNVRJYkpsb1lkVGxsYWlLejZLMV82eEpaY21mOVFPbk0tazhpX2p6YS1hajZOTXVyLVBvLW11QTY3WVVXNzRJdEl5M2xEc3RwWGhzQ09zMUp1cW0xcFFjZ3Z5STg0ZGZlb2lnYU1PS2I?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Hardware hacker builds open-source portable 3.5-inch floppy Wi-Fi NAS — reads and shares old-school floppies wirelessly or through direct connection"
+   ]
   },
   {
    "date": "2026-11-19T13:30:00Z",
@@ -556,14 +426,6 @@
    "title": "Avrupa'da Siber Saldırı Artışı: Bankalar Alarmda",
    "source": "İşçi Haber",
    "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQZjNqYlNzc1AwNUJkTU9rN3JZbS1XSUNLeUg5NFhEbTdra0VCOXhMYjNwbC1WcW5jY2llZHM0aWVQcHJNYkVSbWNIWktoM3R1dGVWVkYyWnRBeG9NNFRQdi1TSnVnZ1c1YVI4ZmVHemNvcVJQdWQwekM4ZjgyR1daNFowMXA2UmpUeHlLWmRyVUZNWjRuTloycnJMaGE5ZnYyR1lmbUlLNlpxd0lvR1RYYzJlQ2FPYk1P?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:35:53Z",
-   "title": "Еврокомиссия впервые подверглась кибератаке с использованием публичных ИИ",
-   "source": "Новости Беларуси | БелТА",
-   "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPTXM4MWpJV1JkMXBzZFlWUVFjdlJMRmFIZ1FrQmpIODMwNDJONndQdXNMZXkzWjlqTzh0dFhVZ3huZjZBRXZvN0dMQW94VkVUXzNtWXFaNEljMHhwWWJOdnozMVJPSERSeE5WeXhVSkZRZWZBT2lKSVVsbU1JTW5vcmVkRnVqYWNPRmMzOHNiTW1vNWkwN242RXZaTjVYVXM5cTVTVmFoelNQSGxtNGxsUENWNXQ?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -588,14 +450,6 @@
    "title": "Americans could claim up to $2.5k from data breach settlement after info leaked",
    "source": "The Sun",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNazBZUVpjSmJXeFAyZ2JsME9Oa0RnNEZYMUhpaDBDWlJkQWZVSzlqakNIdDAzM3lWaW9XcGNLa2lFaEs5V0JDWks5R0ZnRG11Z1RWNHh0NUpaTlhRVlNtdmk1OHJSNE10Z2pwSVhZdTJYUVJPNkR2d1ItemVYR0NNeE82Y0RsSXg4eU1wTzhsaGVMeVhL?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T13:52:10Z",
-   "title": "Еврокомиссия подверглась масштабной кибератаке",
-   "source": "Первый Севастопольский",
-   "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTFBDTHFlX1dzc0Jwc3RHUFhNNkxjdVJaVHZMaUdTQ1Zxc3JYeVpwbmoxQ0o0YjNPdGhwSWhfWEI4Wk1zeVJPWWfSAUtBVV95cUxOMmFQZDJ1bU1fX09HbHFFWVZTMzloTUpvM0MweWhHYS1WcjQ4RzZmNFZ3ZGpTQzVHdzZsY3JyaE1sc1ozLXByMUZVV2s?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -640,14 +494,6 @@
    "also": []
   },
   {
-   "date": "2026-11-19T14:06:47Z",
-   "title": "Une cyberattaque utilisant l'intelligence artificielle a visé l'UE en octobre",
-   "source": "Yahoo Actualités",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOd09OZlI5UG5IMkpPd2NmZ184amhoendzR3dvX1VmUjY2em9CME9KNTBrV2gwSzRMb3czYjNYc0llZi1LbmR5bzJNM1ctY2pocF83a3NpZ0FEeXl5ZlhNUU5tamJFcEt0dzlScmp5a2pyOHNGbjlaSmVJdjdIMjNYM3huY09NeTctQ1N3eUE1UUxHX1RSRjIxR2FsQjFSRDlZWm84VjU1bjZoZw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-19T14:11:00Z",
    "title": "\"Skala jest duża\". Ekspert apeluje ws. wycieku danych",
    "source": "PolsatNews.pl",
@@ -656,26 +502,10 @@
    "also": []
   },
   {
-   "date": "2026-11-19T14:11:40Z",
-   "title": "摩根大通稱第三方供應商成為網絡攻擊的目標",
-   "source": "TradingView",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBRbWY3ZTZlM0VrLVFZX0stb0RHdlA4djdZNjVtUF9uODVPYUxGdUwzOHE2MmNMNlFHcmZLaEVaeGhOamV5M09PaGtHcm9xRXRUS2d5SEtZQTRLUmh4ZDByakJUWXpiclJ5TFhodWhVcEpGOVFKTFpUVg?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-19T14:21:00Z",
    "title": "UE confirma ter sofrido ataque hacker em outubro, mas sem vazamentos",
    "source": "Terra",
    "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNWWpmMnJmaTBiVlE5NGhnMWRwVlV1ZG1lSTU0QU1GQWp1NWxxOHROM0JsQjY1STctaE9SOURBUGxDbGJFWkx5MllvWmVnVFMtQTRqMzZqVjVfQm1wb0ZWYmREUkFFWGZjWWdJNlhsTjExR3U1SzFjb0dOTWxNY0hyUVR0Y1dyY2huQ3hERlJlVnVqRmF2WWdtTlRxNDdZRHk0X2xoeFEwbHhRZjFseHM2RTRldU15UncyckJkcVREZDJuSlQ1WFhnNVdNVHFmQ0xnb1hHUllhazF4dVdQVnkyWnNULXNuLS1L?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T14:22:24Z",
-   "title": "歐盟委員會上月遭網絡攻擊",
-   "source": "Now 新聞",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBHSlJkNV9LeWdfTE9jeG9VUk5KeXBXdEowTl9zTGFmYWREdmEyRlJYT2RRMmQzOFZhcmlaYXJxUW5VVHVtZ3FYTC1NOHhQM0RqNGhCVV90Zjl2aEozTHhOdWVGTm5lQUFnR2lTYg?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -700,14 +530,6 @@
    "title": "Ujawniono 15 milionów dokumentów. Mroczne sekrety Deutsche Banku wyszły na jaw",
    "source": "Super Biznes",
    "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOdEJ0aXd2bHluOS15U0Eyck95Z1BGV0lxRVpBVExVUWk2cDZHNTFvVmNrNVd5RnFUVHE4MWl4ektEM2IyaDdCc3pPUU0xRkVhYzRKemdBNmlBbDV0NFl2dE9TcWFKNmZTaUN3X3JWNFlVQ3diSTNyTlphaUNXbnNZdUg3X3ZybXVGUUdLaG1wOUN1RFdXNFhnUGhOLWpnN0kyOVRhRElJRnhveXgxX1dWckcwZS1yVDlSTXhrbWN6RWdHSXl1SjZxcw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T14:42:24Z",
-   "title": "摩根大通稱部分客户信息在供應商遭受的網絡攻擊中泄露",
-   "source": "TradingView",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFB6djdaSGJzRllYTjRGMnFoNGFoUzV1M0dRVlUzeHh6RFp5Sy1XdlJ1dW1RV0xJa1J4TkVuRlVXNEdiTm1hS1Rabk1PcWIzMXhrVVA3YkZPelhYc3VsQkRXQ3NCNTBoYm5xVkE?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -800,6 +622,14 @@
    "also": []
   },
   {
+   "date": "2026-11-19T15:22:07Z",
+   "title": "Hackerangriff auf Kassenterminals weltweit",
+   "source": "Blaulicht-Report",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56WDF4M0N5c1JJX3BaQnpyUkN4RDJ3dGNxTVdOVEVuOUs4VVBFekhXdnZXYVgwZGQ1ZFVlUTZxVlc4cDV1YzI5Znd1Ym9aVUpVUDhuWkVxYmUxTTEzdkxXZng1S0Y2dktQOGtuak9VLWxQTDNUc2c?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-19T15:24:51Z",
    "title": "連串技術系統故障 國家情報總監否認涉及黑客",
    "source": "on.cc東網",
@@ -820,14 +650,6 @@
    "title": "BCD Travel : des données de passeport également exposées dans la cyberattaque",
    "source": "www.deplacementspros.com",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQTncxN2ZKXzJkSUEzVGtjMThPY0JWVENCNDJHdTh3MVVsR2NBblBYN3dJa1FNRFp0ZlNOWHdvQUpxS2Q3RU9nVV9adi13di14cEpUN0NWbW83OFNtS245OExweGVzdUZpal9ZVTRYZHV1cDBjd3F6OHMzS2FmeDZPOTkwMlZSU3c3ZUtjZzJ4YVlHRUZKYzc4VGE4WjYxX09aQUhwLVJ0bklWVm5EaGVCOVF1cGVHZy1weGF2bDdTdGVXY0pFUU9B?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T15:30:24Z",
-   "title": "歐盟委員會遭網絡攻擊恐泄員工資料 黑客用AI工具助力",
-   "source": "香港01",
-   "url": "https://news.google.com/rss/articles/CBMijgNBVV95cUxPaWd0bjR6eEs1bDZBQl84SnVIQW5BcUx0RmJHcUdEekQwVVNNdU90VFJiSER1WGhUb3ozZTNvM3EyUmQxXy1PUWg3MG45VWZiVi1TNlhxXzFSVEFwRGlla2Y5NjEzREVSMk8tbjhKTGl2bHAwV1NObk9PTFp5ZDJtek1ob0xSTEFsaXliOGJSdDVxak9YTnBJT0VaaDB6eTh5Y0Raal9aeUZZSjlFSlU4Q1FSS3g4eUhYNnVpQ2hkWEl4MFZXWklucFhibUYxTGNabWdCQmZtRW9aZno5TVhvSDJGcG1yeWpqODdFdThMZTJ1bnpDU1hKaEpSTTEtMnlaVmRIUjU3WTJaR3dhaEptc1Z0R2VPTEhNMm9GWmxXQkI2bGlsR1d2VUZaMEYza1VyUzBoZ3JJWGpZZWZqWFZlSmZBdC16aldER2w5SzN2UlNKSGdyOG8yNklIdEs1M0hGUTk1NENlZTJ0QlJnNDY3S2wyX0M5b01wWnFqX3FVc2kyc3llY0dqSWtTWThzQQ?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -860,14 +682,6 @@
    "title": "Cyberattack responders are booked up as agentic AI attacks surge",
    "source": "Digital Journal",
    "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQOHRSQkdLc1l2cTJtMkNpNTJMT1VXSTJfVzJ3cTFNT2NWZXVhS0FtUXROLVk1TVprMndjN3U2UmhyQ0NiTUdaTkRnR0ZEZVdZcHdZWmJWZkhrbVVYNTg2RFJud1JKYVl1azZIWnVCRF9QREt6aVBHWmN2eUJrX2FKNVJCbjMtS0NOYzNONzhQREhRa3p5ZVFWMk9lMFZMS1pLS0lYQlVxUQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-19T15:58:06Z",
-   "title": "全球近200個熱門網站遭黑客攻擊 專家籲民眾更新系統",
-   "source": "Sing Tao Daily 星島日報加拿大",
-   "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPLTZDdHJtekxFMEkyYjQ1Y2l5WlAyWGQydVJ1cTg5d3BsV1hCUkNUZjY1ckt6clllYl9WcjlNWXlFNnhmdmZVd3cxdTQ2dXp4cTN5eGhral9OZzhyU3EyTnE0Q0QyR3JVVEVGYmJWZHQwb2FvRUl2ak9reVMxLVByMDFXT3NvamI1YjFsQUFEVHJhRGpMQjFPdjVTWUxvaWVhbzdNTmtKSEJzTGtxblFhc0Z5c2JUUWJudkdMWUxpd2NaN2JJaFFobDZfV1lyc25kSjBMaVgtVnpsREdNTTliWlpsbzFxVHF5NGQzc1VlX2c0RTJKOHZWcXdUTkdyd3JoZUJjRFBvemdEMVh4SEdvWVZ4VEVNZkFrQ1IyT3FTYUN6UHYtNU1BdU1vYnpBSUVLQVZhZUYtMnVtbzRnaWlGbUIwX3VldFBmMERCOFRkSElZbC1Rb2JDak9vN0JZa2wzN1F4Y0tlTUhaTWfSAYwBQVVfeXFMTkFZb0lNNElvbVVveE8zVXBRa09aU1JWMDhXYnlnMExIQWc1cTlmMllWVEFqT1lyV3BRa2s1WEMxd2JiM3ZNTjJTRUozTmY3VXFlM1lYZzhLQ2JkMnNobGYyWmlDcTV6ejRJOWg5VEZXZnNXaTczRnE2bGdpb0RseHZaWnpfNndFbW9yR1Y?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1424,14 +1238,6 @@
    "also": []
   },
   {
-   "date": "2026-11-19T23:00:00Z",
-   "title": "City schools still assessing cyberattack",
-   "source": "thedailystar.com",
-   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNNmtlZm5DdTd3MjNCNlJ1UGp2TTg5ZGMzckc2dVhFZ2MxYTVEZWhndUZ6LU5oRzh1bC10TWxOSDRldVNkNWlZd3VrNnAzamk3M2pFTUF3UDJrVGdmVUdrSk5ObEhPYzdVNDRVdFppaVFXNmFDeS1HUlBkUUdaWmVSejJsZy1WTEhSeTNXYVZaODJGUnVCaW4teE1qTWtmYjhDTS14TkVSLVRJR3BfU0ZoZ1poSzVMbFpYNVhxMU1rQjYtS0ozaVN2QnVvejhTT1RN?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-19T23:13:00Z",
    "title": "Еврокомиссия подверглась кибератаке. Пресс-секретарь ЕК рассказал о последствиях",
    "source": "LIGA.net",
@@ -1656,6 +1462,14 @@
    "also": []
   },
   {
+   "date": "2026-11-20T02:12:59Z",
+   "title": "Une cyberattaque s’en prend à une association communautaire",
+   "source": "Radio-Canada",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQY3g4azZxYWhLU0Q5bTAyaXYyVkJlel8zaGpxZFdiaVdkeVNFTWFrdnNPb0dFd1hweFJYX0xNN1Zxclc0Q3l4VFd4WWlqUDZKVU12U3lTRktHVl9nM1J3LUhfeERaQ056alA2YU5kS1FRYTFFZktjSzhxYzVSNGpiRTNjdlotZUVZTzNtUVhDdE0?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-20T02:28:59Z",
    "title": "意大利官員：近期遭受網絡攻擊旨在破壞國家穩定 未構成國安威脅",
    "source": "Yahoo 財經",
@@ -1700,6 +1514,182 @@
    "title": "France Travail : fuite revendiquée portant sur 2,6 millions de lignes",
    "source": "Fuites Infos",
    "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5xQ19KZG9uNlpFbGpLSUN1SlNpWTdVLWZrSVNaOUFHZTJBMnFxTU1rRGY2anFGTk01VkpRNUpiVnBvR21lUnpadC12cmdwWWY3WF9vemNxTklXVmZtVFMwS1NJeWNzc0k?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:00:40Z",
+   "title": "OGROMNY wyciek danych ze Steam! Hakerzy mogli zdobyć adresy i numery telefonów",
+   "source": "PPE",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOcURPQ3RkbVFiVWdhSUZINXpNQ0FWNmc5WHhXdlduQ0ZDRkZJOHZiM3hNYmJoRE5Sczd3dS10TmkwbDVfcFVEdFFZSmpVRm5EVlE1S2tKUTRiQkZTTXhzUFg2MlQwRFBCUXQyLU9ydHd0OXNmaWxvVG8wOVM3dVBCSDNHSEZhTGxVVVZtREJOemF5dzJYeElyb1pCbEl5VW1DMWFXaGhqQTFaYzBVVExBclJ2bw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:02:34Z",
+   "title": "Apple Black Friday 2026 Deals: Get Up to $300 in Gift Cards on iPhone, Mac, iPad and More",
+   "source": "Speaks Media",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBoSkpENFY2LTZRbU1WZDdjclF5cEtScXlVTE00MTFQM0owaFViSVhXMFctMm5ObDRLNVFRN0RkQm9GMlRYWE9TSmpZYUJZMVpNQ3RRZ3BTNC1fZHExVThTWlJETmxwTTA?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:03:52Z",
+   "title": "UK conducting offensive cyber ops against Russia, China, Iran and North Korea, top commander reveals",
+   "source": "Sky News",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQWXJZZjVOVFNEOXNvTjFzN1h6cW1nbDFxSmhkSUt5QVhRc2NTLWxKX2UxQmRqZkc0RXl0N0c2NnpuTFlpZWI3bk1XQUk1Mm5UQW1hNkZsZEhHUXkwTVBWRmx1d0w4My1oeTN3TzNkcnFGb1NxVjRENHlsLU11N3UtcFpMLTUtejdJYWlMWEMxSExIcDFsX3hCcE4wREIwbE5EUFVoVHhFTmZBa0lHQ2xGRHZwU1lHeDVwWWhubktnRG5ydlBjTHlDd0NNNmlIZw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:09:34Z",
+   "title": "Европейский союз подтверждает, что подвергся кибератаке с использованием инструментов искусственного интеллекта.",
+   "source": "Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNbFpXMGZSTnE0VnNtY19SaUVrQlJPajVPR0o2S0RpSldGZjJCRC1OWC1xQ3VFRzV2b3B2b3lTS25JaEdmVFpDODBVcDI1ODZhY3dYRWIwMURkUDhvc3p3cGFvSEtCVXdNQVA5bDhzTENhYUhRSnlZTDBSV0hJLXc1NXpDUS0yc0MwczFFZEdR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:17:00Z",
+   "title": "Red sanders smuggling accused hacked to death near Arni; associate surrenders",
+   "source": "The Times of India",
+   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQal83ZUVITG92YUtQdzlGZE9XZl9INUV3a0xKWkZoU0FHRElJMTdJV2NDTnpXeWhlNXlCVzZTOVlsTVh1UzJjNmZhZ0dvREVHa2g3TmxnM04tSFRLRUVRNnZkWmV0dkFTVy1Fc19DUUtrTXVveWxrOE5nOE9STGNUZ1p3Z3hiQ3MxaUZrcUlEME16azBwS3htZ1dSSURDTHZ3aE84eXRPWnN1RWpLdUF1RV82UXlUTFJuUXR0cWlyUnRFYnRtOVY0Umx3NV9fb0laUVhZVDFCV1VSaGV6cHZRbUVIcGM5UdIB6wFBVV95cUxNQ1lrVmJvX0xlY0QxNnVSaU9Xb3dzTENhQ2NtUTlneHZuUGRsUUZmZE1SS3dYanB0bFFtRWI2bWFtQWQ5MU81cEtzaW12a2trT1NHem9VRV9xaE50RFgzMmVpZ2hlYUI2ZDhueHNxd19WUEpseUpHalRVRlJMVUc1d0JETkhWcmkzNm8tU2VlTVFQQnczaTBlWF8tQUNKSUFMMTdGbE5HUl9KdXJFUHZQR3pDaVVSREhxQU5CeHlsdGJobDR3ZE9XYXZyMW1lUlRfZFQxbU5kRW1BZ2FXVi1RVkJHQUpEYWhHemww?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:30:00Z",
+   "title": "Attacco hacker a Romagiallorossa.it, parla il direttore Marco Violi: “Credenziali bloccate e fake news nella notte. È una persecuzione, denuncerò fino in fondo”",
+   "source": "Roma Giallorossa",
+   "url": "https://news.google.com/rss/articles/CBMirwJBVV95cUxQa3o4eVRHalhtRVoxUWdDc282aDFwX0FVa0pfSWRiT3NBYVlBaVRhWV84SUFrU3pIMUswaV9TOHFnYUlKM1ZaVmRYdmlGVGJJMjlCTVdDV2FiU3UxTHNTdUs4NG93clBXbHQzWE9BZjd2Qkx1REVQdmFKYmRpWXg1eVMwSVVEdE9iMkdqa1lRX2g3LV9uUVhsUms1T1pFTHZMZWpHQWlCVmRFZV9jSHB0X0EwSkoxSklUVWVXWDViN3YzZU9WVWR3TmxDSnFGQVVCdzVFOXd5TVVreWV6UlFWY3hRa3VEd2NXdFI1VjFWeVdqYjkzTkNBdkJIZzJGWlBKVTFFQ1dzQkN6T2E3NTdnMHpoN3VhT0tvNm9GMHYwa0djb3VNdElvVXE0d1BCV3c?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:30:48Z",
+   "title": "全美系統連環癱瘓非巧合？楊安澤警告AI危機：防黑客速做3件事",
+   "source": "香港01",
+   "url": "https://news.google.com/rss/articles/CBMiqANBVV95cUxOVk5EM21UQVdqalpqb0VjQ0VpVTJkZHF6TWdJbERyc2JPTnpKTGxxNWwxMHE3WEtNOHZWN1NTSDJMazJFbm1qWlQybTh4OGdGM3ZuWVBDc2xNSEJnR3N0aEJJNVpnZE1Bay1Jd1d0ZUdKTGg5QjN3Zi01U3NOdjFXSFYxN2hkZVpRcEdRNGlxclVFYUpHY2ZhZW92VHFicnZfaUU3RHBuX3JKVGdsQzVJZFRjRWNUc1pLNW5mOF9tOWZWcDA3UnVsNWVCckU5SWo3dTlMMkR4X2lMTk9NeXR3VnZ4em1RdkhxS3pvX0xQbDVsLWtELVdDTFZva2FMdGVvenJLMlR1MEFlS1c3V2VOS1Q3R1NUc3NiYVZndUFrWF9jTWdNQU9rVWlRcEZhMFphc1lQY1BUQ1hwVDl6XzdYcEFJUFBwX0c4aENObllnamk3MDhJUnFBZFF2RE1nY2VEb1NvdzZjVXpSZ0RYQUtPa0loZVZYa1Q0aXA4OWFHZ1NPcVdNOXh4V2RSVmpLVjE1RlhFU0JhY3lnQzhFdmIycW50ZFVYdmct?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:31:19Z",
+   "title": "Ransomware now a geopolitical disruption, says BlueVoyant VP",
+   "source": "ET Datacenters",
+   "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOZG5pNE1IRndrcFlGc0VhQVZxdFZfaWtPVTlaYzY1ZC0yRWtfRWlkMUJOd0RVQnk0TDNTUXZxRzU5MWR4QUo3X0dJWTFtMjRCUGljV2ZwTDlpRG4wcWtsRjNDRkl5b0xGcDg5S01xVDVXUTVYeGhWLXpTYTRYWGlfcDN5QnFLTWgyVDFpNmlzcG5ENjU0cWsyR0kxUG51a01LVWpoa0N6V3ZxRWdvalQ4SmxmQVNpdEFfbnVDYXRaNEcyUjJNcHBQcU9KdzNUbDZjMXFqNFFqaWVGMjFTR2fSAeIBQVVfeXFMTTdjUmdZR1pHQ3JrOXdIQXJQQXNYMFlWV1F1TFZOZHNoV3NBb1o1SVVtUnR4OU1MZm96TG00TkZJd1pQTjdOWUMySXZibXh6cnRJa3diTkRTVlpOQXRfa1R5NzN1anhLN05Ucm15dmhzbkItLUhTSlkweGVodEdvZEtNdDQ3OVVQSWoySjN1cnlZTW5NeGp4dzBQT1pLSlI3Tk9VNFFXbm9HSG10ZUtjM1VZSzB1NG9maGprZE85TG9GRS0tTWtBTjBPOEFCalpVMjY3ajdFdkpoZ3lQQ1k1eWRUUQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:34:16Z",
+   "title": "欧州委員会（EC）、AIツール使ったサイバー攻撃の発生について認める",
+   "source": "株式会社マキナレコード",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdlVGN3k5c0NaR3pVR1NZSlNfWDNxYXUtUzJIMTRDa3lFdUthM1VWQnFTcGlBYkFyMS1fUTQ3aGhBRXBTUUdjdFl3a2lKZGF1Tm1aOWhxWm5qRWYzRjF4U1BOVDdQeUNhVVh3OFBteDhRcFVfa1NYLUlRaTlpMVVLanctS3U?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:39:35Z",
+   "title": "USDA Resets All Passwords After Security Incident",
+   "source": "Wisevoter",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNN0dZS0R0TC1OX2FIWHNRdUhiNWtRSzk4SEVXd0ppUmhFMnpVRmxMS3hiUmJIQ25UWnkxMGY2RTNJczJYVXIzYXdMRmFfcUhBNS1mMDkyVlBPbkxwMUFUVW1pVEpoQUw4dWR5VS1tRXE1a1JCNVF1aVFGUklZMDhKZzRmU2hwMF9WNWN2dHJiMGs?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:39:36Z",
+   "title": "Kentucky Weighs Unified Cyberattack Response Center",
+   "source": "Wisevoter",
+   "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNRTBLZ0FWS0lqNHRuSjVXQ1hNSnlVWnQxbWxjdWRuY010d2xvUWdrNUdmWEUzZkgtUHU3Zk1zRmhTVnhBMU42N3AtTGhNdzc0UFJIdTlYZHY2VzF5M2JEVTFwMkktaXFROEdUSEZUYTR1SHRwVzJYbVBPc0VQRUFQVVJ6ZjFvYXFDVEtrS1gxU2xWUDg?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:39:45Z",
+   "title": "Stanford student accused of campus hack, arrested",
+   "source": "San Francisco Chronicle",
+   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPSFYzampRQVBxaEdtemdxdEc5alAtMklIMGhQUTRieDlvNm1pd2gydTVHRDQ5R2pVNjY5VVprUS15TVhmejk4bkQyc1pRcDdUaWUzX3VYc2R4UmNhWlRZb0pGOVF1QkxnSzdEMjY0R2F0V3pVRW9rSFI5NmVkampsZnlfZmY0R2EtYWJLLVRNZm5zQVI3OHc?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:43:00Z",
+   "title": "Memorial kiosk hacked at veterans memorial, prompting changes to prevent future incidents",
+   "source": "wfmynews2.com",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPdUN6UHVid18xTE9MQy03NzV2WHFUWFZlT1A5akJVd21vVVZXdG4wV190QTBuVTZoNVlsQXVKaXBVM0l4aW40dnJTdnZsZGJzd082SmxiS2FJeGdFZ3U1SVJuNWl4Q2Ezd21KQ0F4Xy1VWFlHSGpCQnJDaS1rY2tKVmp4UUwxWWdSU3ZPMUNTUjBZN1ZOLXZMM3gzUWdHVndjRzZ2cUt6SVczMnY2Vk9iblNwQXAwc1lud01zT2FhRnl6Uzd3OFh2UlM4RS1JZ21xVE9lX292RmF4MWlqQ1h6QzlJbUJBUGZWNnlzSDM2NldNWlNpS0xvbEFKN2VGUTF6QXVN?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T03:44:00Z",
+   "title": "Alertan en SLP capital por hackeo de WhatsApp para cometer fraudes",
+   "source": "https://www.elexpres.com/",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFA4WXZRdjRXNGVrOWZ6bWtHRjh1SVNKa3REMXhyVUt5M19qUmhzVWY2ZjNNQkR0UEFGY0lsa0tBYTBQcXE2Nm1TVEJ2aE9Fd0tlSkN2UTlEdDl2NFNZYWc?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:02:24Z",
+   "title": "Is the USA Under Cyber Attack? November 2026 Outage Updates",
+   "source": "Kingy AI",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5mVzJZSXNpMlRQeDcyU3hUTi1BREZGRmFMMk41ajNtSEVWOEdUMHBjQkwzLWZyV1FHcDlQNVBsRDRYNV9RWjZ2S1M5S3lSOXczeWoxbHNWVFllNFp4Ylp3bnZ6bGFrbUJ2WHBoVFQ5RUlLcGstTWhJY09lSQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:03:00Z",
+   "title": "618,000-Passenger Data Breach Forces Travelers to Ticket Counters",
+   "source": "https://travelhost.com/",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQY3BETnd3UGZxbVZoZDVMRUs4ZkdRRTZvejNQR1JaR01DSEsydXNFWDliQVM1NWd1V2xZSk05M0VVU0xRN3NRbUhHeTJqN3FOS0V2aF9lZXE0V01YdjhqZ1ZUWWd4VS1qT0RGQUEtaEJfaXYyZG9tU1NOaFMtbGNkM3RiZ1RvYzl3VWlfdENB?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:19:40Z",
+   "title": "当社業務委託先システムへの不正アクセスによるお客さま情報漏えいに関するお詫びとお知らせ（第二報：11月20日 午前11時30分時点） ｜ News お知らせ",
+   "source": "Goldwin Inc.",
+   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1iM2J1VjlCZXRzZjU1STcwTUY5Tmp5ZGVDWHJpNHJja2VlbV9vRWZBdjN0VWRLaHFmOURYS01mS2wxakdXMjc4bmZiUmppNnRCSmU0NW9B?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:29:35Z",
+   "title": "Microsoft、AIによるサイバー攻撃にAIエージェントで対抗する新サービス「Microsoft Perception」提供開始",
+   "source": "ITmedia",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5LSDBqRlBOSGItb0k1b1EtZmpsM0gxMFhpbHJNa1RIekZBTkM5TTZHYV9xejJJUm92bDE5QVJ6blJyWTNtNTI5UkRIN1htRnh5cl9MREswcnV6cmtCYkFpODk0WGdGc1ROeFE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:31:04Z",
+   "title": "120 resenärer dök aldrig upp",
+   "source": "Expressen",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSTg5UFdrUGx0Szg5aVFvVV9mUFd2N3BYemFqUW42OFhUX1VpQVFzUjVocndNZS0yVi1oRFhpZENxUUpaeTU0bGVXeERzT1VZZ3JEZS1sa0JPenBfWlp6My1kNE5QVVFrMlpPcjFfYW9OMGtJdzJUc2YwSWxPdHRFTkhKYkF0NXpUMEc3Rl9BYzBxUFVpQlN0SndkRkFPelE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:37:20Z",
+   "title": "鏈上追蹤：黑客搶走幣安62.8億美元，完整攻擊路徑深度復盤",
+   "source": "PANews",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSV9ESzNERjJlc0VJODA2Sk5jd2JLSk5fOFplR2FQNm0zaUc0ektPanlxMTltc2dWT3J0TkZHVVI0R2dFZHIwVEd4S1VYU0xNZTNsNW9FazZVY2lFaGdTNnBURkJLVWJWRWNibXIxUTZ1VVJqUWl5MG9rMjVKQ3Q0M2ppb0Y0Zw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:41:57Z",
+   "title": "Banki reagują na cyberatak! Sprawdź czy Twoje pieniądze są bezpieczne",
+   "source": "Bobowa24",
+   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOekJRUk14OFdTNnVjR1BfOElyamh0bTJxemdDYnc3TDVaRUxWeERQZXQzUmRINnotS2RnN1A5S1Z0SFhIWm9SMThjdHB2MmJIdjdfcDlKMTFGZl9BUGFuQ0d0V0h4cG5lbHEzblhlNDkySDU4elNXOENvUTVjVHcxOWduUEJsTUxuVHBNbGpMUnh4ME9ZcG5NZ2RkQ1luUQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T04:49:00Z",
+   "title": "Auch Promis wie Cathy Hummels betroffen? Betrüger nehmen Gäste von Chiemgauer Top-Hotels ins Visier",
+   "source": "Chiemgau24",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNTUtrNDZJUS1MUkdORGlyR2dYNWNrMVBKY2dXZkN3X0hibUpUdnJKQ2lNZmFhbWpNUlRkT1hDcVVFNmY5SmRSRWZ3bElPR0lDVTdVOGs3RHZVWEl4Uy12aC1rVlRMM2NMQmZTVWZOMEZibE1iNkh5UFhQSmxBV1MyTng4ZDd0Z3lnbjRZTDRaVkZEbFVnNHk4NjNJTUg5dkJfOTF5MlBJVUNnTDI0RC1INUJKVVJYU1VmSERNNWQyZHJxTTZUa2N4Q3F2TUF3cTg?oc=5",
    "n_outlets": 1,
    "also": []
   }
