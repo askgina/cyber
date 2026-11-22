@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T04:30:56Z",
- "headline": "Chainflip reported the theft of 122.86 BTC and an Ethereum outflow estimated at $4.86 million; no recovery was reported. Rackspace warned that an intruder could access some customers’ Kubernetes secrets, and Fluidkey’s post-mortem put its November 19 losses at about $1.6 million across 52 accounts.",
+ "updated": "2026-11-22T05:26:11Z",
+ "headline": "Chainflip reported that 122.86 BTC was stolen in addition to an estimated $4.86 million from its Ethereum vault; no recovery was reported. Fluidkey confirmed about $1.6 million in unauthorized transfers, and Rackspace warned that an intruder could read secrets in some customers’ Kubernetes clusters.",
  "incidents": [
   {
    "org": "Chainflip",
@@ -9,7 +9,8 @@
    "patterns": [
     "bridge"
    ],
-   "eid": "x-b163fb32"
+   "eid": "x-b163fb32",
+   "url": "https://chainflip.io/return"
   },
   {
    "org": "Rackspace Spot",
@@ -42,7 +43,7 @@
    "patterns": [
     "bridge"
    ],
-   "url": "https://x.com/i/status/2124207519581327394",
+   "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
    "eid": "x-57f29b3f"
   },
   {
@@ -61,7 +62,8 @@
    "patterns": [
     "data-exposure"
    ],
-   "eid": "n-4945b68d"
+   "eid": "n-4945b68d",
+   "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/"
   },
   {
    "org": "Sunfun Info",
@@ -69,16 +71,8 @@
    "scale": "Exposure not disclosed",
    "patterns": [
     "enterprise-platform"
-   ]
-  },
-  {
-   "org": "Fort Smith EMS",
-   "what": "The Gentlemen listed the emergency medical service as a victim, but the sources reviewed did not confirm a breach or service disruption.",
-   "scale": "Unverified extortion claim",
-   "patterns": [
-    "ransomware"
    ],
-   "url": "https://www.ransomware.live/id/Rm9ydCBTbWl0aCBFTVNAdGhlZ2VudGxlbWVu"
+   "url": "https://www.tipranks.com/news/company-announcements/sunfun-info-reports-information-system-intrusion"
   },
   {
    "org": "Airbyte",
@@ -105,6 +99,16 @@
    "since": "2026-11-19"
   },
   {
+   "org": "1984 Hosting",
+   "what": "The Icelandic provider’s managing director said seven websites were destroyed in the attack and that services would return in phases.",
+   "scale": "Seven sites reported destroyed",
+   "patterns": [],
+   "update": true,
+   "since": "2026-11-20",
+   "url": "https://icelandmonitor.mbl.is/news/news/2026/11/21/pro_palestinian_websites_targeted_in_cyberattack_on",
+   "eid": "x-afb3de62"
+  },
+  {
    "org": "Kang Chiao International School (Linkou)",
    "what": "Osiris listed the campus after the school’s earlier confirmation that some data had been exposed; the listing did not establish the scope.",
    "scale": "Scope unverified",
@@ -117,14 +121,14 @@
    "eid": "x-62546e4d"
   },
   {
-   "org": "1984 Hosting",
-   "what": "The Icelandic provider’s managing director said seven websites were destroyed in the attack and that services would return in phases.",
-   "scale": "Seven sites reported destroyed",
-   "patterns": [],
-   "update": true,
-   "since": "2026-11-20",
-   "url": "https://icelandmonitor.mbl.is/news/news/2026/11/21/pro_palestinian_websites_targeted_in_cyberattack_on",
-   "eid": "x-afb3de62"
+   "org": "Factotal",
+   "what": "SafePay listed the financing company on its extortion site; the claim does not establish a breach or service interruption.",
+   "scale": "Unverified extortion claim",
+   "patterns": [
+    "ransomware"
+   ],
+   "url": "https://ransomware.live/id/ZmFjdG90YWwuY29tQHNhZmVwYXk",
+   "eid": "x-1fb3441b"
   }
  ]
 }

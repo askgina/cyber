@@ -2830,5 +2830,67 @@
    "key-compromise",
    "data-exposure"
   ]
+ },
+ "BADBOX botnet returns with record-breaking 40 billion daily ad requests": {
+  "summary": "HUMAN disrupted an ad-fraud botnet operating on infected consumer streaming boxes and other low-cost devices. It measured about 40 billion ad bid requests per day at peak, not 40 billion devices or people. The operation also used victims’ internet connections without consent.",
+  "attack_chain": [
+   "The operation ran on compromised consumer devices; the initial infection route for this version is not established.",
+   "Infected devices generated fraudulent ad traffic and participated in residential proxy networks."
+  ],
+  "open_questions": [
+   "How many devices were infected, and when and where did the initial compromise occur?"
+  ],
+  "mitigations": [
+   "Use certified Android TV hardware and enable Google Play Protect. Isolate or replace untrusted streaming devices.",
+   "Separate consumer and guest devices from business networks and investigate unusual outbound traffic."
+  ],
+  "sources": [
+   {
+    "label": "HUMAN disclosure",
+    "url": "https://www.humansecurity.com/newsroom/human-disrupts-badbox-3-0-ad-fraud-operation/"
+   },
+   {
+    "label": "HUMAN Satori root-cause report",
+    "url": "https://www.humansecurity.com/learn/blog/satori-threat-intelligence-disruption-badbox-3-0-hides-the-largest-ad-fraud-operation-ever-disclosed-inside-infected-tv-boxes/"
+   },
+   {
+    "label": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
+   }
+  ],
+  "patterns": [
+   "edge-device"
+  ]
+ },
+ "HUMAN disrupts BADBOX 3.0 ad fraud and residential proxy operation": {
+  "summary": "HUMAN disrupted an ad-fraud botnet operating on infected consumer streaming boxes and other low-cost devices. It measured about 40 billion ad bid requests per day at peak, not 40 billion devices or people. The operation also used victims’ internet connections without consent.",
+  "attack_chain": [
+   "The operation ran on compromised consumer devices; the initial infection route for this version is not established.",
+   "Infected devices generated fraudulent ad traffic and participated in residential proxy networks."
+  ],
+  "open_questions": [
+   "How many devices were infected, and when and where did the initial compromise occur?"
+  ],
+  "mitigations": [
+   "Use certified Android TV hardware and enable Google Play Protect. Isolate or replace untrusted streaming devices.",
+   "Separate consumer and guest devices from business networks and investigate unusual outbound traffic."
+  ],
+  "sources": [
+   {
+    "label": "HUMAN disclosure",
+    "url": "https://www.humansecurity.com/newsroom/human-disrupts-badbox-3-0-ad-fraud-operation/"
+   },
+   {
+    "label": "HUMAN Satori root-cause report",
+    "url": "https://www.humansecurity.com/learn/blog/satori-threat-intelligence-disruption-badbox-3-0-hides-the-largest-ad-fraud-operation-ever-disclosed-inside-infected-tv-boxes/"
+   },
+   {
+    "label": "BleepingComputer",
+    "url": "https://www.bleepingcomputer.com/news/security/badbox-30-botnet-returns-with-record-breaking-40-billion-daily-ad-requests/"
+   }
+  ],
+  "patterns": [
+   "edge-device"
+  ]
  }
 }
