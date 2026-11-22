@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T19:30:46Z",
- "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users and has not established the full scope of a separate procurement-system breach. Fluidkey’s post-mortem confirmed about $1.6 million in unauthorized transfers from 52 accounts on November 19.",
+ "updated": "2026-11-22T20:26:25Z",
+ "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users; the number affected by a separate procurement-system breach remains uncertain. Lava Security reported that an unauthorized party accessed recent GMI Cloud request logs; the number of customers affected is unknown.",
  "incidents": [
   {
    "org": "Korea Electric Power Corporation",
@@ -124,16 +124,18 @@
    "eid": "x-7b9a9595"
   },
   {
-   "org": "Cyber (CyberConnect)",
-   "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
-   "scale": "5.213M CYBER; final loss unconfirmed",
+   "org": "GMI Cloud",
+   "what": "Lava Security reported that an unauthorized party accessed recent request logs; OpenRouter disabled the provider’s endpoints.",
+   "scale": "Customer count unknown",
    "patterns": [
-    "bridge"
+    "supply-chain",
+    "data-exposure",
+    "ai"
    ],
-   "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
-   "eid": "x-57f29b3f",
    "update": true,
-   "since": "2026-11-21"
+   "since": "2026-10-21",
+   "url": "https://lava.security/blog/ai-inference-canary-research-prompts-exposed",
+   "eid": "x-3ef42975"
   }
  ]
 }
