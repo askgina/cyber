@@ -509,7 +509,7 @@
 
   function drawGlance(D) {
     const IXT = (eid) => { const n = (D.news || []).find((x) => x.eid === eid) || (D.x || []).find((x) => x.eid === eid); return n ? n.date : null; };
-    const day = 26; // hours; covers sources that publish with a lag
+    const day = 24;
     const B = D.breaches || { items: [] };
     const R = D.ransomware || {};
     const inDay = (t) => t && (t.length === 10 ? hoursAgo(t + "T23:59:59Z") <= day : hoursAgo(t) <= day);
@@ -531,13 +531,19 @@
     // Follow-ups on incidents that began more than 3 days ago are kept apart from today's hits.
     const ups = [];
     const isOld = (i) => i.update || (i.since && hoursAgo(i.since + "T23:59:59Z") > 72);
+    const briefByOrg = new Map((brief?.incidents || []).map((i) => [i.org.toLowerCase(), i]));
     // Curated incident registry: every outlet and notice attached, so one row per real incident.
     const regScale = (r) => r.usd ? fmtUSD(r.usd) : r.records ? `${compact(r.records)} records` : (r.n_outlets ? `${r.n_outlets} outlet${r.n_outlets === 1 ? "" : "s"}` : "");
     const regRow = (r) => ({ org: r.org, what: r.title, scale: regScale(r), patterns: [], type: r.type, rid: "r-" + r.id, eid: (r.stories[0] || {}).eid, since: r.first_reported.slice(0, 10), n_outlets: r.n_outlets, reg: r, t: r.first_reported });
     (D.registry || []).forEach((r) => {
       const h = hoursAgo(r.first_reported);
-      if (h <= day) rows.push(regRow(r));
-      else if (hoursAgo(r.latest) <= day) ups.push({ ...regRow(r), t: r.latest, what: ((r.updates || []).slice(-1)[0] || {}).text || (r.stories[0] || {}).title || r.title });
+      const item = briefByOrg.get(r.org.toLowerCase());
+      if (h <= day && !item?.update) rows.push(regRow(r));
+      else if (hoursAgo(r.latest) <= day || item?.update) {
+        const row = regRow(r);
+        ups.push({ ...row, eid: item?.eid || row.eid, t: r.latest, since: item?.since || r.event_date || row.since, what: item?.update ? item.what : ((r.updates || []).slice(-1)[0] || {}).text || (r.stories[0] || {}).title || r.title });
+        if (item?.eid) seen.add(item.eid);
+      }
       else return;
       r.stories.forEach((s) => s.eid && seen.add(s.eid));
     });

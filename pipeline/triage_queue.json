@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T14:28:12Z",
+ "generated": "2026-11-22T15:30:47Z",
  "queue": [
   {
    "date": "2026-11-20T19:22:35Z",
@@ -23,17 +23,6 @@
     "Russian neural network beats Google's developments in cyberattack test",
     "The Yandex neural network beats Google's developments in a test for cyber attacks",
     "The Russian neural network TabR beats Google in a test for recognizing cyber attacks"
-   ]
-  },
-  {
-   "date": "2026-11-20T14:39:52Z",
-   "title": "Are Americans right to believe they’re under cyber attack? - Americast",
-   "source": "Black Country Radio",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPckMxaWx4SGpIVnNmWmdaX3dobC1aaGJvX2NfRHZNcHFEVE9KOW1zNjh6ejdEaFpDU2RrVGExWXZiMEpKTGhIY3NzQTFFQWo4WVBHTFNta0lEdmx5TVlFUjh1RENhZEdGTU9SVTlKcEg1bzdCZ3hDc1ZGVGk3dHk4NkhnYkgzbUhMNHJnNVhka1NxRkYzNTZHdmpvMW5VNEIwYjAwSHI1NjhjNjdvdXJxQ1g5ME5Kcm4xRHRWUg?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "Is the US under cyber attack? | BBC Americast",
-    "Is the US under cyberattack?"
    ]
   },
   {
@@ -100,16 +89,6 @@
    "also": [
     "Recovery costs exceed 10 million yen for 60% of damage caused by repeated cyber attacks, insurance spread but small and medium-sized enterprises are blind spots",
     "Recovery costs exceed 10 million yen for 60% of damage caused by repeated cyber attacks, insurance coverage expands but small and medium-sized businesses have a blind spot (Sankei Shimbun)"
-   ]
-  },
-  {
-   "date": "2026-11-20T15:20:09Z",
-   "title": "When Hackers Turn Up the Heat",
-   "source": "Cybersecurity Insiders",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE9LMGhPTGxvMW9LTmZuMkNyTzYteVh6Z1BCWTVXczFLcm9BbmRPY2syT3pHWXhZNzlZZUhvbVNncndlQTZMSzZYX2N0bF9VUG5GNzRka1lUdzBoc2JrOTVhTy12eEw3cjViWjhadllxdVFYaTJWOEdobg?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "When Hackers Turn Up the Heat"
    ]
   },
   {
@@ -273,6 +252,16 @@
    ]
   },
   {
+   "date": "2026-11-21T10:29:19Z",
+   "title": "CERT-In warns of AI-driven cyberattacks targeting business payment systems",
+   "source": "Telangana Today",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbmk1bHFWSTlGcUk2LXpYSHgxRFdKbURoWk9IVUl3N3BJU3kyUmFBVGx0eE83SXluOE85cV93Z1MzSTNoOXl6dGNTcEtqcHl3bGZwXzZlcFM5amtobld1akF0RzBYV2R1eENRZTd6aGFhMFhIM3BPUlVkbURYd1NLd0dRaG5PREtJejdVcllXWmxvVEpTc2dxcWd3N25CY040NzRjdE1kV3dmQjA?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "CERT-In Flags AI-Powered Cyberattacks Targeting Government Bodies, Enterprises And Payment Service Providers"
+   ]
+  },
+  {
    "date": "2026-11-21T11:00:00Z",
    "title": "Hardware hacker builds open-source portable 3.5-inch floppy Wi-Fi NAS — reads and shares old-school floppies wirelessly or through direct connection",
    "source": "Tom's Hardware",
@@ -373,6 +362,16 @@
    ]
   },
   {
+   "date": "2026-11-22T00:38:00Z",
+   "title": "A Stranger Sends You a Photo of Your House and Demands Money - The Scam Behind the Threat",
+   "source": "Big News Network.com",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOQlVaWGhMS1NxNXIyVGVuUV9HbURtb2hrSTdWLUh4b2xsUGJzaDJaOGZ5S1dtWVlZUDA5NkJKRkNnLUFScjg4MEQ1bnRWU1llbmtVNGQ4NFhMbXNEb3hvejl5aldrMnFrMGRNZVVkT1BxcENpalB6dElkWUh4MEdEYUp3dEh3SVJjMnZJVHZJdnE3LW1rYTZGSXhkNkFOSVkyY3BaZGZXeWRSVmFTdmQwUWdDaVhvTTRaRTFlc3lfblNHVHhONlRPMHhfQUhpZw?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "A Stranger Sends You a Photo of Your House and Demands Money — The Scam Behind the Threat"
+   ]
+  },
+  {
    "date": "2026-11-22T01:02:00Z",
    "title": "USA: Donald Trump hopes for findings after hacker attack on FBI",
    "source": "Spiegel",
@@ -403,6 +402,16 @@
    ]
   },
   {
+   "date": "2026-11-22T07:43:34Z",
+   "title": "What if you receive a notification of a personal information leak from Coupang, etc.? Will I be charged for compensation? [Lawyer Kyeong-Seok Oh’s legal notes]",
+   "source": "유스연합",
+   "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBMTkRoN2U2bmdjZlo4SjlFZHB4eDd3NlZ3TjNoaXpLQXZRTWFKU1EweXJNUGw3eHczb3NHemZUc2tWTHNsWG9ONnpobmYzMnBSdEh3?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "What if you receive a notification of a personal information leak from Coupang, etc.? Will I be charged for compensation? [Lawyer Kyeong-Seok Oh’s legal notes]"
+   ]
+  },
+  {
    "date": "2026-11-22T09:03:19Z",
    "title": "Connecticut lawmakers to probe cyber threats to utilities, other services",
    "source": "Greenwich Time",
@@ -421,110 +430,6 @@
    "also": [
     "Australians Stockpile Emergency Supplies as Cyber Threats Grow"
    ]
-  },
-  {
-   "date": "2026-11-20T14:34:20Z",
-   "title": "Signal Blocks Screenshots Against Gemini and Siri AI",
-   "source": "Meteora Web",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQYlpHRUJWSWxCWURKODlsYllTWWIyYWdlMEN0WXhGcWFCVUh2a0ZwblhYd1NsWTd2VEQtX0FnZ3A0TEhaXzNiUFRWb01PdW9vQkl2SnUzQ1pNWV80WUpzZ1JNQThFWko5Yk5TSGYtaVY5b0J1RlduNzdTSFZSdnlJLXNzU3dEWUswNTBFd3drV0pQTUZTWDVfa004SDhJWUIxTmhOMXY0VUdiQkR6VlE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T14:37:00Z",
-   "title": "Serious cyberattack thought backed by wealthy operators",
-   "source": "RÚV.is",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSTRSRzlIR0JpMWVheVROX2dCSlVIZmJTYjdCekpDdUhhN0tIZHpxNk4wQ2NqSTVRdlQ2dGxRaWZZWWRHTV8wR3E4S1lXbHEta05sMTkwT05QMS1nNnAtRjBVV1AtU1YyX01PeXpNNkpNRlpiU2Y3dlZrN1JZZ3BwR01ZdWQ0blk2VkFKWURVRDlINUJZejJ3VEVXTVp2cjVxQkE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T14:39:55Z",
-   "title": "Urgent update issued on checks up to $5,000 for AT&T customers under $177 million settlement",
-   "source": "The Sun",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNZ0s4TEVQS09LMTVCT0ZWQ3plaXB6c0hVbUVsTE9ZbEoyQVhHdmVVTXZHcHZDSDR3WmlOdFhUZE9QcTJsT2FmRUpnN2tGQUtLbE9UNTllUHhFRGFZM3lNa2xYMG5QQkdhcl9qdGhBNW1DNXlqVDZPNlhxMmhEeW9vVS1oYV9zb2lpa05TTTdnMEo?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T14:52:09Z",
-   "title": "The UK Maritime Trade Operations (UKMTO) has received a report of a maritime incident southwest of Mukalla, Yemen",
-   "source": "صوت الإمارات",
-   "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQT3cyWER3ZUZNSXZ3VmFISmJxX1FEUDQ2QmtxbnZTY1RZTHZZdGdOTXJCWE0yckdtM25tTVlRYzd1aS1kWjNJblh6aTN3amlyMEllbnd5OFZrUlFQRHpLcUZZMTJXY0h0Q2ZRUUx4SEYwV29jdWhzengyYlZ5cHBBOTJVcTNXNjlWby02SEgwUXdlWW0wSEtpNmZoczVyc0FoZHNMYkxSbnJZemlJbTExSTMwNEhrRTlWS1k4NHFSNmF6MXpfY2hPcGd4dVdFZUZ4X1hacFRxdldmYUhZZEFoUG9aWnAtTzVNWWl5V2h6bXltcXgx?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T14:55:00Z",
-   "title": "Mid Sussex District Council reveals scale of cyber attacks targeting its computer systems",
-   "source": "SussexWorld",
-   "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOREsyTm9zUVRDc1ZCdl9RMmpwLXVjTXJRc0hzMzNvWkhnc2p4azRPc2FZaWhJMFFlSVlIdTY1b1d6X2t5aklwd25QZDNOd3VxX1czdmZhUmdVcGh0TWIzRzlJLTBzSjF3VlMzX1pmbWh3T19xRDJ5R1NDUWFIS1pNVTZrLXJEYS1xc1dMMzZPSVp0SHhfNW9RQlhGZDhjaXRfejRPeTFDSzQ3OWNpMzlBN1dYZ0hmUUZpcEdURVRCWmQ2YzRvZFdpVzBXOW9SX3pQcHBxNGVGS2w3ZGxfdDZDcWp5OVI3dw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T14:58:05Z",
-   "title": "How a security scare at RAF Fairford upended US air strategy",
-   "source": "openDemocracy",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYUdxc0pWb19PSzNxTk1nbEZaV25XLS1EYmthNDhHM1p6OHg1T0JlRkVwRXAyNnBmSW9OLVZMWmNCNjBoNS1pNjlXLXJqT1F6Tl9HVlJTTXlkaUt2SnlCWTZUb1pqeU40REMxR1FNWjNFYXdCYjhWNFZQNkhYM0NYRGx0bzZUZVFCX2Q0ZHpOSkw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T14:59:40Z",
-   "title": "Ex-international Odegbami attacked, hacked in Abeokuta residence",
-   "source": "The Sun Nigeria",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbHVJdlF6YVk2dzlTd2g1YTZrcGFqRDhGT0hJMl9OTWFMclp1LVQ4S2hWTzEwU2hVSEo3cVY4bWY5RnhBSGJ0ekNOOVdqb3ItUVJjQlNyNWtUX012Y0RkMWRsUEx3eWFQZnBaTFA3aVJxRWUtVi0yM3UtMmtEeWR1bGI0YXBYNlpWaFE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T14:59:50Z",
-   "title": "Gigi Hadid’s Denim Tucking Hack Makes Styling Boots With Jeans So Much Easier",
-   "source": "Glamour",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYmNBYlJrSWhvR3ZSbkV5M2RRazNwaFpVUjV3WkIyT2pwd0puc0ItVmJoTTNwby1NNzRjU0xWaWVSdG5QQkFqYllSdmtiSW56dTFKZzBWTVJ0Y1NrMzJhWDBwZUp2YlRlS2tLSHFUNEQ5Mk93S19CUmgwNUxVcWR5QkV0MzNiMUQxeWtfZlU2RGptbGMxcFpJMkNhU0VhZDFQM1JnMEltTUw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T15:03:56Z",
-   "title": "Justice hacked Tata Steel and removed documents from the company network",
-   "source": "Bright",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQOVlFUzhsVno4dWRucW1zWF9vcUVJUzlHbnduenRZaFpBX1E4WEYyRzF2YVJJQ3ppTlV1MGI4ZF9vMWdmR2wyWmU2aEpkMXFYcVVWc0RrQmc3bTMwelBuQkthRDhUQnNvTkd1cW1ZSTZhMURxTXdOSkNHc3dfUXVJWDVUZUNvYmcxQzg3eU85Z1pUYnVKNXpOWEFaVnlDOTBYaG5ENE1wYS1IMWZRTldVamhfNA?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T15:11:29Z",
-   "title": "Watch Everybody’s Business: Relax. It’s Probably Not a Cyberattack",
-   "source": "Bloomberg.com",
-   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQa0RYTTJqUFR3SGpVWWJtanRRa2hnV3pFUF83Zmctei1oM3QtTEtSN3gzcnZSRjBKSVJJOXR0X1g1VHE2ZU1leVRRM090Rk5PX1A4QjNOa1ViNWROSk1wTTMzSTRHZUVWWjVtZVJsYmVMX1FQdVU0S0tXZzdiM0cwdU5mVlFIY0dfR1hlM0prUU55bFh3azQ0?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T15:22:30Z",
-   "title": "The Latest Tech Outage Hits The Farmers Who Feed America",
-   "source": "The Daily Wire",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPZzNsWWNmOXFwazlnRzZXQkpjclRzWjlNdDlISjU3S1FMaG9qMHVsdHE5b05KRDJpeHRhNG95anRkcXp6bF9oSjc0Q1daRThfbmVMTzhoaUdHNzZBdnIxMVhEYS1YcTRWeDNpR21YWEcya3d2NGRhS0poTG1GVGxSZHZlRmoyVm1yajBLc1c5eFg?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T15:23:15Z",
-   "title": "Pasadena Council Seeks AI Policy After Outages",
-   "source": "Wisevoter",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPVkx1djBJSE5HeUtDSF9hTFptcTRQdXBOU0VTQmljNFF6ajR2ay05Q0VlSDFSQVM2eGlDTFZEckEyZkhZUkVGRUJrNjg0ZTllZXlzYjI0LUNQTF93UWZKR1hSNmFvZDRHbVVfTWsxQVd4TnBEWm1jQUdfS242YlctbEJESlotTUVHdWc2QjFEY1llbG1WZ0ZhTk1qQ3B0R3o2enlr?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T15:25:29Z",
-   "title": "Britani e Madhe, mijëra frigoriferë shkëputen nga interneti për t’u mbrojtur nga sulmet kibernetike",
-   "source": "Reporteri.net",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPdXFqdEVVYlA5SXg5NUQzbDc0Z2dPWWlLYkdnVWZqb1YtZEVhMGNidTNpWkNFSGlzOVZxMm1UVkg1UjVoekc4eG5Pd19MNzFsTHRqOHZXajdjMlRCZmJmR3BDNVpNa1hFN0hSVDF5TlRxS0tXbUpUZk9iajRjeUROMmN3Z2xxejdVOFNqNGVWMlp2OXVEMjRGWDBvdC04V1hXOHNXM3dFTHUwQ1J2RnBXM1BUbDFvY1hZdnZCOWRWbTZ6TFhpY0s2bE01UHlRWmFVZldnOGpR?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-20T15:36:43Z",
@@ -871,14 +776,6 @@
    "also": []
   },
   {
-   "date": "2026-11-20T18:50:31Z",
-   "title": "Investment platform opened with a single phishing email... ‘Newz Stock’ personal information leaked",
-   "source": "쿠키뉴스",
-   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9Mbm1pdGp1UW5FTDZyOGdJYjBmVkZHcnN1N25wOXZUZkV5ME1YSFY0WkZLX1VMc0tnM2lhZGdWWGNLcDVqTUpjX1dSVkIwLUFBZy1XQ21wemx0UXUybTRmT1gwNA?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-20T18:59:00Z",
    "title": "Asahi pours $85mn into AI cybersecurity upgrades after ransomware attack",
    "source": "Nikkei Asia",
@@ -1051,6 +948,14 @@
    "title": "Suzanne Downing: The power went out. The Alaska Family Council dinner was lit.",
    "source": "Alaska Story",
    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNRm5CSTV3Y0s0dUpvLTV0UEszYjZ4WUZ0TmpOcl8zYjRZRllaeWw4dUNPdHJQQUtQRURWNDBNUEwxMjNkeGN4eXdudFJQZVB0QU9xN1FQZDdQZjZWakFtOHFSYTRCeHFtQThVVHhLUUpMckhQM3lfVml4NzlrdTZHX1RRYkwySGE3ai1ocmJuOC1lak5ENDkxVHRQMGluUm1vT3I0dFlR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T20:40:45Z",
+   "title": "Police in Surrey attend 3rd school swatting in 4 days",
+   "source": "Surrey Now-Leader",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQRnFzcjR5bzJGQkVqNUQ3a0ZWYldBUExFWEpzVko4aWNGOV9NV3kyMXEzN0xnSnZmc1ZKMmFJMEE2U0NFTlQxWlFkeGtEV0FpU0dIVTBuRl9tT25YMDJJTDFzRkVrb3N0cEY5TDdXcUswRTZJdGZMbzktOUczWmZXNGlJMkhReFNVeG1fbWM2azVCNVhpMEdjeDRRQ0ZVSFVwdmw3TQ?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1267,14 +1172,6 @@
    "title": "PHP 8.6: Things are gonna get a lot more strict around here",
    "source": "The Register",
    "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM2M0UEUyS2lzcHFwdWNfZ3RaZEVWOWFYemNrZmRUNUViU2J3YTJKbnlsdWdLai1CRG41RHZYNFNZZFhHOEk3djhvSTl2VWE2eE14Zi13M1dDTVBOZzBRVjUySTFLbEhJS2VwQ2p2Z041eVJqa05WOTNqVURBUXRMcDdJcjE4MGJna2MycmdkMW9qRi0xT2J0X0hRTkpOdXI5YmtiR3B4Y3FlQUprUEZiYQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T23:46:27Z",
-   "title": "Bitcoin price nears pivotal support: here’s why it may drop by 38% soon",
-   "source": "Cryptonews.net",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBqQVlCT0FtMEgxV2QyZkt5cFcyWUMyZFBYY2RRdFJZd05NNlZLQVF1RmRnLXZLTFBBMHdCM1FhRWxROEhLbG02LUNvQ0VIc2JEQk9LVC1adEE?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1663,14 +1560,6 @@
    "also": []
   },
   {
-   "date": "2026-11-21T07:37:28Z",
-   "title": "Baku accuses France of cyber attack",
-   "source": "Nouvelles d'Arménie en Ligne",
-   "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBWeE8yVE45S05URGwtckxvTWFRRlNHaFNGb21Nc3VpVnpmbzU4RG51WG9sZDg2SmlzSnA1bXAxUnJDdEJBWF9pRjFHczhyb1h5b21EME0xQlZwc0NUNTBxM3B4M1Q3WDA5TFV3b2FTZFJkUQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-21T07:39:28Z",
    "title": "Digital collapse panic in the USA: Cyber attack or infrastructure bankruptcy?",
    "source": "CNN Türk",
@@ -1691,6 +1580,118 @@
    "title": "Russian diplomat claims West actively recruits hackers to carry out operations against Moscow",
    "source": "Yeni Safak English",
    "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbUFtM3FZeld4dkV3SzktQ3dJUG95aGowbVJ4eElxODB5SDRQQ19aYktwS21adVgzSVd6WGQzUGRmZzY3ZzYwV3JjQmhENHVhTllXRmh6UWN2dnlIbDB5LU1rckFuVU1GTmJMWDdwWWdKTHZ1Y3JzcmFjMG5iVWRobnNKdXUtTFMwczZJYWlZdFktV3FORUd5UlJ5TXZXekVPaFd3Zk9IUVhncXRwbnZDczE2OTdHc2xBNmxZNW5BNWlxUUN0MUtFaU9Ec2c?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:00:00Z",
+   "title": "Rehire retirees to run old systems during cyber attacks, bosses told",
+   "source": "The Telegraph",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOclRvZnRCMDRQbGNHNjN0elNzRUo5R2g2MUNXbUVxaURfLVZoNEZKM04tRDZhcW0tQ1pLZ3hBcDFKdHJBWEY0eC1lWW5pWHBMeXZaR3ZwbFZCTHhfWDN5dGozc1NQVlVWdTl3WVE5dHBYYWRxSGYyeTlvWGtGbzdYbVVBSFJzc0tfNldiU25WWGg5OTFLdzFtVjM5dUxDQUN4SktENE0yZw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:00:00Z",
+   "title": "Government ‘not built’ to handle cyber threats: Mark Halperin",
+   "source": "AOL.com",
+   "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNDRzb1JqOExaRUFvaFdLS1F5SjFDdU9TNmloUFRndU9uVGNBOE0zN0FEeVVhSXhBaGxKdVNPOEdaVXdpSnhaT2UtY3BremlQZkRPVUF4eHdLYVNvT1A1Q3o3M3BEQkpfYUlnWEI1YXk5MTFvYkpTeW9TUEE3N3RZVlRoZw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:04:27Z",
+   "title": "Bitcoin hits two-year low as AI valuation concerns wipe out Trump re-election gains | Business News",
+   "source": "Hindustan Times",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNUTdKeF9CTE1LMDVXTGU3STg1OUZQTDAwTlI1OUJzYTJDeTQ5RG4wV1pfVVU2dmdOZzNjQUtsUlFZa0VtMWVxZTNzQkZUb2pDU0w5c3UtYU9GYXNObUZjZGh4SHVkUzUzLXN4cEIyYjMwWE4zcGh5Ry0xODJaVXlEbXU2akxwcnVyS0pRU3JMYU00T3lvSm92Vm51RWZpTGJwRlI5N04tR01EZHpHcTdqR3Y1elJCWThwMkRWREg5cDFFdk9lcmR2Z1VfOFpPTWtQaHNuRDNZRlRCTWVWS19sYTln0gHiAUFVX3lxTE1RN0p4X0JMTUswNVdMZTdJODU5RlBMMDBOUjU5QnNhMkN5NDlEbjBXWl9VVTZ2Z05nM2NBS2xSUVlrRW0xZXFlM3NCRlRvakNTTDlzdS1hT0Zhc05tRmNkaHhIdWRTNTMtc3hwQjJiMzBYTjNwaHlHLTE4MlpVeURtdTZqTHBydXJLSlFTckxhTTRPeW9Kb3ZWbnVFZmlMYnBGUjk3Ti1HTURkekdxN2pHdjV6UkJZOHAyRFZESDlwMUV2T2VyZHZnVV84Wk9Na1Boc25EM1lGVEJNZVZLX2xhOWc?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:07:52Z",
+   "title": "Massive leak from Tata factories reveals internal secrets and specifications of the iPhone 18 Pro",
+   "source": "آي-فون إسلام",
+   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOVFNJXzJiSnNmOVBHSHBuamdhVzAwN0FkU1JrOWNnVUxIdmxEUF96elRsS1gzN2F3NE1kd0pkSkc3eURkNzFVaTRoMmVfdTdOMkNhV18zcjdFLWdzcEJESE5kSHhKWHBwSndYNTZENHIzeE5ESFdTTzhpX2ZQUG9fNmhNZUppWk1iNTVNM3lYMTBsSGowLVBobnFKR0NCVzl1VXRibWZ0YTZIb210bUh6NVNtNUc3VElWRVhKNmZtSGZqZHViUWs2RGJDT0d4eExQT1Q0VGVKbms2UlRyYVNwOURB?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:09:39Z",
+   "title": "FBI, USAD breached by hackers: reports",
+   "source": "Prothom Alo English",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9yYXZ0RTEyUTR4RS1pejRDLW5oM1FIM1k0Tzg2UFk4c3ZyYXB3alpJbFlHNGFaTTdHcERCV19MaTktUUplUEk3TnhmT0tpVkNhRWhmME9wUkNDbVJrMTd0T2pES3JON3Q4alVV0gF4QVVfeXFMUFM2M3RiaFpKak5ibmN2Z2RjbzJ0am1VY0s4clF2aVVwaThpUkNJS05xM0UtQWZXeThqUkFPdGNLN2RtanZfLUc3akZqT0NOc3UyWG1GZHdZUU9ib0xZWFQwMzduY0JINXlSUmdLUHZwSnRvNWpQZE9F?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:13:08Z",
+   "title": "AI Agent Swarm Executes Rapid Ransomware Attack on Company",
+   "source": "OECD AI Policy Observatory",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5MbHFhSUR3NHBtR1RJVGdIdmMwejB4b0hGa3ZXUHFJWW8zd3pSOHpRelIwVE9JbUU0djBWdFREMlVrbWgtWFJaUWlzU2l4T1NBUnlaSm13Yw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:27:00Z",
+   "title": "Inside the Modern SOC: Falgun Rathod and Dr. Devanshi Vyas Release a Practical Guide to Building Security Operations Centers",
+   "source": "ANI News",
+   "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxONFV4ZXNhaWFnQlpNYlc4MWNfblNlRVNqM21JemhPblFycUdQQVcxdVhWY2JkOXR1ZGd6WHZRdVkzNzd0VzN4c2ducV9maHZEdE9URFN4UU45SjlFaHJ2Y0xvejlycHRRWDQxNXZpVnpZamdidEJlRksxd2FVcTRCTlJwVVJ1Qk1zT0dhMzlWMnZOMW5mS3k4QVYxUzBFdTZlaWNId2VtbGVYZzI4WEpCRFh5aktXTTRUMHBaRTB1OUtBT1FBcjFzRVpJSWE0NlFPdG41UTQtbXRpLWw3ZHdBaTNvb1BGUVdMempJLUdrNW5yeHhiVGUzRC1qVmE5Q0o3MGRj?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:31:05Z",
+   "title": "Cyber attacks are at an all-time high! Information security measures required in the medical DX era | Kenei Tsugue",
+   "source": "JIJICO",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9zdE9FX3laY2x1MmNacUh1dkxvSzB0VUtLMTYzQ09nZ1lYS2hGRGt6TDlZZ1NreFluUnlNRmZBdGtWRTYwWThOS05hQmpCaUgzeG94MzJ4Q0Q1X21DMFR2eWxkN09Gcjg?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T08:49:00Z",
+   "title": "Hackers Exploit Critical VMware, Cisco, and Apache Flaws as Espionage Attacks Emerge",
+   "source": "The Hacker News",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNZ2w1cUFBU2VNb1VPZVRLV19uVS1xZS1Ya3JPOWxpbFF4dk5vVVdnenpqVElJMGN1T1VlVGpoaVhtLUJkb2Jid3F0RGVGUzhVQ0o3V0FUMFhwN2U3ZFREeGpXRTNsSFkzMUU3empZUV9qT1pfMFZEc2d0bmNNUDFCdGdB?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T09:00:05Z",
+   "title": "China-Linked Hackers Target Japan, Taiwan Chip Supply Chains",
+   "source": "Seoul Economic Daily",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNcUVocGdmMW9KTXVwb29LN0lIWWNONEgtUlhWQ3lXUlZjeHJaUWR0SjJiY2NlTmVDYmpEVXExWUVlVDRqblZnM2stNkxRb0lkLXR2b1FRcEJZd3ZCT0hpWkJ0UXVrNGZPc2FtbzJaOHA4MTd3ek9Qd2ZuTFBnVnhzVWUtT2VrZEQxOS1uX0U3Wkk3WnRWWkl4cGZhajF0cnBPSlM5TQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T09:04:39Z",
+   "title": "22,473 resumes from Albamoner leaked... Personal Information Committee begins investigation",
+   "source": "JTBC",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9zMVo0TVJaSXFleHVBaHhtNlNDNHdzSWpsNVZsY3lfSW1NOE9RMzhtVTlWTUhqa2lFV095bU9fV0VsX3lHeTFvcnAxaG1HaFZEOVJ6VQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T09:11:00Z",
+   "title": "Recent Cyberattacks Could Signal the Awakening of Artificial Intelligence",
+   "source": "The Times of Israel",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOemlGZ2FoaWljUkNZU0xCcEpManRBZUNBck1wOFlQcXA1b2dNNC1IX21wUGlUVU92ZWxZbHFyXzhiN21FMFA5Z2R0ZkNWOHBRektRMnNHOERuckI3OXd3WnVHZTNOU1c5aHdtUFk2bGRta1MxY3NVUGlFeHozYUJ5SVI0QzVPSGFHQ2FRWXFqaG5XTUlJcmIwdGhOWE1TSEE5TTlZWEZqNUlkZw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T09:13:07Z",
+   "title": "Stryker share: Management wants to make up for cyber attack failures in 2026",
+   "source": "Börse Express",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZllyV2dlcFJad1Z1ajRQemdycDdGWE9MZHBxUmFIRC1LR3pZbzNHNWhiVjNXSV9NS1lQQ3dVNGlDTWptTkJhTFlRNkphWW5kMUdYajF0VlY5OWE4WUpyNnVJVUktZ3QzWmZIZUpXdWxTVkhYTEtjYzdmQkhOUnQtVUZwQzhYQjhrX2pld1VhbjBTTmVUTVlsaXBZa2Q5X2VjZlBFZ1FFdmVvQ09sMGZIYWpiRE1KNmZhZmc?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T09:24:31Z",
+   "title": "BNB price drops below $520: BNB loses 10 percent",
+   "source": "CryptoTicker.io",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9rUWc4aTNSRXh2U1lJUTcwRG1xa2hkVkppQUpreV9zdFNqVGRBaUVHRE11RFl2X1ZfVkszWWlRTTZXRGpOTWR6RUVLUGtReHhXY1dtdjc1N1pRX19xTXlma056Y3k?oc=5",
    "n_outlets": 1,
    "also": []
   }

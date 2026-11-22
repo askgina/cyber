@@ -1,21 +1,11 @@
 {
- "updated": "2026-11-22T14:25:47Z",
- "headline": "Tower Records Japan reported exposure of about 11 million personal records, not a count of distinct customers. Korea Electric Power Corporation confirmed exposure for 650,487 billing-platform users and notified 869,761 procurement users while it investigates the scope there.",
+ "updated": "2026-11-22T15:25:25Z",
+ "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users; the full procurement-system impact remains unclear. In a follow-up to its November 21 theft, Chainflip confirmed the loss of bitcoin as well as ether and stablecoins, which news outlets valued at about $12 million in total.",
  "incidents": [
   {
-   "org": "Tower Records Japan",
-   "what": "Tower Records Japan said an intruder accessed its online store and exposed customer records, including login information and some membership and delivery details.",
-   "scale": "About 11M records; unique customer count undisclosed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-cbf13d4d",
-   "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
-  },
-  {
    "org": "Korea Electric Power Corporation",
-   "what": "KEPCO confirmed exposure in its billing and procurement systems, but the number of procurement users whose data was exposed remains unknown.",
-   "scale": "650,487 billing users confirmed; 869,761 procurement users notified",
+   "what": "KEPCO confirmed exposure for 650,487 billing users and issued a separate notice for its electronic procurement system; exact procurement exposure and overlap are unresolved.",
+   "scale": "650,487 billing users confirmed",
    "patterns": [
     "data-exposure"
    ],
@@ -66,24 +56,6 @@
    "eid": "x-6fb93117"
   },
   {
-   "org": "GMI Cloud",
-   "what": "Users reported possible exposure of requests sent through GMI Cloud; OpenRouter’s public update did not identify that provider.",
-   "scale": "Unverified; scope unknown",
-   "patterns": [
-    "ai",
-    "data-exposure"
-   ],
-   "url": "https://x.com/michael_chomsky/status/2124326400803152021",
-   "eid": "x-3ef42975"
-  },
-  {
-   "org": "Sri Lanka Department of Motor Traffic",
-   "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
-   "scale": "Appointments unaffected; data exposure not disclosed",
-   "patterns": [],
-   "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/"
-  },
-  {
    "org": "Samsung Group",
    "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
    "scale": "1 TB claimed",
@@ -91,6 +63,13 @@
     "ransomware"
    ],
    "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw"
+  },
+  {
+   "org": "Sri Lanka Department of Motor Traffic",
+   "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
+   "scale": "Appointments unaffected; data exposure not disclosed",
+   "patterns": [],
+   "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/"
   },
   {
    "org": "Chainflip",
@@ -103,6 +82,31 @@
    "url": "https://chainflip.io/return",
    "update": true,
    "since": "2026-11-21"
+  },
+  {
+   "org": "Tower Records Japan",
+   "what": "Further coverage detailed the approximately 11 million personal records Tower Records Japan said were exposed; this is not a count of distinct customers.",
+   "scale": "About 11M records",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "n-cbf13d4d",
+   "update": true,
+   "since": "2026-11-19",
+   "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
+  },
+  {
+   "org": "Fluidkey",
+   "what": "Fluidkey’s root-cause report confirmed approximately $1.6 million in unauthorized transfers from 52 accounts; it said private spending keys stayed on user devices.",
+   "scale": "$1.6M across 52 accounts",
+   "patterns": [
+    "data-exposure",
+    "key-compromise"
+   ],
+   "eid": "x-7b9a9595",
+   "update": true,
+   "since": "2026-11-19",
+   "url": "https://docs.fluidkey.com/security/incident-2026-11-19/"
   },
   {
    "org": "Autopay",

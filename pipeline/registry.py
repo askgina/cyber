@@ -47,8 +47,16 @@ def attach(reg, news, notices, now, window_days=10):
             # headline its date, to every incident in it
             own = [o for o in (n.get("outlets") or [{"source": n["source"], "url": n["url"], "date": n["date"], "title": n["title"]}])
                    if ok(o.get("title", "") + " | " + o.get("title_orig", "")) and _p(o["date"]) >= t0]
-            if not own and not (ok(n["title"] + " | " + n.get("title_orig", "")) and _p(n.get("latest", n["date"])) >= t0): continue
-            hits.append(n); claimed.add(n["url"])
+            lead_matches = ok(n["title"] + " | " + n.get("title_orig", ""))
+            if not own and not (lead_matches and _p(n.get("latest", n["date"])) >= t0): continue
+            # A mixed cluster can have a lead about a different organisation.
+            # Show the matching outlet, not the unrelated lead or its detail link.
+            story = n if lead_matches else {
+                **min(own, key=lambda o: o["date"]),
+                "latest": max(o["date"] for o in own),
+                "n_outlets": len({o["source"] for o in own}),
+            }
+            hits.append(story); claimed.add(n["url"])
             for o in own:
                 if o["source"] in seen: continue
                 seen.add(o["source"]); outlets.append(o)
