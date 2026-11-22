@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-22T09:29:21Z",
-  "headline": "Tower Records Japan reported exposure of about 11 million personal records. Together AI confirmed unauthorized downloads of prompt samples, and Chainflip offered a bounty after thefts valued by Cointelegraph at about $12 million.",
+  "updated": "2026-11-22T10:26:31Z",
+  "headline": "Tower Records Japan reported exposure of about 11 million personal records. Korea Electric Power Corporation confirmed exposure for 650,487 billing-platform users and notified 869,761 procurement users while it investigates the scope there.",
   "incidents": [
     {
       "org": "Tower Records Japan",
@@ -11,6 +11,16 @@
       ],
       "eid": "n-09b1ba22",
       "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
+    },
+    {
+      "org": "Korea Electric Power Corporation",
+      "what": "KEPCO confirmed a leak from its billing and procurement systems; the procurement exposure is still being assessed.",
+      "scale": "650,487 billing users confirmed; 869,761 procurement users notified",
+      "patterns": [
+        "data-exposure"
+      ],
+      "url": "https://www.ajupress.com/view/20261122184870375",
+      "eid": "n-34316fe7"
     },
     {
       "org": "Together AI",
@@ -85,15 +95,6 @@
       "url": "https://www.ransomware.live/id/RGF0YSBCcmVhY2ggYXQgTyZNIFVuaXZlcnNpdHkgaW4gdGhlIERvbWluaWNhbiBSZXB1YmxpY0BIWUZMT0NL"
     },
     {
-      "org": "Invicta Watch Group",
-      "what": "Qilin listed the organization in an extortion claim that has not been independently verified.",
-      "scale": "Unverified; scope unknown",
-      "patterns": [
-        "ransomware"
-      ],
-      "url": "https://www.ransomware.live/id/SW52aWN0YSBXYXRjaCBHcm91cEBxaWxpbg"
-    },
-    {
       "org": "Chainflip",
       "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
       "scale": "About $12M estimated across Ethereum and Bitcoin",
@@ -120,17 +121,16 @@
       "since": "2026-05-28"
     },
     {
-      "org": "Fluidkey",
-      "what": "Fluidkey’s post-mortem confirms that flaws in an outdated logging tool exposed session data. Private spending keys remained on users’ devices.",
-      "scale": "About $1.6M in unauthorized transfers from 52 accounts",
+      "org": "GL.iNet",
+      "what": "GL.iNet staff clarified that a Comet 5G with no signs of infection does not need a factory reset after the cloud flaw was fixed.",
+      "scale": "Affected device count undisclosed",
       "patterns": [
-        "supply-chain",
-        "key-compromise"
+        "edge-device"
       ],
-      "url": "https://docs.fluidkey.com/security/incident-2026-11-19/",
+      "eid": "x-6db86515",
+      "url": "https://forum.gl-inet.com/t/regarding-the-security-notice/73057/17",
       "update": true,
-      "since": "2026-11-19",
-      "eid": "x-7b9a9595"
+      "since": "2026-11-20"
     }
   ]
 }
