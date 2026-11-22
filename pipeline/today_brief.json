@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T18:29:10Z",
- "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users; it has not established the exact scope in procurement. Together AI published its account of how stored prompt samples were downloaded and what it changed afterward.",
+ "updated": "2026-11-22T19:30:46Z",
+ "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users and has not established the full scope of a separate procurement-system breach. Fluidkey’s post-mortem confirmed about $1.6 million in unauthorized transfers from 52 accounts on November 19.",
  "incidents": [
   {
    "org": "Korea Electric Power Corporation",
@@ -13,18 +13,6 @@
    "eid": "n-34316fe7"
   },
   {
-   "org": "Together AI",
-   "what": "Together AI traced the unauthorized download of stored prompt samples to an exposed development credential and added safeguards.",
-   "scale": "Customer count undisclosed",
-   "eid": "x-eb428de0",
-   "patterns": [
-    "ai",
-    "data-exposure",
-    "key-compromise"
-   ],
-   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
-  },
-  {
    "org": "Rackspace Spot",
    "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
    "scale": "Customer count not disclosed",
@@ -34,16 +22,6 @@
    ],
    "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
    "eid": "x-f3649087"
-  },
-  {
-   "org": "Cyber (CyberConnect)",
-   "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
-   "scale": "5.213M CYBER; final loss unconfirmed",
-   "patterns": [
-    "bridge"
-   ],
-   "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
-   "eid": "x-57f29b3f"
   },
   {
    "org": "Aramid Bridge",
@@ -74,25 +52,14 @@
    "eid": "x-e9f8c567"
   },
   {
-   "org": "npm @c1-ease packages",
-   "what": "OSV flagged five malicious npm packages under the @c1-ease scope; it did not identify any affected organizations.",
-   "scale": "5 packages; victims not verified",
+   "org": "Persistent Systems",
+   "what": "INC Ransom claimed it obtained internal data from the technology services firm; Persistent Systems had not publicly confirmed the claim.",
+   "scale": "Extortion claim; scope unknown",
    "patterns": [
-    "supply-chain"
+    "ransomware"
    ],
-   "url": "https://osv.dev/vulnerability/MAL-2026-20324"
-  },
-  {
-   "org": "Cleverbridge",
-   "what": "Cleverbridge confirmed stored payment-card data was copied; customer notices began November 20, and the number affected remains undisclosed.",
-   "scale": "Card numbers and security codes; total unknown",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-855a50ef",
-   "url": "https://grow.cleverbridge.com/incident-update",
-   "update": true,
-   "since": "2026-11-04"
+   "url": "https://x.com/DailyDarkWeb/status/2124535478695116805",
+   "eid": "x-a8754aa6"
   },
   {
    "org": "Chainflip",
@@ -107,28 +74,66 @@
    "since": "2026-11-21"
   },
   {
-   "org": "Tower Records Japan",
-   "what": "Further coverage detailed the approximately 11 million personal records Tower Records Japan said were exposed; this is not a count of distinct customers.",
-   "scale": "About 11M records",
+   "org": "Together AI",
+   "what": "Together AI traced the unauthorized download of stored prompt samples to an exposed development credential and added safeguards.",
+   "scale": "Customer count undisclosed",
+   "eid": "x-eb428de0",
    "patterns": [
-    "data-exposure"
+    "ai",
+    "data-exposure",
+    "key-compromise"
    ],
-   "eid": "n-cbf13d4d",
+   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
    "update": true,
-   "since": "2026-11-19",
-   "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
+   "since": "2026-11-21"
   },
   {
-   "org": "YMCA of Singapore",
-   "what": "Alerted October 19, the YMCA confirmed unauthorized access to its youth registration portal but could not establish whether personal data was copied.",
-   "scale": "More than 13,000 potentially affected",
+   "org": "Cleverbridge",
+   "what": "Cleverbridge confirmed stored payment-card data was copied; customer notices began November 20, and the number affected remains undisclosed.",
+   "scale": "Card numbers and security codes; total unknown",
    "patterns": [
     "data-exposure"
    ],
+   "eid": "n-855a50ef",
+   "url": "https://grow.cleverbridge.com/incident-update",
    "update": true,
-   "since": "2026-10-19",
-   "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/",
-   "eid": "x-2d3e2ee9"
+   "since": "2026-11-04"
+  },
+  {
+   "org": "GL.iNet",
+   "what": "New reporting documented malware on some routers and KVMs; GL.iNet has not disclosed the total number affected.",
+   "scale": "Device count unknown",
+   "patterns": [
+    "edge-device"
+   ],
+   "update": true,
+   "since": "2026-11-20",
+   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+   "eid": "n-e84afceb"
+  },
+  {
+   "org": "Fluidkey",
+   "what": "Fluidkey’s post-mortem confirmed unauthorized transfers from 52 accounts and said user spending keys did not leave their devices.",
+   "scale": "About $1.6M stolen",
+   "patterns": [
+    "key-compromise"
+   ],
+   "update": true,
+   "since": "2026-11-19",
+   "url": "https://docs.fluidkey.com/security/incident-2026-11-19/",
+   "eid": "x-7b9a9595"
+  },
+  {
+   "org": "Cyber (CyberConnect)",
+   "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
+   "scale": "5.213M CYBER; final loss unconfirmed",
+   "patterns": [
+    "bridge"
+   ],
+   "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
+   "eid": "x-57f29b3f",
+   "update": true,
+   "since": "2026-11-21"
   }
  ]
 }
