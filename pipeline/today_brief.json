@@ -1,136 +1,128 @@
 {
-  "updated": "2026-11-22T10:26:31Z",
-  "headline": "Tower Records Japan reported exposure of about 11 million personal records. Korea Electric Power Corporation confirmed exposure for 650,487 billing-platform users and notified 869,761 procurement users while it investigates the scope there.",
-  "incidents": [
-    {
-      "org": "Tower Records Japan",
-      "what": "Tower Records Japan said an intruder accessed its online store and exposed customer records, including login information and some membership and delivery details.",
-      "scale": "About 11M records; unique customer count undisclosed",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "n-09b1ba22",
-      "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
-    },
-    {
-      "org": "Korea Electric Power Corporation",
-      "what": "KEPCO confirmed a leak from its billing and procurement systems; the procurement exposure is still being assessed.",
-      "scale": "650,487 billing users confirmed; 869,761 procurement users notified",
-      "patterns": [
-        "data-exposure"
-      ],
-      "url": "https://www.ajupress.com/view/20261122184870375",
-      "eid": "n-34316fe7"
-    },
-    {
-      "org": "Together AI",
-      "what": "Together AI confirmed that an unauthorized party downloaded stored samples of customer prompts after a repository credential was exposed.",
-      "scale": "Customer count undisclosed",
-      "eid": "x-eb428de0",
-      "patterns": [
-        "ai",
-        "data-exposure",
-        "key-compromise"
-      ],
-      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
-    },
-    {
-      "org": "Rackspace Spot",
-      "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
-      "scale": "Customer count not disclosed",
-      "patterns": [
-        "supply-chain",
-        "key-compromise"
-      ],
-      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-      "eid": "x-f3649087"
-    },
-    {
-      "org": "YMCA of Singapore",
-      "what": "YMCA confirmed unauthorized access to its Youth For Causes portal and said investigators could not determine whether personal data was accessed or copied.",
-      "scale": "More than 13,000 people notified",
-      "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "n-4945b68d"
-    },
-    {
-      "org": "Cyber (CyberConnect)",
-      "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
-      "scale": "5.213M CYBER; final loss unconfirmed",
-      "patterns": [
-        "bridge"
-      ],
-      "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
-      "eid": "x-57f29b3f"
-    },
-    {
-      "org": "Norway Digitalisation Agency (ID-porten)",
-      "what": "Norway’s digitalisation agency said a denial-of-service attack disrupted its national ID-porten sign-in service.",
-      "scale": "About three hours of disruption",
-      "patterns": [
-        "outage"
-      ],
-      "eid": "x-5233adf4"
-    },
-    {
-      "org": "GMI Cloud",
-      "what": "Users reported possible exposure of requests sent through GMI Cloud; OpenRouter’s public update did not identify that provider.",
-      "scale": "Unverified; scope unknown",
-      "patterns": [
-        "ai",
-        "data-exposure"
-      ],
-      "url": "https://x.com/michael_chomsky/status/2124326400803152021",
-      "eid": "x-3ef42975"
-    },
-    {
-      "org": "Universidad Dominicana O&M",
-      "what": "Hyflock listed the organization in an extortion claim that has not been independently verified.",
-      "scale": "Unverified; scope unknown",
-      "patterns": [
-        "ransomware"
-      ],
-      "url": "https://www.ransomware.live/id/RGF0YSBCcmVhY2ggYXQgTyZNIFVuaXZlcnNpdHkgaW4gdGhlIERvbWluaWNhbiBSZXB1YmxpY0BIWUZMT0NL"
-    },
-    {
-      "org": "Chainflip",
-      "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
-      "scale": "About $12M estimated across Ethereum and Bitcoin",
-      "patterns": [
-        "bridge"
-      ],
-      "eid": "x-b163fb32",
-      "url": "https://chainflip.io/return",
-      "update": true,
-      "since": "2026-11-21"
-    },
-    {
-      "org": "OpenRouter / Novita",
-      "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
-      "scale": "125 endpoints lost zero-retention eligibility",
-      "patterns": [
-        "ai",
-        "data-exposure",
-        "supply-chain"
-      ],
-      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-      "eid": "x-2d44e830",
-      "update": true,
-      "since": "2026-05-28"
-    },
-    {
-      "org": "GL.iNet",
-      "what": "GL.iNet staff clarified that a Comet 5G with no signs of infection does not need a factory reset after the cloud flaw was fixed.",
-      "scale": "Affected device count undisclosed",
-      "patterns": [
-        "edge-device"
-      ],
-      "eid": "x-6db86515",
-      "url": "https://forum.gl-inet.com/t/regarding-the-security-notice/73057/17",
-      "update": true,
-      "since": "2026-11-20"
-    }
-  ]
+ "updated": "2026-11-22T11:26:32Z",
+ "headline": "Tower Records Japan reported exposure of about 11 million personal records, not a count of distinct customers. Korea Electric Power Corporation confirmed exposure for 650,487 billing-platform users and notified 869,761 procurement users while it investigates the scope there.",
+ "incidents": [
+  {
+   "org": "Tower Records Japan",
+   "what": "Tower Records Japan said an intruder accessed its online store and exposed customer records, including login information and some membership and delivery details.",
+   "scale": "About 11M records; unique customer count undisclosed",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "n-cbf13d4d",
+   "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
+  },
+  {
+   "org": "Korea Electric Power Corporation",
+   "what": "KEPCO confirmed exposure in its billing and procurement systems, but the number of procurement users whose data was exposed remains unknown.",
+   "scale": "650,487 billing users confirmed; 869,761 procurement users notified",
+   "patterns": [
+    "data-exposure"
+   ],
+   "url": "https://www.ajupress.com/view/20261122184870375",
+   "eid": "n-34316fe7"
+  },
+  {
+   "org": "Together AI",
+   "what": "Together AI confirmed that an unauthorized party downloaded stored samples of customer prompts after a repository credential was exposed.",
+   "scale": "Customer count undisclosed",
+   "eid": "x-eb428de0",
+   "patterns": [
+    "ai",
+    "data-exposure",
+    "key-compromise"
+   ],
+   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+  },
+  {
+   "org": "Rackspace Spot",
+   "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
+   "scale": "Customer count not disclosed",
+   "patterns": [
+    "supply-chain",
+    "key-compromise"
+   ],
+   "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+   "eid": "x-f3649087"
+  },
+  {
+   "org": "Cyber (CyberConnect)",
+   "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
+   "scale": "5.213M CYBER; final loss unconfirmed",
+   "patterns": [
+    "bridge"
+   ],
+   "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
+   "eid": "x-57f29b3f"
+  },
+  {
+   "org": "Norway Digitalisation Agency (ID-porten)",
+   "what": "Norway’s digitalisation agency said a denial-of-service attack disrupted its national ID-porten sign-in service.",
+   "scale": "About three hours of disruption",
+   "patterns": [
+    "outage"
+   ],
+   "eid": "x-5233adf4"
+  },
+  {
+   "org": "GMI Cloud",
+   "what": "Users reported possible exposure of requests sent through GMI Cloud; OpenRouter’s public update did not identify that provider.",
+   "scale": "Unverified; scope unknown",
+   "patterns": [
+    "ai",
+    "data-exposure"
+   ],
+   "url": "https://x.com/michael_chomsky/status/2124326400803152021",
+   "eid": "x-3ef42975"
+  },
+  {
+   "org": "Chainflip",
+   "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
+   "scale": "About $12M estimated across Ethereum and Bitcoin",
+   "patterns": [
+    "bridge"
+   ],
+   "eid": "x-b163fb32",
+   "url": "https://chainflip.io/return",
+   "update": true,
+   "since": "2026-11-21"
+  },
+  {
+   "org": "Autopay",
+   "what": "Autopay said it shared incident findings with banks and the financial regulator and plans to brief e-commerce firms.",
+   "scale": "Affected-card total undisclosed",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "n-8afc1c07",
+   "update": true,
+   "since": "2026-11-11"
+  },
+  {
+   "org": "OpenRouter / Novita",
+   "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
+   "scale": "125 endpoints lost zero-retention eligibility",
+   "patterns": [
+    "ai",
+    "data-exposure",
+    "supply-chain"
+   ],
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "eid": "x-2d44e830",
+   "update": true,
+   "since": "2026-05-28"
+  },
+  {
+   "org": "GL.iNet",
+   "what": "GL.iNet staff clarified that a Comet 5G with no signs of infection does not need a factory reset after the cloud flaw was fixed.",
+   "scale": "Affected device count undisclosed",
+   "patterns": [
+    "edge-device"
+   ],
+   "eid": "x-6db86515",
+   "url": "https://forum.gl-inet.com/t/regarding-the-security-notice/73057/17",
+   "update": true,
+   "since": "2026-11-20"
+  }
+ ]
 }
