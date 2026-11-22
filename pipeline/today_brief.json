@@ -1,16 +1,28 @@
 {
- "updated": "2026-11-22T05:26:11Z",
- "headline": "Chainflip reported that 122.86 BTC was stolen in addition to an estimated $4.86 million from its Ethereum vault; no recovery was reported. Fluidkey confirmed about $1.6 million in unauthorized transfers, and Rackspace warned that an intruder could read secrets in some customers’ Kubernetes clusters.",
+ "updated": "2026-11-22T06:25:56Z",
+ "headline": "Chainflip confirmed Bitcoin and Ethereum vault thefts valued at about $12 million in total by Cointelegraph. Together AI confirmed an unauthorized download of prompt samples, and Fluidkey reported about $1.6 million in unauthorized transfers.",
  "incidents": [
   {
    "org": "Chainflip",
-   "what": "Chainflip confirmed Bitcoin theft in addition to its Ethereum outflow and offered a recovery bounty, but has not reported funds returned.",
-   "scale": "122.86 BTC plus $4.86M estimated on Ethereum",
+   "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
+   "scale": "About $12M estimated across Ethereum and Bitcoin",
    "patterns": [
     "bridge"
    ],
    "eid": "x-b163fb32",
    "url": "https://chainflip.io/return"
+  },
+  {
+   "org": "Together AI",
+   "what": "Together AI confirmed that an unauthorized party downloaded stored samples of customer prompts after a repository credential was exposed.",
+   "scale": "Customer count undisclosed",
+   "eid": "x-eb428de0",
+   "patterns": [
+    "ai",
+    "data-exposure",
+    "key-compromise"
+   ],
+   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
   },
   {
    "org": "Rackspace Spot",
@@ -47,6 +59,20 @@
    "eid": "x-57f29b3f"
   },
   {
+   "org": "OpenRouter / Novita",
+   "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
+   "scale": "125 endpoints lost zero-retention eligibility",
+   "patterns": [
+    "ai",
+    "data-exposure",
+    "supply-chain"
+   ],
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "eid": "x-2d44e830",
+   "update": true,
+   "since": "2026-05-28"
+  },
+  {
    "org": "Norway Digitalisation Agency (ID-porten)",
    "what": "Norway’s digitalisation agency said a denial-of-service attack disrupted its national ID-porten sign-in service.",
    "scale": "About three hours of disruption",
@@ -56,16 +82,6 @@
    "eid": "x-5233adf4"
   },
   {
-   "org": "YMCA of Singapore",
-   "what": "YMCA confirmed unauthorized access to its Youth For Causes portal but could not determine whether personal data was copied.",
-   "scale": "13,000+ potentially affected",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-4945b68d",
-   "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/"
-  },
-  {
    "org": "Sunfun Info",
    "what": "The Taiwanese company reported an intrusion into its information systems and said it had no material operational impact.",
    "scale": "Exposure not disclosed",
@@ -73,18 +89,6 @@
     "enterprise-platform"
    ],
    "url": "https://www.tipranks.com/news/company-announcements/sunfun-info-reports-information-system-intrusion"
-  },
-  {
-   "org": "Airbyte",
-   "what": "Airbyte restored Intercom after taking Cloud services offline for containment, but 15 other API connectors remained down.",
-   "scale": "15 API connectors still unavailable",
-   "patterns": [
-    "enterprise-platform",
-    "outage"
-   ],
-   "update": true,
-   "since": "2026-11-17",
-   "eid": "x-a4503abf"
   },
   {
    "org": "Orchestra (Travelsoft)",

@@ -1,4 +1,20 @@
 {
+ "Fandango discloses exposure of payment details entered at checkout": {
+  "summary": "Fandango disclosed possible exposure of payment and checkout data for some transactions from October 8 through 11. The published notice does not give a total affected-person count.",
+  "attack_chain": ["The initial access method was not established in the customer notice.", "An unauthorized party could access payment data entered during the affected checkout window.", "Fandango said it fixed the issue and investigated with outside specialists."],
+  "open_questions": ["How many people were affected and did unauthorized access lead to card fraud?"],
+  "mitigations": ["Review card statements and contact the issuer about unauthorized charges.", "Audit checkout changes and reduce the amount of card data the merchant application handles."],
+  "sources": [{"label":"Fandango notice filed with California","url":"https://oag.ca.gov/system/files/Fandango%20-%20Individual%20Notice%20Template_Redacted.pdf?ref=secretciso.org"},{"label":"SecurityWeek","url":"https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/"}],
+  "patterns": ["data-exposure"]
+ },
+ "Fandango says hackers stole payment card details from checkout pages": {
+  "summary": "Fandango disclosed possible exposure of payment and checkout data for some transactions from October 8 through 11. The published notice does not give a total affected-person count.",
+  "attack_chain": ["The initial access method was not established in the customer notice.", "An unauthorized party could access payment data entered during the affected checkout window.", "Fandango said it fixed the issue and investigated with outside specialists."],
+  "open_questions": ["How many people were affected and did unauthorized access lead to card fraud?"],
+  "mitigations": ["Review card statements and contact the issuer about unauthorized charges.", "Audit checkout changes and reduce the amount of card data the merchant application handles."],
+  "sources": [{"label":"Fandango notice filed with California","url":"https://oag.ca.gov/system/files/Fandango%20-%20Individual%20Notice%20Template_Redacted.pdf?ref=secretciso.org"},{"label":"SecurityWeek","url":"https://www.securityweek.com/fandango-warns-ticket-buyers-of-payment-card-data-exposure/"}],
+  "patterns": ["data-exposure"]
+ },
  "Samsung reports breach at US advertising vendor": {
   "summary":"Samsung acknowledged a breach at a U.S. advertising vendor. Published reporting describes leaked data linked to television viewing, but the number of affected people remains unknown.",
   "attack_chain":["The reported intrusion involved an advertising vendor, not a confirmed compromise of Samsung’s own systems.","An extortion group claimed to publish material linked to the vendor."],
@@ -2891,6 +2907,287 @@
   ],
   "patterns": [
    "edge-device"
+  ]
+ },
+ "OpenRouter customers relay warning about possible MiniMax prompt exposure": {
+  "summary": "Novita confirmed a routing error affecting some MiniMax requests. OpenRouter said researchers did not identify a breach of its own systems and removed or relabeled provider routes.",
+  "attack_chain": [
+   "Novita’s routing configuration sent some requests outside the intended customer scope.",
+   "Some request contents reached MiniMax’s official API; subsequent access or retention has not been quantified.",
+   "Novita suspended affected models, and OpenRouter removed providers or updated compliance labels."
+  ],
+  "open_questions": [
+   "How many requests were affected and what was retained?",
+   "Which remediation measures have been independently verified?"
+  ],
+  "mitigations": [
+   "Rotate secrets included in affected requests.",
+   "Verify processing and retention requirements across all downstream providers, not just the broker.",
+   "Monitor changes to route and retention eligibility."
+  ],
+  "sources": [
+   {
+    "label": "Novita routing incident notice",
+    "url": "https://novita.ai/blog/minimax-requests-privacy-notice/"
+   },
+   {
+    "label": "OpenRouter incident roundup",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "Together AI confirms unauthorized download of stored prompt samples": {
+  "summary": "Together AI confirmed an unauthorized download of stored customer prompt samples after a repository credential was exposed. The company has not disclosed a customer count or the date of the download.",
+  "attack_chain": [
+   "A credential providing access to stored testing data was accidentally made public.",
+   "An unauthorized party accessed stored prompt samples.",
+   "The party tested credentials it found in some prompts."
+  ],
+  "open_questions": [
+   "How many customers and stored samples were affected?",
+   "Did the data include sensitive information beyond credentials?"
+  ],
+  "mitigations": [
+   "Revoke exposed credentials immediately; reverting a commit does not revoke access.",
+   "Enable secret scanning and test with synthetic data where possible.",
+   "Use zero data retention for sensitive inference workloads and avoid including live secrets."
+  ],
+  "sources": [
+   {
+    "label": "Together AI incident notice",
+    "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+   },
+   {
+    "label": "Sulat AI & Tech News",
+    "url": "https://news.sulat.com/2026/11/22/together-ai-prompt-leak/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "data-exposure",
+   "key-compromise"
+  ]
+ },
+ "Security event: Prompt leakage for requests in June and July of 2026": {
+  "summary": "Together AI confirmed an unauthorized download of stored customer prompt samples after a repository credential was exposed. The company has not disclosed a customer count or the date of the download.",
+  "attack_chain": [
+   "A credential providing access to stored testing data was accidentally made public.",
+   "An unauthorized party accessed stored prompt samples.",
+   "The party tested credentials it found in some prompts."
+  ],
+  "open_questions": [
+   "How many customers and stored samples were affected?",
+   "Did the data include sensitive information beyond credentials?"
+  ],
+  "mitigations": [
+   "Revoke exposed credentials immediately; reverting a commit does not revoke access.",
+   "Enable secret scanning and test with synthetic data where possible.",
+   "Use zero data retention for sensitive inference workloads and avoid including live secrets."
+  ],
+  "sources": [
+   {
+    "label": "Together AI incident notice",
+    "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+   },
+   {
+    "label": "Sulat AI & Tech News",
+    "url": "https://news.sulat.com/2026/11/22/together-ai-prompt-leak/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "data-exposure",
+   "key-compromise"
+  ]
+ },
+ "Together AI: coding agent exposed a credential, stored prompts taken": {
+  "summary": "Together AI confirmed an unauthorized download of stored customer prompt samples after a repository credential was exposed. The company has not disclosed a customer count or the date of the download.",
+  "attack_chain": [
+   "A credential providing access to stored testing data was accidentally made public.",
+   "An unauthorized party accessed stored prompt samples.",
+   "The party tested credentials it found in some prompts."
+  ],
+  "open_questions": [
+   "How many customers and stored samples were affected?",
+   "Did the data include sensitive information beyond credentials?"
+  ],
+  "mitigations": [
+   "Revoke exposed credentials immediately; reverting a commit does not revoke access.",
+   "Enable secret scanning and test with synthetic data where possible.",
+   "Use zero data retention for sensitive inference workloads and avoid including live secrets."
+  ],
+  "sources": [
+   {
+    "label": "Together AI incident notice",
+    "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+   },
+   {
+    "label": "Sulat AI & Tech News",
+    "url": "https://news.sulat.com/2026/11/22/together-ai-prompt-leak/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "data-exposure",
+   "key-compromise"
+  ]
+ },
+ "Together AI says coding agent leaked user prompts": {
+  "summary": "Together AI confirmed an unauthorized download of stored customer prompt samples after a repository credential was exposed. The company has not disclosed a customer count or the date of the download.",
+  "attack_chain": [
+   "A credential providing access to stored testing data was accidentally made public.",
+   "An unauthorized party accessed stored prompt samples.",
+   "The party tested credentials it found in some prompts."
+  ],
+  "open_questions": [
+   "How many customers and stored samples were affected?",
+   "Did the data include sensitive information beyond credentials?"
+  ],
+  "mitigations": [
+   "Revoke exposed credentials immediately; reverting a commit does not revoke access.",
+   "Enable secret scanning and test with synthetic data where possible.",
+   "Use zero data retention for sensitive inference workloads and avoid including live secrets."
+  ],
+  "sources": [
+   {
+    "label": "Together AI incident notice",
+    "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+   },
+   {
+    "label": "Sulat AI & Tech News",
+    "url": "https://news.sulat.com/2026/11/22/together-ai-prompt-leak/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "data-exposure",
+   "key-compromise"
+  ]
+ },
+ "About $1.51 million moved out of two retired OCEAN token pools": {
+  "summary": "About 875.08 WETH left two retired OCEAN pools. Investigators could not establish whether the approvals came from compromised signers or whether the movement was authorized.",
+  "attack_chain": [
+   "Old pools retained funds after the associated tokens were retired.",
+   "Privileged approvals preceded the outflow; the signers’ intent and control are unknown.",
+   "Investigators observed about $1.51 million worth of WETH leave the pools."
+  ],
+  "open_questions": [
+   "Who controlled the approving signers?",
+   "Was the outflow an authorized recovery, and will the funds be returned?"
+  ],
+  "mitigations": [
+   "Audit remaining balances and privileges on retired deployments.",
+   "Monitor privileged changes and large flows on legacy assets as well as current products."
+  ],
+  "sources": [
+   {
+    "label": "Bitquery investigation",
+    "url": "https://bitquery.io/investigations/ocean-protocol-multisig-drain"
+   },
+   {
+    "label": "Match Systems",
+    "url": "https://matchsystems.com/incidents/retired-ocean-token-pools-drained-circumstances-under-review"
+   }
+  ],
+  "patterns": []
+ },
+ "Data Processing Incidents on Inference Providers": {
+  "summary": "Novita confirmed a routing error affecting some MiniMax requests. OpenRouter said researchers did not identify a breach of its own systems and removed or relabeled provider routes.",
+  "attack_chain": [
+   "Novita’s routing configuration sent some requests outside the intended customer scope.",
+   "Some request contents reached MiniMax’s official API; subsequent access or retention has not been quantified.",
+   "Novita suspended affected models, and OpenRouter removed providers or updated compliance labels."
+  ],
+  "open_questions": [
+   "How many requests were affected and what was retained?",
+   "Which remediation measures have been independently verified?"
+  ],
+  "mitigations": [
+   "Rotate secrets included in affected requests.",
+   "Verify processing and retention requirements across all downstream providers, not just the broker.",
+   "Monitor changes to route and retention eligibility."
+  ],
+  "sources": [
+   {
+    "label": "Novita routing incident notice",
+    "url": "https://novita.ai/blog/minimax-requests-privacy-notice/"
+   },
+   {
+    "label": "OpenRouter incident roundup",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "Privacy Notice Regarding MiniMax Requests on Novita": {
+  "summary": "Novita confirmed a routing error affecting some MiniMax requests. OpenRouter said researchers did not identify a breach of its own systems and removed or relabeled provider routes.",
+  "attack_chain": [
+   "Novita’s routing configuration sent some requests outside the intended customer scope.",
+   "Some request contents reached MiniMax’s official API; subsequent access or retention has not been quantified.",
+   "Novita suspended affected models, and OpenRouter removed providers or updated compliance labels."
+  ],
+  "open_questions": [
+   "How many requests were affected and what was retained?",
+   "Which remediation measures have been independently verified?"
+  ],
+  "mitigations": [
+   "Rotate secrets included in affected requests.",
+   "Verify processing and retention requirements across all downstream providers, not just the broker.",
+   "Monitor changes to route and retention eligibility."
+  ],
+  "sources": [
+   {
+    "label": "Novita routing incident notice",
+    "url": "https://novita.ai/blog/minimax-requests-privacy-notice/"
+   },
+   {
+    "label": "OpenRouter incident roundup",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "Phala reports compromise of a DeepSeek inference deployment": {
+  "summary": "Phala reported unauthorized access affecting both an inference deployment and a limited set of confidential virtual machine infrastructure. The November 10 report is preliminary.",
+  "attack_chain": [
+   "Phala identified unauthorized access to infrastructure serving a model route.",
+   "Some request contents and application credentials were exposed, and the provider reported misuse of some credentials.",
+   "Phala took the affected infrastructure offline and rotated key material."
+  ],
+  "open_questions": [
+   "Will a final investigation narrow the affected window further?"
+  ],
+  "mitigations": [
+   "Rotate credentials included in potentially affected requests and workloads.",
+   "Review traffic and identity logs; require authenticated access to management interfaces."
+  ],
+  "sources": [
+   {
+    "label": "Phala preliminary incident report",
+    "url": "https://phala.com/posts/phala-november-preliminary-incident-report"
+   },
+   {
+    "label": "OpenRouter provider incident roundup",
+    "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"
+   }
+  ],
+  "patterns": [
+   "ai",
+   "data-exposure",
+   "key-compromise"
   ]
  }
 }
