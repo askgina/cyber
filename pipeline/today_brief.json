@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T11:26:32Z",
+ "updated": "2026-11-22T12:28:28Z",
  "headline": "Tower Records Japan reported exposure of about 11 million personal records, not a count of distinct customers. Korea Electric Power Corporation confirmed exposure for 650,487 billing-platform users and notified 869,761 procurement users while it investigates the scope there.",
  "incidents": [
   {
@@ -54,6 +54,16 @@
    ],
    "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
    "eid": "x-57f29b3f"
+  },
+  {
+   "org": "Aramid Bridge",
+   "what": "Voi Network reported unauthorized withdrawals from the Aramid bridge and said the Voi blockchain itself was not compromised.",
+   "scale": "About 125M VOI and 70,000 ALGO",
+   "patterns": [
+    "bridge"
+   ],
+   "url": "https://x.com/Voi_Net/status/2124387898757611938",
+   "eid": "x-6fb93117"
   },
   {
    "org": "Norway Digitalisation Agency (ID-porten)",
