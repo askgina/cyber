@@ -1,28 +1,16 @@
 {
- "generated": "2026-11-21T23:29:14Z",
+ "generated": "2026-11-22T00:29:03Z",
  "queue": [
   {
    "date": "2026-11-21T15:47:41Z",
    "title": "Trump says reported FBI database hack is ‘not good’",
    "source": "TechCrunch",
    "url": "https://techcrunch.com/2026/11/21/trump-says-reported-fbi-database-hack-is-not-good/",
-   "n_outlets": 14,
+   "n_outlets": 15,
    "also": [
     "Trump says news of another FBI cyberattack 'not good'",
     "Trump says news of another FBI cyberattack 'not good'",
     "FBI Database Hacked, Trump Confirms: 'I Will Say That It's Not Good'"
-   ]
-  },
-  {
-   "date": "2026-11-21T15:37:09Z",
-   "title": "Trump says ‘maybe we’ll learn things’ after FBI is hacked again",
-   "source": "Newswav",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTjJ0SUJfS2x3aDVjMlRuTkVMTFBEdDNIb1NrSU9iQTEtLTM1d2ZSWDgyNmRIQkNYWjVMSUJMUUo4NTRHTVEwempoa1VOUWh5MGZ1N1gtdVdGSklSdnNXbVRaQ1lDR2lFcnAyUzIyRjUwYWpxMkhCVHRyLUhEY1FmSWhVY25DV0R5aVdDSTNTMzc4X2ZibU9qc2VGdlA2cF96azhLQQ?oc=5",
-   "n_outlets": 12,
-   "also": [
-    "Trump says ‘maybe we’ll learn things’ after FBI is hacked again",
-    "Trump says ‘maybe we’ll learn things’ after FBI is hacked again",
-    "Trump says ‘maybe we’ll learn things’ after FBI is hacked again"
    ]
   },
   {
@@ -86,18 +74,6 @@
    ]
   },
   {
-   "date": "2026-11-21T21:41:00Z",
-   "title": "Trump says latest FBI hack could have ‘positive’ impacts",
-   "source": "Politico",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZkVhWWpyQlZoUFdpcFU0bGgtbmkyN0FISXNRZFhvZ0ROdUc2aGpEUFlScUFtY3F5cEgtNkRHXzBMZUttQ1I0c2RJSVFycF9Zb3cwYUpkc25tcDNjR05xekE4SW9RWXM4Z0FHeHdXYXZBX1pUYS1hRkxTeEVNeVhTcUtUNng?oc=5",
-   "n_outlets": 5,
-   "also": [
-    "Trump downplays FBI data breach of NCIC, adds 'positive spin'",
-    "Trump downplays FBI data breach of NCIC, adds 'positive spin'",
-    "Trump tries to put a ‘positive spin’ on latest FBI hack"
-   ]
-  },
-  {
    "date": "2026-11-20T07:58:55Z",
    "title": "National Police Agency launches cyber attack initial response unit, takes charge of communication history preservation and analysis support, and advises victim companies (Sankei Shimbun)",
    "source": "Yahoo!ニュース",
@@ -122,17 +98,6 @@
    ]
   },
   {
-   "date": "2026-11-20T00:14:00Z",
-   "title": "Stryker Sticks to Growth Goals Despite Cyberattack and Slower Orthopedic Market",
-   "source": "TradingView",
-   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOZVktOHk1Z0d3UTZvVWhBa3JqakR5dkNkSFhBY3pHXzFIdTBxMFVCSlZkUEhHaEF3cTRMTHZtOVZSb1ZsMkNMaVA4VjNvQ0Jkbi0xck5md1NWdjFKTm9wV0RQT0psZE1VSG5McldRbW9GZ3RVcDNWb205LVVoRFpKVVVmeUlPaXpiZ1VWdkF0S1VaOURvd3FSTjFpS2RCbGMyRl92MC1WekJ6Mk94RDM1b1RBUGZKa05BUEJXNndhZUVWdHdZTGw3UC10M0puTUhBX1FzdUpYUQ?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "Stryker Sticks to Growth Goals Despite Cyberattack and Slower Orthopedic Market",
-    "Stryker stock holds growth targets despite cyber and market pressures"
-   ]
-  },
-  {
    "date": "2026-11-20T07:49:30Z",
    "title": "Japan insurers report surge in cyber insurance claims",
    "source": "https://streamlinefeed.co.ke/",
@@ -141,17 +106,6 @@
    "also": [
     "Japan’s Top Insurers See Cyber Claims More Than Double Amid AI Hacking Surge",
     "AI-fueled cyberattacks drive claims surge at Japan insurers"
-   ]
-  },
-  {
-   "date": "2026-11-21T17:09:00Z",
-   "title": "FBI Hacked, Trump Sees Opportunity: 'Maybe We'll Learn About Russia Hoax'",
-   "source": "Times Now",
-   "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOcUlhOWhQeUcwMkpZeUpfUENrU1RleGtwa0lpT1RqMXRJTXRhOXZqb001SkgzQ0RVNzAxWHJaWi1obU41LV9uaFU1LVNQRlZQMlh3NTJJdVA5dzd2RXU4bGt3VnZRc3d0eGNDbUhZYy1JTzM4UmhkN1NXSi1ORklrWWZ5ZGFJcU5PZ211N3lnU0l5MmZ6eURUQjdjdzVLVGczYXAxaDQ4ZkRrQzhnamtCNURsYVZKSDhsaVVaM3lpZ21tVndsNUsxV9IBzgFBVV95cUxNT05Da0ZfUlM2a0VEVW9nd21jOGs3aDM0cTV0UzBJYU10dXpNcDFGempPS1A0RDM0bkZ0RXl6MjRJQU5KcnZ1MGF5bmhTVW1WcFJEMkJLNTYydU8zTWlNalhhUHVLemU3dDB0bjVjd0JQR3hxTlNseTNraDdxRVg4dVFaVWxwSjJCMm93T1pyUThYR1Rwel93LVdtM1NUUm1GampBUlNfcUdzazhGX1VMeUtfR1N1N0pWYWFFNWxoZjVzWTEweGVyd2NNN0Y4Zw?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "FBI Hacked, Trump Sees Opportunity: 'Maybe We'll Learn About Russia Hoax'",
-    "Trump assured that hacking the FBI could reveal information about electoral crimes"
    ]
   },
   {
@@ -174,36 +128,6 @@
    "also": [
     "``AI will become like a gun'' Bank accounts and infrastructure will also be targeted, experts warn, soaring cyberattacks - how to prevent damage (CBC TV)",
     "``AI will become like a gun'' Bank accounts and infrastructure will also be targeted, experts warn, soaring cyber attacks How to prevent damage"
-   ]
-  },
-  {
-   "date": "2026-11-19T23:36:00Z",
-   "title": "Rubrik warns ransomware recovery can take six weeks",
-   "source": "SecurityBrief Australia",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNLXB5dnJNSFpLMEUyUV9oalBDTkR2S1M3dTBWMGtxMmEtMXVGYVc4c1p6djBGYWozTEUzS2E3ZUc0eFMyeDdjOHJQVG9hal9SQUVmbUJQbjhhTjBxWHhwdjh5TlJqdlRsOGwwTE9BODdieUV6ZHFQVjZiSXd0SUVGVjFrT1pwekNNT2JCYlJFRQ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Rubrik warns ransomware recovery can take six weeks"
-   ]
-  },
-  {
-   "date": "2026-11-19T23:38:00Z",
-   "title": "Hack and taps show that Tata deliberately emitted harmful substances almost 600 times",
-   "source": "Drimble",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOa0Z2ZElsRzJ3czBQNEFnbGFaQUZKYkhxbV9Ydm51RjZMZXVaeGpHVEJoYlhfQkZRRHZsNFRxSldGeHJhOHRUbGNNOTBuekZPUXB1WHUyWjU5Z19CWlJmeW8tYTNXM0xnTTByN2RSNENzRTFydmlpYlB1V2pibE5mNGlCU0RPWnVKMm9hTjVmTTZjV09ZQVU5M1pvV1U3Umc2MlROTERCNGVQMjkzRDNaNzNVd3R2UmUyRVBKRWtONEg1WWdzaS0zOVRxSQ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Hack and taps show that Tata deliberately emitted harmful substances almost 600 times"
-   ]
-  },
-  {
-   "date": "2026-11-19T23:52:00Z",
-   "title": "In the face of hacking attempts, the Municipality of Querétaro reinforces cybersecurity",
-   "source": "CódigoQro",
-   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOWTVmYlZtNWFCWElVYjQ0N2NrYjhkVTRBMXdETHhEQThDRjNUWWtBdjNkM3JZczJWb3R2X0ljM2ZDRzJ6NHNIcTVDWmpUTTl4ajFFZFBTNG9xaWxnSW9LRnBYcjNZTmdRb2NDbTFrMm02MTRqWjRtWC0zaGpQT3RyN3JheTh4Tm82RzlSTnNTeGp6a3kydGlSUHB2WE1OQzdzTGhXYXZGWnJZSWdtdE1pQ2F4SdIBuAFBVV95cUxPanRQcTNGamY5VllOM3kzZnNyR0pYcFlSV3p4N2hkd3F6Q210a1pKUzBBbGU4RGxsTGpHVnRDZFE1WjM1cWlTYV9xV2FIcG1oeVVpV3JQcW50M3dQMlc2eGtBN2VZOFN6YVlBR3N5a2M2ZGZWR3VTaUpvem9aekE1LV8yYXl2MV9PYlNUN2dqNVF4RHpQdzhTRjJEcFNEdVdHSWE2U0xGdjFqbjZiSFdBY0RBWUNLZEdZ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Municipality of Querétaro detects hacking attempts; security systems prevented breaches"
    ]
   },
   {
@@ -387,16 +311,6 @@
    ]
   },
   {
-   "date": "2026-11-20T13:53:25Z",
-   "title": "The gaming giant closes its website after a cyber attack",
-   "source": "TV4 Nyheterna",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOcDVIamlZb19HejcyU3MwTm5leTFsb3YwN1ctQW43VzNfY0MzR0VDUmdPVWh1aTdhM05tRlZtOHluTUhVV0I3amdzNHdmbVlvUHNURzZtMWZSS19vTzBVX1BLZnJ5QUxHeE5QVkFxU2dUaDFtVDNlSW9WR3BEOFFPMTFHTGJzaGo5RW1Mc3FFWDZFc0Q0MlY5RDFB?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "The 1984 website in Iceland closes its services after a cyberattack"
-   ]
-  },
-  {
    "date": "2026-11-20T14:00:00Z",
    "title": "Start of consideration of \"blocking\" as a countermeasure against cyber attacks... \"It's dangerous to become a magic stick, but as a 'stick to keep you from falling'\"",
    "source": "読売新聞",
@@ -507,6 +421,16 @@
    ]
   },
   {
+   "date": "2026-11-21T03:00:06Z",
+   "title": "Russian neural network outperforms Google models in cyberattack test",
+   "source": "Газета",
+   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAzUWx6TldwUldSLTR0LVpvSXNYekF6d0dqbU9uZDZDTkR5d0drQ3JseVluTWpSU19YbnB3SUZJVEJ5WUR0WTY5QUh2enFqZHN1MEszZ1otWTZzc2Qtb1dIU1BkMTM3ekNjczBxetIBckFVX3lxTE5MVDBCVlZSNXpWemx2Rk1xUnRyWTd5UDFhemtxZFl5WU4zUzNuQm11cDN1dXZEUGhiVmp3YXdSa3JUVmRyaHJ6dndhYmpfV3I5bElPeDZJSzdkaF80b0V1X0pyZWxrOHdKOV9ZdGtFSGVpdw?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Russian neural network beats Google's developments in cyberattack test"
+   ]
+  },
+  {
    "date": "2026-11-21T07:16:15Z",
    "title": "Let urban aspirations become action! Hundreds of young people worked together to solve problems and create a smart city at the Bamboo City Policy Hackathon",
    "source": "中央社 CNA",
@@ -534,16 +458,6 @@
    "n_outlets": 2,
    "also": [
     "Nonsan City, personal information protection training for bank accounts... Tour of 15 towns, villages and villages"
-   ]
-  },
-  {
-   "date": "2026-11-21T09:05:00Z",
-   "title": "Extent unknown: Federal Employment Agency reports hacker attack",
-   "source": "Tagesspiegel",
-   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdHZFc3h6RmRZNC12cjVXaUVoNnRLZEVRblZfb3VBVDNsRUhDM0NvR0ptd0RNOTF4RzNKOHNSakRvbmpJa01VTDdwS3lEamEwTWJTbXRVR3RUY09EbG1VaEhhZUs3LUhNUFZRVUp6OEd6b0F1V3haUG5aamRxb25TbUZ3TzB3ajRxTzc0Snc3eGxmbW1XYV9Xc3U4VXlYdTJYUk1EczRpZlBtNW4xWXdadmpRX0NrVzBRWUVwOFJhM040Mzc2Y0E?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Hacker attack on the Federal Employment Agency: Is my data affected? According to the authorities, not yet"
    ]
   },
   {
@@ -615,30 +529,6 @@
    "also": [
     "Trump comments on suspected hacker attack on the FBI"
    ]
-  },
-  {
-   "date": "2026-11-20T00:00:00Z",
-   "title": "METR Reward Hacking: GPT-5.6 Sol Worst on TH2 (Nov 20)",
-   "source": "explainx.ai",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPUjlOZkFaS1FWSEtWTll5eFJEc1VGZ1ZVanJzaDl5Rk1rb1hVLVMtemxkalJxZG9nTVFCbUNlSE43QmRITnZpNEVwTl85M1lsV3VBb1R0NGNpRUduUzJMdTAxMlJJYU9UWjdwck5TRHpEWDktLTVLMGtZZEhpUGtrMC1FUWotYzVkYlE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T00:25:02Z",
-   "title": "1inch integrates Hyperliquid perpetual futures trading",
-   "source": "grafa.com",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQVkd0empSTmZDZlZLd2NWZFRuTklPYl9HTFNtTFVZRXhKb3BVNE5hZ0M5V1JCaWVVcFhlTHQ1dWRra1Etc1JPVkpUSmNtSGhuNDA5ODJuVXRGXzJMdFVQUG90SGtkdnVZSzM3b29IZ2tlczQzYTJYVXJFUnNWT3FGTnE4VmJ4YnlWR2ljZDJFYmY?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T00:26:41Z",
-   "title": "Bridgewater: GLM 5.3 Cyberattacks, 11-Day Exploit Gap",
-   "source": "shattered.io",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNS3ZxOWtjVHM5QjhEVkhnYzB1a1BBZlFmdFVtLTljQUE2Z3lhS2dRaGFIQk5XLWJlUXg3cE9qWjdINlR4ZjNvb2ppMm9vd0NoUG9saVlsQmlHZnJJcFF2dDktQWc5a0R4b3dFaThfQ21rZ24wWmc5WS1JMUdTbkpFdFVkbG5mMGhtSHVIbWxleExIb2dRSU1VcU9SaFE?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-20T00:31:00Z",
@@ -1033,6 +923,14 @@
    "also": []
   },
   {
+   "date": "2026-11-20T06:41:42Z",
+   "title": "UK MPs Warn Country Lags Behind Cyber Threats",
+   "source": "Demokratis.co.id",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1rc2tMcU5jcHkxTVl1cW1JSUpFTkxQekJnSVR3VTdCclItYVJjZTFudUJGSFhRb2hIMmM5STMza0w0ZUpoRzB5cGRSdGhDMTQwZ0FMSE1XalRUenRrWWlOWHlscw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-20T06:52:44Z",
    "title": "Inside North Korea’s Crypto Theft Machine: Hackers, Launderers, and Billions in Stolen Funds",
    "source": "HackerNoon",
@@ -1137,10 +1035,10 @@
    "also": []
   },
   {
-   "date": "2026-11-20T08:03:00Z",
-   "title": "Bitcoin price nears pivotal support: here’s why it may drop by 38% soon",
-   "source": "TradingView",
-   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOT1hmek5HeDVCeVBFbWFqSEwtTGw4TFpRUFlhOTBianRHQmEzYlVYTUJ1NVl3ZmRTOWFsQTRjUUxZaHJ5VlVKZjZWMV82X2dWMXhpWWQ5dU5neFIwUndQcEt6Q0NEMmM4eHpYWjZGMndQdldJNkdUdS1fZlBBWDhTMUZHREdaYmtYX0MwMjdreGhvQTh3dE55QnNKYmxpSVZfeFV5bTU4QVpkVENvcVhTWTVqeG9zRVRyMWt5OHQzTDVUY1RU?oc=5",
+   "date": "2026-11-20T08:00:00Z",
+   "title": "North Korean hacking group builds AI tools for cyberattacks",
+   "source": "朝日新聞",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1ucWJNX3NJeDRhQmZQUkJWYVV0cUhkR1VDSEIwQ1dhaVhIVVhWZTVRSVg3VlJRVU5JMW1ZVFMwTnpHQ2JWcFcxem1UVGdacXFZbVg1OUo5MDI1c2Y2RHc?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1361,22 +1259,6 @@
    "also": []
   },
   {
-   "date": "2026-11-20T10:33:16Z",
-   "title": "Unauthorized access problem in Nagano Prefecture, no leakage of personal information confirmed Email distribution services such as \"Cheerful Nagano\"",
-   "source": "中日新聞Web",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE52RlBhdUhPVXE0OXZscnpMdmUzT0VLdzdPS1E2RzM5Vy1yQTFXc3RJUU5GSzA2RE1RMW1XRE9RbXQzN1lER3BfUGNRcFI2N0dkbXNlMQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T10:48:34Z",
-   "title": "Cyberattack on a solar station in Chile: 85 days of downtime and parliamentary investigation",
-   "source": "Techora.ru",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOY0dZbEg4UHh2OG94S2VBYXZnTGhoYTZxMzJLaHBkWTJnVC1aNTdhWTdiSjJ5ek5vc2dmazBRMnlrcW8yOHVqWE5PMWtyYkE5eG1ZSC1Qdm5BczE5NUVMT25jSEZZUV9Fa3pxYUhRTnRkSXBQNHI3eWJSNzhzZEdPdjFJWW4?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-20T10:56:12Z",
    "title": "He paid PLN 215 for electricity. \"I was scared. Hackers stole my data\"",
    "source": "Fakt",
@@ -1409,14 +1291,6 @@
    "also": []
   },
   {
-   "date": "2026-11-20T11:00:47Z",
-   "title": "25,000 email addresses leaked in Nishinomiya City, 17,000 in Amagasaki City, unauthorized access to online application service Hyogo (Kobe Shimbun NEXT)",
-   "source": "Yahoo!ニュース",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBRSjZnRDBiMVNWWF94SkNQMW9aUDFtWS1sMi1kMVozYlhZQTNvdHpsZTc5TWNBdlhmdlh6MWFiNUdmaGlFb3d1SG5WemxkVnFkQTNJR2o4ck1KQWhrWmZSSUtJSXUtLXhYVWJ2NUFJVm90Ynk2MTE5Q1h1b0Q3Q0k?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-20T11:03:00Z",
    "title": "Don’t blame cyber-attacks for recent outages. The real villain is the US economy | Bruce Schneier",
    "source": "The Guardian",
@@ -1437,14 +1311,6 @@
    "title": "Samsung Mobile – Choi Won-joon Replaces TM Roh at MX",
    "source": "Meteora Web",
    "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQeDlHRzV4bjQ0NmluZnBYaFhKOFZrdTJjblFnSUJTWFdGU2RMQjlHUGFJOElQUk91WVpidXNuNy1Ka19NdXhaQ3BRWHAzZVhScWxhRUxaUGEwZlJLUDJYNDJjb3RrdlBId2k4VHhRaldGSmVxal9FODl5SVllYU5jNXl5MEtLUVlLX0VDU25rLTNEMm9EOVlGQnNR?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T11:15:00Z",
-   "title": "JPMorgan Data Breach: CZ Sounds Alarm, Is BTC Price Next in Line?",
-   "source": "Coin Gabbar",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNlptcFRDNTZ5cmNISlVJckpVYnBBSlcyd2MxVnpVaFZVUlpNVWVNY3FDRGxyaUhtMExrNkNPLW5Qa1dmTlhKcE85YVVUal9GOWpUWTBTbUZQMWhudFpVNjBJUmFfQWw2bkdpNDVZbGtTaU9pNWJ6ekQxX05yQTBRcnc2UnpQRk5vMTNFc0E4a2RMbUFI?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1741,6 +1607,118 @@
    "title": "Ex-NSA hacker says AI is powering rapid cyberattacks",
    "source": "NewsNation",
    "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNZXNUeXN4S1RJM09WNWtIT0d3c21yTDVCVUoxeVdGbVEtSmdFSzgyX0dnVHVoNExmS3ExeEoxN1dwbVppUzVYMlNXM0dyTUdnZi1sdjgtWDVxOTgxMnRkWUVuYzZrajYydEo5RS01eXp1akhnTngwY1lKaGF1UFhobnBDbU54ZjDSAYwBQVVfeXFMTmJCQzNvRFJTWnBlRk8zREpEVzN5cEZMWUNrWHpHOEh3bHRVUXNrUm5IY3FES3VTU3Y5cDNZYWwtR3BwVjU1UEZMRXBwQlZXQk1rQ2RoOHBOWngtRmF5ZnhOMkJGNkI1bVF4N1VUS1plM1dxUlZDOFVOdUFOSlZxOG9yNXF4ekJENmM1aGE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:19:12Z",
+   "title": "Cyber attack on hospital reopens alert for data security and continuity of medical care",
+   "source": "Diario Estrategia",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOTFZpTjBuQUl2ZVR1Y0ZXbmM4RjMzNGhyNG1FV3pqc2hCbFViYTBEbkhabFpSTTdWdmxaQzU4dDdmUWVqQ0pMMjhtazZfMW1uNUxHbGk1bFdlNmpINEs1Nk9JOXYxRXJVX0dtRDBZQUdHajI4TjA5UHJpT1Z1WGpTQXg3SGQyaERBaGV6djlwX3I3VDZNMzF3N0I1VXJXSUVpaEpqTHZNTzZ0VkF3a0M2dzRHMDJhYnVBZkhfT2tSSG9iNDlQblpzUWxESHVxMXNRTW90cGdR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:22:00Z",
+   "title": "AFM warns: not if, but when a cyber attack will occur",
+   "source": "Newsbit",
+   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOZUhlM0RSQWcxdElvT0dOTDVBVE9EV2tKalozb2hpUUFFZ0EycldtZmxFR3UtN3loM3ZvOVFNM3hOMjlleTc1bVBTRTR3Yk1CMThMOEpSaDBpSzQ0NXUtTnVfNXE0TzhiaEUyZXptVHVjd0otNDlGcGdFRWRQMW9TZS1GNVM?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:23:25Z",
+   "title": "AI and Cybersecurity: Technologies Can Magnify Cyberattacks and Enhance Cyber Defense",
+   "source": "U.S. Government Accountability Office (.gov)",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5ZWjRDRkJzZmd3VThDRXpPRWkxR3l0WTZ0RURzamRlY0dPaGxBTzJTT3JsS25sVzhyVzhSaVRCQUljQmVoUEJ6NENKY2ZKeWRiWW9kVw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:29:37Z",
+   "title": "China's new cyber attack weapon ARTEX alarmed the world! Aims like a Terminator",
+   "source": "Takvim",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPRTZ1RUtyLTFzZW01X1lZRUJRZUdLd0p3QVp6aVRmSGlQOVRRdXA0cENlTmJPM3lYNFRlZko3Z1BDbnp3RVJLTnpMRTFOZF95bjZGVnNjREc2UzRwYkpWNE1GRG9aNUpGWEV0UjlTUEw3YTZKXzRaVUdQWFVzZHJqajY1VlM0Nmh3U3Y0dFQzYkMtelBBbi0zVVVsUTlibGRjR3JxalZYVlA?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:30:00Z",
+   "title": "Two young men from Goes receive significant community service for assault after a simple remark: \"What are you looking at?\"",
+   "source": "AD.nl",
+   "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMFI1V0c4eHJmSEcyTkhySnB2YWhpYXpVUlRHRVFEdGxvNkU0WXo5U082YVprdjc3SkhqdUk4cUJYU0lnM3lmdFlkbUo3WFhCMk1lNFpIYkt2Qk9TbE85czdMT2RKOXY5OUdSeDU3b3JibGRDa0lUY19TeGJqYldRa19xMkIydUZLcVUyeEdJeHZZYk94eHpTc1JITHBYODIzMjY5alFjdGd3RzBXMDg1cjFsbFVlblZMN05mdjM3eGRpT1Q1M2pwQXdzcTBXallHbWpz?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:34:00Z",
+   "title": "Belarusian cloud provider hit by ransomware, amid attacks on Russian providers",
+   "source": "Digital Watch Observatory",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9VRlEyVHp4WTBrYlhZdTFqbmNDX2lTanJvcUVnMGNLVnIyWGlndHBCRUZEVUt1cmFEenRvQ3R6cXpEMjhjUVBtN2JqWWVBQ3BZOUJjZUg5R3NDVnl4eVUwV2hidm9NOTJzbzlBTWFzelNMWjVNVDFUWHVYQQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:35:22Z",
+   "title": "Meta Halts Work With Mercor After Major AI Data Breach",
+   "source": "TechJuice",
+   "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOeGJsdFRDb0QyNGNjNktKMmY1U1lYelZKOXc5S0R1bTRYVHZkdXlrd3J5UkpFem5FMFllWVFiQ3NoY3YxcmE3Tm8zY01ScUJuOFZKc2JMUTFndGNoenhFcWh3UnFFOHExTkxmbTFDTjVWVFphcVlVMkFBV2Z2SEt4SW94ai1qb2c?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:39:00Z",
+   "title": "Microsoft suggests Registry hack to work around hotpatch woes",
+   "source": "The Register",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQa2pKY2JLMTZXLUNETk5sUjJNcVBGTFF4RnRPMjJnZGVCeDVuS2QyQXdEU19RUFpxRUk0OFhhTHBuT2N1Q0dPTkM0TUFRQjJoMUFWVXEwSDNaSEFpN2xJYjl3V2ZSZWk3NEtsa09UWDRmWXVKMElDbDdzS3k3dzJoXzhoNE4tTlVBY19zWjM5NGFvZFZmdThlZ3FnVzdnLXBHSGZrNmhoRzVHV1pBSXpCcFVDX25BNktnQnJiMWFn?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:45:00Z",
+   "title": "Cyber attack, artificial intelligence and political dispute over network security",
+   "source": "Radio Kraków",
+   "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQRnhVN0dPa0xHZ1VIeDJDUENJT3lPSGh1M1h5ZG1McHFJYlk5QUgtcExHZGRSOFppYVowdF9fbEN3T29HbGMxRDJNR3lCU1hVV095d2hXTWhOSkYzbUF2eWRhMG1uaU83S0Y0TUlyemdrWDIydlhTR1A1YlhGRWcyd1VVblR0ai0zSEFjZ1hJMlJvdHFydXQySFlFd1N5NzFlQ3BaTGJ3OGpIekpMaFFGeTZYam5VbjB1VUxzYWpIbkFrYnJBRWJZVUhJRC03eHYxYjVPQVBGZw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T13:54:21Z",
+   "title": "F5 Issues Urgent Fixes for 22 BIG-IP Advisories",
+   "source": "Wisevoter",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQS2RQaW0ta2VNT3JqZjN1dE1WVTE0WUNWcExPRVliZGRJem5sQnZEQ2ZVY2o4aEVxNkQ2NVhqNEtBM1JVMlNMN1YtRS02cVBvSXFIQVRnNmNMMzhuNEhyOGg1Z3dQSklsWE1Qc0NhT0o4R01vMkFxcjB6S3c5WmU0bA?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:00:00Z",
+   "title": "Iran Claims Credit For Hack That Turned Cattle Into Apex Predators",
+   "source": "The Onion",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcy1BUE9VbEZObWh5enJFaDQ4QVdmRWdDWUlpSk5GZUVvYkppY3dHcTZjaFhleF9XeW9xVFl0TmdyQlJNdkVxRUlzdUVNQXlVbWpMRDZ5QTZGWFA1a1VNdWcxaHZmb0tzRDRFWUg4T09jZGJ0YXRyMy1LSzVfVlBfNlVBdnU3Z0J5SDNNc0NLQTR6QQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:15:00Z",
+   "title": "Ransomware Recovery Takes 20 Days for the Typical Victim, Report Finds",
+   "source": "Infosecurity Magazine",
+   "url": "https://www.infosecurity-magazine.com/news/ransomware-recovery-20-days/",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:16:52Z",
+   "title": "Data Leak Controversy: AIADMK Calls Minister Keerthana a ‘Dhurandhar’ in TN Cabinet",
+   "source": "The Hans India",
+   "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZGNCQUJfZVNTTU5UTEphQV9jeTJaaWxxaGQ1TGNIZjN3MXFfaHNfVUU2S2VyS3RmZDcwekItNmNtRzdhbEF5R3U2eTBvUjdCVkI5NFpfY21fUDhaaFgwaTRFTGNNVjU2enhTakFxV1hqek5XZm1xd3BnYVJjb2VROTJVejNzbWRaUXlNTk5PNTVfYVdGTTBQTFhlU2hmeFhWb3pXZHNrcTFEUkZiMDBacTBEVXVuUFIyYmpRdVFEdmJ3OFpRaGfSAcsBQVVfeXFMTVExODJnbER0SUFVUzREcTNLaG8zT2Z1MUJUb1c4M0lUUG9aOFRha2ZCaVU4b0szNWJ4TVluVk1xQUNETWxpc0g1d3lEeVlUVnJVcnZ1bVY5TmVTRldIZ290TkxZZHZVYUpHN0JUTGxQUVh0NnR1MVRTdEhNeFlLYTFtdktMNVRGbzZuRnpCNF94Wkh2RDVqNUFtM2dyTlhQYjhKUUdVLVktNjBUR0wzeG5SNjZLWXBJS0NxZWJuTFE4TnlqU1gwTTYzNWc?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:19:53Z",
+   "title": "Russia has proposed creating a library of scenarios for responding to cyber attacks",
+   "source": "Anti-Malware.ru",
+   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9hSWIwV1p0S3U2QUZJTzM5MXhXcmZubU05bDJHcmZlbzEtV3pKV21vd2VsMXhGMVFSR3BINUhFUVdlR2U1OVRvdUxUUU1SSUxEMjBlR2JFNVc1QURZZjZmQjJZOENkcnfSAWxBVV95cUxOM3ZfaGpCa2FnbVFmZnJsYkpNTnViYTJPdWVDUjdySWdMUFRuUlNhck9udGtIQTlzTkRVdU5FMnFrTHcwNk9aYlpmaDY3d2x0REE3VDI5RlpfeG5XRkdlLWZvNER1eDFvQTZxQms?oc=5",
    "n_outlets": 1,
    "also": []
   }

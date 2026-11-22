@@ -2047,5 +2047,87 @@
    "supply-chain",
    "data-exposure"
   ]
+ },
+ "Airbyte contains Cloud intrusion and restores most data syncs": {
+  "summary": "Airbyte said its security team detected an attack and took Airbyte Cloud offline to block continuing access. It said fewer than 1% of customers were affected and all were contacted directly. Most functions returned, but 15 API connectors remained unavailable in its November 21 update.",
+  "attack_chain": [
+   "Airbyte detected and interrupted an attack; initial access has not been disclosed.",
+   "It shut down Airbyte Cloud to contain the incident.",
+   "Most syncs resumed, but several OAuth connectors remained offline."
+  ],
+  "open_questions": [
+   "What was the initial access route?",
+   "What data, if any, was exposed?"
+  ],
+  "mitigations": [
+   "Review activity on linked service accounts and connector grants.",
+   "Follow vendor instructions for reconnecting integrations. Use least-privilege connector accounts and alert on unexpected authorizations or syncs."
+  ],
+  "sources": [
+   {
+    "label": "Airbyte Cloud status and recovery timeline",
+    "url": "https://status.airbyte.com/cmwklryol00620wpc0n44i9hn"
+   },
+   {
+    "label": "Airbyte security statement",
+    "url": "https://x.com/AirbyteHQ/status/2122797250275578017"
+   }
+  ],
+  "patterns": [
+   "enterprise-platform",
+   "outage"
+  ]
+ },
+ "CVE-2026-114938": {
+  "summary": "GreyNoise reported scanning and exploitation attempts against the OpenJDK vulnerability known as Java4Shell. The cited research does not establish a successful compromise.",
+  "attack_chain": [
+   "GreyNoise observed probes targeting the vulnerable Java runtime.",
+   "Public evidence of attempted exploitation should not be treated as proof of a successful intrusion."
+  ],
+  "open_questions": [
+   "Have investigators verified compromise of production systems?"
+  ],
+  "mitigations": [
+   "Inventory running Java versions, including runtimes bundled with applications or containers.",
+   "Prioritize Internet-facing services for the appropriate vendor-fixed build. Restart services and verify the running JVM version."
+  ],
+  "sources": [
+   {
+    "label": "GreyNoise live activity report",
+    "url": "https://www.greynoise.io/blog/global-event-java4shell-cve-2026-114938-live-activity-report"
+   },
+   {
+    "label": "Cloudflare Radar guidance",
+    "url": "https://radar.cloudflare.com/zero-wire/java4shell"
+   }
+  ]
+ },
+ "Yomiuri Giants fan-club breach also exposed some hashed passwords": {
+  "summary": "The Yomiuri Giants initially confirmed that 807,030 email addresses were exposed in the CLUB GIANTS incident. A researcher quoting the club’s second notice reported additional member details, including 274 hashed passwords. The club said its system did not hold card data.",
+  "attack_chain": [
+   "The club reported unauthorized access to its member management system.",
+   "The initial notice confirmed email address exposure. A researcher later reported that some hashed passwords and other member fields were also exposed."
+  ],
+  "open_questions": [
+   "How did the intruder gain access?",
+   "Which password hashing protections were in place?"
+  ],
+  "mitigations": [
+   "Require password resets for potentially affected accounts. Enable multifactor authentication where available.",
+   "Monitor password resets and unusual sign-ins, and alert members to phishing that impersonates the club."
+  ],
+  "sources": [
+   {
+    "label": "Yomiuri Giants initial notice",
+    "url": "https://www.giants.jp/news/31752/"
+   },
+   {
+    "label": "Takashi Yoshikawa, quoting the club’s second notice",
+    "url": "https://x.com/MalwareBibleJP/status/2123607016572895327"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
  }
 }
