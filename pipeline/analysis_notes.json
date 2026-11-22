@@ -266,37 +266,7 @@
   "sources": [{"label": "BleepingComputer", "url": "https://www.bleepingcomputer.com/news/security/bell-canada-says-agentic-hacker-stole-enterprise-customer-data/"}],
   "patterns": ["data-exposure"]
  },
- "Fluidkey": {
-  "summary": "Bitquery traced at least $1.58 million in unauthorized payouts across six chains. Fluidkey attributed the incident to exposed session data involving a third-party logging tool and restored service on an updated app. It says user keys remained on their devices; a full post-mortem is pending.",
-  "attack_chain": [
-   "Fluidkey attributed exposure of session data to a third-party logging tool; it has not yet released a full technical account.",
-   "Bitquery traced unauthorized payouts through Fluidkey's relayer across six chains.",
-   "Fluidkey took services offline on November 19 and later restored access on v1.79.22 with older versions blocked."
-  ],
-  "open_questions": [
-   "What is the complete timeline and scope of the logging-tool exposure?",
-   "What is the final loss after unclassified transactions are reconciled?"
-  ],
-  "mitigations": [
-   "Prevent session credentials from entering third-party logs and scope access to logging platforms.",
-   "Require explicit, independently verified confirmation for transactions.",
-   "Rate-limit and anomaly-check relayer submissions per account",
-   "Keep a tested kill switch for relayers"
-  ],
-  "sources": [
-   {
-    "label": "Bitquery investigation",
-    "url": "https://www.bitquery.io/investigations/fluidkey-hack"
-   },
-   {
-    "label": "Fluidkey recovery and preliminary findings",
-    "url": "https://x.com/fluidkey/status/2123811285934506413"
-   }
-  ],
-  "patterns": [
-   "outage"
-  ]
- },
+ "Fluidkey": {"summary":"Fluidkey’s post-mortem says flaws in an outdated third-party logging tool exposed session data. Approximately $1.6 million was transferred without authorization from 52 accounts on November 19. Some personal information and viewing keys were also exposed; Fluidkey says private spending keys stayed on user devices.","attack_chain":["The attacker accessed data stored in a third-party logging system.","Exposed session data was used in unauthorized transfers.","Fluidkey disabled processing, then restored service after updating the logging tool and strengthening authorization."],"open_questions":["Were any funds recovered or affected users reimbursed?","What additional findings will the ongoing investigation confirm?"],"mitigations":["Upgrade and restrict access to logging infrastructure. Keep session tokens, viewing keys and sensitive customer data out of logs, and revoke sessions and rotate credentials if exposure is suspected.","Require independent user authorization for transfers rather than trusting a session token by itself. Monitor for unexpected payouts and limit changes."],"sources":[{"label":"Fluidkey post-mortem","url":"https://docs.fluidkey.com/security/incident-2026-11-19/"},{"label":"The Defiant, reporting on the post-mortem","url":"https://thedefiant.io/news/hacks/fluidkey-says-unpatched-tool-enabled-1-6-million-hack"}],"patterns":["supply-chain","key-compromise","data-exposure"]},
  "Wagyu (XMR1)": {
   "summary": "XMR1, Wagyu's bridged Monero token on Hyperliquid, fell from about $500 to $1 after roughly $13.5 million in sales. In a post-mortem, Wagyu's operator attributed the loss to a deployer key exposed in a breach at 1984.hosting; on-chain data corroborates the sales but not how the key was obtained.",
   "attack_chain": [
@@ -727,7 +697,7 @@
  "USDA Confirms Cyberthreat on Loan Software Amid Widespread Systems Outages": {"summary":"A USDA undersecretary confirmed a cyberthreat disrupted farm payments, loan processing and conservation work and said no data was lost. NBC and ABC separately reported suspected unauthorized access, but the extent of access remains unconfirmed.","attack_chain":["USDA identified a security incident; initial access is not publicly known.","USDA reset credentials and took applications offline during the response.","Loan, payment and conservation workflows were disrupted; press reports of access do not establish data loss."],"open_questions":["Which systems, if any, were accessed without authorization?","What access did system and audit logs record?","When did all affected services recover?"],"mitigations":["Audit access to payment and loan systems and reconcile changed payee details before resuming batches.","Segment payment workflows, rotate affected credentials and revoke active sessions.","Use a tested offline continuity process for time-sensitive payments."],"sources":[{"label":"DTN interview with USDA undersecretary","url":"https://www.dtnpf.com/agriculture/web/AG/columns/washington-insider/article/2026/11/19/usda-loan-software-systems-face-amid"},{"label":"NBC News","url":"https://www.nbcnews.com/politics/national-security/agriculture-department-breached-hackers-sources-say-rcna610497"},{"label":"ABC News","url":"https://abcnews.com/food/story/new-government-report-sparks-concern-potential-cyberattack-us?id=138316014"}],"patterns":["outage"]},
  "Hackers allegedly breach USDA system used to pay farmers: reports": {"summary":"A USDA undersecretary confirmed a cyberthreat disrupted farm payments, loan processing and conservation work and said no data was lost. NBC and ABC separately reported suspected unauthorized access, but the extent of access remains unconfirmed.","attack_chain":["USDA identified a security incident; initial access is not publicly known.","USDA reset credentials and took applications offline during the response.","Loan, payment and conservation workflows were disrupted; press reports of access do not establish data loss."],"open_questions":["Which systems, if any, were accessed without authorization?","What access did system and audit logs record?","When did all affected services recover?"],"mitigations":["Audit access to payment and loan systems and reconcile changed payee details before resuming batches.","Segment payment workflows, rotate affected credentials and revoke active sessions.","Use a tested offline continuity process for time-sensitive payments."],"sources":[{"label":"DTN interview with USDA undersecretary","url":"https://www.dtnpf.com/agriculture/web/AG/columns/washington-insider/article/2026/11/19/usda-loan-software-systems-face-amid"},{"label":"NBC News","url":"https://www.nbcnews.com/politics/national-security/agriculture-department-breached-hackers-sources-say-rcna610497"},{"label":"ABC News","url":"https://abcnews.com/food/story/new-government-report-sparks-concern-potential-cyberattack-us?id=138316014"}],"patterns":["outage"]},
  "Optimizely reports separate Configured Commerce server intrusion": {"summary":"Optimizely disclosed unauthorized access to a legacy Configured Commerce build and deployment server. It said it removed an injected script from two sites and permanently shut down the server, and that this incident was separate from the Web Experimentation compromise.","attack_chain":["Optimizely did not disclose how access to the legacy server was obtained.","Optimizely reported that an unauthorized party accessed it and that an unexpected script appeared on two sites.","The vendor removed the script and shut down the server."],"open_questions":["What entry point was used?","Did the compromise expose any data or affect builds beyond the two sites disclosed?"],"mitigations":["Verify build-system access, published assets and deployment logs against known-good baselines.","Retire unused build infrastructure and rotate credentials that were in scope.","Review affected pages with the vendor and enforce a restrictive content security policy where practical."],"sources":[{"label":"Optimizely incident status","url":"https://status.optimizely.com/incidents/qyy4qsvxpp66"},{"label":"Optimizely customer update","url":"https://support.optimizely.com/hc/en-us/articles/50566997471757-Update-on-Configured-Commerce-Incident"}],"patterns":["supply-chain"]},
- "OpenRouter customers relay warning about possible MiniMax prompt exposure": {"summary":"Dragos found that unique test URLs were accessed after requests to an AI provider, including in tests marked zero data retention. An email attributed to OpenRouter and reproduced by a recipient identified MiniMax and reportedly removed zero-retention labels from affected endpoints. The findings do not establish that complete prompts were read or how many customers were affected.","attack_chain":["Research identified delayed access to unique test URLs supplied in inference requests.","The reproduced email says some listed vendors forwarded requests to MiniMax and that affected endpoint labels were removed.","Full prompt access and downstream retention are unconfirmed."],"open_questions":["What systems fetched the test URLs, and why?","Which customers, endpoint versions, and dates are affected?","Were full prompts stored or disclosed?"],"mitigations":["Avoid sending secrets or unredacted customer data to inference endpoints.","Pin approved inference providers and verify the complete downstream processing and retention chain.","Rotate any credentials that may have been included in affected requests and review associated usage logs."],"sources":[{"label":"Dragos research","url":"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"},{"label":"Customer email reproduced on Hacker News","url":"https://news.ycombinator.com/item?id=50585962"},{"label":"LeverageAI report","url":"https://ainews.leverageai.com.au/case/openrouter-minimax-prompt-url-access-warning"}],"patterns":["ai","supply-chain","data-exposure"]},
+ "OpenRouter customers relay warning about possible MiniMax prompt exposure": {"summary":"OpenRouter said researchers found data exposure or data-handling issues at some inference providers but no evidence of a breach of OpenRouter itself. OpenRouter notified potentially affected customers, removed three providers and revoked zero-retention eligibility for 125 endpoints, including some as a precaution.","attack_chain":["Researchers identified behavior inconsistent with advertised data handling at some inference providers.","Some provider routes reportedly forwarded requests to another provider. The precise exposure varies by route, and the testing did not show a compromise of OpenRouter itself."],"open_questions":["What systems fetched the test URLs, and why?","Which customers, endpoint versions, and dates are affected?","Were full prompts stored or disclosed?"],"mitigations":["Avoid sending secrets or unredacted customer data to inference endpoints.","Pin approved inference providers and verify the complete downstream processing and retention chain.","Rotate any credentials that may have been included in affected requests and review associated usage logs."],"sources":[{"label":"OpenRouter: Data Processing Incidents on Inference Providers","url":"https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/"},{"label":"Dragos research","url":"https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens"},{"label":"Customer email reproduced on Hacker News","url":"https://news.ycombinator.com/item?id=50585962"},{"label":"LeverageAI report","url":"https://ainews.leverageai.com.au/case/openrouter-minimax-prompt-url-access-warning"}],"patterns":["ai","supply-chain","data-exposure"]},
  "Rokkatei reports possible card exposure after online shop intrusion": {"summary":"Rokkatei suspended its online store after detecting tampering with the payment page. The initial notice estimated about 8,000 card records may be affected; the company later said other personal information entered during the affected window may also have been exposed. Rokkatei confirmed one case of card misuse after a customer report.","attack_chain":["Unauthorized access altered Rokkatei's online checkout; the initial access method is unknown.","Information entered on the affected checkout may have been sent outside the company.","Rokkatei took the store offline and subsequently confirmed one case of card misuse."],"open_questions":["How many records actually left the site?","Which additional personal data was exposed?","How was checkout modified?"],"mitigations":["Rebuild checkout from a trusted baseline and remove unauthorized scripts.","Alert on changes to payment-page code and outbound script destinations.","Coordinate with payment providers and direct affected customers to their card issuer through verified channels."],"sources":[{"label":"Rokkatei statement","url":"https://x.com/rokkatei/status/2123023428135567758"},{"label":"Rokkatei second notice","url":"https://x.com/rokkatei/status/2123959588391186710"},{"label":"Yomiuri Shimbun","url":"https://news.yahoo.co.jp/articles/9f609779b25f56e13a3903380cb064f7e73feb74"}],"patterns":["data-exposure"]},
  "「六花亭」不正アクセス、クレジットカードの不正利用１件確認…客からの申し出により判明": {"summary":"Rokkatei suspended its online store after detecting tampering with the payment page. The initial notice estimated about 8,000 card records may be affected; the company later said other personal information entered during the affected window may also have been exposed. Rokkatei confirmed one case of card misuse after a customer report.","attack_chain":["Unauthorized access altered Rokkatei's online checkout; the initial access method is unknown.","Information entered on the affected checkout may have been sent outside the company.","Rokkatei took the store offline and subsequently confirmed one case of card misuse."],"open_questions":["How many records actually left the site?","Which additional personal data was exposed?","How was checkout modified?"],"mitigations":["Rebuild checkout from a trusted baseline and remove unauthorized scripts.","Alert on changes to payment-page code and outbound script destinations.","Coordinate with payment providers and direct affected customers to their card issuer through verified channels."],"sources":[{"label":"Rokkatei statement","url":"https://x.com/rokkatei/status/2123023428135567758"},{"label":"Rokkatei second notice","url":"https://x.com/rokkatei/status/2123959588391186710"},{"label":"Yomiuri Shimbun","url":"https://news.yahoo.co.jp/articles/9f609779b25f56e13a3903380cb064f7e73feb74"}],"patterns":["data-exposure"]},
  "USDA takes farm-payment systems offline during security response": {"summary":"A USDA undersecretary confirmed a cyberthreat disrupted farm payments, loan processing and conservation work and said no data was lost. NBC and ABC separately reported suspected unauthorized access, but the extent of access remains unconfirmed.","attack_chain":["USDA identified a security incident; initial access is not publicly known.","USDA reset credentials and took applications offline during the response.","Loan, payment and conservation workflows were disrupted; press reports of access do not establish data loss."],"open_questions":["Which systems, if any, were accessed without authorization?","What access did system and audit logs record?","When did all affected services recover?"],"mitigations":["Audit access to payment and loan systems and reconcile changed payee details before resuming batches.","Segment payment workflows, rotate affected credentials and revoke active sessions.","Use a tested offline continuity process for time-sensitive payments."],"sources":[{"label":"DTN interview with USDA undersecretary","url":"https://www.dtnpf.com/agriculture/web/AG/columns/washington-insider/article/2026/11/19/usda-loan-software-systems-face-amid"},{"label":"NBC News","url":"https://www.nbcnews.com/politics/national-security/agriculture-department-breached-hackers-sources-say-rcna610497"},{"label":"ABC News","url":"https://abcnews.com/food/story/new-government-report-sparks-concern-potential-cyberattack-us?id=138316014"}],"patterns":["outage"]},
@@ -2642,5 +2612,223 @@
    }
   ],
   "patterns": ["data-exposure"]
+ },
+ "Rackspace Spot breach let hackers access customer Kubernetes secrets": {
+  "summary": "Rackspace told customers that an intruder used leaked credentials to access its Spot cloud platform on November 17 and could read Kubernetes Secrets in affected clusters. Rackspace restored service and advised affected customers to replace credentials. It did not disclose how many customers were affected or confirm the theft of specific secrets.",
+  "attack_chain": [
+   "An intruder authenticated to Rackspace Spot with leaked credentials.",
+   "In some customer environments, unauthorized workloads ran and the intruder could read stored secrets.",
+   "Rackspace revoked access, removed unauthorized workloads and restored service."
+  ],
+  "open_questions": [
+   "How were the credentials originally obtained?",
+   "Which customer organizations and secrets were accessed?"
+  ],
+  "mitigations": [
+   "Replace affected API and refresh tokens and download fresh Kubernetes configuration files. Rotate any secrets that were stored in affected clusters.",
+   "Review access logs for downstream use of affected credentials, including container, code and storage services. Restrict service account privileges and alert on unexpected workloads."
+  ],
+  "sources": [
+   {
+    "label": "BleepingComputer, quoting the customer notice",
+    "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/"
+   },
+   {
+    "label": "The Five Nines",
+    "url": "https://www.thefivenines.com/security/rackspace-spot-breach-gave-attackers-access-to-kubernetes-secrets"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "key-compromise",
+   "data-exposure"
+  ]
+ },
+ "Rackspace Spot breach gave attackers access to Kubernetes secrets": {
+  "summary": "Rackspace told customers that an intruder used leaked credentials to access its Spot cloud platform on November 17 and could read Kubernetes Secrets in affected clusters. Rackspace restored service and advised affected customers to replace credentials. It did not disclose how many customers were affected or confirm the theft of specific secrets.",
+  "attack_chain": [
+   "An intruder authenticated to Rackspace Spot with leaked credentials.",
+   "In some customer environments, unauthorized workloads ran and the intruder could read stored secrets.",
+   "Rackspace revoked access, removed unauthorized workloads and restored service."
+  ],
+  "open_questions": [
+   "How were the credentials originally obtained?",
+   "Which customer organizations and secrets were accessed?"
+  ],
+  "mitigations": [
+   "Replace affected API and refresh tokens and download fresh Kubernetes configuration files. Rotate any secrets that were stored in affected clusters.",
+   "Review access logs for downstream use of affected credentials, including container, code and storage services. Restrict service account privileges and alert on unexpected workloads."
+  ],
+  "sources": [
+   {
+    "label": "BleepingComputer, quoting the customer notice",
+    "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/"
+   },
+   {
+    "label": "The Five Nines",
+    "url": "https://www.thefivenines.com/security/rackspace-spot-breach-gave-attackers-access-to-kubernetes-secrets"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "key-compromise",
+   "data-exposure"
+  ]
+ },
+ "8.8 Million Impacted by Data Breach at Denmark’s Central Person Register": {
+  "summary": "Denmark’s Central Person Register said an unauthorized party misused a private company’s legitimate access and obtained names, addresses and identification numbers for approximately 8.8 million registered people. This figure includes people who live abroad or are deceased. The government disclosed the incident on October 5; November password coverage refers to that earlier breach.",
+  "attack_chain": [
+   "The attacker used access granted to a private company.",
+   "Queries retrieved personal information from the government register."
+  ],
+  "open_questions": [
+   "Which additional data fields, if any, were exposed?"
+  ],
+  "mitigations": [
+   "Review third-party access grants, restrict them to necessary queries and alert on unusual volume.",
+   "Preserve query logs and communicate through verified government channels."
+  ],
+  "sources": [
+   {
+    "label": "Danish ministry announcement",
+    "url": "https://ufm.dk/aktuelt/pressemeddelelser/2026/oktober/omfattende-uautoriseret-adgang-til-borgeres-cpr-oplysninger/?ref=metacurity.com"
+   },
+   {
+    "label": "SecurityWeek",
+    "url": "https://www.securityweek.com/8-8-million-impacted-by-data-breach-at-denmarks-central-person-register/"
+   },
+   {
+    "label": "CPR administrator’s access guidance",
+    "url": "https://www.cpr.dk/cpr-nyt/nyhedsarkiv/2026/okt/indskaerpelse-af-regler-og-vilkaar-for-din-virksomheds-adgang-til-cpr"
+   }
+  ],
+  "patterns": [
+   "data-exposure",
+   "supply-chain"
+  ]
+ },
+ "'Waffle': Australian judge blasts Medibank's bid for more time in data-breach cases": {
+  "summary": "Medibank first disclosed unusual network activity in October 2022. Australia’s privacy regulator alleges failures to protect personal information relating to 9.7 million Australians, including sensitive health information. The Federal Court deferred a procedural decision in the related cases in November 2026; the breach is not new.",
+  "attack_chain": [
+   "Medibank detected unusual activity on its network.",
+   "The regulator says attackers accessed personal information that was later released publicly."
+  ],
+  "open_questions": [
+   "How will the court rule on the alleged failures?"
+  ],
+  "mitigations": [
+   "Use strong authentication for privileged accounts and restrict access to sensitive datasets.",
+   "Monitor anomalous data access and use verified channels for customer notices."
+  ],
+  "sources": [
+   {
+    "label": "Medibank’s initial ASX announcement",
+    "url": "https://announcements.asx.com.au/asxpdf/20221013/pdf/45g7lqbb1dgs5g.pdf"
+   },
+   {
+    "label": "Australian Information Commissioner",
+    "url": "https://www.oaic.gov.au/news/media-centre/oaic-takes-civil-penalty-action-against-medibank"
+   },
+   {
+    "label": "Lawyerly court coverage",
+    "url": "https://www.lawyerly.com.au/judge-defers-joint-trial-question-in-medibank-data-breach-cases/"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Joint trial question in Medibank data breach cases deferred": {
+  "summary": "Medibank first disclosed unusual network activity in October 2022. Australia’s privacy regulator alleges failures to protect personal information relating to 9.7 million Australians, including sensitive health information. The Federal Court deferred a procedural decision in the related cases in November 2026; the breach is not new.",
+  "attack_chain": [
+   "Medibank detected unusual activity on its network.",
+   "The regulator says attackers accessed personal information that was later released publicly."
+  ],
+  "open_questions": [
+   "How will the court rule on the alleged failures?"
+  ],
+  "mitigations": [
+   "Use strong authentication for privileged accounts and restrict access to sensitive datasets.",
+   "Monitor anomalous data access and use verified channels for customer notices."
+  ],
+  "sources": [
+   {
+    "label": "Medibank’s initial ASX announcement",
+    "url": "https://announcements.asx.com.au/asxpdf/20221013/pdf/45g7lqbb1dgs5g.pdf"
+   },
+   {
+    "label": "Australian Information Commissioner",
+    "url": "https://www.oaic.gov.au/news/media-centre/oaic-takes-civil-penalty-action-against-medibank"
+   },
+   {
+    "label": "Lawyerly court coverage",
+    "url": "https://www.lawyerly.com.au/judge-defers-joint-trial-question-in-medibank-data-breach-cases/"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "Fluidkey Says Unpatched Tool Enabled $1.6 Million Hack": {
+  "summary": "Fluidkey’s post-mortem says flaws in an outdated third-party logging tool exposed session data. Approximately $1.6 million was transferred without authorization from 52 accounts on November 19. Some personal information and viewing keys were also exposed; Fluidkey says private spending keys stayed on user devices.",
+  "attack_chain": [
+   "The attacker accessed data stored in a third-party logging system.",
+   "Exposed session data was used in unauthorized transfers.",
+   "Fluidkey disabled processing, then restored service after updating the logging tool and strengthening authorization."
+  ],
+  "open_questions": [
+   "Were any funds recovered or affected users reimbursed?",
+   "What additional findings will the ongoing investigation confirm?"
+  ],
+  "mitigations": [
+   "Upgrade and restrict access to logging infrastructure. Keep session tokens, viewing keys and sensitive customer data out of logs, and revoke sessions and rotate credentials if exposure is suspected.",
+   "Require independent user authorization for transfers rather than trusting a session token by itself. Monitor for unexpected payouts and limit changes."
+  ],
+  "sources": [
+   {
+    "label": "Fluidkey post-mortem",
+    "url": "https://docs.fluidkey.com/security/incident-2026-11-19/"
+   },
+   {
+    "label": "The Defiant, reporting on the post-mortem",
+    "url": "https://thedefiant.io/news/hacks/fluidkey-says-unpatched-tool-enabled-1-6-million-hack"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "key-compromise",
+   "data-exposure"
+  ]
+ },
+ "Fluidkey Urges Users to Avoid Its Website and App During Security Probe": {
+  "summary": "Fluidkey’s post-mortem says flaws in an outdated third-party logging tool exposed session data. Approximately $1.6 million was transferred without authorization from 52 accounts on November 19. Some personal information and viewing keys were also exposed; Fluidkey says private spending keys stayed on user devices.",
+  "attack_chain": [
+   "The attacker accessed data stored in a third-party logging system.",
+   "Exposed session data was used in unauthorized transfers.",
+   "Fluidkey disabled processing, then restored service after updating the logging tool and strengthening authorization."
+  ],
+  "open_questions": [
+   "Were any funds recovered or affected users reimbursed?",
+   "What additional findings will the ongoing investigation confirm?"
+  ],
+  "mitigations": [
+   "Upgrade and restrict access to logging infrastructure. Keep session tokens, viewing keys and sensitive customer data out of logs, and revoke sessions and rotate credentials if exposure is suspected.",
+   "Require independent user authorization for transfers rather than trusting a session token by itself. Monitor for unexpected payouts and limit changes."
+  ],
+  "sources": [
+   {
+    "label": "Fluidkey post-mortem",
+    "url": "https://docs.fluidkey.com/security/incident-2026-11-19/"
+   },
+   {
+    "label": "The Defiant, reporting on the post-mortem",
+    "url": "https://thedefiant.io/news/hacks/fluidkey-says-unpatched-tool-enabled-1-6-million-hack"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "key-compromise",
+   "data-exposure"
+  ]
  }
 }
