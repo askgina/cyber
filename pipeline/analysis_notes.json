@@ -2129,5 +2129,148 @@
   "patterns": [
    "data-exposure"
   ]
+ },
+ "DDoS attack disrupts Norway’s ID-porten national login": {
+  "summary": "Norway’s Digitalisation Agency said a denial-of-service attack disrupted its national ID-porten login service beginning at 12:15 UTC. Access to public services through ID-porten was affected. Digdir was reported to have restored normal operation around 15:30 UTC; no data exposure was reported.",
+  "attack_chain": [
+   "Digdir identified a denial-of-service attack against ID-porten.",
+   "Login became unstable and downstream services were temporarily harder to reach.",
+   "Digdir and its operating partner worked to restore the service."
+  ],
+  "open_questions": [
+   "How many sign-ins failed?",
+   "Did the incident share infrastructure or participants with any earlier attack?"
+  ],
+  "mitigations": [
+   "Test denial-of-service protections and upstream response procedures with service providers.",
+   "Prepare a fallback access and public communications plan for services dependent on a central login."
+  ],
+  "sources": [
+   {
+    "label": "Norwegian Digitalisation Agency status",
+    "url": "https://status.digdir.no/incidents/q2rfcmz78lzg"
+   },
+   {
+    "label": "NRK, quoting the agency",
+    "url": "https://www.nrk.no/nyheter/vg_-id-porten-har-problemer-etter-dataangrep-1.18086360"
+   },
+   {
+    "label": "Pasquale Pillitteri, citing Digdir and NTB on restoration",
+    "url": "https://pasqualepillitteri.it/en/news/35816/norway-ddos-attack-id-porten-nav-login"
+   }
+  ],
+  "patterns": [
+   "outage"
+  ]
+ },
+ "Aesto Health reports breach affecting more than 9.5 million people": {
+  "summary": "Aesto disclosed an intrusion into part of its AWS infrastructure in June 2026, after finding it may have exposed patient information held for healthcare providers. Aesto reported 9,540,683 affected people to HHS; the figure does not establish that all affected records were copied.",
+  "attack_chain": [
+   "Aesto reported unauthorized access to a limited part of its AWS environment in December 2025.",
+   "Aesto concluded that some protected health information may have been accessed or acquired.",
+   "Affected providers and Aesto issued notifications."
+  ],
+  "open_questions": [
+   "What was the initial access method?",
+   "Which files were actually acquired?"
+  ],
+  "mitigations": [
+   "Separate data and administrative access across customer environments.",
+   "Keep cloud audit records available for investigation and review access to sensitive patient information.",
+   "Consult the applicable provider notice for credit monitoring and fraud prevention."
+  ],
+  "sources": [
+   {
+    "label": "Aesto notice filed in Massachusetts",
+    "url": "https://www.mass.gov/doc/2026-1605-aesto-llc/download"
+   },
+   {
+    "label": "BleepingComputer, citing the HHS filing",
+    "url": "https://www.bleepingcomputer.com/news/security/aesto-health-says-data-breach-affects-over-95-million-patients/"
+   },
+   {
+    "label": "Massachusetts regulator filing",
+    "url": "https://www.mass.gov/doc/2026-1329-my-doctor-llc/download"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "Aesto Health says data breach affects over 9.5 million patients": {
+  "summary": "Aesto disclosed an intrusion into part of its AWS infrastructure in June 2026, after finding it may have exposed patient information held for healthcare providers. Aesto reported 9,540,683 affected people to HHS; the figure does not establish that all affected records were copied.",
+  "attack_chain": [
+   "Aesto reported unauthorized access to a limited part of its AWS environment in December 2025.",
+   "Aesto concluded that some protected health information may have been accessed or acquired.",
+   "Affected providers and Aesto issued notifications."
+  ],
+  "open_questions": [
+   "What was the initial access method?",
+   "Which files were actually acquired?"
+  ],
+  "mitigations": [
+   "Separate data and administrative access across customer environments.",
+   "Keep cloud audit records available for investigation and review access to sensitive patient information.",
+   "Consult the applicable provider notice for credit monitoring and fraud prevention."
+  ],
+  "sources": [
+   {
+    "label": "Aesto notice filed in Massachusetts",
+    "url": "https://www.mass.gov/doc/2026-1605-aesto-llc/download"
+   },
+   {
+    "label": "BleepingComputer, citing the HHS filing",
+    "url": "https://www.bleepingcomputer.com/news/security/aesto-health-says-data-breach-affects-over-95-million-patients/"
+   },
+   {
+    "label": "Massachusetts regulator filing",
+    "url": "https://www.mass.gov/doc/2026-1329-my-doctor-llc/download"
+   }
+  ],
+  "patterns": [
+   "supply-chain",
+   "data-exposure"
+  ]
+ },
+ "USDA takes systems offline after security incident, disrupting farm loans and payments": {
+  "summary": "USDA took multiple systems offline during a security response, disrupting farmer loans and aid payments. NBC News reported, citing two former officials, that unauthorized parties accessed a farmer-payment system. A USDA undersecretary said no data was lost; the extent of access has not been publicly established.",
+  "attack_chain": [
+   "The USDA detected a security incident.",
+   "Systems were taken offline, disrupting agricultural program workflows."
+  ],
+  "open_questions": [
+   "What was the entry point?",
+   "Which services remained affected, and for how long?"
+  ],
+  "mitigations": [
+   "Monitor official USDA service updates.",
+   "Maintain continuity procedures for time-sensitive government payment and contracting workflows."
+  ],
+  "sources": [
+   {
+    "label": "Nextgov",
+    "url": "https://www.nextgov.com/cybersecurity/2026/11/usda-grapples-security-breach-it-staff-take-multiple-systems-offline/417350/"
+   },
+   {
+    "label": "DTN",
+    "url": "https://www.dtnpf.com/agriculture/web/ag/crops/article/2026/11/19/usda-loan-software-systems-face-amid"
+   },
+   {
+    "label": "NBC News",
+    "url": "https://www.nbcnews.com/politics/national-security/agriculture-department-breached-hackers-sources-say-rcna610497"
+   },
+   {
+    "label": "Reuters",
+    "url": "https://www.reuters.com/legal/litigation/us-department-agriculture-breached-by-hackers-this-week-nbc-news-reports-2026-11-20/"
+   },
+   {
+    "label": "ABC News",
+    "url": "https://abcnews.com/food/story/new-government-report-sparks-concern-potential-cyberattack-us?id=138316014"
+   }
+  ],
+  "patterns": [
+   "outage"
+  ]
  }
 }

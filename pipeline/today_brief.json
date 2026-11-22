@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T00:29:02Z",
- "headline": "Chainflip reported theft of 122.86 BTC in addition to an Ethereum outflow estimated at $4.86 million, and Cyber warned users to avoid its bridge after unexpected token minting. Customers shared an OpenRouter warning of possible exposure of prompts sent to MiniMax, and Airbyte restored most functions after its Cloud security incident.",
+ "updated": "2026-11-22T01:27:26Z",
+ "headline": "Chainflip reported theft of 122.86 BTC in addition to an Ethereum outflow estimated at $4.86 million, and Norway’s national ID-porten sign-in service was disrupted by a denial-of-service attack. YMCA of Singapore said it was contacting more than 13,000 people after an intrusion into its Youth For Causes portal.",
  "incidents": [
   {
    "org": "Chainflip",
@@ -29,6 +29,15 @@
    "eid": "x-e442a7e4"
   },
   {
+   "org": "Norway Digitalisation Agency (ID-porten)",
+   "what": "Norway’s digitalisation agency said a denial-of-service attack disrupted its national ID-porten sign-in service.",
+   "scale": "About three hours of disruption",
+   "patterns": [
+    "outage"
+   ],
+   "eid": "x-5233adf4"
+  },
+  {
    "org": "Cyber (CyberConnect)",
    "what": "Cyber confirmed unexpected token minting on Solana and an outflow from its Ethereum bridge reserve, and told users to avoid the bridge and exchange deposits.",
    "scale": "About 5.21M CYBER moved; final loss unknown",
@@ -50,19 +59,21 @@
    "eid": "x-2d44e830"
   },
   {
-   "org": "Optimizely (Configured Commerce)",
-   "what": "Optimizely shut down a legacy deployment server and removed an injected script from two sites after finding unauthorized access.",
-   "scale": "Two sites identified",
+   "org": "YMCA of Singapore",
+   "what": "YMCA confirmed unauthorized access to its Youth For Causes portal but could not determine whether personal data was copied.",
+   "scale": "13,000+ potentially affected",
    "patterns": [
-    "supply-chain"
-   ]
+    "data-exposure"
+   ],
+   "eid": "n-4945b68d"
   },
   {
-   "org": "Illinois Department of Natural Resources",
-   "what": "Illinois disclosed an apparent intrusion attempt at the Algonquin Dam on the Fox River and said the dam continued to operate.",
-   "scale": "No operational disruption reported",
-   "patterns": [],
-   "eid": "n-fbd0be68"
+   "org": "Sunfun Info",
+   "what": "The Taiwanese company reported an intrusion into its information systems and said it had no material operational impact.",
+   "scale": "Exposure not disclosed",
+   "patterns": [
+    "enterprise-platform"
+   ]
   },
   {
    "org": "Airbyte",
@@ -75,15 +86,6 @@
    "update": true,
    "since": "2026-11-17",
    "eid": "x-a4503abf"
-  },
-  {
-   "org": "Clevermate",
-   "what": "French reports described an unverified claim involving student and tutor data, including contact and bank-account details.",
-   "scale": "Unverified claim",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "x-0cd68e71"
   },
   {
    "org": "Orchestra (Travelsoft)",
