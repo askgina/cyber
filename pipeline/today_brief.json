@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-22T21:33:27Z",
-  "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users, with the scope of a separate procurement breach still unclear. Fusionist asked users to pause ACE activity on BNB Smart Chain after Blockaid estimated about $1.04 million had been extracted.",
+  "updated": "2026-11-22T22:26:10Z",
+  "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users and notified 869,761 procurement users while it verifies that breach’s scope. Guadeloupe University Hospital reported encrypted databases and disruption across three sites, while Fusionist’s bridge incident still has no verified final loss.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
-      "what": "KEPCO confirmed exposure for 650,487 billing users and issued a separate notice for its electronic procurement system; exact procurement exposure and overlap are unresolved.",
+      "what": "KEPCO confirmed exposure for 650,487 billing users and notified all 869,761 procurement users while it investigates the scope of the breach in that system.",
       "scale": "650,487 billing users confirmed",
       "patterns": [
         "data-exposure"
@@ -13,8 +13,18 @@
       "eid": "n-34316fe7"
     },
     {
+      "org": "Guadeloupe University Hospital",
+      "what": "The hospital director said encrypted databases and disrupted phones and clinical systems forced three sites to postpone non-urgent care.",
+      "scale": "Three sites disrupted",
+      "patterns": [
+        "outage"
+      ],
+      "url": "https://www.tf1info.fr/justice-faits-divers/une-cyberattaque-de-grande-ampleur-touche-le-chu-de-la-guadeloupe-2477494.html",
+      "eid": "n-6bb7a2db"
+    },
+    {
       "org": "Fusionist",
-      "what": "Fusionist asked users to pause ACE activity on BNB Smart Chain after Blockaid reported unauthorized minting and an early extraction estimate of about $1.04 million.",
+      "what": "Fusionist asked users to pause ACE activity on BNB Smart Chain; Blockaid’s early $1.04 million extraction estimate is not a verified final loss.",
       "scale": "$1.04M early estimate",
       "patterns": [
         "bridge",
@@ -22,16 +32,6 @@
       ],
       "url": "https://x.com/fusionistio/status/2124586293812461578",
       "eid": "x-1d661531"
-    },
-    {
-      "org": "Guadeloupe University Hospital",
-      "what": "The hospital director confirmed a cyberattack disrupted phones, imaging and other systems across three sites, and the hospital postponed non-urgent care.",
-      "scale": "Three sites disrupted",
-      "patterns": [
-        "outage"
-      ],
-      "url": "https://rci.fm/guadeloupe/infos/Sante/Le-CHU-de-Guadeloupe-victime-dune-cyberattaque-une-cellule-de-crise-declenchee",
-      "eid": "n-6bb7a2db"
     },
     {
       "org": "Rackspace Spot",
