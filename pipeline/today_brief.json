@@ -1,127 +1,128 @@
 {
- "updated": "2026-11-22T07:26:10Z",
- "headline": "Chainflip confirmed thefts from its Bitcoin and Ethereum vaults, valued at about $12 million in total by Cointelegraph. Together AI disclosed a download of customer prompt samples, and YMCA of Singapore notified more than 13,000 people about a portal intrusion.",
- "incidents": [
-  {
-   "org": "Chainflip",
-   "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
-   "scale": "About $12M estimated across Ethereum and Bitcoin",
-   "patterns": [
-    "bridge"
-   ],
-   "eid": "x-b163fb32",
-   "url": "https://chainflip.io/return"
-  },
-  {
-   "org": "Together AI",
-   "what": "Together AI confirmed that an unauthorized party downloaded stored samples of customer prompts after a repository credential was exposed.",
-   "scale": "Customer count undisclosed",
-   "eid": "x-eb428de0",
-   "patterns": [
-    "ai",
-    "data-exposure",
-    "key-compromise"
-   ],
-   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
-  },
-  {
-   "org": "Rackspace Spot",
-   "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
-   "scale": "Customer count not disclosed",
-   "patterns": [
-    "supply-chain",
-    "key-compromise"
-   ],
-   "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-   "eid": "x-f3649087"
-  },
-  {
-   "org": "YMCA of Singapore",
-   "what": "YMCA confirmed unauthorized access to its Youth For Causes portal and said investigators could not determine whether personal data was accessed or copied.",
-   "scale": "More than 13,000 people notified",
-   "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-4945b68d"
-  },
-  {
-   "org": "Cyber (CyberConnect)",
-   "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
-   "scale": "5.213M CYBER; final loss unconfirmed",
-   "patterns": [
-    "bridge"
-   ],
-   "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
-   "eid": "x-57f29b3f"
-  },
-  {
-   "org": "Norway Digitalisation Agency (ID-porten)",
-   "what": "Norway’s digitalisation agency said a denial-of-service attack disrupted its national ID-porten sign-in service.",
-   "scale": "About three hours of disruption",
-   "patterns": [
-    "outage"
-   ],
-   "eid": "x-5233adf4"
-  },
-  {
-   "org": "Sunfun Info",
-   "what": "The Taiwanese company reported an intrusion into its information systems and said it had no material operational impact.",
-   "scale": "Exposure not disclosed",
-   "patterns": [
-    "enterprise-platform"
-   ],
-   "url": "https://www.tipranks.com/news/company-announcements/sunfun-info-reports-information-system-intrusion"
-  },
-  {
-   "org": "OpenRouter / Novita",
-   "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
-   "scale": "125 endpoints lost zero-retention eligibility",
-   "patterns": [
-    "ai",
-    "data-exposure",
-    "supply-chain"
-   ],
-   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-   "eid": "x-2d44e830",
-   "update": true,
-   "since": "2026-05-28"
-  },
-  {
-   "org": "Fluidkey",
-   "what": "Fluidkey’s post-mortem confirms that flaws in an outdated logging tool exposed session data. Private spending keys remained on users’ devices.",
-   "scale": "About $1.6M in unauthorized transfers from 52 accounts",
-   "patterns": [
-    "supply-chain",
-    "key-compromise"
-   ],
-   "url": "https://docs.fluidkey.com/security/incident-2026-11-19/",
-   "update": true,
-   "since": "2026-11-19",
-   "eid": "x-7b9a9595"
-  },
-  {
-   "org": "Orchestra (Travelsoft)",
-   "what": "Travelsoft began restoring the bookings platform in phases after shutting it down following unauthorized access.",
-   "scale": "Booking disruption",
-   "patterns": [
-    "supply-chain",
-    "outage"
-   ],
-   "eid": "n-40f1cb58",
-   "update": true,
-   "since": "2026-11-19"
-  },
-  {
-   "org": "1984 Hosting",
-   "what": "The Icelandic provider’s managing director said seven websites were destroyed in the attack and that services would return in phases.",
-   "scale": "Seven sites reported destroyed",
-   "patterns": [],
-   "update": true,
-   "since": "2026-11-20",
-   "url": "https://icelandmonitor.mbl.is/news/news/2026/11/21/pro_palestinian_websites_targeted_in_cyberattack_on",
-   "eid": "x-afb3de62"
-  },
+  "updated": "2026-11-22T08:26:30Z",
+  "headline": "Together AI disclosed unauthorized access to stored prompt samples, and Rackspace warned customers that an intruder could access some Kubernetes secrets. YMCA of Singapore notified more than 13,000 people after a portal intrusion.",
+  "incidents": [
+    {
+      "org": "Together AI",
+      "what": "Together AI confirmed that an unauthorized party downloaded stored samples of customer prompts after a repository credential was exposed.",
+      "scale": "Customer count undisclosed",
+      "eid": "x-eb428de0",
+      "patterns": [
+        "ai",
+        "data-exposure",
+        "key-compromise"
+      ],
+      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026"
+    },
+    {
+      "org": "Rackspace Spot",
+      "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
+      "scale": "Customer count not disclosed",
+      "patterns": [
+        "supply-chain",
+        "key-compromise"
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "eid": "x-f3649087"
+    },
+    {
+      "org": "YMCA of Singapore",
+      "what": "YMCA confirmed unauthorized access to its Youth For Causes portal and said investigators could not determine whether personal data was accessed or copied.",
+      "scale": "More than 13,000 people notified",
+      "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "n-4945b68d"
+    },
+    {
+      "org": "Cyber (CyberConnect)",
+      "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
+      "scale": "5.213M CYBER; final loss unconfirmed",
+      "patterns": [
+        "bridge"
+      ],
+      "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
+      "eid": "x-57f29b3f"
+    },
+    {
+      "org": "Norway Digitalisation Agency (ID-porten)",
+      "what": "Norway’s digitalisation agency said a denial-of-service attack disrupted its national ID-porten sign-in service.",
+      "scale": "About three hours of disruption",
+      "patterns": [
+        "outage"
+      ],
+      "eid": "x-5233adf4"
+    },
+    {
+      "org": "Sunfun Info",
+      "what": "The Taiwanese company reported an intrusion into its information systems and said it had no material operational impact.",
+      "scale": "Exposure not disclosed",
+      "patterns": [
+        "enterprise-platform"
+      ],
+      "url": "https://www.tipranks.com/news/company-announcements/sunfun-info-reports-information-system-intrusion"
+    },
+    {
+      "org": "GMI Cloud",
+      "what": "Users reported possible exposure of requests sent through GMI Cloud; OpenRouter’s public update did not identify that provider.",
+      "scale": "Unverified; scope unknown",
+      "patterns": [
+        "ai",
+        "data-exposure"
+      ],
+      "url": "https://x.com/michael_chomsky/status/2124326400803152021",
+      "eid": "x-3ef42975"
+    },
+    {
+      "org": "Clevermate",
+      "what": "A group published data it said came from the tutoring platform, but the company did not confirm the files’ origin or scope.",
+      "scale": "Unverified data exposure claim",
+      "patterns": [
+        "data-exposure"
+      ],
+      "url": "https://www.cyberattaque.org/clevermate-vise-par-des-hackers-des-donnees-personnelles-des-iban-et-cartes-etudiantes-exposes/",
+      "eid": "x-0cd68e71"
+    },
+    {
+      "org": "Chainflip",
+      "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
+      "scale": "About $12M estimated across Ethereum and Bitcoin",
+      "patterns": [
+        "bridge"
+      ],
+      "eid": "x-b163fb32",
+      "url": "https://chainflip.io/return",
+      "update": true,
+      "since": "2026-11-21"
+    },
+    {
+      "org": "OpenRouter / Novita",
+      "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
+      "scale": "125 endpoints lost zero-retention eligibility",
+      "patterns": [
+        "ai",
+        "data-exposure",
+        "supply-chain"
+      ],
+      "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+      "eid": "x-2d44e830",
+      "update": true,
+      "since": "2026-05-28"
+    },
+    {
+      "org": "Fluidkey",
+      "what": "Fluidkey’s post-mortem confirms that flaws in an outdated logging tool exposed session data. Private spending keys remained on users’ devices.",
+      "scale": "About $1.6M in unauthorized transfers from 52 accounts",
+      "patterns": [
+        "supply-chain",
+        "key-compromise"
+      ],
+      "url": "https://docs.fluidkey.com/security/incident-2026-11-19/",
+      "update": true,
+      "since": "2026-11-19",
+      "eid": "x-7b9a9595"
+    },
   {
    "org": "Factotal",
    "what": "SafePay listed the financing company on its extortion site; the claim does not establish a breach or service interruption.",
@@ -132,5 +133,5 @@
    "url": "https://ransomware.live/id/ZmFjdG90YWwuY29tQHNhZmVwYXk",
    "eid": "x-1fb3441b"
   }
- ]
+  ]
 }
