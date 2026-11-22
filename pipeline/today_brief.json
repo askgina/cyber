@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T13:28:05Z",
+ "updated": "2026-11-22T14:25:47Z",
  "headline": "Tower Records Japan reported exposure of about 11 million personal records, not a count of distinct customers. Korea Electric Power Corporation confirmed exposure for 650,487 billing-platform users and notified 869,761 procurement users while it investigates the scope there.",
  "incidents": [
   {
@@ -84,6 +84,15 @@
    "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/"
   },
   {
+   "org": "Samsung Group",
+   "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
+   "scale": "1 TB claimed",
+   "patterns": [
+    "ransomware"
+   ],
+   "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw"
+  },
+  {
    "org": "Chainflip",
    "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
    "scale": "About $12M estimated across Ethereum and Bitcoin",
@@ -119,18 +128,6 @@
    "eid": "x-2d44e830",
    "update": true,
    "since": "2026-05-28"
-  },
-  {
-   "org": "GL.iNet",
-   "what": "GL.iNet staff clarified that a Comet 5G with no signs of infection does not need a factory reset after the cloud flaw was fixed.",
-   "scale": "Affected device count undisclosed",
-   "patterns": [
-    "edge-device"
-   ],
-   "eid": "x-6db86515",
-   "url": "https://forum.gl-inet.com/t/regarding-the-security-notice/73057/17",
-   "update": true,
-   "since": "2026-11-20"
   }
  ]
 }
