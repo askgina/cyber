@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T15:25:25Z",
- "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users; the full procurement-system impact remains unclear. In a follow-up to its November 21 theft, Chainflip confirmed the loss of bitcoin as well as ether and stablecoins, which news outlets valued at about $12 million in total.",
+ "updated": "2026-11-22T16:30:23Z",
+ "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users, while the procurement-system impact remains unclear. Cleverbridge confirmed that payment-card data was copied in a November 4 intrusion and said it began notifying affected people on November 20.",
  "incidents": [
   {
    "org": "Korea Electric Power Corporation",
@@ -72,6 +72,18 @@
    "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/"
   },
   {
+   "org": "Cleverbridge",
+   "what": "Cleverbridge confirmed stored payment-card data was copied; customer notices began November 20, and the number affected remains undisclosed.",
+   "scale": "Card numbers and security codes; total unknown",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "n-855a50ef",
+   "url": "https://grow.cleverbridge.com/incident-update",
+   "update": true,
+   "since": "2026-11-04"
+  },
+  {
    "org": "Chainflip",
    "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
    "scale": "About $12M estimated across Ethereum and Bitcoin",
@@ -109,29 +121,17 @@
    "url": "https://docs.fluidkey.com/security/incident-2026-11-19/"
   },
   {
-   "org": "Autopay",
-   "what": "Autopay said it shared incident findings with banks and the financial regulator and plans to brief e-commerce firms.",
-   "scale": "Affected-card total undisclosed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-8afc1c07",
-   "update": true,
-   "since": "2026-11-11"
-  },
-  {
-   "org": "OpenRouter / Novita",
-   "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
-   "scale": "125 endpoints lost zero-retention eligibility",
+   "org": "University server (Cairn AI agents)",
+   "what": "Project MONAI shipped version 0.8.6 to fix CVE-2026-133968 after Amazon linked the flaw to a September intrusion at a university.",
+   "scale": "Version 0.8.6 available",
    "patterns": [
     "ai",
-    "data-exposure",
-    "supply-chain"
+    "injection-rce"
    ],
-   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-   "eid": "x-2d44e830",
+   "eid": "x-c97b9914",
+   "url": "https://github.com/Project-MONAI/MONAILabel/releases/tag/0.8.6",
    "update": true,
-   "since": "2026-05-28"
+   "since": "2026-09-08"
   }
  ]
 }
