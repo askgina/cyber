@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T17:27:05Z",
- "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users and notified all 869,761 procurement users while it checks the scope. OSV flagged five malicious npm packages under the @c1-ease scope without identifying any downstream victims.",
+ "updated": "2026-11-22T18:29:10Z",
+ "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users; it has not established the exact scope in procurement. Together AI published its account of how stored prompt samples were downloaded and what it changed afterward.",
  "incidents": [
   {
    "org": "Korea Electric Power Corporation",
@@ -14,7 +14,7 @@
   },
   {
    "org": "Together AI",
-   "what": "Together AI confirmed that an unauthorized party downloaded stored samples of customer prompts after a repository credential was exposed.",
+   "what": "Together AI traced the unauthorized download of stored prompt samples to an exposed development credential and added safeguards.",
    "scale": "Customer count undisclosed",
    "eid": "x-eb428de0",
    "patterns": [
@@ -62,7 +62,8 @@
    "patterns": [
     "ransomware"
    ],
-   "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw"
+   "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw",
+   "eid": "x-35eeeab2"
   },
   {
    "org": "Sri Lanka Department of Motor Traffic",
@@ -118,17 +119,16 @@
    "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
   },
   {
-   "org": "University server (Cairn AI agents)",
-   "what": "Project MONAI shipped version 0.8.6 to fix CVE-2026-133968 after Amazon linked the flaw to a September intrusion at a university.",
-   "scale": "Version 0.8.6 available",
+   "org": "YMCA of Singapore",
+   "what": "Alerted October 19, the YMCA confirmed unauthorized access to its youth registration portal but could not establish whether personal data was copied.",
+   "scale": "More than 13,000 potentially affected",
    "patterns": [
-    "ai",
-    "injection-rce"
+    "data-exposure"
    ],
-   "eid": "x-c97b9914",
-   "url": "https://github.com/Project-MONAI/MONAILabel/releases/tag/0.8.6",
    "update": true,
-   "since": "2026-09-08"
+   "since": "2026-10-19",
+   "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/",
+   "eid": "x-2d3e2ee9"
   }
  ]
 }
