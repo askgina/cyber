@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T12:28:28Z",
+ "updated": "2026-11-22T13:28:05Z",
  "headline": "Tower Records Japan reported exposure of about 11 million personal records, not a count of distinct customers. Korea Electric Power Corporation confirmed exposure for 650,487 billing-platform users and notified 869,761 procurement users while it investigates the scope there.",
  "incidents": [
   {
@@ -66,15 +66,6 @@
    "eid": "x-6fb93117"
   },
   {
-   "org": "Norway Digitalisation Agency (ID-porten)",
-   "what": "Norway’s digitalisation agency said a denial-of-service attack disrupted its national ID-porten sign-in service.",
-   "scale": "About three hours of disruption",
-   "patterns": [
-    "outage"
-   ],
-   "eid": "x-5233adf4"
-  },
-  {
    "org": "GMI Cloud",
    "what": "Users reported possible exposure of requests sent through GMI Cloud; OpenRouter’s public update did not identify that provider.",
    "scale": "Unverified; scope unknown",
@@ -84,6 +75,13 @@
    ],
    "url": "https://x.com/michael_chomsky/status/2124326400803152021",
    "eid": "x-3ef42975"
+  },
+  {
+   "org": "Sri Lanka Department of Motor Traffic",
+   "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
+   "scale": "Appointments unaffected; data exposure not disclosed",
+   "patterns": [],
+   "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/"
   },
   {
    "org": "Chainflip",
