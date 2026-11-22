@@ -2522,5 +2522,125 @@
   "patterns": [
    "bridge"
   ]
+ },
+ "Kang Chiao’s Linkou campus confirms data exposure after extortion": {
+  "summary": "Kang Chiao International School’s Linkou campus detected a network interruption on November 6 and later confirmed that some data was exposed. Parents reported receiving extortion emails. Osiris listed the campus on November 21; the listing did not independently establish the amount of exposed data.",
+  "attack_chain": [
+   "The route into the school network was not disclosed.",
+   "The campus detected a network interruption and later isolated affected systems.",
+   "Parents reported extortion emails, and the school confirmed some data was exposed."
+  ],
+  "open_questions": [
+   "What information was exposed and how many people were affected?",
+   "Which administrative systems need additional remediation?"
+  ],
+  "mitigations": [
+   "Isolate affected services and preserve access and email logs. Notify families through verified channels.",
+   "Review privileged access and enforce multifactor authentication. Restore administrative services from verified backups."
+  ],
+  "sources": [
+   {
+    "label": "iThome, citing the school and police",
+    "url": "https://www.ithome.com.tw/news/180463"
+   },
+   {
+    "label": "ETtoday, quoting the school",
+    "url": "https://www.ettoday.net/news/20261111/3270147.htm"
+   },
+   {
+    "label": "Ransomware.live, tracking the November 21 claim",
+    "url": "https://www.ransomware.live/id/S2FuZyBDaGlhbyBJbnRlcm5hdGlvbmFsIFNjaG9vbCAoTGlua291KUBvc2lyaXM"
+   }
+  ],
+  "patterns": [
+   "ransomware",
+   "data-exposure"
+  ]
+ },
+ "OSWALD Elektromotoren confirms a cyberattack on its systems": {
+  "summary": "The German motor manufacturer confirmed an attack on its systems and told Comparitech it secured those systems. RansomHouse later claimed responsibility. The company did not confirm that group’s involvement or disclose whether data was taken.",
+  "attack_chain": [
+   "The access method was not disclosed.",
+   "The company reported securing the affected systems.",
+   "RansomHouse later posted an unverified claim."
+  ],
+  "open_questions": [
+   "What systems were involved?",
+   "Did any data leave the network?"
+  ],
+  "mitigations": [
+   "Retain authentication, endpoint and network logs. Investigate whether business and operational networks were both reachable.",
+   "Verify backups and preserve evidence before restoring affected systems."
+  ],
+  "sources": [
+   {
+    "label": "Comparitech, which received a statement from the company",
+    "url": "https://ransomware.comparitech.com/data/evidence/oswald-elektromotoren-gmbh-2026-11.json"
+   },
+   {
+    "label": "Comparitech incident record",
+    "url": "https://ransomware.comparitech.com/incidents/oswald-elektromotoren-gmbh-2026-11"
+   },
+   {
+    "label": "Ransomware.live, tracking the claim",
+    "url": "https://www.ransomware.live/id/T1NXQUxEIEVsZWt0cm9tb3RvcmVuIEdtYkhAcmFuc29taG91c2U"
+   }
+  ],
+  "patterns": [
+   "ransomware"
+  ]
+ },
+ "Inception claims to have obtained Lucid Motors data": {
+  "summary": "Several accounts relayed an unverified claim that someone published a backup of Lucid Motors’ internal documentation. The accounts do not independently establish an intrusion, a new leak, or Inception’s involvement.",
+  "attack_chain": [
+   "The claimed initial access method is unknown.",
+   "A leak-site listing and a related forum claim described internal documentation. The contents, origin and date of any archive remain unverified."
+  ],
+  "open_questions": [
+   "Does the alleged material come from Lucid, a supplier or an earlier incident?",
+   "Is there evidence of unusual access or bulk exports from internal documentation services?"
+  ],
+  "mitigations": [
+   "Preserve identity and documentation-platform audit logs. Review unusual service-account access and bulk exports.",
+   "Revoke confirmed exposed credentials and review their recent use. Base notifications on verified evidence and scope."
+  ],
+  "sources": [
+   {
+    "label": "Hify, assessing the public claims",
+    "url": "https://hify.ai/radar/en/inception-claims-lucid-motors-data-leak"
+   },
+   {
+    "label": "Dark Web Intelligence, noting the absence of independent verification",
+    "url": "https://x.com/DailyDarkWeb/status/2124067349741424705"
+   }
+  ],
+  "patterns": ["data-exposure"]
+ },
+ "Cyber attack on government systems: How Moldovans will be able to check their data": {
+  "summary": "Moldova reported unauthorized queries against digital public services between October 19 and 23. Preliminary findings linked extracted data to about 750,000 national identification numbers, not a final count of affected people. The government agency began responding to individual requests in November.",
+  "attack_chain": [
+   "The initial access method was not established in the sources reviewed.",
+   "Attackers queried national identifiers across public services, and authorities investigated the data returned to those requests.",
+   "The agency began notifying people individually and announced plans for status checks in its official EVO service."
+  ],
+  "open_questions": [
+   "What was the final count of people whose records were extracted?",
+   "Which datasets and authorizations were implicated?"
+  ],
+  "mitigations": [
+   "Require authorization checks for sensitive record lookups and alert on unusual lookup volume.",
+   "Preserve access logs and use verified government services for notifications so recipients can check suspicious messages."
+  ],
+  "sources": [
+   {
+    "label": "Moldpres, citing Moldova's information security service",
+    "url": "https://www.moldpres.md/eng/society/stisc-personal-data-of-around-750-000-people-may-have-been-extracted-following-cyberattack-on-digital-public-services-in-moldova"
+   },
+   {
+    "label": "MoldovaLive, reporting the government notification process",
+    "url": "https://moldovalive.md/moldovas-electronic-governance-agency-begins-notifying-citizens-about-potential-data-exposure-in-october-cyberattack/"
+   }
+  ],
+  "patterns": ["data-exposure"]
  }
 }
