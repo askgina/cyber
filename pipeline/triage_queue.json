@@ -1,18 +1,6 @@
 {
- "generated": "2026-11-22T01:27:26Z",
+ "generated": "2026-11-22T02:27:17Z",
  "queue": [
-  {
-   "date": "2026-11-20T11:31:49Z",
-   "title": "Dutch public prosecutor hacked Tata Steel for environmental investigation",
-   "source": "Techzine Global",
-   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQcl9sM1prQUxYbnZwWXJPbDhEX2Z5STk0cXR1UE1Pd1FidkpZWWJJbEg4SmNtZHg4QTFWM3lrVDdYUEl0OHJhbUxjcndjN3ZwZ3NtTGtPanBQTGpTYlFYZnVwd2JpVXJ4anJyYjBrbGdsY21mdmFXQjZpYWt6MVJkcWhBRk4tazdNQXQ4LXVMdW9WajZnLURpNHo3bW5IbXVaR2xQNFJtMFJCQjFwUjZhalg3bUZlTjNRS2xR?oc=5",
-   "n_outlets": 6,
-   "also": [
-    "Dutch public prosecutor hacked Tata Steel for environmental investigation",
-    "Na jaren is de strafzaak tegen Tata Steel van start. OM gebruikte telefoontaps en hack in onderzoek ‘vuurvlieg’",
-    "Public Prosecution Service hacked Tata Steel computers"
-   ]
-  },
   {
    "date": "2026-11-21T15:47:00Z",
    "title": "Trump Rants About Russia and Voter Fraud Over FBI Hack",
@@ -108,17 +96,6 @@
    ]
   },
   {
-   "date": "2026-11-21T12:02:13Z",
-   "title": "Trump Said There Was No Cyber Attack, But FBI Launched a Cyber Attack Investigation",
-   "source": "Stratejik Düşünce Enstitüsü",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQWEhXNmxyLUtvU3d5MWVia0NLbURXQzJSVi1Sa1Mza0ZvWVJxbGVaRHp5Zmw3UDFESENLLXZiZXIxemFWTTB1RXpiTWxXdnF6VTZYME9wNFh3WEoxTG5ETVZuOFV3OS0ydnJrNWdETFZMZThkN0RXUmJzdTRZc2swanJtZ181M3hmZi1hSHN0Q0ZyV3QzYU5SQV9wcGFDSzZoaU9KelNucjNlbGFWMDhfSmQ4VDBRM3B6U0l0eHU4V2RocGZZY3FyeGp3ZXExUUI3Umh4UGdLeHRyU3lWck9sSnVSTFlnRFU?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "Trump confirms cyber attack against the FBI; warns of possible information leak",
-    "Trump confirms cyber attack against the FBI"
-   ]
-  },
-  {
    "date": "2026-11-21T17:30:29Z",
    "title": "Expert: Data breaches will become more common",
    "source": "Aftonbladet",
@@ -131,23 +108,13 @@
   },
   {
    "date": "2026-11-21T23:00:00Z",
-   "title": "``AI will become like a gun'' Bank accounts and infrastructure will also be targeted, experts warn, soaring cyber attacks How to prevent damage",
+   "title": "“AI will become like a gun” Bank accounts and infrastructure will also be targeted, experts warn, soaring cyber attacks How to prevent damage",
    "source": "TBS NEWS DIG",
    "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9HUjB0TnllV1B6cml5ellhUnZkc09pRnhYdWNHeVNjWGtwQjhLSy10YmhESTQ2N3FRNmtzeVFxREJGTlNNRjRFQ1kyX1RzOHFKRWxSTFVpUGtXZw?oc=5",
    "n_outlets": 3,
    "also": [
-    "``AI will become like a gun'' Bank accounts and infrastructure will also be targeted, experts warn, soaring cyberattacks - how to prevent damage (CBC TV)",
-    "``AI will become like a gun'' Bank accounts and infrastructure will also be targeted, experts warn, soaring cyber attacks How to prevent damage"
-   ]
-  },
-  {
-   "date": "2026-11-20T02:16:13Z",
-   "title": "At least 12 states face cyberattacks on their water systems, sources say",
-   "source": "ABC News - Breaking News, Latest News and Videos",
-   "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNYWtBaEpyZlBiQmtRT25NRWJ0RnNOSmdNVDN0V2hSdG9nSFV5OUhfUzh4ZnJNU3F6eXZhUy1EM2ZTU2pmYlpHUGxYeEhhTWFtSElTMTFtamlLZGFyeEJJVk41V1pLUEQtQXZpNGtoUGprX3FNMkl3S3FwbUthVkVjOXJ6eVVpM3hDckpnclZJeXpiamdaMXfSAZsBQVVfeXFMT01wLUJCeTF5MXpBRWh1UXg5SFlhUDdRYmZYVFVkcjI5bVltdEh5TlkwV1FMLV91REt5djJSeUxNb3A4ZXJuVWhrZGNlSWxRTmpQbHFldm1TYk41dGdvT0FuQTBHbE96bENKaDRWWWc1QUxEV0xlM0ZQT05aakZ1MnNIbG9feTZnUUp3SVJPVVdNaWJnZVNDZlVtUEE?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "USDA hit with cyberattack: Sources"
+    "“AI will become like a gun” Bank accounts and infrastructure will also be targeted, experts warn, soaring cyberattacks - how to prevent damage (CBC TV)",
+    "“AI will become like a gun” Bank accounts and infrastructure will also be targeted, experts warn, soaring cyber attacks How to prevent damage"
    ]
   },
   {
@@ -178,6 +145,16 @@
    "n_outlets": 2,
    "also": [
     "NVIDIA under threat of ransomware: hackers promise data leak on November 28"
+   ]
+  },
+  {
+   "date": "2026-11-20T04:41:57Z",
+   "title": "Digital Outages and Cyberattacks Are Increasing. How Safe Is Your Money?",
+   "source": "AOL.com",
+   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRC1mek5SNWZ1WC1ZeWg5YXM0RHdlQXRxVk9reHVxSERQSnN2S0lhQVh5MVJPa2hwYjN6cE5pQ2owNlNsMG9NNHZoRUdWQzJzVzhKOHVNdTVkQk5jbEUzbGtwOEdiYkF1MWhTR2gxMWxIenNJMl9VSEk1Nmtsc0szUlFEMDVTcElwZWE5RUtKR09Odw?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Digital Outages and Cyberattacks Are Increasing. How Safe Is Your Money?"
    ]
   },
   {
@@ -308,16 +285,6 @@
    "n_outlets": 2,
    "also": [
     "Consideration begins on \"blocking\" as a countermeasure against cyber attacks... \"It is dangerous to become a magic stick, but as a 'stick to keep you from falling'\" (Yomiuri Shimbun Online)"
-   ]
-  },
-  {
-   "date": "2026-11-20T14:12:00Z",
-   "title": "JPMorgan Faces Data Leak After Banking Outage: Risks Mount?",
-   "source": "Yahoo Finance Australia",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOczUwbm1NQ3JKaXBLbzlSajBZM2Q4c3QwR3o5bXZIY1hhbmZvWkxnWXpPbFAxWW4tNFJ4VGZYSlhZVlBxSmRWWEhRbUtYQlBidXV1eVVJbHVjV2t3aEI2cGVnQkhwTmQtUVJwMmRtSVJkZlo4bGFVSnlUcTZNTGx2amQtOHVycE9j?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "JPMorgan Faces Data Leak After Banking Outage: Risks Mount?"
    ]
   },
   {
@@ -471,6 +438,16 @@
    ]
   },
   {
+   "date": "2026-11-21T11:25:00Z",
+   "title": "Old systems and rushed patching, not a cyberattack, behind US outages, experts say",
+   "source": "Yahoo",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOGVyaGtPbHltdnYwU01nNDRzMWdaZkpuS1BBcXJnZzRyX1h3Vi1HWkxpbjRpS1ZFTUl1SzczQkQtMlQ1dlVER1ROc1ZJS3dLb2VNVGY2ZlNmb1Zob2Y1R0h6cGJ6SE43bl9yZUhvR0RJWEE0VWZHalJjLTdlMHNvU3ZuS0RWLVc4NnJfQXBn?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Officials Deny Cyberattack Behind US Outages"
+   ]
+  },
+  {
    "date": "2026-11-21T13:02:15Z",
    "title": "Our Best Stuff on the Spate of Tech Outages",
    "source": "The Dispatch",
@@ -511,52 +488,24 @@
    ]
   },
   {
-   "date": "2026-11-20T01:45:08Z",
-   "title": "Jensen Huang, Chinese Hackers & the AI Arms Race",
-   "source": "Quillette",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOQ0FkWHk5dkFEeXRtRDVPNFFldzNzZEppMVVhME5QN2JQemlMUmJ4bXQtNUQ1LWRLdTBzTWwwNGgwcXI3Q2licXlraE45Q2x6MG1YTURpU2M5TmNsbVVFem9ZbkN6QmFoN2t2Z094TmRHVDFOdFl4OUJsR1V0SnRHUDdFZmI0ajhacWljN1ItZDExU3FaX1J4eEhn?oc=5",
-   "n_outlets": 1,
-   "also": []
+   "date": "2026-11-21T21:53:22Z",
+   "title": "Bitcoin's Proof-of-Work can prevent AI cyberattacks: ex-director of the US Constitutional Court",
+   "source": "Cryptonews.net",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9fZTNIZTgwdkVCN1BxajZhTXQ1eURleHdkVjVZZHRIRUp4LXZYelJHY3YzaDRwSE80ekxaZlRXYWNaQ0ZyRzRHNHFIcXhRbGNZS0I2ZXJxSUtxOHBJ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Former Space Force chief says Bitcoin's proof-of-work can thwart AI cyberattacks"
+   ]
   },
   {
-   "date": "2026-11-20T01:50:21Z",
-   "title": "Hard Lessons To Learn From Crypto Heist",
-   "source": "Rediff",
-   "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQWGZpVWQ4NnZrUnJoZ3lwVHd5dGNpLS1iREpfbHFRci1lMVVmNldoZWFmMjFuQlZWX2llX1c2bDdBR1BrLWxJYXZ0VVN3dWpuODBVX0Z5Nmt4M3R5NmZDc0haR01kYzdzYXhEZklPTC02bmp1YlJuQklGcWk3cXdkUlpseWZlS2g4c2VzV2tyYkVjUdIBlAFBVV95cUxOcy1VQTc5dHNGYTEzendyZnJhMEZiR2Z5N3pBVndwQTBRRks0TXhyS0JFZTJSX1h2VUZQcEljNS1YNXliRnRnbHBzTGpuMFVuLVZ2a1FkN1BLcEppSWE5OFM4c1RzaUZNYmgxNHBrZTRpbEZyeFlwZHpSdHVfNURTOEg1M0ZNcW5EVHVDam5QYUttTjhN?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T01:54:52Z",
-   "title": "Japanese Companies Rank Last in Using AI for Cyber Attack Detection and Recovery",
-   "source": "news.sbs.co.kr",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1zcGZkaGV5N2hON19EaGVLQ0tyTTdEQkVmWENaeTJGWFBDU2Fzbk9IQ205TW9XOW9qNEZ5ck81aHk0VDBuOERJMU5DbUFySWZINW1YenUxaUtESDMyOE4tc1hDX2x4dHZpaE5NRFFR?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T02:00:06Z",
-   "title": "Summary of personal information leakage due to skyticket cyber attack. Approximately 1,166 reservations and 15 passports were also leaked. Approximately 14.64 million cases have been reported and the risks of misuse are summarized | Security Measures Lab",
-   "source": "合同会社ロケットボーイズ",
-   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPYXlvVGtsUWliWXV0RFotdkxkOE5TM2tfMHVwZW55TW5uYTJ3U3lHVlh6dWxhUTRWbG9KN1RwQU1oTGU2R1Nfb1BpLVk4OEs2bTlLYW9vUHlBcF9JczZjX25yb1N1YjJBcUE3cXowX0xqaFJsY1ZOOVVoczJZejRLYVdnZ0JRZ1YyVzRVQzB4SnpHR01pZGppTERfTGNwZjE2eGNYdg?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T02:05:01Z",
-   "title": "FSS warns crypto firms of penalties for neglecting security flaws",
-   "source": "Aju Press",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBJb2ZSdUNmTWtKd0lDbXFna2FIbzZ4dnBfMW5nTHNPM2tBbmFPMEdLdXNyVHNWbzRVamV1aDFrR1VydlNaMFIxXzl6VjNWbWszLUt2MG1PNXpvdWs?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T02:11:05Z",
-   "title": "Graph Reinforcement Learning Curbs Power Grid Cyber Attacks in Distribution Systems",
-   "source": "Bioengineer.org",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSndPaFVYaDdXZ3JKQ055U0pLX1dSdUZYRkk2TFoyX05WcGZUdHVPaE5nMnBJWnlGT0JTVFVyMjFVR3A0TWtEMndxOFd6OVRwdjUwU01yX1Z6em1iU3BZQUJDTU1nSGNnRmoxS3lKVnF2bUZqNWlDY1Y5NWJfUFpLQlNXUUEyajJDSy1hMWtPRHFITGVnMnhlMWthMTBxazhCb2x2azFYV2tockJD?oc=5",
-   "n_outlets": 1,
-   "also": []
+   "date": "2026-11-22T01:04:17Z",
+   "title": "Trump confirms cyber attack on the FBI and fears \"hoaxes\" against him will be uncovered",
+   "source": "DW.com",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPT1hGRzlueHg2VkxIT3dyb0JHN01GZnpnekJHbm9ZbW5XUXdxcjRTM3RkQTFQYlZBcHF4dURSREJLcnBYU19CRDlnNUMwNjY0b0dfNVdtUngxNUlMcms0QnZyTUpPY3VaUjlDb1pYY25XVnozdUxaTm8yNHlTMlE1UzFjYkMzVy1maVZnWDZsd1IzTU9pVjVUY0I5d05yUkowV19hb1JyN1l0bURzMmE2VXBhd0gtcmtkRTAzWldscUF5ekNQZ0pGRVdsWVotd2RDamfSAdIBQVVfeXFMT09YRkc5bnh4NlZMSE93cm9CRzdNRmZ6Z3pCR25vWW1uV1F3cXI0UzN0ZEExUGJWQXBxeHVEUkRCS3JwWFNfQkQ5ZzVDMDY2NG9HXzVXbVJ4MTVJTHJrNEJ2ck1KT2N1WlI5Q29aWGNuV1Z6M3VMWk5vMjR5UzJRNVMxY2JDM1ctZmlWZ1g2bHdSM01PaVY1VGNCOXdOclJKMFdfYW9ScjdZdG1EczJhNlVwYXdILXJrZEUwM1pXbHFBeXpDUGdKRkVXbFlaLXdkQ2pn?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "FBI suffers alleged 'hacking' and Trump fears data exposure"
+   ]
   },
   {
    "date": "2026-11-20T02:28:59Z",
@@ -639,6 +588,14 @@
    "also": []
   },
   {
+   "date": "2026-11-20T03:55:48Z",
+   "title": "Hacker attack takes credit and rural insurance systems offline in the USA",
+   "source": "Gazeta Brasil",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNWUhmV2ozZlZ5V01iNkFwRzZsZ3d5SUxJTk5iMEItQk40Q3ZzZ2dadHJkeVlnd3hvaUtxX1pFaW1TQUZIcTltVkdrMmhUZFlka3gzZjlsNV91VGtFZ0wwbUJvWnFMRGJSRG5GUFJtVTFSZjI0dkpqenh6QUs5bW1TVHpMaGI2OEtfYzJEbTdJb1l2TzAyZU1ud3VCd0ZJM2lTQjBUaDh3dzZTb0hCSVB6MnhqSXdGLTMwV2MtQmRWX1VFTkhHZnlzUnNXcERhc2tkcGxBREZoYTItWWPSAeMBQVVfeXFMT0JUWWRhUDZjRTlvMkQ3aUZOOWZiTzdwRUUzcGZINGh6dURzcFFTbkhacFY1ZUpjcGpTM0NXTTZPRGdGdjV6dzJJZ2dfNFQwd29WZ3JvWi00VWFpXy1oTFo4UUJRY2djQWtUbm94VUM3OWdkNUZwejZyblQteHA5QXpIMkluYUN4SnhOMm9pN0Q0NlczbUI5MlZuVGsxZDR5TnBfSE1UYVlVMGNBdFVlUlZZdndQdjN3UGstZVA1V3FHNWpUYkZQdk5FUzVub2RiM0tjdzFscnFKcWJPZ1NfWWdCYWs?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-20T04:02:02Z",
    "title": "The news briefing from the Republic editorial team",
    "source": "Republik Magazin",
@@ -659,14 +616,6 @@
    "title": "120 travelers never showed up",
    "source": "Expressen",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSTg5UFdrUGx0Szg5aVFvVV9mUFd2N3BYemFqUW42OFhUX1VpQVFzUjVocndNZS0yVi1oRFhpZENxUUpaeTU0bGVXeERzT1VZZ3JEZS1sa0JPenBfWlp6My1kNE5QVVFrMlpPcjFfYW9OMGtJdzJUc2YwSWxPdHRFTkhKYkF0NXpUMEc3Rl9BYzBxUFVpQlN0SndkRkFPelE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T04:41:57Z",
-   "title": "Banks respond to cyberattack! Check if your money is safe",
-   "source": "Bobowa24",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxOekJRUk14OFdTNnVjR1BfOElyamh0bTJxemdDYnc3TDVaRUxWeERQZXQzUmRINnotS2RnN1A5S1Z0SFhIWm9SMThjdHB2MmJIdjdfcDlKMTFGZl9BUGFuQ0d0V0h4cG5lbHEzblhlNDkySDU4elNXOENvUTVjVHcxOWduUEJsTUxuVHBNbGpMUnh4ME9ZcG5NZ2RkQ1luUQ?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1655,14 +1604,6 @@
    "also": []
   },
   {
-   "date": "2026-11-20T14:23:29Z",
-   "title": "Prosecutors hacked and wiretapped Tata Steel, court hears",
-   "source": "DutchNews.nl",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQSHB5T3gxQ3JCYkpuLVYwTWIwT1FYS3BSVUpsaGhoTlpJLWQxbW50d1hKOThYSThDWFhUcjY2UW9XclhKcjE0a3pGc1BabmxoeWlOZHlCcWVCU0VyRlRfM0plTEFWVUp1UlBfdG9QVmsycVF5U3dwb052VTg3ODh3Ul9hRU1obHo0aDEtdHpvWDI2X09z?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-20T14:24:03Z",
    "title": "Retired Officials Urge Trump to Keep U.S. Sulfur Flowing to Fertilizer Plants",
    "source": "Ag Bull Trading",
@@ -1715,6 +1656,62 @@
    "title": "Mid Sussex District Council reveals scale of cyber attacks targeting its computer systems",
    "source": "SussexWorld",
    "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOREsyTm9zUVRDc1ZCdl9RMmpwLXVjTXJRc0hzMzNvWkhnc2p4azRPc2FZaWhJMFFlSVlIdTY1b1d6X2t5aklwd25QZDNOd3VxX1czdmZhUmdVcGh0TWIzRzlJLTBzSjF3VlMzX1pmbWh3T19xRDJ5R1NDUWFIS1pNVTZrLXJEYS1xc1dMMzZPSVp0SHhfNW9RQlhGZDhjaXRfejRPeTFDSzQ3OWNpMzlBN1dYZ0hmUUZpcEdURVRCWmQ2YzRvZFdpVzBXOW9SX3pQcHBxNGVGS2w3ZGxfdDZDcWp5OVI3dw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:57:07Z",
+   "title": "BL: Data stolen in cyber attack",
+   "source": "zentralplus",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQcWVxM0d6bDN5U1pHUWc1cnhHQjR0Q25jcms2OFFHTzJrYmJqLUxtQXNUd01iTlh3WmR0SFY0UTEtNHJQdkFpX0RmbXFUSlhOSnNfTkdyd3I5QlNWWHpaSGVMbUc3SlFiendNZ0RVYS1UWVQxWHliYkE0TUNqMEpzSTJR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:58:05Z",
+   "title": "How a security scare at RAF Fairford upended US air strategy",
+   "source": "openDemocracy",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNYUdxc0pWb19PSzNxTk1nbEZaV25XLS1EYmthNDhHM1p6OHg1T0JlRkVwRXAyNnBmSW9OLVZMWmNCNjBoNS1pNjlXLXJqT1F6Tl9HVlJTTXlkaUt2SnlCWTZUb1pqeU40REMxR1FNWjNFYXdCYjhWNFZQNkhYM0NYRGx0bzZUZVFCX2Q0ZHpOSkw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:59:40Z",
+   "title": "Ex-international Odegbami attacked, hacked in Abeokuta residence",
+   "source": "The Sun Nigeria",
+   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbHVJdlF6YVk2dzlTd2g1YTZrcGFqRDhGT0hJMl9OTWFMclp1LVQ4S2hWTzEwU2hVSEo3cVY4bWY5RnhBSGJ0ekNOOVdqb3ItUVJjQlNyNWtUX012Y0RkMWRsUEx3eWFQZnBaTFA3aVJxRWUtVi0yM3UtMmtEeWR1bGI0YXBYNlpWaFE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T14:59:50Z",
+   "title": "Gigi Hadid’s Denim Tucking Hack Makes Styling Boots With Jeans So Much Easier",
+   "source": "Glamour",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOYmNBYlJrSWhvR3ZSbkV5M2RRazNwaFpVUjV3WkIyT2pwd0puc0ItVmJoTTNwby1NNzRjU0xWaWVSdG5QQkFqYllSdmtiSW56dTFKZzBWTVJ0Y1NrMzJhWDBwZUp2YlRlS2tLSHFUNEQ5Mk93S19CUmgwNUxVcWR5QkV0MzNiMUQxeWtfZlU2RGptbGMxcFpJMkNhU0VhZDFQM1JnMEltTUw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T15:04:56Z",
+   "title": "The 1945: A subsidiary of La Poste targeted by a cyberattack 11-20-2026",
+   "source": "M6+",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxORDRkMWU5TDBSZjR1WWtXS0VFYXNWOGtZbXRfQUdQQ1NwTTRlckFZem9oUDFZVWZtZmJCazFXTHZWSG1VMWNmYXdmczk0c1hpY1pSbXdxaVk0QWx6Q1lIWUlXa2pHZ00wUWxfMXFJTldHLTM4WV8zNkdha3p5bmR1X29TRG1xTWM5MHpNM0NaR1hTRHJ3aXhRZVlR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T15:07:26Z",
+   "title": "In brief: Zattoo suffers cyberattack, ChatGPT agents shop, Swiss hotels angry",
+   "source": "ICTjournal",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNZ0ltSWEtZ2pyMXp6X2NTZ0ZXUGxDYVJaSkRNdlR0S05zWEFwczJBQkkxY1hqNjJMNEc4a1I1OGlMQ3IwaFpHSjJMTzhERXVxMHdWczgxWVpwb1ZQMFJYaFdTS2YwZHVuM21jVTFpc1BvQkc1UE1pMEtwZUIzbTNHaWtSUXU5UmFNN3lnbUtSWjFtTDdtV2QyZW45SzljTU52eGNWLXcyUktRaExxRXVjNU5ONHVKRlFFbks1X2ltczU?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-20T15:11:29Z",
+   "title": "Watch Everybody’s Business: Relax. It’s Probably Not a Cyberattack",
+   "source": "Bloomberg.com",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQa0RYTTJqUFR3SGpVWWJtanRRa2hnV3pFUF83Zmctei1oM3QtTEtSN3gzcnZSRjBKSVJJOXR0X1g1VHE2ZU1leVRRM090Rk5PX1A4QjNOa1ViNWROSk1wTTMzSTRHZUVWWjVtZVJsYmVMX1FQdVU0S0tXZzdiM0cwdU5mVlFIY0dfR1hlM0prUU55bFh3azQ0?oc=5",
    "n_outlets": 1,
    "also": []
   }

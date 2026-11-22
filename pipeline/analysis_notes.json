@@ -1467,32 +1467,33 @@
   ]
  },
  "Cyber investigates unexpected CYBER minting and bridge outflow": {
-  "summary": "Cyber confirmed unexpected minting on Solana followed by a transfer from its Ethereum bridge reserves. The Defiant reported that approximately 5.21 million CYBER left the reserve; Upbit and Bithumb paused transfers. The cause and final loss are not established.",
+  "summary": "Cyber said it observed an unexpected mint on Solana and a transfer from its Ethereum bridge lockbox. Reporting citing Upbit put the outflow at 5.213 million CYBER; subsequent sales were estimated at $968,000, not a confirmed final loss.",
   "attack_chain": [
-   "The project observed unexpected issuance and subsequent outflow from its bridge reserve.",
-   "Upbit and Bithumb paused deposits and withdrawals."
+   "Cyber reported unauthorized-looking token issuance on Solana; the access method is unknown.",
+   "A matching amount left the Ethereum bridge reserve.",
+   "Upbit and Bithumb paused CYBER deposits and withdrawals."
   ],
   "open_questions": [
-   "What caused the unexpected issuance?",
-   "Which users and bridge routes were affected, and what is the final loss?"
+   "What caused the unexpected mint?",
+   "Which other routes or assets, if any, were affected?",
+   "What amount is ultimately unrecoverable?"
   ],
   "mitigations": [
-   "Avoid the CYBER bridge and exchange deposits of CYBER until the project clears them.",
-   "Cyber says no token migration, wallet connection or signature is required.",
-   "Bridge operators should reconcile supply and reserves before reopening affected routes."
+   "Suspend affected bridge routes until reserve and supply balances have been reconciled.",
+   "Alert on unusual minting or outflows. Direct users to official status notices rather than unsolicited prompts to connect or sign."
   ],
   "sources": [
    {
-    "label": "Cyber project statement",
-    "url": "https://x.com/i/status/2124207519581327394"
+    "label": "Cyber’s statement",
+    "url": "https://x.com/BuildOnCyber/status/2124207519581327394"
    },
    {
-    "label": "The Defiant",
-    "url": "https://thedefiant.io/news/hacks/cyber-warns-against-bridge-use-after-unexpected-minting"
+    "label": "Coin Edition",
+    "url": "https://coinedition.com/crypto-live-news/cyber-probes-1m-bridge-exploit-as-upbit-bithumb-halt-cyber/"
    },
    {
-    "label": "The Block",
-    "url": "https://www.theblock.co/news/defi/2026-11-21-cyber-investigating-suspected-1-million-bridge-exploit-as-upbit-bithumb-freeze-transfers-444810"
+    "label": "Blockonomi",
+    "url": "https://blockonomi.com/cyber-exploit-probe-follows-968000-cyber-sale-and-transfer-halt/"
    }
   ],
   "patterns": [
@@ -2271,6 +2272,255 @@
   ],
   "patterns": [
    "outage"
+  ]
+ },
+ "Gnosis Safe multisig drained of $6.45 million via Zodiac Roles permission": {
+  "summary": "One Safe multisig lost an estimated $6.45 million. Safe said the transfer used permissions in a third-party Zodiac Roles module and did not result from a vulnerability in its own wallet or contracts. Zodiac assessed that a role member’s key was likely compromised.",
+  "attack_chain": [
+   "Investigators suspect compromise of a role member’s key; the initial access method is unknown.",
+   "The key’s existing delegated permissions were used to move assets from one multisig.",
+   "Safe said its contracts and application were unaffected."
+  ],
+  "open_questions": [
+   "How was the role member’s key obtained?",
+   "Were any assets recovered?"
+  ],
+  "mitigations": [
+   "Revoke unused role keys and review the scope and limits of each delegated permission.",
+   "Set alerts for unexpected high-value transactions, and keep role keys separate from owners’ signing keys."
+  ],
+  "sources": [
+   {
+    "label": "Safe’s scope clarification",
+    "url": "https://x.com/safe/status/2122380845071716644"
+   },
+   {
+    "label": "Zodiac’s incident findings",
+    "url": "https://x.com/zodiaceco/status/2122360804661940545"
+   }
+  ],
+  "patterns": [
+   "key-compromise"
+  ]
+ },
+ "Gnosis Safe wallet reportedly drained of $6.45M in suspected exploit": {
+  "summary": "One Safe multisig lost an estimated $6.45 million. Safe said the transfer used permissions in a third-party Zodiac Roles module and did not result from a vulnerability in its own wallet or contracts. Zodiac assessed that a role member’s key was likely compromised.",
+  "attack_chain": [
+   "Investigators suspect compromise of a role member’s key; the initial access method is unknown.",
+   "The key’s existing delegated permissions were used to move assets from one multisig.",
+   "Safe said its contracts and application were unaffected."
+  ],
+  "open_questions": [
+   "How was the role member’s key obtained?",
+   "Were any assets recovered?"
+  ],
+  "mitigations": [
+   "Revoke unused role keys and review the scope and limits of each delegated permission.",
+   "Set alerts for unexpected high-value transactions, and keep role keys separate from owners’ signing keys."
+  ],
+  "sources": [
+   {
+    "label": "Safe’s scope clarification",
+    "url": "https://x.com/safe/status/2122380845071716644"
+   },
+   {
+    "label": "Zodiac’s incident findings",
+    "url": "https://x.com/zodiaceco/status/2122360804661940545"
+   }
+  ],
+  "patterns": [
+   "key-compromise"
+  ]
+ },
+ "Cyber Probes $1M Bridge Exploit as Upbit, Bithumb Halt CYBER Transfers": {
+  "summary": "Cyber said it observed an unexpected mint on Solana and a transfer from its Ethereum bridge lockbox. Reporting citing Upbit put the outflow at 5.213 million CYBER; subsequent sales were estimated at $968,000, not a confirmed final loss.",
+  "attack_chain": [
+   "Cyber reported unauthorized-looking token issuance on Solana; the access method is unknown.",
+   "A matching amount left the Ethereum bridge reserve.",
+   "Upbit and Bithumb paused CYBER deposits and withdrawals."
+  ],
+  "open_questions": [
+   "What caused the unexpected mint?",
+   "Which other routes or assets, if any, were affected?",
+   "What amount is ultimately unrecoverable?"
+  ],
+  "mitigations": [
+   "Suspend affected bridge routes until reserve and supply balances have been reconciled.",
+   "Alert on unusual minting or outflows. Direct users to official status notices rather than unsolicited prompts to connect or sign."
+  ],
+  "sources": [
+   {
+    "label": "Cyber’s statement",
+    "url": "https://x.com/BuildOnCyber/status/2124207519581327394"
+   },
+   {
+    "label": "Coin Edition",
+    "url": "https://coinedition.com/crypto-live-news/cyber-probes-1m-bridge-exploit-as-upbit-bithumb-halt-cyber/"
+   },
+   {
+    "label": "Blockonomi",
+    "url": "https://blockonomi.com/cyber-exploit-probe-follows-968000-cyber-sale-and-transfer-halt/"
+   }
+  ],
+  "patterns": [
+   "bridge"
+  ]
+ },
+ "Cyber Exploit Probe Follows $968,000 CYBER Sale and Transfer Halt": {
+  "summary": "Cyber said it observed an unexpected mint on Solana and a transfer from its Ethereum bridge lockbox. Reporting citing Upbit put the outflow at 5.213 million CYBER; subsequent sales were estimated at $968,000, not a confirmed final loss.",
+  "attack_chain": [
+   "Cyber reported unauthorized-looking token issuance on Solana; the access method is unknown.",
+   "A matching amount left the Ethereum bridge reserve.",
+   "Upbit and Bithumb paused CYBER deposits and withdrawals."
+  ],
+  "open_questions": [
+   "What caused the unexpected mint?",
+   "Which other routes or assets, if any, were affected?",
+   "What amount is ultimately unrecoverable?"
+  ],
+  "mitigations": [
+   "Suspend affected bridge routes until reserve and supply balances have been reconciled.",
+   "Alert on unusual minting or outflows. Direct users to official status notices rather than unsolicited prompts to connect or sign."
+  ],
+  "sources": [
+   {
+    "label": "Cyber’s statement",
+    "url": "https://x.com/BuildOnCyber/status/2124207519581327394"
+   },
+   {
+    "label": "Coin Edition",
+    "url": "https://coinedition.com/crypto-live-news/cyber-probes-1m-bridge-exploit-as-upbit-bithumb-halt-cyber/"
+   },
+   {
+    "label": "Blockonomi",
+    "url": "https://blockonomi.com/cyber-exploit-probe-follows-968000-cyber-sale-and-transfer-halt/"
+   }
+  ],
+  "patterns": [
+   "bridge"
+  ]
+ },
+ "Star Petroleum Refining reports unauthorized access to company data": {
+  "summary": "Star Petroleum Refining said an unauthorized party accessed company data. The company said operations and customer service continued normally; it did not specify the entry method, how much information was accessed, or the financial impact.",
+  "attack_chain": [
+   "The company detected unauthorized access; the entry method is unknown.",
+   "The company started containment and an investigation.",
+   "The company said operations continued normally."
+  ],
+  "open_questions": [
+   "What information was accessed or copied?",
+   "What was the entry point and did it affect operational technology?"
+  ],
+  "mitigations": [
+   "Retain access logs and verify which systems and identities were affected.",
+   "Review separation between business and process-control environments and verify operational continuity."
+  ],
+  "sources": [
+   {
+    "label": "Company filings with the Stock Exchange of Thailand",
+    "url": "https://investor.sprc.co.th/en/newsroom/set-announcements"
+   },
+   {
+    "label": "Money & Banking Magazine, quoting the filing",
+    "url": "https://en.moneyandbanking.co.th/2026/288049/"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "CERT-In reports attacks that diverted payments through business workflows": {
+  "summary": "CERT-In said it received reports of unauthorized transactions at service providers and platforms processing vendor or government-linked payouts. The agency said attackers manipulated business records or approvals before using legitimate payment processes. The advisory did not identify individual victims, losses or an actor.",
+  "attack_chain": [
+   "Initial access varied or was not specified.",
+   "CERT-In reported unauthorized changes to some business records or approval relationships.",
+   "Legitimate payment systems then processed unauthorized transactions."
+  ],
+  "open_questions": [
+   "Which organizations and integrations were affected?",
+   "How much was lost and did victims recover funds?"
+  ],
+  "mitigations": [
+   "Verify changes to beneficiaries and approval chains through an independent channel.",
+   "Reconcile payouts against records maintained outside the payment environment.",
+   "Keep audit logs of privileged access and payment changes and alert on unexpected combinations."
+  ],
+  "sources": [
+   {
+    "label": "CERT-In advisory CIAD-2026-0062",
+    "url": "https://www.cert-in.org.in/s2cMainServlet?pageid=PUBVLNOTES02&VLCODE=CIAD-2026-0062"
+   },
+   {
+    "label": "Moneycontrol reporting on the advisory",
+    "url": "https://www.moneycontrol.com/artificial-intelligence/from-fintechs-to-govt-payouts-cert-in-flags-expanding-ai-driven-cyberattacks-article-14085964.html"
+   }
+  ],
+  "patterns": [
+   "enterprise-platform"
+  ]
+ },
+ "Delhi police investigate reported theft of Agniveer recruitment test-site data": {
+  "summary": "Researchers documented an unverified September listing that claimed administrative access to an Agniveer recruitment portal. Indian media later reported a Delhi Police investigation, but the number of people affected and the full extent of the access remain unclear.",
+  "attack_chain": [
+   "The initial access method has not been independently established.",
+   "A September listing offered purported administrative access and personnel data.",
+   "Later press coverage reported a police investigation into the suspected theft."
+  ],
+  "open_questions": [
+   "Was the listing based on genuine portal access, and what records were accessed?",
+   "Did investigators establish the access window or confirm any exposure of other systems?"
+  ],
+  "mitigations": [
+   "Review privileged portal activity and investigate unexpected account changes and bulk data access.",
+   "Revoke suspicious sessions, rotate exposed credentials and require multifactor authentication for administrative access.",
+   "Notify potentially affected people through verified channels and publish guidance on recruitment-themed phishing."
+  ],
+  "sources": [
+   {
+    "label": "ThreatMon, reporting the unverified September listing",
+    "url": "https://x.com/MonThreat/status/2098731151825203590"
+   },
+   {
+    "label": "The Indian Express, reporting on the police investigation",
+    "url": "https://indianexpress.com/article/cities/delhi/agniveer-portal-data-breach-ai-hacking-teen-detained-10972203/"
+   }
+  ],
+  "patterns": [
+   "data-exposure"
+  ]
+ },
+ "CyberConnect": {
+  "summary": "Cyber said it observed an unexpected mint on Solana and a transfer from its Ethereum bridge lockbox. Reporting citing Upbit put the outflow at 5.213 million CYBER; subsequent sales were estimated at $968,000, not a confirmed final loss.",
+  "attack_chain": [
+   "Cyber reported unauthorized-looking token issuance on Solana; the access method is unknown.",
+   "A matching amount left the Ethereum bridge reserve.",
+   "Upbit and Bithumb paused CYBER deposits and withdrawals."
+  ],
+  "open_questions": [
+   "What caused the unexpected mint?",
+   "Which other routes or assets, if any, were affected?",
+   "What amount is ultimately unrecoverable?"
+  ],
+  "mitigations": [
+   "Suspend affected bridge routes until reserve and supply balances have been reconciled.",
+   "Alert on unusual minting or outflows. Direct users to official status notices rather than unsolicited prompts to connect or sign."
+  ],
+  "sources": [
+   {
+    "label": "Cyber’s statement",
+    "url": "https://x.com/BuildOnCyber/status/2124207519581327394"
+   },
+   {
+    "label": "Coin Edition",
+    "url": "https://coinedition.com/crypto-live-news/cyber-probes-1m-bridge-exploit-as-upbit-bithumb-halt-cyber/"
+   },
+   {
+    "label": "Blockonomi",
+    "url": "https://blockonomi.com/cyber-exploit-probe-follows-968000-cyber-sale-and-transfer-halt/"
+   }
+  ],
+  "patterns": [
+   "bridge"
   ]
  }
 }

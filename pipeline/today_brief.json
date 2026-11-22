@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T01:27:26Z",
- "headline": "Chainflip reported theft of 122.86 BTC in addition to an Ethereum outflow estimated at $4.86 million, and Norway’s national ID-porten sign-in service was disrupted by a denial-of-service attack. YMCA of Singapore said it was contacting more than 13,000 people after an intrusion into its Youth For Causes portal.",
+ "updated": "2026-11-22T02:27:17Z",
+ "headline": "Chainflip reported theft of 122.86 BTC and an Ethereum outflow estimated at $4.86 million. Norway’s national ID-porten login was disrupted by a denial-of-service attack, and Cyber said it was investigating a bridge incident involving 5.213 million CYBER tokens.",
  "incidents": [
   {
    "org": "Chainflip",
@@ -10,23 +10,6 @@
     "bridge"
    ],
    "eid": "x-b163fb32"
-  },
-  {
-   "org": "Microsoft Entra Connect Health",
-   "what": "Microsoft said a server-side flaw let an unauthorized party read administrator email addresses and tenant metadata, with no unauthorized configuration changes found.",
-   "scale": "Tenant count not disclosed",
-   "patterns": [
-    "enterprise-platform",
-    "data-exposure"
-   ],
-   "eid": "n-1e1dbef9"
-  },
-  {
-   "org": "Federal Bureau of Investigation (FBI)",
-   "what": "CNN, AP and Fox News independently cited sources describing an apparent intrusion into the FBI’s national crime database; the FBI declined to comment to AP.",
-   "scale": "Scope and access unconfirmed",
-   "patterns": [],
-   "eid": "x-e442a7e4"
   },
   {
    "org": "Norway Digitalisation Agency (ID-porten)",
@@ -39,13 +22,22 @@
   },
   {
    "org": "Cyber (CyberConnect)",
-   "what": "Cyber confirmed unexpected token minting on Solana and an outflow from its Ethereum bridge reserve, and told users to avoid the bridge and exchange deposits.",
-   "scale": "About 5.21M CYBER moved; final loss unknown",
+   "what": "Cyber reported unexpected minting on Solana and a matching outflow from its bridge on Ethereum; Upbit and Bithumb suspended CYBER transfers.",
+   "scale": "5.213M CYBER; final loss unconfirmed",
    "patterns": [
     "bridge"
    ],
    "url": "https://x.com/i/status/2124207519581327394",
    "eid": "x-57f29b3f"
+  },
+  {
+   "org": "YMCA of Singapore",
+   "what": "YMCA confirmed unauthorized access to its Youth For Causes portal but could not determine whether personal data was copied.",
+   "scale": "13,000+ potentially affected",
+   "patterns": [
+    "data-exposure"
+   ],
+   "eid": "n-4945b68d"
   },
   {
    "org": "OpenRouter / MiniMax",
@@ -57,15 +49,6 @@
     "ai"
    ],
    "eid": "x-2d44e830"
-  },
-  {
-   "org": "YMCA of Singapore",
-   "what": "YMCA confirmed unauthorized access to its Youth For Causes portal but could not determine whether personal data was copied.",
-   "scale": "13,000+ potentially affected",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-4945b68d"
   },
   {
    "org": "Sunfun Info",
@@ -86,6 +69,17 @@
    "update": true,
    "since": "2026-11-17",
    "eid": "x-a4503abf"
+  },
+  {
+   "org": "DeFiChain",
+   "what": "DeFiChain said it expects to reverse the effects of its November exploit and deploy a fix in December; it did not set a date to reopen wallet services.",
+   "scale": "December fix targeted",
+   "patterns": [
+    "contract-logic"
+   ],
+   "eid": "x-5ed6a51c",
+   "update": true,
+   "since": "2026-11-03"
   },
   {
    "org": "Orchestra (Travelsoft)",
