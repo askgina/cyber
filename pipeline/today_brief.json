@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T16:30:23Z",
- "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users, while the procurement-system impact remains unclear. Cleverbridge confirmed that payment-card data was copied in a November 4 intrusion and said it began notifying affected people on November 20.",
+ "updated": "2026-11-22T17:27:05Z",
+ "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users and notified all 869,761 procurement users while it checks the scope. OSV flagged five malicious npm packages under the @c1-ease scope without identifying any downstream victims.",
  "incidents": [
   {
    "org": "Korea Electric Power Corporation",
@@ -69,7 +69,17 @@
    "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
    "scale": "Appointments unaffected; data exposure not disclosed",
    "patterns": [],
-   "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/"
+   "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/",
+   "eid": "x-e9f8c567"
+  },
+  {
+   "org": "npm @c1-ease packages",
+   "what": "OSV flagged five malicious npm packages under the @c1-ease scope; it did not identify any affected organizations.",
+   "scale": "5 packages; victims not verified",
+   "patterns": [
+    "supply-chain"
+   ],
+   "url": "https://osv.dev/vulnerability/MAL-2026-20324"
   },
   {
    "org": "Cleverbridge",
@@ -106,19 +116,6 @@
    "update": true,
    "since": "2026-11-19",
    "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
-  },
-  {
-   "org": "Fluidkey",
-   "what": "Fluidkey’s root-cause report confirmed approximately $1.6 million in unauthorized transfers from 52 accounts; it said private spending keys stayed on user devices.",
-   "scale": "$1.6M across 52 accounts",
-   "patterns": [
-    "data-exposure",
-    "key-compromise"
-   ],
-   "eid": "x-7b9a9595",
-   "update": true,
-   "since": "2026-11-19",
-   "url": "https://docs.fluidkey.com/security/incident-2026-11-19/"
   },
   {
    "org": "University server (Cairn AI agents)",
