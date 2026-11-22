@@ -1,6 +1,6 @@
 {
- "updated": "2026-11-22T06:25:56Z",
- "headline": "Chainflip confirmed Bitcoin and Ethereum vault thefts valued at about $12 million in total by Cointelegraph. Together AI confirmed an unauthorized download of prompt samples, and Fluidkey reported about $1.6 million in unauthorized transfers.",
+ "updated": "2026-11-22T07:26:10Z",
+ "headline": "Chainflip confirmed thefts from its Bitcoin and Ethereum vaults, valued at about $12 million in total by Cointelegraph. Together AI disclosed a download of customer prompt samples, and YMCA of Singapore notified more than 13,000 people about a portal intrusion.",
  "incidents": [
   {
    "org": "Chainflip",
@@ -36,17 +36,14 @@
    "eid": "x-f3649087"
   },
   {
-   "org": "Fluidkey",
-   "what": "Fluidkey’s post-mortem confirms that flaws in an outdated logging tool exposed session data. Private spending keys remained on users’ devices.",
-   "scale": "About $1.6M in unauthorized transfers from 52 accounts",
+   "org": "YMCA of Singapore",
+   "what": "YMCA confirmed unauthorized access to its Youth For Causes portal and said investigators could not determine whether personal data was accessed or copied.",
+   "scale": "More than 13,000 people notified",
+   "url": "https://ymca.org.sg/notice-about-cyber-breach-involving-the-youth-for-causes/",
    "patterns": [
-    "supply-chain",
-    "key-compromise"
+    "data-exposure"
    ],
-   "url": "https://docs.fluidkey.com/security/incident-2026-11-19/",
-   "update": true,
-   "since": "2026-11-19",
-   "eid": "x-7b9a9595"
+   "eid": "n-4945b68d"
   },
   {
    "org": "Cyber (CyberConnect)",
@@ -57,20 +54,6 @@
    ],
    "url": "https://x.com/BuildOnCyber/status/2124207519581327394",
    "eid": "x-57f29b3f"
-  },
-  {
-   "org": "OpenRouter / Novita",
-   "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
-   "scale": "125 endpoints lost zero-retention eligibility",
-   "patterns": [
-    "ai",
-    "data-exposure",
-    "supply-chain"
-   ],
-   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
-   "eid": "x-2d44e830",
-   "update": true,
-   "since": "2026-05-28"
   },
   {
    "org": "Norway Digitalisation Agency (ID-porten)",
@@ -89,6 +72,33 @@
     "enterprise-platform"
    ],
    "url": "https://www.tipranks.com/news/company-announcements/sunfun-info-reports-information-system-intrusion"
+  },
+  {
+   "org": "OpenRouter / Novita",
+   "what": "Novita confirmed MiniMax requests were forwarded outside the intended scope; OpenRouter removed three providers but found no breach of its own systems.",
+   "scale": "125 endpoints lost zero-retention eligibility",
+   "patterns": [
+    "ai",
+    "data-exposure",
+    "supply-chain"
+   ],
+   "url": "https://openrouter.ai/blog/announcements/data-processing-incidents-on-inference-providers/",
+   "eid": "x-2d44e830",
+   "update": true,
+   "since": "2026-05-28"
+  },
+  {
+   "org": "Fluidkey",
+   "what": "Fluidkey’s post-mortem confirms that flaws in an outdated logging tool exposed session data. Private spending keys remained on users’ devices.",
+   "scale": "About $1.6M in unauthorized transfers from 52 accounts",
+   "patterns": [
+    "supply-chain",
+    "key-compromise"
+   ],
+   "url": "https://docs.fluidkey.com/security/incident-2026-11-19/",
+   "update": true,
+   "since": "2026-11-19",
+   "eid": "x-7b9a9595"
   },
   {
    "org": "Orchestra (Travelsoft)",
@@ -111,18 +121,6 @@
    "since": "2026-11-20",
    "url": "https://icelandmonitor.mbl.is/news/news/2026/11/21/pro_palestinian_websites_targeted_in_cyberattack_on",
    "eid": "x-afb3de62"
-  },
-  {
-   "org": "Kang Chiao International School (Linkou)",
-   "what": "Osiris listed the campus after the school’s earlier confirmation that some data had been exposed; the listing did not establish the scope.",
-   "scale": "Scope unverified",
-   "patterns": [
-    "ransomware",
-    "data-exposure"
-   ],
-   "update": true,
-   "since": "2026-11-06",
-   "eid": "x-62546e4d"
   },
   {
    "org": "Factotal",

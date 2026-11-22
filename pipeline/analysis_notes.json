@@ -3189,5 +3189,6 @@
    "data-exposure",
    "key-compromise"
   ]
- }
+ },
+ "BabidiGhost: An AI-Augmented Cybercrime Operation": {"summary":"SOCRadar found that an operator using AI-assisted tools breached two organizations and partly breached three of the 14 it examined in depth. The researchers did not publicly identify the individual victims.","attack_chain":["The operator used AI-assisted tools to target European organizations.","SOCRadar found that some systems were accessed and data was taken."],"open_questions":["Which organizations were affected, and what data was exposed at each?"],"mitigations":["Keep externally reachable services patched and restrict access to administration interfaces.","Use strong authentication and limit the data and credentials any one workload can access.","Review access logs and investigate unexpected bulk exports or persistence."],"sources":[{"label":"SOCRadar Research","url":"https://socradar.io/blog/babidighost-ai-augmented-cybercrime/"}],"patterns":["ai","data-exposure"]}
 }
