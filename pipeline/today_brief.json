@@ -1,7 +1,17 @@
 {
-  "updated": "2026-11-22T08:26:30Z",
-  "headline": "Together AI disclosed unauthorized access to stored prompt samples, and Rackspace warned customers that an intruder could access some Kubernetes secrets. YMCA of Singapore notified more than 13,000 people after a portal intrusion.",
+  "updated": "2026-11-22T09:29:21Z",
+  "headline": "Tower Records Japan reported exposure of about 11 million personal records. Together AI confirmed unauthorized downloads of prompt samples, and Chainflip offered a bounty after thefts valued by Cointelegraph at about $12 million.",
   "incidents": [
+    {
+      "org": "Tower Records Japan",
+      "what": "Tower Records Japan said an intruder accessed its online store and exposed customer records, including login information and some membership and delivery details.",
+      "scale": "About 11M records; unique customer count undisclosed",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "n-09b1ba22",
+      "url": "https://news.web.nhk/newsweb/na/nd-20261122de79936"
+    },
     {
       "org": "Together AI",
       "what": "Together AI confirmed that an unauthorized party downloaded stored samples of customer prompts after a repository credential was exposed.",
@@ -55,15 +65,6 @@
       "eid": "x-5233adf4"
     },
     {
-      "org": "Sunfun Info",
-      "what": "The Taiwanese company reported an intrusion into its information systems and said it had no material operational impact.",
-      "scale": "Exposure not disclosed",
-      "patterns": [
-        "enterprise-platform"
-      ],
-      "url": "https://www.tipranks.com/news/company-announcements/sunfun-info-reports-information-system-intrusion"
-    },
-    {
       "org": "GMI Cloud",
       "what": "Users reported possible exposure of requests sent through GMI Cloud; OpenRouter’s public update did not identify that provider.",
       "scale": "Unverified; scope unknown",
@@ -75,14 +76,22 @@
       "eid": "x-3ef42975"
     },
     {
-      "org": "Clevermate",
-      "what": "A group published data it said came from the tutoring platform, but the company did not confirm the files’ origin or scope.",
-      "scale": "Unverified data exposure claim",
+      "org": "Universidad Dominicana O&M",
+      "what": "Hyflock listed the organization in an extortion claim that has not been independently verified.",
+      "scale": "Unverified; scope unknown",
       "patterns": [
-        "data-exposure"
+        "ransomware"
       ],
-      "url": "https://www.cyberattaque.org/clevermate-vise-par-des-hackers-des-donnees-personnelles-des-iban-et-cartes-etudiantes-exposes/",
-      "eid": "x-0cd68e71"
+      "url": "https://www.ransomware.live/id/RGF0YSBCcmVhY2ggYXQgTyZNIFVuaXZlcnNpdHkgaW4gdGhlIERvbWluaWNhbiBSZXB1YmxpY0BIWUZMT0NL"
+    },
+    {
+      "org": "Invicta Watch Group",
+      "what": "Qilin listed the organization in an extortion claim that has not been independently verified.",
+      "scale": "Unverified; scope unknown",
+      "patterns": [
+        "ransomware"
+      ],
+      "url": "https://www.ransomware.live/id/SW52aWN0YSBXYXRjaCBHcm91cEBxaWxpbg"
     },
     {
       "org": "Chainflip",
@@ -122,16 +131,6 @@
       "update": true,
       "since": "2026-11-19",
       "eid": "x-7b9a9595"
-    },
-  {
-   "org": "Factotal",
-   "what": "SafePay listed the financing company on its extortion site; the claim does not establish a breach or service interruption.",
-   "scale": "Unverified extortion claim",
-   "patterns": [
-    "ransomware"
-   ],
-   "url": "https://ransomware.live/id/ZmFjdG90YWwuY29tQHNhZmVwYXk",
-   "eid": "x-1fb3441b"
-  }
+    }
   ]
 }
