@@ -396,10 +396,15 @@ for kind, rows in by_kind.items():
             eid_date[o["eid"]] = o.get("first") if kind == "x" else (o.get("added") if kind == "breach" else o.get("date"))
 if brief:
     for i in brief.get("incidents", []):
-        d0 = eid_date.get(i.get("eid")) or i.get("since")
+        # A linked article or post dates the disclosure, not necessarily the incident.
+        linked_date = eid_date.get(i.get("eid"))
+        d0 = i.get("since") or linked_date
         if d0:
             i["since"] = d0[:10]
-            i["update"] = bool(i.get("update")) or days_ago(parse_iso(d0 if len(d0) > 10 else d0 + "T23:59:59Z")) > 3
+            i["update"] = bool(i.get("update")) or any(
+                days_ago(parse_iso(d if len(d) > 10 else d + "T23:59:59Z")) > 3
+                for d in (d0, linked_date) if d
+            )
 # ---- official breach notices (state AGs, HHS, SEC 8-K Item 1.05, press-reported attacks)
 notices = []
 try:

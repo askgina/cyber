@@ -1,141 +1,140 @@
 {
- "updated": "2026-11-22T20:26:25Z",
- "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users; the number affected by a separate procurement-system breach remains uncertain. Lava Security reported that an unauthorized party accessed recent GMI Cloud request logs; the number of customers affected is unknown.",
- "incidents": [
-  {
-   "org": "Korea Electric Power Corporation",
-   "what": "KEPCO confirmed exposure for 650,487 billing users and issued a separate notice for its electronic procurement system; exact procurement exposure and overlap are unresolved.",
-   "scale": "650,487 billing users confirmed",
-   "patterns": [
-    "data-exposure"
-   ],
-   "url": "https://www.ajupress.com/view/20261122184870375",
-   "eid": "n-34316fe7"
-  },
-  {
-   "org": "Rackspace Spot",
-   "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
-   "scale": "Customer count not disclosed",
-   "patterns": [
-    "supply-chain",
-    "key-compromise"
-   ],
-   "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-   "eid": "x-f3649087"
-  },
-  {
-   "org": "Aramid Bridge",
-   "what": "Voi Network reported unauthorized withdrawals from the Aramid bridge and said the Voi blockchain itself was not compromised.",
-   "scale": "About 125M VOI and 70,000 ALGO",
-   "patterns": [
-    "bridge"
-   ],
-   "url": "https://x.com/Voi_Net/status/2124387898757611938",
-   "eid": "x-6fb93117"
-  },
-  {
-   "org": "Samsung Group",
-   "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
-   "scale": "1 TB claimed",
-   "patterns": [
-    "ransomware"
-   ],
-   "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw",
-   "eid": "x-35eeeab2"
-  },
-  {
-   "org": "Sri Lanka Department of Motor Traffic",
-   "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
-   "scale": "Appointments unaffected; data exposure not disclosed",
-   "patterns": [],
-   "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/",
-   "eid": "x-e9f8c567"
-  },
-  {
-   "org": "Persistent Systems",
-   "what": "INC Ransom claimed it obtained internal data from the technology services firm; Persistent Systems had not publicly confirmed the claim.",
-   "scale": "Extortion claim; scope unknown",
-   "patterns": [
-    "ransomware"
-   ],
-   "url": "https://x.com/DailyDarkWeb/status/2124535478695116805",
-   "eid": "x-a8754aa6"
-  },
-  {
-   "org": "Chainflip",
-   "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
-   "scale": "About $12M estimated across Ethereum and Bitcoin",
-   "patterns": [
-    "bridge"
-   ],
-   "eid": "x-b163fb32",
-   "url": "https://chainflip.io/return",
-   "update": true,
-   "since": "2026-11-21"
-  },
-  {
-   "org": "Together AI",
-   "what": "Together AI traced the unauthorized download of stored prompt samples to an exposed development credential and added safeguards.",
-   "scale": "Customer count undisclosed",
-   "eid": "x-eb428de0",
-   "patterns": [
-    "ai",
-    "data-exposure",
-    "key-compromise"
-   ],
-   "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
-   "update": true,
-   "since": "2026-11-21"
-  },
-  {
-   "org": "Cleverbridge",
-   "what": "Cleverbridge confirmed stored payment-card data was copied; customer notices began November 20, and the number affected remains undisclosed.",
-   "scale": "Card numbers and security codes; total unknown",
-   "patterns": [
-    "data-exposure"
-   ],
-   "eid": "n-855a50ef",
-   "url": "https://grow.cleverbridge.com/incident-update",
-   "update": true,
-   "since": "2026-11-04"
-  },
-  {
-   "org": "GL.iNet",
-   "what": "New reporting documented malware on some routers and KVMs; GL.iNet has not disclosed the total number affected.",
-   "scale": "Device count unknown",
-   "patterns": [
-    "edge-device"
-   ],
-   "update": true,
-   "since": "2026-11-20",
-   "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-   "eid": "n-e84afceb"
-  },
-  {
-   "org": "Fluidkey",
-   "what": "Fluidkey’s post-mortem confirmed unauthorized transfers from 52 accounts and said user spending keys did not leave their devices.",
-   "scale": "About $1.6M stolen",
-   "patterns": [
-    "key-compromise"
-   ],
-   "update": true,
-   "since": "2026-11-19",
-   "url": "https://docs.fluidkey.com/security/incident-2026-11-19/",
-   "eid": "x-7b9a9595"
-  },
-  {
-   "org": "GMI Cloud",
-   "what": "Lava Security reported that an unauthorized party accessed recent request logs; OpenRouter disabled the provider’s endpoints.",
-   "scale": "Customer count unknown",
-   "patterns": [
-    "supply-chain",
-    "data-exposure",
-    "ai"
-   ],
-   "update": true,
-   "since": "2026-10-21",
-   "url": "https://lava.security/blog/ai-inference-canary-research-prompts-exposed",
-   "eid": "x-3ef42975"
-  }
- ]
+  "updated": "2026-11-22T21:33:27Z",
+  "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users, with the scope of a separate procurement breach still unclear. Fusionist asked users to pause ACE activity on BNB Smart Chain after Blockaid estimated about $1.04 million had been extracted.",
+  "incidents": [
+    {
+      "org": "Korea Electric Power Corporation",
+      "what": "KEPCO confirmed exposure for 650,487 billing users and issued a separate notice for its electronic procurement system; exact procurement exposure and overlap are unresolved.",
+      "scale": "650,487 billing users confirmed",
+      "patterns": [
+        "data-exposure"
+      ],
+      "url": "https://www.ajupress.com/view/20261122184870375",
+      "eid": "n-34316fe7"
+    },
+    {
+      "org": "Fusionist",
+      "what": "Fusionist asked users to pause ACE activity on BNB Smart Chain after Blockaid reported unauthorized minting and an early extraction estimate of about $1.04 million.",
+      "scale": "$1.04M early estimate",
+      "patterns": [
+        "bridge",
+        "contract-logic"
+      ],
+      "url": "https://x.com/fusionistio/status/2124586293812461578",
+      "eid": "x-1d661531"
+    },
+    {
+      "org": "Guadeloupe University Hospital",
+      "what": "The hospital director confirmed a cyberattack disrupted phones, imaging and other systems across three sites, and the hospital postponed non-urgent care.",
+      "scale": "Three sites disrupted",
+      "patterns": [
+        "outage"
+      ],
+      "url": "https://rci.fm/guadeloupe/infos/Sante/Le-CHU-de-Guadeloupe-victime-dune-cyberattaque-une-cellule-de-crise-declenchee",
+      "eid": "n-6bb7a2db"
+    },
+    {
+      "org": "Rackspace Spot",
+      "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
+      "scale": "Customer count not disclosed",
+      "patterns": [
+        "supply-chain",
+        "key-compromise"
+      ],
+      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
+      "eid": "x-f3649087"
+    },
+    {
+      "org": "Aramid Bridge",
+      "what": "Voi Network reported unauthorized withdrawals from the Aramid bridge and said the Voi blockchain itself was not compromised.",
+      "scale": "About 125M VOI and 70,000 ALGO",
+      "patterns": [
+        "bridge"
+      ],
+      "url": "https://x.com/Voi_Net/status/2124387898757611938",
+      "eid": "x-6fb93117"
+    },
+    {
+      "org": "Samsung Group",
+      "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
+      "scale": "1 TB claimed",
+      "patterns": [
+        "ransomware"
+      ],
+      "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw",
+      "eid": "x-35eeeab2"
+    },
+    {
+      "org": "Sri Lanka Department of Motor Traffic",
+      "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
+      "scale": "Appointments unaffected; data exposure not disclosed",
+      "patterns": [],
+      "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/",
+      "eid": "x-e9f8c567"
+    },
+    {
+      "org": "Chainflip",
+      "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
+      "scale": "About $12M estimated across Ethereum and Bitcoin",
+      "patterns": [
+        "bridge"
+      ],
+      "eid": "x-b163fb32",
+      "url": "https://chainflip.io/return",
+      "update": true,
+      "since": "2026-11-21"
+    },
+    {
+      "org": "Together AI",
+      "what": "Together AI traced the unauthorized download of stored prompt samples to an exposed development credential and added safeguards.",
+      "scale": "Customer count undisclosed",
+      "eid": "x-eb428de0",
+      "patterns": [
+        "ai",
+        "data-exposure",
+        "key-compromise"
+      ],
+      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+      "update": true,
+      "since": "2026-11-21"
+    },
+    {
+      "org": "Cleverbridge",
+      "what": "Cleverbridge confirmed stored payment-card data was copied; customer notices began November 20, and the number affected remains undisclosed.",
+      "scale": "Card numbers and security codes; total unknown",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "n-855a50ef",
+      "url": "https://grow.cleverbridge.com/incident-update",
+      "update": true,
+      "since": "2026-11-04"
+    },
+    {
+      "org": "GL.iNet",
+      "what": "New reporting documented malware on some routers and KVMs; GL.iNet has not disclosed the total number affected.",
+      "scale": "Device count unknown",
+      "patterns": [
+        "edge-device"
+      ],
+      "update": true,
+      "since": "2026-11-20",
+      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
+      "eid": "n-e84afceb"
+    },
+    {
+      "org": "GMI Cloud",
+      "what": "Lava Security reported that an unauthorized party accessed recent request logs; OpenRouter disabled the provider’s endpoints.",
+      "scale": "Customer count unknown",
+      "patterns": [
+        "supply-chain",
+        "data-exposure",
+        "ai"
+      ],
+      "update": true,
+      "since": "2026-10-21",
+      "url": "https://lava.security/blog/ai-inference-canary-research-prompts-exposed",
+      "eid": "x-3ef42975"
+    }
+  ]
 }
