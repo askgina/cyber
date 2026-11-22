@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-22T22:26:10Z",
-  "headline": "Korea Electric Power Corporation confirmed exposure for 650,487 billing users and notified 869,761 procurement users while it verifies that breach’s scope. Guadeloupe University Hospital reported encrypted databases and disruption across three sites, while Fusionist’s bridge incident still has no verified final loss.",
+  "updated": "2026-11-22T23:27:00Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users and notified 869,761 procurement users while it checks the scope of that breach. Guadeloupe University Hospital is rescheduling non-urgent care after finding encrypted databases, while Fusionist has not confirmed a final loss from its bridge incident.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -10,7 +10,7 @@
         "data-exposure"
       ],
       "url": "https://www.ajupress.com/view/20261122184870375",
-      "eid": "n-34316fe7"
+      "eid": "n-1362b164"
     },
     {
       "org": "Guadeloupe University Hospital",
@@ -32,17 +32,6 @@
       ],
       "url": "https://x.com/fusionistio/status/2124586293812461578",
       "eid": "x-1d661531"
-    },
-    {
-      "org": "Rackspace Spot",
-      "what": "Rackspace warned that an intruder logged in with leaked credentials and could access Kubernetes secrets in some customer clusters.",
-      "scale": "Customer count not disclosed",
-      "patterns": [
-        "supply-chain",
-        "key-compromise"
-      ],
-      "url": "https://www.bleepingcomputer.com/news/security/rackspace-spot-breach-let-hackers-access-customer-kubernetes-secrets/",
-      "eid": "x-f3649087"
     },
     {
       "org": "Aramid Bridge",
@@ -109,6 +98,19 @@
       "url": "https://grow.cleverbridge.com/incident-update",
       "update": true,
       "since": "2026-11-04"
+    },
+    {
+      "org": "Rackspace Spot",
+      "what": "Rackspace restored its Spot console and urged affected customers to rotate cluster credentials after an intruder used leaked credentials to access some customer environments.",
+      "scale": "Customer count not disclosed",
+      "patterns": [
+        "supply-chain",
+        "key-compromise"
+      ],
+      "url": "https://www.infobae.com/tecno/2026/11/22/atacantes-entraron-a-la-nube-de-rackspace-con-credenciales-filtradas-y-pudieron-leer-claves-de-clientes/",
+      "eid": "x-f3649087",
+      "update": true,
+      "since": "2026-11-17"
     },
     {
       "org": "GL.iNet",

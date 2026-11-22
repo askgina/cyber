@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-22T22:28:30Z",
+ "generated": "2026-11-22T23:30:30Z",
  "queue": [
   {
    "date": "2026-11-22T12:00:06Z",
    "title": "US ports face cyber attack onslaught as hackers target vital trade routes",
    "source": "Financial Times",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS2pCeHY2Q3JsWjNLdVZPWk1hX053R3BRay1RSlN4WUE3UlpYOEdKU1QtYmNOM2RsbzZoZXlYY20zdnIzbEl3WHRuRV9PaFBac1BxTjB2ZFFmdnFzUk1jNDY4ZmpuZ1lmYzdRMFk0S0hWMG9UeUFKeFA0dHFQbTFyMUIyUHU?oc=5",
-   "n_outlets": 10,
+   "n_outlets": 11,
    "also": [
     "US Ports Face Rising Wave of Cyberattacks",
     "US ports face onslaught of cyber attacks",
@@ -130,16 +130,6 @@
    "n_outlets": 2,
    "also": [
     "To deal with a series of cyber attacks, a specialized police force called “FFF” was launched, and communication history preservation and analysis, etc."
-   ]
-  },
-  {
-   "date": "2026-11-21T02:00:00Z",
-   "title": "One Tech Tip: Supermarket refrigerators got hacked. Make sure your smart home devices are secure",
-   "source": "The Star",
-   "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOR0JsclpxN252VTNabVhFRUZOT1VCVmJGU0t6eTVMMzBhZFhubTg1QlVYdE4ydnI3ZlpfX2xPRi0xaU5PN1RjYWs0N1NvOW9mVWVNXzctamNqYjZ0WlJrZU1WemhjaE10Zm9aUnFJU21iSUs1U1dRQ05HQ0JWTGQyLUgwaWRDa3JLYVltT1NLNzM3OXp3V2c5ZTd4UFRxSXg4WnQxSllfdmswdUhUd1BLOXFENnF3aFFEQUl5dDZmN1VfcU8zR0gxZlFVN01Ib1JDQjJUOFZVYXBKQ24wQnB1cg?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Supermarket refrigerators got hacked. Make sure your smart home devices are secure"
    ]
   },
   {
@@ -343,6 +333,16 @@
    ]
   },
   {
+   "date": "2026-11-22T02:15:14Z",
+   "title": "California sues OpenAI over security risks after ChatGPT cyberattack",
+   "source": "Univision",
+   "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNS1N5ZHJUVXQzSTc2d3BUZVljUVdIakQyNnZkZl9fWVVEMmw1aVRsTWUxV1hCY0J5cnllWW1qeVRyV1M5NXdBbTdLWm1xcEl1WWxvOG9oVlVzU0hjdmpQaU1GV2dnLVEtQ3VTTXJqa0l5cEs1OWpNVDZ0TUtSUFEwOGd5QXp3OU1JWF85SVRTa2ZiUENVTnlLd1pqTk5XVkw0Qkg2VmNFZHo4S2VqWGpHWk5vTVd1U3RJZFo4Z2cyVFZUSFRY?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "California sues OpenAI over AI agent cyberattack"
+   ]
+  },
+  {
    "date": "2026-11-22T05:01:15Z",
    "title": "‘AI doesn't hold the red button’: Inside Israel's GE Vernova cyber defense hub",
    "source": "Ynetnews",
@@ -403,6 +403,16 @@
    ]
   },
   {
+   "date": "2026-11-22T14:36:08Z",
+   "title": "Pivovarov announced an audit of Osipenko’s data leak: “Medical secret”",
+   "source": "StavkiPrognozy.ru",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWEY1VEw3bUI5bUt2TzVnZ1B2TU1hamJtM1dxbHRuZWlMNmVhakZMUE1WZlBiMzE4cS1jS2pONjRISkJ3MHhfM2hlel9md0xVSUNjcFQzZnpjYXZ6N01yV2N2ZC1uUnRqc0dZOHgycnVBd1dpcUZzVVpXUW5FM1NjTFIxNU9uRkUwWTNRQW80OGRDdWxPbVZkZ2E4cFZJeUptNlg5SnJKNmVYNEpkYm50aHkzV2ZqOWM?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Pivovarov about the leak of data about Osipenko’s injury: “It’s strange that documents containing medical secrets were published. We’ll conduct a joint investigation with the RFU, I think.”"
+   ]
+  },
+  {
    "date": "2026-11-22T16:33:32Z",
    "title": "Housewife hacked to death by husband over family feud in Manikganj",
    "source": "The Country Today",
@@ -421,54 +431,6 @@
    "also": [
     "The US demands that Nvidia speed up the investigation into a possible data leak to China"
    ]
-  },
-  {
-   "date": "2026-11-20T22:53:00Z",
-   "title": "This week on \"The Angle\": Chicago Bears stadium negotiations and City Hall's budget drama",
-   "source": "CBS News",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQUjlFWmUzb1ltZWlsTzY1Q3ZJZFA1cEZzencwWXFzTmVjbnFiMHhXNUQwZkdkWkZ6VHlyLWJSNWg4ZjVtSVB1YUktaWo4VnlkSnBIdUlCWDRUMVp2SFlEcEdsNmRKT1BackJ3bEFKcFE3T1ZkTG92OUxoNU12dGlNTTdpYS11Z2RpcUxLQzNWMkhsZ2c3RHJXZnNNbzRVdGRBZl9vMDNpMlFGM2E5TW1CRXAyNmtQci1jbkZHTEoxc0hkZw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T23:00:14Z",
-   "title": "Cyberattacks, AI and tech outages: Experts answer your questions",
-   "source": "Click2Houston",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOLTc0RWt2ODJlZXdjcUphbmMtLUtzREJza3hrckVaYVliX05IbkhNV0czM2NEYlhhY3RpVXEtYzlQVEhCTGhFWnFmelRNdWctb2pwVXJBdjJ4Z3dtcEdOUVNqXzlKT1pwWmZqUnhFMmdBWDJEbUN0S2pCc2JKM2pCQTFwVHNDekVRR1lwV3BsaFJZOEgyMzdqNVpnR0RybHVSN0NVa1A3TkRQVWJObGNQZw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T23:04:47Z",
-   "title": "Federal jury convicts man of starting the deadly 2025 Palisades Fire in Los Angeles",
-   "source": "Click2Houston",
-   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPNGZBRHhIMVQ5ei1aVVItcGdYRFYydVZUc0tnNklfWXZmMHM4OXU1Z3ZzM1RYVTFKTkx5VXptam8zaU83TDRhQkxVRlVoSHY2NnJfc2dKMTQ3QVQ5QXZpOEE4eVMwZ3JBTGZsVWR3WUY5RTY4ekFsUzZCUm9OTXJ2cGVuRkRKVmQ4b3cwSjBad3lmYldEOER4U3NjeXpILWNMZXhud1BvbTdrRnM3cEUtbHJ0LXpjbHNlek1QMExCNFFsYnB3WWg3aGU5QkFUZTBtbVdLbzF3?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T23:15:06Z",
-   "title": "African nations face cybersecurity challenges in expanding digital public infrastructure",
-   "source": "SC Media",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOdkFidVdhcUpNQ2ZOX19XMDlabGsxdlREUVk4Znpxc0t3MzUwSV9LVHlpMXpHVG0zYU9YdmZDOFlMVDFKZnVqRk5FUG85NGFoQ0JWWjhDNjFQc0c0TzJPTDhFWUlWQ3lSUjgyaG0yM0ZGZUJMZURpX2U4anBiU2VXWjRQNjRMTG5nc0Y2emt2bmFQbjBaaEgyb3BMT1JPZ1VGU3Y2Smw0NGxSR2NXaG1fOEhmMVN2bVM2dEE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T23:24:19Z",
-   "title": "Marine Institute conducts mock cyberattack demonstration on boat as security concerns grow around world",
-   "source": "NTV News",
-   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxObWlnT0N6QWwxMmo0VV90dVIxUDh5b3hqUDNqZDcxVzFUZ0xVb2Nvd1ppVmZIcWRzV1pYbWFyRUthRE5tV0tTNG1xMDBTOEhCU1RlWm1TSHdscUFEeHpVa3hHRkVkVFBDRWtFMGc4TVd3Z3hfQVRvTVRad1RjMTE0SHNBczl6LVMxT1hGTy1yTDdVdlROUktqd0o0QXhwdjZFVm9FbzEwSUZzZ09tdVp6RS1yYWhXNGZpd3JoRjFZUi1DUQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-20T23:28:47Z",
-   "title": "PHP 8.6: Things are gonna get a lot more strict around here",
-   "source": "The Register",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPM2M0UEUyS2lzcHFwdWNfZ3RaZEVWOWFYemNrZmRUNUViU2J3YTJKbnlsdWdLai1CRG41RHZYNFNZZFhHOEk3djhvSTl2VWE2eE14Zi13M1dDTVBOZzBRVjUySTFLbEhJS2VwQ2p2Z041eVJqa05WOTNqVURBUXRMcDdJcjE4MGJna2MycmdkMW9qRi0xT2J0X0hRTkpOdXI5YmtiR3B4Y3FlQUprUEZiYQ?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-20T23:48:28Z",
@@ -747,6 +709,14 @@
    "title": "Verstappen escapes discipline in Las Vegas practice after run-ins with Russell and Colapinto",
    "source": "Click2Houston",
    "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNHUza3FrU0xuY2xnaU93Nk1jbUR2ZXpoaUM1YW03c0tLMmhQWi1vVXllMEs0RjJLbFBSSFRzaVRiczhPVEdoRmE4OElWLThfcE4yX0FzdXZyUjZ6aElncDBqdHQ4UzdPMjlBZFA4WjVmUVFJOFZsaTdKNFY5RzVCcVlCZXZEcU82bXgtT2VpaFB5X1k4b3AzekdsX180UkhKQ2JIRDZfY3JTbXQxMFRFclNYVlhKUWlLeVE2SzhVbWF4VUU1LWZzdVdSMGdaRGIwM3hqdVpOcGZEVDladFdielFB?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T04:34:49Z",
+   "title": "CDP Senegal Q3 2026: facial recognition rejected",
+   "source": "socialnetlink.org",
+   "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdTJRZkZxc0JnVENYaktRTlk3Y2tGeXRmT0VzNjd0WUdPS0dkYTZ4OW8xWlVmOGNSYWU1ZU9RZzJXVjFVTUoxc1QxZDdWb2FpUDg4aWYzRWFGeHZ5MDBpM3g4V3NmdGsyOHRkM3pvaEhST1AtdWhWMWxyZWRlQXJFOXlhUHpkdExzbTNhUHVKRkdKUDBqWUZpOUFmY3NMOU1mVlJyOA?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1691,6 +1661,38 @@
    "title": "Sharing the latest trends and countermeasures against cyber attacks. Recruiting sponsors for “Security × Engineering Conference” is now open!",
    "source": "Excite エキサイト",
    "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE93ZTVFcjdFLUxpb3BOb0FoQUhrbEt5Qm5YNkJoNU9FNjlUSjg5QXAzMVFZZGNMOHhnRVFScXRXaXdCSU1BeTJqRHBJZUl2NkVKUTBCTXVGWGM3WmpBVjlIVF9NanNBRzA1XzRUdnJ3UzNSVkdr?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T19:16:16Z",
+   "title": "2 hurt during chaotic firetruck-involved crash in Sheepshead Bay",
+   "source": "cedarnews.net",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPQ3RfSUp6YTNPR1BRUkhUci1GX0R3ckpSSU5KVDVMX2xCVk1QUUFiX0pqSWpOQ2NwbU9oNGtySnR1VUVyaWJUbnE0emFUYTE0TDQxZXQzelZGU1hvWFZ3SlEtbHZwWFNlN2c2RFd6SU5hcGl0WGZvOUhmLTJoY3RjQUNEUzhWSUY3V1FaVVB4MVQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T19:17:31Z",
+   "title": "How can AIADMK with 41 MLAs topple TVK govt?",
+   "source": "The Hans India",
+   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPMkE1ZzY0RzlUcnFjWkxSeWtzM0tPSlV5d0ZGd3BLMEtSOGk0bUZjcjF1NUh2aU4yTnZRM1MzRk4tRHVkc1ZOT1JtdXFLdkc2M0RnYjJQTmVVb1dmY0VlOENyNklmZDFGc2d6MllkUmJCOWZWV2NhemxBX2dudU00Q3VSZHlHcHN2TWlObElkdGlzNjFscXlxTWk3VUlVSGpDOTNIZ2tTd9IBpwFBVV95cUxPMkE1ZzY0RzlUcnFjWkxSeWtzM0tPSlV5d0ZGd3BLMEtSOGk0bUZjcjF1NUh2aU4yTnZRM1MzRk4tRHVkc1ZOT1JtdXFLdkc2M0RnYjJQTmVVb1dmY0VlOENyNklmZDFGc2d6MllkUmJCOWZWV2NhemxBX2dudU00Q3VSZHlHcHN2TWlObElkdGlzNjFscXlxTWk3VUlVSGpDOTNIZ2tTdw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T19:32:34Z",
+   "title": "Nantou Hackathon finals announced: Wild rice bamboo shoot shell electronic business card wins the gold medal in the college category",
+   "source": "moonvoke.com",
+   "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1tMzJqTGVHc3pVcFFHZ0paRlV4YWpKbUFqeHFkMnRiZkJNUklVVUhGcmNVcEZOdHpGSE13djN3ZGtIdmpYQTZSb21DbUdFREFvS19UWU0zamItbldqRmc?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T19:49:34Z",
+   "title": "UK patches commercial refrigerator vulnerabilities to prevent hacker attacks",
+   "source": "metrohk.com.hk",
+   "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxPWXlQeVJIejMwU3BHbm1Ra0tINEtuMlJibm1tM0RxN3JHZ1U1MmpSSVZDcXhObzlTb0Jwa1BlQTJnbnROd0VhZE1mc0VLcGtIa3Y1SDlxZzRCSE5ocnNPVFBoOWRhcHhIV2o3ZEtkdjZuX0VDRngxanA2UDVvcWtiLUg2MGw2NDE5Tld3STlWM0d1SmpyWUlKVFNYTGJ6SjB3OWVhMW10aW9wT3dYemFheENqc1BhU19yWXFHNm1GZTFQOGk4aTdtRzlwczZuU0tEQ01YQU82SUhNd2ZGbDgySUpQNHBMU0lDU3Q5ZVlvOVdBcDd4Y0ZDaHk5SmJqS2gzaUdlUWQyZjctcW5wdXlZVzNR?oc=5",
    "n_outlets": 1,
    "also": []
   }
