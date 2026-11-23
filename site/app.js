@@ -545,7 +545,7 @@
       if (h <= day && !item?.update) rows.push(regRow(r));
       else if (hoursAgo(r.latest) <= day || item?.update) {
         const row = regRow(r);
-        ups.push({ ...row, eid: item?.eid || row.eid, t: r.latest, since: item?.since || r.event_date || row.since, what: item?.update ? item.what : ((r.updates || []).slice(-1)[0] || {}).text || (r.stories[0] || {}).title || r.title });
+        ups.push({ ...row, eid: item?.eid || row.eid, t: r.latest, since: item?.update && item.since === null ? null : item?.since || r.event_date || row.since, what: item?.update ? item.what : ((r.updates || []).slice(-1)[0] || {}).text || (r.stories[0] || {}).title || r.title });
         if (item?.eid) seen.add(item.eid);
       }
       else return;

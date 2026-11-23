@@ -419,7 +419,9 @@ if brief:
         linked_date = eid_date.get(i.get("eid"))
         d0 = i.get("since") or linked_date
         if d0:
-            i["since"] = d0[:10]
+            # An explicit null marks an incident whose exact start day is unknown.
+            if "since" not in i or i["since"] is not None:
+                i["since"] = d0[:10]
             i["update"] = bool(i.get("update")) or any(
                 days_ago(parse_iso(d if len(d) > 10 else d + "T23:59:59Z")) > 3
                 for d in (d0, linked_date) if d

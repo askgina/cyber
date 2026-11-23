@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T12:29:02Z",
-  "headline": "LaLiga confirmed theft of fan data, while Samsung Securities reported a breach affecting 8,241 customers. The European Commission confirmed that its October attack exposed EU Academy users’ names and email addresses.",
+  "updated": "2026-11-23T13:33:26Z",
+  "headline": "LaLiga confirmed theft of fan data, and a cyberattack disrupted three sites at Guadeloupe University Hospital. In separate follow-ups, the European Commission confirmed exposure of EU Academy contact details and WazirX notified users about the MoEngage breach.",
   "incidents": [
     {
       "org": "LaLiga",
@@ -34,16 +34,6 @@
       "eid": "c-31c40b98"
     },
     {
-      "org": "Samsung Securities",
-      "what": "The brokerage confirmed that an intrusion into its customer feedback system exposed personal information, including some account and driver’s license numbers.",
-      "scale": "8,241 people affected",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "n-9abe542a",
-      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858523"
-    },
-    {
       "org": "European Commission",
       "what": "The Commission confirmed EU Academy users’ names and email addresses leaked in the October intrusion, and disabled public access to the platform.",
       "scale": "Affected count not disclosed",
@@ -69,6 +59,40 @@
       "since": "2026-11-20"
     },
     {
+      "org": "Bell MTS",
+      "what": "Bell MTS confirmed a cyberattack at its email provider caused lockouts and password resets. It said some accounts may have been accessed.",
+      "scale": "Affected count not disclosed",
+      "patterns": [
+        "supply-chain",
+        "outage"
+      ],
+      "url": "https://www.cbc.ca/news/canada/manitoba/cyberattack-compromised-customer-information-bell-mts-9.7432132",
+      "eid": "x-c866ecc7"
+    },
+    {
+      "org": "MoEngage / ZebPay / WazirX",
+      "what": "WazirX told users some of their contact and device data was exposed at MoEngage in late October. Both exchanges say their systems and funds were unaffected.",
+      "scale": "Individual user count not disclosed",
+      "patterns": [
+        "supply-chain",
+        "data-exposure"
+      ],
+      "url": "https://inc42.com/buzz/now-moengage-suffers-cybersecurity-attack-due-to-compromised-third-party-vendor/",
+      "eid": "x-fac4dc83",
+      "update": true,
+      "since": null
+    },
+    {
+      "org": "Next plc",
+      "what": "Next said an intrusion at an online supplier exposed limited company data but found no evidence that its own systems or customer personal data were affected.",
+      "scale": "No evidence of customer data exposure",
+      "patterns": [
+        "supply-chain"
+      ],
+      "url": "https://www.tradingview.com/news/reuters.com,2026-11-23:newsml_RSW2789Ea:0-reg-next-plc-third-party-data-incident/",
+      "eid": "n-0d824cbe"
+    },
+    {
       "org": "Snowys Outdoors",
       "what": "Snowys removed malicious code that may have captured customer details and passwords entered on its website.",
       "scale": "Affected count unknown",
@@ -92,45 +116,22 @@
       "update": true
     },
     {
-      "org": "Next plc",
-      "what": "Next said an intrusion at an online supplier exposed limited company data but found no evidence that its own systems or customer personal data were affected.",
-      "scale": "No evidence of customer data exposure",
-      "patterns": [
-        "supply-chain"
-      ],
-      "url": "https://www.tradingview.com/news/reuters.com,2026-11-23:newsml_RSW2789Ea:0-reg-next-plc-third-party-data-incident/",
-      "eid": "n-0d824cbe",
-      "since": "2026-11-23",
-      "update": false
-    },
-    {
-      "org": "Peninsula Energy",
-      "what": "Peninsula Energy said an incident at the Lance uranium project would temporarily affect operations and that its administrative systems were not breached.",
-      "scale": "Operational impact not quantified",
-      "patterns": [
-        "outage"
-      ],
-      "url": "https://weblink-asx-announcements.old-mountain-2586.workers.dev/pdf/PEN/61356350.pdf",
-      "eid": "x-4f4fae5c",
-      "since": "2026-11-20"
-    },
-    {
-      "org": "Suzlon Energy",
-      "what": "Suzlon confirmed a cyber incident and notified CERT-In, without confirming Blackout’s claim or reporting impact on critical applications.",
-      "scale": "Scope not disclosed",
-      "patterns": [],
-      "url": "https://economictimes.indiatimes.com/industry/renewables/suzlon-energy-hit-by-cyber-incident-company-says-critical-applications-remain-unaffected/articleshow/136095671.cms",
-      "eid": "n-59cf83f3"
-    },
-    {
-      "org": "HD Hyundai Robotics",
-      "what": "HD Hyundai Robotics said an intruder accessed a website server holding subscriber names, usernames, passwords described as encrypted, and contact details.",
-      "scale": "Subscriber count unknown",
+      "org": "Jeongdok Public Library",
+      "what": "The Seoul education office notified participants that their names and mobile numbers were exposed in a library website survey.",
+      "scale": "636 people",
       "patterns": [
         "data-exposure"
       ],
-      "url": "https://hd-hyundairobotics.com/en/main",
-      "eid": "n-d501ed5f"
+      "url": "https://www.kmib.co.kr/article/20261123501457",
+      "eid": "n-5fc171bf"
+    },
+    {
+      "org": "Aurora Cannabis",
+      "what": "Ransomware.live indexed an Osiris claim. The company has not confirmed an intrusion or data theft in the sources reviewed.",
+      "scale": "Unverified claim",
+      "patterns": [],
+      "url": "https://ransomware.live/id/QXVyb3JhIENhbm5hYmlzQG9zaXJpcw",
+      "eid": null
     }
   ]
 }
