@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T11:17:18Z",
+ "generated": "2026-11-23T11:33:26Z",
  "queue": [
   {
    "date": "2026-11-22T12:00:06Z",
@@ -174,6 +174,16 @@
    "n_outlets": 2,
    "also": [
     "Hackers Flooded US Ports with Cyber Attacks! Millions of Attacks Foiled in Los Angeles"
+   ]
+  },
+  {
+   "date": "2026-11-21T18:12:14Z",
+   "title": "Youth hacked to death in house at Paravai",
+   "source": "The Hindu",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNTl1NTlxR2ZxeHI2b2ZqdnVHT3VSb0hvRXhaSm1KRmR1VFA0aTZkdmwxOHc1WmRKRDUwWXlYQzZFY1d6TXp0TVRZN25kckI1eVBkdnhQak9ac2ZqOWl2UjA3VUNxWDJMT0xlUzZpTlQyYkw1cURqTHpoTnNnUG82QU9IcXdYWWx3Q2J4SnBKM3NXTzhaUDZsaV9xSGlhRDRkRkNWeFVYMndlQdIBsAFBVV95cUxOem5qSDYxQWd2VU1rZjVNRHl6cDFHNGFZMzFMWEo5ZV9ZS1d4MzVWdmk0bThuN1VxTEw3Z1FJOGE0a3ZRVGxZcjZCcGlBN0ZqeWVrMDFTUUhFUUNJUm1mNG9WNDJkNlE0bUZEcW5BbzRpSDlET0diOFpIWjNKbDZDcWxyVThsbUY0Yk1GU1FMOGN5NlZWZW9OZGt6TXlfRkxHX1NyU08tejZmVlktbVFjYg?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Youth hacked in Hatirjheel"
    ]
   },
   {
@@ -417,16 +427,6 @@
    ]
   },
   {
-   "date": "2026-11-22T20:00:02Z",
-   "title": "UK Supermarkets Secure Refrigeration Systems After Cyberattacks Across Europe",
-   "source": "LinkedIn",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPRW0tWnRway0xS255OUJQeE9CWWpGVjcwWTYxOU82aUFweXF6bTN2djlDLVpYMG9RekhYUGc3UERfY0o5ekp2LWdqWDduMnY4Tm14X1E2MnQ4cG5TbnktN2ZkUnQyczRHODhlX3BKMnJyelZGOHRDd3ZtQVRkSVRUNFJVX3UtdzNnRm13eGdGWUE?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "British supermarkets secure thousands of refrigeration systems following cyberattacks on us"
-   ]
-  },
-  {
    "date": "2026-11-23T01:35:00Z",
    "title": "Texas' Biggest Oil Port Defends Itself Against Cyberattacks",
    "source": "NewsRadio 740 KTRH",
@@ -507,26 +507,6 @@
    ]
   },
   {
-   "date": "2026-11-23T09:05:57Z",
-   "title": "La Liga hit by cyberattack exposing data from clubs and fans",
-   "source": "playmakerstats.com",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxONXFGMWFxQ1c0SzBmcGdoUVpOX29UMnR6TkJIeVJ1YWk2Q0VWbm81NWVQdXJQZ2JNdS1reWRjTk1VSzhUUW0zRmNNUlIxd2ZqeWVGelBkQ3FEUEFqbGthTjNieHQ0VXNRNmlESTB0UnZTLVZnYkdUckhUVlhqYUw3TW05NjBvNTJyajBJU2xNMG5wNlZvYU1SWm9ZeDE4aHNQSHMzTE84cw?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "La Liga hit by cyberattack exposing data from clubs and fans"
-   ]
-  },
-  {
-   "date": "2026-11-23T09:23:04Z",
-   "title": "Aussie camping retailer hit by cyber attack",
-   "source": "The Australian",
-   "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxNZzdiSzZTV2t0LXBWcGgtbjZDamladl8yZ01CRy1VeVVjN1c5LUFVZFFYYUR2M2xXYlJ1Z2hqZ0RTMXNtbHl3Z3JXTjNaZkJEeEtPWTJJdUdqekhSb2xvb0Q2XzN3eWZYaUQ5MDJVemZMREVqLUdOM0N1ZjFkYmxjNlZlUHFfVlFTNVpXVDE3cGRHS2Q3VEQ3LW1PREs5WjdPOHV0TEp4SEpSMTBoRHVOblBlMEZpclc1MkVHTnkzQno5STNOQS16Tm42STc5N0R2ekM5Sm43QlpheDBGR1ZldDVpTTJna1pCUjNNdGl1VDlWUUx4Y0xnZWpXX0ZJdk5xMERqdzZtcUFYMkZfWUtsRGowT1NaLWZLS0UtcQ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Aussie camping retailer hit by cyber attack"
-   ]
-  },
-  {
    "date": "2026-11-23T09:30:20Z",
    "title": "How Indian Companies Can Reduce Security Risks in AI-Powered Applications",
    "source": "Nasscom",
@@ -545,52 +525,6 @@
    "also": [
     "Uzbekistan Tax Committee denies data leak from its systems"
    ]
-  },
-  {
-   "date": "2026-11-23T09:59:11Z",
-   "title": "Un ciberataque en una plataforma de LaLiga compromete datos personales de los aficionados y de algunos clubes",
-   "source": "COPE",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOa2lDUElXcTBTa0xkRVczUU5TQjBJai15ZnZVS0hNVGtKSjgyUmRNQmQtUVJQSENQOHhENFlia2pmVW5hUW9lcXI5TFpoN2RDQU5IOS1YTHZGbl95TEpEVU44N3NNd0FUOWJjMnE4dDlwcGJoNEV6bFYyMmdNeXhGX2llaG5jRHJRQmIyX0pWQ0VvT3pZR2dNNG83cVQwbkplMC1EbE9xMW5QbXVvekk4RFJheXF4bHNJaG5vZGFEV2Z1MVEzd2VRSjZVZldsLXBKRDJfTUY1em5pTFlROG5CNVNpdWJxZThu0gHuAUFVX3lxTE5XVG8xX0paREtOMU1CUGxpZDRlXzFxekNPU2RIVmpkWlhfV1hkVGVoN3RDbDB1QWtySnNHMXBZME44SGc4U1NNb29SZEEyTFpWVF9YTFFTWVhQUzd2cUxjWEJaZk05NjZ5REJvR2ZOZmZ0M3ZWMXZxZzljdWYzSlRKdmhFYXBHQmtXOXd1YUYtUUZUN1dQNmF3aDEwSWRFaWR1MmJlaWRVTWxDaTdVUERJMGhSdzRBMVRuTW5WQW43SzVkdHhlb2RSVC0wSTYyTGl5M0h0TGtVdzY2a2x1emhjTXFQZ3FYMnVoQm1kV0E?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "LaLiga sufre un ciberataque que compromete los datos personales de sus aficionados"
-   ]
-  },
-  {
-   "date": "2026-11-23T10:37:30Z",
-   "title": "Grens Police Zone warns of cyberattack on the company behind Bongo gift vouchers: customer data may have been leaked",
-   "source": "AD.nl",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPeTNoY3dtTldNNGk0Y2JPMHN0b29nVmw4dktLSmhqeGRzaXlDS3hxbGNhV2w5QTBxaVhIMFVJNzZ0NEItZ3N2ZGdmMkxqQTdYRFdwR1N2WUdCeGQzMl9XTGQ2VjJGZVdCSGRLemhoOXZmZlAxdU5hVTdNYVpqOGRxS2lmOUNFaHhFNTJkTHowU3RJS3hFZ1NZcUxHZ0JTdUcyZlRvRE1veEJsaVZRUS1id2VJbHNQZTJCTDZKbGpBYkN2UHp3emw1dllGQ0M2TGxfdGJfdzdFWjRmQjRrYmJEQ1ZzYjhGSHM?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Grens Police Zone warns of cyberattack on the company behind Bongo gift vouchers: customer data may have been leaked"
-   ]
-  },
-  {
-   "date": "2026-11-23T11:00:14Z",
-   "title": "LaLiga española confirma la extracción de datos personales tras un ciberataque",
-   "source": "Yahoo",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOaFpVRXBsLThqQmIwemFLWEV1S0pWaWkzdTgwa2pyTFNUN2NJaE5PaXZ1UFVkSzBzMUprT1UyMjFjT1h2N3BPemRMbmJnWEdweDZHeXpDTjZKazE3UWU3d1pHR281OHRlUXc3ajVrX1V0eUYxV3BoRll0VDZKdDhYMkNhOTZNWWl4QlJIRUxwNWVfdDFzbmVYbDBlcUxyU09PcUg0SEpxTzZHLURZ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "LaLiga confirma el robo de datos personales de aficionados tras un ciberataque"
-   ]
-  },
-  {
-   "date": "2026-11-21T11:25:00Z",
-   "title": "Old systems and rushed patching, not a cyberattack, behind US outages, experts say",
-   "source": "Yahoo",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOOGVyaGtPbHltdnYwU01nNDRzMWdaZkpuS1BBcXJnZzRyX1h3Vi1HWkxpbjRpS1ZFTUl1SzczQkQtMlQ1dlVER1ROc1ZJS3dLb2VNVGY2ZlNmb1Zob2Y1R0h6cGJ6SE43bl9yZUhvR0RJWEE0VWZHalJjLTdlMHNvU3ZuS0RWLVc4NnJfQXBn?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T11:28:59Z",
-   "title": "Phishing Tops Cyber Incidents Across Asia Pacific Businesses",
-   "source": "Wisevoter",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOYWt4ekZld2NHYy15cDNBT0wwVlRaN25nbnZEa0dlcTFyV1V3dEdzazlOTXhacUY2NlZTemJLemVrUW9kWUFRSHBtVTJydUoyR1dBVWNWeFNsSnhZeVNCdGVEci1yaUJmeW5iRnBzM3dGTGZ3ZFJxbEZlX0tCRjl5eDdHbWJrRnlfMVE?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-21T11:47:00Z",
@@ -1057,14 +991,6 @@
    "also": []
   },
   {
-   "date": "2026-11-21T17:58:42Z",
-   "title": "Police cleared in the data breach - have received text messages",
-   "source": "Aftonbladet",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOMXN6ci16OUZ2UHNiY1k3ZE5CeEJSVTFWRWhlSVFHU0wxaHVPNGxvd2RPaDVsZ0VHc2pibUJkR1ZQdzhEUGxSc1hlaGl4VkE0NmVEZ3JSUEt4NFozb2xSUzZHMktObDdRXzNvc2h6eDlYNXlsWmRIZm5LNmd2enhfOG1sX0FyNHRfVEY0TnZiVGtXZmZaVGdjaTBEdS0?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-21T18:01:56Z",
    "title": "In Spain, a local resident who called to “hunt” Ukrainians and carry out cyber attacks on Europe was released on bail",
    "source": "Русская служба The Moscow Times",
@@ -1085,14 +1011,6 @@
    "title": "BUSINESS COLUMN: The Great Internet Blowup of 2026: \"We have no evidence of a cyber attack\"",
    "source": "Norman Transcript",
    "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxPVG15akNfQnBrVkRRdXNNbVR3YXZNMlFlX2J2ZXctRHBrT0dpSjZOSWkzcHd0N2tZRFVNMDZkTzdCVnU1NktaSHBnWHhFTGxUdUI5bHl5NTU4aFNxNzJuMXlVN290ZV9YSHNlZ1lFVE5IV0w0NlFIRkhvOXJwYTBDajJVSVJzSU82enBEb01fa3JzNXdYZ00yNGIzbHdvc0JRQVJDWm5hMXBXSUNlRE43azdzOEx1SEVlLUpfc3FVZFdmc0lTajR1TGhuUlhuSmJNODNmeHoxVUlSRkNnemJQVjJuYzdsT3MwQ1J1SUtCdmdhdlFqby1GMEN0cVl0VWxkVENR?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T18:12:14Z",
-   "title": "Youth hacked to death in house at Paravai",
-   "source": "The Hindu",
-   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNTl1NTlxR2ZxeHI2b2ZqdnVHT3VSb0hvRXhaSm1KRmR1VFA0aTZkdmwxOHc1WmRKRDUwWXlYQzZFY1d6TXp0TVRZN25kckI1eVBkdnhQak9ac2ZqOWl2UjA3VUNxWDJMT0xlUzZpTlQyYkw1cURqTHpoTnNnUG82QU9IcXdYWWx3Q2J4SnBKM3NXTzhaUDZsaV9xSGlhRDRkRkNWeFVYMndlQdIBsAFBVV95cUxOem5qSDYxQWd2VU1rZjVNRHl6cDFHNGFZMzFMWEo5ZV9ZS1d4MzVWdmk0bThuN1VxTEw3Z1FJOGE0a3ZRVGxZcjZCcGlBN0ZqeWVrMDFTUUhFUUNJUm1mNG9WNDJkNlE0bUZEcW5BbzRpSDlET0diOFpIWjNKbDZDcWxyVThsbUY0Yk1GU1FMOGN5NlZWZW9OZGt6TXlfRkxHX1NyU08tejZmVlktbVFjYg?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1145,14 +1063,6 @@
    "also": []
   },
   {
-   "date": "2026-11-21T19:12:32Z",
-   "title": "Rysk cyberattack mot Norge",
-   "source": "TV4 Nyheterna",
-   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9taXA1OXBlYXVJaXFXajVIUWpZMmtXWHllNnBXY2JzTU5YUzdScmZkOFNjalVYVzQtTWNXeFc3V2pLZms0U3lHczBTSWV0MmJOY1I2d3NTaFFXOHFVSXZvbWhEQmk5N1Ewb3oyaWs2UmE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-21T19:16:16Z",
    "title": "2 hurt during chaotic firetruck-involved crash in Sheepshead Bay",
    "source": "cedarnews.net",
@@ -1197,6 +1107,14 @@
    "title": "GMO was also a victim of cyber attacks: 10 tips to learn about AI abuse and countermeasures",
    "source": "日本経済新聞",
    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNQUlQWDBMRG9vNmhYOXBIRUU4Vzl0MFo3V2Z0THEzNnhYaFlyZmUyQjRFWFA3OXZBTVdKSFJKQ1hTeWpFSDY4ZkcwUW5QSE13MHFfWmtWcGdIN24xMEMwUlJtOHJSUVFNMTVsa3lmS3JqbFhWUnlUOXdnblF1b2ZicDd1b0U5Nk43SktqUkNNU2c0Um1wdWhPUFVfY1lKZ2xSM1Z3QzZOSWp6eXhtbkc2ZUlR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T20:40:57Z",
+   "title": "FRUITS ZIPPER/Shinzai Suzuka's Official",
+   "source": "山陽新聞",
+   "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE9xaFZlYXo5Tkxza3VsUmtLMUtLT1RTLVNCaDlJUDcxbVBmTlBhSFBNMldCMWxhWnpKbjZRMFRfR2FQdlBpNzJXeGZabUphT3hEbGRsc2hHQjhnZjRY?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1369,14 +1287,6 @@
    "also": []
   },
   {
-   "date": "2026-11-22T00:36:40Z",
-   "title": "Drivers, service providers and visitors entering the public pier in Santos are subject to inspection at 100% of the entrances and 2 guards per gate: after the hacker attack, APS suspended new accreditations and writes down each entry by hand",
-   "source": "Naval Porto Estaleiro",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzhUc3pBZUpISHBGSVNhcFBiSDZESjBzdEZoWUdCUmE1bml4YlhZUXp2SFZobHE1eGZIZUFRSDRrQ1VxTnRtTUlES2RFNVFYcU5UWm5aQ01LcmpfV3E1RHRsLUpYUmlPRFF2M0E1MHpleU1ib21EVk05VERpOUpQZVRkcEJFTEZGZTBSRVZfZjlDUmpXZTEzQm13bmxiOVU?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-22T01:02:00Z",
    "title": "USA: Donald Trump hopes for findings after hacker attack on FBI",
    "source": "Spiegel",
@@ -1397,14 +1307,6 @@
    "title": "Trump Reacts to Reports That FBI’s Records System Was Hacked",
    "source": "NTD News",
    "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNG9XeUJEbm1ibnViMkk4TjVVa2FkYnVPR0owbmVFOXlBV0h2US04S3MyYnlPUENrUU8teXpTVmE2cDBMU0VjZGplcFJSTE9kSklCYlk1MHJoSGhLZ2QxcXp2ZTFvMHRaT0FOdFNjZXhBNHQyQWo1Q1ZfQndLemVlUUwxQnRycHBSbzJlU2tLVkUzODNkY0FZ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T01:50:40Z",
-   "title": "Chevron Sued Over Claimed Employee Data Breach",
-   "source": "openclassactions.com",
-   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOU1NBNk5RY1EybGNPLThXZkFUbDc5RGpUN19sRE4wWHBDdHZ4M0RQY3lNWGxwdHdGN1VSZnJqcGNOb044OHZETnplXzlaem5nalFhY0cycEM5OEtTYXBmenYtSTFKblJqdzRMbEtwcS1JRGhlNEJadmZydm9hdTRybEU3bnBxVzlSYVYyaTZRQy1HY1lBZnlibnl4dTI?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1585,14 +1487,6 @@
    "also": []
   },
   {
-   "date": "2026-11-22T04:04:00Z",
-   "title": "Even the information entrusted to me for retirement was leaked... Small business safety net shakes",
-   "source": "대전일보",
-   "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9YY1ozUUJoTVFSYWRjODdmVFRUUUpkYnVJOEFvcjVXb25nNFJJRmsyR25NbzlwbU5pZFRrVjhwXy1XWUxwUjZGR0NlME5yM3Nnb1lEcUpOVkRpLTc5VVRjVXVlblVMc2FOdjlsbl8yY9IBc0FVX3lxTFB2V1laT3RDd1F5Znk2RDlyRlI1N0tzSGRUUEJGTFR0d1Nhb0V4YW1YUVBhcEFlYjB6cTU1MmNGeDJILVlNN2pfQy1sb0pESVRiWDN3cVZpLUpGUUxmNnZmS0hmZzlnajJUaWtPWHNac2NmQkE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-22T04:13:49Z",
    "title": "Russian Ransomware Attacker Extradited to US From Netherlands, Tornado Cash Dev Still Isolated",
    "source": "CoinMarketCap",
@@ -1725,6 +1619,102 @@
    "title": "Cyber attack evacuation on airport tower",
    "source": "AirportHaber",
    "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQWUt3V2k1dGQzbjBGUGNGaEtnODRZci0wemZvejd1a3pMWGFIX2RjNGV1bDVJMUo2R0lpZ0VEV0xUTnJFVU5yY1QxR2E2RnB6bEZfQzQyXzFGMUZxVmJsZ1F4OFBrbE5hMlE1Q0tVTzh4aDE1QmdFd2dWZzU2bXZpY0plQUdJX3V6UzVtc01SZENaeXh4Ny1ZOENPSjNYMWM?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T06:07:05Z",
+   "title": "Police arrest 15 AL, associate body members across Netrokona",
+   "source": "The Daily Star",
+   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNYlpxaVdCWWhQSEZ3UlhibFNJYzU4R2lyY1dYeHBpZ09lc0JvOEpuVXJKMUduMmdoanQxMHBMSlhPOWdvLWtiQW9Xdk9YSk9rTGZMUGwzbnNVYzZIVEZWMVU3ZW1DMFpBaHFHS2p3M3lQbjRiMVpuSWV1UWtuVWQ3TC1paThBb2VlNlRuZzh3bm1xQVFsTTg3cTVNUkxkUkF2eHRmaW9wcGhZQUd1QVVUTndPN3ZNQQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T06:07:11Z",
+   "title": "Gladbach 0-1 Dortmund (Nov 21, 2026) player stats",
+   "source": "ESPN.nl",
+   "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE82SFBZZ2RYb0lfb3hPNXBGQ3JpdnhNWlhJbkVyUDZJUnhYN25CVENfRktIVE9pdUEyREtuR0xMMVUwbUpBbHd1bGdJMnEtOG94Vk1Pa1R5NE1yZnA0c3RoU09EWWtPZTJrNHRDRi1pa2VQVkdXSk5TVENwSQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T06:16:19Z",
+   "title": "Paraná coach Tcheco restrained at Copa Paraná final",
+   "source": "KarloBag.eu",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPcnFFa2daaE5pWWtJbFpmNzYtcllVQk1TMVVoNjNMazlLZGRSYzBfakZMN2xaUmpFbnBUX0lHTGVoNmZqdVVPOHVVX2lTUWZMQzM5ZXc0M3hTZTg4UVY3UXBJdElHbG1XaXJlZnVVTFQtNkJMdTYyTVBPd1Y4N0dBZk55dTBDYjlwOXNkTjVmZWFWdk5NTXpFR1VmWFJVazVyV1VKODhHTFZoYndwUVBZUkpWUzZ1T0E4?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T06:37:33Z",
+   "title": "Ransomware Payments in Palestine: A 2026 Guide for Business Leaders",
+   "source": "Global Advisory Experts",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZGdKaHJtNkRfS0MxdWFLejhxYlBpbGhLNnBQakxxeTZNelN2WTB6cktQSG43TlFTanlIMVZKOE4xRVMwbWZLSFdVMnp6bE1PZHlEc3RGdldqcTczZHQ3Rk5qcEI0R0hjaEp5LWR2SWVseW12d2JvQ1FBT2tJOGV4ZnJSd2w2OFpxTUZZOXNn?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:00:00Z",
+   "title": "Is Australia leading the way for home battery success? 'What the Netherlands does is only half of the solution'",
+   "source": "AD.nl",
+   "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZ0pzb3hrbG5Xd3JJZG1zMUczQXhRTXg5MVM5UDZ6VklhWmYwS0l1b1NmNHNJQ3JNWXVsUDNVODZlQlY2aUhrMjM2VFU2c1JKWUx4dTVnVllMc1NSVVo5VzlKdjBXMVAzZUROa01RenhMdjh5UUFWdXVqd1ZVcUlTaWlxME9QcmdWdlNxUVlEeTBONDdhdzA4ZWRoUnpUN2xBekhYZURCTGV4RG5GZFludTg5dUVzZnNDczFaWU53MTNRVFQ5VDN3dW9rQmJmend4?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:00:30Z",
+   "title": "Reimerswaal wants to continue helping the poor, even though she does not know how many there are",
+   "source": "AD.nl",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOZ2hBaWhocy1yTWJaWmlqOWg2T2xqQ1R5UjNEYkFZdG5KSjN3NmxnZXFEN2RLdHhvb2w1TkpnSTdyOWlGaV81RGtDTFpHbW9XWjlnRk01X0hUM2ZDa3U2RkN0TDZLZGVWOWpPQTBlN2tydDhjLWh5aElDOXB5dnBMYmJxWTNxZ19kUU5mM25EQUFUZVlISEtPRUs4ajNiVjNEQ0xZTFBPdnh6WnprajZkYUFR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:13:37Z",
+   "title": "‘Tomorrow, they might succeed’: Israel’s cyber chief on the war nobody can afford to lose - feature",
+   "source": "The Jerusalem Post",
+   "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5SaXB0enptQ2Q4bUZxbE5LVy1YMENWQmdQd3VZYkVlZW4xVDFnLWk2QTRScW9GNXV0WW8ya3BOSnRXR2YwLUZEdlJZOXJqdktwelQ1RDktQlNoYmlnX1ZDaW1Ybw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:28:15Z",
+   "title": "Cyber Attack and Outage Concern Triggered Hoarding in the USA: Emergency Expenditures Increased by 400 Percent",
+   "source": "Para Analiz",
+   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNOENnOTZHUGl2cUFKS1p2MUVuZ0xXU3QtS282a2tuUGRJMFNJRklYdWtiZkxXMUdQQUxqSXlvb04xcl9wR0pZdkF6SnhaRlliYXNaTmxGYnR6UERILTk3eG1RMEV6cjRuWXduUkJWZWdRSkZYSlplSWR5NTVqY3hSOV9GU29VeHpjWjVWRXpiZmNvUGFPNUpkVk9MZHlGYlBVZ0NfbUJUV2drUkJ2d2pOWlRMSHVyYk0?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:30:00Z",
+   "title": "In the neutral house of Reijer Jan and Margriet, there is no indication of club love until you open the cellar door",
+   "source": "AD.nl",
+   "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUV9mWUxEdDR5NzIyME1fSk1oM1JvRU1za0VWSEtjZFZjeURER1E2aDJySjRXUUUtTzJFY3RNeGtWNHVOYVN2RWNnOU1qQzVXUjVvUHJTVjlTSGh6Rk4xNjdORmhZd1VodVhjRlBxbTJTTjkyVWxKYlFuVDFCVW1lS2g3SHdqQXRQY29HV0xWdWZuR3g1Yy14Y0E3dVlic04xcmVjelI4Q3JESHRpQ3dsLUFSWTUwcVQ5dmhJZnVkcTd4NGlnQW0yTjNjSEsxalJ1TTRjRVln?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:30:25Z",
+   "title": "Kannada Vs Tollywood: Most Useless Discussion!",
+   "source": "M9.news",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSzZEc2RGdzdhTDZqOFFOVm51Vk1FRENMMXp2eXVPRDVmMUN6ZUc3YWNKeFlDS1ptOW14R0pldFYxR1Q0UUkzX0FRWkxwdnlqb0hhUWoxZTFMd2daemR0d051NU96RWR2LU1ZWXJ1ZHItRHRaV2hLdkhLNWR1TUN3YTFxVi1SU2pMT3ZVMk1CcGdaWUlj0gGUAUFVX3lxTE9LNkRzZEZ3N2FMNmo4UU5WbnVWTUVEQ0wxenZ5dU9ENWYxQ3plRzdhY0p4WUNLWm05bXhHSmV0VjFHVDRRSTNfQVFaTHB2eWpvSGFRajFlMUx3Z1p6ZHR3TnU1T3pFZHYtTVlZcnVkci1EdFpXaEt2SEs1ZHVNQ3dhMXFWLVJTakxPdlUyTUJwZ1pZSWM?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:34:20Z",
+   "title": "Dapps Compromised After Ledger Connector Hack",
+   "source": "CoinMarketCap",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0tkSVEtMnlidUJoMTVmM0lCSWtpNEEzUzd6QnJVc19XSzUzaHJwX2dXQ2ZwOHZzdjdaQmNzWGlpVGdyYk1hQllLWUFuTXYtVnZZNUZ0VG11cXE5eTZoS3JzdTN5cXQ3bXNkclQ5dEVGVzE1TXJhRXA1LXc3MTB6VzVZVlVHV3dnZWFhTDQxS2c?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T07:40:20Z",
+   "title": "ICE controversy continues in the US: Princeton researcher arrested and taken to a detention center",
+   "source": "L'Unione Sarda",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUlI3NFlKQzktQ0o0aE91THpNcFU2ZEVPT3NtczlDNjMzVkJyM2VxZ0ZhU0huU0RZY1dXbEJDdFdiZzZqcUszU2RuTFlXeG9NSE9heGxtdzNVRUVxajFrc3dNcGJ3Qm5VazRsZUlMUEpuNWZ1YTdOV0RVUjVYNlhWbTlRUGh2NFdybmZtcTJJTFRGeS1OU21ZdVFiRERyMXJfNjE5aWlOT2FEX2tFYm1uRnZBUTU4RXpoekdsVnlJMHpmMjhnNnBCQ1FocmF5RXJGUjNXdW5RS2F3d9IB4gFBVV95cUxOOThhbFlmQjR4OVE4cVl6c1hSc3BsalJpYjJySE1EeHpZMU9wcVNwenNOTVFzUEI5NTRSX3lVajhzZWIxQk5BVnBUckp3dmZDUHl2aTgxSVdXNkpVNGFmTTAyTTR1MXNORlVOMHFma1NSYndXdjEwQzZNLVI4bjNhM3hWOWZyUHBTTG9KM3VJdm1RLUNNay1LaC1tUTNLbF9GS2ZRTWJsRmdGWDVTbEZRTDFYNmFSWndEYVFZb1VpRl9fWm5tTHNFcHFvRERzVFhiVWxXQ2hwYnpzUE1xUGRhb1lB?oc=5",
    "n_outlets": 1,
    "also": []
   }
