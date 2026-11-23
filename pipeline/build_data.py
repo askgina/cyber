@@ -229,14 +229,29 @@ try:
 except Exception as e:
     errors.append(f"slowmist: {e}")
 def near(a, b, days=5): return abs((parse_iso(a) - parse_iso(b)).days) <= days
+# Tracker labels can differ even when both feeds refer to the same event.
+# Limit explicit equivalences to the event date so they cannot merge later incidents.
+CRYPTO_ALIASES = os.path.join(ROOT, "pipeline", "crypto_aliases.json")
+try:
+    crypto_alias_config = json.load(open(CRYPTO_ALIASES))
+except (OSError, ValueError):
+    crypto_alias_config = {}
+same_events = crypto_alias_config.get("_same_events", {})
 for s_ in slow:
     if days_ago(parse_iso(s_["date"])) > 30: continue
-    hit = next((c for c in crypto if near(c["date"], s_["date"]) and (norm(c["name"]) == norm(s_["name"]) or norm(s_["name"]) in norm(c["name"]) or norm(c["name"]) in norm(s_["name"])) and len(norm(s_["name"])) >= 3), None)
+    equivalent = same_events.get(s_["date"], {}).get(s_["name"])
+    hit = next((c for c in crypto if c["date"] == s_["date"] and c["name"] == equivalent), None)
+    if hit is None:
+        hit = next((c for c in crypto if near(c["date"], s_["date"]) and (norm(c["name"]) == norm(s_["name"]) or norm(s_["name"]) in norm(c["name"]) or norm(c["name"]) in norm(s_["name"])) and len(norm(s_["name"])) >= 3), None)
     sm_links = [{"label": "SlowMist", "url": "https://hacked.slowmist.io/?search=" + urllib.parse.quote(s_["name"])}]
     if s_["ref"]: sm_links.append({"label": "SlowMist reference", "url": s_["ref"]})
     if hit:
-        hit.setdefault("sources", ["DefiLlama"]); hit["sources"].append("SlowMist")
-        hit["slowmist_method"] = s_["method"]
+        sources = hit.setdefault("sources", ["DefiLlama"])
+        if "SlowMist" not in sources: sources.append("SlowMist")
+        # Explicitly linked trackers may use different loss definitions or have
+        # different confidence in the entry vector. Keep the canonical figures
+        # and technique; link to the other tracker without combining its claims.
+        if not equivalent: hit["slowmist_method"] = s_["method"]
         hit["links"] = hit["links"][:-1] + [l for l in sm_links if l["url"] not in [x["url"] for x in hit["links"]]] + hit["links"][-1:]
     else:
         crypto.append({"date": s_["date"], "name": s_["name"], "amount": s_["amount"], "returned": None, "chains": [],
@@ -333,8 +348,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from enrich import enrich
 # ---- press coverage of a crypto incident belongs on that incident, not as separate news rows
 # Aliases: the listed name, its parts, names the X signal uses, and a hand-kept list (pipeline/crypto_aliases.json)
-try: _CA = {k: v for k, v in json.load(open(os.path.join(ROOT, "pipeline", "crypto_aliases.json"))).items() if not k.startswith("_")}
-except Exception: _CA = {}
+_CA = {k: v for k, v in crypto_alias_config.items() if not k.startswith("_")}
 _GENERIC = {"bridge", "finance", "protocol", "exchange", "wallet", "token", "lending", "swap", "labs", "network", "dao", "defi", "cex", "dex", "v1", "v2", "v3"}
 def _aliases(c):
     nm = c["name"]; out = {nm, re.sub(r"\s*\(.*?\)", "", nm).strip(), *re.findall(r"\((.*?)\)", nm)}

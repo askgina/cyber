@@ -1,16 +1,16 @@
 {
- "generated": "2026-11-23T01:31:39Z",
+ "generated": "2026-11-23T02:29:21Z",
  "queue": [
   {
    "date": "2026-11-22T12:00:06Z",
    "title": "US ports face cyber attack onslaught as hackers target vital trade routes",
    "source": "Financial Times",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS2pCeHY2Q3JsWjNLdVZPWk1hX053R3BRay1RSlN4WUE3UlpYOEdKU1QtYmNOM2RsbzZoZXlYY20zdnIzbEl3WHRuRV9PaFBac1BxTjB2ZFFmdnFzUk1jNDY4ZmpuZ1lmYzdRMFk0S0hWMG9UeUFKeFA0dHFQbTFyMUIyUHU?oc=5",
-   "n_outlets": 14,
+   "n_outlets": 10,
    "also": [
     "US Ports Face Rising Wave of Cyberattacks",
-    "US ports face wave of cyberattacks as Los Angeles blocks 120 million attempts",
-    "Ports Face Surge in Cyberattacks"
+    "Ports Face Surge in Cyberattacks",
+    "US ports face onslaught of cyber attacks"
    ]
   },
   {
@@ -21,8 +21,20 @@
    "n_outlets": 4,
    "also": [
     "Russian neural network beats Google's developments in cyberattack test",
-    "The Yandex neural network beats Google's developments in a test for cyber attacks",
-    "The Russian neural network TabR beats Google in a test for recognizing cyber attacks"
+    "The Russian neural network TabR beats Google in a test for recognizing cyber attacks",
+    "The Russian TabR neural network from Yandex Research has outperformed Google models in recognizing cyber attacks"
+   ]
+  },
+  {
+   "date": "2026-11-21T15:47:02Z",
+   "title": "A 14-Minute AI Attack Shows Fast Response Doesn’t Help When the Attack Is Faster",
+   "source": "Morphisec",
+   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR0pMamhPSDJtd2xGZV8wY2ZQY1FVeFZNZ0xXeXV0RHI1YkJJSVNfSHJ5VGV5RUE5NUNKTFp4NWI0d1l5SnJCdlJGNXhYQzZOZHVMcVRObjBRcVR5Y0U0aUNxNmN4bzhlalpyTWVTTURZZHB6cGJMX2E5VnJtQ1NUSzNzbHNzRl9ITDhSWE5zWmtmZHFnQnVjX21yTUxKaTdZM19yYVdPY2gxYlU4TDVFdw?oc=5",
+   "n_outlets": 4,
+   "also": [
+    "A 14-Minute AI Attack Shows Fast Response Doesn’t Help When the Attack Is Faster",
+    "A 14-Minute AI Attack Shows Fast Response Doesn’t Help When the Attack Is Faster",
+    "A 14-Minute AI Attack Shows Fast Response Doesn’t Help When the Attack Is Faster"
    ]
   },
   {
@@ -34,28 +46,6 @@
    "also": [
     "CERT-In Flags AI-Powered Cyberattacks Targeting Government Bodies, Enterprises And Payment Service Providers",
     "CERT-In flags expanding AI-driven cyberattacks on payment systems"
-   ]
-  },
-  {
-   "date": "2026-11-21T12:53:00Z",
-   "title": "FBI and USDA Investigate Cyberattacks ᐉ News from Fakti.bg - World",
-   "source": "Fakti.bg",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPbFNtWUp5SjFHcHZuTnNXRndKNnRuSnhRcWVIZV8tejhVaFZVUkxRdkVXcEFfelo2UERjVEM3WmZUVEpZSEI3OW5fNzVNZzNYWUotTEl3Vng4Vlg1UGNuQkxtOExiVGc1V19ZWWNlakdta0tOMGxXOWZ4VDZnZGtaQw?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "USDA and FBI Hit in Cyberattacks",
-    "The FBI and USDA were reportedly hacked"
-   ]
-  },
-  {
-   "date": "2026-11-21T15:47:02Z",
-   "title": "A 14-Minute AI Attack Shows Fast Response Doesn’t Help When the Attack Is Faster",
-   "source": "Morphisec",
-   "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPR0pMamhPSDJtd2xGZV8wY2ZQY1FVeFZNZ0xXeXV0RHI1YkJJSVNfSHJ5VGV5RUE5NUNKTFp4NWI0d1l5SnJCdlJGNXhYQzZOZHVMcVRObjBRcVR5Y0U0aUNxNmN4bzhlalpyTWVTTURZZHB6cGJMX2E5VnJtQ1NUSzNzbHNzRl9ITDhSWE5zWmtmZHFnQnVjX21yTUxKaTdZM19yYVdPY2gxYlU4TDVFdw?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "A 14-Minute AI Attack Shows Fast Response Doesn’t Help When the Attack Is Faster",
-    "A 14-Minute AI Attack Shows Fast Response Doesn’t Help When the Attack Is Faster"
    ]
   },
   {
@@ -103,13 +93,14 @@
    ]
   },
   {
-   "date": "2026-11-21T01:32:50Z",
-   "title": "To deal with a series of cyber attacks, a specialized police unit “FFF” is launched, preserving and analyzing communication history, etc.｜Quebee",
-   "source": "QAB 琉球朝日放送",
-   "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9CWE1Cek5pT2pDczQ3RGpNVzJKOW1PMy1jOF8wWkc0Ni1TWXRKNnhNN3Z6LVV4MjJMQzJBMEhnNzJkdWx5ZVhsYlJZbklrUnpIdGU1dzgzc24?oc=5",
-   "n_outlets": 2,
+   "date": "2026-11-22T16:13:05Z",
+   "title": "US ports face wave of cyberattacks as Los Angeles blocks 120 million attempts",
+   "source": "Gulf News",
+   "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbExvM1NVR2NsWnZOdm9vT3ZqTFMzVzNoTmNPTGJNc05uSlkzTDhqbzF3ZmFITC1zeFJ2TGtCRHVpb1VIZjlMT29iRHoxUFZqQjZSMFVMTUo2T01kZHo5Z1FUd1R4eFZJMFZ5dk9admc5RmMyUi1HOFVTMVFqMnVONlYzNlBxc3dnQ2haVndPT3hfZTNZRVJyeWFnLUpIMHJ2c2pGSjBjNEl4NGxYdnhFZ1JSRmVWU2lhQVNNMDNpRk53cEXSAdYBQVVfeXFMT055ZHB1bVFvcGI5NEV6U2x2ZWpOX01WMnBtZ0l4MlNDb1Y4S2VyWGJUek4xRi16ZHB2akZveEpsUEdrYlNacFJlcU42MWo5MnE4WG4xTEItYjdUZFhULWgyYzVDdUg5VjBxQl96R0MzeUtOeTRab0NwbkdZVU9HTkZ2SW9xU1BmRFRRbnJJNEdGMl9lZV9DQk1wT2tCdmh1SUU4bExjNGJyN3Y1a2QzLWdpNERuTVh2b0ZhS2Uxc2NxV1RnMnAwQkNSNW92QWRrdHBSd2ZRUQ?oc=5",
+   "n_outlets": 3,
    "also": [
-    "To deal with a series of cyber attacks, a specialized police force called “FFF” was launched, and communication history preservation and analysis, etc."
+    "US ports face wave of cyberattacks as Los Angeles blocks 120 million attempts",
+    "The Port of Los Angeles blocked 120 million attempted cyberattacks in August - The Hill"
    ]
   },
   {
@@ -210,16 +201,6 @@
    "n_outlets": 2,
    "also": [
     "‘123456’ tops 2026 password list despite its role in Denmark data breach"
-   ]
-  },
-  {
-   "date": "2026-11-21T17:03:13Z",
-   "title": "FBI: Possible NCIC breach being investigated, no confirmed impact on Greece",
-   "source": "SecNews.gr",
-   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1reEVnY2pXcXpJakZuYW9SaWoxaGpxVU4wM05sWGpIRF83S24xdXpUWmFyd3kzZ1RsX19FbGx5RWxvbmhrdGRhT1lCcHJKeDNoYXpFV2xXX0NPbmFYUS1qbVc2VzRCckN1OWtsMzBn?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "The FBI is investigating a cyber attack on the NCIC database"
    ]
   },
   {
@@ -343,6 +324,16 @@
    ]
   },
   {
+   "date": "2026-11-22T11:30:00Z",
+   "title": "When the Hacker Comes Aboard",
+   "source": "The Maritime Executive",
+   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE9zUHBiUUJxSnNkckJuNzc1QUlRZFBjNGxHbjdtdHZEbHFoZzZmZlBGaGotOGl0NFQ4cnR4bHZ6N3BZSXU2UXJWREZLblZNLUdWd2VKU1ZvVW1XRF9iWDdBcTJSVE9FdkZ0Tkc2TW1mamwxTUZKRm9z?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "When the Hacker Comes Aboard"
+   ]
+  },
+  {
    "date": "2026-11-22T11:48:00Z",
    "title": "Australians stockpiling emergency supplies as cyber attack fears grow",
    "source": "7NEWS",
@@ -350,16 +341,6 @@
    "n_outlets": 2,
    "also": [
     "Australians Stockpile Emergency Supplies as Cyber Threats Grow"
-   ]
-  },
-  {
-   "date": "2026-11-22T16:13:05Z",
-   "title": "Port of Los Angeles blocked 120 million cyberattack attempts in August — The Hill",
-   "source": "UA.NEWS",
-   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUmtmV3RKSm9BREhuMjFxaEo0MWdMSUU0a2ZJZ1NrNkhfT3pIWmJOSElBN3NwUHFiWm1xNzFYM2ZWWnVfYUo1aEhaQl9ZaFJxanRESmhUMGxQN2F0cGJ0NEdfMHRFQlgyRHhUcnhULThRdVhZaFJZb1VFbGpxOG1NUk54dW1JM1I5eG12V0V3Ry10YVM5Y3hibGd3TlRYMzBSdnBkbW45Mks?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "The Port of Los Angeles blocked 120 million attempted cyberattacks in August - The Hill"
    ]
   },
   {
@@ -403,44 +384,14 @@
    ]
   },
   {
-   "date": "2026-11-21T01:36:00Z",
-   "title": "The Outage Flu of 2026: Why is everything breaking at once?",
-   "source": "CityNews Toronto",
-   "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxONDhMcmhYVFVlYWFVQzJMVFNKWTNUSE5mQlU3d0MtU0FQeEJFNXE2U0N2VnNWYWVpVVE2eUREQUMtbTQyclhsTVpscmRrWkF6QlNUd2VxYkVJUkZReDFGQkNQYVl3YnVkRXE5SkpmOGJLZ0prZ1ZzQXJkZnE1WHYwYldvQ29saWhlNW14LW1HUnhQT01nUUFOaUQzSElkZw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T01:53:00Z",
-   "title": "Standing Dooms Data Breach Suit Against Union Fund",
-   "source": "Law360",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Id0NXbngtTjUyZWJURWpBV09YalBmbkNlNDJQRVllTmV3a2lHaFNlaFlyV2FfaUc2ck9QT0pqVjgwOENUYTRlOFQzYzFBMmdqNVN1UTRn0gFWQVVfeXFMTUh3Q1dueC1ONTJlYlRFakFXT1hqUGZuQ2U0MlBFWWVOZXdraUdoU2VoWXJXYV9pRzZyT1BPSmpWODA4Q1RhNGU4VDNjMUEyZ2o1U3VRNGc?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T01:56:24Z",
-   "title": "Caution urged as more travel booking sites hacked",
-   "source": "RNZ",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOV2s2cXBmSW45STdtSlNfWG9CSXdMTTF5VEVsTWJSTlpZc01XRkc3enVEeWR5aGplY2I1a2NaLVZnczFWTkdpN3VhcVR2V05UekhHczV5a3hBQ05YZGpjWHk0UHlRVlBtenpNbUlISzJJZWl3UHR2dzV2QnRtWXVPdkJVSjJtVlBMNmh1U2ZtVDY0TEZ4QWxUOQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T02:00:00Z",
-   "title": "Americans have to ‘take to heart’ supply stocking: Expert",
-   "source": "NewsNation",
-   "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVDI3N2hMTWVNUzhfS2pZbDF0czhVa0JsMWtvLWhfMlVuYWlzanlYYzRpel9YZDBFUl8tUFNPNGlfY2R4M05hc1labDF1Qk9EWkdUNkMzTHp5Zk45SW9mVjRDeV8zU2pLSDZSUGZjc0tsSUV4VzQ3dHFsajc0YVBZZTQtTmF3X3B10gGIAUFVX3lxTE1UMjc3aExNZU1TOF9LallsMXRzOFVrQmwxa28taF8yVW5haXNqeVhjNGl6X1hkMEVSXy1QU080aV9jZHgzTmFzWVpsMXVCT0RaR1Q2QzNMenlmTjlJb2ZWNEN5XzNTaktINlJQZmNzS2xJRXhXNDd0cWxqNzRhUFllNC1OYXdfcHU?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T02:00:00Z",
-   "title": "Expert on hybrid attacks: 'Lack of response on our part will lead to further escalations'",
-   "source": "De Morgen",
-   "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPMTI0Q244dVVWaVBENVVTQ19XdjQ1Q0hRcVJ6RFEyWGFNR2phSjAtQlBocmQ2d3ZJNlVSTUhNcnZ0ZU1fbzdWbmFvejkyaFM1bXFoVGhPRUd1VlVjdmpVZDluOFRyRjlMOERraGFrMENoZ1NUamFwVzR2dTdjSno0M0huY19lWlVIcVlSWC13ZHlDM3VLZFVUUElEUENubEpycHd6SG5nUUYxQTZRTk5DSlFlOFJZWmJlbjY3UGN5bUNSZ0ZxWjVBTU92ZzNIVTA0YWFGbFZaYmpOUXBa?oc=5",
-   "n_outlets": 1,
-   "also": []
+   "date": "2026-11-23T01:55:00Z",
+   "title": "How Artificial Intelligence Is Making It Harder To Stop Cyberattacks",
+   "source": "Yahoo Tech",
+   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPZHhkOUV2akdjVUFmN0djWFNYWDg4Yzg2TkpqWkhmVTJYXzJMZk1JUE84LU1JME1ndE15Vm4waUhjdzlDUzNCdHNHZk1rLXphU2V0YUFFY21xX0pKT0NzV2V4OHlqMXpfMzJxTkg4TV9TZ2toWHF6U2xqZEFfendjTTFfbE8xSkV2S1FJbzZVS1EtbUxVak1PRUhUaDVsVWlXZXMzOVRn?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "How Artificial Intelligence Is Making It Harder To Stop Cyberattacks"
+   ]
   },
   {
    "date": "2026-11-21T03:00:00Z",
@@ -487,6 +438,14 @@
    "title": "Theft at gamescom! Many creators have lost everything they had, and CD Projekt Red is coming to the rescue!",
    "source": "PPE",
    "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWHIzSTFnYl9pYlBFMWdkVmt0WmluVGdfdXRYNW9SNFhhMzV0NkNwT3hFR1dUTWd5NTFod20yRzNkSmJfdk9TZVcycHJETWZGYmZOVjNETnRRYndIcFdSQ1lqOHRHR3I0eXdWN0g2NDI4TXcyb0x0Vklya2pEbzlXampmUWhyanFpWjJidjdQS3FxeFc4STNwaE1VRDYxOG80V1RJRHJMalEtR3lzVEhaQzRjYkNOS19sUXpjdWNRdExiRkwxdVhvMXF6UQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T04:03:38Z",
+   "title": "GTA 6 Has a Blockbuster Launch, Already Sold At Least 32.5 Million Copies",
+   "source": "PCMag Middle East",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeHVwR1BlamNmaFRqWjNlR3IzWlBoSWhXZDZWdTNiNTVJWndKQXRfenVOSzY4bVQ0S3E3U0xJT0hLelNqMTl6YlJRV3JCUGZtQjJJOU9mb0JQc3N1MlBEUkZSLTFHMHV1Q1RPQ0tTOHliaERyU3JGQkh0NDd4TEs3cnlGellTVmtjNXVuMEloT3p0VGRoM2RQZmRNTkNsTThPREUtckp5NXRPTnc?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -627,7 +586,7 @@
    "also": []
   },
   {
-   "date": "2026-11-21T06:14:39Z",
+   "date": "2026-11-21T06:08:59Z",
    "title": "Deepfake accounts for 21% of cyberattack incidents in Vietnam, nearly double the global average.",
    "source": "Vietnam.vn",
    "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcDFiaTRIaE9PMkVEcEdxQ25sNGVnZjdPUnFzSk9HY2R3dDJNTVE5MjAzZnVzZkJKUGNvLXQ3V2hRd3dEbnZkQ2daX0h1VkNNRHlldTE2akI0X1pHWC1XMlozeFhuS2pfa1ZqeGV3M250Sl94cHNNdHJZc1paLUxBU2NLZ1hQeFJralFPZ0cyZ1NmNnNUdmpacHhXTlZiZzgxNEc0?oc=5",
@@ -1283,6 +1242,14 @@
    "also": []
   },
   {
+   "date": "2026-11-21T15:41:49Z",
+   "title": "Parking+rooftop+at+mp+nagar",
+   "source": "ET Government",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPc2ttbWhXTDdQMWlSUTF5a09OYXFSajBFVlY1SEhKT3ZkUTg2SEhITjNGTjJWSkVEdkEyYzBNZ3N5d0YtM2FYZUI0MG1XR1V6RWtzYW5lVFNDQVJsY0haR3B4Q05vVk1XbFVrYXJzZ3o4aktLelU2UFI2VHN6YTZ6UmU2ZGV1Zw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-21T15:48:00Z",
    "title": "Cyber attack on cooling systems: According to GDV, damage to goods is often not insured",
    "source": "Netz Trends",
@@ -1343,14 +1310,6 @@
    "title": "Fraudsters Used Fake Crypto Exchanges to Steal $37 Million, SEC Alleges",
    "source": "Decrypt",
    "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOMlRWYmtpMFRoeFpaNlFxcmF4am5XZkI2TXNva0JZeXBVVlBNcUR1SVRHM1dJTm1WWW42RTAyc1lmOTJGTjdJckoyUXZqZU9tSmZ6aDdhaGN1cmpNM1pJNmNfSzd1ZWd4Mzk4a3NLeUlTNVhiTlozWXFCc0FaZmNDWVFWaG10UQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T17:13:57Z",
-   "title": "The FBI would have been the target of hacking, this is what is known about the breach",
-   "source": "IFM Noticias",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVi1zeGMwMXVqa2p6TXBFNkptc0pCMGZhV1hrQUZjcUJzYThwRV9zRGUxZHAtSHVlR3J4bUREb29tYXB2NTV3Mml2WHdSZ3ZDYVRvNkFoczdRamlTSWNTb3BZdm4xb0ZiOG01eklCZmc5bndMXzhacGV0RDh2MjFxSkRXWkVoeU1nakE4VnhXZUZvTW1ld2Z1TU5MVGJqMVlseEtHWHdDbHVSdFE?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1571,6 +1530,14 @@
    "also": []
   },
   {
+   "date": "2026-11-21T21:12:26Z",
+   "title": "The Yandex neural network beats Google's developments in a test for cyber attacks",
+   "source": "Самара онлайн 24",
+   "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQTUxMVnFJUXNjUEN2ZkE2V040TkxhVlg2RExFeHA2YmgzXzZCSGZQMThqSDBSeG1JSWlBZkxuRDZ5bzNfNy1aRGFJVUZFZ1RFOTVZeldrSDN2RVUtbnNYVnFXYXlldEdrdGJ4MHNaeF9kNGs5bFJ5TXplX2NYcVk5S0NsQ254RWI2YWw4a3QyY056MW5aaXN1SHhxaEVXSXY2anM4Z0lMMjVzZw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-21T21:13:19Z",
    "title": "Ransomware Attacks Jump 20%; Experts Warn Businesses Face A New Threat Baseline",
    "source": "BW Businessworld",
@@ -1583,14 +1550,6 @@
    "title": "EVO will come with a personal data leak check: how to find out if you have been affected by a cyber attack",
    "source": "Блокнот Молдова",
    "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPMlIzQ0hLSF9VSk5nQS1jX3l4S0d5QjlqUFVFcU9iNHA4emxNbnh5XzNsaXRSS1N0WE9reFcyTVZGUEFqaWVYRTJYZDVtSTVDY0dkNnd5RHFWMnFsSmdKNDdhaWxuS1VwYWtKUWhTMDYyWkVQZ1JxU2syVWRtRUZOR200REJFSC1KU2Q4MWNteGdlazU5?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T22:00:00Z",
-   "title": "Fullerton Health data breach: Migrant workers face risks of employment scams, impersonation",
-   "source": "CNA",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPT21MX3Jvd2VYYW5TNVgydll6U0JvNlFpbWswNFZTOGFqcm5hdFpudHNhYldXMUR2MWpNUXQzTFdBaE9iMGhuRjNlY2dYUGZ1bTJ3eFIzN21KZFJlQkV6OTQ1MGhaTmZKN2lCd1RIUmNiQnBZQldpMHhwZ1ZOeGJvSFIxbERqYUNBVUpCa01rcTBUUXZ3MmdHVWhB?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1687,6 +1646,46 @@
    "title": "An alleged hack and a \"repentant\" shake Balanz, Toto Caputo's favorite financier",
    "source": "La Política Online",
    "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaDBLN3VTenhuNHNoY0k3QmM1TDJrMzUwcncxQmpyV0lvSzI4S3V1NEhIRHdSRzBFNEV1ckVfSC0zRC1SS2ZnMTBkcDdHdFJvYjJyZ1dJNS1kWjFFTlgxdjBMRUR0MFh6WWpZWm5oQ1FHRldONk1PUUlfeXc5QW16LTQ0YmZWRm95QkU0UDBmSHNOTTZfTVBURndQaUdXOXJVdEctOXo5SlBIbFRVcUhXc3JVeUx1NE44bFhUZW8zNTJXamwyTWQ1a2lweUM3d9IB0AFBVV95cUxQQmRWb3hMNl9oVl9kVG16MEVrQ2piOW5VY0IzOG9Tb1MtQ2VkT2tmOGEwTFVwYUxHU01RWmU0d2hRNjlBUHE4Mk8yV3RtTDZqcHJxNlRvOUlLUXRTSkk5Sm9UaWVlYkpMZVF3UDZKZWVhT2xVVlY4RXE4a1FDSnBQV0hRYjBYbWgxM0l1NDd4SWl2TktPWFVaLWVlN0JVemVra2tSSVVSZGNXWlo5ZzVCMHlrbFVibmpVRmVNSmdieVNFWGRjYi1SWWcyeXZpUVlQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T00:36:40Z",
+   "title": "Drivers, service providers and visitors entering the public pier in Santos are subject to inspection at 100% of the entrances and 2 guards per gate: after the hacker attack, APS suspended new accreditations and writes down each entry by hand",
+   "source": "Naval Porto Estaleiro",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQbzhUc3pBZUpISHBGSVNhcFBiSDZESjBzdEZoWUdCUmE1bml4YlhZUXp2SFZobHE1eGZIZUFRSDRrQ1VxTnRtTUlES2RFNVFYcU5UWm5aQ01LcmpfV3E1RHRsLUpYUmlPRFF2M0E1MHpleU1ib21EVk05VERpOUpQZVRkcEJFTEZGZTBSRVZfZjlDUmpXZTEzQm13bmxiOVU?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T01:02:00Z",
+   "title": "USA: Donald Trump hopes for findings after hacker attack on FBI",
+   "source": "Spiegel",
+   "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNSVh1dXRreEpmbXBxTW9kTlc3MjhKSlp2OU14S0RwWDB0eXdGZWhOOTh1TkNvQndWc0hCRnN3Vm9FWnh4OTMxX3FzRFY0V2ZaWEpvZHBXQzFYemVMSkUwZGRaQWtoZVJKOUJfOUxVdE1BbDlhT3hZN2RfVmRoTlJ5TFhsNy12VnlvaHRUR2xPZTdGMXdyWE1PNThlLUFEYnA4Z0RIZ3J4c080cUd2aENBQlJRN0xvZ01janRkendwRF9GWjFTYVBBVXpmLTJqZFJfVUE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T01:45:30Z",
+   "title": "Trump Reacts to Reports That FBI’s Records System Was Hacked",
+   "source": "NTD News",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQNG9XeUJEbm1ibnViMkk4TjVVa2FkYnVPR0owbmVFOXlBV0h2US04S3MyYnlPUENrUU8teXpTVmE2cDBMU0VjZGplcFJSTE9kSklCYlk1MHJoSGhLZ2QxcXp2ZTFvMHRaT0FOdFNjZXhBNHQyQWo1Q1ZfQndLemVlUUwxQnRycHBSbzJlU2tLVkUzODNkY0FZ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T01:50:40Z",
+   "title": "Chevron Sued Over Claimed Employee Data Breach",
+   "source": "openclassactions.com",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOU1NBNk5RY1EybGNPLThXZkFUbDc5RGpUN19sRE4wWHBDdHZ4M0RQY3lNWGxwdHdGN1VSZnJqcGNOb044OHZETnplXzlaem5nalFhY0cycEM5OEtTYXBmenYtSTFKblJqdzRMbEtwcS1JRGhlNEJadmZydm9hdTRybEU3bnBxVzlSYVYyaTZRQy1HY1lBZnlibnl4dTI?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T01:50:41Z",
+   "title": "Simplilearn Sued Over Late-Night Marketing Texts",
+   "source": "openclassactions.com",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNXozNDZJcWgxSlA4X1ptNmpqcDdEVzV2TFdoMTBnWW5IemFXNlRUaE9vc1RlTmFvMGx0eTNGbXFwNmVpY2cwS0liUmpTZ2U3UXF0LVdaWGk1WHEzRVFtS0JoVk04OXJQV2VtWm13NFJuenlJVWFEbnhCSlA3Z3h4aVlMN3VRc1lvSFN3MzVpS3pjR3Jobk5fN3JkLVhMYnVZbHN5YlhnZ0hmUC1RZkE?oc=5",
    "n_outlets": 1,
    "also": []
   }

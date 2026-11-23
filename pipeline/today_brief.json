@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T01:31:39Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users, and Guadeloupe University Hospital postponed non-urgent care after a cyberattack. Samsung Securities confirmed a separate breach of its customer feedback system affecting 8,241 people.",
+  "updated": "2026-11-23T02:26:17Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care after a cyberattack, and Samsung Securities confirmed exposure affecting 8,241 people. In an update to its earlier breach, Kurly identified 199 current or former employees and two more customers whose information was exposed.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -29,8 +29,8 @@
       "patterns": [
         "data-exposure"
       ],
-      "eid": "n-5aadc6a5",
-      "url": "https://www.smarttoday.co.kr/ko-kr/articles/113960"
+      "eid": "n-35625293",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858523"
     },
     {
       "org": "Fusionist",
@@ -50,7 +50,8 @@
       "patterns": [
         "outage"
       ],
-      "url": "https://coastalabc.com/sports/local-sports/cranston-police-investigating-potential-cyber-intrusion-into-department-database"
+      "url": "https://coastalabc.com/sports/local-sports/cranston-police-investigating-potential-cyber-intrusion-into-department-database",
+      "eid": "x-f4f958f2"
     },
     {
       "org": "Sri Lanka Department of Motor Traffic",
@@ -82,26 +83,38 @@
     },
     {
       "org": "Chainflip",
-      "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
+      "what": "Chainflip offered a 10% bounty for returning funds by November 23 at 18:38 UTC; the combined theft is estimated at about $12 million, with no return reported.",
       "scale": "About $12M estimated across Ethereum and Bitcoin",
       "patterns": [
         "bridge"
       ],
       "eid": "x-b163fb32",
-      "url": "https://chainflip.io/return",
+      "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds",
       "update": true,
       "since": "2026-11-21"
     },
     {
-      "org": "Rackspace Spot",
-      "what": "Rackspace restored its Spot console and urged affected customers to rotate cluster credentials after an intruder used leaked credentials to access some customer environments.",
-      "scale": "Customer count not disclosed",
+      "org": "Cleverbridge",
+      "what": "A Cleverbridge notice reviewed by BleepingComputer said the stolen payment data included card numbers, expiry dates and security codes.",
+      "scale": "Affected customer count not disclosed",
       "patterns": [
-        "supply-chain",
+        "data-exposure"
+      ],
+      "eid": "n-855a50ef",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "update": true,
+      "since": "2026-11-04"
+    },
+    {
+      "org": "Kurly",
+      "what": "A review of the November breach identified another 199 current or former employees and two customers whose information was exposed.",
+      "scale": "201 additional people",
+      "patterns": [
+        "data-exposure",
         "key-compromise"
       ],
-      "url": "https://www.infobae.com/tecno/2026/11/22/atacantes-entraron-a-la-nube-de-rackspace-con-credenciales-filtradas-y-pudieron-leer-claves-de-clientes/",
-      "eid": "x-f3649087",
+      "eid": "n-0c906047",
+      "url": "https://biz.chosun.com/en/en-retail/2026/11/23/XREVQLBPUFC6TIL6W4RDVZEPCI/",
       "update": true,
       "since": "2026-11-17"
     },
@@ -116,18 +129,6 @@
       "eid": "x-6fb93117",
       "update": true,
       "since": "2026-11-21"
-    },
-    {
-      "org": "Cysic",
-      "what": "New coverage revisited Cysic’s October bridge incident and the project’s statement that the later token burn did not recover attacker proceeds.",
-      "scale": "10M unauthorized CYS tokens, not dollars",
-      "patterns": [
-        "bridge"
-      ],
-      "eid": "x-a07c3203",
-      "url": "https://thedefiant.io/news/hacks/cysic-bridge-exploit-minted-10-million-tokens-on-bnb?referrer=www.coinrithm.com/es/criptomonedas/bnb",
-      "update": true,
-      "since": "2026-10-17"
     }
   ]
 }

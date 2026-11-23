@@ -1,5 +1,10 @@
 {
  "_note": "Extra names the press uses for a crypto incident, so its headlines attach to the DefiLlama/SlowMist entry instead of showing as separate news. Key: entry name as listed.",
+ "_same_events": {
+  "2026-11-22": {
+   "Fusionist": "Endurance Bridge"
+  }
+ },
  "Wagyu (XMR1)": [
   "Wagyu",
   "XMR1",
@@ -74,7 +79,8 @@
   "Fusionist hack",
   "Fusionist bridge",
   "Fusionist’s ACE bridge",
-  "Fusionist's ACE bridge"
+  "Fusionist's ACE bridge",
+  "Fusionist ACE minted"
  ],
  "The Moats": [
   "Moats App Security Incident",
