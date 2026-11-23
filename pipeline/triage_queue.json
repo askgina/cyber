@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T11:33:26Z",
+ "generated": "2026-11-23T11:44:48Z",
  "queue": [
   {
    "date": "2026-11-22T12:00:06Z",
@@ -35,6 +35,18 @@
     "Connecticut lawmakers to probe cyber threats to utilities, other services",
     "Connecticut lawmakers to probe cyber threats to utilities, other services",
     "Connecticut lawmakers want utilities to explain how they would withstand a major cyberattack"
+   ]
+  },
+  {
+   "date": "2026-11-22T19:02:14Z",
+   "title": "US Ports Under Cyber Siege As Hackers Launch Thousands Of Attacks Daily",
+   "source": "Times Now",
+   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc0syNnBuVk5CNmRoQ2x6VGUxZDM0aTZQRllJa01XSnU5LUM3dkI3T0J6azhEWHNZNkprWkhRLTNpWGRWSE5TaEdZYnd0eFluNTI5TlU2UWpidUdhNk1IdG9ldGgyamNGcER0YnNTM1dOMGVfRUVpZTBXSlZXdmV0bi0ydC1XazZBRmRZR1pzRVBNMFhybjNoQjZzZkJpS1lfUDlfcThoaXRTaWtmQy1MUHNTYkVxa0pVTV9fQ05Ybm1TRlN4WGF5X1RONk91MFXSAdQBQVVfeXFMTWdWUE5LU2x0cUJQMVBzbUdvMDZUVXpad0dWMkxBaVVuVkYydlFCYjh5WWJoU1A3akxyWEhVX0tUNkRYRV9LUno0OXBsTFA4U0FQNlUwdkIyaDl1TFdxY2pRUEVwVTRHLW8waXRzZTZJN1FxeURUazRMQXM1TGdVTTRWaTRfeG5pUDlMTXZ5S1pKc3Y5TllmY0ZMVXQ5WElEeFNKY1ZfOVktMGlkUm1nU2ZQQ05fTWg1QVlhUlU5NUlhcENsMWVSRlR4T3BrU1FiT1F5clQ?oc=5",
+   "n_outlets": 4,
+   "also": [
+    "US ports and cargo ships under daily cyberattacks",
+    "U.S. ports are under massive cyberattacks",
+    "US Ports Under Cyberattack: Oil Export Hub Faces Thousands of Daily Attempts as AI Threats Escalate"
    ]
   },
   {
@@ -93,17 +105,6 @@
    ]
   },
   {
-   "date": "2026-11-22T19:02:14Z",
-   "title": "US Ports Under Cyber Siege As Hackers Launch Thousands Of Attacks Daily",
-   "source": "Times Now",
-   "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNc0syNnBuVk5CNmRoQ2x6VGUxZDM0aTZQRllJa01XSnU5LUM3dkI3T0J6azhEWHNZNkprWkhRLTNpWGRWSE5TaEdZYnd0eFluNTI5TlU2UWpidUdhNk1IdG9ldGgyamNGcER0YnNTM1dOMGVfRUVpZTBXSlZXdmV0bi0ydC1XazZBRmRZR1pzRVBNMFhybjNoQjZzZkJpS1lfUDlfcThoaXRTaWtmQy1MUHNTYkVxa0pVTV9fQ05Ybm1TRlN4WGF5X1RONk91MFXSAdQBQVVfeXFMTWdWUE5LU2x0cUJQMVBzbUdvMDZUVXpad0dWMkxBaVVuVkYydlFCYjh5WWJoU1A3akxyWEhVX0tUNkRYRV9LUno0OXBsTFA4U0FQNlUwdkIyaDl1TFdxY2pRUEVwVTRHLW8waXRzZTZJN1FxeURUazRMQXM1TGdVTTRWaTRfeG5pUDlMTXZ5S1pKc3Y5TllmY0ZMVXQ5WElEeFNKY1ZfOVktMGlkUm1nU2ZQQ05fTWg1QVlhUlU5NUlhcENsMWVSRlR4T3BrU1FiT1F5clQ?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "US ports and cargo ships under daily cyberattacks",
-    "US Ports Under Cyberattack: Oil Export Hub Faces Thousands of Daily Attempts as AI Threats Escalate"
-   ]
-  },
-  {
    "date": "2026-11-22T22:41:00Z",
    "title": "The worst is yet to come: experts warn of a massive wave of cyberattacks using AI",
    "source": "Today.ua",
@@ -134,6 +135,17 @@
    "also": [
     "A series of personal information leaks… Analog ‘password notebook’ catches fire in Japan",
     "Notebook 'popularity' in Japan due to a series of personal information leaks... Why?"
+   ]
+  },
+  {
+   "date": "2026-11-23T11:33:00Z",
+   "title": "Next reports cyber attack at third-party supplier but no personal data",
+   "source": "London South East",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQjFwNWxXQW5pT0dtenVaTHFFdE1fazU1aXJvNkl3UzZRbXpZdGxnRUV3TXB5U3JrNFRSbnRiUnJNblFUanJsNzQxRVdvSkhwdVZNd0pOVkVvUWItcFh2bEYzbWVReHBrNHVHY0ZTekg0cl9GTzM3VmlrbUxnLUwydmxnQlNxbkFhamw3eWpQdXdrcUZtZHgxbWxFcDNjeXFxMk1vMWZLNklESTE4WHU3Nk9iRGpVa3VleWc?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "Next reports cyberattack on third-party provider, but no personal data was affected",
+    "Next says some data accessed in cyber incident affecting online supplier"
    ]
   },
   {
@@ -507,6 +519,16 @@
    ]
   },
   {
+   "date": "2026-11-23T09:26:36Z",
+   "title": "GoFundMe data breach exposes donors’ personal details",
+   "source": "Cybernews",
+   "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAwN0VYZE4yejlfTThMMXZabWNvMTN1SHVOOS1DOEY0SjhzY3FiV2FnaV9POUhQaFMxTkVua3JlbzlRT3JibkZlcjRPNk5pXzFNSGFXRkZtRHRWQ1J1dDgzV29n?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "GoFundMe Confirms Data Breach Exposing Donors' Private Information After Personal Records Are Exfiltrated"
+   ]
+  },
+  {
    "date": "2026-11-23T09:30:20Z",
    "title": "How Indian Companies Can Reduce Security Risks in AI-Powered Applications",
    "source": "Nasscom",
@@ -524,6 +546,16 @@
    "n_outlets": 2,
    "also": [
     "Uzbekistan Tax Committee denies data leak from its systems"
+   ]
+  },
+  {
+   "date": "2026-11-23T11:08:19Z",
+   "title": "UKs Next reports cyber attack on online provider, no customer data affected",
+   "source": "MarketScreener Schweiz",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbDVMYUk5SEFYY0N2U24zMThadnVMdGRQYjdlTHZrd1JVVDZza0dPXzhwRWVWM0k0eTh4NEwyS2ZoWkpkcW0wU005RDN4WWJCN21mcVo5SHVBeEp0RFpCLTJKLXAwaGlvQXFsWG9tYjNHNVFWT3M0WWpUZHF6M0lkRjJRaGl6bEZmTEhXRkR2NXB1WkxUMnM1eTJ3cEZvMVF1Vk9VSVhhLTgyMlF4a2pRMkRqWWx5ZTl0Qm4tcnJ1Q3hfNktqSnFXb09qM2pSWHRLMVoyb3otZlZEUQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Next reports a cyberattack on an external provider with no impact on personal data"
    ]
   },
   {
@@ -1691,30 +1723,6 @@
    "title": "In the neutral house of Reijer Jan and Margriet, there is no indication of club love until you open the cellar door",
    "source": "AD.nl",
    "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQUV9mWUxEdDR5NzIyME1fSk1oM1JvRU1za0VWSEtjZFZjeURER1E2aDJySjRXUUUtTzJFY3RNeGtWNHVOYVN2RWNnOU1qQzVXUjVvUHJTVjlTSGh6Rk4xNjdORmhZd1VodVhjRlBxbTJTTjkyVWxKYlFuVDFCVW1lS2g3SHdqQXRQY29HV0xWdWZuR3g1Yy14Y0E3dVlic04xcmVjelI4Q3JESHRpQ3dsLUFSWTUwcVQ5dmhJZnVkcTd4NGlnQW0yTjNjSEsxalJ1TTRjRVln?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T07:30:25Z",
-   "title": "Kannada Vs Tollywood: Most Useless Discussion!",
-   "source": "M9.news",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPSzZEc2RGdzdhTDZqOFFOVm51Vk1FRENMMXp2eXVPRDVmMUN6ZUc3YWNKeFlDS1ptOW14R0pldFYxR1Q0UUkzX0FRWkxwdnlqb0hhUWoxZTFMd2daemR0d051NU96RWR2LU1ZWXJ1ZHItRHRaV2hLdkhLNWR1TUN3YTFxVi1SU2pMT3ZVMk1CcGdaWUlj0gGUAUFVX3lxTE9LNkRzZEZ3N2FMNmo4UU5WbnVWTUVEQ0wxenZ5dU9ENWYxQ3plRzdhY0p4WUNLWm05bXhHSmV0VjFHVDRRSTNfQVFaTHB2eWpvSGFRajFlMUx3Z1p6ZHR3TnU1T3pFZHYtTVlZcnVkci1EdFpXaEt2SEs1ZHVNQ3dhMXFWLVJTakxPdlUyTUJwZ1pZSWM?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T07:34:20Z",
-   "title": "Dapps Compromised After Ledger Connector Hack",
-   "source": "CoinMarketCap",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOR0tkSVEtMnlidUJoMTVmM0lCSWtpNEEzUzd6QnJVc19XSzUzaHJwX2dXQ2ZwOHZzdjdaQmNzWGlpVGdyYk1hQllLWUFuTXYtVnZZNUZ0VG11cXE5eTZoS3JzdTN5cXQ3bXNkclQ5dEVGVzE1TXJhRXA1LXc3MTB6VzVZVlVHV3dnZWFhTDQxS2c?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T07:40:20Z",
-   "title": "ICE controversy continues in the US: Princeton researcher arrested and taken to a detention center",
-   "source": "L'Unione Sarda",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQUlI3NFlKQzktQ0o0aE91THpNcFU2ZEVPT3NtczlDNjMzVkJyM2VxZ0ZhU0huU0RZY1dXbEJDdFdiZzZqcUszU2RuTFlXeG9NSE9heGxtdzNVRUVxajFrc3dNcGJ3Qm5VazRsZUlMUEpuNWZ1YTdOV0RVUjVYNlhWbTlRUGh2NFdybmZtcTJJTFRGeS1OU21ZdVFiRERyMXJfNjE5aWlOT2FEX2tFYm1uRnZBUTU4RXpoekdsVnlJMHpmMjhnNnBCQ1FocmF5RXJGUjNXdW5RS2F3d9IB4gFBVV95cUxOOThhbFlmQjR4OVE4cVl6c1hSc3BsalJpYjJySE1EeHpZMU9wcVNwenNOTVFzUEI5NTRSX3lVajhzZWIxQk5BVnBUckp3dmZDUHl2aTgxSVdXNkpVNGFmTTAyTTR1MXNORlVOMHFma1NSYndXdjEwQzZNLVI4bjNhM3hWOWZyUHBTTG9KM3VJdm1RLUNNay1LaC1tUTNLbF9GS2ZRTWJsRmdGWDVTbEZRTDFYNmFSWndEYVFZb1VpRl9fWm5tTHNFcHFvRERzVFhiVWxXQ2hwYnpzUE1xUGRhb1lB?oc=5",
    "n_outlets": 1,
    "also": []
   }
