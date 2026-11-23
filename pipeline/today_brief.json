@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T11:32:48Z",
-  "headline": "LaLiga confirmed that an intruder stole fan data, while Snowys Outdoors warned that malicious code on its retail site may have captured customer details and passwords.",
+  "updated": "2026-11-23T12:29:02Z",
+  "headline": "LaLiga confirmed theft of fan data, while Samsung Securities reported a breach affecting 8,241 customers. The European Commission confirmed that its October attack exposed EU Academy users’ names and email addresses.",
   "incidents": [
     {
       "org": "LaLiga",
@@ -34,55 +34,6 @@
       "eid": "c-31c40b98"
     },
     {
-      "org": "Snowys Outdoors",
-      "what": "Snowys removed malicious code that may have captured customer details and passwords entered on its website.",
-      "scale": "Affected count unknown",
-      "patterns": [
-        "data-exposure"
-      ],
-      "url": "https://www.perthnow.com.au/news/technology/snowys-camping-goods-warns-cyber-attack-on-website-may-have-exposed-customer-passwords-and-details-c-23202967",
-      "eid": "n-f9772bdd"
-    },
-    {
-      "org": "Suzlon Energy",
-      "what": "Suzlon confirmed a cyber incident and notified CERT-In, without confirming Blackout’s claim or reporting impact on critical applications.",
-      "scale": "Scope not disclosed",
-      "patterns": [],
-      "url": "https://economictimes.indiatimes.com/industry/renewables/suzlon-energy-hit-by-cyber-incident-company-says-critical-applications-remain-unaffected/articleshow/136095671.cms",
-      "eid": "n-59cf83f3"
-    },
-    {
-      "org": "Bell MTS",
-      "what": "A cyberattack at the provider of Bell MTS email locked some Manitoba customers out of their accounts and prompted password resets.",
-      "scale": "Email disruption; scope unknown",
-      "patterns": [
-        "supply-chain",
-        "outage"
-      ],
-      "url": "https://www.winnipegfreepress.com/breakingnews/2026/11/22/bell-mts-says-cyberattack-behind-recent-email-outage",
-      "eid": "x-c866ecc7"
-    },
-    {
-      "org": "Peninsula Energy",
-      "what": "Peninsula Energy said an incident at the Lance uranium project would temporarily affect operations and that its administrative systems were not breached.",
-      "scale": "Operational impact not quantified",
-      "patterns": [
-        "outage"
-      ],
-      "url": "https://weblink-asx-announcements.old-mountain-2586.workers.dev/pdf/PEN/61356350.pdf",
-      "eid": "x-4f4fae5c"
-    },
-    {
-      "org": "HD Hyundai Robotics",
-      "what": "HD Hyundai Robotics said an intruder accessed a website server holding subscriber names, usernames, passwords described as encrypted, and contact details.",
-      "scale": "Subscriber count unknown",
-      "patterns": [
-        "data-exposure"
-      ],
-      "url": "https://hd-hyundairobotics.com/en/main",
-      "eid": "n-d501ed5f"
-    },
-    {
       "org": "Samsung Securities",
       "what": "The brokerage confirmed that an intrusion into its customer feedback system exposed personal information, including some account and driver’s license numbers.",
       "scale": "8,241 people affected",
@@ -91,6 +42,19 @@
       ],
       "eid": "n-9abe542a",
       "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858523"
+    },
+    {
+      "org": "European Commission",
+      "what": "The Commission confirmed EU Academy users’ names and email addresses leaked in the October intrusion, and disabled public access to the platform.",
+      "scale": "Affected count not disclosed",
+      "patterns": [
+        "data-exposure",
+        "outage"
+      ],
+      "url": "https://www.euronews.com/2026/11/23/exclusive-china-backed-hackers-suspected-behind-ongoing-eu-commission-cyberattack",
+      "eid": "n-cf31f724",
+      "since": "2026-10-22",
+      "update": true
     },
     {
       "org": "Korea Electric Power Corporation",
@@ -105,26 +69,68 @@
       "since": "2026-11-20"
     },
     {
-      "org": "Decathlon France",
-      "what": "Files attributed to Decathlon contained customer and delivery records, but the retailer has not confirmed their origin.",
-      "scale": "163,646 customer rows reported",
-      "patterns": [
-        "data-exposure"
-      ],
-      "url": "https://www.cyberattaque.org/decathlon-plus-de-163-000-fiches-clients-diffusees-par-un-hacker-des-livraisons-a-venir-exposees/",
-      "eid": "x-f453cf2d"
-    },
-    {
-      "org": "Smartbox (Bongo)",
-      "what": "Belgium’s Grens police zone warned Bongo customers about phishing after Smartbox’s November breach.",
+      "org": "Snowys Outdoors",
+      "what": "Snowys removed malicious code that may have captured customer details and passwords entered on its website.",
       "scale": "Affected count unknown",
       "patterns": [
         "data-exposure"
       ],
-      "url": "https://www.hln.be/kalmthout/politiezone-grens-waarschuwt-voor-cyberaanval-bij-bedrijf-achter-bongo-cadeaubonnen-klantgegevens-mogelijk-gelekt~a63a41f1/",
-      "eid": "n-4093b8ed",
-      "update": true,
-      "since": "2026-11-03"
+      "url": "https://www.perthnow.com.au/news/technology/snowys-camping-goods-warns-cyber-attack-on-website-may-have-exposed-customer-passwords-and-details-c-23202967",
+      "eid": "n-f9772bdd"
+    },
+    {
+      "org": "Arobases",
+      "what": "The web agency confirmed unauthorized access to a client backup server and said some data offered for sale came from its backups.",
+      "scale": "Client count not confirmed",
+      "patterns": [
+        "supply-chain",
+        "data-exposure"
+      ],
+      "url": "https://frenchbreaches.com/alertes/arobases-piratage-fuite-donnees-centaines-sites-francais-mws8isu03brughu55xr",
+      "eid": null,
+      "since": "2026-10-29",
+      "update": true
+    },
+    {
+      "org": "Next plc",
+      "what": "Next said an intrusion at an online supplier exposed limited company data but found no evidence that its own systems or customer personal data were affected.",
+      "scale": "No evidence of customer data exposure",
+      "patterns": [
+        "supply-chain"
+      ],
+      "url": "https://www.tradingview.com/news/reuters.com,2026-11-23:newsml_RSW2789Ea:0-reg-next-plc-third-party-data-incident/",
+      "eid": "n-0d824cbe",
+      "since": "2026-11-23",
+      "update": false
+    },
+    {
+      "org": "Peninsula Energy",
+      "what": "Peninsula Energy said an incident at the Lance uranium project would temporarily affect operations and that its administrative systems were not breached.",
+      "scale": "Operational impact not quantified",
+      "patterns": [
+        "outage"
+      ],
+      "url": "https://weblink-asx-announcements.old-mountain-2586.workers.dev/pdf/PEN/61356350.pdf",
+      "eid": "x-4f4fae5c",
+      "since": "2026-11-20"
+    },
+    {
+      "org": "Suzlon Energy",
+      "what": "Suzlon confirmed a cyber incident and notified CERT-In, without confirming Blackout’s claim or reporting impact on critical applications.",
+      "scale": "Scope not disclosed",
+      "patterns": [],
+      "url": "https://economictimes.indiatimes.com/industry/renewables/suzlon-energy-hit-by-cyber-incident-company-says-critical-applications-remain-unaffected/articleshow/136095671.cms",
+      "eid": "n-59cf83f3"
+    },
+    {
+      "org": "HD Hyundai Robotics",
+      "what": "HD Hyundai Robotics said an intruder accessed a website server holding subscriber names, usernames, passwords described as encrypted, and contact details.",
+      "scale": "Subscriber count unknown",
+      "patterns": [
+        "data-exposure"
+      ],
+      "url": "https://hd-hyundairobotics.com/en/main",
+      "eid": "n-d501ed5f"
     }
   ]
 }
