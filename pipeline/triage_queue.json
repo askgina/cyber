@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-23T03:29:51Z",
+ "generated": "2026-11-23T04:29:51Z",
  "queue": [
   {
    "date": "2026-11-22T12:00:06Z",
    "title": "US ports face cyber attack onslaught as hackers target vital trade routes",
    "source": "Financial Times",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS2pCeHY2Q3JsWjNLdVZPWk1hX053R3BRay1RSlN4WUE3UlpYOEdKU1QtYmNOM2RsbzZoZXlYY20zdnIzbEl3WHRuRV9PaFBac1BxTjB2ZFFmdnFzUk1jNDY4ZmpuZ1lmYzdRMFk0S0hWMG9UeUFKeFA0dHFQbTFyMUIyUHU?oc=5",
-   "n_outlets": 10,
+   "n_outlets": 11,
    "also": [
     "US Ports Face Rising Wave of Cyberattacks",
     "Ports Face Surge in Cyberattacks",
@@ -362,6 +362,16 @@
    ]
   },
   {
+   "date": "2026-11-22T18:11:11Z",
+   "title": "BREAKING: An Altcoin’s Price Plummets Following Allegations of a Hack",
+   "source": "Bitcoin Sistemi",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOS1o1Q1pKaHIzVlBQOGdBVThqNk1SZnNHU1dKQVNhTVpNeENrbVkyN3NtTmpqZVM5b2xEZS1jazJyNWpZS2o0RGI2bExWeFhaRVRDMXFBOGpveTVwVC1ablZNeThwc0NYeFFObEx1eVFXWGFaV2NzWmhjN2dsd005MTFOY0VaMzZxcmJHZzliaTkwUzNJOEctaU1GRk1WQllV?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "BREAKING: An Altcoin’s Price Plummets Following Allegations of a Hack"
+   ]
+  },
+  {
    "date": "2026-11-22T18:54:44Z",
    "title": "Trump's unexpected reaction to a cyber attack on the FBI that worries the world",
    "source": "Radio Concierto Chile - Sólo grandes canciones",
@@ -369,6 +379,16 @@
    "n_outlets": 2,
    "also": [
     "A cyberattack hit a key FBI base: what was Donald Trump's reaction"
+   ]
+  },
+  {
+   "date": "2026-11-22T19:53:10Z",
+   "title": "Australians’ expectations for cyber-secure businesses are growing",
+   "source": "Accountants Daily",
+   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQeE1xbWV3YnBuMDR3NGZ1ZEtvNVVlRmxqOC1raGZCX1BNVXZDbEVQdWtaSkFXVlVUa1VUNWwwRklRZGdoX0x3SGpDQnYzMFUwVWlkU1JmMjNTUkkwMVd0MmxObm9NZEV3bDBndFNpX2V2c0E1NHMtZFBXbHVfWWhFT3pET1hNR1A0dFgyV2xla0xnbXhYRHhIZTdzT21ybXhQMnNhdlJFSGJDX1JBMjRKcFBkNEJVdDJE?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Australians’ expectations for cyber-secure businesses are growing"
    ]
   },
   {
@@ -390,46 +410,6 @@
    "also": [
     "How Artificial Intelligence Is Making It Harder To Stop Cyberattacks"
    ]
-  },
-  {
-   "date": "2026-11-21T03:55:17Z",
-   "title": "Theft at gamescom! Many creators have lost everything they had, and CD Projekt Red is coming to the rescue!",
-   "source": "PPE",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPWHIzSTFnYl9pYlBFMWdkVmt0WmluVGdfdXRYNW9SNFhhMzV0NkNwT3hFR1dUTWd5NTFod20yRzNkSmJfdk9TZVcycHJETWZGYmZOVjNETnRRYndIcFdSQ1lqOHRHR3I0eXdWN0g2NDI4TXcyb0x0Vklya2pEbzlXampmUWhyanFpWjJidjdQS3FxeFc4STNwaE1VRDYxOG80V1RJRHJMalEtR3lzVEhaQzRjYkNOS19sUXpjdWNRdExiRkwxdVhvMXF6UQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T04:03:38Z",
-   "title": "GTA 6 Has a Blockbuster Launch, Already Sold At Least 32.5 Million Copies",
-   "source": "PCMag Middle East",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPeHVwR1BlamNmaFRqWjNlR3IzWlBoSWhXZDZWdTNiNTVJWndKQXRfenVOSzY4bVQ0S3E3U0xJT0hLelNqMTl6YlJRV3JCUGZtQjJJOU9mb0JQc3N1MlBEUkZSLTFHMHV1Q1RPQ0tTOHliaERyU3JGQkh0NDd4TEs3cnlGellTVmtjNXVuMEloT3p0VGRoM2RQZmRNTkNsTThPREUtckp5NXRPTnc?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T04:08:12Z",
-   "title": "Retail Ransomware Attacks Encrypt More Data Despite Faster Recovery",
-   "source": "BusinessToday Malaysia",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQWnR6QVA4VlRiUkZmbGFILVBibDhDUXJsa1pkSjNvajVWbjlLV21LWm9paTFoMFZzSXlIYVhHdFhONVNqYzJtMjdoWTdxLU1ydDFUdzRsNWJ2WlBIRlBSZGJJTEZaeDA3WkJIU2lmbDBKbjdNSWllQ2c3TnhVQ1pCNHhvYVZ6YlA4ZmVTSkNDbUJIM3NaSVc0MksxdGhDVTBuTG54MVVuQmlnbV93QWFxclp3?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T04:08:24Z",
-   "title": "TN investment leak scare: A mountain out of a ‘mole’ hill?",
-   "source": "The Federal",
-   "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNWlMyUHYzU0JhNk9JV0RkWUZ3ZjFibmZhRnZPZlhuUHFLT3dZcngxMGRFT05FYWROeHpMZ0tDbDEwZzVYUlpFUUtkM0VIdnJLcDFXdUJiTTNWNzV0SG9Fdm1BbDAtbHNxTVBVa2ZKNVFjNDVBcVlpSUFURU45QjVEblE1V1c5c19US0tkeUJrZGtfQ2dzNWwzODFlcGFheWU3S0NIYjZCTXJIYjRlUXkycWZJdUdjVDdo?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T04:10:34Z",
-   "title": "Verstappen escapes discipline in Las Vegas practice after run-ins with Russell and Colapinto",
-   "source": "Click2Houston",
-   "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNNHUza3FrU0xuY2xnaU93Nk1jbUR2ZXpoaUM1YW03c0tLMmhQWi1vVXllMEs0RjJLbFBSSFRzaVRiczhPVEdoRmE4OElWLThfcE4yX0FzdXZyUjZ6aElncDBqdHQ4UzdPMjlBZFA4WjVmUVFJOFZsaTdKNFY5RzVCcVlCZXZEcU82bXgtT2VpaFB5X1k4b3AzekdsX180UkhKQ2JIRDZfY3JTbXQxMFRFclNYVlhKUWlLeVE2SzhVbWF4VUU1LWZzdVdSMGdaRGIwM3hqdVpOcGZEVDladFdielFB?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-21T04:34:49Z",
@@ -904,18 +884,18 @@
    "also": []
   },
   {
-   "date": "2026-11-21T11:05:38Z",
-   "title": "Hackers are targeting the FBI again. What's wrong with American systems?",
-   "source": "Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUUtpTUZlLVViOGtrbllIakUxZjM3NnNKMVJzaUw0MU1EUkhjUlFlNG1KVEwtSVZZRkRVZUxoN1AzM3Mzem1DQlJhaExDZldqX2QxazlpTXJqN0tvaXpqUmR4LTNYT1p0WUJlcVNlSmJ0ZS1qTk5HSDZtUGRtejVmMGJmX3FMVUVLVG0zQVlB?oc=5",
+   "date": "2026-11-21T11:05:00Z",
+   "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
+   "source": "The Hacker News",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPd2V1R0JyTWRjR0dpdk1BTk4yY2xGS21RRkFuemVlSk9FcE82VDBweEEtZU4zV29oaHFkSVlLV2JMOWJPLWE5TWp6RzR0WDk1RFBOc0pQNDM0b3V1ZDl6VXFoSTdaR3dPTHQ0aVg2dmR1UWl4dFF4YzQ3NzdhcVJVYmpR?oc=5",
    "n_outlets": 1,
    "also": []
   },
   {
-   "date": "2026-11-21T11:05:53Z",
-   "title": "GnuPG Warns Critical GPGME Flaw Could Expose App Data via Malicious OpenPGP Keys",
-   "source": "The Hacker News",
-   "url": "https://thehackernews.com/2026/11/gnupg-warns-critical-gpgme-flaw-could.html",
+   "date": "2026-11-21T11:05:38Z",
+   "title": "Hackers are targeting the FBI again. What's wrong with American systems?",
+   "source": "Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOUUtpTUZlLVViOGtrbllIakUxZjM3NnNKMVJzaUw0MU1EUkhjUlFlNG1KVEwtSVZZRkRVZUxoN1AzM3Mzem1DQlJhaExDZldqX2QxazlpTXJqN0tvaXpqUmR4LTNYT1p0WUJlcVNlSmJ0ZS1qTk5HSDZtUGRtejVmMGJmX3FMVUVLVG0zQVlB?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1104,6 +1084,22 @@
    "also": []
   },
   {
+   "date": "2026-11-21T13:47:34Z",
+   "title": "Sinaloa, Mexico news today: Fausto Isidro Meza-Flores, or El Chapo Isidro, leader of Guasave cartel Los Mazatleco, is captured",
+   "source": "ABC7 New York",
+   "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNQTl2UTFVb0tUTHdVTkZqWW85d0pLaG8xZlV0Q011Qjh1MnpQV2NNN3NKZDM0US00NFpZYmlWdnFLOTJSYnV1TmszbXprcnRXb2doOE9EWEZPdTdZakYxaGV3TjVaWTUxZ3ZZRGFXRjhjQ01UbGdEQVVnQW5xUDVuNVcyZ2Z6cVVvYVVWT1huZ0NVQS1MVU10VEJyRHR1VHJQcTQtY3c1eWZMd0FjUE5ZTnBUUmhiTE5MTk8zYXpXc05aN1BXUnYxYzhZeXMydjRPSlFWNTdDZmNJTGtMOFBr0gHfAUFVX3lxTE1BOXZRMVVvS1RMd1VORmpZbzl3SktobzFmVXRDTXVCOHUyelBXY003c0pkMzRRLTQ0WlliaVZ2cUs5MlJidXVOazNtemtydFdvZ2g4T0RYRk91N1lqRjFoZXdONVpZNTFndllEYVdGOGNDTVRsZ0RBVWdBbnFQNW41VzJnZnpxVW9hVVZPWG5nQ1VBLUxVTXRUQnJEdHVUclBxNC1jdzV5Zkx3QWNQTllOcFRSaGJMTkxOTzNheldzTlo3UFdSdjFjOFl5czJ2NE9KUVY1N0NmY0lMa0w4UGs?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T13:51:38Z",
+   "title": "Kraken Trades Bitcoin at Half Market Price Against Canadian Dollar",
+   "source": "ForkLog",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQnEtZEF3NXpFNlZ6UGJqaDM0dmJaYlJMYTJUWEpRbEs0aVFES1VkOVl5a2piUmR6UVhGZnRLNVozVElFNEo5Q01kN0tLamYxUkJIQk9DMVIxT2E4NlU5UFlVaDdlQkxvSkRJcEwwd1NIMllDc2pBZllkVk1QZVZLWkVBaGVfUG1hZWZOcjdhQ21acmE0?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-21T13:55:00Z",
    "title": "This is how much cash you need to have at home in case of a crisis",
    "source": "Do Rzeczy",
@@ -1132,6 +1128,14 @@
    "title": "Austria. They confirm a cyber attack against their Foreign Minister",
    "source": "Resumen Latinoamericano -",
    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNTmN0bjE3cnFYa090N1hxelZVYWozOWJLTDM1dWtwRlFIeFJaMF9WVnBrQUVOdUZQaUduVExhM3B0bms1MWxCb0lHQlZibE5PX29hMGstWWxSZUFQOVBOVnhibTk3VS1tWTlwX2RNYzB5Q3dGc2lNOHVkOHMtNWFXWFhNOUVGTlFxcGhqWUJTSXQ3dkRaMTdmckd0dlROdmZRV0lLMWJvTVJRem1BNVd2VlIxUW1neUE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T14:18:00Z",
+   "title": "Kraken Confirms No Security Breach After Bitcoin Briefly Plunges to $27,000 in CAD Trading",
+   "source": "Hokanews",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9jakp6eklUa0l1NDF5MDlDVEpfQTRMMHhzMGo0cEhSZEQtV3ByanZfZk1IUUpkeVgzM1BqUkZZSzJqUUNMaDNGemdTbTJlbHFGSFpaV0Q0VmZoTDlSTTJNNmN3Q3JNQXRZX0Y2RnFfQWdlMXVYYnp2emZKN24?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1424,14 +1428,6 @@
    "also": []
   },
   {
-   "date": "2026-11-21T19:07:20Z",
-   "title": "After outage, Microsoft confirms another July bug that led to Entra data breach",
-   "source": "Neowin",
-   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPRW83NVZJUHRUUEY5TEVSdWQ2Q2laanNMMDBhSW5MbUgyWV8zdnY2alV4bWRNZ21MdTBFZExjRmhxM3ZYbkFHMlU3eUthYWtZRlpnNXYtcG5JQkFNeDBJX2hzeG9ncmdkWW5Ub1ZobkJvSjBYQ3pIdHdZUjAySUZOT3VoMm1IMnh3TmpCcnVvQ0RxNm9QR3hPM3ZRV2hOWHFaeDdFZjhnc0hnczg?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
    "date": "2026-11-21T19:10:00Z",
    "title": "Sharing the latest trends and countermeasures against cyber attacks. Recruiting sponsors for “Security × Engineering Conference” is now open!",
    "source": "Excite エキサイト",
@@ -1684,6 +1680,14 @@
    "title": "Chevron Sued Over Claimed Employee Data Breach",
    "source": "openclassactions.com",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOU1NBNk5RY1EybGNPLThXZkFUbDc5RGpUN19sRE4wWHBDdHZ4M0RQY3lNWGxwdHdGN1VSZnJqcGNOb044OHZETnplXzlaem5nalFhY0cycEM5OEtTYXBmenYtSTFKblJqdzRMbEtwcS1JRGhlNEJadmZydm9hdTRybEU3bnBxVzlSYVYyaTZRQy1HY1lBZnlibnl4dTI?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T01:50:41Z",
+   "title": "Simplilearn Sued Over Late-Night Marketing Texts",
+   "source": "openclassactions.com",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNXozNDZJcWgxSlA4X1ptNmpqcDdEVzV2TFdoMTBnWW5IemFXNlRUaE9vc1RlTmFvMGx0eTNGbXFwNmVpY2cwS0liUmpTZ2U3UXF0LVdaWGk1WHEzRVFtS0JoVk04OXJQV2VtWm13NFJuenlJVWFEbnhCSlA3Z3h4aVlMN3VRc1lvSFN3MzVpS3pjR3Jobk5fN3JkLVhMYnVZbHN5YlhnZ0hmUC1RZkE?oc=5",
    "n_outlets": 1,
    "also": []
   }

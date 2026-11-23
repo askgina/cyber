@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T03:29:48Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users, and a cyberattack forced Guadeloupe University Hospital to postpone non-urgent care. Samsung Securities confirmed an intrusion exposed information on 8,241 people, while Chainflip’s bounty offer related to its earlier theft remains open.",
+  "updated": "2026-11-23T04:29:19Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care after a cyberattack, and Samsung Securities reported 8,241 people affected. Persistent Systems says its own systems are secure, but employee immigration data may have been taken from a law firm.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -62,6 +62,16 @@
       "eid": "x-e9f8c567"
     },
     {
+      "org": "Persistent Systems",
+      "what": "INC Ransom’s claim remains unverified; the company says its own systems are secure and employee immigration records may have been taken from a law firm.",
+      "scale": "Possible third-party exposure; count unknown",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "x-a8754aa6",
+      "url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_23112026074246_CompanyStatementforexchangesreleaseNov232026Signed.pdf"
+    },
+    {
       "org": "Bordeaux University Hospital",
       "what": "Scarlettgroup listed the hospital on its leak site; unauthorized access, data theft and service disruption remain unconfirmed.",
       "scale": "Unverified extortion claim",
@@ -72,24 +82,14 @@
       "eid": "x-59858f8c"
     },
     {
-      "org": "Samsung Group",
-      "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
-      "scale": "1 TB claimed",
+      "org": "Fisher & Paykel Healthcare",
+      "what": "Falcon claimed it took company data; the claim is unverified and has not been linked to the company’s October incident.",
+      "scale": "Scope unverified",
       "patterns": [
-        "ransomware"
+        "data-exposure"
       ],
-      "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw",
-      "eid": "x-35eeeab2"
-    },
-    {
-      "org": "Nesa",
-      "what": "One X account alleged new unauthorized NES minting and estimated about $440,000 in sale proceeds; no independent or project confirmation was found.",
-      "scale": "~$440K in proceeds claimed",
-      "patterns": [
-        "bridge"
-      ],
-      "eid": "x-c7c7a140",
-      "url": "https://x.com/eth_apple/status/2124593198156927474"
+      "eid": "x-4e728987",
+      "url": "https://www.ransomware.live/id/RmlzaGVyICYgUGF5a2VsIEhlYWx0aGNhcmVARmFsY29u"
     },
     {
       "org": "Chainflip",
@@ -104,16 +104,16 @@
       "since": "2026-11-21"
     },
     {
-      "org": "Cleverbridge",
-      "what": "A Cleverbridge notice reviewed by BleepingComputer said the stolen payment data included card numbers, expiry dates and security codes.",
-      "scale": "Affected customer count not disclosed",
+      "org": "GL.iNet",
+      "what": "Security firmware is rolling out for selected router and KVM models after cloud-management exploitation installed malware on some devices.",
+      "scale": "Device count undisclosed",
       "patterns": [
-        "data-exposure"
+        "edge-device"
       ],
-      "eid": "n-855a50ef",
-      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "eid": "n-a5b67213",
+      "url": "https://www.gl-inet.com/blogs/blog/glinet-security-notice-2026-11-20",
       "update": true,
-      "since": "2026-11-04"
+      "since": "2026-11-20"
     },
     {
       "org": "Kurly",
