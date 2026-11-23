@@ -101,7 +101,7 @@
       const cr = r.crypto ? `${r.crypto.n}${r.crypto.usd ? " · " + B.fmtUSD(r.crypto.usd) : ""}` : "n/a";
       const top = r.crypto && r.crypto.top && r.crypto.top.usd >= 1e7 && (w === "7d" || w === "30d" || w === "ytd") ? r.crypto.top : null;
       const br = r.breach ? `${r.breach.n}${r.breach.acc ? " · " + B.compact(r.breach.acc) : ""}` : "n/a";
-      return el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: "Press-reported incidents (curated registry, one per incident), crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP. Official notices are listed but not added to the total." },
+      const box = el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: "Press-reported incidents (curated registry, one per incident), crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP. Official notices are listed but not added to the total." },
         el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, "incidents")),
         el("div", { class: "wb" },
           line("Press-reported", r.inc && (w === "1h" || w === "24h" || w === "7d") ? String(r.inc.n) : "n/a"),
@@ -110,7 +110,10 @@
           line("Exploited CVEs", r.kev ? String(r.kev.n) : "n/a"),
           line("Breaches", br),
           r.notices && r.notices.n ? line("Official notices", String(r.notices.n)) : null),
-        top ? el("div", { class: "wt" }, el("em", {}, "Largest "), `${top.name.replace(/ CEX$/, "")} ${B.fmtUSD(top.usd)}, ${B.fmtDate(top.date)}`) : null);
+        top ? el("div", { class: "wt" }, el("em", {}, "Largest "), `${top.name.replace(/ CEX$/, "")} ${B.fmtUSD(top.usd)}, ${B.fmtDate(top.date)}`) : null,
+        w === "ytd" ? el("button", { type: "button", class: "t-kbtn" }, "Browse and search all since Jan 1 →") : null);
+      if (w === "ytd") box.querySelector(".t-kbtn").addEventListener("click", () => { T.tab = "arc"; T.panel = 4; drawMkt(T.D); const p = document.querySelector('.t-p[data-k="5"]'); p && p.scrollIntoView({ block: "nearest", behavior: "smooth" }); });
+      return box;
     }));
   }
 
@@ -208,14 +211,78 @@
     });
   }
 
-  const TABS = { inc: "Incidents 7d", crypto: "Crypto", ransom: "Ransom", kev: "KEV", breach: "Breach" };
+  const TABS = { inc: "7d", arc: "Since Jan 1", crypto: "Crypto", ransom: "Ransom", kev: "KEV", breach: "HIBP" };
+
+  // ---- year-to-date archive: a separate file, fetched on first use (search or the Since Jan 1 tab)
+  const AK = { all: "All", inc: "Incidents", crypto: "Crypto", ransom: "Ransomware", breach: "Breaches", notice: "Notices", sec: "SEC 8-K", kev: "KEV" };
+  const AKL = { inc: "Incident", crypto: "Crypto hack", ransom: "Ransomware claim", breach: "Breach (HIBP)", notice: "Official notice", sec: "SEC 8-K filing", kev: "Exploited CVE" };
+  const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  const AR = { data: null, p: null, err: null, kind: "all", month: null, ix: {} };
+  function loadArchive() {
+    if (AR.p) return AR.p;
+    AR.p = fetch("./archive.json", { cache: "no-cache" }).then((r) => r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status))).then((j) => {
+      (j.items || []).forEach((a, i) => {
+        a._s = [a.o, a.t, a.s, a.x, a.k === "inc" && a.rec ? [a.rec.summary, (a.rec.affected || []).join(" ")].join(" ") : ""].filter(Boolean).join(" ").toLowerCase();
+        a.m = +a.d.slice(5, 7) - 1;
+        if (a.k === "inc" && a.r) { a.id = "r-" + a.r; if (a.rec) AR.ix[a.id] = { it: { ...a.rec, id: a.r, n_outlets: (a.rec.sources || []).length, latest: (a.rec.updates || []).length ? a.rec.updates[a.rec.updates.length - 1].date : a.rec.first_reported, notices: [], outlets: [], stories: [] }, kind: "inc", title: a.rec.org || a.o, text: [a.rec.title, a.rec.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: a.rec.first_reported || a.d, url: null }; }
+        else { a.id = "a-" + i; AR.ix[a.id] = { it: { _arc: a, links: a.u ? [{ label: "Source", url: a.u }] : [] }, kind: "arc", label: AKL[a.k] || "Record", title: a.o, text: a.t, date: a.d, url: null }; }
+      });
+      AR.data = j;
+      for (const [k, v] of Object.entries(AR.ix)) if (!IX[k]) IX[k] = v;  // live records keep their richer entries
+      drawMkt(T.D); applyFilter();
+    }).catch((e) => { AR.err = String(e.message || e); drawMkt(T.D); });
+    return AR.p;
+  }
+  function arcMatches(q, kind, month) {
+    const its = (AR.data && AR.data.items) || [];
+    const words = q ? q.split(/\s+/).filter(Boolean) : [];
+    return its.filter((a) => (kind === "all" || a.k === kind) && (month == null || a.m === month) && words.every((w) => a._s.includes(w)));
+  }
+  function drawArchive(box) {
+    if (!AR.data) {
+      box.append(el("p", { class: "t-empty" }, AR.err ? `Archive unavailable (${AR.err}).` : "Loading every record since January 1…"));
+      loadArchive(); $("#t-mkt-m").textContent = "";
+      return;
+    }
+    const q = T.q;
+    const base = arcMatches(q, "all", AR.month);
+    const byK = {}; base.forEach((a) => byK[a.k] = (byK[a.k] || 0) + 1);
+    const chips = el("div", { class: "t-achips", role: "group", "aria-label": "Record type" }, ...Object.entries(AK).filter(([k]) => k === "all" || byK[k] || AR.kind === k).map(([k, l]) => {
+      const b = el("button", { type: "button", class: AR.kind === k ? "on" : null, "aria-pressed": String(AR.kind === k) }, l, " ", el("i", {}, String(k === "all" ? base.length : byK[k] || 0)));
+      b.addEventListener("click", () => { AR.kind = k; drawMkt(T.D); });
+      return b;
+    }));
+    const forMonths = arcMatches(q, AR.kind, null);
+    const mc = Array(12).fill(0); forMonths.forEach((a) => mc[a.m]++);
+    const nowM = new Date().getUTCMonth(), max = Math.max(1, ...mc);
+    const months = el("div", { class: "t-amon", role: "group", "aria-label": "Month" }, ...MON.slice(0, nowM + 1).map((m, i) => {
+      const b = el("button", { type: "button", class: AR.month === i ? "on" : null, title: `${m}: ${mc[i].toLocaleString("en-US")} records${AR.month === i ? " (click to clear)" : ""}`, "aria-pressed": String(AR.month === i) },
+        el("span", { class: "bar" }, el("i", { style: `--v:${mc[i] ? Math.max(.06, mc[i] / max) : 0}` })), el("span", { class: "ml" }, m));
+      b.addEventListener("click", () => { AR.month = AR.month === i ? null : i; drawMkt(T.D); });
+      return b;
+    }));
+    box.append(el("div", { class: "t-ahead" }, chips, months));
+    const list = arcMatches(q, AR.kind, AR.month);
+    const LIM = 300;
+    if (!list.length) box.append(el("p", { class: "t-empty" }, q ? `Nothing since January 1 matches “${q}”.` : "No records."));
+    list.slice(0, LIM).forEach((a) => box.append(row([
+      c("c-t", B.fmtDate(a.d.slice(0, 10))),
+      c("c-org", el("b", {}, a.o), el("small", {}, `${AKL[a.k] || a.k}${a.t && a.t !== a.o ? " · " + a.t : ""}`)),
+      c("c-sc", a.s || ""),
+    ], { id: a.id, url: a.u, cls: "arc" })));
+    if (list.length > LIM) box.append(el("p", { class: "t-empty" }, `Showing the newest ${LIM} of ${list.length.toLocaleString("en-US")}. Narrow it with the filter, a type or a month.`));
+    $("#t-mkt-m").textContent = `${list.length.toLocaleString("en-US")} of ${(AR.data.items || []).length.toLocaleString("en-US")}`;
+  }
+
   function drawMkt(D) {
+    const nArc = AR.data && T.q ? arcMatches(T.q, "all", null).length : null;
     $("#t-tabs").replaceChildren(...Object.entries(TABS).map(([k, l]) => {
-      const b = el("button", { type: "button", role: "tab", "aria-selected": String(T.tab === k), class: T.tab === k ? "on" : null }, l);
+      const b = el("button", { type: "button", role: "tab", "aria-selected": String(T.tab === k), class: T.tab === k ? "on" : null }, l, k === "arc" && nArc != null ? el("i", { class: "tn" }, " " + nArc.toLocaleString("en-US")) : null);
       b.addEventListener("click", () => { T.tab = k; drawMkt(T.D); applyFilter(); });
       return b;
     }));
     const box = $("#t-mkt"); box.replaceChildren();
+    if (T.tab === "arc") { drawArchive(box); return; }
     if (T.tab === "inc") {
       const cutoff = Date.now() - 7 * 864e5;
       const items = (D.registry || []).filter((r) => Date.parse(r.latest) >= cutoff)
@@ -258,7 +325,7 @@
     const { it, kind, title, text } = e;
     const det = B.DET[id] || {};
     const ib = $("#t-ib"); ib.replaceChildren();
-    $("#t-ik").textContent = `${B.KIND[kind]} · ${e.date.length === 10 ? B.fmtDate(e.date) : B.fmtLong(e.date)}`;
+    $("#t-ik").textContent = `${e.label || B.KIND[kind]} · ${e.date.length === 10 ? B.fmtDate(e.date) : B.fmtLong(e.date)}`;
     ib.append(el("h2", {}, title));
     if (text) ib.append(el("p", { class: "t-id" }, text));
     const links = [...(it.links || []), ...(e.url ? [{ label: it.source || "Source", url: e.url }] : [])];
@@ -284,7 +351,9 @@
   function applyFilter() {
     const q = $("#t-q").value.trim().toLowerCase();
     T.q = q.startsWith("ask ") ? "" : q;
-    document.querySelectorAll("#term .t-b .t-r:not(.t-hd)").forEach((r) => { const e = r.dataset.id && IX[r.dataset.id]; r.hidden = !!T.q && !(r.textContent + " " + (e ? e.title + " " + (e.text || "") + " " + (e.search || "") : "")).toLowerCase().includes(T.q); });
+    if (T.q.length >= 3 && !AR.p) loadArchive();
+    if (T.lastQ !== T.q) { T.lastQ = T.q; if (T.tab === "arc" || AR.data) drawMkt(T.D); }
+    document.querySelectorAll("#term .t-b .t-r:not(.t-hd):not(.arc)").forEach((r) => { const e = r.dataset.id && IX[r.dataset.id]; r.hidden = !!T.q && !(r.textContent + " " + (e ? e.title + " " + (e.text || "") + " " + (e.search || "") : "")).toLowerCase().includes(T.q); });
   }
   let qt;
   $("#t-q").addEventListener("input", () => { clearTimeout(qt); qt = setTimeout(applyFilter, 120); });
@@ -336,10 +405,10 @@
   };
 
   B.onRender = (D) => {
-    T.D = D; IX = index(D);
+    T.D = D; IX = index(D); for (const [k, v] of Object.entries(AR.ix)) if (!IX[k]) IX[k] = v;
     const openId = !$("#t-insp").hidden && location.hash.startsWith("#e-") ? location.hash.slice(3) : null;
     drawKpi(D); drawHit(); drawFeed(); drawX(D); drawAct(D); drawMkt(D); applyFilter();
-    if (!T.booted) { T.booted = true; if (/^#e-/.test(location.hash) && document.body.classList.contains("view-term")) inspect(location.hash.slice(3)); }
+    if (!T.booted) { T.booted = true; if (/^#e-/.test(location.hash) && document.body.classList.contains("view-term")) { const id0 = location.hash.slice(3); if (IX[id0]) inspect(id0); else loadArchive().then(() => inspect(id0)); } }
     else if (openId && IX[openId]) document.querySelectorAll(`.t-r[data-id="${openId}"]`).forEach((n) => n.classList.add("sel"));
     B.onTick();
   };

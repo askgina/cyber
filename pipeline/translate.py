@@ -21,9 +21,13 @@ def needs(text, lang=None):
     if lang and lang != "en":
         # an English headline in a regional edition: keep it if it reads as English
         return len(LATIN_EN.findall(text)) < 2
-    return non_ascii > 0.08 and len(LATIN_EN.findall(text)) < 2
+    en_hits = len(LATIN_EN.findall(text))
+    if non_ascii > 0.08 and en_hits < 2: return True
+    fo = len(FOREIGN.findall(text))
+    return fo >= 2 and fo > en_hits
 
 
+FOREIGN = re.compile(r"\b(de|het|een|van|voor|bij|met|niet|naar|zijn|wordt|op|la|el|los|las|una|un|del|por|para|con|que|en|der|die|das|und|ein|eine|nach|bei|mit|ist|auf|f\u00fcr|le|les|du|des|une|sur|avec|pour|est|et|au|aux|dans|par|pas|été|il|di|per|della|che|och|av|som|ikke|og|af|til|dla|nie|si\u0119|na|w|do|ze|pe|s\u00e3o|uma|dos|das|em|ao)\b", re.I)
 _blocked = False
 
 
@@ -35,6 +39,24 @@ def _batch(qs):
     out = []
     for x in r:
         out.append(x[0] if isinstance(x, list) else x)
+    return out
+
+
+_mm = {"n": 0, "off": False}
+
+
+def _mymemory(q):
+    """Fallback when Google rate-limits: MyMemory free API, one string per call, small daily quota."""
+    if _mm["off"] or _mm["n"] >= 80: return None
+    _mm["n"] += 1
+    u = "https://api.mymemory.translated.net/get?langpair=autodetect|en&q=" + urllib.parse.quote(q[:480])
+    try:
+        r = json.loads(urllib.request.urlopen(urllib.request.Request(u, headers={"User-Agent": "Mozilla/5.0"}), timeout=20).read().decode())
+    except Exception:
+        _mm["off"] = True; return None
+    if r.get("quotaFinished") or r.get("responseStatus") != 200: _mm["off"] = True; return None
+    out = (r.get("responseData") or {}).get("translatedText") or ""
+    if not out or "MYMEMORY WARNING" in out.upper(): return None
     return out
 
 
@@ -58,6 +80,13 @@ def prefetch(texts, lang=None):
         except Exception as e:
             if "429" in str(e): _blocked = True
             time.sleep(1)
+    if _blocked:
+        # shortest first so headlines win the small fallback quota
+        for src in sorted([x for x in todo if x not in _c], key=len):
+            out = _mymemory(src)
+            if out is None and _mm["off"]: break
+            if out and out.strip() != src.strip(): _c[src] = out.strip(); _dirty = True
+            time.sleep(0.2)
 
 
 def en(text, lang=None):

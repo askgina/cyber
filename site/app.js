@@ -89,6 +89,10 @@
       ["Ransomware use", it.ransomware ? "Known" : "Not known"],
       ["Weakness", (it.cwes || []).length ? (det.cwes || it.cwes.map((c) => ({ id: c }))).map((c, ix) => [ix ? ", " : "", el("a", { href: `https://cwe.mitre.org/data/definitions/${c.id.replace("CWE-", "")}.html`, target: "_blank", rel: "noopener" }, c.id), c.name ? ` ${c.name.toLowerCase()}` : ""]).flat() : null]];
     else if (kind === "news") rows = [["Source", it.source], ["First seen", fmtLong(it.date)], ["Coverage", it.n_outlets > 1 ? `${it.n_outlets} outlets` : null]];
+    else if (kind === "arc") { const a = it._arc; let host = ""; try { host = a.u ? new URL(a.u).hostname.replace(/^www\./, "") : ""; } catch (e) {}
+      rows = [["Record", { inc: "Incident", crypto: "Crypto hack", ransom: "Ransomware leak-site claim", breach: "Breach added to Have I Been Pwned", notice: "Official breach notice", sec: "SEC 8-K, Item 1.05 (material cybersecurity incident)", kev: "Added to CISA Known Exploited Vulnerabilities" }[a.k] || a.k],
+        ["Date", fmtDate(a.d.slice(0, 10)) + " " + a.d.slice(0, 4)], ["Organisation", a.o], ["Scale", a.s || null], ["Details", a.x || null],
+        ["Source", a.u ? el("a", { href: a.u, target: "_blank", rel: "noopener" }, host || "Open") : null]]; }
     else if (kind === "inc") rows = [["Type", it.type], ["Status", it.status], ["Sector", it.sector], ["Country", it.country], ["Threat actor", it.actor], ["Initial access", it.vector],
       ["Records", it.records ? it.records.toLocaleString("en-US") : null], ["Loss", it.usd ? fmtUSD(it.usd) : null],
       ["Incident date", it.event_date ? fmtDate(it.event_date) + " " + it.event_date.slice(0, 4) : null], ["First reported", fmtLong(it.first_reported)],
