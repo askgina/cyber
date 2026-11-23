@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T00:28:07Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users and is still checking which procurement users had data exposed. Guadeloupe University Hospital postponed non-urgent care, while reporting on Fusionist estimated about $2 million in attacker proceeds and, separately, about $3.7 million in later bridge reserve withdrawals.",
+  "updated": "2026-11-23T01:31:39Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users, and Guadeloupe University Hospital postponed non-urgent care after a cyberattack. Samsung Securities confirmed a separate breach of its customer feedback system affecting 8,241 people.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -19,8 +19,18 @@
       "patterns": [
         "outage"
       ],
-      "url": "https://www.tf1info.fr/justice-faits-divers/une-cyberattaque-de-grande-ampleur-touche-le-chu-de-la-guadeloupe-2477494.html",
+      "url": "https://cybersixt.com/originals/guadeloupe-hospital-cyberattack",
       "eid": "n-6bb7a2db"
+    },
+    {
+      "org": "Samsung Securities",
+      "what": "The brokerage confirmed that an intrusion into its customer feedback system exposed personal information, including some account and driver’s license numbers.",
+      "scale": "8,241 people affected",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "n-5aadc6a5",
+      "url": "https://www.smarttoday.co.kr/ko-kr/articles/113960"
     },
     {
       "org": "Fusionist",
@@ -34,14 +44,13 @@
       "eid": "c-31c40b98"
     },
     {
-      "org": "Samsung Group",
-      "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
-      "scale": "1 TB claimed",
+      "org": "Cranston Police Department",
+      "what": "Police took the network offline after detecting a potential database intrusion; phones, radio and calls for service continued normally.",
+      "scale": "Network offline; no evidence of personal data access",
       "patterns": [
-        "ransomware"
+        "outage"
       ],
-      "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw",
-      "eid": "x-35eeeab2"
+      "url": "https://coastalabc.com/sports/local-sports/cranston-police-investigating-potential-cyber-intrusion-into-department-database"
     },
     {
       "org": "Sri Lanka Department of Motor Traffic",
@@ -50,6 +59,16 @@
       "patterns": [],
       "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/",
       "eid": "x-e9f8c567"
+    },
+    {
+      "org": "Samsung Group",
+      "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
+      "scale": "1 TB claimed",
+      "patterns": [
+        "ransomware"
+      ],
+      "url": "https://www.ransomware.live/id/U2Ftc3VuZyBHcm91cDogMVRCIERhdGEgQnJlYWNoIGZyb20gUmFuc29td2FyZSBBdHRhY2tASFlGTE9DSw",
+      "eid": "x-35eeeab2"
     },
     {
       "org": "Nesa",
@@ -99,40 +118,16 @@
       "since": "2026-11-21"
     },
     {
-      "org": "Cleverbridge",
-      "what": "Cleverbridge confirmed stored payment-card data was copied; customer notices began November 20, and the number affected remains undisclosed.",
-      "scale": "Card numbers and security codes; total unknown",
+      "org": "Cysic",
+      "what": "New coverage revisited Cysic’s October bridge incident and the project’s statement that the later token burn did not recover attacker proceeds.",
+      "scale": "10M unauthorized CYS tokens, not dollars",
       "patterns": [
-        "data-exposure"
+        "bridge"
       ],
-      "eid": "n-855a50ef",
-      "url": "https://grow.cleverbridge.com/incident-update",
+      "eid": "x-a07c3203",
+      "url": "https://thedefiant.io/news/hacks/cysic-bridge-exploit-minted-10-million-tokens-on-bnb?referrer=www.coinrithm.com/es/criptomonedas/bnb",
       "update": true,
-      "since": "2026-11-04"
-    },
-    {
-      "org": "The Moats",
-      "what": "Moats App’s post-mortem put losses from automated-rewards wallets at about $600,000 and said those wallets had been retired.",
-      "scale": "~$600K estimated; no recovery reported",
-      "patterns": [
-        "key-compromise"
-      ],
-      "eid": "c-57e77d67",
-      "url": "https://minerxbt.substack.com/p/moats-app-security-incident-post",
-      "update": true,
-      "since": "2026-11-19"
-    },
-    {
-      "org": "Nedbank Avo",
-      "what": "Follow-up coverage noted that Avo accepts cards from other banks and Nedbank has not identified which issuers’ cardholders were affected.",
-      "scale": "Affected cardholder count undisclosed",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "n-c601c3ef",
-      "url": "https://thedetail.co.za/articles/nedbank-avo-hack-card-issuers-unclear/",
-      "update": true,
-      "since": "2026-10-28"
+      "since": "2026-10-17"
     }
   ]
 }

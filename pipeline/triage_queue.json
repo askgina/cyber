@@ -1,12 +1,12 @@
 {
- "generated": "2026-11-23T00:33:28Z",
+ "generated": "2026-11-23T01:31:39Z",
  "queue": [
   {
    "date": "2026-11-22T12:00:06Z",
    "title": "US ports face cyber attack onslaught as hackers target vital trade routes",
    "source": "Financial Times",
    "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOS2pCeHY2Q3JsWjNLdVZPWk1hX053R3BRay1RSlN4WUE3UlpYOEdKU1QtYmNOM2RsbzZoZXlYY20zdnIzbEl3WHRuRV9PaFBac1BxTjB2ZFFmdnFzUk1jNDY4ZmpuZ1lmYzdRMFk0S0hWMG9UeUFKeFA0dHFQbTFyMUIyUHU?oc=5",
-   "n_outlets": 13,
+   "n_outlets": 14,
    "also": [
     "US Ports Face Rising Wave of Cyberattacks",
     "US ports face wave of cyberattacks as Los Angeles blocks 120 million attempts",
@@ -100,16 +100,6 @@
    "also": [
     "Connecticut lawmakers to probe cyber threats to utilities, other services",
     "Connecticut lawmakers want utilities to explain how they would withstand a major cyberattack"
-   ]
-  },
-  {
-   "date": "2026-11-21T00:44:52Z",
-   "title": "CTO of ‘RansomwareHelp’ Indicted for Wire Fraud",
-   "source": "Krebs on Security",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNTFYtX3RRN1BPbXRFc1pBQUU3cDJBSGJUYkdHMmFMaUJKSjVYdjQwTlZHZnVVdEVERC1tVlF5RjVDNnc3T2h1WHhURUgxdFh1eng5TE1xUHBaY0MwQkc3NzlSa3BOUEVGd3BFM3d0eUptNjVEVG9BZk9JSHRUMW5wMEpQNWwxTTVRbGc?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "CTO of RansomwareHelp indicted for wire fraud"
    ]
   },
   {
@@ -411,54 +401,6 @@
    "also": [
     "A cyberattack hit a key FBI base: what was Donald Trump's reaction"
    ]
-  },
-  {
-   "date": "2026-11-21T00:35:31Z",
-   "title": "'Addicted to hacking': Young hacker behind historic breach speaks out for 1st time, before reporting to prison",
-   "source": "ABC News - Breaking News, Latest News and Videos",
-   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxObHotRTVhbWRuZE1vbkNkRlV5cjUtODlSV0NJYkMyR00tVzJFUjUxNjVHc0x1ZHRiMDg5dnBvczVuQVFocHNocU8yWF85RmRpLXFaQkx1RWdZeHlscmE5UU5aR1haUmgwbEh0TWtYTEVIUEV0YmZXM0U0Unk3SXdCQm50OXg3Wkp0N3Q3eC04OHo3Y0paREU4b3gzem9ubWPSAaQBQVVfeXFMTTFaMzJodU9aZWlRMU1zandRMHc3SmJpckwzQmNHQWdDVHJ5eVNvNWtzSmowd2lyTUptdTJCUTJWZVVzX0E5RFZNT1J2YW1JcHctcUNOa3pnbW84cXE5eEthYTNqa3VPUDI3MEh0VzlfUTRVQ0VrODA0RlBGaVJuUjhlTndwc2JPM2ttVDlwQmxyREpBZXhmUjh0SXNJSGxyMGdfUzQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T00:42:17Z",
-   "title": "Corporate bankruptcies in Hokuriku ``highest this year'' 29 cases in October 2026 ``Concerns about last push'' due to soaring prices, weak yen, and cyber attacks (MRO Hokuriku Broadcasting)",
-   "source": "Yahoo!ニュース",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBnTkRxZjBfblVtYTRiVEw1QVozbjdSemRwQUJLZ0RuZmIwMjJCeFduLVo1R2tvNy1KLWZ4YlhvcnNab0Vsc0RDMnF0ZS1CLU1mZWlLSDMxN19FSGlHUE5wU01BY2FGSmRzX1MwbWpmd2FOSTJEbm1GMTctWnRTYzg?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T01:00:00Z",
-   "title": "Has any government agency not been hacked at this point?",
-   "source": "Daily Kos",
-   "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPTlpLMUc5R3ZLUXpobnJubzdFTFFXSVdNWkF0czFPU1RVbDFOTnZYRE5ZLUc1YWpOeFVpbmNNNE1hX1JyNmMzVEF3OElsWmdpS01WTW9KeGtXVEY5VnVkUF9nTlQxYmctTk5nUnY2bGtXUk1raTNaY2o0dVY1ZVB6LXFGa2Zic1lWQm5wT3hOZnZ3VDFTaUphRXMzbFFmdWVKbU5JeWJn?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T01:05:56Z",
-   "title": "[Today, Japan] considering forcibly blocking sites to prevent the spread of leaked personal information... Controversy over violation of freedom of communication",
-   "source": "포인트경제",
-   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1FSkluekVyNjN0RVBPa2J1aHpQSGFyb1VxMVBXVWdUU3JnQWZlYU1SX0tTSE5aNzJieEwtZTV4OFV4NWFtZkw4LUIwTmEtd0x1M1VOVDBNeEhtNVgzX0d5XzN3UXkxZ0hSb2c?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T01:13:08Z",
-   "title": "On October 7, Sberbank withstood the largest cyber attack in its history",
-   "source": "МордовМедиа",
-   "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5nU1dYWE5zUndwTEVLenRlTXpJVk9IYXBreGFTY0dVeDN0VUt2MXU5Z1VNcTJyS05uRmtUdFpUOWExRldlUHdjMnVNQ2YwOHZSMlNOSmpZblpQeXlVOXBtMVpjSTNKdkk?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T01:20:14Z",
-   "title": "Swedavia affected by the cyber attack",
-   "source": "TV4 Nyheterna",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV05IaTRJdk9faWFiVllGS1Fkc0tkcHR5eGxzQThya1RjQl8wRC1lUXk5Q3JCaFRyQnZWcl9SSVpjWmJqWlhDV1pvUTZEMHlmWjJKYVQyc0dGbndFZ2lyeWRQclJjUWtpbFpaV1hCaW5kYnhUdXhSakNmYmdBRW9MekJQMTNsek5MZ1hCVw?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-21T01:36:00Z",
@@ -1689,6 +1631,62 @@
    "title": "Hacker Linked to Ticketmaster Snowflake Breach Pleads Guilty in 165-Company Attack",
    "source": "TicketNews",
    "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPdGJiLWpwS2RrN0oyNDhmWDZ4YTg5c2FyMmlkelFiVDhINDVhLUNqWFZ2ODhPaS1IbkxOdmNxaTlGazhnNVA3MFVkU0tRUzROR3IwQTBfNjVscHZDa1lXbWZna2FrVExLOFVzbWRwel9HOTRBaDExOGZ6dmI1YlJNMDdQNVcxS2l2UTkyVjAtenpOYl9kTHJMb2Z3TzRMTUxiV2ZnOGIzSmxOWXh4SENuWlBia1phb2U1dHc?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T22:35:09Z",
+   "title": "An impressive arsenal: firearms, ammunition and chemicals",
+   "source": "Cyberattaque.org",
+   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNa0RabjJvNXZ5ZDVVVXhJV0VialFYeGE4dkZXWmoyUHhyTnVMeWhtRTd1Y3RsUXNieWhQTWxkUkF0SUtjbUZHRlcxZlhQelhZNnZEbHVCaGJDaUl4OEYtRWd5ZUpJTHh6T3dPNHlYZkNxcXdHbklXQjBxTkVkcUk4YlFxSkpQQ2FBSE05dXRWRm9hYldSUmE1aWJPaGJKeEZGMmJua3RPTVBZbnZ1UEZzeG0xTTQ0VmZCZ1dEdEhTczFLazdyVkF3aXB1bk9xVElsdDE3cGlyREdHdEk?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T22:39:31Z",
+   "title": "Inheritance tax: CDU and SPD call for reform after Döpfner revelations",
+   "source": "ad-hoc-news.de",
+   "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxObE8yczUzbUlfaWVMdHBJODNmMFEyeDl2eE1FMkp6Q0Eyc2N2Q0tYczVQdWRlQmNuRHMzQ2JQeDZqM0V5MFM3eFpxUVRiSmc4RUZyQkpORzFFRTVDMjJDWDFPOUZJX0hlMDQ5V05LZUlnU0I0S2RVZ1JtOU1zekZ3UEtZYmM4bGpla3lTenFfNlAxdmliTVY0RnJtSXNDeU9LRFMxOGxGNTAyYWlqZ1FCV283OHBJbHc4WWo4?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T23:00:51Z",
+   "title": "Saturday Sports: Lowville and Gouverneur in the state football playoffs and more",
+   "source": "FOX5 Vegas",
+   "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQQ0wzNjNrVnlBNnQ1ZDBnWVl6MXFKb043Z2NtNEdnaGszc2xMZS1Ob3ZFeXlfazNxdEY2MXJ2YmNZSXJDdWQtRUR4WmdCLXJMNmlXQVhPYkdfY3NESEtTYTYtQmw1LVNlMFdTZ01CQWRBbmxjbFQzSDZ3NzVoM0w0TWx4NE9vekY3NktWcUR2WE43ZVM5NzlZdFlwQjNxZzA5enh5YzNhWEhaYmNzZHhmUVF3SGRCRU94TnVHenRjY0o?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T23:28:23Z",
+   "title": "Government Blames Glitches as Cyber Threats Are 'New Normal' With AI",
+   "source": "Newsmax",
+   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE91QzFabElpS3pFWVN1cS1TejlWV2FlSkducUw4NWdDZXhKaDVoUDlGeXFmVENxY2dXdVdpa2J2OVBaS2ltQWlSbENZNWdEcXRxVlM4QjgwMFg1RlBKNHZoSHdXcl8yQ0V2aHhWZjZxQzZSUGs?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T23:47:28Z",
+   "title": "Former NSA hacker says tech outages are a result of AI’s arrival",
+   "source": "Yahoo",
+   "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQWFRQVTluMEdaSi16YWloRUNjMlI3WGRRWTR0YTNHUk5nM2lBRVozdTlCREdDeS1WaTl5dUE4RXJ0WWJnMU5tU01tTXp4LTRHeDFQNHQ4R1ZfR3lVaFRWRE9nU3BuTnJoMU02OWdFN204dGFSUGpabHI4TjljVmVtMFNR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T23:48:45Z",
+   "title": "Latest hack of FBI puts personal records at risk",
+   "source": "Axios",
+   "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE90d3daMHJ2WG9UMlB0eDlrSlFBMVYwdDd2R09PdzBwUG5EcGZTUzNsVVZzR2U2elhGcnhSOXRIMVRKUHhQdkxEWHE1Z3d5dExCSnF0OFFxX3ZSVkdGaFk3cmgyeG1XbnI4X1hDcUxxcVY?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T00:19:41Z",
+   "title": "An alleged hack and a \"repentant\" shake Balanz, Toto Caputo's favorite financier",
+   "source": "La Política Online",
+   "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNaDBLN3VTenhuNHNoY0k3QmM1TDJrMzUwcncxQmpyV0lvSzI4S3V1NEhIRHdSRzBFNEV1ckVfSC0zRC1SS2ZnMTBkcDdHdFJvYjJyZ1dJNS1kWjFFTlgxdjBMRUR0MFh6WWpZWm5oQ1FHRldONk1PUUlfeXc5QW16LTQ0YmZWRm95QkU0UDBmSHNOTTZfTVBURndQaUdXOXJVdEctOXo5SlBIbFRVcUhXc3JVeUx1NE44bFhUZW8zNTJXamwyTWQ1a2lweUM3d9IB0AFBVV95cUxQQmRWb3hMNl9oVl9kVG16MEVrQ2piOW5VY0IzOG9Tb1MtQ2VkT2tmOGEwTFVwYUxHU01RWmU0d2hRNjlBUHE4Mk8yV3RtTDZqcHJxNlRvOUlLUXRTSkk5Sm9UaWVlYkpMZVF3UDZKZWVhT2xVVlY4RXE4a1FDSnBQV0hRYjBYbWgxM0l1NDd4SWl2TktPWFVaLWVlN0JVemVra2tSSVVSZGNXWlo5ZzVCMHlrbFVibmpVRmVNSmdieVNFWGRjYi1SWWcyeXZpUVlQ?oc=5",
    "n_outlets": 1,
    "also": []
   }

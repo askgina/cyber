@@ -79,6 +79,9 @@ def evaluate(posts, db_hits, postmortem, outcome, registry, upto=None, age_h=Non
 
 def find_matches(sig, crypto, breaches, kev, news):
     names = {norm(n) for n in [sig.get("project") or sig["subject"], sig["subject"], *sig.get("aliases", [])] if n}
+    # A name written entirely in another script can normalize to an empty key.
+    # Empty keys carry no evidence that two records refer to the same incident.
+    names.discard("")
     words = [w for w in {*(sig.get("aliases") or []), sig.get("project") or sig["subject"]} if len(w) >= 4]
     t0 = parse(sig["first"])
     def near(d, days=5): return abs((parse(d) - t0).total_seconds()) <= days * 86400
@@ -117,6 +120,8 @@ def score_signals(xsig, crypto, breaches, kev, news, registry_path, now):
         if not pm:
             # Automatic post-mortem detection: a rekt write-up or an article titled as a post-mortem / root cause.
             for n in press:
+                if re.search(r"class\s*action|law\s*(?:firm|offices)|lawsuit|legal investigation", n["source"] + " " + n["title"], re.I):
+                    continue
                 if n["source"].lower().startswith("rekt") or re.search(r"post-?mortem|root cause|incident report|what happened", n["title"], re.I):
                     src = next((x for x in news if x.get("eid") == n["eid"]), {})
                     pm = {"date": n["date"], "label": n["source"], "url": src.get("url"), "auto": True}
