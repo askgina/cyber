@@ -52,9 +52,9 @@ def _row(date, org, source, url, title, summary="", count=None, breach_date=None
 
 
 # ---------------------------------------------------------------- California AG
-def california(now, get, cutoff):
+def california(now, get, cutoff, max_pages=4):
     out = []
-    for page in range(4):  # ~50 rows/page, newest first; stop once older than cutoff
+    for page in range(max_pages):  # ~50 rows/page, newest first; stop once older than cutoff
         t = get("https://oag.ca.gov/privacy/databreach/list" + (f"?page={page}" if page else ""), 30).decode("utf-8", "replace")
         body = t[t.find("<tbody"):t.find("</tbody>")]
         rows = re.findall(r"<tr.*?</tr>", body, re.S)
@@ -77,11 +77,21 @@ def california(now, get, cutoff):
 
 
 # ---------------------------------------------------------------- Washington AG
-def washington(now, get, cutoff):
+def washington(now, get, cutoff, max_pages=1):
     out = []
-    t = get("https://www.atg.wa.gov/data-breach-notifications", 30).decode("utf-8", "replace")
-    body = t[t.find("<tbody"):t.find("</tbody>")]
-    for r in re.findall(r"<tr.*?</tr>", body, re.S):
+    for page in range(max_pages):  # 50 rows/page, newest first
+        t = get("https://www.atg.wa.gov/data-breach-notifications" + (f"?page={page}" if page else ""), 30).decode("utf-8", "replace")
+        body = t[t.find("<tbody"):t.find("</tbody>")]
+        rows = re.findall(r"<tr.*?</tr>", body, re.S)
+        got = _wa_rows(rows, cutoff, out)
+        if not rows or got < len(rows): break
+        time.sleep(0.3)
+    return out
+
+
+def _wa_rows(rows, cutoff, out):
+    n = 0
+    for r in rows:
         cells = {m.group(1): m.group(2) for m in re.finditer(r'<td[^>]*views-field-field-([a-z-]+)"[^>]*>(.*?)</td>', r, re.S)}
         rd = re.search(r'datetime="(\d{4}-\d{2}-\d{2})', cells.get("report-date", ""))
         if not rd: continue
@@ -95,7 +105,8 @@ def washington(now, get, cutoff):
         summ = (f"{_fmt(wa)} Washington residents affected. " if wa else "") + (f"Data: {info}" if info else "")
         out.append(_row(d, org, "Washington AG", a.group(1) if a else "https://www.atg.wa.gov/data-breach-notifications",
                         f"{org} reported a data breach to the Washington AG", summ, None, bd.group(1) if bd else None))
-    return out
+        n += 1
+    return n
 
 
 # ---------------------------------------------------------------- Oregon DOJ

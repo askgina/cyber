@@ -29,8 +29,10 @@ errors = []
 # ---- CISA KEV
 kev = []
 kev_all = []
+kev_raw = hibp_raw = llama_raw = None  # raw pulls, reused by the year-to-date archive
 try:
     d = json.loads(get("https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"))
+    kev_raw = d["vulnerabilities"]
     for v in d["vulnerabilities"]:
         a = parse_iso(v["dateAdded"])
         kev_all.append(a)
@@ -69,7 +71,8 @@ try:
 except Exception as e:
     errors.append(f"ransomware recent: {e}")
 oldest = min((parse_iso(c["date"]) for c in cache.values()), default=NOW)
-if days_ago(oldest) < 29:
+ransom_called = days_ago(oldest) < 29
+if ransom_called:
     months = []
     for back in (0, 31):
         p_ = NOW - dt.timedelta(days=back)
@@ -118,7 +121,8 @@ crypto = []
 crypto_hist = []
 llama_all = []
 try:
-    for h in json.loads(get("https://api.llama.fi/hacks")):
+    llama_raw = json.loads(get("https://api.llama.fi/hacks"))
+    for h in llama_raw:
         d0 = dt.datetime.fromtimestamp(h["date"], dt.timezone.utc)
         llama_all.append((d0, h.get("amount") or 0, h.get("name")))
         if days_ago(d0) > 30:
@@ -275,7 +279,8 @@ for n in [n for n in news if n["source"] == "rekt"]:
 breaches = []
 hibp_all = []
 try:
-    for b in json.loads(get("https://haveibeenpwned.com/api/v3/breaches", 60)):
+    hibp_raw = json.loads(get("https://haveibeenpwned.com/api/v3/breaches", 60))
+    for b in hibp_raw:
         if not (b.get("IsSpamList") or b.get("IsFabricated")): hibp_all.append((parse_iso(b["AddedDate"]), b.get("PwnCount") or 0))
         if days_ago(parse_iso(b["AddedDate"])) > 30 or b.get("IsSpamList") or b.get("IsFabricated"): continue
         breaches.append({"name": b["Name"], "title": b["Title"], "domain": b.get("Domain"), "breach_date": b.get("BreachDate"),
@@ -485,6 +490,16 @@ windows["rows"]["incidents"] = {w: {"n": sum(1 for r in reg_recs if parse_iso(r[
 windows["rows"]["notices"] = {w: {"n": sum(1 for o in notices if (parse_iso(o["date"]) + dt.timedelta(hours=23, minutes=59)) >= WB[w] and (w != "1h" or o["date"][11:19] != "00:00:00"))} for w in ("1h", "24h", "7d")}
 windows["rows"]["x"] = {w: {"n": sum(1 for x in xsig if parse_iso(x["first"]) >= WB[w])} for w in ("1h", "24h", "7d")}
 
+# ---- year-to-date archive (site/archive.json, lazily loaded by the page); incremental, cached in pipeline/archive_cache/
+try:
+    import archive
+    archive.build(NOW, get, errors, {"victims": cache, "ransom_called": ransom_called, "kev_raw": kev_raw,
+                                     "hibp_raw": hibp_raw, "llama_raw": llama_raw, "crypto": crypto, "notices": notices})
+except Exception as e:
+    errors.append(f"archive: {e}")
+# older registry records are served from archive.json; data.json keeps the last 45 days
+reg_page = [r for r in reg_recs if days_ago(parse_iso(r["latest"])) <= 45]
+
 data = {
     "generated": iso(NOW), "errors": errors,
     "kev": {"total_catalog": kev_total, "count_7d": len(window(kev, 7)), "count_30d": len(kev),
@@ -495,7 +510,7 @@ data = {
                "usd_7d": sum((c["amount"] or 0) for c in c30 if days_ago(parse_iso(c["date"])) <= 7),
                "usd_30d": sum((c["amount"] or 0) for c in c30), "items": crypto_out, "series": daily(c30, "date"),
                "history_size": len(crypto_hist)},
-    "news": news_out, "news_headlines_7d": len(headlines), "registry": reg_recs, "notices": notices[:300], "triage_n": len(tq), "x": xsig,
+    "news": news_out, "news_headlines_7d": len(headlines), "registry": reg_page, "notices": notices[:300], "triage_n": len(tq), "x": xsig,
     "breaches": {"count_30d": len(breaches), "accounts_30d": sum(b["count"] or 0 for b in breaches), "items": breaches},
     "hourly": hourly, "windows": windows,
     "brief": brief,

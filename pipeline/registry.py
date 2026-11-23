@@ -24,11 +24,21 @@ def _rx(terms):
     return re.compile("|".join(parts), re.I) if parts else None
 
 
-def load(path):
+def _load1(path):
     try:
         return json.load(open(path))
     except Exception:
         return {"incidents": []}
+
+
+def load(path, archive_path=None):
+    """incidents.json merged with incidents_archive.json (same schema, same folder; missing = empty).
+    Deduped by id; records in incidents.json win."""
+    reg = _load1(path)
+    arch = _load1(archive_path or os.path.join(os.path.dirname(os.path.abspath(path)), "incidents_archive.json"))
+    have = {r.get("id") for r in reg.get("incidents", [])}
+    extra = [r for r in arch.get("incidents", []) if r.get("id") not in have]
+    return dict(reg, incidents=list(reg.get("incidents", [])) + extra)
 
 
 def attach(reg, news, notices, now, window_days=10):
