@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T05:28:56Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care after a cyberattack, and Samsung Securities reported 8,241 people affected. N-able restored its email-security dashboard and APIs after patching a vulnerability.",
+  "updated": "2026-11-23T06:25:42Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care, and Samsung Securities reported 8,241 people affected. Claims involving Kenya’s eCitizen platform and France’s Fondation des Femmes remain unconfirmed.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -54,12 +54,34 @@
       "eid": "x-f4f958f2"
     },
     {
+      "org": "Kenya eCitizen",
+      "what": "VECERT relayed an online claim of data theft from Kenya’s eCitizen platform; no compromise or data loss has been verified.",
+      "scale": "Unverified claim",
+      "patterns": [
+        "data-exposure"
+      ],
+      "url": "https://x.com/VECERTRadar/status/2124671355291312588",
+      "eid": "x-8e646d77"
+    },
+    {
+      "org": "Fondation des Femmes",
+      "what": "FrenchBreaches reported finding 118,130 distinct email addresses in files attributed to the nonprofit, but could not establish their origin.",
+      "scale": "118,130 reported addresses; people affected unknown",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "n-129cc90a",
+      "url": "https://frenchbreaches.com/alertes/fuite-donnees-fondation-des-femmes-petitions-dons-emails-mwslzfr9dmmcraechdu"
+    },
+    {
       "org": "Sri Lanka Department of Motor Traffic",
       "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
       "scale": "Appointments unaffected; data exposure not disclosed",
       "patterns": [],
       "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/",
-      "eid": "x-e9f8c567"
+      "eid": "x-e9f8c567",
+      "update": true,
+      "since": "2026-11-21"
     },
     {
       "org": "Persistent Systems",
@@ -82,28 +104,6 @@
       "eid": "x-59858f8c"
     },
     {
-      "org": "Fisher & Paykel Healthcare",
-      "what": "Falcon claimed it took company data; the claim is unverified and has not been linked to the company’s October incident.",
-      "scale": "Scope unverified",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "x-4e728987",
-      "url": "https://www.ransomware.live/id/RmlzaGVyICYgUGF5a2VsIEhlYWx0aGNhcmVARmFsY29u"
-    },
-    {
-      "org": "Cleverbridge",
-      "what": "Customer notices specified that copied payment card data included card numbers, expiration dates and security codes.",
-      "scale": "Affected count undisclosed",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "n-855a50ef",
-      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-      "update": true,
-      "since": "2026-11-04"
-    },
-    {
       "org": "N-able",
       "what": "The vendor said it patched a vulnerability and restored access to the Mail Assure and SpamExperts dashboard and APIs after an earlier intrusion.",
       "scale": "One hosted server identified",
@@ -116,17 +116,16 @@
       "since": "2026-11-16"
     },
     {
-      "org": "Kurly",
-      "what": "A review of the November breach identified another 199 current or former employees and two customers whose information was exposed.",
-      "scale": "201 additional people",
+      "org": "Tower Records Japan",
+      "what": "The retailer planned to resume direct-order shipping in stages from November 23, but gave no reopening date for its online store.",
+      "scale": "Shipping restart planned",
       "patterns": [
-        "data-exposure",
-        "key-compromise"
+        "data-exposure"
       ],
-      "eid": "n-0c906047",
-      "url": "https://biz.chosun.com/en/en-retail/2026/11/23/XREVQLBPUFC6TIL6W4RDVZEPCI/",
+      "eid": "n-cbf13d4d",
+      "url": "https://www.electricbloomwebzine.com/2026/11/tower-records-japan-data-breach.html",
       "update": true,
-      "since": "2026-11-17"
+      "since": "2026-11-19"
     }
   ]
 }
