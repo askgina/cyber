@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T06:25:42Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care, and Samsung Securities reported 8,241 people affected. Claims involving Kenya’s eCitizen platform and France’s Fondation des Femmes remain unconfirmed.",
+  "updated": "2026-11-23T07:29:46Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users, an attack disrupted three Guadeloupe University Hospital sites, and Samsung Securities reported 8,241 people affected. Have I Been Pwned indexed 355,051 email addresses from Bromcom’s previously disclosed September breach.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -29,7 +29,7 @@
       "patterns": [
         "data-exposure"
       ],
-      "eid": "n-35625293",
+      "eid": "n-9abe542a",
       "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858523"
     },
     {
@@ -74,16 +74,6 @@
       "url": "https://frenchbreaches.com/alertes/fuite-donnees-fondation-des-femmes-petitions-dons-emails-mwslzfr9dmmcraechdu"
     },
     {
-      "org": "Sri Lanka Department of Motor Traffic",
-      "what": "The department said its public website was attacked but its separate appointment service stayed operational.",
-      "scale": "Appointments unaffected; data exposure not disclosed",
-      "patterns": [],
-      "url": "https://www.newswire.lk/2026/11/22/update-dmt-appointments-continue-despite-cyber-attack-on-website/",
-      "eid": "x-e9f8c567",
-      "update": true,
-      "since": "2026-11-21"
-    },
-    {
       "org": "Persistent Systems",
       "what": "INC Ransom’s claim remains unverified; the company says its own systems are secure and employee immigration records may have been taken from a law firm.",
       "scale": "Possible third-party exposure; count unknown",
@@ -126,6 +116,18 @@
       "url": "https://www.electricbloomwebzine.com/2026/11/tower-records-japan-data-breach.html",
       "update": true,
       "since": "2026-11-19"
+    },
+    {
+      "org": "Bromcom",
+      "what": "Have I Been Pwned indexed 355,051 distinct email addresses from the education software provider’s September sign-on registration breach.",
+      "scale": "355,051 distinct email addresses",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "b-cfe3cbcd",
+      "url": "https://haveibeenpwned.com/Breach/Bromcom",
+      "update": true,
+      "since": "2026-09-06"
     }
   ]
 }

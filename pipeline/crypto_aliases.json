@@ -3,6 +3,9 @@
  "_same_events": {
   "2026-11-22": {
    "Fusionist": "Endurance Bridge"
+  },
+  "2026-11-19": {
+   "Moats App": "The Moats"
   }
  },
  "Wagyu (XMR1)": [
@@ -90,6 +93,7 @@
   "Fusionist ACE minted"
  ],
  "The Moats": [
+  "Moats App",
   "Moats App Security Incident",
   "Moats App was hacked",
   "Moats Hack + Collateral Damage"
