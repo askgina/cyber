@@ -227,16 +227,25 @@
         if (a.k === "inc" && a.r) { a.id = "r-" + a.r; if (a.rec) AR.ix[a.id] = { it: { ...a.rec, id: a.r, n_outlets: (a.rec.sources || []).length, latest: (a.rec.updates || []).length ? a.rec.updates[a.rec.updates.length - 1].date : a.rec.first_reported, notices: [], outlets: [], stories: [] }, kind: "inc", title: a.rec.org || a.o, text: [a.rec.title, a.rec.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: a.rec.first_reported || a.d, url: null }; }
         else { a.id = "a-" + i; AR.ix[a.id] = { it: { _arc: a, links: a.u ? [{ label: "Source", url: a.u }] : [] }, kind: "arc", label: AKL[a.k] || "Record", title: a.o, text: a.t, date: a.d, url: null }; }
       });
+      // a crypto hack that is also a tracked incident shows once in "All" (as the incident)
+      const tok = (s) => (s || "").toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 2 && !/^(cex|dex|protocol|finance|exchange|the)$/.test(w))[0];
+      const incs = (j.items || []).filter((a) => a.k === "inc");
+      (j.items || []).forEach((a) => {
+        if (a.k !== "crypto") return;
+        const w = tok(a.o), t0 = Date.parse(a.d);
+        const m = w && incs.find((b) => Math.abs(Date.parse(b.d) - t0) <= 4 * 864e5 && (b.o || "").toLowerCase().includes(w));
+        if (m) { a.dup = m.id; m._s += " " + a._s; }
+      });
       AR.data = j;
       for (const [k, v] of Object.entries(AR.ix)) if (!IX[k]) IX[k] = v;  // live records keep their richer entries
       drawMkt(T.D); applyFilter();
     }).catch((e) => { AR.err = String(e.message || e); drawMkt(T.D); });
     return AR.p;
   }
-  function arcMatches(q, kind, month) {
+  function arcMatches(q, kind, month, keepDup) {
     const its = (AR.data && AR.data.items) || [];
     const words = q ? q.split(/\s+/).filter(Boolean) : [];
-    return its.filter((a) => (kind === "all" || a.k === kind) && (month == null || a.m === month) && words.every((w) => a._s.includes(w)));
+    return its.filter((a) => (kind === "all" ? (keepDup || !a.dup) : a.k === kind) && (month == null || a.m === month) && words.every((w) => a._s.includes(w)));
   }
   function drawArchive(box) {
     if (!AR.data) {
@@ -246,7 +255,7 @@
     }
     const q = T.q;
     const base = arcMatches(q, "all", AR.month);
-    const byK = {}; base.forEach((a) => byK[a.k] = (byK[a.k] || 0) + 1);
+    const byK = {}; arcMatches(q, "all", AR.month, true).forEach((a) => byK[a.k] = (byK[a.k] || 0) + 1);
     const chips = el("div", { class: "t-achips", role: "group", "aria-label": "Record type" }, ...Object.entries(AK).filter(([k]) => k === "all" || byK[k] || AR.kind === k).map(([k, l]) => {
       const b = el("button", { type: "button", class: AR.kind === k ? "on" : null, "aria-pressed": String(AR.kind === k) }, l, " ", el("i", {}, String(k === "all" ? base.length : byK[k] || 0)));
       b.addEventListener("click", () => { AR.kind = k; drawMkt(T.D); });
@@ -268,7 +277,7 @@
     list.slice(0, LIM).forEach((a) => box.append(row([
       c("c-t", B.fmtDate(a.d.slice(0, 10))),
       c("c-org", el("b", {}, a.o), el("small", {}, `${AKL[a.k] || a.k}${a.t && a.t !== a.o ? " · " + a.t : ""}`)),
-      c("c-sc", a.s || ""),
+      c("c-sc", (a.s || "").split(" · ")[0]),
     ], { id: a.id, url: a.u, cls: "arc" })));
     if (list.length > LIM) box.append(el("p", { class: "t-empty" }, `Showing the newest ${LIM} of ${list.length.toLocaleString("en-US")}. Narrow it with the filter, a type or a month.`));
     $("#t-mkt-m").textContent = `${list.length.toLocaleString("en-US")} of ${(AR.data.items || []).length.toLocaleString("en-US")}`;
@@ -285,15 +294,12 @@
     if (T.tab === "arc") { drawArchive(box); return; }
     if (T.tab === "inc") {
       const cutoff = Date.now() - 7 * 864e5;
-      const items = (D.registry || []).filter((r) => Date.parse(r.latest) >= cutoff)
-        .map((r) => {
-          const update = Date.parse(r.first_reported) < cutoff;
-          return { r, update, date: update ? r.latest : r.first_reported };
-        })
+      const items = (D.registry || []).filter((r) => Date.parse(r.first_reported) >= cutoff)
+        .map((r) => ({ r, update: false, date: r.first_reported }))
         .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
       items.forEach(({ r, update, date }) => box.append(row([c("c-t", B.fmtDate(date)), c("c-org", el("b", {}, r.org), el("small", {}, update ? `Update · first reported ${B.fmtDate(r.first_reported)} · ${r.type}` : `${r.type}${r.country ? " · " + r.country : ""} · ${r.n_outlets} outlet${r.n_outlets === 1 ? "" : "s"}`)),
         c("c-sc", r.usd ? B.fmtUSD(r.usd) : r.records ? B.compact(r.records) : r.status)], { id: "r-" + r.id })));
-      $("#t-mkt-m").textContent = `${items.length} active`;
+      $("#t-mkt-m").textContent = `${items.length} new in 7d`;
     } else if (T.tab === "crypto") {
       const items = [...D.crypto.items].sort((a, b) => (b.amount || 0) - (a.amount || 0));
       items.forEach((i) => box.append(row([c("c-t", B.fmtDate(i.date)), c("c-org", el("b", {}, i.name), el("small", {}, i.offchain ? "Bank-account fraud, not counted in crypto totals" : [i.technique, i.chains.slice(0, 2).join(", ")].filter((x) => x && x !== "Unknown").join(" · "))), c("c-sc", B.fmtUSD(i.amount))], { id: i.eid, cls: i.offchain ? "dim" : null })));
@@ -352,7 +358,11 @@
     const q = $("#t-q").value.trim().toLowerCase();
     T.q = q.startsWith("ask ") ? "" : q;
     if (T.q.length >= 3 && !AR.p) loadArchive();
-    if (T.lastQ !== T.q) { T.lastQ = T.q; if (T.tab === "arc" || AR.data) drawMkt(T.D); }
+    if (T.lastQ !== T.q) {
+      // searching always covers everything since Jan 1; clearing returns to the previous tab
+      if (T.q.length >= 3 && T.tab !== "arc") { T.prevTab = T.tab; T.tab = "arc"; }
+      else if (!T.q && T.prevTab) { T.tab = T.prevTab; T.prevTab = null; drawMkt(T.D); }
+      T.lastQ = T.q; if (T.tab === "arc" || AR.data) drawMkt(T.D); }
     document.querySelectorAll("#term .t-b .t-r:not(.t-hd):not(.arc)").forEach((r) => { const e = r.dataset.id && IX[r.dataset.id]; r.hidden = !!T.q && !(r.textContent + " " + (e ? e.title + " " + (e.text || "") + " " + (e.search || "") : "")).toLowerCase().includes(T.q); });
   }
   let qt;
