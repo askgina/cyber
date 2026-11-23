@@ -1,10 +1,10 @@
 {
-  "updated": "2026-11-23T07:29:46Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users, an attack disrupted three Guadeloupe University Hospital sites, and Samsung Securities reported 8,241 people affected. Have I Been Pwned indexed 355,051 email addresses from Bromcom’s previously disclosed September breach.",
+  "updated": "2026-11-23T08:29:01Z",
+  "headline": "HD Hyundai Robotics disclosed exposure of website subscriber data, and Peninsula Energy reported a cyber incident at its Wyoming uranium project. South Korea’s privacy regulator opened an investigation into the KEPCO breach, which the utility said affected 650,487 billing users.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
-      "what": "KEPCO confirmed exposure for 650,487 billing users and notified all 869,761 procurement users while it investigates the scope of the breach in that system.",
+      "what": "The privacy regulator opened an investigation after KEPCO confirmed exposure of 650,487 billing users and separately treated all 869,761 procurement users as potentially affected.",
       "scale": "650,487 billing users confirmed",
       "patterns": [
         "data-exposure"
@@ -23,16 +23,6 @@
       "eid": "x-2b507ecf"
     },
     {
-      "org": "Samsung Securities",
-      "what": "The brokerage confirmed that an intrusion into its customer feedback system exposed personal information, including some account and driver’s license numbers.",
-      "scale": "8,241 people affected",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "n-9abe542a",
-      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858523"
-    },
-    {
       "org": "Fusionist",
       "what": "The Block estimated about $2 million in attacker proceeds and separately valued later withdrawals from Fusionist’s bridge reserves at about $3.7 million.",
       "scale": "~$2M proceeds; ~$3.7M separate reserve withdrawals",
@@ -42,6 +32,35 @@
       ],
       "url": "https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838",
       "eid": "c-31c40b98"
+    },
+    {
+      "org": "Peninsula Energy",
+      "what": "Peninsula Energy said an incident at the Lance uranium project would temporarily affect operations and that its administrative systems were not breached.",
+      "scale": "Operational impact not quantified",
+      "patterns": [
+        "outage"
+      ],
+      "url": "https://weblink-asx-announcements.old-mountain-2586.workers.dev/pdf/PEN/61356350.pdf"
+    },
+    {
+      "org": "HD Hyundai Robotics",
+      "what": "HD Hyundai Robotics said an intruder accessed a website server holding subscriber names, usernames, passwords described as encrypted, and contact details.",
+      "scale": "Subscriber count unknown",
+      "patterns": [
+        "data-exposure"
+      ],
+      "url": "https://hd-hyundairobotics.com/en/main",
+      "eid": "n-d501ed5f"
+    },
+    {
+      "org": "Samsung Securities",
+      "what": "The brokerage confirmed that an intrusion into its customer feedback system exposed personal information, including some account and driver’s license numbers.",
+      "scale": "8,241 people affected",
+      "patterns": [
+        "data-exposure"
+      ],
+      "eid": "n-9abe542a",
+      "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858523"
     },
     {
       "org": "Cranston Police Department",
@@ -54,14 +73,14 @@
       "eid": "x-f4f958f2"
     },
     {
-      "org": "Kenya eCitizen",
-      "what": "VECERT relayed an online claim of data theft from Kenya’s eCitizen platform; no compromise or data loss has been verified.",
-      "scale": "Unverified claim",
+      "org": "Persistent Systems",
+      "what": "INC Ransom’s claim remains unverified; the company says its own systems are secure and employee immigration records may have been taken from a law firm.",
+      "scale": "Possible third-party exposure; count unknown",
       "patterns": [
         "data-exposure"
       ],
-      "url": "https://x.com/VECERTRadar/status/2124671355291312588",
-      "eid": "x-8e646d77"
+      "eid": "x-a8754aa6",
+      "url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_23112026074246_CompanyStatementforexchangesreleaseNov232026Signed.pdf"
     },
     {
       "org": "Fondation des Femmes",
@@ -74,48 +93,28 @@
       "url": "https://frenchbreaches.com/alertes/fuite-donnees-fondation-des-femmes-petitions-dons-emails-mwslzfr9dmmcraechdu"
     },
     {
-      "org": "Persistent Systems",
-      "what": "INC Ransom’s claim remains unverified; the company says its own systems are secure and employee immigration records may have been taken from a law firm.",
-      "scale": "Possible third-party exposure; count unknown",
+      "org": "Kurly",
+      "what": "Kurly reported that an additional review found exposed data for 199 current or former staff and two more shoppers.",
+      "scale": "199 staff and two additional shoppers",
       "patterns": [
         "data-exposure"
       ],
-      "eid": "x-a8754aa6",
-      "url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_23112026074246_CompanyStatementforexchangesreleaseNov232026Signed.pdf"
-    },
-    {
-      "org": "Bordeaux University Hospital",
-      "what": "Scarlettgroup listed the hospital on its leak site; unauthorized access, data theft and service disruption remain unconfirmed.",
-      "scale": "Unverified extortion claim",
-      "patterns": [
-        "ransomware"
-      ],
-      "url": "https://ransomware.live/id/Y2h1LWJvcmRlYXV4LmZyQFNjYXJsZXR0Z3JvdXA",
-      "eid": "x-59858f8c"
-    },
-    {
-      "org": "N-able",
-      "what": "The vendor said it patched a vulnerability and restored access to the Mail Assure and SpamExperts dashboard and APIs after an earlier intrusion.",
-      "scale": "One hosted server identified",
-      "patterns": [
-        "enterprise-platform"
-      ],
-      "eid": "x-24f0b9f1",
-      "url": "https://www.n-able.com/blog/mail-assure-incident-update",
+      "url": "https://en.sedaily.com/business/2026/11/23/kurly-says-staff-data-also-leaked-in-hack-four-shoppers",
+      "eid": "n-0c906047",
       "update": true,
-      "since": "2026-11-16"
+      "since": "2026-11-17"
     },
     {
-      "org": "Tower Records Japan",
-      "what": "The retailer planned to resume direct-order shipping in stages from November 23, but gave no reopening date for its online store.",
-      "scale": "Shipping restart planned",
+      "org": "Cleverbridge",
+      "what": "Customer notices reported theft of card numbers, expiration dates and security codes in the November 4 breach.",
+      "scale": "Card data stolen; count undisclosed",
       "patterns": [
         "data-exposure"
       ],
-      "eid": "n-cbf13d4d",
-      "url": "https://www.electricbloomwebzine.com/2026/11/tower-records-japan-data-breach.html",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
+      "eid": "n-855a50ef",
       "update": true,
-      "since": "2026-11-19"
+      "since": "2026-11-04"
     },
     {
       "org": "Bromcom",
