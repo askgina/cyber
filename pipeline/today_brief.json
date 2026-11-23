@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T04:29:19Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care after a cyberattack, and Samsung Securities reported 8,241 people affected. Persistent Systems says its own systems are secure, but employee immigration data may have been taken from a law firm.",
+  "updated": "2026-11-23T05:28:56Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care after a cyberattack, and Samsung Securities reported 8,241 people affected. N-able restored its email-security dashboard and APIs after patching a vulnerability.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -92,28 +92,28 @@
       "url": "https://www.ransomware.live/id/RmlzaGVyICYgUGF5a2VsIEhlYWx0aGNhcmVARmFsY29u"
     },
     {
-      "org": "Chainflip",
-      "what": "Chainflip offered a 10% bounty for returning funds by November 23 at 18:38 UTC; the combined theft is estimated at about $12 million, with no return reported.",
-      "scale": "About $12M estimated across Ethereum and Bitcoin",
+      "org": "Cleverbridge",
+      "what": "Customer notices specified that copied payment card data included card numbers, expiration dates and security codes.",
+      "scale": "Affected count undisclosed",
       "patterns": [
-        "bridge"
+        "data-exposure"
       ],
-      "eid": "x-b163fb32",
-      "url": "https://chainflip.io/return",
+      "eid": "n-855a50ef",
+      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
       "update": true,
-      "since": "2026-11-21"
+      "since": "2026-11-04"
     },
     {
-      "org": "GL.iNet",
-      "what": "Security firmware is rolling out for selected router and KVM models after cloud-management exploitation installed malware on some devices.",
-      "scale": "Device count undisclosed",
+      "org": "N-able",
+      "what": "The vendor said it patched a vulnerability and restored access to the Mail Assure and SpamExperts dashboard and APIs after an earlier intrusion.",
+      "scale": "One hosted server identified",
       "patterns": [
-        "edge-device"
+        "enterprise-platform"
       ],
-      "eid": "n-a5b67213",
-      "url": "https://www.gl-inet.com/blogs/blog/glinet-security-notice-2026-11-20",
+      "eid": "x-24f0b9f1",
+      "url": "https://www.n-able.com/blog/mail-assure-incident-update",
       "update": true,
-      "since": "2026-11-20"
+      "since": "2026-11-16"
     },
     {
       "org": "Kurly",
