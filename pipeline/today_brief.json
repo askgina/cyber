@@ -1,16 +1,16 @@
 {
-  "updated": "2026-11-23T08:29:01Z",
-  "headline": "HD Hyundai Robotics disclosed exposure of website subscriber data, and Peninsula Energy reported a cyber incident at its Wyoming uranium project. South Korea’s privacy regulator opened an investigation into the KEPCO breach, which the utility said affected 650,487 billing users.",
+  "updated": "2026-11-23T09:28:14Z",
+  "headline": "LaLiga confirmed theft of fan data from one platform. Bell MTS disclosed a separate cyberattack at its email provider, and South Korea’s privacy regulator is investigating the KEPCO breach, which the utility said exposed data for 650,487 billing users.",
   "incidents": [
     {
-      "org": "Korea Electric Power Corporation",
-      "what": "The privacy regulator opened an investigation after KEPCO confirmed exposure of 650,487 billing users and separately treated all 869,761 procurement users as potentially affected.",
-      "scale": "650,487 billing users confirmed",
+      "org": "LaLiga",
+      "what": "LaLiga confirmed that an intruder took personal data from one platform serving fans of the league and some clubs.",
+      "scale": "Affected count not disclosed",
       "patterns": [
         "data-exposure"
       ],
-      "url": "https://www.ajupress.com/view/20261122184870375",
-      "eid": "n-1362b164"
+      "url": "https://www.laliga.com/noticias/laliga-ha-sido-victima-de-un-ciberataque-que-ha-afectado-a-datos-personales-de-aficionados",
+      "eid": "n-d862da0e"
     },
     {
       "org": "Guadeloupe University Hospital",
@@ -34,13 +34,25 @@
       "eid": "c-31c40b98"
     },
     {
+      "org": "Bell MTS",
+      "what": "A cyberattack at the provider of Bell MTS email locked some Manitoba customers out of their accounts and prompted password resets.",
+      "scale": "Email disruption; scope unknown",
+      "patterns": [
+        "supply-chain",
+        "outage"
+      ],
+      "url": "https://www.winnipegfreepress.com/breakingnews/2026/11/22/bell-mts-says-cyberattack-behind-recent-email-outage",
+      "eid": "x-c866ecc7"
+    },
+    {
       "org": "Peninsula Energy",
       "what": "Peninsula Energy said an incident at the Lance uranium project would temporarily affect operations and that its administrative systems were not breached.",
       "scale": "Operational impact not quantified",
       "patterns": [
         "outage"
       ],
-      "url": "https://weblink-asx-announcements.old-mountain-2586.workers.dev/pdf/PEN/61356350.pdf"
+      "url": "https://weblink-asx-announcements.old-mountain-2586.workers.dev/pdf/PEN/61356350.pdf",
+      "eid": "x-4f4fae5c"
     },
     {
       "org": "HD Hyundai Robotics",
@@ -63,34 +75,38 @@
       "url": "https://news.sbs.co.kr/english/article.do?news_id=N1008858523"
     },
     {
-      "org": "Cranston Police Department",
-      "what": "Police took the network offline after detecting a potential database intrusion; phones, radio and calls for service continued normally.",
-      "scale": "Network offline; no evidence of personal data access",
-      "patterns": [
-        "outage"
-      ],
-      "url": "https://coastalabc.com/sports/local-sports/cranston-police-investigating-potential-cyber-intrusion-into-department-database",
-      "eid": "x-f4f958f2"
-    },
-    {
-      "org": "Persistent Systems",
-      "what": "INC Ransom’s claim remains unverified; the company says its own systems are secure and employee immigration records may have been taken from a law firm.",
-      "scale": "Possible third-party exposure; count unknown",
+      "org": "Netbeat",
+      "what": "Netbeat took affected hosting servers offline and reset customer passwords after detecting unauthorized access.",
+      "scale": "Customer and billing data reported affected",
       "patterns": [
         "data-exposure"
       ],
-      "eid": "x-a8754aa6",
-      "url": "https://nsearchives.nseindia.com/corporate/PERSISTENTUSER1_23112026074246_CompanyStatementforexchangesreleaseNov232026Signed.pdf"
+      "url": "https://borncity.com/blog/2026/11/22/cyberangriff-auf-hoster-netbeat-22-11-2026/",
+      "eid": "x-8e9d0125"
     },
     {
-      "org": "Fondation des Femmes",
-      "what": "FrenchBreaches reported finding 118,130 distinct email addresses in files attributed to the nonprofit, but could not establish their origin.",
-      "scale": "118,130 reported addresses; people affected unknown",
+      "org": "Korea Electric Power Corporation",
+      "what": "South Korea’s privacy regulator opened an investigation; KEPCO confirmed exposure for 650,487 billing users and is still assessing procurement exposure.",
+      "scale": "650,487 billing users confirmed",
       "patterns": [
         "data-exposure"
       ],
-      "eid": "n-129cc90a",
-      "url": "https://frenchbreaches.com/alertes/fuite-donnees-fondation-des-femmes-petitions-dons-emails-mwslzfr9dmmcraechdu"
+      "url": "https://www.news1.kr/it-science/security-hacking/6363160",
+      "eid": "n-1362b164",
+      "update": true,
+      "since": "2026-11-20"
+    },
+    {
+      "org": "Bell Canada",
+      "what": "Bell’s customer notice says contact and account details may have been exposed in the November 17 intrusion but rules out cards and banking information.",
+      "scale": "Affected count not disclosed",
+      "patterns": [
+        "data-exposure"
+      ],
+      "url": "https://bell.ca/cybernotice",
+      "eid": "x-16122b13",
+      "update": true,
+      "since": "2026-11-17"
     },
     {
       "org": "Kurly",
@@ -103,18 +119,6 @@
       "eid": "n-0c906047",
       "update": true,
       "since": "2026-11-17"
-    },
-    {
-      "org": "Cleverbridge",
-      "what": "Customer notices reported theft of card numbers, expiration dates and security codes in the November 4 breach.",
-      "scale": "Card data stolen; count undisclosed",
-      "patterns": [
-        "data-exposure"
-      ],
-      "url": "https://www.bleepingcomputer.com/news/security/cleverbridge-warns-hackers-stole-credit-card-numbers-cvvs-in-data-breach/",
-      "eid": "n-855a50ef",
-      "update": true,
-      "since": "2026-11-04"
     },
     {
       "org": "Bromcom",
