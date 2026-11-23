@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T09:28:14Z",
-  "headline": "LaLiga confirmed theft of fan data from one platform. Bell MTS disclosed a separate cyberattack at its email provider, and South Korea’s privacy regulator is investigating the KEPCO breach, which the utility said exposed data for 650,487 billing users.",
+  "updated": "2026-11-23T10:27:15Z",
+  "headline": "LaLiga confirmed theft of fan data, and Suzlon Energy confirmed a cyber incident with no observed impact on business-critical applications. GL.iNet says stable firmware removes the identified malware from affected routers and KVMs.",
   "incidents": [
     {
       "org": "LaLiga",
@@ -10,7 +10,7 @@
         "data-exposure"
       ],
       "url": "https://www.laliga.com/noticias/laliga-ha-sido-victima-de-un-ciberataque-que-ha-afectado-a-datos-personales-de-aficionados",
-      "eid": "n-d862da0e"
+      "eid": "n-aca022f7"
     },
     {
       "org": "Guadeloupe University Hospital",
@@ -32,6 +32,14 @@
       ],
       "url": "https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838",
       "eid": "c-31c40b98"
+    },
+    {
+      "org": "Suzlon Energy",
+      "what": "Suzlon confirmed a cyber incident and notified CERT-In, without confirming Blackout’s claim or reporting impact on critical applications.",
+      "scale": "Scope not disclosed",
+      "patterns": [],
+      "url": "https://economictimes.indiatimes.com/industry/renewables/suzlon-energy-hit-by-cyber-incident-company-says-critical-applications-remain-unaffected/articleshow/136095671.cms",
+      "eid": "n-59cf83f3"
     },
     {
       "org": "Bell MTS",
@@ -86,7 +94,7 @@
     },
     {
       "org": "Korea Electric Power Corporation",
-      "what": "South Korea’s privacy regulator opened an investigation; KEPCO confirmed exposure for 650,487 billing users and is still assessing procurement exposure.",
+      "what": "South Korea’s privacy regulator opened an investigation; the utility confirmed exposure for 650,487 billing users and is treating 869,761 procurement users as potentially affected.",
       "scale": "650,487 billing users confirmed",
       "patterns": [
         "data-exposure"
@@ -97,40 +105,28 @@
       "since": "2026-11-20"
     },
     {
-      "org": "Bell Canada",
-      "what": "Bell’s customer notice says contact and account details may have been exposed in the November 17 intrusion but rules out cards and banking information.",
-      "scale": "Affected count not disclosed",
+      "org": "GL.iNet",
+      "what": "GL.iNet says stable model-specific firmware removes malware identified after its cloud-management breach and advises checking computers attached to suspected KVMs.",
+      "scale": "Affected device count unknown",
       "patterns": [
-        "data-exposure"
+        "edge-device"
       ],
-      "url": "https://bell.ca/cybernotice",
-      "eid": "x-16122b13",
+      "url": "https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20",
+      "eid": "n-a5b67213",
       "update": true,
-      "since": "2026-11-17"
+      "since": "2026-11-20"
     },
     {
-      "org": "Kurly",
-      "what": "Kurly reported that an additional review found exposed data for 199 current or former staff and two more shoppers.",
-      "scale": "199 staff and two additional shoppers",
+      "org": "Lotte Card",
+      "what": "South Korea’s FSC fined Lotte Card for inadequate disclosure of hacking-related risk in bond filings after its 2025 breach.",
+      "scale": "₩1.02B fine",
       "patterns": [
         "data-exposure"
       ],
-      "url": "https://en.sedaily.com/business/2026/11/23/kurly-says-staff-data-also-leaked-in-hack-four-shoppers",
-      "eid": "n-0c906047",
+      "url": "https://www.asiae.co.kr/en/article/2026112317430546180",
+      "eid": "n-1dd834de",
       "update": true,
-      "since": "2026-11-17"
-    },
-    {
-      "org": "Bromcom",
-      "what": "Have I Been Pwned indexed 355,051 distinct email addresses from the education software provider’s September sign-on registration breach.",
-      "scale": "355,051 distinct email addresses",
-      "patterns": [
-        "data-exposure"
-      ],
-      "eid": "b-cfe3cbcd",
-      "url": "https://haveibeenpwned.com/Breach/Bromcom",
-      "update": true,
-      "since": "2026-09-06"
+      "since": "2025-08-14"
     }
   ]
 }

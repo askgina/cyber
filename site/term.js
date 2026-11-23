@@ -217,11 +217,16 @@
     }));
     const box = $("#t-mkt"); box.replaceChildren();
     if (T.tab === "inc") {
-      const now = Date.now();
-      const items = (D.registry || []).filter((r) => now - new Date(r.latest).getTime() <= 7 * 864e5);
-      items.forEach((r) => box.append(row([c("c-t", B.fmtDate(r.first_reported)), c("c-org", el("b", {}, r.org), el("small", {}, `${r.type}${r.country ? " · " + r.country : ""} · ${r.n_outlets} outlet${r.n_outlets === 1 ? "" : "s"}`)),
+      const cutoff = Date.now() - 7 * 864e5;
+      const items = (D.registry || []).filter((r) => Date.parse(r.latest) >= cutoff)
+        .map((r) => {
+          const update = Date.parse(r.first_reported) < cutoff;
+          return { r, update, date: update ? r.latest : r.first_reported };
+        })
+        .sort((a, b) => Date.parse(b.date) - Date.parse(a.date));
+      items.forEach(({ r, update, date }) => box.append(row([c("c-t", B.fmtDate(date)), c("c-org", el("b", {}, r.org), el("small", {}, update ? `Update · first reported ${B.fmtDate(r.first_reported)} · ${r.type}` : `${r.type}${r.country ? " · " + r.country : ""} · ${r.n_outlets} outlet${r.n_outlets === 1 ? "" : "s"}`)),
         c("c-sc", r.usd ? B.fmtUSD(r.usd) : r.records ? B.compact(r.records) : r.status)], { id: "r-" + r.id })));
-      $("#t-mkt-m").textContent = `${items.length} incidents`;
+      $("#t-mkt-m").textContent = `${items.length} active`;
     } else if (T.tab === "crypto") {
       const items = [...D.crypto.items].sort((a, b) => (b.amount || 0) - (a.amount || 0));
       items.forEach((i) => box.append(row([c("c-t", B.fmtDate(i.date)), c("c-org", el("b", {}, i.name), el("small", {}, i.offchain ? "Bank-account fraud, not counted in crypto totals" : [i.technique, i.chains.slice(0, 2).join(", ")].filter((x) => x && x !== "Unknown").join(" · "))), c("c-sc", B.fmtUSD(i.amount))], { id: i.eid, cls: i.offchain ? "dim" : null })));
