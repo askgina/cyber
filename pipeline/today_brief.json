@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-23T02:26:17Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users, Guadeloupe University Hospital postponed non-urgent care after a cyberattack, and Samsung Securities confirmed exposure affecting 8,241 people. In an update to its earlier breach, Kurly identified 199 current or former employees and two more customers whose information was exposed.",
+  "updated": "2026-11-23T03:29:48Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users, and a cyberattack forced Guadeloupe University Hospital to postpone non-urgent care. Samsung Securities confirmed an intrusion exposed information on 8,241 people, while Chainflip’s bounty offer related to its earlier theft remains open.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -20,7 +20,7 @@
         "outage"
       ],
       "url": "https://cybersixt.com/originals/guadeloupe-hospital-cyberattack",
-      "eid": "n-6bb7a2db"
+      "eid": "x-2b507ecf"
     },
     {
       "org": "Samsung Securities",
@@ -62,6 +62,16 @@
       "eid": "x-e9f8c567"
     },
     {
+      "org": "Bordeaux University Hospital",
+      "what": "Scarlettgroup listed the hospital on its leak site; unauthorized access, data theft and service disruption remain unconfirmed.",
+      "scale": "Unverified extortion claim",
+      "patterns": [
+        "ransomware"
+      ],
+      "url": "https://ransomware.live/id/Y2h1LWJvcmRlYXV4LmZyQFNjYXJsZXR0Z3JvdXA",
+      "eid": "x-59858f8c"
+    },
+    {
       "org": "Samsung Group",
       "what": "Hyflock claimed it took data from Samsung Group; no independent confirmation was found.",
       "scale": "1 TB claimed",
@@ -89,7 +99,7 @@
         "bridge"
       ],
       "eid": "x-b163fb32",
-      "url": "https://thedefiant.io/news/hacks/chainflip-offers-10-bounty-for-return-of-stolen-funds",
+      "url": "https://chainflip.io/return",
       "update": true,
       "since": "2026-11-21"
     },
@@ -117,18 +127,6 @@
       "url": "https://biz.chosun.com/en/en-retail/2026/11/23/XREVQLBPUFC6TIL6W4RDVZEPCI/",
       "update": true,
       "since": "2026-11-17"
-    },
-    {
-      "org": "Aramid Bridge",
-      "what": "Voi Network published its account of the losses and said withdrawals stopped after Aramid secured the affected bridge accounts.",
-      "scale": "About 125M VOI and 70,000 ALGO",
-      "patterns": [
-        "bridge"
-      ],
-      "url": "https://x.com/Voi_Net/status/2124387898757611938",
-      "eid": "x-6fb93117",
-      "update": true,
-      "since": "2026-11-21"
     }
   ]
 }

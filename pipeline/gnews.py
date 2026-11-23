@@ -89,6 +89,17 @@ def _tokens(title):
     return set(toks)
 
 
+# These hospital names can otherwise collapse into one story on the shared
+# translated words "university hospital". Preserve the location distinction.
+_HOSPITALS = re.compile(r"\b(?:hospital|hôpital|hospitalier|CHU)\b", re.I)
+_HOSPITAL_LOCATIONS = re.compile(r"\b(?:Bordeaux|Guadeloupe)\b", re.I)
+
+
+def _hospital_locations(item):
+    title = item["title"] + " " + item.get("title_orig", "")
+    return {m.lower() for m in _HOSPITAL_LOCATIONS.findall(title)} if _HOSPITALS.search(title) else set()
+
+
 def cluster(items, hours=96, thresh=0.42):
     """Group headlines about the same incident. Weighted overlap of rare title tokens within a time window."""
     toks = [_tokens(i["title"]) for i in items]
@@ -96,6 +107,7 @@ def cluster(items, hours=96, thresh=0.42):
     N = max(1, len(items))
     idf = {t: math.log(1 + N / c) for t, c in df.items()}
     ts_ = [dt.datetime.fromisoformat(i["date"].replace("Z", "+00:00")).timestamp() for i in items]
+    locations = [_hospital_locations(i) for i in items]
     order = sorted(range(len(items)), key=lambda k: ts_[k])
     W = lambda ts: sum(idf[t] for t in ts) or 1
     cl = []  # each: {"m": [idx], "core": set, "t": last ts, "cnt": Counter}
@@ -103,14 +115,16 @@ def cluster(items, hours=96, thresh=0.42):
         tk = toks[k]; best, bs = None, 0
         for c in cl:
             if ts_[k] - c["t0"] > hours * 3600: continue
+            if locations[k] and c["loc"] and locations[k].isdisjoint(c["loc"]): continue
             shared = tk & c["core"]
             if not shared or max(idf[t] for t in shared) < 2.0: continue
             s = sum(idf[t] for t in shared) / min(W(tk), W(c["core"]))
             if s >= thresh and s > bs: best, bs = c, s
         if best is None:
-            cl.append({"m": [k], "core": set(tk), "t0": ts_[k], "cnt": Counter(tk)})
+            cl.append({"m": [k], "core": set(tk), "t0": ts_[k], "cnt": Counter(tk), "loc": locations[k].copy()})
         else:
             best["m"].append(k); best["cnt"].update(tk)
+            best["loc"].update(locations[k])
             n = len(best["m"]); seed = toks[best["m"][0]]
             best["core"] = {t for t in seed if best["cnt"][t] >= 0.3 * n} | {t for t, c in best["cnt"].items() if c >= max(2, 0.5 * n)}
             if not best["core"]: best["core"] = set(seed)
@@ -120,10 +134,13 @@ def cluster(items, hours=96, thresh=0.42):
     for c in cl:
         for m in merged:
             if abs(c["t0"] - m["t0"]) > hours * 3600: continue
+            if c["loc"] and m["loc"] and c["loc"].isdisjoint(m["loc"]): continue
             shared = c["core"] & m["core"]
             if not shared or max(idf[t] for t in shared) < 2.5: continue
             if sum(idf[t] for t in shared) / min(W(c["core"]), W(m["core"])) >= 0.5:
-                m["m"] += c["m"]; m["core"] |= c["core"] if len(c["m"]) > 2 else set(); break
+                m["m"] += c["m"]; m["core"] |= c["core"] if len(c["m"]) > 2 else set()
+                m["loc"].update(c["loc"])
+                break
         else:
             merged.append(c)
     groups = {i: c["m"] for i, c in enumerate(merged)}

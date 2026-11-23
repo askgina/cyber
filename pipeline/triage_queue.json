@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-23T02:29:21Z",
+ "generated": "2026-11-23T03:29:51Z",
  "queue": [
   {
    "date": "2026-11-22T12:00:06Z",
@@ -11,18 +11,6 @@
     "US Ports Face Rising Wave of Cyberattacks",
     "Ports Face Surge in Cyberattacks",
     "US ports face onslaught of cyber attacks"
-   ]
-  },
-  {
-   "date": "2026-11-21T03:00:06Z",
-   "title": "Russian neural network outperforms Google models in cyberattack test",
-   "source": "Газета",
-   "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFAzUWx6TldwUldSLTR0LVpvSXNYekF6d0dqbU9uZDZDTkR5d0drQ3JseVluTWpSU19YbnB3SUZJVEJ5WUR0WTY5QUh2enFqZHN1MEszZ1otWTZzc2Qtb1dIU1BkMTM3ekNjczBxetIBckFVX3lxTE5MVDBCVlZSNXpWemx2Rk1xUnRyWTd5UDFhemtxZFl5WU4zUzNuQm11cDN1dXZEUGhiVmp3YXdSa3JUVmRyaHJ6dndhYmpfV3I5bElPeDZJSzdkaF80b0V1X0pyZWxrOHdKOV9ZdGtFSGVpdw?oc=5",
-   "n_outlets": 4,
-   "also": [
-    "Russian neural network beats Google's developments in cyberattack test",
-    "The Russian neural network TabR beats Google in a test for recognizing cyber attacks",
-    "The Russian TabR neural network from Yandex Research has outperformed Google models in recognizing cyber attacks"
    ]
   },
   {
@@ -314,16 +302,6 @@
    ]
   },
   {
-   "date": "2026-11-22T11:24:31Z",
-   "title": "Google says autonomous AI tools can now exploit fresh patches in minutes",
-   "source": "TechRadar",
-   "url": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxOS1BNdWlkYVFqcEM2MXV1VWtkY0ZrTDVvUUp3QW5LNkZVdGRzSmR3R2p3ODc4eFpGV2U3Y3JUdWJDbTN4TjZjVk80dlpQbTZUc01tMFJNZktyUjNNa0MzY3FDT1RiRmNvOEx4QkNSV0tEQ0FDWkwwVU5SVk9GZEM3X3VNdVlfdXRLZEZ0b3lDdXdfQUhBQmdZcDhISXV3SDRHdjF4bmhwaHFCTU1NTWI3T3NPano2bmI5dzE3Z3BocjlzU3pQV3lNY2F1M2JFTFBXUV9OcnJWeTFTbnA5UGV0MkFjb1hydE4zMklib2UwaTJwekFBN3NZVDdYOGFFVF9wdGpkVENVdW8?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Google says autonomous AI tools can now exploit fresh patches in minutes"
-   ]
-  },
-  {
    "date": "2026-11-22T11:30:00Z",
    "title": "When the Hacker Comes Aboard",
    "source": "The Maritime Executive",
@@ -341,6 +319,16 @@
    "n_outlets": 2,
    "also": [
     "Australians Stockpile Emergency Supplies as Cyber Threats Grow"
+   ]
+  },
+  {
+   "date": "2026-11-22T13:53:06Z",
+   "title": "\"Hsinchu Policy Hackathon\" competition announced! Hundreds of makers challenged AI urban governance for 48 hours to witness the new generation's changing social mobility",
+   "source": "Yahoo新聞",
+   "url": "https://news.google.com/rss/articles/CBMigARBVV95cUxQd1VJNzVOWURBX1ZfUklSS0pSVFNlWFZTaDQ1VTJFeFI0N3pXTGUtU2gwMEk4dVNDYk51c0xJbkN3UWtOb1hTRVFla3VOODkwREdmRHBkNmU1RWw3QkFkUGtLMTJMR0xxZUJnOTlyOEZxQzRqQlBfRmZxUDNDWFd4OVFmZFU1MmNUem9NZDhNa3hFR1VFZWRpOE5SQWZBbWp4eDg0MTl2S25DMEM3OF9DZldkVEpncTVMdnRvbE4zTW5IMm1BR0VkT0ZQaldOeTVOOE52UXQ2c0ZlcjNhNUFwR255SDBsWi11cUdyVVh2Q1hvU29BN19xWm0tR2NyYmdpREgtNHpWMDhBYy1KckpiYjhudTJKUWthbE9Za2U0UGpwNlFsZ29objdfaFdNRlhKN1ZxTkpMNVkxZmxMUjNyVGpOUVVuei10aW00VnQ5VVRJdC1jNTljYUlMZHpSVnZlYXBmWDBhQjZ2OTBmblhuLWtRdUN1enQtXzc2RG1oSF91SWpleldsMXdJVm9tSVpBRWJhZWhpLWFGSzlra3NsYjlGY1d2Yk1xOHVXZVN6VTh2Wm5TVFM3NWtTQ0RYNFBGX1BpYVRYWWxGeXVURjNGODJzd2x1bE5NX1drdXY1bVdOTm9Id0xKRTZDSXVoTEhvWGd2Z2Z0a0Vka3A2SDhuUQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Hsinchu Policy Hackathon winner announced! Hundreds of young people challenged AI urban governance in 48 hours"
    ]
   },
   {
@@ -384,6 +372,16 @@
    ]
   },
   {
+   "date": "2026-11-22T22:41:00Z",
+   "title": "The worst is yet to come: experts warn of a massive wave of cyberattacks using AI",
+   "source": "Today.ua",
+   "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUU45RXRZZzhaUmpUYUJtM3IzYnVhUUJRSGFvX0RIMG9pMWhWZ19Ld2tXY255aDZnZFROVDR3a2J2UkNTOFh0UndrRUhGQzJzWWJPTlRIQVVPZ1dXNnNCZUtCZjdkNmIxREJfT1ktR0V3dXdsTGJmRjhHaktmdnhEQ3htWkNEcWtYcU9RV3ZKdS1zRG9EczZMZ2t3c0VrUUdOYjg1Z3VMQkZSeWs4TjFqNm5BYnEyWVBoQkdsY3Q5N3lIZw?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Experts warn after 'Black October': the biggest digital problems are yet to come"
+   ]
+  },
+  {
    "date": "2026-11-23T01:55:00Z",
    "title": "How Artificial Intelligence Is Making It Harder To Stop Cyberattacks",
    "source": "Yahoo Tech",
@@ -392,46 +390,6 @@
    "also": [
     "How Artificial Intelligence Is Making It Harder To Stop Cyberattacks"
    ]
-  },
-  {
-   "date": "2026-11-21T03:00:00Z",
-   "title": "From fatal Java vulnerabilities to AI hacking... Serial infringement at home and abroad ‘emergency’",
-   "source": "디지털데일리",
-   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5OSF9zdGhpT19ScFVlbXMzajhCQVFybkI3QXNlLXh1bnRhY2V5eEN0N1lPcm8za2RsYzdFZ3VjMUo5S2JQcC1uX0c1UEY5Z01rRDFqNV95MGJYcmhfYzVIckdJMjc?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T03:06:14Z",
-   "title": "With the rise of ransomware, Viettel Cyber ​​Security emphasizes its role in 24/7 monitoring.",
-   "source": "Vietnam.vn",
-   "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNY2d0Sy1La2hlRFZaWnl6QmZBV25HVGdjSGdyckdZWWg0cDFZWWdSaFRKVWlSa2t6M0E0Ti1SWHg2NWdhVnZiQjRiUFI1U01HcXhLZFRBNnVEVlhmWmhwX3BvS3QzTWhVd19BTGRNSHVHaHhBdjY2WWM0TnBSXy1lN0M2anRMUzlFY18zZWdsX2haZ0pUeGRubFo4NHI4czh5WXc?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T03:13:00Z",
-   "title": "AT&T Says Bid To Intervene In Data Breach Deal Was Too Late",
-   "source": "Law360",
-   "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFAtaGY4OURqMFpJazMxZW16eEptaFBaMDBwRVB6eFJKdHRxTWU2bl9kOHoycWdxT1RweUhmMFh2SFRyRWtvN3hIbUw0TXBWLWFONHMyLV9R0gFWQVVfeXFMUC1oZjg5RGowWklrMzFlbXp4Sm1oUFowMHBFUHp4Ukp0dHFNZTZuX2Q4ejJxZ3FPVHB5SGYwWHZIVHJFa283eEhtTDRNcFYtYU40czItX1E?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T03:23:56Z",
-   "title": "6 Critical F5 BIG-IP Vulnerabilities Could Let Hackers Disrupt Websites and Execute Malicious Code",
-   "source": "CyberSecurityNews",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE40VE0zc0RseEppUXBzekJtNTFBaVBpQUFXVmFzN3hIbUdHaFM0aXZnV0wzcU1fMVJRdzFXTnpYRGNTUDhYXzVmcWNKYmM3bHRfOG0tZXdTYzZlaU1iNUtQZXBJU0hQMGZ4WjJRVUZxd1BGVEHSAXhBVV95cUxQRHZ5bGxFR25rZnZ3Mnh2Q0ZWcl9HeGRiX1cteDRtX21IdFhlY0lfMmpYX3lnZTVoTVF2eTVtVGRlU1N2bTk2WEx0QkE5eUpWUnB6d2NUOGVXd3ZTTDg0OU5GZm9oTllqYmZvMEVsd0xQTG1VRU9XOFE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-21T03:26:30Z",
-   "title": "| Kyabram Free Press",
-   "source": "Kyabram Free Press",
-   "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQVVlyRmJQT1otNzgwZk84VjY3ZGQ5ZVc3NW9VZkJQcGhSNHR1U2FYRldCVU96S0tnNUpjTjhiY1BMa0tFbzExQTFwMzdYUGJ4b1NIODZ4ODBJRjNHM0NMWTNvZ2xuRlVzSUlONE9xRmFkUjMyaU5NMGV2d05WajlfVDNPUEJ2Rzhpcy12OWIzNA?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-21T03:55:17Z",
@@ -810,6 +768,14 @@
    "also": []
   },
   {
+   "date": "2026-11-21T09:18:00Z",
+   "title": "Hackers \"houden de FBI en het Amerikaanse ministerie van landbouw in de gaten\".",
+   "source": "Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFAwM0lnMlNNRGdBdElyS201U1M5bXhhdlA5MHlHRUtjMTUxRTJvYTFZRVhFaUZCa0ZlZ2hWdmM4UlVTeTNXQ2hGbjEyd0U2cVl1aXRKdTNFR2xOVDYxTnk4TURpd3ZhQmNaRDA3Rl82SlA5VXBqVVE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-21T09:24:31Z",
    "title": "BNB price drops below $520: BNB loses 10 percent",
    "source": "CryptoTicker.io",
@@ -1154,6 +1120,14 @@
    "also": []
   },
   {
+   "date": "2026-11-21T14:00:29Z",
+   "title": "FBI under cyber attack: they investigate a new computer intrusion into one of its databases",
+   "source": "El Mostrador",
+   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQeVhmV0dHVi13QUVZWUN0dy0wOFppYTVFS3R4ZjZWVGVQNUdidkp1T1FMZ2ktR2FfcWtMZ2dteGtwMlB2emdRU2xrNGo3LS1ab2owd1lIaXdBX09ETDB3bk1YcGlvbWRiaXpjamdobS1lVmNiaEZUSVdmVk1SQ0VOa2V5Wm9yZXYzcmowTEFyZmNJTVdhMHV5U2FtOUxSVG5NSUYtZlEwRkJMbGxseWlpWW8yZEdMSXcwOTIwZGluZzJZZERSOXV0RzRpVkNnMVRDQ3Y1ZkdDNS0xdw?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-21T14:05:19Z",
    "title": "Austria. They confirm a cyber attack against their Foreign Minister",
    "source": "Resumen Latinoamericano -",
@@ -1214,6 +1188,14 @@
    "title": "Cyber attack on German bank in 2017 by Chinese hacker group | Shikoku Shimbun WEB morning edition",
    "source": "四国新聞",
    "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1xbVZHaW0zM2xyblpuLW13R3c3OU52TkFDei1xTUM1WFJveWp5VWFRZjBPOXg4LWtVbDNIdnlsNzlNVGpTS2h0TklHazUzZjNTZ0V6U1kydlZCREYzY0lWTDlrOVY2MUlHWDBtYjdyN1JnanFUck840gF8QVVfeXFMT1pBOXVfQWNuUnVNLVJiNmQyc0tuV1hpOFVfNThpaUhvVEpyT2ZXc0xnYi1TUTBVcHBVWHEwMWpBS2VaSlhpZGhURWplVkVqbGNUcm51ajB4ajA3bk5UV2xhQTI5LVBUdUNvNDRoQUQ0U0RmZ2Y2eUV2MzVKMg?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T15:00:00Z",
+   "title": "Does training with 'digital weights' work? We bought a 'smart gym': “Very expensive, but my desk is now a full-fledged gym”",
+   "source": "HLN",
+   "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNOTlRd2JoU3NTZ2htZ1lfejk3Qy1WYXRkRGhGMFFweHRhcnJTdDE0dUNqNkUtNTJCYXBkZlVfdGZGeGdlNnFUWExPY2ttU09ST09TMFl2eFJUY2o0UmhXdFZwY0VkOXh4Rm1KVHh4dDNaTzdTVVVtWjRhZHJuMzAydHl5am8xMlF1U1lpYkNZb2JfM0F1TWZtdjdVWnJqTGVDbE9WWi1nMGhKNE5HeDEtSlVQazJIS1VQMWR1REc0WHZ6a21NUnNZUmd3?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1286,6 +1268,14 @@
    "title": "Bitcoin Bottom Signals Strengthen as BTC Nears $60K",
    "source": "Coinpedia",
    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZW0wWGxuMnUtb2VlcUoxUWNPaTd5bzZLSG1Ebmh1NDJGbjFPQzNDaUJwU0NheHZLOUZHMHEwX3hha3A3U2lfUWFSb3JXSC1jSWk1NEs2bllIR0VDc3VLSDNwdjVxa2lVOUlIS0MxdDBHYjE4ck1NT0RENGFnSjBoZEt1dHYxdlJKY1HSAYoBQVVfeXFMT2VtMFhsbjJ1LW9lZXFKMVFjT2k3eW82S0htRG5odTQyRm4xT0MzQ2lCcFNDYXh2SzlGRzBxMF94YWtwN1NpX1FhUm9yV0gtY0lpNTRLNm5ZSEdFQ3N1S0gzcHY1cWtpVTlJSEtDMXQwR2IxOHJNTU9ERDRhZ0owaGRLdXR2MXZSSmNR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-21T16:30:26Z",
+   "title": "Amersfoort slaat terug na kritiek van influencer Tamara Elbaz in Het Perfecte Plaatje: ‘Blijf lekker in Amsterdam’",
+   "source": "AD.nl",
+   "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNcnQwdEpqNk9FVGY2ZEhldU84aWNMQ3FDX2RsU0hnTDlfNGx1Z1ZyUUtGaTRCWXB1SXMwOG85UHJocDRGMEZUR3JYTDVVMUVjdE54VHZuNEVZUkZxR3NwT0VJNXZkbU9lbTJFR2NDXzBQcXpZbnRRa3cwV2o0Q2dqNV83LXhJZTc0T3FpOU5VQ3RCVWduRHl4RUlwTFFYZklXSloyT3BPV2VSUHBlQ1NxcEFtR0pLbEZjRV8tRFBJWVA5TVM5UkxrNGx4SWJSWDlpTjg1MWVBQkZHeDJCVG9oMkY1Zm4?oc=5",
    "n_outlets": 1,
    "also": []
   },
@@ -1426,6 +1416,14 @@
    "also": []
   },
   {
+   "date": "2026-11-21T19:05:15Z",
+   "title": "Three consecutive incidents have shaken the US digital infrastructure.",
+   "source": "Vietnam.vn",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1CbGpDLUdNTmhTY2NoU250ZnlNTXZ3MlRKdFVPcHJaNEI1OFpVWGNwTjZudUhZSFZudWlMRHphV3g1NjRfcFdONDd4SDFTNWNrRkVvTWthWHp1VVM0ZFlMdnF5dkJqakxBSEtVZkdSNmtfaXpSaktYM00wRm5IajQ?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-21T19:07:20Z",
    "title": "After outage, Microsoft confirms another July bug that led to Entra data breach",
    "source": "Neowin",
@@ -1554,6 +1552,14 @@
    "also": []
   },
   {
+   "date": "2026-11-21T21:30:31Z",
+   "title": "Ethereum's price is at risk of a new low as a foundation-affiliated wallet sells ETH",
+   "source": "The Coin Republic",
+   "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNaEQwRWZoVk85Y3BsUDhXdVBzY1VmZzUtd3VDdHlEd3VFN1V2STFlMGxVeGoweHBNLXRzNlloT0tHcUp1QnVkMHktVEFRN3hXQzF1UXk2Q3NDUklyV2RSZmJLWWU0M0JuN21TRHpST1otcTl1Y2I4czFPRDVDX3lBLWREMExEQXRMWjNvVmVKS0Y1Q2hNS3dYWmRvd2t3LU1MZXBWRjhuNHlNVTg4RHlCb1VWcHNha0ttZS03QkktbS1XWm1td1JNUWxzWkJJTzQtNEFIMWs1ZXo2WlRCTGZRYXpQeHRMOTNiT203STdPWFVWeHhTWXfSAfsBQVVfeXFMTkJlaHJQZHAwUjJUOFVSVFNlS0xvUTJFQkh6UEdvVHJmNVdYbFN1Q3BGOFA0SkZVQmFYdWxMaDNMX0FUd2wyNDc1N0g5VFZmVHVhcTFqZ29BSUcteUlCRlJxOWJZajA3WlNCUlBhcjkxZ25tX18yUGZPeHhxcUs4Wkl4dEFQQnQ0SU5QV1B4RklSYXNITkRfd01kVkNjbnN1SjhvVmhhdVI3SHE1dExfcjA4ak91aTV3N0Rzb0NZSVZ5S3lZdWhhU0JFV2dSMlRPN2tsVUJsMUh6RW54cFN5ZGpyZG4xQUpHUGZ2LUp1MmQzcURLcFNYS1NjZk0?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
    "date": "2026-11-21T22:00:44Z",
    "title": "Cyberattacks on supermarket refrigeration systems: how hackers change the temperature and what businesses should do",
    "source": "Финансы Mail",
@@ -1678,14 +1684,6 @@
    "title": "Chevron Sued Over Claimed Employee Data Breach",
    "source": "openclassactions.com",
    "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOU1NBNk5RY1EybGNPLThXZkFUbDc5RGpUN19sRE4wWHBDdHZ4M0RQY3lNWGxwdHdGN1VSZnJqcGNOb044OHZETnplXzlaem5nalFhY0cycEM5OEtTYXBmenYtSTFKblJqdzRMbEtwcS1JRGhlNEJadmZydm9hdTRybEU3bnBxVzlSYVYyaTZRQy1HY1lBZnlibnl4dTI?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T01:50:41Z",
-   "title": "Simplilearn Sued Over Late-Night Marketing Texts",
-   "source": "openclassactions.com",
-   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNXozNDZJcWgxSlA4X1ptNmpqcDdEVzV2TFdoMTBnWW5IemFXNlRUaE9vc1RlTmFvMGx0eTNGbXFwNmVpY2cwS0liUmpTZ2U3UXF0LVdaWGk1WHEzRVFtS0JoVk04OXJQV2VtWm13NFJuenlJVWFEbnhCSlA3Z3h4aVlMN3VRc1lvSFN3MzVpS3pjR3Jobk5fN3JkLVhMYnVZbHN5YlhnZ0hmUC1RZkE?oc=5",
    "n_outlets": 1,
    "also": []
   }
