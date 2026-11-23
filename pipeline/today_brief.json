@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-22T23:27:00Z",
-  "headline": "KEPCO confirmed exposure for 650,487 billing users and notified 869,761 procurement users while it checks the scope of that breach. Guadeloupe University Hospital is rescheduling non-urgent care after finding encrypted databases, while Fusionist has not confirmed a final loss from its bridge incident.",
+  "updated": "2026-11-23T00:28:07Z",
+  "headline": "KEPCO confirmed exposure for 650,487 billing users and is still checking which procurement users had data exposed. Guadeloupe University Hospital postponed non-urgent care, while reporting on Fusionist estimated about $2 million in attacker proceeds and, separately, about $3.7 million in later bridge reserve withdrawals.",
   "incidents": [
     {
       "org": "Korea Electric Power Corporation",
@@ -24,24 +24,14 @@
     },
     {
       "org": "Fusionist",
-      "what": "Fusionist asked users to pause ACE activity on BNB Smart Chain; Blockaid’s early $1.04 million extraction estimate is not a verified final loss.",
-      "scale": "$1.04M early estimate",
+      "what": "The Block estimated about $2 million in attacker proceeds and separately valued later withdrawals from Fusionist’s bridge reserves at about $3.7 million.",
+      "scale": "~$2M proceeds; ~$3.7M separate reserve withdrawals",
       "patterns": [
         "bridge",
         "contract-logic"
       ],
-      "url": "https://x.com/fusionistio/status/2124586293812461578",
-      "eid": "x-1d661531"
-    },
-    {
-      "org": "Aramid Bridge",
-      "what": "Voi Network reported unauthorized withdrawals from the Aramid bridge and said the Voi blockchain itself was not compromised.",
-      "scale": "About 125M VOI and 70,000 ALGO",
-      "patterns": [
-        "bridge"
-      ],
-      "url": "https://x.com/Voi_Net/status/2124387898757611938",
-      "eid": "x-6fb93117"
+      "url": "https://www.theblock.co/news/defi/2026-11-22-a-2-million-exploit-leads-to-a-3-7-million-free-for-all-as-traders-empty-fusionists-ace-bridge-444838",
+      "eid": "c-31c40b98"
     },
     {
       "org": "Samsung Group",
@@ -62,6 +52,16 @@
       "eid": "x-e9f8c567"
     },
     {
+      "org": "Nesa",
+      "what": "One X account alleged new unauthorized NES minting and estimated about $440,000 in sale proceeds; no independent or project confirmation was found.",
+      "scale": "~$440K in proceeds claimed",
+      "patterns": [
+        "bridge"
+      ],
+      "eid": "x-c7c7a140",
+      "url": "https://x.com/eth_apple/status/2124593198156927474"
+    },
+    {
       "org": "Chainflip",
       "what": "Chainflip confirmed theft from two vaults and offered a recovery bounty; the combined dollar value is a media estimate, and no recovery was reported.",
       "scale": "About $12M estimated across Ethereum and Bitcoin",
@@ -74,16 +74,27 @@
       "since": "2026-11-21"
     },
     {
-      "org": "Together AI",
-      "what": "Together AI traced the unauthorized download of stored prompt samples to an exposed development credential and added safeguards.",
-      "scale": "Customer count undisclosed",
-      "eid": "x-eb428de0",
+      "org": "Rackspace Spot",
+      "what": "Rackspace restored its Spot console and urged affected customers to rotate cluster credentials after an intruder used leaked credentials to access some customer environments.",
+      "scale": "Customer count not disclosed",
       "patterns": [
-        "ai",
-        "data-exposure",
+        "supply-chain",
         "key-compromise"
       ],
-      "url": "https://www.together.ai/blog/security-event-prompt-leakage-for-requests-in-june-and-july-of-2026",
+      "url": "https://www.infobae.com/tecno/2026/11/22/atacantes-entraron-a-la-nube-de-rackspace-con-credenciales-filtradas-y-pudieron-leer-claves-de-clientes/",
+      "eid": "x-f3649087",
+      "update": true,
+      "since": "2026-11-17"
+    },
+    {
+      "org": "Aramid Bridge",
+      "what": "Voi Network published its account of the losses and said withdrawals stopped after Aramid secured the affected bridge accounts.",
+      "scale": "About 125M VOI and 70,000 ALGO",
+      "patterns": [
+        "bridge"
+      ],
+      "url": "https://x.com/Voi_Net/status/2124387898757611938",
+      "eid": "x-6fb93117",
       "update": true,
       "since": "2026-11-21"
     },
@@ -100,43 +111,28 @@
       "since": "2026-11-04"
     },
     {
-      "org": "Rackspace Spot",
-      "what": "Rackspace restored its Spot console and urged affected customers to rotate cluster credentials after an intruder used leaked credentials to access some customer environments.",
-      "scale": "Customer count not disclosed",
+      "org": "The Moats",
+      "what": "Moats App’s post-mortem put losses from automated-rewards wallets at about $600,000 and said those wallets had been retired.",
+      "scale": "~$600K estimated; no recovery reported",
       "patterns": [
-        "supply-chain",
         "key-compromise"
       ],
-      "url": "https://www.infobae.com/tecno/2026/11/22/atacantes-entraron-a-la-nube-de-rackspace-con-credenciales-filtradas-y-pudieron-leer-claves-de-clientes/",
-      "eid": "x-f3649087",
+      "eid": "c-57e77d67",
+      "url": "https://minerxbt.substack.com/p/moats-app-security-incident-post",
       "update": true,
-      "since": "2026-11-17"
+      "since": "2026-11-19"
     },
     {
-      "org": "GL.iNet",
-      "what": "New reporting documented malware on some routers and KVMs; GL.iNet has not disclosed the total number affected.",
-      "scale": "Device count unknown",
+      "org": "Nedbank Avo",
+      "what": "Follow-up coverage noted that Avo accepts cards from other banks and Nedbank has not identified which issuers’ cardholders were affected.",
+      "scale": "Affected cardholder count undisclosed",
       "patterns": [
-        "edge-device"
+        "data-exposure"
       ],
+      "eid": "n-c601c3ef",
+      "url": "https://thedetail.co.za/articles/nedbank-avo-hack-card-issuers-unclear/",
       "update": true,
-      "since": "2026-11-20",
-      "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/",
-      "eid": "n-e84afceb"
-    },
-    {
-      "org": "GMI Cloud",
-      "what": "Lava Security reported that an unauthorized party accessed recent request logs; OpenRouter disabled the provider’s endpoints.",
-      "scale": "Customer count unknown",
-      "patterns": [
-        "supply-chain",
-        "data-exposure",
-        "ai"
-      ],
-      "update": true,
-      "since": "2026-10-21",
-      "url": "https://lava.security/blog/ai-inference-canary-research-prompts-exposed",
-      "eid": "x-3ef42975"
+      "since": "2026-10-28"
     }
   ]
 }
