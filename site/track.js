@@ -14,23 +14,31 @@
 
   // views and record opens, from the URL hash
   const VIEWS = { "": "terminal", "#": "terminal", "#terminal": "terminal", "#leaderboard": "leaderboard", "#top": "leaderboard", "#report": "report" };
-  let last = null;
+  let last = null, lastOpen = null;
   function route() {
     const h = location.hash;
     if (h.startsWith("#e-")) {
       const id = h.slice(3);
+      if (id === lastOpen) return;  // same record again (deep link + inspector, palette + hash): count once
+      lastOpen = id;
       const e = window.BL && window.BL.index ? window.BL.index()[id] : null;
       // incident, crypto, kev, x, news, breach, or the archive record type (notice, sec, ransom, …)
       const kind = (e && ((e.it && e.it._arc && e.it._arc.k) || e.kind)) || "unknown";
       track("open_record", { kind, id: id.slice(0, 60), from: document.body.className.replace("view-", "") });
       return;
     }
+    lastOpen = null;
     const view = VIEWS[h] || "report:" + h.slice(1);
     if (view === last) return;
     last = view;
     track("view", { view });
   }
   window.addEventListener("hashchange", route);
+  // the app opens and closes records with history.replaceState/pushState, which fire no hashchange
+  for (const m of ["replaceState", "pushState"]) {
+    const orig = history[m].bind(history);
+    history[m] = function (...args) { const r = orig(...args); try { route(); } catch (e) {} return r; };
+  }
   route();
 
   // Ask Perplexity links and the theme toggle
