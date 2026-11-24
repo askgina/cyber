@@ -4,8 +4,9 @@ import { Container, getContainer } from "@cloudflare/containers";
 
 export class Builder extends Container {
   defaultPort = 8080;
-  // Stops the container 3 minutes after the last request finishes (in-flight requests keep it alive).
-  sleepAfter = "3m";
+  // A build is one long request (2-5 min) and does not renew the idle timer, so this must exceed the longest build
+  // (a 3m timeout SIGTERMed the 23:07 cron run). buildOnce() stops the container as soon as outputs are saved.
+  sleepAfter = "15m";
 }
 
 const DATA = { "/data.json": "data.json", "/archive.json": "archive.json" };
@@ -36,6 +37,7 @@ async function buildOnce(env) {
   try { res.search = await syncSearch(env, c); }
   catch (e) { res.search = { error: String(e) }; console.log("search sync failed", String(e)); }  // the data build still counts as done
   console.log("build ok", res.generated, `${res.seconds}s`, `restored ${res.restored_files} cache files`, JSON.stringify(res.search));
+  try { await c.stop(); } catch (e) { console.log("container stop failed (it idles out after 15m)", String(e)); }  // don't pay for idle time
   return res;
 }
 
