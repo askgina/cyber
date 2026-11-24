@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T19:04:05Z",
+ "generated": "2026-11-24T19:07:16Z",
  "queue": [
   {
    "date": "2026-11-24T08:35:58Z",
@@ -30,7 +30,7 @@
    "title": "Exclusive | U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaDNLV040WjYxakp4SFpkLW1ZSWo1M3dJOE8xV3pZTmRDZ0EwclVFclVWQlZpazJiRTJwNWtCdmZGeTZkcmJqQUlWbVo5ME92cFZXSUFFOUkyUmp3SldOYmR5S2xXZUVHR1lSZXgzSEFWdHhkTm5HeEM4NVEyc0djNFNrTW9GTFh5WW1j?oc=5",
-   "n_outlets": 13,
+   "n_outlets": 14,
    "also": [
     "US eyes Iran as possible culprit in dozens of new cyberattacks against ships, WSJ reports",
     "US says Iran is possible culprit in dozens of cyberattacks, bomb threats against ships - report",
@@ -626,6 +626,17 @@
    ]
   },
   {
+   "date": "2026-11-24T10:22:08Z",
+   "title": "ANSEM memecoin plunges 75% amid disputed wallet hack claims",
+   "source": "Crypto Briefing",
+   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4tck1rc1NBekF4UFFLVHFhdFBlVWtGMXJyalBQUWsyU1c3V3dLNWpCMkFVUEdZeFhRTnBvNU04d1RyZDFSbDlGc3l6dXRlaEtLbC1RaGQ4Q2xLZl9LcXFuRGJiNDNWekZNUWJ0ektFaTZrTHBjWmlwOA?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "Hack or sell-off? Ansem wallet sells 2 million dollars while its memecoin plummets 40%",
+    "ANSEM memecoin plummets 53% after hack of largest holder's wallet"
+   ]
+  },
+  {
    "date": "2026-11-24T12:28:00Z",
    "title": "William and Kate’s home broken into in huge security breach",
    "source": "Joe.co.uk",
@@ -1200,6 +1211,16 @@
    ]
   },
   {
+   "date": "2026-11-23T22:43:00Z",
+   "title": "Happy Candy targeted by data leak, more than 7,200 email addresses claimed",
+   "source": "FrenchBreaches",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYVQzVnZBcmdWeUlnSWc4aWJzQmJPQ0lWalBwcmw4dEhjeWVNOFYySWo2TVAzd0ljWFM0Q0ZieDgxbTZYcVRGU0RkZWFaV3gzMzMtRVJVbWpiOUNUNW9GQ2p5MEp0ZEg5Y3Fab3VCVGFkdWlEXzV6OElobnRkaVdNam01azI2U3dsQ0FQcFFOd0I1UC0yOGhqRDVZWFJxZHRFZlNmLUlNT0N5Mk1RMlE?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Happy Candy hacked: data of 7,200 customers distributed on the darkweb"
+   ]
+  },
+  {
    "date": "2026-11-23T22:50:00Z",
    "title": "Les Gazons Parisiens targeted by a data leak, nearly 11,000 email addresses claimed",
    "source": "FrenchBreaches",
@@ -1477,16 +1498,6 @@
    "n_outlets": 2,
    "also": [
     "Alerts after the leak: IT can protect you"
-   ]
-  },
-  {
-   "date": "2026-11-24T10:22:08Z",
-   "title": "ANSEM memecoin plunges 75% amid disputed wallet hack claims",
-   "source": "Crypto Briefing",
-   "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE4tck1rc1NBekF4UFFLVHFhdFBlVWtGMXJyalBQUWsyU1c3V3dLNWpCMkFVUEdZeFhRTnBvNU04d1RyZDFSbDlGc3l6dXRlaEtLbC1RaGQ4Q2xLZl9LcXFuRGJiNDNWekZNUWJ0ektFaTZrTHBjWmlwOA?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Hack or sell-off? Ansem wallet sells 2 million dollars while its memecoin plummets 40%"
    ]
   },
   {
@@ -1998,14 +2009,6 @@
    "title": "[Kim Deok-hae’s Column] The stigma of being a republic of personal information leaks must end now.",
    "source": "복지TV부울경방송",
    "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwU3BXMnk5RDdfX3hoY2dsUVJwUzhBcEZnQ0NLS0ZRLXl4Y0FVVS1SeU1vd0xFQWJmY1lkbTZTcVI0ZWRNeHlRNTZkWEtncWY1cVlfSVctYXRDcUhienZOamdnYklQQktI?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-23T01:31:52Z",
-   "title": "Safetech Innovations stock enters global Top 250 MSSP ranking",
-   "source": "ad-hoc-news.de",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNd0UwQWVCTVhGQTByZHA2QUhsZ2lMTFpULWVIRFM4Xy1UM3Zvcl9VOXBJT2xhVTBIc000bnlxell5ODRqTlpIN1RUMlJxSkw4RVZkclJPNzhwQXZOTThUZ3dGSU9VRVlxRXBOQ2pfZDZzdnFmZVRBcmEtNHdrVjJTbi04REtpV2t1NFFOa3RMOU9XZm5MYTdVbFRqREg0ZEhZSjVTREdNWTh4bExjSXI2UU5pNEcxWktidGRldg?oc=5",
    "n_outlets": 1,
    "also": []
   }
