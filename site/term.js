@@ -92,7 +92,8 @@
         if (e.kind === "crypto" && r.crypto) { r.crypto = { ...r.crypto, n: r.crypto.n + 1, usd: (r.crypto.usd || 0) + (e.amount || 0) }; }
         if (e.kind === "breach" && r.breach) { r.breach = { ...r.breach, n: r.breach.n + 1, acc: (r.breach.acc || 0) + (e.count || 0) }; }
       });
-      r.total = [...(w === "30d" || w === "ytd" ? [] : ["inc"]), "crypto", "ransomware", "kev", "breach"].reduce((a, k) => a + (r[k] ? r[k].n : 0), 0);
+      r.total = w === "ytd" && W.archive && W.archive.ytd ? W.archive.ytd.n  // same total as the YTD archive tab
+        : [...(w === "30d" ? [] : ["inc"]), "crypto", "ransomware", "kev", "breach"].reduce((a, k) => a + (r[k] ? r[k].n : 0), 0);
       out[w] = r;
     });
     return out;
@@ -109,17 +110,17 @@
       const cr = r.crypto ? `${r.crypto.n}${r.crypto.usd ? " · " + B.fmtUSD(r.crypto.usd) : ""}` : "n/a";
       const top = r.crypto && r.crypto.top && r.crypto.top.usd >= 1e7 && (w === "7d" || w === "30d" || w === "ytd") ? r.crypto.top : null;
       const br = r.breach ? `${r.breach.n}${r.breach.acc ? " · " + B.compact(r.breach.acc) : ""}` : "n/a";
-      const box = el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: "Press-reported incidents (curated registry, one per incident), crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP. Official notices are listed but not added to the total." },
-        el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, "incidents")),
+      const box = el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: w === "ytd" ? "Every record in the year-to-date archive: curated incidents, crypto exploits, ransomware leak-site claims, exploited CVEs (CISA KEV), HIBP breaches, official notices and SEC filings. One incident can appear under more than one type." : "Press-reported incidents (curated registry, one per incident), crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP. Official notices are listed but not added to the total." },
+        el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, w === "ytd" ? "records" : "incidents")),
         el("div", { class: "wb" },
-          line("Press-reported", r.inc && (w === "1h" || w === "24h" || w === "7d") ? String(r.inc.n) : "n/a"),
+          line("Press-reported", r.inc && w !== "30d" ? r.inc.n.toLocaleString("en-US") : "n/a"),
           line("Crypto", cr),
           line("Ransomware", r.ransomware ? r.ransomware.n.toLocaleString("en-US") : "n/a"),
           line("Exploited CVEs", r.kev ? String(r.kev.n) : "n/a"),
           line("Breaches", br),
-          r.notices && r.notices.n ? line("Official notices", String(r.notices.n)) : null),
+          r.notices && r.notices.n ? line(w === "ytd" ? "Notices and filings" : "Official notices", r.notices.n.toLocaleString("en-US")) : null),
         top ? el("div", { class: "wt" }, el("em", {}, "Largest "), `${top.name.replace(/ CEX$/, "")} ${B.fmtUSD(top.usd)}, ${B.fmtDate(top.date)}`) : null,
-        w === "ytd" ? el("button", { type: "button", class: "t-kbtn" }, "Browse and search all since Jan 1 →") : null);
+        w === "ytd" ? el("button", { type: "button", class: "t-kbtn" }, "Browse and search all YTD →") : null);
       if (w === "ytd") box.querySelector(".t-kbtn").addEventListener("click", () => { T.tab = "arc"; T.panel = 4; drawMkt(T.D); const p = document.querySelector('.t-p[data-k="5"]'); p && p.scrollIntoView({ block: "nearest", behavior: "smooth" }); });
       return box;
     }));
@@ -219,7 +220,7 @@
     });
   }
 
-  const TABS = { inc: "7d", arc: "Since Jan 1", crypto: "Crypto", ransom: "Ransom", kev: "KEV", breach: "HIBP" };
+  const TABS = { inc: "7d", arc: "YTD", crypto: "Crypto", ransom: "Ransom", kev: "KEV", breach: "HIBP" };
 
   // ---- year-to-date archive: a separate file, fetched on first use (search or the Since Jan 1 tab)
   const AK = { all: "All", inc: "Incidents", crypto: "Crypto", ransom: "Ransomware", breach: "Breaches", notice: "Notices", sec: "SEC 8-K", kev: "KEV" };

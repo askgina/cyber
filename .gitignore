@@ -6,3 +6,4 @@ pipeline/__pycache__/
 !.dev.vars.example
 .env*
 !.env.example
+node_modules/

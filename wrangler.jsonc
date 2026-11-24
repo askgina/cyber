@@ -1,10 +1,31 @@
 {
   "name": "breach-ledger",
+  "main": "worker/index.js",
   "compatibility_date": "2026-11-23",
   "observability": {
     "enabled": true
   },
+  // Static site; data.json/archive.json and the manual build endpoint go through the Worker.
   "assets": {
-    "directory": "site"
-  }
+    "directory": "site",
+    "binding": "ASSETS",
+    "run_worker_first": ["/data.json", "/archive.json", "/__build"]
+  },
+  // Hourly build at :07, run in the Builder container.
+  "triggers": {
+    "crons": ["7 * * * *"]
+  },
+  // Build outputs (data.json, archive.json) and caches (state.tar.gz).
+  "r2_buckets": [
+    { "binding": "STATE", "bucket_name": "breach-ledger-state" }
+  ],
+  "containers": [
+    { "class_name": "Builder", "image": "./container/Dockerfile", "max_instances": 1, "instance_type": "basic" }
+  ],
+  "durable_objects": {
+    "bindings": [{ "name": "BUILDER", "class_name": "Builder" }]
+  },
+  "migrations": [
+    { "tag": "v1", "new_sqlite_classes": ["Builder"] }
+  ]
 }

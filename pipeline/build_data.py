@@ -500,6 +500,21 @@ try:
                                      "hibp_raw": hibp_raw, "llama_raw": llama_raw, "crypto": crypto, "notices": notices})
 except Exception as e:
     errors.append(f"archive: {e}")
+# Year to date is the archive: the YTD box shows the same per-type counts as the "YTD" archive tab, and its total
+# is the archive's record count. (Records can overlap across types, e.g. a curated incident and its crypto entry.)
+try:
+    _arc = json.load(open(os.path.join(ROOT, "site", "archive.json")))["items"]
+    _ytd = Counter(a["k"] for a in _arc if a["d"][:4] == str(NOW.year))
+    _R = windows["rows"]
+    _R["crypto"]["ytd"] = {**_R["crypto"].get("ytd", {}), "n": _ytd["crypto"]}
+    _R["ransomware"]["ytd"] = {"n": _ytd["ransom"]}
+    _R["kev"]["ytd"] = {"n": _ytd["kev"]}
+    _R["breach"]["ytd"] = {**_R["breach"].get("ytd", {}), "n": _ytd["breach"]}
+    _R["incidents"]["ytd"] = {"n": _ytd["inc"]}
+    _R["notices"]["ytd"] = {"n": _ytd["notice"] + _ytd["sec"]}
+    _R["archive"] = {"ytd": {"n": sum(_ytd.values())}}
+except Exception as e:
+    errors.append(f"ytd from archive: {e}")
 # older registry records are served from archive.json; data.json keeps the last 45 days
 reg_page = [r for r in reg_recs if days_ago(parse_iso(r["latest"])) <= 45]
 

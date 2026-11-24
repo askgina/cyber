@@ -1,0 +1,13 @@
+{
+  "name": "breach-ledger",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "dependencies": {
+    "@cloudflare/containers": "^0.3.7"
+  },
+  "devDependencies": {
+    "wrangler": "^4.168.0"
+  }
+}
