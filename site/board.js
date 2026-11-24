@@ -157,9 +157,9 @@
     const box = $("#b-kpi");
     if (!box) return;
     box.replaceChildren(
-      el("div", { class: "tick" }, el("div", { class: "n" }, String(n)), el("div", { class: "l" }, n === 1 ? "Hack" : "Hacks"), el("div", { class: "s" }, S.cat || "Year to date")),
-      el("div", { class: "tick" }, el("div", { class: "n" }, fmtUSD(usd)), el("div", { class: "l" }, "Lost"), el("div", { class: "s" }, "Gross, as reported")),
-      el("div", { class: "tick" }, el("div", { class: "n" }, asof), el("div", { class: "l" }, "As of"), el("div", { class: "s" }, "Rebuilt hourly")),
+      el("div", { class: "b-k" }, el("span", {}, S.cat || "Year to date"), el("b", {}, String(n)), el("i", {}, n === 1 ? "hack" : "hacks")),
+      el("div", { class: "b-k" }, el("span", {}, "Lost"), el("b", {}, fmtUSD(usd)), el("i", {}, "gross, as reported")),
+      el("div", { class: "b-k" }, el("span", {}, "As of"), el("b", {}, asof), el("i", {}, "rebuilt hourly")),
     );
   }
 

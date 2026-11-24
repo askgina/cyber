@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect x=%222%22 y=%225%22 width=%2212%22 height=%226%22 fill=%22%23000443%22/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=20261124-0030">
+<link rel="stylesheet" href="styles.css?v=20261124-1600">
 </head>
 <body class="view-board">
 <a class="skip" href="#board">Skip to content</a>
@@ -21,8 +21,7 @@
     <button type="button" id="t-live" class="t-live" title="Refresh now (u)"><i class="dot" aria-hidden="true"></i>Live <span id="t-checked" aria-live="off"></span></button>
     <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="t-q" type="search" placeholder="Filter by company, CVE, chain or pattern. Type ask … to ask Perplexity" autocomplete="off" aria-label="Filter the terminal"><kbd>/</kbd></label>
     <span class="t-clock" id="t-clock" aria-label="Current time, UTC"></span>
-    <a class="t-board" href="#leaderboard">Leaderboard</a>
-    <a class="t-rep" href="#report">Report</a>
+    <nav class="t-views" aria-label="Views"><a href="#leaderboard">Leaderboard</a><a href="#terminal" aria-current="page">Terminal</a><a href="#report">Report</a></nav>
   </div>
   <div class="t-ticker" aria-label="Latest incidents"><div class="t-tape" id="t-tape"></div></div>
   <div class="t-kpi" id="t-kpi" aria-label="Incidents by time window"></div>
@@ -39,27 +38,21 @@
 
 
 <div id="board" class="board" aria-label="Hacks leaderboard">
-  <div class="b-top">
-    <a class="wordmark" href="#leaderboard">Breach Ledger</a>
-    <nav aria-label="Views">
-      <a href="#leaderboard" class="on">Leaderboard</a>
-      <a href="#terminal">Terminal</a>
-      <a href="#report">Report</a>
-    </nav>
+  <div class="t-top">
+    <a class="t-brand" href="#leaderboard">Breach Ledger</a>
+    <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="b-q" type="search" placeholder="Search hacks by name, chain or technique" autocomplete="off" aria-label="Search hacks"></label>
+    <nav class="t-views" aria-label="Views"><a href="#leaderboard" aria-current="page">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report">Report</a></nav>
   </div>
-  <header class="b-intro">
-    <h1>Hacks leaderboard</h1>
-    <p class="b-lede">Year-to-date crypto exploits, ranked by total amount lost. Figures are as reported and are often revised.</p>
-  </header>
-  <div class="b-kpi ticks" id="b-kpi" aria-label="Leaderboard totals"></div>
-  <div class="b-tools">
+  <div class="b-kpi" id="b-kpi" aria-label="Leaderboard totals"></div>
+  <section class="t-p b-panel" aria-labelledby="b-h">
+    <header><span id="b-h">Hacks leaderboard, year to date</span><span class="t-m">Ranked by amount lost · figures as reported, often revised</span></header>
     <div class="chips b-cats" id="b-cats" role="group" aria-label="Filter by category"></div>
-    <label class="b-search"><span class="sr">Search hacks</span><input id="b-q" type="search" placeholder="Search by name, chain or technique" autocomplete="off"></label>
-  </div>
-  <div class="b-table-wrap">
-    <table class="tbl board-tbl" id="b-tbl"></table>
-  </div>
-  <p class="b-note" id="b-note"></p>
+    <div class="b-table-wrap">
+      <table class="tbl board-tbl" id="b-tbl"></table>
+    </div>
+    <p class="b-note" id="b-note"></p>
+  </section>
+  <div class="t-foot"><span><kbd>enter</kbd> open <kbd>esc</kbd> close</span><span>DefiLlama · SlowMist · year-to-date archive</span></div>
   <aside class="b-insp" id="b-insp" hidden aria-label="Hack detail">
     <div class="b-ih"><span id="b-ik"></span><button type="button" id="b-ix" aria-label="Close detail">Close <kbd>esc</kbd></button></div>
     <div class="b-ib" id="b-ib"></div>
@@ -273,6 +266,6 @@
 
 <script src="app.js?v=20261123-1317"></script>
 <script src="term.js?v=20261124-0030"></script>
-<script src="board.js?v=20261124-0030"></script>
+<script src="board.js?v=20261124-1600"></script>
 </body>
 </html>
