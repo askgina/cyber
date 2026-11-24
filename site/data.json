@@ -1,22 +1,6 @@
 {
- "generated": "2026-11-24T19:00:57Z",
+ "generated": "2026-11-24T19:04:05Z",
  "errors": [
-  "gnews hacked: HTTP Error 429: Too Many Requests",
-  "gnews \"security incident\": HTTP Error 429: Too Many Requests",
-  "gnews \"systems offline\" cyber: HTTP Error 429: Too Many Requests",
-  "gnews \"personal information\" exposed: HTTP Error 429: Too Many Requests",
-  "gnews \"zero-day\" exploited: HTTP Error 429: Too Many Requests",
-  "gnews cyberattack company: HTTP Error 429: Too Many Requests",
-  "gnews \"ransomware\" claims: HTTP Error 429: Too Many Requests",
-  "gnews cyberattack \"school district\" : HTTP Error 429: Too Many Requests",
-  "gnews Datenleck OR Datenleak: HTTP Error 429: Too Many Requests",
-  "gnews cyberattaque OR \"fuite de donn: HTTP Error 429: Too Many Requests",
-  "gnews \"attacco hacker\" OR \"violazion: HTTP Error 429: Too Many Requests",
-  "gnews \ud574\ud0b9 OR \uac1c\uc778\uc815\ubcf4 \uc720\ucd9c: HTTP Error 429: Too Many Requests",
-  "gnews cyberattack OR \"data breach\": HTTP Error 429: Too Many Requests",
-  "gnews hack OR datalek OR cyberaanval: HTTP Error 429: Too Many Requests",
-  "gnews \u9ed1\u5ba2 OR \u6570\u636e\u6cc4\u9732 OR \u7f51\u7edc\u653b\u51fb: HTTP Error 429: Too Many Requests",
-  "gnews \"\u043a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a\u0430\" OR \"\u0443\u0442\u0435\u0447\u043a\u0430 \u0434\u0430\u043d\u043d\u044b\u0445: HTTP Error 429: Too Many Requests",
   "official maine: public database offline per Maine AG notice (HTTP Error 404: 404)"
  ],
  "kev": {
@@ -4624,7 +4608,7 @@
       "title": "Binance says Asia expansion plans remain on track after US$6.3 billion hack"
      }
     ],
-    "n_outlets": 133,
+    "n_outlets": 132,
     "first_press": "2026-11-17T21:18:07Z",
     "eid": "c-846757cf"
    },
@@ -4839,6 +4823,26 @@
  },
  "news": [
   {
+   "date": "2026-11-24T18:59:52Z",
+   "source": "BleepingComputer",
+   "title": "Turnitin discloses cyberattack affecting customer-facing systems",
+   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPemlzRXE3bTg1NThUWGdVU29ORDRlcHhnc2QzY3hXSzN4aTVFc2MyUklKYml5STZ3aGZGSFVkcUR6aEpuODFIdE9pbWhwNVNaT2pkNEtnWGFFMkRkVFBOV2JyYUphRWhqd0pBelNzU1prY1dHNGpnYkdjVFI1OXBxV0ozNUpUS1c2TWFScmxNN3BubDFzS2hIVXRVNVpJLVhscUlLcS1QUDE3UnRqR2E4UTdR?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-24T18:59:52Z",
+   "outlets": [
+    {
+     "source": "BleepingComputer",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPemlzRXE3bTg1NThUWGdVU29ORDRlcHhnc2QzY3hXSzN4aTVFc2MyUklKYml5STZ3aGZGSFVkcUR6aEpuODFIdE9pbWhwNVNaT2pkNEtnWGFFMkRkVFBOV2JyYUphRWhqd0pBelNzU1prY1dHNGpnYkdjVFI1OXBxV0ozNUpUS1c2TWFScmxNN3BubDFzS2hIVXRVNVpJLVhscUlLcS1QUDE3UnRqR2E4UTdR?oc=5",
+     "date": "2026-11-24T18:59:52Z",
+     "title": "Turnitin discloses cyberattack affecting customer-facing systems"
+    }
+   ],
+   "n_outlets": 1,
+   "eid": "n-d15ad60c"
+  },
+  {
    "date": "2026-11-24T18:02:59Z",
    "source": "TechCrunch",
    "title": "UK warns AI-driven cyberattacks are exposing years of weak security",
@@ -4945,35 +4949,6 @@
    "eid": "n-3127c44d"
   },
   {
-   "date": "2026-11-24T17:28:26Z",
-   "source": "Bursa Hakimiyet",
-   "title": "Cyber attack on BTSO! Remarkable statement from President Matl\u0131",
-   "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVW1MdUMtUE52NnY4aDNFSkltcklGREpBX2h5NkFoQ2JkTTdKSTFkM1RoTlZHVVVfUFpaUXhYRGVTYTB0MjVjeFhfM1ZSMV8xVkR2UDdta1hxOWpoWlRXbFNpLW9OX0ZUdTFOMFJWRm5sWkx3aE9ZOHlOVVFRU19Nb2Z4eGRqRXFSdUxpQnZMelBvUUFlU1pUTVZaNzljdUliZEpTa01BTmcwZ0s0?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "tr",
-   "title_orig": "BTSO\u2019ya siber sald\u0131r\u0131! Ba\u015fkan Matl\u0131\u2019dan dikkat \u00e7eken a\u00e7\u0131klama",
-   "latest": "2026-11-24T17:41:03Z",
-   "outlets": [
-    {
-     "source": "Bursa Hakimiyet",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVW1MdUMtUE52NnY4aDNFSkltcklGREpBX2h5NkFoQ2JkTTdKSTFkM1RoTlZHVVVfUFpaUXhYRGVTYTB0MjVjeFhfM1ZSMV8xVkR2UDdta1hxOWpoWlRXbFNpLW9OX0ZUdTFOMFJWRm5sWkx3aE9ZOHlOVVFRU19Nb2Z4eGRqRXFSdUxpQnZMelBvUUFlU1pUTVZaNzljdUliZEpTa01BTmcwZ0s0?oc=5",
-     "date": "2026-11-24T17:28:26Z",
-     "title": "Cyber attack on BTSO! Remarkable statement from President Matl\u0131",
-     "title_orig": "BTSO\u2019ya siber sald\u0131r\u0131! Ba\u015fkan Matl\u0131\u2019dan dikkat \u00e7eken a\u00e7\u0131klama"
-    },
-    {
-     "source": "Haber G\u00fcndemim",
-     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNExvZEVRbGx5TFlMaVFNVzhvN3BTTld0M3VrVG1MWmtEc041Ykhab01vSWZPT2NRcy0wZUNmS2hNSndCc3lIT1JVXzIzM0o1V3RUWHlyY2o1aWd6UTM5cUFhN3VGTGFfckV2QzdyNlFyd1NPOEZCY09FVEtKWWFDNk5ZS09VTG5wZzR1a2I1WTJJUFh0Rm9mTUN1TGNvOFRV?oc=5",
-     "date": "2026-11-24T17:41:03Z",
-     "title": "Cyber attack on BTSO: President Matl\u0131 announced the process and findings",
-     "title_orig": "BTSO'ya siber sald\u0131r\u0131: Ba\u015fkan Matl\u0131 s\u00fcre\u00e7 ve bulgular\u0131 a\u00e7\u0131klad\u0131"
-    }
-   ],
-   "n_outlets": 2,
-   "eid": "n-a9ee4f3d"
-  },
-  {
    "date": "2026-11-24T17:28:23Z",
    "source": "CyberScoop",
    "title": "UK cyber agency, threat companies tracking rise in AI-assisted hacks",
@@ -4992,6 +4967,42 @@
    ],
    "n_outlets": 1,
    "eid": "n-be915d72"
+  },
+  {
+   "date": "2026-11-24T17:25:36Z",
+   "source": "Bursada Bug\u00fcn",
+   "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
+   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWdIBvAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWQ?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "tr",
+   "title_orig": "BTSO'ya siber sald\u0131r\u0131! \u00d6zer Matl\u0131'dan ki\u015fisel verilerle ilgili a\u00e7\u0131klama",
+   "latest": "2026-11-24T17:41:03Z",
+   "outlets": [
+    {
+     "source": "Bursada Bug\u00fcn",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWdIBvAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWQ?oc=5",
+     "date": "2026-11-24T17:25:36Z",
+     "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
+     "title_orig": "BTSO'ya siber sald\u0131r\u0131! \u00d6zer Matl\u0131'dan ki\u015fisel verilerle ilgili a\u00e7\u0131klama"
+    },
+    {
+     "source": "Bursa Hakimiyet",
+     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQVW1MdUMtUE52NnY4aDNFSkltcklGREpBX2h5NkFoQ2JkTTdKSTFkM1RoTlZHVVVfUFpaUXhYRGVTYTB0MjVjeFhfM1ZSMV8xVkR2UDdta1hxOWpoWlRXbFNpLW9OX0ZUdTFOMFJWRm5sWkx3aE9ZOHlOVVFRU19Nb2Z4eGRqRXFSdUxpQnZMelBvUUFlU1pUTVZaNzljdUliZEpTa01BTmcwZ0s0?oc=5",
+     "date": "2026-11-24T17:28:26Z",
+     "title": "Cyber attack on BTSO! Remarkable statement from President Matl\u0131",
+     "title_orig": "BTSO\u2019ya siber sald\u0131r\u0131! Ba\u015fkan Matl\u0131\u2019dan dikkat \u00e7eken a\u00e7\u0131klama"
+    },
+    {
+     "source": "Haber G\u00fcndemim",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNNExvZEVRbGx5TFlMaVFNVzhvN3BTTld0M3VrVG1MWmtEc041Ykhab01vSWZPT2NRcy0wZUNmS2hNSndCc3lIT1JVXzIzM0o1V3RUWHlyY2o1aWd6UTM5cUFhN3VGTGFfckV2QzdyNlFyd1NPOEZCY09FVEtKWWFDNk5ZS09VTG5wZzR1a2I1WTJJUFh0Rm9mTUN1TGNvOFRV?oc=5",
+     "date": "2026-11-24T17:41:03Z",
+     "title": "Cyber attack on BTSO: President Matl\u0131 announced the process and findings",
+     "title_orig": "BTSO'ya siber sald\u0131r\u0131: Ba\u015fkan Matl\u0131 s\u00fcre\u00e7 ve bulgular\u0131 a\u00e7\u0131klad\u0131"
+    }
+   ],
+   "n_outlets": 3,
+   "eid": "n-5e08a15c"
   },
   {
    "date": "2026-11-24T17:20:57Z",
@@ -8987,6 +8998,35 @@
    "eid": "n-4de54154"
   },
   {
+   "date": "2026-11-23T18:16:45Z",
+   "source": "WP Wiadomo\u015bci",
+   "title": "Data leak reveals Russian losses. Hundreds of thousands killed.",
+   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMnFoM1RXMnh1MERxZFFhQjgwZmQzQ0RVMW9OMThTTWVoZWhFcTA4VGZYekF6U1NTYVp1RUhhYVF3aHFZTE1IMms3Z2ZGanNxV0t4cnhhSnd3UUx4LVFnOFVDczJIUlhhaFBKZ0pYcG4tYXM0RUc2VTRZUkVrUlZrWXdpLXdTYTBOZ2N2TmJGMXo4Uk8wcFZPX1ppMWNPSF9N?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "pl",
+   "title_orig": "Wyciek danych ujawnia straty Rosji. Setki tysi\u0119cy poleg\u0142ych",
+   "latest": "2026-11-24T18:58:58Z",
+   "outlets": [
+    {
+     "source": "WP Wiadomo\u015bci",
+     "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNMnFoM1RXMnh1MERxZFFhQjgwZmQzQ0RVMW9OMThTTWVoZWhFcTA4VGZYekF6U1NTYVp1RUhhYVF3aHFZTE1IMms3Z2ZGanNxV0t4cnhhSnd3UUx4LVFnOFVDczJIUlhhaFBKZ0pYcG4tYXM0RUc2VTRZUkVrUlZrWXdpLXdTYTBOZ2N2TmJGMXo4Uk8wcFZPX1ppMWNPSF9N?oc=5",
+     "date": "2026-11-23T18:16:45Z",
+     "title": "Data leak reveals Russian losses. Hundreds of thousands killed.",
+     "title_orig": "Wyciek danych ujawnia straty Rosji. Setki tysi\u0119cy poleg\u0142ych"
+    },
+    {
+     "source": "ORF",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBWenM4dzRmdlg1eEN5eXk1bnlvZUhkQS01eDNSUW1CVTJQblllQUQwa1hXWVk1MTRpSXdseDhMUl85UFktbWFHbHJ2ZkRhLWhfZ1A1TmVEckFaeHc?oc=5",
+     "date": "2026-11-24T18:58:58Z",
+     "title": "Data leak reveals losses of Russian soldiers",
+     "title_orig": "Datenleck enth\u00fcllt Verluste russischer Soldaten"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-e21a163e"
+  },
+  {
    "date": "2026-11-23T18:09:09Z",
    "source": "Claim Depot",
    "title": "VHV Company Data Breach Lawsuit Investigation",
@@ -9159,7 +9199,7 @@
      "title_orig": "Justicia de EE. UU. busca decomisar USD $1.000 millones en USDC vinculados al hackeo de Binance"
     }
    ],
-   "n_outlets": 35,
+   "n_outlets": 36,
    "eid": "n-971c0722",
    "crypto": "c-846757cf"
   },
@@ -10832,7 +10872,7 @@
      "title": "European Commission warns EU Academy users of data leak after AI-driven cyberattack"
     }
    ],
-   "n_outlets": 58,
+   "n_outlets": 59,
    "eid": "n-d2294fb1"
   },
   {
@@ -21172,6 +21212,33 @@
    "eid": "n-5a0c8917"
   },
   {
+   "date": "2026-11-20T18:03:52Z",
+   "source": "Dem\u00f3crata",
+   "title": "Smartbox reports an unauthorized access: what data could have been exposed",
+   "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWC0wc01oM3JnamF0UFhGdkJoMW1waHY5M1dmZFhxbm9EZ0dMTGNXYkY5d3FUVmlDUDFFSnBYQ0FTbHVGb1pVaUVuUFVZdGVmaGFRTXZjNzBncVU4M3hXZ2xLSUtIaUJNTXAxQUtFY0FhT0xfRmtvbDJpTGRvdVUxaFdjRE8xU2ZVNzhiZ3hqaVY0Q0Y4WUw0eUNmdlJJZzM2Qk5idHJZaF8wOFl0M2lDdU50R29HZE1TUzFMaGRB0gG-AUFVX3lxTE5YLTBzTWgzcmdqYXRQWEZ2QmgxbXBodjkzV2ZkWHFub0RnR0xMY1diRjl3cVRWaUNQMUVKcFhDQVNsdUZvWlVpRW5QVVl0ZWZoYVFNdmM3MGdxVTgzeFdnbEtJS0hpQk1NcDFBS0VjQWFPTF9Ga29sMmlMZG91VTFoV2NETzFTZlU3OGJneGppVjRDRjhZTDR5Q2Z2UklnMzZCTmJ0clloXzA4WXQzaUN1TnRHb0dkTVNTMUxoZEE?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-24T17:27:46Z",
+   "outlets": [
+    {
+     "source": "Venture Solution Co., Ltd.",
+     "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9UM0dRNHdoTFA4U05FejRBTHcyeWNXTGo4R1c3eW1rZnRscmdSRmRWNWZEc2VXSDZKWHdDY2JqcHNFRWRyelEweTl2c3J3cVF5c1NMNmtrbkNaSzQ?oc=5",
+     "date": "2026-11-20T18:03:52Z",
+     "title": "Sharp mail order company KARTE suffers from unauthorized access; up to 3.26 million pieces of customer information may be leaked",
+     "title_orig": "\u30b7\u30e3\u30fc\u30d7\u901a\u8ca9\u306eKARTE\u304c\u4e0d\u6b63\u30a2\u30af\u30bb\u30b9\u88ab\u5bb3 \u9867\u5ba2\u60c5\u5831\u6700\u5927326\u4e07\u4ef6\u6d41\u51fa\u306e\u304a\u305d\u308c"
+    },
+    {
+     "source": "Dem\u00f3crata",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOWC0wc01oM3JnamF0UFhGdkJoMW1waHY5M1dmZFhxbm9EZ0dMTGNXYkY5d3FUVmlDUDFFSnBYQ0FTbHVGb1pVaUVuUFVZdGVmaGFRTXZjNzBncVU4M3hXZ2xLSUtIaUJNTXAxQUtFY0FhT0xfRmtvbDJpTGRvdVUxaFdjRE8xU2ZVNzhiZ3hqaVY0Q0Y4WUw0eUNmdlJJZzM2Qk5idHJZaF8wOFl0M2lDdU50R29HZE1TUzFMaGRB0gG-AUFVX3lxTE5YLTBzTWgzcmdqYXRQWEZ2QmgxbXBodjkzV2ZkWHFub0RnR0xMY1diRjl3cVRWaUNQMUVKcFhDQVNsdUZvWlVpRW5QVVl0ZWZoYVFNdmM3MGdxVTgzeFdnbEtJS0hpQk1NcDFBS0VjQWFPTF9Ga29sMmlMZG91VTFoV2NETzFTZlU3OGJneGppVjRDRjhZTDR5Q2Z2UklnMzZCTmJ0clloXzA4WXQzaUN1TnRHb0dkTVNTMUxoZEE?oc=5",
+     "date": "2026-11-24T17:27:46Z",
+     "title": "Smartbox reports an unauthorized access: what data could have been exposed"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-812fd4f8"
+  },
+  {
    "date": "2026-11-20T18:00:02Z",
    "source": "BleepingComputer",
    "title": "Microsoft Entra Connect Health flaw exploited to steal tenant data",
@@ -21966,32 +22033,6 @@
    ],
    "n_outlets": 2,
    "eid": "n-f6ea4bbf"
-  },
-  {
-   "date": "2026-11-20T16:26:00Z",
-   "source": "money.com",
-   "title": "Hackers Snuck Malware Into 178 Websites This Week. Is Your Personal Info Now at Risk?",
-   "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE44aGZPQ0FCSS1EYm95eWlWbmdnSUJhWmJaUFJYN014X20yUFZxV0Y2djR4T1NTRmp3NjNBeUwtVkdRczhycGE5d3pvRmd1b0FEd2ZsUzlsRVVVTHFzMnhJV0FoMVBtaklEWk83VEViNjEwZUVmMURBcWR3?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "en",
-   "latest": "2026-11-20T20:12:34Z",
-   "outlets": [
-    {
-     "source": "money.com",
-     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE44aGZPQ0FCSS1EYm95eWlWbmdnSUJhWmJaUFJYN014X20yUFZxV0Y2djR4T1NTRmp3NjNBeUwtVkdRczhycGE5d3pvRmd1b0FEd2ZsUzlsRVVVTHFzMnhJV0FoMVBtaklEWk83VEViNjEwZUVmMURBcWR3?oc=5",
-     "date": "2026-11-20T16:26:00Z",
-     "title": "Hackers Snuck Malware Into 178 Websites This Week. Is Your Personal Info Now at Risk?"
-    },
-    {
-     "source": "AOL.com",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZW1GNUNPMjVyOG5SS2V4Ml9TUTlmeU0tOEJRNlZUS19RUFJBelNDajZEVUl2b2xOenljcnNxeFZYaFZ4bUhVTzNjSTNDd2V4UERxNkhDZUxhakpIaW9aNmR6UWZ0RGduNlFzSGF2S2ZJZnY1bFlGVlowVkp3N01rOXg4dnY?oc=5",
-     "date": "2026-11-20T20:12:34Z",
-     "title": "Hackers Snuck Malware Into 178 Websites This Week. Is Your Personal Info Now at Risk?"
-    }
-   ],
-   "n_outlets": 2,
-   "eid": "n-305dd967"
   },
   {
    "date": "2026-11-20T16:25:17Z",
@@ -26146,7 +26187,7 @@
      "title": "FBI's criminal information database hacked, CNN reports"
     }
    ],
-   "n_outlets": 390,
+   "n_outlets": 392,
    "eid": "n-08dc4192"
   },
   {
@@ -32989,13 +33030,6 @@
      "title": "Cybersecurity and you"
     },
     {
-     "source": "Ratel.kz",
-     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY25JYXdwbnJTRnFSdmwyb1ZFdE1nZGNSNDZwMUszYVRpMlVMNi1CN2E3OFlwaWQ1dGQ5ZFhXZ01VbE9HV09EUHp0OXZDNHVLcVlCSk9SR0FwQnZVd3NrbW5IX0RRem5CWTJsTjZUcGxPd3RsaFhaQnU0b2pTRGpTREVDaVRhX20tdHAwT050bGwzMWhrUFBkSktsdkx5ZEFJSjVxaF9WaEZCQQ?oc=5",
-     "date": "2026-11-20T08:04:57Z",
-     "title": "From pyramid schemes to data leaks: what you need to know about digital security",
-     "title_orig": "\u041e\u0442 \u0444\u0438\u043d\u0430\u043d\u0441\u043e\u0432\u044b\u0445 \u043f\u0438\u0440\u0430\u043c\u0438\u0434 \u0434\u043e \u0443\u0442\u0435\u0447\u043a\u0438 \u0434\u0430\u043d\u043d\u044b\u0445: \u0447\u0442\u043e \u043d\u0443\u0436\u043d\u043e \u0437\u043d\u0430\u0442\u044c \u043e \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438"
-    },
-    {
      "source": "Meridian Star",
      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE1KYzBiVnc4VFNnQUlYTnhJSnBpU0RZeDU1ZUtSQ0t1NS1acWhjWTA2RGFBUjYtZTRoNVdoV0NiYzlJd0dwT1BmRHV2Z1MwWVZqdjdWekpDZm9RSHJjcXBtMWNQMDQyd2MxeVE?oc=5",
      "date": "2026-11-20T21:33:56Z",
@@ -33022,7 +33056,7 @@
      "title_orig": "Wysy\u0142aj\u0105 powiadomienia. Trzeba natychmiast sprawdza\u0107 histori\u0119 transakcji z karty"
     }
    ],
-   "n_outlets": 9,
+   "n_outlets": 8,
    "eid": "n-cfe07c84"
   },
   {
@@ -38451,13 +38485,6 @@
      "title": "The $6.3 Billion Binance Hack: What It Means For Crypto Security And Investor Trust"
     },
     {
-     "source": "Di\u00e1rio do Par\u00e1",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYnJNTlFvREZfYjZfcnQ4U0hQYXFONDlfbkdnTHp3cmRZR2NGOWVTQzVQSDRMVGJENjZvalZoX2lLMlNOc1JCUzUyVEdYX1UyMXRpNGdhZzhzOEJqLTlLNk9HeDVnSklwU1YyNmVHbWRaNks1bEQ0SHdPSzFJV3J4NXBQeW50SjNvNUpoUGpid1dRTS1JU1hQU0JoV0VTaTZIanJUclVn?oc=5",
-     "date": "2026-11-19T20:15:54Z",
-     "title": "iFood suffers hacker attack: how do you know if your data has been leaked?",
-     "title_orig": "iFood sofre ataque hacker: como saber se seus dados vazaram?"
-    },
-    {
      "source": "pathofdemocracy.hk",
      "url": "https://news.google.com/rss/articles/CBMizAJBVV95cUxNdkp3R19TV19Pc3FFYy1PWWlkc25USHVZdUowM1praS16UU5RMEVKeVdFODFjNUJha2FRdWtaQW4tMHhPaThNLWNPVF80MnhsZDVsbHFpSWgxaGp4azUyS25kZ3JZbWtOdDc0XzFUc1JLTlRtWEQtUURKN2FlcEV2Vk05WWtfR0ctQTY4WjBha21pYU52QmM4MVZ0Z3dxVTNsWks5bkdwYWN5Uy1TVmVQX2RwcmhJRDd6UGFzMlpEanJZODRoTFBUUTZTYmRpV2ZVUzd4QzJzVXN4OWR6SGRycU5EaFktVHoyRld0elFjZU5FTUZFNkQ2YlNQLWhuM0VMWVpVNnZCV2Nqc3J1VDNxWmJOQ2FoLXYyNzZ4OEpPSUUzMWtjVWhkckdHd0pwZFZrNDEtcDQ5cmE5WUl1R1h5N1BqaUJZbVFnM0dENw?oc=5",
      "date": "2026-11-20T07:50:33Z",
@@ -38465,7 +38492,7 @@
      "title_orig": "\u5e63\u5b89\u7a31\u4e9e\u6d32\u64f4\u5f35\u8a08\u5283\u572863\u5104\u7f8e\u5143\u99ed\u5ba2\u4e8b\u4ef6\u5f8c\u4ecd\u6309\u539f\u5b9a\u8a08\u5283\u63a8\u9032"
     }
    ],
-   "n_outlets": 9,
+   "n_outlets": 8,
    "eid": "n-ec167109",
    "crypto": "c-846757cf"
   },
@@ -39364,6 +39391,39 @@
    "eid": "n-0772ea73"
   },
   {
+   "date": "2026-11-18T06:28:41Z",
+   "source": "news.lavx.hu",
+   "title": "Hackers stole driver license data for Uber drivers from AI supplier",
+   "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQVBPRG9LMC1VZWpiaUhjYlI2MkNmRDVrNFpkTHpMSHdRSURrYnhzdXUtV2h4NW5WWjh0d2xTVUdvTkI3VjBvR21hVHJhV2FTTWFnU2ttV1BueElwM25zYUl4NlRPcHRvcVhaWlFlNWJsSnNaZFoyRE5ua2FWVWh0TGhYZ25CYmI2T3VrOHQ5ZXpWOTdpNy0tX1ZIbzQ?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-19T16:00:00Z",
+   "outlets": [
+    {
+     "source": "news.lavx.hu",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQVBPRG9LMC1VZWpiaUhjYlI2MkNmRDVrNFpkTHpMSHdRSURrYnhzdXUtV2h4NW5WWjh0d2xTVUdvTkI3VjBvR21hVHJhV2FTTWFnU2ttV1BueElwM25zYUl4NlRPcHRvcVhaWlFlNWJsSnNaZFoyRE5ua2FWVWh0TGhYZ25CYmI2T3VrOHQ5ZXpWOTdpNy0tX1ZIbzQ?oc=5",
+     "date": "2026-11-18T06:28:41Z",
+     "title": "Hackers stole driver license data for Uber drivers from AI supplier"
+    },
+    {
+     "source": "01net.com",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMGd0OE4tRVdSVTJ3Ylp0RTZDQ0FVWW9qTXFsSnYtNTZaVDFoMnZGbVFLWWVlc0dlVDlyZ0lQYVgyS0RTRVpEdURJNGVtVWtJXzcwZ05US01FU2EybzhYT0paSzg4VVZiZ09QMmlpd2tPcENiX1NqRlRKSDYyeTN4NXhqUE4xQ0JReEF5ejlzMXF0eVZZM0YzTDBldkZ0UkdhVlpGSDBB?oc=5",
+     "date": "2026-11-19T10:00:52Z",
+     "title": "Data leak at Chargemap: millions of drivers affected by cyberattack",
+     "title_orig": "Fuite de donn\u00e9es chez Chargemap : des millions de conducteurs sont touch\u00e9s par une cyberattaque"
+    },
+    {
+     "source": "CPO Magazine",
+     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNU2JhN2R1QmdaVnFyLUE3czZVLURSNDgtTXdkOUwwVHlWVDlUSXpjYVJIaVVyX1RUQzI3X295NGRuNHVpSENoVm1WZ29SaVNhdlAzTmU4NGFILTNHVWRsV1pDWnBNVTNndVZGbEU3a3h4Uy02b0xWWnFsOGlMNjItbDE0b3YwMjVTN2t0SGN2cXo5akdEWE9KeWJrREhmNHpETVBzeXFaYlJuazRzLVBCX25Md0U?oc=5",
+     "date": "2026-11-19T16:00:00Z",
+     "title": "Uber Data Breach Exposes Personal Information of Nearly 150,000 Drivers"
+    }
+   ],
+   "n_outlets": 3,
+   "eid": "n-68528f9f"
+  },
+  {
    "date": "2026-11-18T06:27:24Z",
    "source": "Magic 96.7",
    "title": "Cyber incident continues to disrupt Monadnock Community Hospital systems",
@@ -39704,6 +39764,50 @@
    "eid": "n-96bfa22d"
   },
   {
+   "date": "2026-11-18T03:04:14Z",
+   "source": "Krebs on Security",
+   "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+   "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMmpPekNtelVQeFBfd2FDVmhSdlJISkdQYWJNMW9EZ09wMUlQVnVoQ0RhTVhKanZxNXYyVHFwQmJ4em5IQkFTWVRaVmlnMHlEcmVfZjZENEQwbDNTX2dOcHl3WUhxR0V3RFp6V0g4b2RkRTNfX1FxVEF3SDBFTFZuUEZfa0FWX0J5ZEkyYWI5bTlVdXhuZTVJekE2Ry15NWM?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-18T18:30:33Z",
+   "outlets": [
+    {
+     "source": "Krebs on Security",
+     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMmpPekNtelVQeFBfd2FDVmhSdlJISkdQYWJNMW9EZ09wMUlQVnVoQ0RhTVhKanZxNXYyVHFwQmJ4em5IQkFTWVRaVmlnMHlEcmVfZjZENEQwbDNTX2dOcHl3WUhxR0V3RFp6V0g4b2RkRTNfX1FxVEF3SDBFTFZuUEZfa0FWX0J5ZEkyYWI5bTlVdXhuZTVJekE2Ry15NWM?oc=5",
+     "date": "2026-11-18T03:04:14Z",
+     "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites"
+    },
+    {
+     "source": "Wocult",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVlJJMjB0V082YXdSVGItWHRCUFhkQVBaWDZVRHo2enZLWExCVkJLZmZxX3o3TmVUQU5YMm5TMzFOMWFfZUZ4SERrX1V5RktTVF9aVkRMcC1qOXhKdG02b0hJU3ZhQ0Z6RVczbUNkYU5vZXVHY2pkWmoxWnozNWZEeUJabm5wRGpvZk5mOGhfUjJqQQ?oc=5",
+     "date": "2026-11-18T06:14:34Z",
+     "title": "Hackers hit 178 major websites via optimizely platform in supply-chain attack"
+    },
+    {
+     "source": "PiunikaWeb",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNOU1MaDVZcllTTmhvQlJEZWl4Q1R4WHQ2RnpncGo4S0JpRExfUUUwOVVHT3Ztd0ptNHdLeGl0c3lIblgtWl8tNnBIeTZveG05OFE0T01OX2Z5bDFjakFrZXZla1hWV3ppci0wRWNYMkNwNVZabTFDajNjWUstT1ZTaXlNOA?oc=5",
+     "date": "2026-11-18T08:54:06Z",
+     "title": "Brave blocks Optimizely CDN supply-chain attack that hit Zoom, BBC, and CNN"
+    },
+    {
+     "source": "Rescana",
+     "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQWVJFcHhSd0RHV3k2T2xRM2tudXRmVnBuVDV4RnRGTEhtYkdMSzBKZC1uaFdoSGNXYjg2U1lsTkVsNXBxQkRIWUYxOFhfVVI2VEo5a20weVJIR1pvUm56MlV4MjJBU01GMF9yMUVwNmJpRlpYN01LMV9QRnE5bTYxRlZiS1pnQWJBQnRrQ0hGQ3ZUVWVVYkJHWFN0bDc1b0hVU25j?oc=5",
+     "date": "2026-11-18T12:45:00Z",
+     "title": "Optimizely Web Experimentation Supply-Chain Attack: Prepare Now"
+    },
+    {
+     "source": "MacDailyNews",
+     "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxNLXhGSDhTVFFlUU9fNDlHVzNZUk9lY3V4NUZ2VG40YWNZenktOHFYZ2FEaGg3WTlwVDZMS3hoZkRqUUZvUHZhSGNDR2Z5LXlSbFNqWThWd3dBNHdiWlRNRDJJTGI2VXFYTHYtNXA0X3NsVDN5Yy1SRllSbGc3Yy1POURwclJlN0F5TU8tUmthUkwtUlpPZDIyVUxWR0Nydnl3V0NnTlRtVlZaMGFDTXB5V2V3RmhBVjgzOC02akpqcURFd2ZfeVJsM2x6NFZqZmsyRS1iR0VhNm5GQmRrb2Z1ei1nSF9uWkF60gHuAUFVX3lxTE5ZZEh4TUhpeVgyU0xDcFdFbXdabGlQLUNxQ1NZVFlBcS01VWtuYzlEVktKX2Vmc29lbGVFcDFPSG5xZFU0Z0lkbnB6b0hzNGkwbk9qVlpqMmRJcy1sc085X2hqRkZWQWw1M1hTVWRHTDNKR2FwWW9CeG0wekpWTzBpbXBNRDBQdENIbTJnM3gyR0RRTlhNY1Q3cE9wcnVkMDVSOTVMRy1vcWtMdi1xSjdIdUNGWmJ6Ym5GVzdpWUhJT1BvcUMtYVRaeHY1ZF9jMFpzQ0RUamRGeEE2YWgzbEN1RDBodV9jLWl1cFc2UUE?oc=5",
+     "date": "2026-11-18T18:30:33Z",
+     "title": "Major websites compromised via Optimizely supply-chain attack to steal crypto and credit card info from iPhone users"
+    }
+   ],
+   "n_outlets": 5,
+   "eid": "n-ac437ce4"
+  },
+  {
    "date": "2026-11-18T02:44:06Z",
    "source": "westsidecurrent.com",
    "title": "Court Services Offline Amid Vendor Security Investigation",
@@ -39838,38 +39942,6 @@
    ],
    "n_outlets": 3,
    "eid": "n-22b1a30a"
-  },
-  {
-   "date": "2026-11-18T01:24:27Z",
-   "source": "CSO Online",
-   "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
-   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR0R0ODQ0eDFUYUtjODExbWZrd3hfYjlXN1dxVHBzeTlTUnc3ODI5bXVvOE93SXEzZ3RMY2ZYNGpNWjhRZWpsWkRReW5vVVp0V0N5Q3J2RS1xWW01VExhNm55TUZOeURYYVdqNXhBYXJmOUhvT05OU0JwVnAtaHl4YzdsUUVnQ0FTV2hlVEFBclhNZkZQc09KdURPbTJHZHVRX1RsTnR0RU00WFV4dm56TmM0OVFNVkxLU3g3bjJCcEVlRTVlT2hOQy1GbEw?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "en",
-   "latest": "2026-11-18T23:38:44Z",
-   "outlets": [
-    {
-     "source": "CSO Online",
-     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR0R0ODQ0eDFUYUtjODExbWZrd3hfYjlXN1dxVHBzeTlTUnc3ODI5bXVvOE93SXEzZ3RMY2ZYNGpNWjhRZWpsWkRReW5vVVp0V0N5Q3J2RS1xWW01VExhNm55TUZOeURYYVdqNXhBYXJmOUhvT05OU0JwVnAtaHl4YzdsUUVnQ0FTV2hlVEFBclhNZkZQc09KdURPbTJHZHVRX1RsTnR0RU00WFV4dm56TmM0OVFNVkxLU3g3bjJCcEVlRTVlT2hOQy1GbEw?oc=5",
-     "date": "2026-11-18T01:24:27Z",
-     "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware"
-    },
-    {
-     "source": "Krebs on Security",
-     "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQMmpPekNtelVQeFBfd2FDVmhSdlJISkdQYWJNMW9EZ09wMUlQVnVoQ0RhTVhKanZxNXYyVHFwQmJ4em5IQkFTWVRaVmlnMHlEcmVfZjZENEQwbDNTX2dOcHl3WUhxR0V3RFp6V0g4b2RkRTNfX1FxVEF3SDBFTFZuUEZfa0FWX0J5ZEkyYWI5bTlVdXhuZTVJekE2Ry15NWM?oc=5",
-     "date": "2026-11-18T03:04:14Z",
-     "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites"
-    },
-    {
-     "source": "Mashable",
-     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPOFp6WW5qN2ZmYnRDMWk0US1GUE9DcXdfQUd3WHR4RzBKYmxkX19oY2JDUUx4RDNLalFrVzV4U09JcDhoU0Mwb3dlYWhldG1vT1o4ZzBOYkNIclowNnhNb1B3T3NaQi1ydGdvWkFJSQ?oc=5",
-     "date": "2026-11-18T23:38:44Z",
-     "title": "175+ major websites affected by malware hack, report says: What we know"
-    }
-   ],
-   "n_outlets": 3,
-   "eid": "n-fa96ecaf"
   },
   {
    "date": "2026-11-18T01:13:48Z",
@@ -40331,6 +40403,38 @@
    "eid": "n-92c7646d"
   },
   {
+   "date": "2026-11-17T22:38:33Z",
+   "source": "TechTarget",
+   "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUXBSZ3dRd0dWSUhDd1NTODI0UjR0VW1PMEE1UjVZWENyUElVRTVjNURnUzVvR2FERC1vMU5fT25nanZITWpXX3lxclVwcVNiUndqd1VzaFlBVzNkZnNwRDZwcm5pYnJqMkVaMVBtNTgxMTg3ZHIxRy1KN3dsdml5eU85VWdKQ0doVkxnRlZ4LXdXOTl6ZF93N2VMOVR6MFlWRXFKbGxCT2NuT0YzdFE?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-18T11:05:36Z",
+   "outlets": [
+    {
+     "source": "TechTarget",
+     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUXBSZ3dRd0dWSUhDd1NTODI0UjR0VW1PMEE1UjVZWENyUElVRTVjNURnUzVvR2FERC1vMU5fT25nanZITWpXX3lxclVwcVNiUndqd1VzaFlBVzNkZnNwRDZwcm5pYnJqMkVaMVBtNTgxMTg3ZHIxRy1KN3dsdml5eU85VWdKQ0doVkxnRlZ4LXdXOTl6ZF93N2VMOVR6MFlWRXFKbGxCT2NuT0YzdFE?oc=5",
+     "date": "2026-11-17T22:38:33Z",
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs"
+    },
+    {
+     "source": "DQ",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd3Y1UlN6ZFBlZXlIcXFXZXJ1Y2VaU1ZzX1FfQlJfWGVWTkRTYVFFbER0djFmanVUaEw3dTVtYUJaM2ZLNE0wTHNUdGgtWGFBVFJDRGtGd0YzZDRGV1h5cmxMTll1TW5OeTN4Z0I1WnB6MVpqUDVwOXlrYUg5Qkdoc1RaYTZPdFowMHVSdFFTRmVsWWxscTUtdnhWeHhaR08zWkNVcHpB0gGmAUFVX3lxTE93djVSU3pkUGVleUhxcVdlcnVjZVpTVnNfUV9CUl9YZVZORFNhUUVsRHR2MWZqdVRoTDd1NW1hQlozZks0TTBMc1R0aC1YYUFUUkNEa0Z3RjNkNEZXWHlybExOWXVNbk55M3hnQjVacHoxWmpQNXA5eWthSDlCR2hzVFphNk90WjAwdVJ0UVNGZWxZbGxxNS12eFZ4eFpHTzNaQ1VwekE?oc=5",
+     "date": "2026-11-17T23:54:22Z",
+     "title": "Optimizely Supply Chain Attack Hits 178 Organisations"
+    },
+    {
+     "source": "Meteora Web",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSWJtV2xURmZuZlF0RjVQWEJZbmIweHkwQzdlendkY25HcGx3QV9xc2FQRmVseTBHSVZjRXVKeG9FSWhMN1F4eHY5Tk41OU5kbDFDNDJUTUI3b0Eyd0dCQVgwNHFpMDRCbkEzRVRqaWxxUVc1a1d1Zng0OGRmM2NncDkyQmtSd1Y2aDVjdjJzZi0zMndOZU9v?oc=5",
+     "date": "2026-11-18T11:05:36Z",
+     "title": "Optimizely supply chain attack hits 178 websites"
+    }
+   ],
+   "n_outlets": 3,
+   "eid": "n-5e3ae01b"
+  },
+  {
    "date": "2026-11-17T22:34:22Z",
    "source": "Dark Reading",
    "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
@@ -40709,6 +40813,53 @@
    "eid": "n-320959dc"
   },
   {
+   "date": "2026-11-17T21:33:57Z",
+   "source": "LEADERSHIP Newspapers",
+   "title": "7 Popular Websites You May Not Know Have Been Hacked",
+   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMm1NZ0tXNEc1WW5iaGZmMXQxZC1SdnRucWZ4c0ZJaWNLcENZMDVYZkVhY2IyR3VETUpWdnlqSFNtRm5mVm1ScW9FYWlSZU5yNHhBYTNVSzd1eEkyTWNhOUVCZndXcEpyamdfVGN6ZG1RNTJBaElRbmJlSjVQdmt2OA?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-20T08:04:57Z",
+   "outlets": [
+    {
+     "source": "LEADERSHIP Newspapers",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMm1NZ0tXNEc1WW5iaGZmMXQxZC1SdnRucWZ4c0ZJaWNLcENZMDVYZkVhY2IyR3VETUpWdnlqSFNtRm5mVm1ScW9FYWlSZU5yNHhBYTNVSzd1eEkyTWNhOUVCZndXcEpyamdfVGN6ZG1RNTJBaElRbmJlSjVQdmt2OA?oc=5",
+     "date": "2026-11-17T21:33:57Z",
+     "title": "7 Popular Websites You May Not Know Have Been Hacked"
+    },
+    {
+     "source": "Nine.com.au",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOc3c3djhQTFZqeS1HWU51a3d2M0EyZ3FhcGtnMVJXaHhUbGRLX0xOVjBzVjRnZzJGTEh4UkNsVnZCdzRJZW9kQS1lNlI4MEIwbVVuc2hjT25yeUVmTm5TRU9KYWdueVBNcjFfOW1NYmNWTjlQVWxYWmdqY0JNLUJZOXhvaHNkYWNDbHBqU0pDV25nZ2RPQ2dOSy1tLUozUEFDeG9uczhaRTFMMTRhUFEtelhJUjBMUVdjLWZBSDNn?oc=5",
+     "date": "2026-11-17T23:13:44Z",
+     "title": "Optimizely hack: Cyberattack targets popular websites, aims to steal cryptocurrency"
+    },
+    {
+     "source": "Sing Tao Daily Sing Tao Daily Canada",
+     "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPLTZDdHJtekxFMEkyYjQ1Y2l5WlAyWGQydVJ1cTg5d3BsV1hCUkNUZjY1ckt6clllYl9WcjlNWXlFNnhmdmZVd3cxdTQ2dXp4cTN5eGhral9OZzhyU3EyTnE0Q0QyR3JVVEVGYmJWZHQwb2FvRUl2ak9reVMxLVByMDFXT3NvamI1YjFsQUFEVHJhRGpMQjFPdjVTWUxvaWVhbzdNTmtKSEJzTGtxblFhc0Z5c2JUUWJudkdMWUxpd2NaN2JJaFFobDZfV1lyc25kSjBMaVgtVnpsREdNTTliWlpsbzFxVHF5NGQzc1VlX2c0RTJKOHZWcXdUTkdyd3JoZUJjRFBvemdEMVh4SEdvWVZ4VEVNZkFrQ1IyT3FTYUN6UHYtNU1BdU1vYnpBSUVLQVZhZUYtMnVtbzRnaWlGbUIwX3VldFBmMERCOFRkSElZbC1Rb2JDak9vN0JZa2wzN1F4Y0tlTUhaTWfSAYwBQVVfeXFMTkFZb0lNNElvbVVveE8zVXBRa09aU1JWMDhXYnlnMExIQWc1cTlmMllWVEFqT1lyV3BRa2s1WEMxd2JiM3ZNTjJTRUozTmY3VXFlM1lYZzhLQ2JkMnNobGYyWmlDcTV6ejRJOWg5VEZXZnNXaTczRnE2bGdpb0RseHZaWnpfNndFbW9yR1Y?oc=5",
+     "date": "2026-11-19T15:58:06Z",
+     "title": "Nearly 200 popular websites around the world have been hacked. Experts urge people to update their systems",
+     "title_orig": "\u5168\u7403\u8fd1200\u500b\u71b1\u9580\u7db2\u7ad9\u906d\u9ed1\u5ba2\u653b\u64ca \u5c08\u5bb6\u7c72\u6c11\u773e\u66f4\u65b0\u7cfb\u7d71"
+    },
+    {
+     "source": "Di\u00e1rio do Par\u00e1",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYnJNTlFvREZfYjZfcnQ4U0hQYXFONDlfbkdnTHp3cmRZR2NGOWVTQzVQSDRMVGJENjZvalZoX2lLMlNOc1JCUzUyVEdYX1UyMXRpNGdhZzhzOEJqLTlLNk9HeDVnSklwU1YyNmVHbWRaNks1bEQ0SHdPSzFJV3J4NXBQeW50SjNvNUpoUGpid1dRTS1JU1hQU0JoV0VTaTZIanJUclVn?oc=5",
+     "date": "2026-11-19T20:15:54Z",
+     "title": "iFood suffers hacker attack: how do you know if your data has been leaked?",
+     "title_orig": "iFood sofre ataque hacker: como saber se seus dados vazaram?"
+    },
+    {
+     "source": "Ratel.kz",
+     "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOY25JYXdwbnJTRnFSdmwyb1ZFdE1nZGNSNDZwMUszYVRpMlVMNi1CN2E3OFlwaWQ1dGQ5ZFhXZ01VbE9HV09EUHp0OXZDNHVLcVlCSk9SR0FwQnZVd3NrbW5IX0RRem5CWTJsTjZUcGxPd3RsaFhaQnU0b2pTRGpTREVDaVRhX20tdHAwT050bGwzMWhrUFBkSktsdkx5ZEFJSjVxaF9WaEZCQQ?oc=5",
+     "date": "2026-11-20T08:04:57Z",
+     "title": "From pyramid schemes to data leaks: what you need to know about digital security",
+     "title_orig": "\u041e\u0442 \u0444\u0438\u043d\u0430\u043d\u0441\u043e\u0432\u044b\u0445 \u043f\u0438\u0440\u0430\u043c\u0438\u0434 \u0434\u043e \u0443\u0442\u0435\u0447\u043a\u0438 \u0434\u0430\u043d\u043d\u044b\u0445: \u0447\u0442\u043e \u043d\u0443\u0436\u043d\u043e \u0437\u043d\u0430\u0442\u044c \u043e \u0446\u0438\u0444\u0440\u043e\u0432\u043e\u0439 \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u0438"
+    }
+   ],
+   "n_outlets": 5,
+   "eid": "n-beb6945c"
+  },
+  {
    "date": "2026-11-17T21:20:15Z",
    "source": "Hokanews",
    "title": "AI Investment Fears Trigger Global Market Selloff as Nasdaq 100 Suffers Worst Week Since 2020",
@@ -40734,6 +40885,35 @@
    ],
    "n_outlets": 2,
    "eid": "n-984080f4"
+  },
+  {
+   "date": "2026-11-17T21:19:24Z",
+   "source": "Le Parisien",
+   "title": "Bank cards and cryptocurrencies targeted: Ikea, HSBC\u2026 dozens of consumer sites affected by a cyberattack",
+   "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQd1d0eEJtZ0Y4TlBqRnBuTldfcHZhTm42R2FENlloX3VXUDlfUHMxbVktS3E1dm1UNFhDN1FLZjRIckRfVEFINlppVXpwbkY2WFRmZGRQSjA5aXcyWHNRQ3pOeVNYMU82LTRHYlRBN0R3RmFjdC1fZ1pnU0JzZ1NrVjk0SE95alAtb1RpeTV3TkdhV1U1R1RYeVpxaHUwaWxnMmFvMmU2STZKa2FYZ2VEWWdOaEZqblgyTy1wNjJwYkZENEQ4RXJGeWVRWTMxWTIzalZFY0stZlA3RGo2UnNwVkt2QkZxRUU1bTBOSllpc2RfMWFJRXpTWnV3WTk4SUVCSTFwNktXQnpodUpvaXBoT3hyTEJQYlBxUU40QThn?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "fr",
+   "title_orig": "Cartes bancaires et cryptomonnaies vis\u00e9es : Ikea, HSBC\u2026 des dizaines de sites grand public touch\u00e9s par une cyberattaque",
+   "latest": "2026-11-18T08:30:59Z",
+   "outlets": [
+    {
+     "source": "Le Parisien",
+     "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQd1d0eEJtZ0Y4TlBqRnBuTldfcHZhTm42R2FENlloX3VXUDlfUHMxbVktS3E1dm1UNFhDN1FLZjRIckRfVEFINlppVXpwbkY2WFRmZGRQSjA5aXcyWHNRQ3pOeVNYMU82LTRHYlRBN0R3RmFjdC1fZ1pnU0JzZ1NrVjk0SE95alAtb1RpeTV3TkdhV1U1R1RYeVpxaHUwaWxnMmFvMmU2STZKa2FYZ2VEWWdOaEZqblgyTy1wNjJwYkZENEQ4RXJGeWVRWTMxWTIzalZFY0stZlA3RGo2UnNwVkt2QkZxRUU1bTBOSllpc2RfMWFJRXpTWnV3WTk4SUVCSTFwNktXQnpodUpvaXBoT3hyTEJQYlBxUU40QThn?oc=5",
+     "date": "2026-11-17T21:19:24Z",
+     "title": "Bank cards and cryptocurrencies targeted: Ikea, HSBC\u2026 dozens of consumer sites affected by a cyberattack",
+     "title_orig": "Cartes bancaires et cryptomonnaies vis\u00e9es : Ikea, HSBC\u2026 des dizaines de sites grand public touch\u00e9s par une cyberattaque"
+    },
+    {
+     "source": "franceinfo",
+     "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQRkJXM21GSS1SenlBV3RES1piWXdnek9WSWQ0a0tWczB0ZEhlUENzMFEtQVh0WTRXcWdZT3ByU3F5R0NOYjRIc2ctQ2loWnU0emx2ZEhqUE1VZXlLYm1HbHNyU1RlR3BqTmlRS0ZSVk11UlhCZHlkY2tmY2lzbklXOHJrMnJzaE13Wk1UcWRkWGJ3eEMwdmYxeWlJTzR1SkFHa1ZyR2JzZkpzcjAyOXJ4LU5lSnVsZnFWQVYxaWZBaENBZ3RJWWR5ZjdOdjVoRkc0bDZPaHBQek5xWFNHWmdncXRHT1dPS0V2VTRXczM5WGtVd0dVRzlWYzZxR2ktT2xLQ19jaTY3WHFOT3lBMUpYWWtQdGJtUFktVEdGSVZpRy14Q0lTaGNvMG9aZlU2MXM1QnhkUjl1TTdPTTA?oc=5",
+     "date": "2026-11-18T08:30:59Z",
+     "title": "Dozens of consumer sites, including those of Ikea, HSBC and CNN, attacked to recover users' financial data",
+     "title_orig": "Des dizaines de sites grand public, dont ceux d'Ikea, d'HSBC ou de CNN, attaqu\u00e9s pour r\u00e9cup\u00e9rer les donn\u00e9es financi\u00e8res d'utilisateurs"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-4e0a713a"
   },
   {
    "date": "2026-11-17T21:17:29Z",
@@ -40867,23 +41047,10 @@
      "title": "Uber Breach Hits 149,346 Drivers via Fireworks AI"
     },
     {
-     "source": "news.lavx.hu",
-     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQVBPRG9LMC1VZWpiaUhjYlI2MkNmRDVrNFpkTHpMSHdRSURrYnhzdXUtV2h4NW5WWjh0d2xTVUdvTkI3VjBvR21hVHJhV2FTTWFnU2ttV1BueElwM25zYUl4NlRPcHRvcVhaWlFlNWJsSnNaZFoyRE5ua2FWVWh0TGhYZ25CYmI2T3VrOHQ5ZXpWOTdpNy0tX1ZIbzQ?oc=5",
-     "date": "2026-11-18T06:28:41Z",
-     "title": "Hackers stole driver license data for Uber drivers from AI supplier"
-    },
-    {
-     "source": "01net.com",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQMGd0OE4tRVdSVTJ3Ylp0RTZDQ0FVWW9qTXFsSnYtNTZaVDFoMnZGbVFLWWVlc0dlVDlyZ0lQYVgyS0RTRVpEdURJNGVtVWtJXzcwZ05US01FU2EybzhYT0paSzg4VVZiZ09QMmlpd2tPcENiX1NqRlRKSDYyeTN4NXhqUE4xQ0JReEF5ejlzMXF0eVZZM0YzTDBldkZ0UkdhVlpGSDBB?oc=5",
-     "date": "2026-11-19T10:00:52Z",
-     "title": "Data leak at Chargemap: millions of drivers affected by cyberattack",
-     "title_orig": "Fuite de donn\u00e9es chez Chargemap : des millions de conducteurs sont touch\u00e9s par une cyberattaque"
-    },
-    {
-     "source": "CPO Magazine",
-     "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNU2JhN2R1QmdaVnFyLUE3czZVLURSNDgtTXdkOUwwVHlWVDlUSXpjYVJIaVVyX1RUQzI3X295NGRuNHVpSENoVm1WZ29SaVNhdlAzTmU4NGFILTNHVWRsV1pDWnBNVTNndVZGbEU3a3h4Uy02b0xWWnFsOGlMNjItbDE0b3YwMjVTN2t0SGN2cXo5akdEWE9KeWJrREhmNHpETVBzeXFaYlJuazRzLVBCX25Md0U?oc=5",
-     "date": "2026-11-19T16:00:00Z",
-     "title": "Uber Data Breach Exposes Personal Information of Nearly 150,000 Drivers"
+     "source": "Cryptonews.net",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44SmpPZnBPZV9BX1pzdVJMSmhDM2JpVXRQMzNCYUtwNk5MZGM3WXdjS21BeEg0QldaOEd6d24zZ043cm9IbkdDazdJYmNJNzRibzliXzZKVXUyZw?oc=5",
+     "date": "2026-11-19T01:16:35Z",
+     "title": "Supply Chain Breach Exposes Vulnerabilities"
     },
     {
      "source": "WSJ",
@@ -40898,7 +41065,7 @@
      "title": "Uber drivers' licenses exposed in Fireworks AI data breach"
     }
    ],
-   "n_outlets": 7,
+   "n_outlets": 5,
    "eid": "n-18f42aad"
   },
   {
@@ -41287,6 +41454,32 @@
    "eid": "n-94264828"
   },
   {
+   "date": "2026-11-17T20:19:17Z",
+   "source": "CNET",
+   "title": "Cyberattack Targets iPhones, Crypto of Visitors to Major Websites",
+   "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMkFmdWp6ZEk4Q05Ta3VLNmNBU0dPZDZvWFVISk9QQ085alFOTkZKU2hlVUhKVXNydXFSRnBFcXkxTHBpM2dTMmhOX2pVQjB4MjV2ZlFZMWZuOW1ocFlfTGd1SFMzeG10UW1RMHhtQ3BIS19wRnVJdGFlejg3QURUN05QVWI2QjFQdEZsY0NDQ0dHWFFDa3hz?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-18T10:31:20Z",
+   "outlets": [
+    {
+     "source": "CNET",
+     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMkFmdWp6ZEk4Q05Ta3VLNmNBU0dPZDZvWFVISk9QQ085alFOTkZKU2hlVUhKVXNydXFSRnBFcXkxTHBpM2dTMmhOX2pVQjB4MjV2ZlFZMWZuOW1ocFlfTGd1SFMzeG10UW1RMHhtQ3BIS19wRnVJdGFlejg3QURUN05QVWI2QjFQdEZsY0NDQ0dHWFFDa3hz?oc=5",
+     "date": "2026-11-17T20:19:17Z",
+     "title": "Cyberattack Targets iPhones, Crypto of Visitors to Major Websites"
+    },
+    {
+     "source": "Homeland Security Today",
+     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxObDRWTTUycnFtNlRqSU9PQVpibEVNRlVjQlJnenpVMlhpb3BaWmJUY3NsbVdRVnJ5SUtSVlZ0TWVseHJPdXZ4Y0FYekJwWFV0U09ib0d6eVpWNVhoUU8xdkt5VHlRYU5rWi1uSWJqMFZpckNHRl9yQnpWdGdsaFNrNURzeXU0LUlCS0pjb0tFbEtEU0ZXX0swLUhla0R1VTNuV01paXdleWQ0YzB5UmxOdmFoc0JidWFqc0FaSUd5M0pvMllQdG53aFpMVkRiX05jZXhTdXdUUjBSQml0akFtYzBwTWFrWVZjRmt3?oc=5",
+     "date": "2026-11-18T10:31:20Z",
+     "title": "Cyberattack Hits 178 Major Websites Including CNN and Zoom in Bid to Steal Crypto, Infect iPhones"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-013f7445"
+  },
+  {
    "date": "2026-11-17T20:10:10Z",
    "source": "Entrepreneur",
    "title": "\u2018Malicious\u2019 Cyberattack on 178 Major Websites Tried to Steal Credit Cards and Crypto \u2014 Here's What You Should Do Immediately",
@@ -41294,7 +41487,7 @@
    "summary": "",
    "via": "Google News",
    "lang": "en",
-   "latest": "2026-11-18T06:42:24Z",
+   "latest": "2026-11-20T20:12:34Z",
    "outlets": [
     {
      "source": "Entrepreneur",
@@ -41314,9 +41507,27 @@
      "date": "2026-11-18T06:42:24Z",
      "title": "Hacker attack on 178 giants: IT security of credit cards and iPhones at risk",
      "title_orig": "Attacco hacker a 178 colossi: a rischio sicurezza informatica di carte di credito e iPhone"
+    },
+    {
+     "source": "The Paypers",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa3hBazhWV2YyYUl6aUd6b3dHbFVJZGpnOFVwZ1BSSDN1V1FScWVPLXkzcHFsUDdwbDNKc1Jrc3VYS3JfczVHNWpnRXF4SllCNFppMU5ZajQ5d01mdktVRk1WTUNnQ0MzcG9IUlQzM2ZEMFk5WkpkdGtfeGY3TjUzNWpwVVhjbFlBRWlKR0g2WGx4WXFUNzZvRUZobjFpLXk4dlFMNnFnTE0xU25CdEJ1b0hB?oc=5",
+     "date": "2026-11-19T12:12:49Z",
+     "title": "Optimjack malware hits 178 websites"
+    },
+    {
+     "source": "money.com",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE44aGZPQ0FCSS1EYm95eWlWbmdnSUJhWmJaUFJYN014X20yUFZxV0Y2djR4T1NTRmp3NjNBeUwtVkdRczhycGE5d3pvRmd1b0FEd2ZsUzlsRVVVTHFzMnhJV0FoMVBtaklEWk83VEViNjEwZUVmMURBcWR3?oc=5",
+     "date": "2026-11-20T16:26:00Z",
+     "title": "Hackers Snuck Malware Into 178 Websites This Week. Is Your Personal Info Now at Risk?"
+    },
+    {
+     "source": "AOL.com",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZW1GNUNPMjVyOG5SS2V4Ml9TUTlmeU0tOEJRNlZUS19RUFJBelNDajZEVUl2b2xOenljcnNxeFZYaFZ4bUhVTzNjSTNDd2V4UERxNkhDZUxhakpIaW9aNmR6UWZ0RGduNlFzSGF2S2ZJZnY1bFlGVlowVkp3N01rOXg4dnY?oc=5",
+     "date": "2026-11-20T20:12:34Z",
+     "title": "Hackers Snuck Malware Into 178 Websites This Week. Is Your Personal Info Now at Risk?"
     }
    ],
-   "n_outlets": 3,
+   "n_outlets": 6,
    "eid": "n-d894dfd9"
   },
   {
@@ -41491,65 +41702,6 @@
    ],
    "n_outlets": 2,
    "eid": "n-b741abee"
-  },
-  {
-   "date": "2026-11-17T19:52:26Z",
-   "source": "LEADERSHIP Newspapers",
-   "title": "7 Popular Websites You May Not Know Have Been Hacked",
-   "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMm1NZ0tXNEc1WW5iaGZmMXQxZC1SdnRucWZ4c0ZJaWNLcENZMDVYZkVhY2IyR3VETUpWdnlqSFNtRm5mVm1ScW9FYWlSZU5yNHhBYTNVSzd1eEkyTWNhOUVCZndXcEpyamdfVGN6ZG1RNTJBaElRbmJlSjVQdmt2OA?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "en",
-   "latest": "2026-11-20T13:49:59Z",
-   "outlets": [
-    {
-     "source": "La Presse",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOS1NXQ3VLeU5lbm1mSHNucHg2SlBSZHl4QW5udTVWZ0dDdzJmYWlWTnAtWElTXzA2NW1jdk1xeDN6d0hGRG5rN3dWdWgzM0ptVmhaanVVNWpKM3VobV9DY2NvNjRtOWEycjRuX215bGhHdlRqaVhBTUlkYkVCOUM5LU9uanVYa0xzbU5tQUg0NEU5c1pqY2I2aHBodXpCa3RlM2tJUFotdTQxNXphTzYtWEVBYmgxN05VWGZrdWhBTVNGQTlEWG4xXzB2QVpOazZDb2JXcWs2NzU?oc=5",
-     "date": "2026-11-17T19:52:26Z",
-     "title": "BBC, IKEA, HSBC, CNN... | Dozens of popular websites targeted by cyberattack",
-     "title_orig": "BBC, IKEA, HSBC, CNN... | Des dizaines de sites internet populaires vis\u00e9s par une cyberattaque"
-    },
-    {
-     "source": "Le Parisien",
-     "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxQd1d0eEJtZ0Y4TlBqRnBuTldfcHZhTm42R2FENlloX3VXUDlfUHMxbVktS3E1dm1UNFhDN1FLZjRIckRfVEFINlppVXpwbkY2WFRmZGRQSjA5aXcyWHNRQ3pOeVNYMU82LTRHYlRBN0R3RmFjdC1fZ1pnU0JzZ1NrVjk0SE95alAtb1RpeTV3TkdhV1U1R1RYeVpxaHUwaWxnMmFvMmU2STZKa2FYZ2VEWWdOaEZqblgyTy1wNjJwYkZENEQ4RXJGeWVRWTMxWTIzalZFY0stZlA3RGo2UnNwVkt2QkZxRUU1bTBOSllpc2RfMWFJRXpTWnV3WTk4SUVCSTFwNktXQnpodUpvaXBoT3hyTEJQYlBxUU40QThn?oc=5",
-     "date": "2026-11-17T21:19:24Z",
-     "title": "Bank cards and cryptocurrencies targeted: Ikea, HSBC\u2026 dozens of consumer sites affected by a cyberattack",
-     "title_orig": "Cartes bancaires et cryptomonnaies vis\u00e9es : Ikea, HSBC\u2026 des dizaines de sites grand public touch\u00e9s par une cyberattaque"
-    },
-    {
-     "source": "LEADERSHIP Newspapers",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNMm1NZ0tXNEc1WW5iaGZmMXQxZC1SdnRucWZ4c0ZJaWNLcENZMDVYZkVhY2IyR3VETUpWdnlqSFNtRm5mVm1ScW9FYWlSZU5yNHhBYTNVSzd1eEkyTWNhOUVCZndXcEpyamdfVGN6ZG1RNTJBaElRbmJlSjVQdmt2OA?oc=5",
-     "date": "2026-11-17T21:33:57Z",
-     "title": "7 Popular Websites You May Not Know Have Been Hacked"
-    },
-    {
-     "source": "Yahoo",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVXEzQlA5ZkdkWkFsWUVYLWJWR1liS2otYTM4SGdhV0ZhalJTei16M3pLMmU3MC1IYjRJQzRReFhJb095MFdyQ2RFR1g5SEYzZldkQXVGelhUeGRyNlpRekN0X1lBQm5VczZTcWhzTmhLVkxnb0pMeWVmMVpxeWx4bnFLYXVUS0c4Vk4wMEpmQ2F4Zw?oc=5",
-     "date": "2026-11-18T01:56:00Z",
-     "title": "Hackers Hijack Websites of CNN, BBC and Major Banks"
-    },
-    {
-     "source": "franceinfo",
-     "url": "https://news.google.com/rss/articles/CBMiuwJBVV95cUxQRkJXM21GSS1SenlBV3RES1piWXdnek9WSWQ0a0tWczB0ZEhlUENzMFEtQVh0WTRXcWdZT3ByU3F5R0NOYjRIc2ctQ2loWnU0emx2ZEhqUE1VZXlLYm1HbHNyU1RlR3BqTmlRS0ZSVk11UlhCZHlkY2tmY2lzbklXOHJrMnJzaE13Wk1UcWRkWGJ3eEMwdmYxeWlJTzR1SkFHa1ZyR2JzZkpzcjAyOXJ4LU5lSnVsZnFWQVYxaWZBaENBZ3RJWWR5ZjdOdjVoRkc0bDZPaHBQek5xWFNHWmdncXRHT1dPS0V2VTRXczM5WGtVd0dVRzlWYzZxR2ktT2xLQ19jaTY3WHFOT3lBMUpYWWtQdGJtUFktVEdGSVZpRy14Q0lTaGNvMG9aZlU2MXM1QnhkUjl1TTdPTTA?oc=5",
-     "date": "2026-11-18T08:30:59Z",
-     "title": "Dozens of consumer sites, including those of Ikea, HSBC and CNN, attacked to recover users' financial data",
-     "title_orig": "Des dizaines de sites grand public, dont ceux d'Ikea, d'HSBC ou de CNN, attaqu\u00e9s pour r\u00e9cup\u00e9rer les donn\u00e9es financi\u00e8res d'utilisateurs"
-    },
-    {
-     "source": "The Daily Beast",
-     "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOTnRqUVQxaWI0SXprM0FZU2M4NFk4cWpnSkExeFBEbjZJa0c4cHVKU3cyQk4tVjhTREI5TVZMekdwNmxXVXF3eWFSb3RfdExGYVE1Mk1CYXVNVUdnZ1RMNE1qcUZlQVA2QjNNckZpNEFWSkY2a1pVcnE0Qnp2U3VqdWdFMWJGekE?oc=5",
-     "date": "2026-11-19T19:37:56Z",
-     "title": "Hackers Hit Platform Used by CNN, BBC and Major Banks"
-    },
-    {
-     "source": "The Economic Times",
-     "url": "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNak9RMXdCZjc3bXNDNFloQ0wwbFUxVnpYNjdJY3A5Z0duSVpaNlpPRE9EMFltZFp5WUVhWnFUV2lqTUprM1RsUXhjdU50TTNhS0F1LWhhNHZOWklKSzdlREFKSlNQaEVtWml1aTBYSUVQR2paODBXQXRFRndDVzl4RTloY2VnRGxTOE1WcjlyUUhSYndxai0tbC1hUE9iUDFVR2JFbnpaMS1CUlJOSlZBUDluUXNqNEN3eDluVDFqYzlJcVRpZDNXM1JDMm9GenhZMmdCVl9NWEVnOC1vc2h0MFV0REQ4NFBvV0M3bXNMMVI3MWIycHNMckU5X3BnUTVTblBEUUJSQWlUZjhCWUtzYWcwanByTkJXcGFEQUJBVmtlNWJjYkFTONIBrgJBVV95cUxPVklfQmV5Nmp0UUdzTVdWdWtHT3dHSGxPZFd0NW50SVdzSXVUME1wdVRibHV3aGNSTjJnSDA5Yl9KREQyUjdySU9Gck0wdUlGMEdhNU9SQ1NUb1psYUsyVTNQNnNqNEZYNnkzNWViV2J6S1dPbXhmM1VYWElySTZ3RGt4S2M3MVd0Rk1iNWhjRko4V3NwOFZLbUVlQ1BwbTFKWjRqX01ONk1CbDh3RExxSjNvcnFvNDZxX0x2U05FUTZQbWd0UW5WVlRQc2JQNGU3b2RwNEk4clZpODlRVFRmU1lZUldXXzAwbXQ0VjlDalZyMDh3dmJPYnFSakRwWFBqdS01V0ZXaEJhNkZ6NjVRQUlJXzUzajdrYXZtUTAzbXZIVXlSdDN3cVhyMVJrUQ?oc=5",
-     "date": "2026-11-20T13:49:59Z",
-     "title": "Cyber attack: How did one software flaw put 178 websites at risk? Hackers targeted Zoom, BBC, CNN, Fox New"
-    }
-   ],
-   "n_outlets": 7,
-   "eid": "n-beb6945c"
   },
   {
    "date": "2026-11-17T19:36:00Z",
@@ -41910,6 +42062,85 @@
    "eid": "n-4ebef484"
   },
   {
+   "date": "2026-11-17T19:26:01Z",
+   "source": "CSO Online",
+   "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
+   "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR0R0ODQ0eDFUYUtjODExbWZrd3hfYjlXN1dxVHBzeTlTUnc3ODI5bXVvOE93SXEzZ3RMY2ZYNGpNWjhRZWpsWkRReW5vVVp0V0N5Q3J2RS1xWW01VExhNm55TUZOeURYYVdqNXhBYXJmOUhvT05OU0JwVnAtaHl4YzdsUUVnQ0FTV2hlVEFBclhNZkZQc09KdURPbTJHZHVRX1RsTnR0RU00WFV4dm56TmM0OVFNVkxLU3g3bjJCcEVlRTVlT2hOQy1GbEw?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-21T05:09:12Z",
+   "outlets": [
+    {
+     "source": "Agenparl",
+     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOcTljWmM3cGZlV0pJOHZOMjFteEFmVkk3SVZvVTJ1RnZ6ZUY3c3VlUU5zUnlITDdpWFBhVEJXMFpiUlBMMmd4a0VKenNSSXE4bkYxZU5PMzVTSndGV2UzVTFJeGd0Q1U0emJLNG1OemNFSHY0V2hMZVhyMGxyZmdQN0U4TDU1UWRNelVNV01CdXJmYlo2TURNMElFNUxfZUMta2RwTWZ0eXZfbVYyU1FlVnNNdTJPZ1J0MGR2X2tkZWx0MndVU3dTVGt0OVZTczdqT3ptVHRyOWtfbG1pTm0taGdKZU1pMk5ncVl2R3hlVEdSRVpYRndLOUNiU014Zw?oc=5",
+     "date": "2026-11-17T19:26:01Z",
+     "title": "Hacker attack on Optimizely, malware spread on 178 websites: BBC, CNN, Zoom, Salesforce and HSBC involved, cryptocurrencies and sensitive data stolen",
+     "title_orig": "Attacco hacker a Optimizely, malware diffuso su 178 siti web: coinvolti BBC, CNN, Zoom, Salesforce e HSBC, rubate criptovalute e dati sensibili"
+    },
+    {
+     "source": "ABC News - Breaking News, Latest News and Videos",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQcjRNV3ZGeEdxSmZBS0poRi11bHR6SmN6cl9RQnZFc0F0QXNSWHNHQXVuXzE0RVBjUml0WGNsUXdzY29XN3RPUFROakJyNDB3TUU0X2ZHRnhMSzN2OWN3RTZ3dnJIajliV1huTDAzY083c0Ezc1NpWlppQjZNcFNfaDVBZVVJZ1VROXYyQnk2YWRfWHg1MkhRZnBBVDQxOExXYU16RnJnbE5SZjUtYmdYWTFDa1BPYlB6TWZQeHJR?oc=5",
+     "date": "2026-11-17T19:28:18Z",
+     "title": "Optimizely reports 'security incident' that involved malware in customers' digital products"
+    },
+    {
+     "source": "La Presse",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOS1NXQ3VLeU5lbm1mSHNucHg2SlBSZHl4QW5udTVWZ0dDdzJmYWlWTnAtWElTXzA2NW1jdk1xeDN6d0hGRG5rN3dWdWgzM0ptVmhaanVVNWpKM3VobV9DY2NvNjRtOWEycjRuX215bGhHdlRqaVhBTUlkYkVCOUM5LU9uanVYa0xzbU5tQUg0NEU5c1pqY2I2aHBodXpCa3RlM2tJUFotdTQxNXphTzYtWEVBYmgxN05VWGZrdWhBTVNGQTlEWG4xXzB2QVpOazZDb2JXcWs2NzU?oc=5",
+     "date": "2026-11-17T19:52:26Z",
+     "title": "BBC, IKEA, HSBC, CNN... | Dozens of popular websites targeted by cyberattack",
+     "title_orig": "BBC, IKEA, HSBC, CNN... | Des dizaines de sites internet populaires vis\u00e9s par une cyberattaque"
+    },
+    {
+     "source": "LinkedIn",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0VSN2p5Sldad2w4VlRERW5kSEtDQnkxcGNvTjhFMVJIdURWLTIwSGo0SXBuVW01V0lEb3JKU0dPXzIxME5WMEg2MEk4clYxZXlLZDVkdGVKcmxuMTJvcHpPT2p5bTQ0YjdyUHl5V1dQRU50aXZfRGswWjdlR2ZVNjlvcEZ5NzJnM0F1aVBrVDZLRjA?oc=5",
+     "date": "2026-11-17T20:00:02Z",
+     "title": "Supply Chain Attack Exposes Major Websites Including BBC, CNN, Fox News, HSBC, Gitlab, Zoom, Salesforce"
+    },
+    {
+     "source": "CSO Online",
+     "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPR0R0ODQ0eDFUYUtjODExbWZrd3hfYjlXN1dxVHBzeTlTUnc3ODI5bXVvOE93SXEzZ3RMY2ZYNGpNWjhRZWpsWkRReW5vVVp0V0N5Q3J2RS1xWW01VExhNm55TUZOeURYYVdqNXhBYXJmOUhvT05OU0JwVnAtaHl4YzdsUUVnQ0FTV2hlVEFBclhNZkZQc09KdURPbTJHZHVRX1RsTnR0RU00WFV4dm56TmM0OVFNVkxLU3g3bjJCcEVlRTVlT2hOQy1GbEw?oc=5",
+     "date": "2026-11-18T01:24:27Z",
+     "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware"
+    },
+    {
+     "source": "Yahoo",
+     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVXEzQlA5ZkdkWkFsWUVYLWJWR1liS2otYTM4SGdhV0ZhalJTei16M3pLMmU3MC1IYjRJQzRReFhJb095MFdyQ2RFR1g5SEYzZldkQXVGelhUeGRyNlpRekN0X1lBQm5VczZTcWhzTmhLVkxnb0pMeWVmMVpxeWx4bnFLYXVUS0c4Vk4wMEpmQ2F4Zw?oc=5",
+     "date": "2026-11-18T01:56:00Z",
+     "title": "Hackers Hijack Websites of CNN, BBC and Major Banks"
+    },
+    {
+     "source": "www.correiodamanha.com.br",
+     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUnpnM3ktYXQ1Z2NXVXk0MF9EUHNlcTZjMnJFWlhEOUd6clNDYkpid0NEU1RWLVZkRDQyaEdsZWY5aHFleGF5NXNjN1F3Q3lvbUlyOWN6ZGlvNmxlZjVxaFk4V0dXQTU4bG9kT28tVFJMbFlyZWF5VEtjeTBTOVdRU3hEZVZxNFR3eFdCdVQzRmxhUkI0cVdwRGRNdkRLYTBPcEdycGVKbzB6UGhBOUhPSzNQMFFPSDhxNWhyWXRzTGRVcS03T2JxTmQyamdmS05HUFRQYVhWbURVM0dmWFAtZUp1VGEyb1ZWZ0E?oc=5",
+     "date": "2026-11-18T10:12:00Z",
+     "title": "Hacker attack hits 178 websites, including BBC, CNN and Zoom, and threatens bank data",
+     "title_orig": "Ataque hacker atinge 178 sites, incluindo BBC, CNN e Zoom, e amea\u00e7a dados banc\u00e1rios"
+    },
+    {
+     "source": "Opini\u00e3oCE",
+     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWVhja3FnTG1zWEp2Y0dJQllkaDd2NFhncXRzVHl6NlRjeUp6LUR3NzVpZXRWU2dQdzBrTUJHTE9pWkhvVS1lMmNqX2hPMUlSRlBqbFBWOFVvZWVoOWpNSnc0WGpsYXhzOHdPRnpsaVUtdGFmaEROR29IaFhhZTBCbG91NDNMbTZleU1PN1pWbTlUMVR3Um1iQ2w5NFZlZjBKaEVGWFRzc3FLRTJQdVJpSE1RQWk5bGoxQUVlc2JPWUNtR2EybEFWYnNROEJFTmtlZmdENkQzZEg?oc=5",
+     "date": "2026-11-18T12:40:10Z",
+     "title": "Hacker attack uses BBC, CNN and Zoom websites to distribute malicious code to visitors",
+     "title_orig": "Ataque hacker usa sites da BBC, CNN e Zoom para distribuir c\u00f3digo malicioso a visitantes"
+    },
+    {
+     "source": "TI INSIDE Online",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbDBOZjEwWFVwVVEtMFZFX1podDJCRWNjX1dzZzVlUkpHM2l3OUhIeU9aLUJjVzBGdFFTVERabXlTdjZyWXBDb25fQUtsZVRTU3d6ZW9rUDJCNE1tZDZObW5IWEFCNV9iUWQ5eUQtcnBjTGVWUU1oUXc0WnRoZWFpaUl5eXFZQ0RXXzgzWU5YR25Bbk11RDZiY1ZmYmVXck05S05lRE1CMmNHdEdwU0c0YXpMQmljQnFCVVFvYW1COEZFTlY5blAwZ0ZzOGNrbHJydW94Mk5KUmxHdi1JVXVxUDdpd0d5T2ZyeEhFSnJ3UVhIQQ?oc=5",
+     "date": "2026-11-18T17:31:33Z",
+     "title": "Hacker attack affects more than 170 organizations and uses BBC, CNN and Zoom websites to distribute malicious code to visitors",
+     "title_orig": "Ataque hacker afeta mais de 170 organiza\u00e7\u00f5es e utiliza sites da BBC, CNN e Zoom para distribuir c\u00f3digo malicioso a visitantes"
+    },
+    {
+     "source": "Mashable",
+     "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBPOFp6WW5qN2ZmYnRDMWk0US1GUE9DcXdfQUd3WHR4RzBKYmxkX19oY2JDUUx4RDNLalFrVzV4U09JcDhoU0Mwb3dlYWhldG1vT1o4ZzBOYkNIclowNnhNb1B3T3NaQi1ydGdvWkFJSQ?oc=5",
+     "date": "2026-11-18T23:38:44Z",
+     "title": "175+ major websites affected by malware hack, report says: What we know"
+    }
+   ],
+   "n_outlets": 16,
+   "eid": "n-fa96ecaf"
+  },
+  {
    "date": "2026-11-17T19:25:00Z",
    "source": "Milenio",
    "title": "Global alert: What do we know about the cyberattack on almost 200 websites? List of affected portals and how to protect",
@@ -42213,152 +42444,9 @@
    ],
    "n_outlets": 2,
    "eid": "n-b747cb2c"
-  },
-  {
-   "date": "2026-11-17T19:03:00Z",
-   "source": "Safestate",
-   "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ00tTHdTUVoyWDMzdUhDSzRoT0VuaDI2aTk0RFhFVzh6MUpnQ0lkMlJZRk90M19SRTZGRE5YdThTa0JwbWQ5azNLamRmdEFIN2pxZGtCWWdPTHlCaUFQOERzX3ZteEI3Wnk3M1JuelMzcWhZcjEyME5sZDB5cml0VUNjcHB1MnlRdmNnVmJ3?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "en",
-   "latest": "2026-11-19T01:16:35Z",
-   "outlets": [
-    {
-     "source": "Safestate",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ00tTHdTUVoyWDMzdUhDSzRoT0VuaDI2aTk0RFhFVzh6MUpnQ0lkMlJZRk90M19SRTZGRE5YdThTa0JwbWQ5azNLamRmdEFIN2pxZGtCWWdPTHlCaUFQOERzX3ZteEI3Wnk3M1JuelMzcWhZcjEyME5sZDB5cml0VUNjcHB1MnlRdmNnVmJ3?oc=5",
-     "date": "2026-11-17T19:03:00Z",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites"
-    },
-    {
-     "source": "Agenparl",
-     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOcTljWmM3cGZlV0pJOHZOMjFteEFmVkk3SVZvVTJ1RnZ6ZUY3c3VlUU5zUnlITDdpWFBhVEJXMFpiUlBMMmd4a0VKenNSSXE4bkYxZU5PMzVTSndGV2UzVTFJeGd0Q1U0emJLNG1OemNFSHY0V2hMZVhyMGxyZmdQN0U4TDU1UWRNelVNV01CdXJmYlo2TURNMElFNUxfZUMta2RwTWZ0eXZfbVYyU1FlVnNNdTJPZ1J0MGR2X2tkZWx0MndVU3dTVGt0OVZTczdqT3ptVHRyOWtfbG1pTm0taGdKZU1pMk5ncVl2R3hlVEdSRVpYRndLOUNiU014Zw?oc=5",
-     "date": "2026-11-17T19:26:01Z",
-     "title": "Hacker attack on Optimizely, malware spread on 178 websites: BBC, CNN, Zoom, Salesforce and HSBC involved, cryptocurrencies and sensitive data stolen",
-     "title_orig": "Attacco hacker a Optimizely, malware diffuso su 178 siti web: coinvolti BBC, CNN, Zoom, Salesforce e HSBC, rubate criptovalute e dati sensibili"
-    },
-    {
-     "source": "LinkedIn",
-     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQS0VSN2p5Sldad2w4VlRERW5kSEtDQnkxcGNvTjhFMVJIdURWLTIwSGo0SXBuVW01V0lEb3JKU0dPXzIxME5WMEg2MEk4clYxZXlLZDVkdGVKcmxuMTJvcHpPT2p5bTQ0YjdyUHl5V1dQRU50aXZfRGswWjdlR2ZVNjlvcEZ5NzJnM0F1aVBrVDZLRjA?oc=5",
-     "date": "2026-11-17T20:00:02Z",
-     "title": "Supply Chain Attack Exposes Major Websites Including BBC, CNN, Fox News, HSBC, Gitlab, Zoom, Salesforce"
-    },
-    {
-     "source": "TechTarget",
-     "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQUXBSZ3dRd0dWSUhDd1NTODI0UjR0VW1PMEE1UjVZWENyUElVRTVjNURnUzVvR2FERC1vMU5fT25nanZITWpXX3lxclVwcVNiUndqd1VzaFlBVzNkZnNwRDZwcm5pYnJqMkVaMVBtNTgxMTg3ZHIxRy1KN3dsdml5eU85VWdKQ0doVkxnRlZ4LXdXOTl6ZF93N2VMOVR6MFlWRXFKbGxCT2NuT0YzdFE?oc=5",
-     "date": "2026-11-17T22:38:33Z",
-     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs"
-    },
-    {
-     "source": "DQ",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPd3Y1UlN6ZFBlZXlIcXFXZXJ1Y2VaU1ZzX1FfQlJfWGVWTkRTYVFFbER0djFmanVUaEw3dTVtYUJaM2ZLNE0wTHNUdGgtWGFBVFJDRGtGd0YzZDRGV1h5cmxMTll1TW5OeTN4Z0I1WnB6MVpqUDVwOXlrYUg5Qkdoc1RaYTZPdFowMHVSdFFTRmVsWWxscTUtdnhWeHhaR08zWkNVcHpB0gGmAUFVX3lxTE93djVSU3pkUGVleUhxcVdlcnVjZVpTVnNfUV9CUl9YZVZORFNhUUVsRHR2MWZqdVRoTDd1NW1hQlozZks0TTBMc1R0aC1YYUFUUkNEa0Z3RjNkNEZXWHlybExOWXVNbk55M3hnQjVacHoxWmpQNXA5eWthSDlCR2hzVFphNk90WjAwdVJ0UVNGZWxZbGxxNS12eFZ4eFpHTzNaQ1VwekE?oc=5",
-     "date": "2026-11-17T23:54:22Z",
-     "title": "Optimizely Supply Chain Attack Hits 178 Organisations"
-    },
-    {
-     "source": "Wocult",
-     "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQVlJJMjB0V082YXdSVGItWHRCUFhkQVBaWDZVRHo2enZLWExCVkJLZmZxX3o3TmVUQU5YMm5TMzFOMWFfZUZ4SERrX1V5RktTVF9aVkRMcC1qOXhKdG02b0hJU3ZhQ0Z6RVczbUNkYU5vZXVHY2pkWmoxWnozNWZEeUJabm5wRGpvZk5mOGhfUjJqQQ?oc=5",
-     "date": "2026-11-18T06:14:34Z",
-     "title": "Hackers hit 178 major websites via optimizely platform in supply-chain attack"
-    },
-    {
-     "source": "Meteora Web",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSWJtV2xURmZuZlF0RjVQWEJZbmIweHkwQzdlendkY25HcGx3QV9xc2FQRmVseTBHSVZjRXVKeG9FSWhMN1F4eHY5Tk41OU5kbDFDNDJUTUI3b0Eyd0dCQVgwNHFpMDRCbkEzRVRqaWxxUVc1a1d1Zng0OGRmM2NncDkyQmtSd1Y2aDVjdjJzZi0zMndOZU9v?oc=5",
-     "date": "2026-11-18T11:05:36Z",
-     "title": "Optimizely supply chain attack hits 178 websites"
-    },
-    {
-     "source": "Cryptonews.net",
-     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE44SmpPZnBPZV9BX1pzdVJMSmhDM2JpVXRQMzNCYUtwNk5MZGM3WXdjS21BeEg0QldaOEd6d24zZ043cm9IbkdDazdJYmNJNzRibzliXzZKVXUyZw?oc=5",
-     "date": "2026-11-19T01:16:35Z",
-     "title": "Supply Chain Breach Exposes Vulnerabilities"
-    }
-   ],
-   "n_outlets": 8,
-   "eid": "n-39a2da01"
-  },
-  {
-   "date": "2026-11-17T19:02:23Z",
-   "source": "New York Post",
-   "title": "Cyber attack hits 178 major websites including CNN and Zoom in bid to steal crypto, infect iPhones: report",
-   "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZVBEeElMZldnWUF0OERTSXdqXzdYOWpMdUVPX2FXN1BsWWR5amxHQ2VUSkZnUWFEcUd2WC03YlhpMVFRVzY3RjFuRlAzYkszeXBpaEhFU1FxVjQ0QVpHQWJ6cE0yX0hvZFJXYUhMMnBhdUtvd29RdmV3Nko2WGowclNPVjBTendZRC12NURRa2dUVEJDd0VUb19wWkR5dDlod091c0FwY2gwcHNBQTFJNE1XOEhzVmlqWE5yb0lleTRzcFRzUi0xbnFXYVpvVnNGZkVsaWpZMVU0dnM?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "en",
-   "latest": "2026-11-21T05:09:12Z",
-   "outlets": [
-    {
-     "source": "New York Post",
-     "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNZVBEeElMZldnWUF0OERTSXdqXzdYOWpMdUVPX2FXN1BsWWR5amxHQ2VUSkZnUWFEcUd2WC03YlhpMVFRVzY3RjFuRlAzYkszeXBpaEhFU1FxVjQ0QVpHQWJ6cE0yX0hvZFJXYUhMMnBhdUtvd29RdmV3Nko2WGowclNPVjBTendZRC12NURRa2dUVEJDd0VUb19wWkR5dDlod091c0FwY2gwcHNBQTFJNE1XOEhzVmlqWE5yb0lleTRzcFRzUi0xbnFXYVpvVnNGZkVsaWpZMVU0dnM?oc=5",
-     "date": "2026-11-17T19:02:23Z",
-     "title": "Cyber attack hits 178 major websites including CNN and Zoom in bid to steal crypto, infect iPhones: report"
-    },
-    {
-     "source": "CNET",
-     "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPMkFmdWp6ZEk4Q05Ta3VLNmNBU0dPZDZvWFVISk9QQ085alFOTkZKU2hlVUhKVXNydXFSRnBFcXkxTHBpM2dTMmhOX2pVQjB4MjV2ZlFZMWZuOW1ocFlfTGd1SFMzeG10UW1RMHhtQ3BIS19wRnVJdGFlejg3QURUN05QVWI2QjFQdEZsY0NDQ0dHWFFDa3hz?oc=5",
-     "date": "2026-11-17T20:19:17Z",
-     "title": "Cyberattack Targets iPhones, Crypto of Visitors to Major Websites"
-    },
-    {
-     "source": "www.correiodamanha.com.br",
-     "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPUnpnM3ktYXQ1Z2NXVXk0MF9EUHNlcTZjMnJFWlhEOUd6clNDYkpid0NEU1RWLVZkRDQyaEdsZWY5aHFleGF5NXNjN1F3Q3lvbUlyOWN6ZGlvNmxlZjVxaFk4V0dXQTU4bG9kT28tVFJMbFlyZWF5VEtjeTBTOVdRU3hEZVZxNFR3eFdCdVQzRmxhUkI0cVdwRGRNdkRLYTBPcEdycGVKbzB6UGhBOUhPSzNQMFFPSDhxNWhyWXRzTGRVcS03T2JxTmQyamdmS05HUFRQYVhWbURVM0dmWFAtZUp1VGEyb1ZWZ0E?oc=5",
-     "date": "2026-11-18T10:12:00Z",
-     "title": "Hacker attack hits 178 websites, including BBC, CNN and Zoom, and threatens bank data",
-     "title_orig": "Ataque hacker atinge 178 sites, incluindo BBC, CNN e Zoom, e amea\u00e7a dados banc\u00e1rios"
-    },
-    {
-     "source": "Homeland Security Today",
-     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxObDRWTTUycnFtNlRqSU9PQVpibEVNRlVjQlJnenpVMlhpb3BaWmJUY3NsbVdRVnJ5SUtSVlZ0TWVseHJPdXZ4Y0FYekJwWFV0U09ib0d6eVpWNVhoUU8xdkt5VHlRYU5rWi1uSWJqMFZpckNHRl9yQnpWdGdsaFNrNURzeXU0LUlCS0pjb0tFbEtEU0ZXX0swLUhla0R1VTNuV01paXdleWQ0YzB5UmxOdmFoc0JidWFqc0FaSUd5M0pvMllQdG53aFpMVkRiX05jZXhTdXdUUjBSQml0akFtYzBwTWFrWVZjRmt3?oc=5",
-     "date": "2026-11-18T10:31:20Z",
-     "title": "Cyberattack Hits 178 Major Websites Including CNN and Zoom in Bid to Steal Crypto, Infect iPhones"
-    },
-    {
-     "source": "Opini\u00e3oCE",
-     "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQWVhja3FnTG1zWEp2Y0dJQllkaDd2NFhncXRzVHl6NlRjeUp6LUR3NzVpZXRWU2dQdzBrTUJHTE9pWkhvVS1lMmNqX2hPMUlSRlBqbFBWOFVvZWVoOWpNSnc0WGpsYXhzOHdPRnpsaVUtdGFmaEROR29IaFhhZTBCbG91NDNMbTZleU1PN1pWbTlUMVR3Um1iQ2w5NFZlZjBKaEVGWFRzc3FLRTJQdVJpSE1RQWk5bGoxQUVlc2JPWUNtR2EybEFWYnNROEJFTmtlZmdENkQzZEg?oc=5",
-     "date": "2026-11-18T12:40:10Z",
-     "title": "Hacker attack uses BBC, CNN and Zoom websites to distribute malicious code to visitors",
-     "title_orig": "Ataque hacker usa sites da BBC, CNN e Zoom para distribuir c\u00f3digo malicioso a visitantes"
-    },
-    {
-     "source": "TI INSIDE Online",
-     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbDBOZjEwWFVwVVEtMFZFX1podDJCRWNjX1dzZzVlUkpHM2l3OUhIeU9aLUJjVzBGdFFTVERabXlTdjZyWXBDb25fQUtsZVRTU3d6ZW9rUDJCNE1tZDZObW5IWEFCNV9iUWQ5eUQtcnBjTGVWUU1oUXc0WnRoZWFpaUl5eXFZQ0RXXzgzWU5YR25Bbk11RDZiY1ZmYmVXck05S05lRE1CMmNHdEdwU0c0YXpMQmljQnFCVVFvYW1COEZFTlY5blAwZ0ZzOGNrbHJydW94Mk5KUmxHdi1JVXVxUDdpd0d5T2ZyeEhFSnJ3UVhIQQ?oc=5",
-     "date": "2026-11-18T17:31:33Z",
-     "title": "Hacker attack affects more than 170 organizations and uses BBC, CNN and Zoom websites to distribute malicious code to visitors",
-     "title_orig": "Ataque hacker afeta mais de 170 organiza\u00e7\u00f5es e utiliza sites da BBC, CNN e Zoom para distribuir c\u00f3digo malicioso a visitantes"
-    },
-    {
-     "source": "Ultima Hora Online",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOWJQMVNTdzE1SUNSMTgzc2xfQ0JnbG9nRjBtcGh3RXo0SXJPNEJtWjhXZmp6aWN0X2JubVE1YlFHTl94RWg0NkpEYXdJYzZhT09PSTFBWWZPSEhWbnVkeFJqeXlGZS1yV2J5VE85QmxkUDJkN2VFYkEtVmJDQ0FRbTc1QnB6MjNPdldUNWNKYjZxYVJWX0V0dmd0T1ZGZFFwT1NWX21hZmgtUWg1UkZzTkNWVVJpNklLM0w1a2lsMjVpdw?oc=5",
-     "date": "2026-11-19T01:32:41Z",
-     "title": "Hacker attack hits 178 websites, including BBC, CNN and Zoom, and threatens bank data",
-     "title_orig": "Ataque hacker atinge 178 sites, incluindo BBC, CNN e Zoom, e amea\u00e7a dados banc\u00e1rios"
-    },
-    {
-     "source": "The Paypers",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOa3hBazhWV2YyYUl6aUd6b3dHbFVJZGpnOFVwZ1BSSDN1V1FScWVPLXkzcHFsUDdwbDNKc1Jrc3VYS3JfczVHNWpnRXF4SllCNFppMU5ZajQ5d01mdktVRk1WTUNnQ0MzcG9IUlQzM2ZEMFk5WkpkdGtfeGY3TjUzNWpwVVhjbFlBRWlKR0g2WGx4WXFUNzZvRUZobjFpLXk4dlFMNnFnTE0xU25CdEJ1b0hB?oc=5",
-     "date": "2026-11-19T12:12:49Z",
-     "title": "Optimjack malware hits 178 websites"
-    },
-    {
-     "source": "Industry & Energy Magazine",
-     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPelpmOUp1Q0dodVoweW01Q1BSbFNUY1d0RVBCUXc2NUtBMk9pTUtiQjItbmw3MGhnOU1jc3ZtVmJkOHA0VWxSSjlUZlFja2NpbkxTcy1YSzV3aW9hUG8ycTBsS25fc1htc0dGZjRnTTdxOF9yWmo0aDlLS3RSOWhfSlFFOWQ3QkxGbFR4WUYxVjZSd0dOR2pVanZxaDY0cVRuUk1xU25R?oc=5",
-     "date": "2026-11-19T16:38:45Z",
-     "title": "A single hack affected almost 200 websites, including BBC, CNN and Zoom",
-     "title_orig": "Un solo hackeo afect\u00f3 a casi 200 sitios web, incluidos BBC, CNN y Zoom"
-    },
-    {
-     "source": "Curierul Na\u021bional",
-     "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxObkQxRGJNM3U2X2Jhc1hsSWJwdERrV1RFTnFUdWhheGY4M0FuTDlMektXakRSQ3ViMkc2Y1hQQVFKUU83dGRJbWVvckpjZDNJT05jUnpDWU1jUkd3bE9rRGx5ZTlrODhONkpaTEpFZE1pSXU1NFJJQUpNeTFvdFE2cFFiOG51cjk4YWZTS0RkbmFXeGpGa0R1V2F0c3FhMGJpTVBZUjZvdWRraGFnT3haMjg2Z3lnREU5Q2FTLU5wY0VKbjJhOWRwTTBYZXh0aS1TbEw5SnFhdENwQklXSFh2NXhmcHU1TkxEU2RUZ0pn?oc=5",
-     "date": "2026-11-20T11:44:01Z",
-     "title": "Cyber attack on the Optimizely platform. The websites of 178 organisations, including the BBC, CNN and Zoom, shared malicious code",
-     "title_orig": "Atac cibernetic asupra platformei Optimizely. Site-urile a 178 de organiza\u021bii, inclusiv BBC, CNN \u0219i Zoom, au distribuit cod mali\u021bios"
-    }
-   ],
-   "n_outlets": 11,
-   "eid": "n-8882bb1f"
   }
  ],
- "news_headlines_7d": 9943,
+ "news_headlines_7d": 9951,
  "registry": [
   {
    "id": "renfe-adif",
@@ -45681,7 +45769,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T16:15:13Z",
-   "age_days": 3.72
+   "age_days": 3.73
   },
   {
    "id": "cairn-ai-zero-day",
@@ -49233,7 +49321,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T11:55:11Z",
-   "age_days": 1.85
+   "age_days": 1.86
   },
   {
    "id": "phoebe-putney-medcom",
@@ -49715,7 +49803,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T10:54:17Z",
-   "age_days": 4.69
+   "age_days": 4.7
   },
   {
    "id": "decathlon-france-customer-delivery-data-claim",
@@ -52519,7 +52607,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T08:18:14Z",
-   "age_days": 4.75
+   "age_days": 4.76
   },
   {
    "id": "arara-mail-delivery",
@@ -52893,7 +52981,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T08:00:00Z",
-   "age_days": 1.33
+   "age_days": 1.34
   },
   {
    "id": "reichenau-rax",
@@ -53092,7 +53180,7 @@
     }
    ],
    "latest": "2026-11-24T07:43:01Z",
-   "age_days": 2.0
+   "age_days": 2.01
   },
   {
    "id": "riken-fugaku",
@@ -53910,7 +53998,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T06:00:13Z",
-   "age_days": 2.83
+   "age_days": 2.84
   },
   {
    "id": "revolut-fake-gov-requests",
@@ -54417,6 +54505,14 @@
      "n": 2
     },
     {
+     "title": "Hackers stole driver license data for Uber drivers from AI supplier",
+     "source": "news.lavx.hu",
+     "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPQVBPRG9LMC1VZWpiaUhjYlI2MkNmRDVrNFpkTHpMSHdRSURrYnhzdXUtV2h4NW5WWjh0d2xTVUdvTkI3VjBvR21hVHJhV2FTTWFnU2ttV1BueElwM25zYUl4NlRPcHRvcVhaWlFlNWJsSnNaZFoyRE5ua2FWVWh0TGhYZ25CYmI2T3VrOHQ5ZXpWOTdpNy0tX1ZIbzQ?oc=5",
+     "date": "2026-11-18T06:28:41Z",
+     "eid": "n-68528f9f",
+     "n": 3
+    },
+    {
      "title": "Uber Data Breach: Cyberscout Letter & Next Steps",
      "source": "McAfee",
      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPUlc3OWZCQzRjbHdNR2tPVXJIdnNNSklwMjk3amVGM2dSQUlteXFXZ3Vnbjl4SnFBNnZzOWVfbzFiNi1zOFctdEYzYUVxREZZbEtLQkdkX2ROT0x1R3pNZ3daV2ctMk9tRXlPelhyNjNzUDRDMEVRR1NJUmlkbEhodjdEUGdBT0xsSk5pdEpn?oc=5",
@@ -54430,7 +54526,7 @@
      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPYnlvdVp4MFVDejdwVHhORHhKNTVLOUk0SU53dGxET3AzYTBvTC1pTFF6am9YT2w0V3dTcTF3b2dNWnJGNDhhRHB6c2std1BlNVg1R1RqdUZUMlBOaVl3Z2FOMlczUHE1SkZtcnAwUEJmT25HZGdfYko2ZGNGSVJyaWhLa1Rldy16Rk0tekpYNWhqc00zel9GcUZ3ZW9VZ3BvZmZqWVVCdU5QREtreER6ZU9IcWp2VnZBQ3V1VU1Jdy3SAcYBQVVfeXFMTmtQRWxHMmw4UmVLVFpXckgxWm5FX0FfZ1ZtcXVNaVNBNkd4TktNaTRodThZa2FUenpDcjcyZkhzb1VyY3BJVGFnT05zUlhKRVdWQTktODFvVUx2Y0tDMUJUWkFwT3VWTi1heWhIRXpueWh4NnVVMVQ4OC15cnM4VmJKNUpzejZpZm1RS0NWTlFfWEFlRUxwZjBlNmhNYkFiUXNYS3RaTzdDVTNuWmRER3o4OFRhRzFYSE0wczJsUEkzOERUUzl3?oc=5",
      "date": "2026-11-17T20:55:14Z",
      "eid": "n-18f42aad",
-     "n": 7
+     "n": 5
     }
    ],
    "notices": [],
@@ -55507,7 +55603,7 @@
     }
    ],
    "latest": "2026-11-24T02:00:31Z",
-   "age_days": 7.08
+   "age_days": 7.09
   },
   {
    "id": "tanker-wiper-attack",
@@ -56313,7 +56409,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T00:00:22Z",
-   "age_days": 4.33
+   "age_days": 4.34
   },
   {
    "id": "hd-hyundai-robotics-website-data-breach",
@@ -56617,7 +56713,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T22:42:40Z",
-   "age_days": 4.9
+   "age_days": 4.91
   },
   {
    "id": "smartbox-bongo-platform-access",
@@ -58436,6 +58532,13 @@
      "title_orig": "iFood informa vazamento de dados de clientes, entregadores e restaurantes"
     },
     {
+     "source": "Di\u00e1rio do Par\u00e1",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYnJNTlFvREZfYjZfcnQ4U0hQYXFONDlfbkdnTHp3cmRZR2NGOWVTQzVQSDRMVGJENjZvalZoX2lLMlNOc1JCUzUyVEdYX1UyMXRpNGdhZzhzOEJqLTlLNk9HeDVnSklwU1YyNmVHbWRaNks1bEQ0SHdPSzFJV3J4NXBQeW50SjNvNUpoUGpid1dRTS1JU1hQU0JoV0VTaTZIanJUclVn?oc=5",
+     "date": "2026-11-19T20:15:54Z",
+     "title": "iFood suffers hacker attack: how do you know if your data has been leaked?",
+     "title_orig": "iFood sofre ataque hacker: como saber se seus dados vazaram?"
+    },
+    {
      "source": "Massa.com.br",
      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObHd3WW9RN1doMTRRTkthRE9Qb0V6WUx1Q3dWTDVZaEc1cnB2RTMzbF9fMHJnaG1HdWU5T2ZFbk9iY21ReDUwZ1NmT3daMER4b3R5WlVxRWhJeHFRYU9mYkloYUFYbWhiLUlvXzNfNFp4OXdHMzBzVW9IYzBPMzhnczhhSXpXcVhxSzdMU1hGMXJYYXVFdEE?oc=5",
      "date": "2026-11-20T11:30:00Z",
@@ -58464,7 +58567,7 @@
      "title_orig": "iFood confirma vazamento de dados de clientes, entregadores e restaurantes parceiros"
     }
    ],
-   "n_outlets": 35,
+   "n_outlets": 36,
    "stories": [
     {
      "title": "iFood confirms data leak affecting customers, delivery drivers, and partner restaurants",
@@ -58495,6 +58598,14 @@
      "source": "Massa.com.br",
      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxObHd3WW9RN1doMTRRTkthRE9Qb0V6WUx1Q3dWTDVZaEc1cnB2RTMzbF9fMHJnaG1HdWU5T2ZFbk9iY21ReDUwZ1NmT3daMER4b3R5WlVxRWhJeHFRYU9mYkloYUFYbWhiLUlvXzNfNFp4OXdHMzBzVW9IYzBPMzhnczhhSXpXcVhxSzdMU1hGMXJYYXVFdEE?oc=5",
      "date": "2026-11-20T11:30:00Z",
+     "eid": null,
+     "n": 1
+    },
+    {
+     "title": "iFood suffers hacker attack: how do you know if your data has been leaked?",
+     "source": "Di\u00e1rio do Par\u00e1",
+     "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYnJNTlFvREZfYjZfcnQ4U0hQYXFONDlfbkdnTHp3cmRZR2NGOWVTQzVQSDRMVGJENjZvalZoX2lLMlNOc1JCUzUyVEdYX1UyMXRpNGdhZzhzOEJqLTlLNk9HeDVnSklwU1YyNmVHbWRaNks1bEQ0SHdPSzFJV3J4NXBQeW50SjNvNUpoUGpid1dRTS1JU1hQU0JoV0VTaTZIanJUclVn?oc=5",
+     "date": "2026-11-19T20:15:54Z",
      "eid": null,
      "n": 1
     },
@@ -60570,12 +60681,6 @@
    ],
    "outlets": [
     {
-     "source": "Safestate",
-     "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPZ00tTHdTUVoyWDMzdUhDSzRoT0VuaDI2aTk0RFhFVzh6MUpnQ0lkMlJZRk90M19SRTZGRE5YdThTa0JwbWQ5azNLamRmdEFIN2pxZGtCWWdPTHlCaUFQOERzX3ZteEI3Wnk3M1JuelMzcWhZcjEyME5sZDB5cml0VUNjcHB1MnlRdmNnVmJ3?oc=5",
-     "date": "2026-11-17T19:03:00Z",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites"
-    },
-    {
      "source": "Agenparl",
      "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxOcTljWmM3cGZlV0pJOHZOMjFteEFmVkk3SVZvVTJ1RnZ6ZUY3c3VlUU5zUnlITDdpWFBhVEJXMFpiUlBMMmd4a0VKenNSSXE4bkYxZU5PMzVTSndGV2UzVTFJeGd0Q1U0emJLNG1OemNFSHY0V2hMZVhyMGxyZmdQN0U4TDU1UWRNelVNV01CdXJmYlo2TURNMElFNUxfZUMta2RwTWZ0eXZfbVYyU1FlVnNNdTJPZ1J0MGR2X2tkZWx0MndVU3dTVGt0OVZTczdqT3ptVHRyOWtfbG1pTm0taGdKZU1pMk5ncVl2R3hlVEdSRVpYRndLOUNiU014Zw?oc=5",
      "date": "2026-11-17T19:26:01Z",
@@ -60821,7 +60926,7 @@
      "title": "Optimizely hack swapped crypto wallet addresses"
     }
    ],
-   "n_outlets": 40,
+   "n_outlets": 39,
    "stories": [
     {
      "title": "Optimizely hack swapped crypto wallet addresses",
@@ -60868,7 +60973,7 @@
      "source": "money.com",
      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE44aGZPQ0FCSS1EYm95eWlWbmdnSUJhWmJaUFJYN014X20yUFZxV0Y2djR4T1NTRmp3NjNBeUwtVkdRczhycGE5d3pvRmd1b0FEd2ZsUzlsRVVVTHFzMnhJV0FoMVBtaklEWk83VEViNjEwZUVmMURBcWR3?oc=5",
      "date": "2026-11-20T16:26:00Z",
-     "eid": "n-305dd967",
+     "eid": null,
      "n": 2
     },
     {
@@ -60912,10 +61017,10 @@
      "n": 2
     },
     {
-     "title": "Nearly 200 popular websites around the world have been hacked. Experts urge people to update their systems",
-     "source": "Sing Tao Daily Sing Tao Daily Canada",
-     "url": "https://news.google.com/rss/articles/CBMi6wJBVV95cUxPLTZDdHJtekxFMEkyYjQ1Y2l5WlAyWGQydVJ1cTg5d3BsV1hCUkNUZjY1ckt6clllYl9WcjlNWXlFNnhmdmZVd3cxdTQ2dXp4cTN5eGhral9OZzhyU3EyTnE0Q0QyR3JVVEVGYmJWZHQwb2FvRUl2ak9reVMxLVByMDFXT3NvamI1YjFsQUFEVHJhRGpMQjFPdjVTWUxvaWVhbzdNTmtKSEJzTGtxblFhc0Z5c2JUUWJudkdMWUxpd2NaN2JJaFFobDZfV1lyc25kSjBMaVgtVnpsREdNTTliWlpsbzFxVHF5NGQzc1VlX2c0RTJKOHZWcXdUTkdyd3JoZUJjRFBvemdEMVh4SEdvWVZ4VEVNZkFrQ1IyT3FTYUN6UHYtNU1BdU1vYnpBSUVLQVZhZUYtMnVtbzRnaWlGbUIwX3VldFBmMERCOFRkSElZbC1Rb2JDak9vN0JZa2wzN1F4Y0tlTUhaTWfSAYwBQVVfeXFMTkFZb0lNNElvbVVveE8zVXBRa09aU1JWMDhXYnlnMExIQWc1cTlmMllWVEFqT1lyV3BRa2s1WEMxd2JiM3ZNTjJTRUozTmY3VXFlM1lYZzhLQ2JkMnNobGYyWmlDcTV6ejRJOWg5VEZXZnNXaTczRnE2bGdpb0RseHZaWnpfNndFbW9yR1Y?oc=5",
-     "date": "2026-11-19T15:58:06Z",
+     "title": "Global cyberattack: Ikea, Air France-KLM... general public sites targeted",
+     "source": "mesinfos",
+     "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcHJWaEoyVnNEWlFfczMtUHRpTW5iYmZjUFh0M2tHM192c3BSeVpxcEE0V2EwT25iUWxaTWM2aC1yOHpfczU5T3E3MVZSZmQtNGxBcGw1dS1GcTdMS1JoWnR5UnM4SHo2cVhjRE8wXzNOOUJXR05mTlRvYUpGU1RwNXVRU01kcEJBNnhfZllDZVpaWlo5RDBJU042eGh3dFNpUGtWSXg4bw?oc=5",
+     "date": "2026-11-19T10:13:00Z",
      "eid": null,
      "n": 1
     }
@@ -61528,7 +61633,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T10:17:00Z",
-   "age_days": 1.36
+   "age_days": 1.37
   },
   {
    "id": "bulgaria-gov-espionage",
@@ -61760,7 +61865,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T09:52:03Z",
-   "age_days": 6.28
+   "age_days": 6.29
   },
   {
    "id": "travelstart-booking-data",
@@ -62013,7 +62118,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T09:41:43Z",
-   "age_days": 3.97
+   "age_days": 3.98
   },
   {
    "id": "jeongdok-library-survey-exposure",
@@ -62590,7 +62695,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T07:36:51Z",
-   "age_days": 5.47
+   "age_days": 5.48
   },
   {
    "id": "unibet-fdj-united",
@@ -63286,7 +63391,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T06:15:17Z",
-   "age_days": 17.63
+   "age_days": 17.64
   },
   {
    "id": "fondation-des-femmes-petition-data-claim",
@@ -63478,7 +63583,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T04:44:15Z",
-   "age_days": 1.59
+   "age_days": 1.6
   },
   {
    "id": "dics-spacebears-claim",
@@ -63927,7 +64032,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T04:17:00Z",
-   "age_days": 1.61
+   "age_days": 1.62
   },
   {
    "id": "pos-windows-card-theft",
@@ -64022,7 +64127,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T02:45:54Z",
-   "age_days": 5.77
+   "age_days": 5.78
   },
   {
    "id": "fisher-paykel-healthcare-falcon-claim",
@@ -64252,7 +64357,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T01:53:17Z",
-   "age_days": 1.71
+   "age_days": 1.72
   },
   {
    "id": "venezuela-intt-disclosure-claim",
@@ -64286,7 +64391,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T01:53:17Z",
-   "age_days": 1.71
+   "age_days": 1.72
   },
   {
    "id": "tower-records-japan-online-breach",
@@ -64562,7 +64667,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T01:08:20Z",
-   "age_days": 1.74
+   "age_days": 1.75
   },
   {
    "event_date": null,
@@ -64793,7 +64898,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23",
-   "age_days": 3.2
+   "age_days": 3.21
   },
   {
    "id": "la-maison-des-travaux-claimed-customer-data",
@@ -65075,7 +65180,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T23:17:00Z",
-   "age_days": 1.99
+   "age_days": 2.0
   },
   {
    "id": "bell-mts-third-party-email-cyberattack",
@@ -65411,7 +65516,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T21:15:36Z",
-   "age_days": 4.04
+   "age_days": 4.05
   },
   {
    "id": "amazon-ai-agent-api-keys",
@@ -66249,7 +66354,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T13:52:00Z",
-   "age_days": 2.21
+   "age_days": 2.22
   },
   {
    "id": "gyeonggi-teacher-documents",
@@ -67369,7 +67474,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T10:35:33Z",
-   "age_days": 3.02
+   "age_days": 3.03
   },
   {
    "id": "dynamic-education-n0n-claim",
@@ -68037,7 +68142,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T06:34:20Z",
-   "age_days": 103.32
+   "age_days": 103.33
   },
   {
    "id": "cj-logistics-one-chatbot-abnormal-access",
@@ -68446,7 +68551,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T04:29:00Z",
-   "age_days": 61.12
+   "age_days": 61.13
   },
   {
    "id": "nojima-online-november-2026",
@@ -68652,7 +68757,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T04:15:14Z",
-   "age_days": 3.75
+   "age_days": 3.76
   },
   {
    "id": "mirae-asset-life-hack",
@@ -68986,7 +69091,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T02:35:58Z",
-   "age_days": 2.68
+   "age_days": 2.69
   },
   {
    "id": "uchealth-129k",
@@ -69447,7 +69552,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22",
-   "age_days": 14.29
+   "age_days": 14.3
   },
   {
    "id": "luxor-commander-hashrate-diversion",
@@ -69649,7 +69754,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22",
-   "age_days": 13.45
+   "age_days": 13.46
   },
   {
    "id": "nedbank-avo-breach",
@@ -69734,7 +69839,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22",
-   "age_days": 5.28
+   "age_days": 5.29
   },
   {
    "id": "together-ai-serverless-prompt-leak",
@@ -71066,7 +71171,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T18:39:40Z",
-   "age_days": 3.01
+   "age_days": 3.02
   },
   {
    "id": "treasure-island-industrial-safepay-claim",
@@ -72948,7 +73053,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T10:39:38Z",
-   "age_days": 6.28
+   "age_days": 6.29
   },
   {
    "id": "sunfun-info-november-intrusion",
@@ -73300,7 +73405,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T09:35:57Z",
-   "age_days": 4.58
+   "age_days": 4.59
   },
   {
    "id": "maileva-la-poste",
@@ -73535,7 +73640,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T08:48:22Z",
-   "age_days": 4.12
+   "age_days": 4.13
   },
   {
    "id": "tata-electronics-june-2026",
@@ -74093,7 +74198,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T07:37:28Z",
-   "age_days": 4.24
+   "age_days": 4.25
   },
   {
    "id": "too-lost-data-claim",
@@ -74690,7 +74795,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T04:03:07Z",
-   "age_days": 3.62
+   "age_days": 3.63
   },
   {
    "id": "defichain-november-exploit",
@@ -74787,7 +74892,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T02:52:56Z",
-   "age_days": 3.87
+   "age_days": 3.88
   },
   {
    "id": "smbc-karte",
@@ -75912,7 +76017,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T22:32:00Z",
-   "age_days": 3.85
+   "age_days": 3.86
   },
   {
    "id": "otter-tail-county",
@@ -76071,7 +76176,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T22:03:00Z",
-   "age_days": 3.87
+   "age_days": 3.88
   },
   {
    "id": "vizrt-everest-claim",
@@ -76107,7 +76212,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T22:02:00Z",
-   "age_days": 3.87
+   "age_days": 3.88
   },
   {
    "id": "valcour-vermont-police",
@@ -76296,7 +76401,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T21:32:14Z",
-   "age_days": 3.89
+   "age_days": 3.9
   },
   {
    "id": "afd-mail-hosting-september-2026",
@@ -76633,7 +76738,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T20:51:00Z",
-   "age_days": 3.92
+   "age_days": 3.93
   },
   {
    "id": "diri-telecom",
@@ -77292,7 +77397,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T18:58:00Z",
-   "age_days": 4.58
+   "age_days": 4.59
   },
   {
    "id": "newsystock-march-2026-customer-file-theft",
@@ -78107,7 +78212,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T16:31:37Z",
-   "age_days": 4.1
+   "age_days": 4.11
   },
   {
    "id": "norfolk-suffolk-foi-spreadsheet-disclosure",
@@ -78186,7 +78291,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T16:22:00Z",
-   "age_days": 1197.27
+   "age_days": 1197.28
   },
   {
    "id": "zurich-hk-customer-portal",
@@ -78683,7 +78788,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T14:22:34Z",
-   "age_days": 4.19
+   "age_days": 4.2
   },
   {
    "id": "boeing-inc-ransom",
@@ -78956,7 +79061,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T14:00:49Z",
-   "age_days": 13.33
+   "age_days": 13.34
   },
   {
    "id": "ask-gina-november-2026-mcp-delegated-wallets",
@@ -79004,7 +79109,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T13:52:00Z",
-   "age_days": 4.21
+   "age_days": 4.22
   },
   {
    "id": "sampo-ru-ddos",
@@ -80267,7 +80372,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T09:19:29Z",
-   "age_days": 4.4
+   "age_days": 4.41
   },
   {
    "id": "ao3-security-outage",
@@ -82355,7 +82460,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T00:30:00Z",
-   "age_days": 5.07
+   "age_days": 5.08
   },
   {
    "id": "td-bank-vermont-november-notice",
@@ -84469,7 +84574,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T21:34:00Z",
-   "age_days": 4.94
+   "age_days": 4.95
   },
   {
    "id": "ies-montevil-gijon",
@@ -85319,7 +85424,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T14:34:06Z",
-   "age_days": 6.91
+   "age_days": 6.92
   },
   {
    "id": "momo-mo-shop-shipping-data",
@@ -85633,7 +85738,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T12:00:00Z",
-   "age_days": 15.22
+   "age_days": 15.23
   },
   {
    "id": "domainfactory-reseller-portal",
@@ -85980,7 +86085,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19T10:32:49Z",
-   "age_days": 5.35
+   "age_days": 5.36
   },
   {
    "id": "bond-building-vortex-extortion-claim",
@@ -86014,7 +86119,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19T10:32:14Z",
-   "age_days": 5.35
+   "age_days": 5.36
   },
   {
    "id": "orlando-health-vortex-extortion-claim",
@@ -86052,7 +86157,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19T10:31:39Z",
-   "age_days": 5.35
+   "age_days": 5.36
   },
   {
    "id": "iwamizawa-property-tax",
@@ -86694,7 +86799,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19T05:57:00Z",
-   "age_days": 5.54
+   "age_days": 5.55
   },
   {
    "id": "daouoffice-messenger-update",
@@ -86866,7 +86971,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T04:16:31Z",
-   "age_days": 38.66
+   "age_days": 38.67
   },
   {
    "id": "perry-local-schools",
@@ -87449,7 +87554,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19",
-   "age_days": 6.57
+   "age_days": 6.58
   },
   {
    "id": "arthrex-vortex-extortion-claim",
@@ -90593,7 +90698,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-14T23:00:00Z",
-   "age_days": 9.83
+   "age_days": 9.84
   },
   {
    "id": "proxima-wallet-drain",
@@ -91385,7 +91490,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-11T23:00:00Z",
-   "age_days": 12.83
+   "age_days": 12.84
   },
   {
    "id": "victorias-secret-employee-payroll",
@@ -95820,7 +95925,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -12.7,
    "stale": true,
-   "age_h": 33.8,
+   "age_h": 33.9,
    "eid": "x-abf11859"
   },
   {
@@ -95882,6 +95987,12 @@
    "matches": [],
    "press": [
     {
+     "eid": null,
+     "source": "Leonoticias",
+     "date": "2026-11-23T19:54:18Z",
+     "title": "A cyber attack on La Liga causes the theft of data from members of the Cultural"
+    },
+    {
      "eid": "n-7b4e3220",
      "source": "Goal.com",
      "date": "2026-11-23T13:05:53Z",
@@ -95910,18 +96021,12 @@
      "source": "Devdiscourse",
      "date": "2026-11-20T09:11:00Z",
      "title": "Soccer-LaLiga data extracted in cyber attack"
-    },
-    {
-     "eid": "n-af72bd20",
-     "source": "SC Media",
-     "date": "2026-11-20T09:05:56Z",
-     "title": "LaLiga reports data breach affecting fan services platform"
     }
    ],
    "hours_to_confirm": null,
    "press_lead_h": -72.1,
    "stale": true,
-   "age_h": 33.8,
+   "age_h": 33.9,
    "eid": "x-d79663ce"
   },
   {
@@ -96051,7 +96156,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.9,
    "stale": true,
-   "age_h": 39.5,
+   "age_h": 39.6,
    "eid": "x-4f4fae5c"
   },
   {
@@ -96217,7 +96322,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.0,
    "stale": true,
-   "age_h": 40.4,
+   "age_h": 40.5,
    "eid": "x-f453cf2d"
   },
   {
@@ -96273,7 +96378,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 41.1,
+   "age_h": 41.2,
    "eid": "x-3a5c614f"
   },
   {
@@ -96329,7 +96434,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 41.1,
+   "age_h": 41.2,
    "eid": "x-17f69763"
   },
   {
@@ -96613,7 +96718,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -24.9,
    "stale": true,
-   "age_h": 43.1,
+   "age_h": 43.2,
    "eid": "x-59858f8c"
   },
   {
@@ -97087,7 +97192,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.2,
    "stale": true,
-   "age_h": 47.9,
+   "age_h": 48.0,
    "eid": "x-8e9d0125"
   },
   {
@@ -97303,7 +97408,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -70.8,
    "stale": true,
-   "age_h": 50.0,
+   "age_h": 50.1,
    "eid": "x-f4f958f2"
   },
   {
@@ -97783,7 +97888,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 64.7,
+   "age_h": 64.8,
    "eid": "x-3ef42975"
   },
   {
@@ -97859,7 +97964,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 3.3,
    "stale": true,
-   "age_h": 66.8,
+   "age_h": 66.9,
    "eid": "x-2d3e2ee9"
   },
   {
@@ -97984,7 +98089,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 67.0,
+   "age_h": 67.1,
    "eid": "x-6fb93117"
   },
   {
@@ -98329,7 +98434,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -52.5,
    "stale": false,
-   "age_h": 68.0,
+   "age_h": 68.1,
    "eid": "x-f3649087"
   },
   {
@@ -99464,7 +99569,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -6.3,
    "stale": false,
-   "age_h": 73.7,
+   "age_h": 73.8,
    "eid": "x-0cd68e71"
   },
   {
@@ -99526,7 +99631,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.7,
+   "age_h": 73.8,
    "eid": "x-a6c31c7f"
   },
   {
@@ -99588,7 +99693,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.7,
+   "age_h": 73.8,
    "eid": "x-cd027845"
   },
   {
@@ -99650,7 +99755,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.7,
+   "age_h": 73.8,
    "eid": "x-89013fad"
   },
   {
@@ -99704,7 +99809,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.7,
+   "age_h": 73.8,
    "eid": "x-dd18bf99"
   },
   {
@@ -99758,7 +99863,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.7,
+   "age_h": 73.8,
    "eid": "x-01603dce"
   },
   {
@@ -99839,7 +99944,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.8,
+   "age_h": 73.9,
    "eid": "x-687fbd04"
   },
   {
@@ -99965,7 +100070,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 76.0,
+   "age_h": 76.1,
    "eid": "x-5233adf4"
   },
   {
@@ -100034,7 +100139,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 76.3,
+   "age_h": 76.4,
    "eid": "x-37993888"
   },
   {
@@ -100330,7 +100435,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 47.6,
    "stale": false,
-   "age_h": 76.3,
+   "age_h": 76.4,
    "eid": "x-814fee4f"
   },
   {
@@ -100805,7 +100910,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 81.4,
+   "age_h": 81.5,
    "eid": "x-596a0783"
   },
   {
@@ -100875,7 +100980,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 81.7,
+   "age_h": 81.8,
    "eid": "x-7cea2b4b"
   },
   {
@@ -101631,7 +101736,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 87.5,
+   "age_h": 87.6,
    "eid": "x-5ed6a51c"
   },
   {
@@ -102382,7 +102487,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 88.7,
+   "age_h": 88.8,
    "eid": "x-e442a7e4"
   },
   {
@@ -102449,7 +102554,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -26.9,
    "stale": false,
-   "age_h": 89.1,
+   "age_h": 89.2,
    "eid": "x-f34fdcd2"
   },
   {
@@ -102520,7 +102625,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 89.1,
+   "age_h": 89.2,
    "eid": "x-ba26668b"
   },
   {
@@ -102989,7 +103094,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.3,
    "stale": false,
-   "age_h": 89.8,
+   "age_h": 89.9,
    "eid": "x-e5c9ba88"
   },
   {
@@ -103053,7 +103158,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 89.9,
+   "age_h": 90.0,
    "eid": "x-14e1053e"
   },
   {
@@ -103186,7 +103291,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 90.8,
+   "age_h": 90.9,
    "eid": "x-f5413f92"
   },
   {
@@ -103374,7 +103479,7 @@
    "hours_to_confirm": -14.3,
    "press_lead_h": -14.3,
    "stale": false,
-   "age_h": 91.5,
+   "age_h": 91.6,
    "eid": "x-02fe5ac3"
   },
   {
@@ -103439,7 +103544,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 91.6,
+   "age_h": 91.7,
    "eid": "x-af78ff3f"
   },
   {
@@ -103557,7 +103662,7 @@
    "postmortem": {
     "date": "2026-11-21T18:53:29Z",
     "label": "McAfee",
-    "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSjhHRUxidjFSQVRMMEwyVTR2R3J1TVctZWxNQ1lOUE9GV3VkS1ZzTERlYTN6R05LYVFWOXNrN29Ya2NYYUtpWFJ5aXZuaV9MT3hGNFVXa0xqaTEteVRudTRYM2ZDdmxkSTdDNnNjYXBVakRqQi12ekV1aVpYRmUySGlaM0w4N3VUWURBTGNOR2QwR01RbXdYeVdyRmF3MHo5c1ZPNl81RXdYTEdL0gGyAUFVX3lxTFAxLUZ5WUoyUC1OOGlZdF9qVkIxOGl6RlQtN2lGemJLaUNrRFZYaVpOU2JOR3RtYks3WV8tMV8tRmdDY09TTU9DUzhRRlU0NEZaMlRqVXlLOXRTb2QyUjRHVFNmaFpVR21sMnl4c1BhY3FaaDltWGFSdGY1c0pzN2hzN0E3S2tpZ1RXaWFjUmJUQ1VqZGk2UHdKNVlBQjhuZTgwRFM5OE1vWWRUWEVoNmpDb1E?oc=5",
+    "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPemlzRXE3bTg1NThUWGdVU29ORDRlcHhnc2QzY3hXSzN4aTVFc2MyUklKYml5STZ3aGZGSFVkcUR6aEpuODFIdE9pbWhwNVNaT2pkNEtnWGFFMkRkVFBOV2JyYUphRWhqd0pBelNzU1prY1dHNGpnYkdjVFI1OXBxV0ozNUpUS1c2TWFScmxNN3BubDFzS2hIVXRVNVpJLVhscUlLcS1QUDE3UnRqR2E4UTdR?oc=5",
     "auto": true
    },
    "outcome": null,
@@ -103591,7 +103696,7 @@
      "t": "2026-11-21T18:53:29Z",
      "stage": "Post-mortem",
      "by": "McAfee",
-     "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNSjhHRUxidjFSQVRMMEwyVTR2R3J1TVctZWxNQ1lOUE9GV3VkS1ZzTERlYTN6R05LYVFWOXNrN29Ya2NYYUtpWFJ5aXZuaV9MT3hGNFVXa0xqaTEteVRudTRYM2ZDdmxkSTdDNnNjYXBVakRqQi12ekV1aVpYRmUySGlaM0w4N3VUWURBTGNOR2QwR01RbXdYeVdyRmF3MHo5c1ZPNl81RXdYTEdL0gGyAUFVX3lxTFAxLUZ5WUoyUC1OOGlZdF9qVkIxOGl6RlQtN2lGemJLaUNrRFZYaVpOU2JOR3RtYks3WV8tMV8tRmdDY09TTU9DUzhRRlU0NEZaMlRqVXlLOXRTb2QyUjRHVFNmaFpVR21sMnl4c1BhY3FaaDltWGFSdGY1c0pzN2hzN0E3S2tpZ1RXaWFjUmJUQ1VqZGk2UHdKNVlBQjhuZTgwRFM5OE1vWWRUWEVoNmpDb1E?oc=5",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPemlzRXE3bTg1NThUWGdVU29ORDRlcHhnc2QzY3hXSzN4aTVFc2MyUklKYml5STZ3aGZGSFVkcUR6aEpuODFIdE9pbWhwNVNaT2pkNEtnWGFFMkRkVFBOV2JyYUphRWhqd0pBelNzU1prY1dHNGpnYkdjVFI1OXBxV0ozNUpUS1c2TWFScmxNN3BubDFzS2hIVXRVNVpJLVhscUlLcS1QUDE3UnRqR2E4UTdR?oc=5",
      "eid": null
     }
    ],
@@ -103631,7 +103736,7 @@
    "hours_to_confirm": 20.2,
    "press_lead_h": -34.5,
    "stale": false,
-   "age_h": 92.3,
+   "age_h": 92.4,
    "eid": "x-d5bd5a8a"
   },
   {
@@ -103755,7 +103860,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -26.9,
    "stale": false,
-   "age_h": 92.4,
+   "age_h": 92.5,
    "eid": "x-5f47903b"
   },
   {
@@ -103891,7 +103996,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 1.7,
    "stale": false,
-   "age_h": 92.9,
+   "age_h": 93.0,
    "eid": "x-fa2b1624"
   },
   {
@@ -103968,7 +104073,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 93.0,
+   "age_h": 93.1,
    "eid": "x-d73347aa"
   },
   {
@@ -104198,7 +104303,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 14.3,
    "stale": false,
-   "age_h": 94.2,
+   "age_h": 94.3,
    "eid": "x-b14ab31c"
   },
   {
@@ -104425,7 +104530,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -2.0,
    "stale": false,
-   "age_h": 95.6,
+   "age_h": 95.7,
    "eid": "x-a59a1bd5"
   },
   {
@@ -104552,7 +104657,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.8,
    "stale": false,
-   "age_h": 95.7,
+   "age_h": 95.8,
    "eid": "x-64ffd708"
   },
   {
@@ -104923,7 +105028,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -22.8,
    "stale": false,
-   "age_h": 96.1,
+   "age_h": 96.2,
    "eid": "x-16122b13"
   },
   {
@@ -105281,7 +105386,7 @@
    "hours_to_confirm": 78.3,
    "press_lead_h": -0.2,
    "stale": false,
-   "age_h": 97.3,
+   "age_h": 97.4,
    "eid": "x-c97b9914"
   },
   {
@@ -105341,7 +105446,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 97.4,
+   "age_h": 97.5,
    "eid": "x-b4d4f3a8"
   },
   {
@@ -105445,7 +105550,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 78.3,
    "stale": false,
-   "age_h": 97.5,
+   "age_h": 97.6,
    "eid": "x-c866ecc7"
   },
   {
@@ -106548,7 +106653,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.6,
+   "age_h": 100.7,
    "eid": "x-ef5d7279"
   },
   {
@@ -106607,7 +106712,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.6,
+   "age_h": 100.7,
    "eid": "x-391da432"
   },
   {
@@ -106671,7 +106776,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.7,
+   "age_h": 100.8,
    "eid": "x-db9c84c0"
   },
   {
@@ -106731,7 +106836,7 @@
    "hours_to_confirm": -0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 101.1,
+   "age_h": 101.2,
    "eid": "x-3fabb58d"
   },
   {
@@ -106810,7 +106915,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": -0.7,
    "stale": false,
-   "age_h": 101.1,
+   "age_h": 101.2,
    "eid": "x-172e8c89"
   },
   {
@@ -106896,7 +107001,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.1,
    "stale": false,
-   "age_h": 102.0,
+   "age_h": 102.1,
    "eid": "x-503b2fe7"
   },
   {
@@ -107049,7 +107154,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 102.2,
+   "age_h": 102.3,
    "eid": "x-afb3de62"
   },
   {
@@ -107124,7 +107229,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 17.0,
    "stale": false,
-   "age_h": 102.7,
+   "age_h": 102.8,
    "eid": "x-d679d928"
   },
   {
@@ -107336,7 +107441,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 2.7,
    "stale": false,
-   "age_h": 103.0,
+   "age_h": 103.1,
    "eid": "x-120c25cc"
   },
   {
@@ -107440,7 +107545,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -3.5,
    "stale": false,
-   "age_h": 103.4,
+   "age_h": 103.5,
    "eid": "x-c9040a32"
   },
   {
@@ -107553,7 +107658,7 @@
    "hours_to_confirm": -58.6,
    "press_lead_h": 69.2,
    "stale": false,
-   "age_h": 104.4,
+   "age_h": 104.5,
    "eid": "x-faad2faf"
   },
   {
@@ -107647,7 +107752,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -1.6,
    "stale": false,
-   "age_h": 105.1,
+   "age_h": 105.2,
    "eid": "x-1e6e9963"
   },
   {
@@ -107778,7 +107883,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -15.4,
    "stale": false,
-   "age_h": 105.1,
+   "age_h": 105.2,
    "eid": "x-dc5d83b9"
   },
   {
@@ -107974,7 +108079,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 106.0,
+   "age_h": 106.1,
    "eid": "x-82a1f65d"
   },
   {
@@ -108041,7 +108146,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.1,
    "stale": false,
-   "age_h": 106.0,
+   "age_h": 106.1,
    "eid": "x-7c3dfcb7"
   },
   {
@@ -108110,7 +108215,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 106.7,
+   "age_h": 106.8,
    "eid": "x-aee81824"
   },
   {
@@ -108326,7 +108431,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 6.5,
    "stale": false,
-   "age_h": 108.4,
+   "age_h": 108.5,
    "eid": "x-b1e9eeb7"
   },
   {
@@ -108403,7 +108508,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 108.9,
+   "age_h": 109.0,
    "eid": "x-929dbc66"
   },
   {
@@ -108474,7 +108579,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 109.0,
+   "age_h": 109.1,
    "eid": "x-958b8ce8"
   },
   {
@@ -108973,7 +109078,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 109.8,
+   "age_h": 109.9,
    "eid": "x-43d544d0"
   },
   {
@@ -109105,7 +109210,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 9.9,
    "stale": false,
-   "age_h": 110.6,
+   "age_h": 110.7,
    "eid": "x-dcad2ced"
   },
   {
@@ -109163,7 +109268,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 110.9,
+   "age_h": 111.0,
    "eid": "x-6bee0584"
   },
   {
@@ -109499,7 +109604,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 4.6,
    "stale": false,
-   "age_h": 112.4,
+   "age_h": 112.5,
    "eid": "x-cbe816fa"
   },
   {
@@ -109625,7 +109730,7 @@
    "hours_to_confirm": 17.1,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 113.4,
+   "age_h": 113.5,
    "eid": "x-97a62f1a"
   },
   {
@@ -109733,7 +109838,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 11.4,
    "stale": false,
-   "age_h": 113.8,
+   "age_h": 113.9,
    "eid": "x-4211ef70"
   },
   {
@@ -109875,7 +109980,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.6,
    "stale": false,
-   "age_h": 114.5,
+   "age_h": 114.6,
    "eid": "x-0f97b676"
   },
   {
@@ -110028,7 +110133,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 56.9,
    "stale": false,
-   "age_h": 114.5,
+   "age_h": 114.6,
    "eid": "x-585238e3"
   },
   {
@@ -110103,7 +110208,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 114.8,
+   "age_h": 114.9,
    "eid": "x-77fc8232"
   },
   {
@@ -110241,7 +110346,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 99.8,
    "stale": false,
-   "age_h": 115.2,
+   "age_h": 115.3,
    "eid": "x-2448dad2"
   },
   {
@@ -110309,7 +110414,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 115.9,
+   "age_h": 116.0,
    "eid": "x-a393b742"
   },
   {
@@ -110374,7 +110479,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 115.9,
+   "age_h": 116.0,
    "eid": "x-884ccde0"
   },
   {
@@ -110751,7 +110856,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 2.2,
    "stale": false,
-   "age_h": 116.7,
+   "age_h": 116.8,
    "eid": "x-68ab71ea"
   },
   {
@@ -110907,7 +111012,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -1.2,
    "stale": false,
-   "age_h": 117.4,
+   "age_h": 117.5,
    "eid": "x-d4e0d2a7"
   },
   {
@@ -110992,7 +111097,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 15.1,
    "stale": false,
-   "age_h": 118.4,
+   "age_h": 118.5,
    "eid": "x-40a25af7"
   },
   {
@@ -111285,7 +111390,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.6,
    "stale": false,
-   "age_h": 119.9,
+   "age_h": 120.0,
    "eid": "x-fa40179a"
   },
   {
@@ -112424,7 +112529,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 123.9,
+   "age_h": 124.0,
    "eid": "x-89ac23e5"
   },
   {
@@ -112736,7 +112841,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.2,
+   "age_h": 124.3,
    "eid": "x-1c3d431c"
   },
   {
@@ -112796,7 +112901,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.2,
+   "age_h": 124.3,
    "eid": "x-a94024ef"
   },
   {
@@ -113199,7 +113304,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": -24.4,
    "stale": false,
-   "age_h": 125.7,
+   "age_h": 125.8,
    "eid": "x-41c84c0c"
   },
   {
@@ -113485,7 +113590,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 0.2,
    "stale": false,
-   "age_h": 126.0,
+   "age_h": 126.1,
    "eid": "x-1dae4023"
   },
   {
@@ -114004,7 +114109,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.4,
+   "age_h": 127.5,
    "eid": "x-1897a686"
   },
   {
@@ -114069,7 +114174,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.4,
+   "age_h": 127.5,
    "eid": "x-e59c5ef9"
   },
   {
@@ -114134,7 +114239,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.4,
+   "age_h": 127.5,
    "eid": "x-d17085eb"
   },
   {
@@ -114245,7 +114350,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 15.1,
    "stale": false,
-   "age_h": 127.4,
+   "age_h": 127.5,
    "eid": "x-fa91d8d0"
   },
   {
@@ -114916,7 +115021,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 18.6,
    "stale": false,
-   "age_h": 130.4,
+   "age_h": 130.5,
    "eid": "x-4898e531"
   },
   {
@@ -115386,7 +115491,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 37.6,
    "stale": false,
-   "age_h": 135.6,
+   "age_h": 135.7,
    "eid": "x-238bed0f"
   },
   {
@@ -115670,7 +115775,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -4.6,
    "stale": false,
-   "age_h": 137.0,
+   "age_h": 137.1,
    "eid": "x-71215915"
   },
   {
@@ -115747,7 +115852,7 @@
    "hours_to_confirm": 142.2,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 137.2,
+   "age_h": 137.3,
    "eid": "x-7cc410dc"
   },
   {
@@ -115813,7 +115918,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 140.2,
+   "age_h": 140.3,
    "eid": "x-42e37a7c"
   },
   {
@@ -115882,7 +115987,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 141.3,
+   "age_h": 141.4,
    "eid": "x-9d9651da"
   },
   {
@@ -116156,7 +116261,7 @@
    "hours_to_confirm": 3.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 142.3,
+   "age_h": 142.4,
    "eid": "x-3bb0206f"
   },
   {
@@ -116272,7 +116377,7 @@
    "hours_to_confirm": 3.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 142.3,
+   "age_h": 142.4,
    "eid": "x-2cfd1831"
   },
   {
@@ -116432,7 +116537,7 @@
    "hours_to_confirm": 3.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 142.3,
+   "age_h": 142.4,
    "eid": "x-d1039eb3"
   },
   {
@@ -116562,7 +116667,7 @@
    "hours_to_confirm": 4.2,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 143.2,
+   "age_h": 143.3,
    "eid": "x-b6ae67f0"
   },
   {
@@ -116646,7 +116751,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 26.8,
    "stale": false,
-   "age_h": 143.3,
+   "age_h": 143.4,
    "eid": "x-5ac59fc6"
   },
   {
@@ -116722,7 +116827,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 143.4,
+   "age_h": 143.5,
    "eid": "x-d73f92d4"
   },
   {
@@ -117077,7 +117182,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.7,
    "stale": false,
-   "age_h": 144.0,
+   "age_h": 144.1,
    "eid": "x-8c1cdedb"
   },
   {
@@ -117273,7 +117378,7 @@
    "hours_to_confirm": 5.3,
    "press_lead_h": 0.0,
    "stale": false,
-   "age_h": 144.3,
+   "age_h": 144.4,
    "eid": "x-24fe8d96"
   },
   {
@@ -117480,7 +117585,7 @@
    "hours_to_confirm": 149.8,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 144.8,
+   "age_h": 144.9,
    "eid": "x-59a8ff73"
   },
   {
@@ -117553,7 +117658,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 147.2,
+   "age_h": 147.3,
    "eid": "x-7cc74178"
   },
   {
@@ -117743,7 +117848,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 25.0,
    "stale": false,
-   "age_h": 148.5,
+   "age_h": 148.6,
    "eid": "x-95518653"
   },
   {
@@ -118029,7 +118134,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 148.6,
+   "age_h": 148.7,
    "eid": "x-9d5dd0bb"
   },
   {
@@ -118347,7 +118452,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 150.7,
+   "age_h": 150.8,
    "eid": "x-de95861b"
   },
   {
@@ -118458,7 +118563,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 16.8,
    "stale": false,
-   "age_h": 151.0,
+   "age_h": 151.1,
    "eid": "x-14355224"
   },
   {
@@ -118542,7 +118647,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.4,
    "stale": false,
-   "age_h": 151.2,
+   "age_h": 151.3,
    "eid": "x-a12056dc"
   },
   {
@@ -118702,7 +118807,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 154.1,
+   "age_h": 154.2,
    "eid": "x-aa4335e2"
   },
   {
@@ -118950,7 +119055,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 23.2,
    "stale": false,
-   "age_h": 155.8,
+   "age_h": 155.9,
    "eid": "x-2249e5d1"
   },
   {
@@ -119015,7 +119120,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 156.9,
+   "age_h": 157.0,
    "eid": "x-10879901"
   },
   {
@@ -119164,7 +119269,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 157.8,
+   "age_h": 157.9,
    "eid": "x-ac8eaff4"
   },
   {
@@ -119366,7 +119471,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 69.6,
    "stale": false,
-   "age_h": 163.0,
+   "age_h": 163.1,
    "eid": "x-ff829756"
   },
   {
@@ -119462,7 +119567,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 163.0,
+   "age_h": 163.1,
    "eid": "x-7aabe083"
   },
   {
@@ -119560,7 +119665,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 163.6,
+   "age_h": 163.7,
    "eid": "x-a142d2ee"
   },
   {
@@ -119898,7 +120003,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 165.3,
+   "age_h": 165.4,
    "eid": "x-f20a11b8"
   },
   {
@@ -120119,7 +120224,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 2.6,
    "stale": false,
-   "age_h": 167.8,
+   "age_h": 167.9,
    "eid": "x-1eb83fbc"
   },
   {
@@ -120443,7 +120548,7 @@
    "hours_to_confirm": -2.2,
    "press_lead_h": 13.8,
    "stale": false,
-   "age_h": 170.8,
+   "age_h": 170.9,
    "eid": "x-46dbf09c"
   },
   {
@@ -120762,7 +120867,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 173.4,
+   "age_h": 173.5,
    "eid": "x-135e32a3"
   },
   {
@@ -121345,7 +121450,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 178.9,
+   "age_h": 179.0,
    "eid": "x-cebc5ac8"
   },
   {
@@ -121472,7 +121577,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 178.9,
+   "age_h": 179.0,
    "eid": "x-9330e9a1"
   },
   {
@@ -121790,7 +121895,7 @@
    "hours_to_confirm": -1.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 186.0,
+   "age_h": 186.1,
    "eid": "x-0bdfcaef"
   },
   {
@@ -122056,9 +122161,9 @@
     }
    ],
    "hours_to_confirm": -0.1,
-   "press_lead_h": 19.0,
+   "press_lead_h": 19.3,
    "stale": false,
-   "age_h": 186.9,
+   "age_h": 187.0,
    "eid": "x-a15220ac"
   },
   {
@@ -122181,7 +122286,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 188.6,
+   "age_h": 188.7,
    "eid": "x-28696625"
   },
   {
@@ -122293,7 +122398,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 190.0,
+   "age_h": 190.1,
    "eid": "x-134eaec8"
   },
   {
@@ -122944,7 +123049,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 215.3,
+   "age_h": 215.4,
    "eid": "x-61acccf1"
   },
   {
@@ -123127,7 +123232,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 87.9,
    "stale": false,
-   "age_h": 218.0,
+   "age_h": 218.1,
    "eid": "x-29b78d95"
   },
   {
@@ -123538,7 +123643,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 239.2,
+   "age_h": 239.3,
    "eid": "x-69ede209"
   },
   {
@@ -123664,7 +123769,7 @@
    "hours_to_confirm": 1.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 243.0,
+   "age_h": 243.1,
    "eid": "x-6aec74ba"
   },
   {
@@ -123802,7 +123907,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 253.0,
+   "age_h": 253.1,
    "eid": "x-b2c89bd4"
   },
   {
@@ -123952,7 +124057,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 255.5,
+   "age_h": 255.6,
    "eid": "x-fbb57da1"
   },
   {
@@ -124455,7 +124560,7 @@
    "hours_to_confirm": 156.5,
    "press_lead_h": 117.0,
    "stale": false,
-   "age_h": 271.5,
+   "age_h": 271.6,
    "eid": "x-0940a60d"
   },
   {
@@ -124558,7 +124663,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 296.9,
+   "age_h": 297.0,
    "eid": "x-d84c80b4"
   },
   {
@@ -124806,7 +124911,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 343.0,
+   "age_h": 343.1,
    "eid": "x-05bd367b"
   },
   {
@@ -125012,7 +125117,7 @@
    "hours_to_confirm": 12.1,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 349.5,
+   "age_h": 349.6,
    "eid": "x-49272dec"
   },
   {
@@ -125344,7 +125449,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 534.7,
+   "age_h": 534.8,
    "eid": "x-fd2b61c8"
   },
   {
@@ -125444,7 +125549,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 596.4,
+   "age_h": 596.5,
    "eid": "x-6b647e4b"
   },
   {
@@ -125641,7 +125746,7 @@
    "hours_to_confirm": -20.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 599.0,
+   "age_h": 599.1,
    "eid": "x-e396ce71"
   },
   {
@@ -125752,7 +125857,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 764.2,
+   "age_h": 764.3,
    "eid": "x-ae1f0346"
   },
   {
@@ -125955,7 +126060,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 896.8,
+   "age_h": 896.9,
    "eid": "x-a07c3203"
   },
   {
@@ -126049,7 +126154,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 1117.9,
+   "age_h": 1118.0,
    "eid": "x-90ad03ed"
   },
   {
@@ -126394,7 +126499,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 1759.8,
+   "age_h": 1759.9,
    "eid": "x-671e1d05"
   }
  ],
@@ -126778,13 +126883,13 @@
   {
    "t": "2026-11-24T17:00:00Z",
    "ransomware": 0,
-   "news": 30,
+   "news": 29,
    "x": 0
   },
   {
    "t": "2026-11-24T18:00:00Z",
    "ransomware": 0,
-   "news": 17,
+   "news": 18,
    "x": 0
   },
   {
@@ -126796,10 +126901,10 @@
  ],
  "windows": {
   "bounds": {
-   "1h": "2026-11-24T18:00:57Z",
-   "24h": "2026-11-23T19:00:57Z",
-   "7d": "2026-11-17T19:00:57Z",
-   "30d": "2026-10-25T19:00:57Z",
+   "1h": "2026-11-24T18:04:05Z",
+   "24h": "2026-11-23T19:04:05Z",
+   "7d": "2026-11-17T19:04:05Z",
+   "30d": "2026-10-25T19:04:05Z",
    "ytd": "2026-01-01T00:00:00Z"
   },
   "rows": {
@@ -126900,15 +127005,15 @@
    "news": {
     "1h": {
      "n": 17,
-     "headlines": 34
+     "headlines": 32
     },
     "24h": {
      "n": 528,
-     "headlines": 1414
+     "headlines": 1422
     },
     "7d": {
-     "n": 2865,
-     "headlines": 9943
+     "n": 2862,
+     "headlines": 9951
     }
    },
    "incidents": {
@@ -127102,6 +127207,12 @@
   ]
  },
  "details": {
+  "n-d15ad60c": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
+  },
   "n-c9da0803": {
    "patterns": [
     "ai"
@@ -127339,12 +127450,6 @@
     }
    ]
   },
-  "n-a9ee4f3d": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": []
-  },
   "n-be915d72": {
    "patterns": [
     "ai"
@@ -127391,6 +127496,54 @@
      "why": "same pattern: AI systems and agents; terms: cyber"
     }
    ]
+  },
+  "n-5e08a15c": {
+   "patterns": [
+    "data-exposure"
+   ],
+   "related": [
+    {
+     "id": "n-974b85df",
+     "kind": "news",
+     "title": "Official Statement on Information Security and Personal Data Protection",
+     "date": "2026-11-23T08:00:00Z",
+     "score": 0.46,
+     "why": "same pattern: Data exposure and theft; terms: statement, personal"
+    },
+    {
+     "id": "n-31ea435f",
+     "kind": "news",
+     "title": "(2nd report) Apology and notice regarding personal information leak due to unauthorized access to Nojima Online",
+     "date": "2026-11-18T08:04:28Z",
+     "score": 0.42,
+     "why": "same pattern: Data exposure and theft; terms: regarding, personal"
+    },
+    {
+     "id": "n-dc6ccc5c",
+     "kind": "news",
+     "title": "Personal data from LaLiga's digital platform extracted in cyber attack",
+     "date": "2026-11-23T10:17:00Z",
+     "score": 0.37,
+     "why": "same pattern: Data exposure and theft; terms: personal, cyber"
+    },
+    {
+     "id": "n-5b8b750e",
+     "kind": "news",
+     "title": "Cyber attack on Japanese music store! Personal data of 11 million people was stolen",
+     "date": "2026-11-22T09:13:00Z",
+     "score": 0.36,
+     "why": "same pattern: Data exposure and theft; terms: personal, cyber"
+    },
+    {
+     "id": "n-261fc9e9",
+     "kind": "news",
+     "title": "HK: Gleneagles Hospital suspends app after data breach",
+     "date": "2026-11-24T10:51:55Z",
+     "score": 0.35,
+     "why": "same pattern: Data exposure and theft; terms: statement, personal"
+    }
+   ],
+   "cluster": "cl-a728c2"
   },
   "n-233e037b": {
    "patterns": [
@@ -128766,12 +128919,12 @@
      "why": "same pattern: Ransomware and extortion; terms: site, victims, leak"
     },
     {
-     "id": "x-f34fdcd2",
-     "kind": "x",
-     "title": "Everest claims Alla France on its leak site",
-     "date": "2026-11-21T01:53:21Z",
+     "id": "n-4fa8f8dc",
+     "kind": "news",
+     "title": "Ransomware incidents surged 38% in Q3",
+     "date": "2026-11-20T11:24:02Z",
      "score": 0.4,
-     "why": "same pattern: Ransomware and extortion; terms: site, leak"
+     "why": "same pattern: Ransomware and extortion; terms: ransomware"
     }
    ]
   },
@@ -128869,7 +129022,7 @@
      "why": "same pattern: Data exposure and theft; terms: information, personal, leaked"
     }
    ],
-   "cluster": "cl-6adaaf"
+   "cluster": "cl-a728c2"
   },
   "n-d6e6a6b6": {
    "patterns": [
@@ -129108,7 +129261,7 @@
      "kind": "news",
      "title": "News - Uber data breach exposes personal data of 150,000 people",
      "date": "2026-11-23T10:05:00Z",
-     "score": 0.36,
+     "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: people"
     },
     {
@@ -129131,7 +129284,7 @@
      "kind": "news",
      "title": "What consequences from Deutsche Bank\u2019s massive data leak?",
      "date": "2026-11-17T19:36:00Z",
-     "score": 0.54,
+     "score": 0.53,
      "why": "same pattern: Data exposure and theft; terms: deutsche, bank, leak"
     },
     {
@@ -129375,7 +129528,7 @@
      "why": "same pattern: Data exposure and theft; terms: information, customer, unauthorized"
     }
    ],
-   "cluster": "cl-6adaaf"
+   "cluster": "cl-a728c2"
   },
   "n-9b4a3eb6": {
    "patterns": [
@@ -129918,20 +130071,20 @@
    ],
    "related": [
     {
+     "id": "n-50447cac",
+     "kind": "news",
+     "title": "Japan's Peach Aviation says 8.99 million customer records leaked after contractor server breach; no card or passport data involved",
+     "date": "2026-11-20T08:05:00Z",
+     "score": 0.37,
+     "why": "same pattern: Data exposure and theft; terms: japan, breach, customer"
+    },
+    {
      "id": "n-b3841b9e",
      "kind": "news",
      "title": "GoFundMe Discloses Donor Data Breach",
      "date": "2026-11-23T10:24:36Z",
      "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: discloses, breach"
-    },
-    {
-     "id": "n-50447cac",
-     "kind": "news",
-     "title": "Japan's Peach Aviation says 8.99 million customer records leaked after contractor server breach; no card or passport data involved",
-     "date": "2026-11-20T08:05:00Z",
-     "score": 0.37,
-     "why": "same pattern: Data exposure and theft; terms: japan, customer, breach"
     },
     {
      "id": "n-09b1ba22",
@@ -129955,7 +130108,7 @@
      "title": "StubHub International warns customer data may have been exposed in breach",
      "date": "2026-11-18T14:54:59Z",
      "score": 0.36,
-     "why": "same pattern: Data exposure and theft; terms: customer, breach, exposed"
+     "why": "same pattern: Data exposure and theft; terms: breach, customer, exposed"
     }
    ]
   },
@@ -130312,18 +130465,18 @@
      "why": "same pattern: Data exposure and theft; terms: information, personal, leaked"
     },
     {
-     "id": "n-4da4e379",
-     "kind": "news",
-     "title": "Curly, personal information of over 10,000 people leaked... \u201cPromise to compensate for the full amount of damage\u201d",
-     "date": "2026-11-20T08:24:50Z",
-     "score": 0.42,
-     "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
-    },
-    {
      "id": "n-9cd0043c",
      "kind": "news",
      "title": "Hundreds of thousands of people\u2019s personal information leaked from KEPCO\u2019s computer system\u2026 \u201cA sense of responsibility\u201d",
      "date": "2026-11-22T09:56:38Z",
+     "score": 0.42,
+     "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
+    },
+    {
+     "id": "n-4da4e379",
+     "kind": "news",
+     "title": "Curly, personal information of over 10,000 people leaked... \u201cPromise to compensate for the full amount of damage\u201d",
+     "date": "2026-11-20T08:24:50Z",
      "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
     }
@@ -130356,7 +130509,7 @@
      "kind": "news",
      "title": "What Happened in the Cleverbridge Data Breach?",
      "date": "2026-11-21T18:53:29Z",
-     "score": 0.54,
+     "score": 0.55,
      "why": "same pattern: Bridges and cross-chain, Data exposure and theft; terms: cleverbridge, breach"
     },
     {
@@ -130372,7 +130525,7 @@
      "kind": "news",
      "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
      "date": "2026-11-19T12:10:54Z",
-     "score": 0.39,
+     "score": 0.4,
      "why": "same pattern: Data exposure and theft; terms: cleverbridge, card, payment"
     }
    ],
@@ -130974,6 +131127,14 @@
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: die, leak"
     },
     {
+     "id": "n-e21a163e",
+     "kind": "news",
+     "title": "Data leak reveals Russian losses. Hundreds of thousands killed.",
+     "date": "2026-11-23T18:16:45Z",
+     "score": 0.39,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leak"
+    },
+    {
      "id": "n-f7e2b10e",
      "kind": "news",
      "title": "Deutsche Bank chair backs CEO after reports expose past lapses; Trump calls tax leak \u2018illegal\u2019",
@@ -130988,14 +131149,6 @@
      "date": "2026-11-11T01:44:58Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian"
-    },
-    {
-     "id": "n-c0755ecc",
-     "kind": "news",
-     "title": "Rosstat data leak: more than 4 thousand natives and citizens of Central Asian countries died in the war in Ukraine",
-     "date": "2026-11-24T07:49:01Z",
-     "score": 0.28,
-     "why": "same pattern: Data exposure and theft; terms: rosstat, leak"
     }
    ]
   },
@@ -131043,6 +131196,54 @@
      "date": "2026-11-23T07:58:00Z",
      "score": 0.38,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
+    }
+   ]
+  },
+  "n-e21a163e": {
+   "patterns": [
+    "data-exposure",
+    "state-linked"
+   ],
+   "related": [
+    {
+     "id": "n-1d46786a",
+     "kind": "news",
+     "title": "Russian military personnel die every five minutes: journalists analyzed the Rosstat data leak",
+     "date": "2026-11-23T18:33:44Z",
+     "score": 0.39,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leak"
+    },
+    {
+     "id": "n-96b26680",
+     "kind": "news",
+     "title": "Leaked data on Russian losses in Ukraine. Journalists reveal what they found in the documents",
+     "date": "2026-11-23T16:58:07Z",
+     "score": 0.38,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian"
+    },
+    {
+     "id": "n-9cd0043c",
+     "kind": "news",
+     "title": "Hundreds of thousands of people\u2019s personal information leaked from KEPCO\u2019s computer system\u2026 \u201cA sense of responsibility\u201d",
+     "date": "2026-11-22T09:56:38Z",
+     "score": 0.36,
+     "why": "same pattern: Data exposure and theft; terms: hundreds, thousands"
+    },
+    {
+     "id": "n-f7e2b10e",
+     "kind": "news",
+     "title": "Deutsche Bank chair backs CEO after reports expose past lapses; Trump calls tax leak \u2018illegal\u2019",
+     "date": "2026-11-18T07:34:00Z",
+     "score": 0.34,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leak"
+    },
+    {
+     "id": "n-b0f38f94",
+     "kind": "news",
+     "title": "517 deaths per day: This data leak shows how many Russians really die in the Ukraine war - and where",
+     "date": "2026-11-20T12:00:58Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: leak"
     }
    ]
   },
@@ -131192,10 +131393,10 @@
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     },
     {
-     "id": "n-4de54154",
+     "id": "n-72d287a4",
      "kind": "news",
-     "title": "Nvidia investigates possible partner breach: ransomware claim unverified",
-     "date": "2026-11-23T18:28:46Z",
+     "title": "FBI Links 1,000+ Hacked WordPress Sites to Ransomware",
+     "date": "2026-11-18T22:44:32Z",
      "score": 0.35,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     }
@@ -131235,7 +131436,7 @@
      "kind": "news",
      "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
      "date": "2026-11-18T13:33:47Z",
-     "score": 0.39,
+     "score": 0.38,
      "why": "same pattern: State-linked activity; terms: russian, hacked"
     },
     {
@@ -131276,6 +131477,14 @@
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: journalists, russian"
     },
     {
+     "id": "n-e21a163e",
+     "kind": "news",
+     "title": "Data leak reveals Russian losses. Hundreds of thousands killed.",
+     "date": "2026-11-23T18:16:45Z",
+     "score": 0.38,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian"
+    },
+    {
      "id": "n-b0f38f94",
      "kind": "news",
      "title": "517 deaths per day: This data leak shows how many Russians really die in the Ukraine war - and where",
@@ -131288,7 +131497,7 @@
      "kind": "news",
      "title": "Deutsche Bank chair backs CEO after reports expose past lapses; Trump calls tax leak \u2018illegal\u2019",
      "date": "2026-11-18T07:34:00Z",
-     "score": 0.34,
+     "score": 0.33,
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leaked"
     },
     {
@@ -131298,14 +131507,6 @@
      "date": "2026-11-11T01:44:58Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian"
-    },
-    {
-     "id": "n-f1d6abe2",
-     "kind": "news",
-     "title": "Internal government documents leaked or unauthorized access to core systems announced by Digital Agency [Latest news on information leaks and personal information leaks]",
-     "date": "2026-11-20T09:11:00Z",
-     "score": 0.29,
-     "why": "same pattern: Data exposure and theft; terms: documents, leaked"
     }
    ]
   },
@@ -131453,7 +131654,7 @@
      "kind": "news",
      "title": "Meduza and other independent outlets analyzed leaked Russian mortality data. New estimate of military deaths in Ukraine will be published November 23.",
      "date": "2026-11-23T06:09:44Z",
-     "score": 0.41,
+     "score": 0.4,
      "why": "same pattern: State-linked activity; terms: ukraine, russian"
     }
    ]
@@ -131871,7 +132072,7 @@
      "kind": "news",
      "title": "JPMorganChase reports cyberattack on third-party service providers",
      "date": "2026-11-19T14:57:11Z",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: cyberattack"
     },
     {
@@ -132068,12 +132269,12 @@
      "why": "same pattern: Bridges and cross-chain; terms: cross-chain"
     },
     {
-     "id": "c-31c40b98",
-     "kind": "crypto",
-     "title": "Endurance Bridge",
-     "date": "2026-11-22",
+     "id": "n-affcf7d6",
+     "kind": "news",
+     "title": "Chainflip: $4.86M Exploit Drains Ethereum Vault",
+     "date": "2026-11-20T23:54:00Z",
      "score": 0.33,
-     "why": "same pattern: Bridges and cross-chain; terms: cross-chain"
+     "why": "same pattern: Bridges and cross-chain; terms: chainflip"
     }
    ]
   },
@@ -132142,7 +132343,7 @@
      "kind": "news",
      "title": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
      "date": "2026-11-22T18:45:37Z",
-     "score": 0.56,
+     "score": 0.55,
      "why": "same pattern: Edge and perimeter devices; terms: routers, gl.inet, remote"
     },
     {
@@ -132182,7 +132383,7 @@
      "kind": "kev",
      "title": "CVE-2026-90817 \u00b7 Vanderbilt University Research Electronic Data Capture (REDCap)",
      "date": "2026-11-18",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Injection and code execution; terms: injection, code, allow"
     },
     {
@@ -132247,14 +132448,6 @@
      "why": "same pattern: Supply chain and third parties; terms: cyber-attack, next"
     },
     {
-     "id": "n-39a2da01",
-     "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.37,
-     "why": "same pattern: Supply chain and third parties; terms: major"
-    },
-    {
      "id": "n-022366c6",
      "kind": "news",
      "title": "JP Morgan's suppliers exposed to cyber attack - customer data may have been leaked",
@@ -132269,6 +132462,14 @@
      "date": "2026-11-17T22:34:22Z",
      "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: major"
+    },
+    {
+     "id": "x-de95861b",
+     "kind": "x",
+     "title": "The Gentlemen ransomware group claims NVIDIA data; NVIDIA probes partner incident",
+     "date": "2026-11-18T12:17:30Z",
+     "score": 0.3,
+     "why": "same pattern: Supply chain and third parties"
     }
    ]
   },
@@ -133502,20 +133703,20 @@
      "why": "same pattern: Data exposure and theft; terms: police, cyberattack"
     },
     {
-     "id": "n-967f68c8",
-     "kind": "news",
-     "title": "Cyberattack on the EU Commission's education platform: Data leaked",
-     "date": "2026-11-23T15:52:52Z",
-     "score": 0.37,
-     "why": "same pattern: Data exposure and theft; terms: leaked, cyberattack"
-    },
-    {
      "id": "n-57d3f4b4",
      "kind": "news",
      "title": "Billion dollar gift to D\u00f6pfner: Data leak shows tax structure at Axel Springer",
      "date": "2026-11-18T10:43:49Z",
      "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: gift"
+    },
+    {
+     "id": "n-967f68c8",
+     "kind": "news",
+     "title": "Cyberattack on the EU Commission's education platform: Data leaked",
+     "date": "2026-11-23T15:52:52Z",
+     "score": 0.37,
+     "why": "same pattern: Data exposure and theft; terms: leaked, cyberattack"
     }
    ]
   },
@@ -133632,7 +133833,7 @@
      "kind": "news",
      "title": "La Poste Cyberattack Exposes Personal Data of 22 Million People",
      "date": "2026-11-17T22:44:19Z",
-     "score": 0.55,
+     "score": 0.56,
      "why": "same pattern: Data exposure and theft; terms: exposes, people, personal"
     },
     {
@@ -133648,7 +133849,7 @@
      "kind": "news",
      "title": "First Trinity Financial Data Breach Exposes Personal and Financial Data",
      "date": "2026-11-18T16:24:10Z",
-     "score": 0.52,
+     "score": 0.53,
      "why": "same pattern: Data exposure and theft; terms: exposes, personal, breach"
     },
     {
@@ -134234,10 +134435,10 @@
      "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
     },
     {
-     "id": "n-4da4e379",
+     "id": "n-9cd0043c",
      "kind": "news",
-     "title": "Curly, personal information of over 10,000 people leaked... \u201cPromise to compensate for the full amount of damage\u201d",
-     "date": "2026-11-20T08:24:50Z",
+     "title": "Hundreds of thousands of people\u2019s personal information leaked from KEPCO\u2019s computer system\u2026 \u201cA sense of responsibility\u201d",
+     "date": "2026-11-22T09:56:38Z",
      "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
     }
@@ -134484,6 +134685,14 @@
      "why": "same pattern: Data exposure and theft; terms: official, information"
     },
     {
+     "id": "n-5e08a15c",
+     "kind": "news",
+     "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
+     "date": "2026-11-24T17:25:36Z",
+     "score": 0.46,
+     "why": "same pattern: Data exposure and theft; terms: statement, personal"
+    },
+    {
      "id": "n-8101e761",
      "kind": "news",
      "title": "Nonsan City conducts on-site personal information protection training for Lee and Tongjang",
@@ -134506,17 +134715,9 @@
      "date": "2026-11-20T23:41:34Z",
      "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: personal, information"
-    },
-    {
-     "id": "n-ea528711",
-     "kind": "news",
-     "title": "\"Weleda\", about 200,000 personal information and 40,000 credit card information leaked due to unauthorized access (FASHIONSNAP)",
-     "date": "2026-11-24T08:31:15Z",
-     "score": 0.4,
-     "why": "same pattern: Data exposure and theft; terms: information, personal"
     }
    ],
-   "cluster": "cl-6adaaf"
+   "cluster": "cl-a728c2"
   },
   "n-451979c6": {
    "patterns": [
@@ -134528,7 +134729,7 @@
      "kind": "news",
      "title": "Check Point Software: Ransomware Hits Record Victims in Q3",
      "date": "2026-11-20T15:36:43Z",
-     "score": 0.52,
+     "score": 0.51,
      "why": "same pattern: Ransomware and extortion; terms: record, ransomware"
     },
     {
@@ -134826,7 +135027,7 @@
      "kind": "news",
      "title": "New Hacked Data Puts Russian Death Toll in Ukraine Near 500,000",
      "date": "2026-11-23T16:00:00Z",
-     "score": 0.41,
+     "score": 0.4,
      "why": "same pattern: State-linked activity; terms: ukraine, russian"
     },
     {
@@ -134850,7 +135051,7 @@
      "kind": "news",
      "title": "Kaspersky Lab: cyber attacks on Russian organizations increased by 54%",
      "date": "2026-11-20T09:48:38Z",
-     "score": 0.36,
+     "score": 0.35,
      "why": "same pattern: State-linked activity; terms: russian"
     },
     {
@@ -135446,7 +135647,7 @@
      "title": "Peninsula Energy reports cyber incident at its Lance uranium project",
      "date": "2026-11-23T03:28:55Z",
      "score": 0.65,
-     "why": "same pattern: Disruption and outages; terms: peninsula, energy, wyoming"
+     "why": "same pattern: Disruption and outages; terms: peninsula, energy, lance"
     },
     {
      "id": "n-f0b8696c",
@@ -136255,7 +136456,7 @@
      "kind": "news",
      "title": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
      "date": "2026-11-23T13:26:22Z",
-     "score": 0.56,
+     "score": 0.55,
      "why": "same pattern: Edge and perimeter devices; terms: routers, gl.inet, remote"
     },
     {
@@ -136561,7 +136762,7 @@
      "kind": "news",
      "title": "Bordeaux University Hospital: data leak",
      "date": "2026-11-21T23:00:00Z",
-     "score": 0.24,
+     "score": 0.23,
      "why": "terms: hospital, university"
     }
    ]
@@ -137136,12 +137337,12 @@
      "why": "same pattern: Data exposure and theft; terms: massive, breach"
     },
     {
-     "id": "n-34316fe7",
+     "id": "n-93114f6a",
      "kind": "news",
-     "title": "KEPCO Data Leak Exposes 1.5 Million Records",
-     "date": "2026-11-18T21:37:08Z",
+     "title": "# Apex Systems Data Breach Exposes Info of Hundreds of Workers",
+     "date": "2026-11-17T21:49:09Z",
      "score": 0.41,
-     "why": "same pattern: Data exposure and theft; terms: kepco"
+     "why": "same pattern: Data exposure and theft; terms: info, breach"
     }
    ],
    "analysis": {
@@ -137899,7 +138100,7 @@
      "kind": "x",
      "title": "Universeum reports guest data exposure at booking supplier",
      "date": "2026-11-20T19:14:01Z",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supplier, customer"
     },
     {
@@ -137919,20 +138120,20 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: breach, information"
     },
     {
-     "id": "x-c9040a32",
-     "kind": "x",
-     "title": "Peach Aviation discloses Cuenote vendor breach",
-     "date": "2026-11-20T11:35:16Z",
-     "score": 0.32,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: customer, breach, information"
-    },
-    {
      "id": "n-34316fe7",
      "kind": "news",
      "title": "KEPCO Data Leak Exposes 1.5 Million Records",
      "date": "2026-11-18T21:37:08Z",
      "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: 1.5, kepco"
+    },
+    {
+     "id": "x-c9040a32",
+     "kind": "x",
+     "title": "Peach Aviation discloses Cuenote vendor breach",
+     "date": "2026-11-20T11:35:16Z",
+     "score": 0.32,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: breach, customer, information"
     }
    ]
   },
@@ -137993,7 +138194,7 @@
      "kind": "news",
      "title": "La Poste Cyberattack Exposes Personal Data of 22 Million People",
      "date": "2026-11-17T22:44:19Z",
-     "score": 0.42,
+     "score": 0.43,
      "why": "same pattern: Data exposure and theft; terms: people, personal"
     },
     {
@@ -138001,7 +138202,7 @@
      "kind": "news",
      "title": "News - Uber data breach exposes personal data of 150,000 people",
      "date": "2026-11-23T10:05:00Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: people, personal"
     },
     {
@@ -139294,7 +139495,7 @@
      "kind": "news",
      "title": "Cleverbridge discloses data breach involving payment card information",
      "date": "2026-11-23T22:54:22Z",
-     "score": 0.54,
+     "score": 0.55,
      "why": "same pattern: Bridges and cross-chain, Data exposure and theft; terms: cleverbridge, breach"
     },
     {
@@ -139797,7 +139998,7 @@
      "kind": "news",
      "title": "Chainflip: $4.86M Exploit Drains Ethereum Vault",
      "date": "2026-11-20T23:54:00Z",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Key and credential compromise; terms: drains, chainflip, vault"
     },
     {
@@ -141240,7 +141441,7 @@
      "kind": "news",
      "title": "Cyber attack on Baselland: 97,000 cross-border commuter data stolen \u2013 are Russian hackers behind it?",
      "date": "2026-11-20T14:17:45Z",
-     "score": 0.37,
+     "score": 0.36,
      "why": "same pattern: State-linked activity; terms: russian"
     }
    ]
@@ -141511,10 +141712,10 @@
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     },
     {
-     "id": "n-4de54154",
+     "id": "n-72d287a4",
      "kind": "news",
-     "title": "Nvidia investigates possible partner breach: ransomware claim unverified",
-     "date": "2026-11-23T18:28:46Z",
+     "title": "FBI Links 1,000+ Hacked WordPress Sites to Ransomware",
+     "date": "2026-11-18T22:44:32Z",
      "score": 0.36,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     }
@@ -142130,11 +142331,11 @@
    ],
    "related": [
     {
-     "id": "n-39a2da01",
+     "id": "n-5e3ae01b",
      "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.38,
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+     "date": "2026-11-17T22:38:33Z",
+     "score": 0.36,
      "why": "same pattern: Supply chain and third parties; terms: supply, chain"
     },
     {
@@ -142570,6 +142771,12 @@
      "why": "same pattern: Injection and code execution; terms: remote, execute"
     }
    ]
+  },
+  "n-812fd4f8": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
   },
   "n-1e1dbef9": {
    "patterns": [
@@ -143481,12 +143688,6 @@
    ],
    "related": []
   },
-  "n-305dd967": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": []
-  },
   "n-b85b85ad": {
    "patterns": [
     "state-linked"
@@ -143643,7 +143844,7 @@
      "kind": "news",
      "title": "Latest hack of FBI puts personal records at risk",
      "date": "2026-11-21T23:48:45Z",
-     "score": 0.39,
+     "score": 0.4,
      "why": "same pattern: Data exposure and theft; terms: risk"
     },
     {
@@ -143752,7 +143953,7 @@
      "kind": "news",
      "title": "Ransomware attacks hit record high",
      "date": "2026-11-23T07:58:00Z",
-     "score": 0.52,
+     "score": 0.51,
      "why": "same pattern: Ransomware and extortion; terms: record, ransomware"
     },
     {
@@ -144053,7 +144254,7 @@
      "kind": "news",
      "title": "Kaspersky Lab: cyber attacks on Russian organizations increased by 54%",
      "date": "2026-11-20T09:48:38Z",
-     "score": 0.41,
+     "score": 0.4,
      "why": "same pattern: State-linked activity; terms: russian, cyber"
     },
     {
@@ -144061,7 +144262,7 @@
      "kind": "news",
      "title": "Hacked Russian data suggests nearly 500,000 soldiers dead, reports say",
      "date": "2026-11-24T03:50:26Z",
-     "score": 0.38,
+     "score": 0.37,
      "why": "same pattern: State-linked activity; terms: russian"
     },
     {
@@ -144218,7 +144419,7 @@
      "kind": "news",
      "title": "Hackers steal 1 million credit cards through Windows bug",
      "date": "2026-11-19T00:25:56Z",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Enterprise platform zero-days; terms: steal"
     }
    ],
@@ -144707,10 +144908,10 @@
      "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
     },
     {
-     "id": "n-4da4e379",
+     "id": "n-9cd0043c",
      "kind": "news",
-     "title": "Curly, personal information of over 10,000 people leaked... \u201cPromise to compensate for the full amount of damage\u201d",
-     "date": "2026-11-20T08:24:50Z",
+     "title": "Hundreds of thousands of people\u2019s personal information leaked from KEPCO\u2019s computer system\u2026 \u201cA sense of responsibility\u201d",
+     "date": "2026-11-22T09:56:38Z",
      "score": 0.4,
      "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
     }
@@ -144941,6 +145142,14 @@
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: ukraine"
     },
     {
+     "id": "n-e21a163e",
+     "kind": "news",
+     "title": "Data leak reveals Russian losses. Hundreds of thousands killed.",
+     "date": "2026-11-23T18:16:45Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: leak"
+    },
+    {
      "id": "n-c0755ecc",
      "kind": "news",
      "title": "Rosstat data leak: more than 4 thousand natives and citizens of Central Asian countries died in the war in Ukraine",
@@ -144955,14 +145164,6 @@
      "date": "2026-11-18T07:34:00Z",
      "score": 0.31,
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: leak"
-    },
-    {
-     "id": "b-8a5ec5e1",
-     "kind": "breach",
-     "title": "SberSpasibo",
-     "date": "2026-11-11T01:44:58Z",
-     "score": 0.3,
-     "why": "same pattern: Data exposure and theft, State-linked activity"
     }
    ]
   },
@@ -145062,7 +145263,7 @@
      "kind": "news",
      "title": "StubHub International warns customer data may have been exposed in breach",
      "date": "2026-11-18T14:54:59Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: warns, breach"
     },
     {
@@ -145279,19 +145480,19 @@
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     },
     {
+     "id": "n-72d287a4",
+     "kind": "news",
+     "title": "FBI Links 1,000+ Hacked WordPress Sites to Ransomware",
+     "date": "2026-11-18T22:44:32Z",
+     "score": 0.4,
+     "why": "same pattern: Ransomware and extortion; terms: ransomware"
+    },
+    {
      "id": "n-4de54154",
      "kind": "news",
      "title": "Nvidia investigates possible partner breach: ransomware claim unverified",
      "date": "2026-11-23T18:28:46Z",
      "score": 0.4,
-     "why": "same pattern: Ransomware and extortion; terms: ransomware"
-    },
-    {
-     "id": "n-72d287a4",
-     "kind": "news",
-     "title": "FBI Links 1,000+ Hacked WordPress Sites to Ransomware",
-     "date": "2026-11-18T22:44:32Z",
-     "score": 0.39,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     }
    ]
@@ -145839,7 +146040,7 @@
      "kind": "news",
      "title": "Cyber attack on Baselland: 97,000 cross-border commuter data stolen \u2013 are Russian hackers behind it?",
      "date": "2026-11-20T14:17:45Z",
-     "score": 0.41,
+     "score": 0.4,
      "why": "same pattern: State-linked activity; terms: russian, cyber"
     },
     {
@@ -146182,7 +146383,7 @@
      "kind": "x",
      "title": "Germany's Federal Employment Agency confirms cyberattack on property-management unit",
      "date": "2026-11-21T00:11:28Z",
-     "score": 0.33,
+     "score": 0.32,
      "why": "same pattern: Enterprise platform zero-days; terms: cyberattack"
     }
    ],
@@ -146322,7 +146523,16 @@
    "patterns": [
     "unclassified"
    ],
-   "related": []
+   "related": [
+    {
+     "id": "n-68528f9f",
+     "kind": "news",
+     "title": "Hackers stole driver license data for Uber drivers from AI supplier",
+     "date": "2026-11-18T06:28:41Z",
+     "score": 0.29,
+     "why": "terms: drivers, uber"
+    }
+   ]
   },
   "n-5e491b5c": {
    "patterns": [
@@ -146648,10 +146858,10 @@
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     },
     {
-     "id": "n-4de54154",
+     "id": "n-72d287a4",
      "kind": "news",
-     "title": "Nvidia investigates possible partner breach: ransomware claim unverified",
-     "date": "2026-11-23T18:28:46Z",
+     "title": "FBI Links 1,000+ Hacked WordPress Sites to Ransomware",
+     "date": "2026-11-18T22:44:32Z",
      "score": 0.36,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     }
@@ -146740,7 +146950,7 @@
      "kind": "news",
      "title": "News - Uber data breach exposes personal data of 150,000 people",
      "date": "2026-11-23T10:05:00Z",
-     "score": 0.33,
+     "score": 0.34,
      "why": "same pattern: Data exposure and theft; terms: exposes, people, breach"
     },
     {
@@ -147637,7 +147847,7 @@
      "kind": "news",
      "title": "Hackers leak 150,000 Samsung smart TV viewing records and political advertising data",
      "date": "2026-11-20T00:44:40Z",
-     "score": 0.39,
+     "score": 0.38,
      "why": "same pattern: Data exposure and theft; terms: records, leak"
     },
     {
@@ -148141,20 +148351,20 @@
      "why": "same pattern: Data exposure and theft; terms: exposes, cyberattack"
     },
     {
-     "id": "n-82f5fd1e",
-     "kind": "news",
-     "title": "Rakuten Securities Data Breach Exposes Information From Millions of Customer Accounts",
-     "date": "2026-11-23T22:00:00Z",
-     "score": 0.43,
-     "why": "same pattern: Data exposure and theft; terms: exposes, customer"
-    },
-    {
      "id": "n-7812f05f",
      "kind": "news",
      "title": "Major US banking and payment firms hit by customer data leak - media",
      "date": "2026-11-20T10:25:00Z",
      "score": 0.43,
      "why": "same pattern: Data exposure and theft; terms: major, customer"
+    },
+    {
+     "id": "n-82f5fd1e",
+     "kind": "news",
+     "title": "Rakuten Securities Data Breach Exposes Information From Millions of Customer Accounts",
+     "date": "2026-11-23T22:00:00Z",
+     "score": 0.43,
+     "why": "same pattern: Data exposure and theft; terms: exposes, customer"
     }
    ]
   },
@@ -148428,7 +148638,7 @@
      "kind": "news",
      "title": "Dozens of credit union branches hit by data breach",
      "date": "2026-11-17T20:08:41Z",
-     "score": 0.54,
+     "score": 0.55,
      "why": "same pattern: Data exposure and theft; terms: union, credit, breach"
     },
     {
@@ -149081,7 +149291,7 @@
      "kind": "news",
      "title": "Three major credit card companies warn of data breach",
      "date": "2026-11-19T20:04:00Z",
-     "score": 0.38,
+     "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: major, breach"
     },
     {
@@ -149097,7 +149307,7 @@
      "kind": "news",
      "title": "Cyberattack exposes customer names and emails at major financial companies",
      "date": "2026-11-20T05:03:02Z",
-     "score": 0.36,
+     "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: major"
     },
     {
@@ -149140,18 +149350,18 @@
      "why": "same pattern: Data exposure and theft; terms: samsung"
     },
     {
-     "id": "n-9abe542a",
-     "kind": "news",
-     "title": "Samsung Securities Also Hit by Hack... Personal Info of Around 8,000 Users Leaked",
-     "date": "2026-11-23T01:08:51Z",
-     "score": 0.41,
-     "why": "same pattern: Data exposure and theft; terms: samsung"
-    },
-    {
      "id": "n-ab0f463b",
      "kind": "news",
      "title": "Samsung Confirms Data Breach as Hackers Dump 220MB of Data",
      "date": "2026-11-20T14:17:41Z",
+     "score": 0.41,
+     "why": "same pattern: Data exposure and theft; terms: samsung"
+    },
+    {
+     "id": "n-9abe542a",
+     "kind": "news",
+     "title": "Samsung Securities Also Hit by Hack... Personal Info of Around 8,000 Users Leaked",
+     "date": "2026-11-23T01:08:51Z",
      "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: samsung"
     },
@@ -149260,10 +149470,10 @@
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     },
     {
-     "id": "n-4de54154",
+     "id": "n-72d287a4",
      "kind": "news",
-     "title": "Nvidia investigates possible partner breach: ransomware claim unverified",
-     "date": "2026-11-23T18:28:46Z",
+     "title": "FBI Links 1,000+ Hacked WordPress Sites to Ransomware",
+     "date": "2026-11-18T22:44:32Z",
      "score": 0.37,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     }
@@ -150364,7 +150574,7 @@
      "kind": "news",
      "title": "Hackers steal 1 million credit cards through Windows bug",
      "date": "2026-11-19T00:25:56Z",
-     "score": 0.44,
+     "score": 0.45,
      "why": "same pattern: Enterprise platform zero-days; terms: windows"
     },
     {
@@ -151256,20 +151466,20 @@
    ],
    "related": [
     {
-     "id": "n-5a0c8917",
-     "kind": "news",
-     "title": "CyberPower power management software exploited in network intrusion",
-     "date": "2026-11-20T18:15:36Z",
-     "score": 0.24,
-     "why": "terms: cyberpower, powerpanel, domain"
-    },
-    {
      "id": "x-95518653",
      "kind": "x",
      "title": "CyberPower PowerPanel observed in network intrusion",
      "date": "2026-11-18T14:28:03Z",
      "score": 0.24,
      "why": "terms: cyberpower, powerpanel, software"
+    },
+    {
+     "id": "n-5a0c8917",
+     "kind": "news",
+     "title": "CyberPower power management software exploited in network intrusion",
+     "date": "2026-11-20T18:15:36Z",
+     "score": 0.24,
+     "why": "terms: cyberpower, powerpanel, domain"
     }
    ]
   },
@@ -151589,7 +151799,7 @@
      "kind": "news",
      "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
      "date": "2026-11-17T22:34:22Z",
-     "score": 0.38,
+     "score": 0.39,
      "why": "same pattern: Supply chain and third parties; terms: third-party"
     },
     {
@@ -151597,7 +151807,7 @@
      "kind": "news",
      "title": "N-able Patches Critical Flaw Disclosed After Mail Assure Cyberattack",
      "date": "2026-11-23T15:06:49Z",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: cyberattack"
     }
    ],
@@ -151898,7 +152108,7 @@
      "kind": "news",
      "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
      "date": "2026-11-17T22:34:22Z",
-     "score": 0.39,
+     "score": 0.4,
      "why": "same pattern: Supply chain and third parties; terms: third-party"
     }
    ]
@@ -153804,10 +154014,10 @@
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     },
     {
-     "id": "n-4de54154",
+     "id": "n-72d287a4",
      "kind": "news",
-     "title": "Nvidia investigates possible partner breach: ransomware claim unverified",
-     "date": "2026-11-23T18:28:46Z",
+     "title": "FBI Links 1,000+ Hacked WordPress Sites to Ransomware",
+     "date": "2026-11-18T22:44:32Z",
      "score": 0.35,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     }
@@ -154265,12 +154475,12 @@
      "why": "same pattern: AI systems and agents; terms: cursor, fireworks, breach"
     },
     {
-     "id": "n-39a2da01",
+     "id": "n-68528f9f",
      "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.29,
-     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
+     "title": "Hackers stole driver license data for Uber drivers from AI supplier",
+     "date": "2026-11-18T06:28:41Z",
+     "score": 0.3,
+     "why": "same pattern: Supply chain and third parties, AI systems and agents"
     },
     {
      "id": "x-49272dec",
@@ -154281,11 +154491,11 @@
      "why": "same pattern: Supply chain and third parties; terms: fireworks, breach"
     },
     {
-     "id": "n-b3d18dbc",
+     "id": "n-5e3ae01b",
      "kind": "news",
-     "title": "Optimizely-ing For Trouble: When A Marketing Tool Becomes A Software Supply Chain Attack",
-     "date": "2026-11-20T21:13:39Z",
-     "score": 0.26,
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+     "date": "2026-11-17T22:38:33Z",
+     "score": 0.27,
      "why": "same pattern: Supply chain and third parties; terms: supply, chain"
     }
    ],
@@ -154720,7 +154930,7 @@
      "kind": "news",
      "title": "New Hacked Data Puts Russian Death Toll in Ukraine Near 500,000",
      "date": "2026-11-23T16:00:00Z",
-     "score": 0.37,
+     "score": 0.36,
      "why": "same pattern: State-linked activity; terms: russian"
     }
    ]
@@ -154735,7 +154945,7 @@
      "kind": "news",
      "title": "FastUnlock Zero-Day Uses Windows Narrator to Bypass Lock Screen and BitLocker on Windows 11",
      "date": "2026-11-19T18:42:12Z",
-     "score": 0.44,
+     "score": 0.45,
      "why": "same pattern: Enterprise platform zero-days; terms: windows"
     },
     {
@@ -154759,7 +154969,7 @@
      "kind": "news",
      "title": "Hackers use Microsoft Outlook security flaw to steal your login data",
      "date": "2026-11-20T14:09:17Z",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Enterprise platform zero-days; terms: steal"
     },
     {
@@ -154965,7 +155175,7 @@
      "kind": "news",
      "title": "Ransomware incidents surged 38% in Q3",
      "date": "2026-11-20T11:24:02Z",
-     "score": 0.39,
+     "score": 0.4,
      "why": "same pattern: Ransomware and extortion; terms: ransomware"
     },
     {
@@ -155401,10 +155611,10 @@
      "why": "same pattern: Data exposure and theft; terms: hacking, personal, leaked"
     },
     {
-     "id": "n-4da4e379",
+     "id": "n-9cd0043c",
      "kind": "news",
-     "title": "Curly, personal information of over 10,000 people leaked... \u201cPromise to compensate for the full amount of damage\u201d",
-     "date": "2026-11-20T08:24:50Z",
+     "title": "Hundreds of thousands of people\u2019s personal information leaked from KEPCO\u2019s computer system\u2026 \u201cA sense of responsibility\u201d",
+     "date": "2026-11-22T09:56:38Z",
      "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
     }
@@ -156170,7 +156380,7 @@
      "kind": "news",
      "title": "News - Uber data breach exposes personal data of 150,000 people",
      "date": "2026-11-23T10:05:00Z",
-     "score": 0.52,
+     "score": 0.53,
      "why": "same pattern: Data exposure and theft; terms: exposes, personal, breach"
     },
     {
@@ -156370,7 +156580,7 @@
      "kind": "news",
      "title": "Norwegian airline warns thousands of customers over data breach",
      "date": "2026-11-20T11:44:15Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: warns, breach"
     },
     {
@@ -156664,7 +156874,7 @@
      "kind": "news",
      "title": "Hacked Rosstat data shows half a million Russian soldiers have been killed in Ukraine \u2014 The Insider has identified most of them by name",
      "date": "2026-11-23T17:32:24Z",
-     "score": 0.39,
+     "score": 0.38,
      "why": "same pattern: State-linked activity; terms: russian, hacked"
     },
     {
@@ -157673,6 +157883,14 @@
      "why": "same pattern: Data exposure and theft; terms: due, information, personal"
     },
     {
+     "id": "n-5e08a15c",
+     "kind": "news",
+     "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
+     "date": "2026-11-24T17:25:36Z",
+     "score": 0.42,
+     "why": "same pattern: Data exposure and theft; terms: regarding, personal"
+    },
+    {
      "id": "n-5e491b5c",
      "kind": "news",
      "title": "Curly was also pierced\u2026 Over 10,700 people suffered damage due to personal information leak",
@@ -157687,14 +157905,6 @@
      "date": "2026-11-18T21:31:50Z",
      "score": 0.4,
      "why": "same pattern: Data exposure and theft; terms: apology"
-    },
-    {
-     "id": "n-db984fdc",
-     "kind": "news",
-     "title": "Unauthorized access to Tower Records Online, approximately 11 million members' information leaked Over 10.21 million login information",
-     "date": "2026-11-24T00:17:29Z",
-     "score": 0.39,
-     "why": "same pattern: Data exposure and theft; terms: online, information, unauthorized"
     }
    ]
   },
@@ -157848,20 +158058,28 @@
    ],
    "related": [
     {
-     "id": "n-96b26680",
+     "id": "n-e21a163e",
      "kind": "news",
-     "title": "Leaked data on Russian losses in Ukraine. Journalists reveal what they found in the documents",
-     "date": "2026-11-23T16:58:07Z",
+     "title": "Data leak reveals Russian losses. Hundreds of thousands killed.",
+     "date": "2026-11-23T18:16:45Z",
      "score": 0.34,
-     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leaked"
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leak"
     },
     {
      "id": "n-2e5c4b36",
      "kind": "news",
      "title": "Data watchdog probes massive leak of internal records at Deutsche Bank",
      "date": "2026-11-18T16:37:09Z",
-     "score": 0.34,
+     "score": 0.33,
      "why": "same pattern: Data exposure and theft; terms: deutsche, bank, internal"
+    },
+    {
+     "id": "n-96b26680",
+     "kind": "news",
+     "title": "Leaked data on Russian losses in Ukraine. Journalists reveal what they found in the documents",
+     "date": "2026-11-23T16:58:07Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leaked"
     },
     {
      "id": "b-8a5ec5e1",
@@ -157878,14 +158096,6 @@
      "date": "2026-11-23T18:33:44Z",
      "score": 0.33,
      "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian, leak"
-    },
-    {
-     "id": "n-81dbfff6",
-     "kind": "news",
-     "title": "What consequences from Deutsche Bank\u2019s massive data leak?",
-     "date": "2026-11-17T19:36:00Z",
-     "score": 0.33,
-     "why": "same pattern: Data exposure and theft; terms: deutsche, bank, leak"
     }
    ]
   },
@@ -158071,6 +158281,54 @@
     }
    ]
   },
+  "n-68528f9f": {
+   "patterns": [
+    "supply-chain",
+    "ai"
+   ],
+   "related": [
+    {
+     "id": "n-18f42aad",
+     "kind": "news",
+     "title": "Fireworks AI Breach Exposes Uber Data and Highlights Supply Chain Risks",
+     "date": "2026-11-17T20:55:14Z",
+     "score": 0.41,
+     "why": "same pattern: Supply chain and third parties, AI systems and agents; terms: uber"
+    },
+    {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.34,
+     "why": "same pattern: Supply chain and third parties; terms: supplier"
+    },
+    {
+     "id": "n-d9af36ba",
+     "kind": "news",
+     "title": "The Fireworks AI Breach: How One Vendor Key Became a Supply Chain Attack on Cursor",
+     "date": "2026-11-19T03:44:43Z",
+     "score": 0.3,
+     "why": "same pattern: Supply chain and third parties, AI systems and agents"
+    },
+    {
+     "id": "n-f28c596e",
+     "kind": "news",
+     "title": "Uber Vendor Breach: 4 Days to Confirm, 149,346 Drivers",
+     "date": "2026-11-20T08:54:05Z",
+     "score": 0.29,
+     "why": "terms: drivers, uber"
+    },
+    {
+     "id": "n-8a16a858",
+     "kind": "news",
+     "title": "Europe\u2019s Largest Natural Gas Supplier Battles Cyberattack",
+     "date": "2026-11-17T19:33:00Z",
+     "score": 0.28,
+     "why": "same pattern: Supply chain and third parties; terms: supplier"
+    }
+   ]
+  },
   "n-2814e448": {
    "patterns": [
     "unclassified"
@@ -158097,7 +158355,7 @@
      "kind": "news",
      "title": "Russia's Cold Relic APT Turns One Cloud Breach Into Another",
      "date": "2026-11-20T21:21:34Z",
-     "score": 0.33,
+     "score": 0.34,
      "why": "same pattern: State-linked activity; terms: relic, cold, cloud"
     },
     {
@@ -158117,12 +158375,12 @@
      "why": "same pattern: State-linked activity; terms: google, russian"
     },
     {
-     "id": "n-86be8755",
+     "id": "n-a2d48fff",
      "kind": "news",
-     "title": "Russian APT Poses as Employee of Hacked Firm to Breach Another US Organization",
-     "date": "2026-11-18T13:33:47Z",
+     "title": "Bulgaria Discovers Massive Government Breach After Five Years of Undetected Spying",
+     "date": "2026-11-23T09:46:56Z",
      "score": 0.24,
-     "why": "same pattern: State-linked activity; terms: russian, organization, breach"
+     "why": "same pattern: State-linked activity, Data exposure and theft; terms: breach"
     }
    ],
    "cluster": "cl-0dcacd",
@@ -158310,12 +158568,12 @@
      "why": "same pattern: Data exposure and theft; terms: info, breach"
     },
     {
-     "id": "n-7074be78",
+     "id": "n-9abe542a",
      "kind": "news",
-     "title": "Cyber attack on Baselbieter administration led to data leakage",
-     "date": "2026-11-20T06:07:00Z",
+     "title": "Samsung Securities Also Hit by Hack... Personal Info of Around 8,000 Users Leaked",
+     "date": "2026-11-23T01:08:51Z",
      "score": 0.37,
-     "why": "same pattern: Data exposure and theft; terms: led"
+     "why": "same pattern: Data exposure and theft; terms: info"
     }
    ]
   },
@@ -158411,6 +158669,21 @@
      "date": "2026-11-18T17:32:10Z",
      "score": 0.3,
      "why": "same pattern: AI systems and agents"
+    }
+   ]
+  },
+  "n-ac437ce4": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": [
+    {
+     "id": "n-fa96ecaf",
+     "kind": "news",
+     "title": "Optimizely confirms massive cyberattack on customer websites injected stealer malware",
+     "date": "2026-11-17T19:26:01Z",
+     "score": 0.27,
+     "why": "terms: optimizely, websites, malware"
     }
    ]
   },
@@ -158561,12 +158834,6 @@
      "why": "same pattern: Phishing and social engineering"
     }
    ]
-  },
-  "n-fa96ecaf": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": []
   },
   "n-aeb47391": {
    "patterns": [
@@ -158832,7 +159099,7 @@
      "kind": "news",
      "title": "News - Uber data breach exposes personal data of 150,000 people",
      "date": "2026-11-23T10:05:00Z",
-     "score": 0.55,
+     "score": 0.56,
      "why": "same pattern: Data exposure and theft; terms: exposes, people, personal"
     },
     {
@@ -158869,25 +159136,64 @@
     }
    ]
   },
+  "n-5e3ae01b": {
+   "patterns": [
+    "supply-chain"
+   ],
+   "related": [
+    {
+     "id": "c-964f412e",
+     "kind": "crypto",
+     "title": "Optimizely (OPTIMJACK)",
+     "date": "2026-11-16",
+     "score": 0.42,
+     "why": "same pattern: Supply chain and third parties; terms: optimizely, scripts, supply"
+    },
+    {
+     "id": "n-b3d18dbc",
+     "kind": "news",
+     "title": "Optimizely-ing For Trouble: When A Marketing Tool Becomes A Software Supply Chain Attack",
+     "date": "2026-11-20T21:13:39Z",
+     "score": 0.36,
+     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
+    },
+    {
+     "id": "n-46a6b0b0",
+     "kind": "news",
+     "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+     "date": "2026-11-17T22:34:22Z",
+     "score": 0.35,
+     "why": "same pattern: Supply chain and third parties; terms: optimizely"
+    },
+    {
+     "id": "x-a15220ac",
+     "kind": "x",
+     "title": "Optimizely Web Experimentation supply-chain compromise",
+     "date": "2026-11-17T00:05:02Z",
+     "score": 0.34,
+     "why": "same pattern: Supply chain and third parties; terms: optimizely, scripts"
+    },
+    {
+     "id": "c-94c7749d",
+     "kind": "crypto",
+     "title": "Polymarket International",
+     "date": "2026-10-29",
+     "score": 0.33,
+     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
+    }
+   ]
+  },
   "n-46a6b0b0": {
    "patterns": [
     "supply-chain"
    ],
    "related": [
     {
-     "id": "n-39a2da01",
-     "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.41,
-     "why": "same pattern: Supply chain and third parties; terms: optimizely, major"
-    },
-    {
      "id": "n-853c45e9",
      "kind": "news",
      "title": "Next reports cyber incident involving third-party supplier",
      "date": "2026-11-19T14:00:00Z",
-     "score": 0.39,
+     "score": 0.4,
      "why": "same pattern: Supply chain and third parties; terms: third-party"
     },
     {
@@ -158895,7 +159201,7 @@
      "kind": "news",
      "title": "JPMorganChase reports cyberattack on third-party service providers",
      "date": "2026-11-19T14:57:11Z",
-     "score": 0.38,
+     "score": 0.39,
      "why": "same pattern: Supply chain and third parties; terms: third-party"
     },
     {
@@ -158905,6 +159211,14 @@
      "date": "2026-11-16",
      "score": 0.37,
      "why": "same pattern: Supply chain and third parties; terms: optimizely, malware, organizations"
+    },
+    {
+     "id": "n-5e3ae01b",
+     "kind": "news",
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+     "date": "2026-11-17T22:38:33Z",
+     "score": 0.35,
+     "why": "same pattern: Supply chain and third parties; terms: optimizely"
     },
     {
      "id": "c-94c7749d",
@@ -158922,18 +159236,18 @@
    ],
    "related": [
     {
-     "id": "n-e94af7ed",
-     "kind": "news",
-     "title": "Cyber Attack Hits Japan\u2019s Most Powerful Supercomputer Fugaku",
-     "date": "2026-11-20T04:47:00Z",
-     "score": 0.29,
-     "why": "terms: supercomputer, fugaku, japan"
-    },
-    {
      "id": "n-40aed259",
      "kind": "news",
      "title": "Japan takes Fugaku supercomputer offlline after cyberattack",
      "date": "2026-11-17T20:51:21Z",
+     "score": 0.29,
+     "why": "terms: supercomputer, fugaku, japan"
+    },
+    {
+     "id": "n-e94af7ed",
+     "kind": "news",
+     "title": "Cyber Attack Hits Japan\u2019s Most Powerful Supercomputer Fugaku",
+     "date": "2026-11-20T04:47:00Z",
      "score": 0.29,
      "why": "terms: supercomputer, fugaku, japan"
     }
@@ -159108,7 +159422,7 @@
      "kind": "news",
      "title": "Samsung Securities Also Hit by Hack... Personal Info of Around 8,000 Users Leaked",
      "date": "2026-11-23T01:08:51Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: info"
     },
     {
@@ -159124,7 +159438,7 @@
      "kind": "news",
      "title": "KEPCO reports another massive data breach, exposing info of 1.52 mln people",
      "date": "2026-11-22T10:37:45Z",
-     "score": 0.4,
+     "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: info, breach"
     }
    ]
@@ -159159,20 +159473,20 @@
      "why": "same pattern: Data exposure and theft; terms: exposes, information, breach"
     },
     {
+     "id": "n-dc25daad",
+     "kind": "news",
+     "title": "News - Uber data breach exposes personal data of 150,000 people",
+     "date": "2026-11-23T10:05:00Z",
+     "score": 0.43,
+     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
+    },
+    {
      "id": "n-b747cb2c",
      "kind": "news",
      "title": "Kern Medical reports unauthorized access to patient information, offering assistance",
      "date": "2026-11-17T19:04:08Z",
      "score": 0.43,
      "why": "same pattern: Data exposure and theft; terms: patient, information"
-    },
-    {
-     "id": "n-46b73041",
-     "kind": "news",
-     "title": "Travelstart data breach exposes customer details and flight ticket information",
-     "date": "2026-11-20T06:00:39Z",
-     "score": 0.43,
-     "why": "same pattern: Data exposure and theft; terms: exposes, information, breach"
     }
    ]
   },
@@ -159244,6 +159558,12 @@
     }
    ]
   },
+  "n-beb6945c": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
+  },
   "n-984080f4": {
    "patterns": [
     "ai"
@@ -159290,6 +159610,12 @@
      "why": "same pattern: AI systems and agents"
     }
    ]
+  },
+  "n-4e0a713a": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
   },
   "n-f538ad45": {
    "patterns": [
@@ -159406,6 +159732,14 @@
      "why": "same pattern: Supply chain and third parties, AI systems and agents; terms: fireworks, supply, chain"
     },
     {
+     "id": "n-68528f9f",
+     "kind": "news",
+     "title": "Hackers stole driver license data for Uber drivers from AI supplier",
+     "date": "2026-11-18T06:28:41Z",
+     "score": 0.41,
+     "why": "same pattern: Supply chain and third parties, AI systems and agents; terms: uber"
+    },
+    {
      "id": "x-49272dec",
      "kind": "x",
      "title": "Fireworks AI breach exposes information held for downstream customers",
@@ -159414,11 +159748,11 @@
      "why": "same pattern: Supply chain and third parties; terms: fireworks, exposes, breach"
     },
     {
-     "id": "n-39a2da01",
+     "id": "n-5e3ae01b",
      "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.29,
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+     "date": "2026-11-17T22:38:33Z",
+     "score": 0.27,
      "why": "same pattern: Supply chain and third parties; terms: supply, chain"
     },
     {
@@ -159428,14 +159762,6 @@
      "date": "2026-11-20T21:13:39Z",
      "score": 0.26,
      "why": "same pattern: Supply chain and third parties; terms: supply, chain"
-    },
-    {
-     "id": "n-dc25daad",
-     "kind": "news",
-     "title": "News - Uber data breach exposes personal data of 150,000 people",
-     "date": "2026-11-23T10:05:00Z",
-     "score": 0.26,
-     "why": "terms: uber, exposes, breach"
     }
    ],
    "cluster": "cl-c51e07"
@@ -159665,20 +159991,17 @@
    ],
    "cluster": "cl-e720b6"
   },
+  "n-013f7445": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
+  },
   "n-d894dfd9": {
    "patterns": [
     "unclassified"
    ],
-   "related": [
-    {
-     "id": "n-b1f96154",
-     "kind": "news",
-     "title": "Hackers steal 1 million credit cards through Windows bug",
-     "date": "2026-11-19T00:25:56Z",
-     "score": 0.22,
-     "why": "terms: cards, credit, steal"
-    }
-   ]
+   "related": []
   },
   "n-938eec0a": {
    "patterns": [
@@ -159738,7 +160061,7 @@
      "kind": "news",
      "title": "The Atlantic Federal Credit Union Data Breach",
      "date": "2026-11-20T03:59:00Z",
-     "score": 0.54,
+     "score": 0.55,
      "why": "same pattern: Data exposure and theft; terms: union, credit, breach"
     },
     {
@@ -159746,7 +160069,7 @@
      "kind": "news",
      "title": "Three major credit card companies warn of data breach",
      "date": "2026-11-19T20:04:00Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: credit, breach"
     },
     {
@@ -159836,12 +160159,6 @@
     }
    ]
   },
-  "n-beb6945c": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": []
-  },
   "n-81dbfff6": {
    "patterns": [
     "data-exposure"
@@ -159868,7 +160185,7 @@
      "kind": "news",
      "title": "Data leak at Deutsche Bank is now occupying the Bundestag",
      "date": "2026-11-24T06:49:56Z",
-     "score": 0.54,
+     "score": 0.53,
      "why": "same pattern: Data exposure and theft; terms: deutsche, bank, leak"
     },
     {
@@ -160129,6 +160446,21 @@
     }
    ]
   },
+  "n-fa96ecaf": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": [
+    {
+     "id": "n-ac437ce4",
+     "kind": "news",
+     "title": "Attackers Used Optimizely to A/B Test Malware on Top Websites",
+     "date": "2026-11-18T03:04:14Z",
+     "score": 0.27,
+     "why": "terms: optimizely, websites, malware"
+    }
+   ]
+  },
   "n-57bdd149": {
    "patterns": [
     "unclassified"
@@ -160334,68 +160666,6 @@
      "date": "2026-11-23T02:43:00Z",
      "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: medical"
-    }
-   ]
-  },
-  "n-39a2da01": {
-   "patterns": [
-    "supply-chain"
-   ],
-   "related": [
-    {
-     "id": "n-46a6b0b0",
-     "kind": "news",
-     "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
-     "date": "2026-11-17T22:34:22Z",
-     "score": 0.41,
-     "why": "same pattern: Supply chain and third parties; terms: optimizely, major"
-    },
-    {
-     "id": "c-964f412e",
-     "kind": "crypto",
-     "title": "Optimizely (OPTIMJACK)",
-     "date": "2026-11-16",
-     "score": 0.41,
-     "why": "same pattern: Supply chain and third parties; terms: optimizely, supply, chain"
-    },
-    {
-     "id": "n-b3d18dbc",
-     "kind": "news",
-     "title": "Optimizely-ing For Trouble: When A Marketing Tool Becomes A Software Supply Chain Attack",
-     "date": "2026-11-20T21:13:39Z",
-     "score": 0.38,
-     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
-    },
-    {
-     "id": "n-a2ca986e",
-     "kind": "news",
-     "title": "Next is latest major firm to be hit by a cyber-attack after criminals hack one of its suppliers",
-     "date": "2026-11-23T13:09:15Z",
-     "score": 0.37,
-     "why": "same pattern: Supply chain and third parties; terms: major"
-    },
-    {
-     "id": "c-94c7749d",
-     "kind": "crypto",
-     "title": "Polymarket International",
-     "date": "2026-10-29",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
-    }
-   ]
-  },
-  "n-8882bb1f": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": [
-    {
-     "id": "n-39a2da01",
-     "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.22,
-     "why": "terms: hits, websites, major"
     }
    ]
   },
@@ -161583,7 +161853,7 @@
      "title": "LUKSO reports theft of 1.4 million LYX through email recovery service",
      "date": "2026-11-18T07:26:38Z",
      "score": 0.43,
-     "why": "same pattern: Key and credential compromise; terms: lukso, lyx, universal"
+     "why": "same pattern: Key and credential compromise; terms: lukso, universal, lyx"
     },
     {
      "id": "c-f4f7cd25",
@@ -161935,7 +162205,7 @@
      "technique": "Unbacked Mint",
      "classification": "Token & Share Accounting",
      "score": 0.46,
-     "why": "ankrflow, wflow, flow"
+     "why": "wflow, ankrflow, flow"
     },
     {
      "name": "Balancer V1",
@@ -161967,16 +162237,16 @@
      "kind": "x",
      "title": "Optimizely Web Experimentation supply-chain compromise",
      "date": "2026-11-17T00:05:02Z",
-     "score": 0.43,
+     "score": 0.42,
      "why": "same pattern: Supply chain and third parties; terms: optimizely, experimentation, web"
     },
     {
-     "id": "n-39a2da01",
+     "id": "n-5e3ae01b",
      "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.41,
-     "why": "same pattern: Supply chain and third parties; terms: optimizely, supply, chain"
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+     "date": "2026-11-17T22:38:33Z",
+     "score": 0.42,
+     "why": "same pattern: Supply chain and third parties; terms: optimizely, scripts, supply"
     },
     {
      "id": "n-46a6b0b0",
@@ -161999,7 +162269,7 @@
      "kind": "kev",
      "title": "CVE-2026-132224 \u00b7 Optimizely Web Experimentation",
      "date": "2026-11-24",
-     "score": 0.36,
+     "score": 0.35,
      "why": "same pattern: Supply chain and third parties; terms: optimizely, experimentation, web"
     }
    ],
@@ -162923,7 +163193,7 @@
      "kind": "crypto",
      "title": "Endurance Bridge",
      "date": "2026-11-22",
-     "score": 0.34,
+     "score": 0.35,
      "why": "same pattern: Bridges and cross-chain; terms: cross-chain, bridge"
     },
     {
@@ -164325,20 +164595,20 @@
      "why": "same pattern: Supply chain and third parties; terms: third-party"
     },
     {
-     "id": "n-39a2da01",
-     "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
-    },
-    {
      "id": "n-1d92678d",
      "kind": "news",
      "title": "JPMorganChase reports cyberattack on third-party service providers",
      "date": "2026-11-19T14:57:11Z",
      "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: third-party"
+    },
+    {
+     "id": "n-5e3ae01b",
+     "kind": "news",
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+     "date": "2026-11-17T22:38:33Z",
+     "score": 0.33,
+     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
     }
    ],
    "precedents": [
@@ -164520,16 +164790,8 @@
      "kind": "crypto",
      "title": "Optimizely (OPTIMJACK)",
      "date": "2026-11-16",
-     "score": 0.36,
+     "score": 0.35,
      "why": "same pattern: Supply chain and third parties; terms: optimizely, experimentation, web"
-    },
-    {
-     "id": "n-39a2da01",
-     "kind": "news",
-     "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
-     "date": "2026-11-17T19:03:00Z",
-     "score": 0.33,
-     "why": "same pattern: Supply chain and third parties; terms: optimizely, websites"
     },
     {
      "id": "n-022366c6",
@@ -164545,6 +164807,14 @@
      "title": "UKs Next reports cyber attack on online provider, no customer data affected",
      "date": "2026-11-23T11:08:19Z",
      "score": 0.33,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: customer"
+    },
+    {
+     "id": "n-ac8525e6",
+     "kind": "news",
+     "title": "JPMorgan Chase Confirms Cyberattack on Third-Party Vendors, Customer Data Potentially Exposed",
+     "date": "2026-11-19T08:00:00Z",
+     "score": 0.32,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: customer"
     }
    ],
@@ -164720,6 +164990,7 @@
      "why": "same pattern: Injection and code execution; terms: remote, execution, code"
     }
    ],
+   "cluster": "cl-1395a0",
    "cwes": [
     {
      "id": "CWE-636",
@@ -165417,7 +165688,7 @@
      "kind": "news",
      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
      "date": "2026-11-23T13:22:20Z",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Injection and code execution; terms: injection, code, allow"
     },
     {
@@ -167082,7 +167353,7 @@
      "title": "Peninsula Energy warns of disruption after Wyoming cyber incident",
      "date": "2026-11-23T02:37:00Z",
      "score": 0.65,
-     "why": "same pattern: Disruption and outages; terms: peninsula, energy, wyoming"
+     "why": "same pattern: Disruption and outages; terms: peninsula, energy, lance"
     },
     {
      "id": "n-4cc03951",
@@ -168381,20 +168652,20 @@
      "why": "same pattern: Data exposure and theft; terms: ymca, youth, portal"
     },
     {
-     "id": "n-20db7b12",
-     "kind": "news",
-     "title": "Unauthorized access to Nitori Holdings, personal information of up to 37.62 million people leaked",
-     "date": "2026-11-23T23:05:10Z",
-     "score": 0.37,
-     "why": "same pattern: Data exposure and theft; terms: people, personal, unauthorized"
-    },
-    {
      "id": "x-4f573e56",
      "kind": "x",
      "title": "POSTECH confirms exposure across university portals",
      "date": "2026-11-19T20:33:52Z",
      "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: portal, people, confirms"
+    },
+    {
+     "id": "n-20db7b12",
+     "kind": "news",
+     "title": "Unauthorized access to Nitori Holdings, personal information of up to 37.62 million people leaked",
+     "date": "2026-11-23T23:05:10Z",
+     "score": 0.37,
+     "why": "same pattern: Data exposure and theft; terms: people, personal, unauthorized"
     },
     {
      "id": "n-302f24e9",
@@ -170901,7 +171172,7 @@
      "kind": "news",
      "title": "N-able Blames Service Disruption on Cyberattack",
      "date": "2026-11-20T09:08:35Z",
-     "score": 0.33,
+     "score": 0.32,
      "why": "same pattern: Enterprise platform zero-days; terms: cyberattack"
     },
     {
@@ -171735,7 +172006,7 @@
      "kind": "news",
      "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
      "date": "2026-11-22T09:20:36Z",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supplier, customer"
     }
    ],
@@ -173024,18 +173295,18 @@
      "why": "same pattern: Supply chain and third parties; terms: cyberattack"
     },
     {
-     "id": "n-6ba0dfe7",
-     "kind": "news",
-     "title": "J.P. Morgan says third party service providers were target of cyberattack, some customers info compromised",
-     "date": "2026-11-19T14:30:05Z",
-     "score": 0.31,
-     "why": "same pattern: Supply chain and third parties; terms: cyberattack"
-    },
-    {
      "id": "n-99047b16",
      "kind": "news",
      "title": "Europe's biggest gas supplier battling cyberattack \u2013 with no timeline for recovery",
      "date": "2026-11-19T15:37:00Z",
+     "score": 0.31,
+     "why": "same pattern: Supply chain and third parties; terms: cyberattack"
+    },
+    {
+     "id": "n-6ba0dfe7",
+     "kind": "news",
+     "title": "J.P. Morgan says third party service providers were target of cyberattack, some customers info compromised",
+     "date": "2026-11-19T14:30:05Z",
      "score": 0.31,
      "why": "same pattern: Supply chain and third parties; terms: cyberattack"
     }
@@ -173199,20 +173470,20 @@
    ],
    "related": [
     {
-     "id": "n-fbceb0c4",
-     "kind": "news",
-     "title": "USDA cyberattack knocks government systems offline: What happened and who is behind it?",
-     "date": "2026-11-20T05:29:48Z",
-     "score": 0.39,
-     "why": "same pattern: Disruption and outages; terms: offline, cyberattack"
-    },
-    {
      "id": "n-3cc898b8",
      "kind": "news",
      "title": "Court Services Offline Amid Vendor Security Investigation",
      "date": "2026-11-18T02:44:06Z",
      "score": 0.39,
      "why": "same pattern: Disruption and outages; terms: offline"
+    },
+    {
+     "id": "n-fbceb0c4",
+     "kind": "news",
+     "title": "USDA cyberattack knocks government systems offline: What happened and who is behind it?",
+     "date": "2026-11-20T05:29:48Z",
+     "score": 0.39,
+     "why": "same pattern: Disruption and outages; terms: offline, cyberattack"
     },
     {
      "id": "x-f4f958f2",
@@ -173788,7 +174059,7 @@
      "kind": "x",
      "title": "Peach Aviation discloses Cuenote vendor breach",
      "date": "2026-11-20T11:35:16Z",
-     "score": 0.36,
+     "score": 0.35,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: discloses, count, information"
     },
     {
@@ -176472,7 +176743,7 @@
      "kind": "news",
      "title": "Next reports cyber incident involving third-party supplier",
      "date": "2026-11-19T14:00:00Z",
-     "score": 0.37,
+     "score": 0.36,
      "why": "same pattern: Supply chain and third parties; terms: supplier"
     },
     {
@@ -176500,12 +176771,12 @@
      "why": "same pattern: Supply chain and third parties; terms: supplier"
     },
     {
-     "id": "n-4ebef484",
+     "id": "n-68528f9f",
      "kind": "news",
-     "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
-     "date": "2026-11-17T19:31:21Z",
-     "score": 0.26,
-     "why": "same pattern: Supply chain and third parties, Ransomware and extortion; terms: ransomware"
+     "title": "Hackers stole driver license data for Uber drivers from AI supplier",
+     "date": "2026-11-18T06:28:41Z",
+     "score": 0.27,
+     "why": "same pattern: Supply chain and third parties; terms: supplier"
     }
    ]
   },
@@ -178198,6 +178469,7 @@
      "why": "same pattern: Injection and code execution; terms: identify, exploitation"
     }
    ],
+   "cluster": "cl-1395a0",
    "analysis": {
     "summary": "The Drupal Security Team said it received a report that CVE-2026-132165 was exploited on live sites as early as November 19 at 19:00 UTC. The advisory does not quantify the affected sites or identify victims.",
     "attack_chain": [
@@ -178973,7 +179245,7 @@
      "title": "LUKSO",
      "date": "2026-11-18",
      "score": 0.43,
-     "why": "same pattern: Key and credential compromise; terms: lukso, lyx, universal"
+     "why": "same pattern: Key and credential compromise; terms: lukso, universal, lyx"
     },
     {
      "id": "n-c36db610",
@@ -180638,7 +180910,7 @@
      "kind": "crypto",
      "title": "Optimizely (OPTIMJACK)",
      "date": "2026-11-16",
-     "score": 0.43,
+     "score": 0.42,
      "why": "same pattern: Supply chain and third parties; terms: optimizely, experimentation, web"
     },
     {
@@ -180658,12 +180930,12 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supply-chain"
     },
     {
-     "id": "x-49272dec",
-     "kind": "x",
-     "title": "Fireworks AI breach exposes information held for downstream customers",
-     "date": "2026-11-10T05:29:11Z",
-     "score": 0.33,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: customers"
+     "id": "n-5e3ae01b",
+     "kind": "news",
+     "title": "Optimizely supply chain attack turns trusted scripts against 178 orgs",
+     "date": "2026-11-17T22:38:33Z",
+     "score": 0.34,
+     "why": "same pattern: Supply chain and third parties; terms: optimizely, scripts"
     }
    ],
    "cluster": "cl-da09d9",
@@ -183256,20 +183528,20 @@
      "why": "same pattern: Data exposure and theft; terms: too, partial, lost"
     },
     {
-     "id": "n-855a50ef",
-     "kind": "news",
-     "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
-     "date": "2026-11-19T12:10:54Z",
-     "score": 0.4,
-     "why": "same pattern: Data exposure and theft; terms: card, credit, numbers"
-    },
-    {
      "id": "n-3b8cf421",
      "kind": "news",
      "title": "Hackers reportedly stole customer information, including names and email addresses",
      "date": "2026-11-18T18:00:06Z",
      "score": 0.4,
      "why": "same pattern: Data exposure and theft; terms: addresses, email, names"
+    },
+    {
+     "id": "n-855a50ef",
+     "kind": "news",
+     "title": "Cleverbridge warns hackers stole credit card numbers, CVVs in data breach",
+     "date": "2026-11-19T12:10:54Z",
+     "score": 0.4,
+     "why": "same pattern: Data exposure and theft; terms: card, credit, numbers"
     },
     {
      "id": "n-a2abecb7",
@@ -183518,20 +183790,20 @@
      "why": "same pattern: Data exposure and theft; terms: birth, numbers, card"
     },
     {
+     "id": "n-e21a163e",
+     "kind": "news",
+     "title": "Data leak reveals Russian losses. Hundreds of thousands killed.",
+     "date": "2026-11-23T18:16:45Z",
+     "score": 0.33,
+     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian"
+    },
+    {
      "id": "n-fcdec304",
      "kind": "news",
      "title": "Noran Usan data breach exposes 362,000 customers' bank accounts, phone numbers",
      "date": "2026-11-18T10:23:50Z",
      "score": 0.33,
      "why": "same pattern: Data exposure and theft; terms: numbers, phone, bank"
-    },
-    {
-     "id": "n-96b26680",
-     "kind": "news",
-     "title": "Leaked data on Russian losses in Ukraine. Journalists reveal what they found in the documents",
-     "date": "2026-11-23T16:58:07Z",
-     "score": 0.32,
-     "why": "same pattern: Data exposure and theft, State-linked activity; terms: russian"
     }
    ]
   },
@@ -183893,6 +184165,40 @@
    "cohesion": 0.46
   },
   {
+   "id": "cl-537be2",
+   "size": 5,
+   "members": [
+    "n-dc6ccc5c",
+    "x-d79663ce",
+    "n-f714b482",
+    "n-398f622e",
+    "n-af72bd20"
+   ],
+   "titles": [
+    "Personal data from LaLiga's digital platform extracted in cyber attack",
+    "LaLiga confirms theft of personal data from a fan-services platform",
+    "Spanish LaLiga confirms hackers stole soccer fans\u2019 personal data",
+    "Soccer-LaLiga data extracted in cyber attack",
+    "LaLiga reports data breach affecting fan services platform"
+   ],
+   "patterns": [
+    "data-exposure"
+   ],
+   "terms": [
+    "laliga",
+    "personal",
+    "extracted",
+    "cyber",
+    "digital"
+   ],
+   "kinds": {
+    "news": 4,
+    "x": 1
+   },
+   "latest": "2026-11-23T10:17:00Z",
+   "cohesion": 0.45
+  },
+  {
    "id": "cl-4be83a",
    "size": 5,
    "members": [
@@ -183995,40 +184301,6 @@
    "cohesion": 0.44
   },
   {
-   "id": "cl-537be2",
-   "size": 5,
-   "members": [
-    "n-dc6ccc5c",
-    "x-d79663ce",
-    "n-f714b482",
-    "n-398f622e",
-    "n-af72bd20"
-   ],
-   "titles": [
-    "Personal data from LaLiga's digital platform extracted in cyber attack",
-    "LaLiga confirms theft of personal data from a fan-services platform",
-    "Spanish LaLiga confirms hackers stole soccer fans\u2019 personal data",
-    "Soccer-LaLiga data extracted in cyber attack",
-    "LaLiga reports data breach affecting fan services platform"
-   ],
-   "patterns": [
-    "data-exposure"
-   ],
-   "terms": [
-    "laliga",
-    "personal",
-    "extracted",
-    "cyber",
-    "digital"
-   ],
-   "kinds": {
-    "news": 4,
-    "x": 1
-   },
-   "latest": "2026-11-23T10:17:00Z",
-   "cohesion": 0.44
-  },
-  {
    "id": "cl-ead373",
    "size": 4,
    "members": [
@@ -184064,26 +184336,38 @@
   {
    "id": "unclassified",
    "label": "Unclassified",
-   "news": 415,
+   "news": 417,
    "crypto": 3,
    "kev": 3,
    "x": 41,
    "breach": 0,
    "usd": 225000.0,
-   "total": 462,
-   "recent7": 451
+   "total": 464,
+   "recent7": 453
   },
   {
    "id": "data-exposure",
    "label": "Data exposure and theft",
-   "news": 256,
+   "news": 258,
    "crypto": 0,
    "kev": 0,
    "x": 83,
    "breach": 8,
    "usd": 0,
-   "total": 347,
-   "recent7": 330
+   "total": 349,
+   "recent7": 331
+  },
+  {
+   "id": "supply-chain",
+   "label": "Supply chain and third parties",
+   "news": 32,
+   "crypto": 7,
+   "kev": 1,
+   "x": 31,
+   "breach": 0,
+   "usd": 13122217,
+   "total": 71,
+   "recent7": 57
   },
   {
    "id": "ai",
@@ -184096,18 +184380,6 @@
    "usd": 0,
    "total": 70,
    "recent7": 69
-  },
-  {
-   "id": "supply-chain",
-   "label": "Supply chain and third parties",
-   "news": 31,
-   "crypto": 7,
-   "kev": 1,
-   "x": 31,
-   "breach": 0,
-   "usd": 13122217,
-   "total": 70,
-   "recent7": 56
   },
   {
    "id": "ransomware",
