@@ -107,10 +107,19 @@ function track(env, ctx, req, event, props = {}, distinctId = null) {
   env.EVENTS.writeDataPoint({ indexes: [event], blobs: [event, country, ref, dev, String(props.view || props.kind || props.via || "")], doubles: [1, Number(props.qlen) || 0] });
   if (env.POSTHOG_KEY) {
     const did = distinctId || crypto.randomUUID();
+    const host = new URL(req.url).hostname;
+    const browser = /edg\//i.test(ua) ? "Edge" : /firefox\//i.test(ua) ? "Firefox" : /chrome\//i.test(ua) ? "Chrome" : /safari\//i.test(ua) ? "Safari" : "Other";
+    const os = /iphone|ipad|ios/i.test(ua) ? "iOS" : /android/i.test(ua) ? "Android" : /mac os/i.test(ua) ? "Mac OS X" : /windows/i.test(ua) ? "Windows" : /linux/i.test(ua) ? "Linux" : "Other";
+    // Real page loads (counted on the server) become PostHog pageviews, so its built-in Web analytics charts work.
+    // View changes inside the app stay as the separate "view" event, so they don't inflate pageviews.
+    const isLoad = event === "pageload";
+    const web = isLoad ? { $current_url: `https://${host}/`, $pathname: "/", $host: host,
+      $referring_domain: ref || "$direct", $referrer: ref ? "https://" + ref + "/" : "$direct" } : {};
     ctx.waitUntil(fetch("https://eu.i.posthog.com/i/v0/e/", {
       method: "POST", headers: { "content-type": "application/json" },
-      body: JSON.stringify({ api_key: env.POSTHOG_KEY, event,
-        properties: { distinct_id: did, ...props, app: "cyber", $process_person_profile: false, $geoip_disable: true, country, referrer_host: ref || null, device: dev } }),
+      body: JSON.stringify({ api_key: env.POSTHOG_KEY, event: isLoad ? "$pageview" : event,
+        properties: { distinct_id: did, ...props, ...web, app: "cyber", $process_person_profile: false, $geoip_disable: true,
+          $geoip_country_code: country, $device_type: dev[0].toUpperCase() + dev.slice(1), $browser: browser, $os: os, country, referrer_host: ref || null } }),
     }).catch(() => {}));
   }
 }
