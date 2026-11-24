@@ -157,7 +157,8 @@ FEEDS = [("The Record", "https://therecord.media/feed"),
          ("TechCrunch", "https://techcrunch.com/category/security/feed/"),
          ("SC Media", "https://www.scworld.com/rss"),
          ("Security Affairs", "https://securityaffairs.com/feed"),
-         ("CSO Online", "https://www.csoonline.com/feed/")]
+         ("CSO Online", "https://www.csoonline.com/feed/"),
+         ("Cloudflare", "https://blog.cloudflare.com/tag/security/rss/")]
 KW = re.compile(r"\b(hack|hacked|hackers?|breach|breached|breaches|ransomware|exploit|exploited|exploits|stolen|steal|leak|leaked|attack|attacks|compromise[sd]?|drain(ed)?|zero-day|0-day|extortion|intrusion|stole|outage|incident|backdoor(ed)?|malicious|trojani[sz]ed|data exposure|exposed)\b", re.I)
 news = []
 SKIP = re.compile(r"(webinar|sponsored|\bhow to\b|you.re flying blind|\bguide\b|\bpodcast\b|week in review|\bweekly recap\b|\bsponsor\b|\bpartner content\b|\bbest\b.*\btools\b)", re.I)
