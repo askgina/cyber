@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T18:16:56Z",
+ "generated": "2026-11-24T18:32:17Z",
  "queue": [
   {
    "date": "2026-11-24T08:35:58Z",
@@ -218,6 +218,18 @@
    ]
   },
   {
+   "date": "2026-11-24T10:02:30Z",
+   "title": "Keio Corporation Says Ransomware Attack May Have Leaked Data of Up to 10.63 Million People",
+   "source": "TRAICY Global",
+   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1Yc3FXNDZDWlV5ODh6WGF1NW10YkJYWEQtMXAzaFNkVnNRbGVxOEFyMlYxcnRHM3VZS2xUSFR1Rk5rbWZJdlVNZkpVN1NpZEd2N0Fvaw?oc=5",
+   "n_outlets": 5,
+   "also": [
+    "Keio Electric Railway, about 10.63 million people's personal information may be leaked; about 1.6 million passport copies lost due to ransomware; Qilin claims cyber attack | Security News Security Lab",
+    "Keio Railway hit by ransomware... Concerns about personal information of 11 million people being leaked",
+    "Keio Corporation Says Ransomware Attack May Have Leaked Data of Up to 10.63 Million People"
+   ]
+  },
+  {
    "date": "2026-11-23T05:58:49Z",
    "title": "A series of personal information leaks… Analog ‘password notebook’ catches fire in Japan",
    "source": "연합뉴스 한민족센터",
@@ -323,18 +335,6 @@
     "Allied Press hit in early morning cyber attack, papers impacted",
     "Allied Media hit by cyber attack",
     "Cyberattack on Allied Media disrupts systems, delays newspapers"
-   ]
-  },
-  {
-   "date": "2026-11-24T10:02:30Z",
-   "title": "Keio Electric Railway, 10.63 million people's personal information leaked due to ransomware attack (Jiji Press)",
-   "source": "Yahoo!ニュース",
-   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1kZmY3OFlJNm9ITERkSnYwNDEwa0VSdENQSVdwNTVSQ1dnY0ZzNWxWbXYydG91ZkcxQ09EZWlIV0hPYV9EeG5tRXVyc2oxQ01qTlpnejFwUnMzeng4TWg2dUllQksteFRkclZjZm16Z1l0eThqbFlJNmFCOF9mWkE?oc=5",
-   "n_outlets": 4,
-   "also": [
-    "Keio Electric Railway, about 10.63 million people's personal information may be leaked; about 1.6 million passport copies lost due to ransomware; Qilin claims cyber attack | Security News Security Lab",
-    "Keio Railway hit by ransomware... Concerns about personal information of 11 million people being leaked",
-    "Keio Electric Railway, information of up to 10.63 million people may be leaked due to ransomware attack"
    ]
   },
   {
@@ -616,17 +616,6 @@
    ]
   },
   {
-   "date": "2026-11-24T09:35:00Z",
-   "title": "Japan's Keio Corporation Says Data of 10.63 Million People May Have Leaked, Including 1.6 Million Passport Copies and Credit Card Numbers",
-   "source": "BigGo Finance",
-   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9rQXlPbTlRbkFGVnl1ZUtLWk5WZFFsZDhYWVNtVTRqWUFRUC1fUEtNVVFibVNJRlVsejhHQWk0dFl0QTdGZmZfN3J4RENqbWFEbzFJME5KVDdFemdxR0U2eHVUT0d3Vko5eGpkdTR3WEtZM2tPeWc?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "Keio Electric Railway's information leaked over 11 million people, including identity verification documents and credit card numbers",
-    "Keio Corporation Says Ransomware Attack May Have Leaked Data of Up to 10.63 Million People"
-   ]
-  },
-  {
    "date": "2026-11-24T10:16:10Z",
    "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
    "source": "BleepingComputer",
@@ -635,6 +624,28 @@
    "also": [
     "Cisco and OpenAI Create a \"Shield\" for Linux That Protects Against Hackers Without Rebooting the System",
     "New Shirudo tool uses AI to shield unpatched Linux systems from exploits"
+   ]
+  },
+  {
+   "date": "2026-11-24T12:28:00Z",
+   "title": "William and Kate’s home broken into in huge security breach",
+   "source": "Joe.co.uk",
+   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdUFsU0YtUFhBaWpUTTBFOThuTVlMcXJJY2tuSnJmcWc2NGdPR2VHbTFrZHZBaTQ3Ung1eGl0MmF5U1B4dWlEaU5VSUptLXpIYnhDcTVXc1pWQllRVTFET09wSXdWeW9tenJJVUx6NWdkZGtVcms2UWwzYjFLQ3J4N2lkYWFOcE1seUNTcTJSWkhUQWFR?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "Prince William and Princess Kate Face Major Security Breach as Intruders Break into Norfolk Home",
+    "Anmer Hall break-in: Everything we know after intruders target William and Kate’s home"
+   ]
+  },
+  {
+   "date": "2026-11-24T15:47:00Z",
+   "title": "Government investigates alleged eCitizen data breach",
+   "source": "The Star, Kenya",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWEd3VGhCTE5nbk5oSE4wd2RrVzR3dDhBblBvYWI1WEZhNmhUbjZPdWtVWHk2TzgwUUpLaTQ1X3pSb25XaEVmY2c1dzdjZ3B4bHhKTnFPLUpvQk9IdTMxb3NZRVY3RXpEcjR2QVBFdjVTUzEyTUM0LUxhT0dUeG9XUV9PNjJSS1FJamVBSA?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "State investigates claims of eCitizen hack targeting government identity databases",
+    "What data is at risk in the alleged 740GB eCitizen data breach?"
    ]
   },
   {
@@ -1015,6 +1026,16 @@
    "n_outlets": 2,
    "also": [
     "Can Akamai Strengthen Its Mobile Security Reach With Microsoft Tie-Up?"
+   ]
+  },
+  {
+   "date": "2026-11-23T16:16:00Z",
+   "title": "Man who committed cyber attacks on gaming companies and telecoms industry sentenced",
+   "source": "City of London Police",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSHlURDNFSXBUaWhUbGozXy1aYks4VzZOVDBuRzdoZmJyYkZWbnJ2azFZTDdhUEd5TVBERFk1V3BuZTFVMkxETUx6eWhWUmZFM0kyamxuSXdBTy1uZm52WGNWNjhRaTJULU1WQXhhb25NcGJ2Q1o0VzBjTFozT0lVMEFSZTN4aWYzbjZNU0FHOUc2VjVQYVNfUmJEY3NOUXpQbFZuMTNaR09UaFdCLWFOazg1RkV4T1pVczRYV2djRFR5MzlPQ2NZbHljNUVoRjlvZzNzNHpJcFhzVnQtUDRkdzRMTkhFMm1VMmlscUl0T0JFOHJMOUZfTkJpdmZybm40OXVwVQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Police leaked information - sentenced for data breach"
    ]
   },
   {
@@ -1578,16 +1599,6 @@
    ]
   },
   {
-   "date": "2026-11-24T12:28:00Z",
-   "title": "William and Kate’s home broken into in huge security breach",
-   "source": "Joe.co.uk",
-   "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdUFsU0YtUFhBaWpUTTBFOThuTVlMcXJJY2tuSnJmcWc2NGdPR2VHbTFrZHZBaTQ3Ung1eGl0MmF5U1B4dWlEaU5VSUptLXpIYnhDcTVXc1pWQllRVTFET09wSXdWeW9tenJJVUx6NWdkZGtVcms2UWwzYjFLQ3J4N2lkYWFOcE1seUNTcTJSWkhUQWFR?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Anmer Hall break-in: Everything we know after intruders target William and Kate’s home"
-   ]
-  },
-  {
    "date": "2026-11-24T12:48:02Z",
    "title": "GBI Traces $151,000 in Crypto Stolen in Columbia County Scam",
    "source": "Valdosta Today",
@@ -1658,16 +1669,6 @@
    ]
   },
   {
-   "date": "2026-11-24T15:47:00Z",
-   "title": "Government investigates alleged eCitizen data breach",
-   "source": "The Star, Kenya",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWEd3VGhCTE5nbk5oSE4wd2RrVzR3dDhBblBvYWI1WEZhNmhUbjZPdWtVWHk2TzgwUUpLaTQ1X3pSb25XaEVmY2c1dzdjZ3B4bHhKTnFPLUpvQk9IdTMxb3NZRVY3RXpEcjR2QVBFdjVTUzEyTUM0LUxhT0dUeG9XUV9PNjJSS1FJamVBSA?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "State investigates claims of eCitizen hack targeting government identity databases"
-   ]
-  },
-  {
    "date": "2026-11-24T17:28:26Z",
    "title": "Cyber attack on BTSO! Remarkable statement from President Matlı",
    "source": "Bursa Hakimiyet",
@@ -1698,20 +1699,14 @@
    ]
   },
   {
-   "date": "2026-11-22T18:20:00Z",
-   "title": "Together AI reports data breach with saved AI prompts",
-   "source": "AI Wereld",
-   "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBtbkprMXBLUEFIY2E3WVdndEtDeDFjSkF3MnJjbEJPUWRjUGNwVVhxeVo5R2RGS2VvVXZOVnpXQ2gwUWs3M0pIVldiLS0xN0poMmpFLXhUbXRrVU5UOVJsSE5XS3lSSU9KY1FVVkdjUHRWdUVyZENJ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T18:22:00Z",
-   "title": "The world was warned of massive cyber attacks in the coming year",
-   "source": "NEWS.ru",
-   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSzFEUWNWNkpIS01UdGNYdGhmQmJUbGtXQk9xV3pTR3VwaDVvMWlYa1ZRTm5OdGVHeWJvV1JmdXhPdHl3RElBdk1pZFRub2dQVklYdkFibWVxZjJLUmw3d3pFY01qeTVZRWl6Tzk0SGVmUndnSHA3WVhHY0YtUzVvU2txSmdBQdIBiwFBVV95cUxNZ3VaVGI0bEphQ0lXRmJmRDNBRU1MbmNlOHpCVzRfTl96VzA1cFFZQUV0aVN5Y0lnOGduLXFnUzE1d2cwMDMxc0ZZVzMwMnJ3WUx6Z1dDSjF0QlAtUUtYc3IxcFJ5V2RsSkt2cXZtYWVaV1VMR0g4M01yWHRHVzU0cHc0UUVTbHJRa0Qw?oc=5",
-   "n_outlets": 1,
-   "also": []
+   "date": "2026-11-24T17:59:00Z",
+   "title": "myColorado mobile app offline after data breach",
+   "source": "The Coloradoan",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQT2NYemhEdnhQTHhTUnhMem03cjY5R3pRX193NjlNWGJ5LWxpeGJRUEZHTURhSVJWTXY3VE1CNUN6RFZjR01wbDAxLXlPQnBKRUhraW5PZ3FKWVJqeEk0ZFl1RmZOT3NoT2dUT2xuS3h6bnFUM1hSNUdhOUVuY0ViNGlCZjBZeG1vYzhMS0kxR0ZRV1lMeU9iYXc2aWJZeWMxeTJkUHVpcTQtRDRsZlBzeHZyQQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "myColorado mobile app offline after data breach"
+   ]
   },
   {
    "date": "2026-11-22T18:58:00Z",
@@ -2006,6 +2001,14 @@
    "title": "Important Notice of Data Breach for ECM/HOME Team Clients",
    "source": "Nevada County (.gov)",
    "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE92ODAycXAyTDQ5dFp1a2Jxd1RLdzV1T0JTQklQYXE1bmNiQ0RlSERwcG5WSlpGZFJ2OWdfN1QxU1pxMTR6aU1McEYxSENKNzlOdGZjNU1UMXdITWZ1ZGM0VWZyd3VaZzk1RUE?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T23:24:55Z",
+   "title": "Ag Bull Markets Dashboard: Stocks Sink, Diesel Drops Below $6, Cattle Placements Hit a Record Low and Democrats Reach 258 House Seats",
+   "source": "Ag Bull Trading",
+   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPNWN6RUhNLVlMdlZJZ2Z0M1FocUxidnhNN1BBbFp3a05sN1p1Nmk5WGE4TlpGX3JpODJsNmVVWU5HMG56dElNWlVpTWlhSHJGWk5JZWFDSXRsNVRzTGk2Wk1RaVAtaTU1SEJDWU9zTkR1eWF4ZlFuOU81S183YzE2dmo1NER0bFdHbkZ0LXRfdW44R1dWUjBlcnlfUXpyaDNTRldqWS10MDZNRk9GR0pONkdCbU5XeThaSjVQSERMa1R3OHViMkNaZkdId2ZzV3UxTVFXOVRMUU1YREVqeHdiRHVKcDlQZmVr?oc=5",
    "n_outlets": 1,
    "also": []
   }
