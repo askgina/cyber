@@ -1,7 +1,7 @@
 (() => {
   "use strict";
   // Canonical public address of this page, used in "Ask Perplexity" prompts.
-  const PAGE_URL = "https://www.perplexity.ai/computer/a/breach-ledger-8m02Ioy7S8.RlbVLw5GwoQ";
+  const PAGE_URL = "https://breach-ledger.cool-bush-8a29.workers.dev/";
   const PPLX = "https://www.perplexity.ai/search?q=";
   const $ = (s, r = document) => r.querySelector(s);
   const el = (tag, attrs = {}, ...kids) => {
