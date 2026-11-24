@@ -17,6 +17,7 @@ STATE = ["pipeline/victims_cache.json", "pipeline/ransom_monthly.json", "pipelin
          "pipeline/first_seen.json", "pipeline/translate_cache.json", "pipeline/triage_queue.json",
          "pipeline/archive_cache", "site/data.json", "site/archive.json"]
 LOCK = threading.Lock()
+SERVER_VERSION = "2026-11-25.1 search-docs"  # bump on changes; the build response reports it
 
 
 def fetch_repo(dest):
@@ -69,11 +70,11 @@ def run(blob):
     if p.returncode != 0:
         return 500, {"ok": False, "exit": p.returncode, "log": log}
     s = subprocess.run(["python3", "pipeline/search_docs.py"], cwd=repo, capture_output=True, text=True, timeout=120)
-    if s.returncode != 0:
-        log += "\nsearch_docs failed: " + (s.stdout + s.stderr)[-1000:]
     pack_outputs(repo)
     gen = json.load(open(os.path.join(repo, "site", "data.json"))).get("generated")
-    return 200, {"ok": True, "generated": gen, "restored_files": restored, "seconds": round(time.time() - t0), "log": log[-1500:]}
+    man = os.path.join(OUT, "search", "manifest.json")
+    docs = {"exit": s.returncode, "output": (s.stdout + s.stderr)[-600:], "files": len(json.load(open(man))) if os.path.exists(man) else 0}
+    return 200, {"ok": True, "server": SERVER_VERSION, "generated": gen, "restored_files": restored, "search_docs": docs, "seconds": round(time.time() - t0), "log": log[-1500:]}
 
 
 class H(BaseHTTPRequestHandler):

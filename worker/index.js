@@ -23,7 +23,7 @@ async function runBuild(env) {
 }
 
 async function buildOnce(env) {
-  const c = getContainer(env.BUILDER, "hourly");
+  const c = getContainer(env.BUILDER, "hourly-v2");  // v2: fresh instance on the search-docs image
   const state = await env.STATE.get("state.tar.gz");
   const r = await c.fetch(new Request("http://builder/run", { method: "POST", body: state ? await state.arrayBuffer() : null }));
   const res = await r.json().catch(() => ({ ok: false, error: "bad response" }));
