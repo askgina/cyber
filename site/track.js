@@ -19,7 +19,10 @@
     const h = location.hash;
     if (h.startsWith("#e-")) {
       const id = h.slice(3);
-      track("open_record", { kind: id.split(/[-:]/)[0], id: id.slice(0, 60), from: document.body.className.replace("view-", "") });
+      const e = window.BL && window.BL.index ? window.BL.index()[id] : null;
+      // incident, crypto, kev, x, news, breach, or the archive record type (notice, sec, ransom, …)
+      const kind = (e && ((e.it && e.it._arc && e.it._arc.k) || e.kind)) || "unknown";
+      track("open_record", { kind, id: id.slice(0, 60), from: document.body.className.replace("view-", "") });
       return;
     }
     const view = VIEWS[h] || "report:" + h.slice(1);
