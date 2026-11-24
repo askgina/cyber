@@ -339,7 +339,7 @@ body:not(.view-board) #board { display: none; }
 body.view-term > header.site, body.view-term > main, body.view-term > footer.site, body.view-term > .fbar, body.view-term > #board { display: none !important; }
 body.view-board > header.site, body.view-board > main, body.view-board > footer.site, body.view-board > .fbar, body.view-board > #term { display: none !important; }
 body.view-term { overflow: hidden; }
-body.view-board { overflow: auto; }
+body.view-board { overflow: hidden; }
 .term { --line: var(--smoke); --row: #f6f6f8; height: 100vh; height: 100dvh; display: flex; flex-direction: column; font-size: .8125rem; line-height: 1.35; position: relative; }
 .term kbd { font: 500 .625rem/1 var(--mono); border: 1px solid var(--line); padding: .15em .35em; margin-right: .45em; color: var(--muted); background: var(--paper); }
 .t-top { display: flex; align-items: center; gap: 1.25rem; padding: .55rem 1rem; border-bottom: 1px solid var(--navy); }
@@ -524,7 +524,7 @@ button.t-live{background:none;border:0;padding:0;cursor:pointer;color:inherit}bu
 .p-mkt > header .t-m { white-space: nowrap; flex-shrink: 0; }
 
 /* ===== Hacks leaderboard ===== */
-.board { --line: var(--smoke); min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; font-size: .8125rem; line-height: 1.35; }
+.board { --line: var(--smoke); height: 100vh; height: 100dvh; display: flex; flex-direction: column; font-size: .8125rem; line-height: 1.35; }
 .board kbd { font: 500 .625rem/1 var(--mono); border: 1px solid var(--line); padding: .15em .35em; margin-right: .45em; color: var(--muted); background: var(--paper); }
 .board .t-top { position: sticky; top: 0; background: var(--paper); z-index: 6; }
 .b-kpi { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-bottom: 1px solid var(--line); }
@@ -543,9 +543,10 @@ button.t-live{background:none;border:0;padding:0;cursor:pointer;color:inherit}bu
 .b-panel > header { flex-wrap: wrap; }
 .b-panel > header .t-m { white-space: normal; }
 @media (max-width: 36rem) { .b-k { padding: .45rem .6rem; } .b-k b { font-size: 1.1rem; } .t-live { order: 4; } #t-checked { display: none; } .t-live + .t-cmd { flex: 1 1 0; } }
-.b-table-wrap { overflow-x: auto; }
+.b-table-wrap { flex: 1; min-height: 0; overflow: auto; scrollbar-width: thin; }
+@media (max-width: 60rem) { body.view-board { overflow: auto; } .board { height: auto; min-height: 100dvh; } .b-table-wrap { flex: none; overflow-y: visible; overflow-x: auto; } }
 .board-tbl { max-width: none; font-size: .8125rem; }
-.board-tbl thead th { background: var(--paper); white-space: nowrap; }
+.board-tbl thead th { background: var(--paper); white-space: nowrap; position: sticky; top: 0; z-index: 1; box-shadow: inset 0 -1px var(--navy); }
 .board-tbl td:nth-child(3) { white-space: nowrap; }
 .board-tbl th.num, .board-tbl td.num { padding-left: 1.1rem; }
 .board-tbl th.sortable { padding-right: .55rem; }
