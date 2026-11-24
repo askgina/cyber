@@ -4,7 +4,9 @@ import { Container, getContainer } from "@cloudflare/containers";
 
 export class Builder extends Container {
   defaultPort = 8080;
-  sleepAfter = "3m";
+  // Stop the container this long after the last request starts. A build is one long request (2-5 min),
+  // so this must comfortably exceed the longest build.
+  sleepAfter = "20m";
 }
 
 const DATA = { "/data.json": "data.json", "/archive.json": "archive.json" };

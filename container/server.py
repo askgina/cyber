@@ -20,8 +20,15 @@ LOCK = threading.Lock()
 
 
 def fetch_repo(dest):
-    with urllib.request.urlopen(REPO_TARBALL, timeout=120) as r:
-        data = r.read()
+    for attempt in range(4):  # the first outbound connection after a cold start is sometimes reset
+        try:
+            with urllib.request.urlopen(REPO_TARBALL, timeout=120) as r:
+                data = r.read()
+            break
+        except OSError:
+            if attempt == 3:
+                raise
+            time.sleep(3 * (attempt + 1))
     with tarfile.open(fileobj=io.BytesIO(data), mode="r:gz") as t:
         t.extractall(WORK, filter="data")
     top = os.path.join(WORK, "breach-ledger-main")
