@@ -20,7 +20,7 @@
     });
   })();
 </script>
-<title>Breach Ledger — A daily record of cyber incidents</title>
+<title>Cyber — A daily record of cyber incidents</title>
 <meta name="description" content="An hourly-updated register of cyber security incidents: crypto exploits, ransomware leak-site claims, exploited vulnerabilities, news and early signals from X.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,7 @@
 
 <div id="term" class="term">
   <div class="t-top">
-    <a class="t-brand" href="#terminal">Breach Ledger</a>
+    <a class="t-brand" href="#terminal">Cyber</a>
     <button type="button" id="t-live" class="t-live" title="Refresh now (u)"><i class="dot" aria-hidden="true"></i>Live <span id="t-checked" aria-live="off"></span></button>
     <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="t-q" type="search" placeholder="Filter by company, CVE, chain or pattern. Type ask … to ask Perplexity" autocomplete="off" aria-label="Filter the terminal"><kbd>/</kbd></label>
     <span class="t-clock" id="t-clock" aria-label="Current time, UTC"></span>
@@ -56,7 +56,7 @@
 
 <div id="board" class="board" aria-label="Hacks leaderboard">
   <div class="t-top">
-    <a class="t-brand" href="#leaderboard">Breach Ledger</a>
+    <a class="t-brand" href="#leaderboard">Cyber</a>
     <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="b-q" type="search" placeholder="Search hacks by name, chain or technique" autocomplete="off" aria-label="Search hacks"></label>
     <nav class="t-views" aria-label="Views"><a href="#leaderboard" aria-current="page">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report">Report</a></nav>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
@@ -79,7 +79,7 @@
 
 <div id="rep" class="rep">
   <div class="t-top">
-    <a class="t-brand" href="#report">Breach Ledger</a>
+    <a class="t-brand" href="#report">Cyber</a>
     <nav class="t-cmd r-jump" aria-label="Sections"><span aria-hidden="true">&gt;</span><a href="#glance">Today</a><a href="#live">Live</a><a href="#patterns">Patterns</a><a href="#crypto">Crypto</a><a href="#ransomware">Ransomware</a><a href="#breaches">Breaches</a><a href="#exploited">Exploited</a><a href="#method">Method</a></nav>
     <nav class="t-views" aria-label="Views"><a href="#leaderboard">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report" aria-current="page">Report</a></nav>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
@@ -88,7 +88,7 @@
 <main id="main" class="r-main">
   <section class="t-p opening" id="top" aria-labelledby="r-title">
     <header>
-      <h1 id="r-title">Breach Ledger: A Daily Record of Cyber Incidents</h1>
+      <h1 id="r-title">Cyber: A Daily Record of Cyber Incidents</h1>
       <dl class="meta t-m">
         <div><dt class="sr">Type</dt><dd>Daily register</dd></div>
         <div><dt class="sr">Cadence</dt><dd>Live, rebuilt hourly</dd></div>
@@ -218,7 +218,7 @@
 
       <section class="t-p" id="method">
         <header><h2>Method</h2><span class="t-m">Rebuilt hourly</span></header>
-        <p>Breach Ledger is rebuilt every hour from public feeds. Each run pulls the sources below, removes duplicates, recomputes the 24-hour, 7-day and 30-day counts, and republishes this page. Nothing here is a verdict: an entry records what a source claims, how far that claim has been corroborated, and where to read more.</p>
+        <p>Cyber is rebuilt every hour from public feeds. Each run pulls the sources below, removes duplicates, recomputes the 24-hour, 7-day and 30-day counts, and republishes this page. Nothing here is a verdict: an entry records what a source claims, how far that claim has been corroborated, and where to read more.</p>
         <h3 class="t-sub" id="stages">Confidence stages</h3>
         <p>Signals from X are grouped by project, not by account: every post we find about the same incident, from security firms, journalists or ordinary users of the platform, is attached to one record. Each account carries a weight for who it is (the affected party 1.0, security firms 0.7, investigators 0.65, media 0.4, aggregators 0.2, users 0.12, unverified accounts 0.08, raised when the post shows on-chain evidence). Weights combine as independent evidence, so five unrelated users reporting the same drain count for about as much as one security firm. The stage is computed from that evidence, never set by hand, and its history records which post or listing moved it.</p>
         <dl class="stages">
@@ -272,9 +272,9 @@
   <ul class="pal-list" id="pal-list" role="listbox"></ul>
   <div class="pal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move <kbd>enter</kbd> open</span><span><kbd>⌘K</kbd> toggle</span></div>
 </dialog>
-<script src="app.js?v=20261124-2000"></script>
-<script src="term.js?v=20261125-0110"></script>
+<script src="app.js?v=20261125-0200"></script>
+<script src="term.js?v=20261125-0200"></script>
 <script src="board.js?v=20261124-1700"></script>
-<script src="palette.js?v=20261125-0100"></script>
+<script src="palette.js?v=20261125-0200"></script>
 </body>
 </html>

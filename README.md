@@ -1,4 +1,4 @@
-# Breach Ledger
+# Cyber
 
 Hourly-updated register of cyber incidents (crypto exploits, ransomware leak-site claims, CISA KEV, security news, X signals).
 

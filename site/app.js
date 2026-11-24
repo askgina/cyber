@@ -21,7 +21,7 @@
   const xSearch = (q) => "https://x.com/search?f=live&q=" + encodeURIComponent(q);
 
   function askURL(text, context) {
-    const q = `${text.trim()}\n\nContext: from Breach Ledger, a daily cyber incident tracker (${PAGE_URL})${context ? `, ${context}` : ""}. Explain what happened, how credible the claim is, and summarise the latest reporting with sources.`;
+    const q = `${text.trim()}\n\nContext: from Cyber, a daily cyber incident tracker (${PAGE_URL})${context ? `, ${context}` : ""}. Explain what happened, how credible the claim is, and summarise the latest reporting with sources.`;
     return PPLX + encodeURIComponent(q);
   }
 
@@ -45,7 +45,7 @@
   function breakdownURL(title, text, id) {
     const det = DET[id] || {};
     const rel = (det.related || []).slice(0, 3).map((r) => r.title).join("; ");
-    const q = `Give a full technical breakdown of this incident: "${title}". ${(text || "").slice(0, 600)}\n\nCover: the attack chain step by step, MITRE ATT&CK techniques, indicators of compromise, who is affected, how confirmed it is, how it compares with similar incidents${rel ? ` (for example ${rel})` : ""}, and concrete mitigations for software teams. Cite sources.\n\nContext: from Breach Ledger, a daily cyber incident tracker (${PAGE_URL}#e-${id}).`;
+    const q = `Give a full technical breakdown of this incident: "${title}". ${(text || "").slice(0, 600)}\n\nCover: the attack chain step by step, MITRE ATT&CK techniques, indicators of compromise, who is affected, how confirmed it is, how it compares with similar incidents${rel ? ` (for example ${rel})` : ""}, and concrete mitigations for software teams. Cite sources.\n\nContext: from Cyber, a daily cyber incident tracker (${PAGE_URL}#e-${id}).`;
     return PPLX + encodeURIComponent(q);
   }
 
@@ -418,7 +418,7 @@
     drawPatterns(); drawClusters();
 
     $("#status").textContent = `Last build ${D.generated}.` + (D.errors.length ? ` Partial: ${D.errors.length} source${D.errors.length > 1 ? "s" : ""} unavailable this hour; previous values kept.` : " All sources responded.");
-    $("#cite-block").textContent = `Breach Ledger. "A Daily Record of Cyber Incidents."\nRetrieved ${fmtLong(D.generated)}.\n${PAGE_URL}`;
+    $("#cite-block").textContent = `Cyber. "A Daily Record of Cyber Incidents."\nRetrieved ${fmtLong(D.generated)}.\n${PAGE_URL}`;
   }
 
   function escape(s) { return String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch])); }

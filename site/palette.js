@@ -47,7 +47,7 @@
     // results by meaning (AI Search), loaded after the instant word matches; skip records already listed
     const listed = new Set(recs.map((r) => r.id));
     const sem = SEM.q === q.trim() ? SEM.rows.filter((r) => !listed.has(r.id)) : [];
-    const ask = { label: `Ask Perplexity: “${q.trim()}”`, hint: "Ask", run: () => window.open(B.askURL ? B.askURL(q.trim(), "Breach Ledger") : "https://www.perplexity.ai/search?q=" + encodeURIComponent(q.trim()), "_blank", "noopener") };
+    const ask = { label: `Ask Perplexity: “${q.trim()}”`, hint: "Ask", run: () => window.open(B.askURL ? B.askURL(q.trim(), "Cyber") : "https://www.perplexity.ai/search?q=" + encodeURIComponent(q.trim()), "_blank", "noopener") };
     return [...cmds.slice(0, 4), ...recs, ...sem, ask];
   }
 

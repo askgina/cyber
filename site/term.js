@@ -379,7 +379,7 @@
   $("#t-q").addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       const v = $("#t-q").value.trim();
-      if (/^ask\s+/i.test(v)) { window.open(B.askURL(v.replace(/^ask\s+/i, ""), "Breach Ledger terminal"), "_blank", "noopener"); return; }
+      if (/^ask\s+/i.test(v)) { window.open(B.askURL(v.replace(/^ask\s+/i, ""), "Cyber terminal"), "_blank", "noopener"); return; }
       const first = document.querySelector("#term .t-b .t-r:not(.t-hd):not([hidden])");
       first && first.click();
     }

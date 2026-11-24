@@ -1,4 +1,4 @@
-# Main flows (Breach Ledger)
+# Main flows (Cyber)
 
 ## Home: terminal
 - The default view (no hash, #terminal) is the terminal. Every view shares one top bar: Leaderboard / Terminal / Report, plus a Dark/Light toggle (light by default, choice remembered).
