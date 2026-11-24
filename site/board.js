@@ -280,7 +280,7 @@
   }
 
   function fill(D, archive) {
-    S.generated = (archive && archive.generated) || (D && D.generated) || null;
+    S.generated = (D && D.generated) || (archive && archive.generated) || null;
     S.all = buildRows(D, archive);
     S.ready = true;
     drawCats();
