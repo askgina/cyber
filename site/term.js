@@ -228,7 +228,7 @@
   const AK = { all: "All", inc: "Incidents", crypto: "Crypto", ransom: "Ransomware", breach: "Breaches", notice: "Notices", sec: "SEC 8-K", kev: "KEV" };
   const AKL = { inc: "Incident", crypto: "Crypto hack", ransom: "Ransomware claim", breach: "Breach (HIBP)", notice: "Official notice", sec: "SEC 8-K filing", kev: "Exploited CVE" };
   const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  const AR = { data: null, p: null, err: null, kind: "all", month: null, ix: {} };
+  const AR = { data: null, p: null, err: null, kind: "all", month: null, ix: {}, byKey: {} };
   function loadArchive() {
     if (AR.p) return AR.p;
     AR.p = fetch("./archive.json", { cache: "no-cache" }).then((r) => r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status))).then((j) => {
@@ -237,6 +237,7 @@
         a.m = +a.d.slice(5, 7) - 1;
         if (a.k === "inc" && a.r) { a.id = "r-" + a.r; if (a.rec) AR.ix[a.id] = { it: { ...a.rec, id: a.r, n_outlets: (a.rec.sources || []).length, latest: (a.rec.updates || []).length ? a.rec.updates[a.rec.updates.length - 1].date : a.rec.first_reported, notices: [], outlets: [], stories: [] }, kind: "inc", title: a.rec.org || a.o, text: [a.rec.title, a.rec.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: a.rec.first_reported || a.d, url: null }; }
         else { a.id = "a-" + i; AR.ix[a.id] = { it: { _arc: a, links: a.u ? [{ label: "Source", url: a.u }] : [] }, kind: "arc", label: AKL[a.k] || "Record", title: a.o, text: a.t, date: a.d, url: null }; }
+        AR.byKey["a:" + a.k + "|" + a.d + "|" + a.o] = a.id;  // stable key used by search results (⌘K)
       });
       // a crypto hack that is also a tracked incident shows once in "All" (as the incident); the build marks it "dup"
       const incById = {}; (j.items || []).forEach((a) => { if (a.k === "inc") incById[a.id] = a; });
@@ -358,6 +359,8 @@
   $("#t-ix").addEventListener("click", () => closeInsp());
   B.inspect = inspect;
   B.index = () => IX;  // every inspectable record by id; used by the ⌘K palette
+  B.loadArchive = () => loadArchive();
+  B.arcId = (key) => AR.byKey[key] || null;
 
   // ---- filter
   function applyFilter() {

@@ -42,10 +42,44 @@
     // incident title matches first, then newest
     found.sort((a, b) => (hit(b.e.title, ws) - hit(a.e.title, ws)) || String(b.e.date || "").localeCompare(String(a.e.date || "")));
     const recs = found.slice(0, 12).map(({ id, e }) => ({
-      label: e.title, hint: KIND[e.kind] || e.kind, sub: String(e.date || "").slice(0, 10), run: go("#e-" + id),
+      id, label: e.title, hint: KIND[e.kind] || e.kind, sub: String(e.date || "").slice(0, 10), run: go("#e-" + id),
     }));
+    // results by meaning (AI Search), loaded after the instant word matches; skip records already listed
+    const listed = new Set(recs.map((r) => r.id));
+    const sem = SEM.q === q.trim() ? SEM.rows.filter((r) => !listed.has(r.id)) : [];
     const ask = { label: `Ask Perplexity: “${q.trim()}”`, hint: "Ask", run: () => window.open(B.askURL ? B.askURL(q.trim(), "Breach Ledger") : "https://www.perplexity.ai/search?q=" + encodeURIComponent(q.trim()), "_blank", "noopener") };
-    return [...cmds.slice(0, 4), ...recs, ask];
+    return [...cmds.slice(0, 4), ...recs, ...sem, ask];
+  }
+
+  // ---- search by meaning: /api/search (Cloudflare AI Search) returns record headings; map them back to records
+  const SEM = { q: "", rows: [] };
+  const SEMKIND = { incident: "Incident", crypto: "Crypto", kev: "Exploited CVE", breach: "Breach", notice: "Notice", sec: "SEC 8-K", "x-signal": "X signal", news: "News" };
+  // Open a search hit: ids are page record ids (#e-<id>); "a:<type>|<date>|<name>" refs and incidents older than the
+  // live data are resolved after the archive loads.
+  async function openRecord(ref) {
+    if (!ref) return;
+    const ix = () => (B.index ? B.index() : {});
+    if (!ref.startsWith("a:") && ix()[ref]) { location.hash = "#e-" + ref; return; }
+    if (B.loadArchive) await B.loadArchive();
+    const id = ref.startsWith("a:") ? (B.arcId && B.arcId(ref)) : (ix()[ref] ? ref : null);
+    if (id) location.hash = "#e-" + id;
+  }
+  let semTimer, semCtl;
+  function semSearch(q) {
+    clearTimeout(semTimer); if (semCtl) semCtl.abort();
+    q = q.trim();
+    if (q.length < 4) { SEM.q = ""; SEM.rows = []; return; }
+    semTimer = setTimeout(async () => {
+      semCtl = new AbortController();
+      try {
+        const r = await fetch("/api/search?q=" + encodeURIComponent(q), { signal: semCtl.signal });
+        const j = await r.json();
+        if (input.value.trim() !== q) return;
+        SEM.q = q;
+        SEM.rows = (j.results || []).filter((x) => x.ref).map((x) => ({ id: x.ref, label: x.title, hint: "By meaning · " + (SEMKIND[x.kind] || x.kind), sub: x.date, run: () => openRecord(x.ref) }));
+        draw();
+      } catch (e) { /* aborted or offline: keep the word matches */ }
+    }, 300);
   }
 
   function draw() {
@@ -81,7 +115,7 @@
     }
   }, true);
   document.querySelectorAll("[data-pal-open]").forEach((b) => b.addEventListener("click", open));
-  input.addEventListener("input", () => { sel = 0; draw(); });
+  input.addEventListener("input", () => { sel = 0; draw(); semSearch(input.value); });
   input.addEventListener("keydown", (e) => {
     if (e.key === "ArrowDown") { e.preventDefault(); sel = (sel + 1) % Math.max(rows.length, 1); mark(); }
     else if (e.key === "ArrowUp") { e.preventDefault(); sel = (sel - 1 + rows.length) % Math.max(rows.length, 1); mark(); }

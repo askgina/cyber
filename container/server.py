@@ -54,6 +54,9 @@ def pack_outputs(repo):
                 t.add(os.path.join(repo, p), arcname=p)
     for name in ("data.json", "archive.json"):
         shutil.copy(os.path.join(repo, "site", name), os.path.join(OUT, name))
+    # AI Search documents (one file per type per day) and their manifest; the Worker uploads only changed ones
+    if os.path.isdir(os.path.join(repo, "search_docs")):
+        shutil.copytree(os.path.join(repo, "search_docs"), os.path.join(OUT, "search"))
 
 
 def run(blob):
@@ -65,6 +68,9 @@ def run(blob):
     log = (p.stdout + p.stderr)[-4000:]
     if p.returncode != 0:
         return 500, {"ok": False, "exit": p.returncode, "log": log}
+    s = subprocess.run(["python3", "pipeline/search_docs.py"], cwd=repo, capture_output=True, text=True, timeout=120)
+    if s.returncode != 0:
+        log += "\nsearch_docs failed: " + (s.stdout + s.stderr)[-1000:]
     pack_outputs(repo)
     gen = json.load(open(os.path.join(repo, "site", "data.json"))).get("generated")
     return 200, {"ok": True, "generated": gen, "restored_files": restored, "seconds": round(time.time() - t0), "log": log[-1500:]}
@@ -81,6 +87,15 @@ class H(BaseHTTPRequestHandler):
         self.wfile.write(body)
 
     def do_POST(self):
+        if self.path == "/out/search/bundle":  # body: JSON list of keys -> {key: text}
+            keys = json.loads(self.rfile.read(int(self.headers.get("content-length") or 0)) or b"[]")
+            base = os.path.realpath(os.path.join(OUT, "search"))
+            out = {}
+            for k in keys:
+                p = os.path.realpath(os.path.join(base, k))
+                if p.startswith(base + os.sep) and os.path.isfile(p):
+                    out[k] = open(p, encoding="utf-8").read()
+            return self._send(200, out)
         if self.path != "/run":
             return self._send(404, {"error": "not found"})
         if not LOCK.acquire(blocking=False):
@@ -99,6 +114,8 @@ class H(BaseHTTPRequestHandler):
         name = self.path.removeprefix("/out/")
         if self.path == "/health":
             return self._send(200, {"ok": True})
+        if name == "search/manifest.json" and os.path.exists(os.path.join(OUT, name)):
+            return self._send(200, open(os.path.join(OUT, name), "rb").read())
         if name not in ("data.json", "archive.json", "state.tar.gz") or not os.path.exists(os.path.join(OUT, name)):
             return self._send(404, {"error": "not found"})
         ctype = "application/gzip" if name.endswith(".gz") else "application/json"

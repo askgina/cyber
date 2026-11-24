@@ -7,3 +7,4 @@ pipeline/__pycache__/
 .env*
 !.env.example
 node_modules/
+search_docs/
