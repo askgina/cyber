@@ -580,7 +580,7 @@ body.view-report { overflow: hidden; }
 .r-main .b-kpi { grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr)); }
 .r-main .g-brief { font: 400 1.0625rem/1.5 var(--sans); max-width: 75ch; }
 #foot-asof:not(:empty)::after { content: " · "; }
-.r-main .doc > section > header { max-width: none; }
+#main .doc > section > header { max-width: none; }
 .r-main section > table.tbl { width: calc(100% - 1.5rem); }
 .r-main .cite { overflow-wrap: anywhere; }
 @media (max-width: 36rem) { .r-main table.tbl { display: block; overflow-x: auto; max-width: 100%; } }

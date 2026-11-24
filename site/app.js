@@ -703,6 +703,7 @@
         setInterval(tick, 1000);
       }
     } catch (e) {
+      console.error("data.json load/render failed", e);
       if (first) $("#abstract").textContent = "The record could not be loaded. Try again in a moment.";
     }
   }
