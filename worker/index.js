@@ -11,7 +11,18 @@ export class Builder extends Container {
 const DATA = { "/data.json": "data.json", "/archive.json": "archive.json" };
 const OUTPUTS = [["state.tar.gz", "application/gzip"], ["data.json", "application/json"], ["archive.json", "application/json"]];
 
+// After a deploy, Cloudflare swaps the Builder's new code in lazily and resets any request in flight at that moment.
+// Retry once in that case; any other failure is reported.
 async function runBuild(env) {
+  try { return await buildOnce(env); }
+  catch (e) {
+    if (!/reset because its code was updated/i.test(String(e))) throw e;
+    console.log("builder was reset by a code update; retrying once");
+    return await buildOnce(env);
+  }
+}
+
+async function buildOnce(env) {
   const c = getContainer(env.BUILDER, "hourly");
   const state = await env.STATE.get("state.tar.gz");
   const r = await c.fetch(new Request("http://builder/run", { method: "POST", body: state ? await state.arrayBuffer() : null }));

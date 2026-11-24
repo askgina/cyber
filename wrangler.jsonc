@@ -21,10 +21,13 @@
   ],
   // standard-1 (1/2 vCPU): "basic" took ~9 min per build, too close to the 15-min cron limit.
   "containers": [
-    { "class_name": "Builder", "image": "./container/Dockerfile", "max_instances": 1, "instance_type": "standard-1" }
+    // rollout_active_grace_period: a deploy waits up to 15 min for a running build before replacing the container.
+    { "class_name": "Builder", "image": "./container/Dockerfile", "max_instances": 1, "instance_type": "standard-1", "rollout_active_grace_period": 900 }
   ],
   "durable_objects": {
-    "bindings": [{ "name": "BUILDER", "class_name": "Builder" }]
+    "bindings": [{ "name": "BUILDER", "class_name": "Builder" }],
+    // A deploy waits up to 15 min for an in-flight build before updating the Builder's code (default 5 min resets it).
+    "code_update_strategy": { "mode": "deferred", "max_delay": 900 }
   },
   "migrations": [
     { "tag": "v1", "new_sqlite_classes": ["Builder"] }

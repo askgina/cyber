@@ -236,15 +236,9 @@
         if (a.k === "inc" && a.r) { a.id = "r-" + a.r; if (a.rec) AR.ix[a.id] = { it: { ...a.rec, id: a.r, n_outlets: (a.rec.sources || []).length, latest: (a.rec.updates || []).length ? a.rec.updates[a.rec.updates.length - 1].date : a.rec.first_reported, notices: [], outlets: [], stories: [] }, kind: "inc", title: a.rec.org || a.o, text: [a.rec.title, a.rec.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: a.rec.first_reported || a.d, url: null }; }
         else { a.id = "a-" + i; AR.ix[a.id] = { it: { _arc: a, links: a.u ? [{ label: "Source", url: a.u }] : [] }, kind: "arc", label: AKL[a.k] || "Record", title: a.o, text: a.t, date: a.d, url: null }; }
       });
-      // a crypto hack that is also a tracked incident shows once in "All" (as the incident)
-      const tok = (s) => (s || "").toLowerCase().replace(/[^a-z0-9 ]/g, " ").split(/\s+/).filter((w) => w.length > 2 && !/^(cex|dex|protocol|finance|exchange|the)$/.test(w))[0];
-      const incs = (j.items || []).filter((a) => a.k === "inc");
-      (j.items || []).forEach((a) => {
-        if (a.k !== "crypto") return;
-        const w = tok(a.o), t0 = Date.parse(a.d);
-        const m = w && incs.find((b) => Math.abs(Date.parse(b.d) - t0) <= 4 * 864e5 && (b.o || "").toLowerCase().includes(w));
-        if (m) { a.dup = m.id; m._s += " " + a._s; }
-      });
+      // a crypto hack that is also a tracked incident shows once in "All" (as the incident); the build marks it "dup"
+      const incById = {}; (j.items || []).forEach((a) => { if (a.k === "inc") incById[a.id] = a; });
+      (j.items || []).forEach((a) => { if (a.dup && incById[a.dup]) incById[a.dup]._s += " " + a._s; });
       AR.data = j;
       for (const [k, v] of Object.entries(AR.ix)) if (!IX[k]) IX[k] = v;  // live records keep their richer entries
       drawMkt(T.D); applyFilter();

@@ -508,10 +508,25 @@ try:
 except Exception as e:
     errors.append(f"archive: {e}")
 # Year to date is the archive: the YTD box shows the same per-type counts as the "YTD" archive tab, and its total
-# is the archive's record count. (Records can overlap across types, e.g. a curated incident and its crypto entry.)
+# equals the tab's "All" count. A crypto hack that is also a curated incident is marked "dup" and counted once
+# (as the incident), the same rule the page uses to list it once under All.
 try:
-    _arc = json.load(open(os.path.join(ROOT, "site", "archive.json")))["items"]
-    _ytd = Counter(a["k"] for a in _arc if a["d"][:4] == str(NOW.year))
+    _AP = os.path.join(ROOT, "site", "archive.json")
+    _doc = json.load(open(_AP))
+    _arc = _doc["items"]
+    _STOP = {"cex", "dex", "protocol", "finance", "exchange", "the"}
+    def _tok(s):
+        return next((w for w in re.sub(r"[^a-z0-9 ]", " ", (s or "").lower()).split() if len(w) > 2 and w not in _STOP), None)
+    _incs = [a for a in _arc if a["k"] == "inc" and a.get("r")]
+    for a in _arc:
+        a.pop("dup", None)
+        if a["k"] != "crypto": continue
+        w, t0 = _tok(a.get("o")), parse_iso(a["d"])
+        m = w and next((b for b in _incs if abs((parse_iso(b["d"]) - t0).total_seconds()) <= 4 * 86400 and w in (b.get("o") or "").lower()), None)
+        if m: a["dup"] = "r-" + m["r"]
+    json.dump(_doc, open(_AP + ".tmp", "w"), ensure_ascii=False, separators=(",", ":")); os.replace(_AP + ".tmp", _AP)
+    _yr = [a for a in _arc if a["d"][:4] == str(NOW.year)]
+    _ytd = Counter(a["k"] for a in _yr)
     _R = windows["rows"]
     _R["crypto"]["ytd"] = {**_R["crypto"].get("ytd", {}), "n": _ytd["crypto"]}
     _R["ransomware"]["ytd"] = {"n": _ytd["ransom"]}
@@ -519,7 +534,7 @@ try:
     _R["breach"]["ytd"] = {**_R["breach"].get("ytd", {}), "n": _ytd["breach"]}
     _R["incidents"]["ytd"] = {"n": _ytd["inc"]}
     _R["notices"]["ytd"] = {"n": _ytd["notice"] + _ytd["sec"]}
-    _R["archive"] = {"ytd": {"n": sum(_ytd.values())}}
+    _R["archive"] = {"ytd": {"n": sum(1 for a in _yr if not a.get("dup")), "records": len(_yr), "dup": sum(1 for a in _yr if a.get("dup"))}}
 except Exception as e:
     errors.append(f"ytd from archive: {e}")
 # older registry records are served from archive.json; data.json keeps the last 45 days
