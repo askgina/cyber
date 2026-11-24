@@ -22,8 +22,10 @@
   ];
 
   let rows = [], sel = 0;
-  const words = (q) => q.toLowerCase().split(/\s+/).filter(Boolean);
-  const hit = (text, ws) => { const t = text.toLowerCase(); return ws.every((w) => t.includes(w)); };
+  // Each query word must start a word in the text ("gina" matches "Ask Gina", not "original").
+  const words = (q) => q.toLowerCase().split(/\s+/).filter(Boolean)
+    .map((w) => new RegExp("(?:^|[^\\p{L}\\p{N}])" + w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"), "u"));
+  const hit = (text, ws) => { const t = text.toLowerCase(); return ws.every((w) => w.test(t)); };
 
   function results(q) {
     const ws = words(q);
