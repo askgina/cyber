@@ -173,9 +173,16 @@ def feed_items(root):
     for it in root.iter(A + "entry"):
         ln = next((l.get("href") for l in it.findall(A + "link") if l.get("rel") in (None, "alternate")), "")
         yield clean(it.findtext(A + "title")), ln, it.findtext(A + "updated") or it.findtext(A + "published"), it.findtext(A + "summary") or it.findtext(A + "content")
-for name, url in FEEDS:
+from concurrent.futures import ThreadPoolExecutor
+def _fetch_feed(feed):
+    try: return get(feed[1], 30), None
+    except Exception as e: return None, e
+with ThreadPoolExecutor(max_workers=8) as _pool:  # fetch in parallel, process in list order
+    _feeds = list(_pool.map(_fetch_feed, FEEDS))
+for (name, url), (raw, ferr) in zip(FEEDS, _feeds):
     try:
-        root = ET.fromstring(get(url, 30))
+        if ferr: raise ferr
+        root = ET.fromstring(raw)
         for t, l, pd, desc in feed_items(root):
             if not (t and l and pd): continue
             try: d0 = parsedate_to_datetime(pd)

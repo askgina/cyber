@@ -8,6 +8,7 @@ import re, html, math, urllib.parse, datetime as dt
 from xml.etree import ElementTree as ET
 from email.utils import parsedate_to_datetime
 from collections import Counter
+from concurrent.futures import ThreadPoolExecutor
 
 # (query, hl, gl, ceid). "when:2d" keeps results recent.
 Q_EN = [
@@ -45,12 +46,17 @@ def _clean(s):
 def collect(now, get, errors, days=3, when="2d", extra=()):
     out, seen = [], set()
     jobs = [(q, "en-US", "US", "US:en") for q in Q_EN] + Q_INTL + list(extra)
-    for q, hl, gl, ceid in jobs:
+    def fetch(job):
+        q, hl, gl, ceid = job
         url = "https://news.google.com/rss/search?" + urllib.parse.urlencode({"q": q + " when:" + when, "hl": hl, "gl": gl, "ceid": ceid})
-        try:
-            root = ET.fromstring(get(url, 25))
-        except Exception as e:
-            errors.append(f"gnews {q[:30]}: {e}")
+        try: return ET.fromstring(get(url, 25)), None
+        except Exception as e: return None, f"gnews {q[:30]}: {e}"
+    # fetch in parallel (one slow search no longer holds up the rest); process in job order so output is deterministic
+    with ThreadPoolExecutor(max_workers=8) as pool:
+        fetched = list(pool.map(fetch, jobs))
+    for (q, hl, gl, ceid), (root, err) in zip(jobs, fetched):
+        if err:
+            errors.append(err)
             continue
         for it in root.iter("item"):
             t = _clean(it.findtext("title")); link = (it.findtext("link") or "").strip(); pd = it.findtext("pubDate")
