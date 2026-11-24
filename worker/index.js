@@ -90,7 +90,7 @@ async function search(env, q) {
 }
 
 export default {
-  async fetch(req, env) {
+  async fetch(req, env, ctx) {
     const url = new URL(req.url);
     const key = DATA[url.pathname];
     if (key) {
@@ -99,10 +99,20 @@ export default {
       return new Response(o.body, { headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-cache", etag: o.httpEtag } });
     }
     if (url.pathname === "/api/search") {
-      const q = (url.searchParams.get("q") || "").trim().slice(0, 300);
+      const q = (url.searchParams.get("q") || "").trim().replace(/\s+/g, " ").slice(0, 300);
       if (q.length < 3) return Response.json({ results: [] });
-      try { return Response.json({ results: await search(env, q) }, { headers: { "cache-control": "public, max-age=300" } }); }
-      catch (e) { console.log("search failed", String(e)); return Response.json({ results: [], error: "search unavailable" }, { status: 502 }); }
+      // identical queries are served from the edge cache for 5 minutes; new ones are limited per IP (AI Search is metered)
+      const cacheKey = new Request(`${url.origin}/api/search?q=${encodeURIComponent(q.toLowerCase())}`);
+      const cached = await caches.default.match(cacheKey);
+      if (cached) return cached;
+      const ip = req.headers.get("cf-connecting-ip") || "unknown";
+      const { success } = await env.SEARCH_LIMIT.limit({ key: ip });
+      if (!success) return Response.json({ results: [], error: "too many searches, try again in a minute" }, { status: 429 });
+      try {
+        const res = Response.json({ results: await search(env, q) }, { headers: { "cache-control": "public, max-age=300" } });
+        ctx.waitUntil(caches.default.put(cacheKey, res.clone()));
+        return res;
+      } catch (e) { console.log("search failed", String(e)); return Response.json({ results: [], error: "search unavailable" }, { status: 502 }); }
     }
     // Manual run (first deploy, or to refresh now). Waits for the build, so the caller sees the result.
     if (url.pathname === "/__build") {

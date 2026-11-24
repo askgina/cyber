@@ -24,6 +24,10 @@
   "ai_search": [
     { "binding": "AI_SEARCH", "instance_name": "breach-ledger" }
   ],
+  // /api/search: 20 new (uncached) searches per minute per IP.
+  "ratelimits": [
+    { "name": "SEARCH_LIMIT", "namespace_id": "1001", "simple": { "limit": 20, "period": 60 } }
+  ],
   // standard-1 (1/2 vCPU): "basic" took ~9 min per build, too close to the 15-min cron limit.
   "containers": [
     // rollout_active_grace_period: a deploy waits up to 15 min for a running build before replacing the container.
