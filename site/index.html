@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect x=%222%22 y=%225%22 width=%2212%22 height=%226%22 fill=%22%23000443%22/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=20261124-1700">
+<link rel="stylesheet" href="styles.css?v=20261124-1930">
 </head>
 <body class="view-board">
 <a class="skip" href="#board">Skip to content</a>
@@ -59,67 +59,55 @@
   </aside>
 </div>
 
-<header class="site">
-  <a class="wordmark" href="#report" aria-label="Breach Ledger, report">Breach Ledger</a>
-  <nav aria-label="Sections">
-    <a href="#leaderboard">Leaderboard</a>
-    <a href="#terminal">Terminal</a>
-    <a href="#glance">Today</a>
-    <a href="#live">Live</a>
-    <a href="#patterns">Patterns</a>
-    <a href="#crypto">Crypto</a>
-    <a href="#ransomware">Ransomware</a>
-    <a href="#breaches">Breaches</a>
-    <a href="#exploited">Exploited</a>
-  </nav>
-</header>
+<div id="rep" class="rep">
+  <div class="t-top">
+    <a class="t-brand" href="#report">Breach Ledger</a>
+    <nav class="t-cmd r-jump" aria-label="Sections"><span aria-hidden="true">&gt;</span><a href="#glance">Today</a><a href="#live">Live</a><a href="#patterns">Patterns</a><a href="#crypto">Crypto</a><a href="#ransomware">Ransomware</a><a href="#breaches">Breaches</a><a href="#exploited">Exploited</a><a href="#method">Method</a></nav>
+    <nav class="t-views" aria-label="Views"><a href="#leaderboard">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report" aria-current="page">Report</a></nav>
+  </div>
 
-<main id="main">
-  <section class="opening" id="top">
-    <h1>Breach Ledger:<br>A Daily Record of Cyber Incidents</h1>
-    <div class="abstract-wrap">
-      <p class="abstract" id="abstract">Loading the latest record…</p>
-      <dl class="meta">
+<main id="main" class="r-main">
+  <section class="t-p opening" id="top" aria-labelledby="r-title">
+    <header>
+      <h1 id="r-title">Breach Ledger: A Daily Record of Cyber Incidents</h1>
+      <dl class="meta t-m">
         <div><dt class="sr">Type</dt><dd>Daily register</dd></div>
         <div><dt class="sr">Cadence</dt><dd>Live, rebuilt hourly</dd></div>
         <div><dt class="sr">As of</dt><dd id="asof">—</dd></div>
       </dl>
+    </header>
+    <div class="abstract-wrap">
+      <p class="abstract" id="abstract">Loading the latest record…</p>
       <div class="actions">
         <a class="btn" id="ask-today" href="#" target="_blank" rel="noopener">Ask Perplexity about today</a>
         <a class="link" href="#method">Read the method</a>
+        <span class="hint">Select any text on this page to ask Perplexity about it.</span>
       </div>
-      <p class="hint">Select any text on this page to ask Perplexity about it.</p>
     </div>
   </section>
 
-  <section class="glance" id="glance" aria-labelledby="g-title">
-    <div class="live-head">
-      <h2 class="g-title" id="g-title">Today<span id="g-date"></span></h2>
-      <p class="live-status" id="g-window">Last 24 hours</p>
-    </div>
+  <section class="t-p glance" id="glance" aria-labelledby="g-title">
+    <header><h2 class="g-title" id="g-title">Today<span id="g-date"></span></h2><span class="t-m" id="g-window">Last 24 hours</span></header>
     <p class="g-brief" id="g-brief"></p>
-    <div class="ticks g-ticks" id="g-ticks" aria-label="Today in numbers"></div>
+    <div class="b-kpi" id="g-ticks" aria-label="Today in numbers"></div>
     <div class="g-grid">
       <div>
-        <h3 class="g-h">Who was hit</h3>
+        <h3 class="t-sub">Who was hit</h3>
         <table class="tbl hit" id="g-hit"></table>
         <button type="button" class="more" id="g-more" hidden></button>
       </div>
       <div>
-        <h3 class="g-h">How they got in</h3>
+        <h3 class="t-sub">How they got in</h3>
         <div class="gp" id="g-pat"></div>
         <p class="cap">Share of today's incidents by attack pattern. Select one to filter the whole page.</p>
-        <h3 class="g-h">Named on leak sites</h3>
+        <h3 class="t-sub">Named on leak sites</h3>
         <ul class="gr" id="g-ransom"></ul>
       </div>
     </div>
   </section>
 
-  <section class="live" id="live" aria-label="Live activity">
-    <div class="live-head">
-      <h2 class="live-title"><span class="dot" id="live-dot" aria-hidden="true"></span>Live</h2>
-      <p class="live-status" id="live-status" aria-live="polite">Connecting…</p>
-    </div>
+  <section class="t-p live" id="live" aria-label="Live activity">
+    <header><h2 class="live-title"><span class="dot" id="live-dot" aria-hidden="true"></span>Live</h2><span class="t-m live-status" id="live-status" aria-live="polite">Connecting…</span></header>
     <p class="since" id="since" hidden></p>
     <div class="live-grid">
       <ol class="feed" id="feed" aria-label="Latest incidents across all sources"></ol>
@@ -130,10 +118,10 @@
     </div>
   </section>
 
-  <figure class="fig" id="fig1">
-    <div class="ticks" id="ticks" aria-label="Headline counts"></div>
+  <figure class="t-p fig" id="fig1">
+    <figcaption><span>Figure 1</span><span class="t-m">Daily counts over the last 30 days, by source. Squares are days; size is relative to each series' busiest day.</span></figcaption>
+    <div class="b-kpi" id="ticks" aria-label="Headline counts"></div>
     <div class="series" id="series"></div>
-    <figcaption><b>Figure 1:</b> Daily counts over the last 30 days, by source. Squares are days; size is relative to each series' busiest day.</figcaption>
   </figure>
 
   <div class="body">
@@ -155,18 +143,18 @@
     </aside>
 
     <article class="doc">
-      <section id="today">
-        <h2>Today</h2>
+      <section class="t-p" id="today">
+        <header><h2>Today</h2><span class="t-m">Security press · X</span></header>
         <p class="lede" id="today-lede"></p>
-        <h3 id="news">Reported</h3>
+        <h3 class="t-sub" id="news">Reported</h3>
         <div id="news-list" class="entries"></div>
-        <h3 id="x-signals">Early signals on X</h3>
+        <h3 class="t-sub" id="x-signals">Early signals on X</h3>
         <p class="lede">Claims surface on X before they reach news desks or databases. Each signal carries a confidence stage and links to the original posts; we keep extracted facts, not copies of posts.</p>
         <div id="x-list" class="entries"></div>
       </section>
 
-      <section id="patterns">
-        <h2>Attack patterns</h2>
+      <section class="t-p" id="patterns">
+        <header><h2>Attack patterns</h2><span class="t-m">Text rules · DefiLlama · CISA CWE</span></header>
         <p class="lede" id="patterns-lede"></p>
         <div class="filter">
           <label for="q" class="sr">Filter incidents</label>
@@ -174,45 +162,45 @@
           <button type="button" class="clear" id="clear-filter" hidden>Clear filter</button>
         </div>
         <table class="tbl pat" id="patterns-tbl"></table>
-        <h3 id="clusters">Related incidents</h3>
+        <h3 class="t-sub" id="clusters">Related incidents</h3>
         <p class="lede">Reports that describe the same campaign, product or technique, grouped by text and pattern similarity. Open any entry for its closest matches and, for crypto, earlier attacks that worked the same way.</p>
         <div id="cluster-list" class="entries"></div>
       </section>
 
-      <section id="crypto">
-        <h2>Crypto exploits</h2>
+      <section class="t-p" id="crypto">
+        <header><h2>Crypto exploits</h2><span class="t-m">DefiLlama · SlowMist · rekt</span></header>
         <p class="lede" id="crypto-lede"></p>
         <div id="crypto-list" class="entries"></div>
       </section>
 
-      <section id="ransomware">
-        <h2>Ransomware claims</h2>
+      <section class="t-p" id="ransomware">
+        <header><h2>Ransomware claims</h2><span class="t-m">ransomware.live</span></header>
         <p class="lede" id="ransom-lede"></p>
-        <h3 id="groups">Groups</h3>
+        <h3 class="t-sub" id="groups">Groups</h3>
         <table class="tbl" id="groups-tbl"></table>
-        <h3 id="sectors">Sectors and countries</h3>
+        <h3 class="t-sub" id="sectors">Sectors and countries</h3>
         <div class="two">
           <table class="tbl" id="sectors-tbl"></table>
           <table class="tbl" id="countries-tbl"></table>
         </div>
       </section>
 
-      <section id="breaches">
-        <h2>Data breaches</h2>
+      <section class="t-p" id="breaches">
+        <header><h2>Data breaches</h2><span class="t-m">Have I Been Pwned</span></header>
         <p class="lede" id="breach-lede"></p>
         <div id="breach-list" class="entries"></div>
       </section>
 
-      <section id="exploited">
-        <h2>Exploited vulnerabilities</h2>
+      <section class="t-p" id="exploited">
+        <header><h2>Exploited vulnerabilities</h2><span class="t-m">CISA KEV</span></header>
         <p class="lede" id="kev-lede"></p>
         <div id="kev-list" class="entries"></div>
       </section>
 
-      <section id="method">
-        <h2>Method</h2>
+      <section class="t-p" id="method">
+        <header><h2>Method</h2><span class="t-m">Rebuilt hourly</span></header>
         <p>Breach Ledger is rebuilt every hour from public feeds. Each run pulls the sources below, removes duplicates, recomputes the 24-hour, 7-day and 30-day counts, and republishes this page. Nothing here is a verdict: an entry records what a source claims, how far that claim has been corroborated, and where to read more.</p>
-        <h3 id="stages">Confidence stages</h3>
+        <h3 class="t-sub" id="stages">Confidence stages</h3>
         <p>Signals from X are grouped by project, not by account: every post we find about the same incident, from security firms, journalists or ordinary users of the platform, is attached to one record. Each account carries a weight for who it is (the affected party 1.0, security firms 0.7, investigators 0.65, media 0.4, aggregators 0.2, users 0.12, unverified accounts 0.08, raised when the post shows on-chain evidence). Weights combine as independent evidence, so five unrelated users reporting the same drain count for about as much as one security firm. The stage is computed from that evidence, never set by hand, and its history records which post or listing moved it.</p>
         <dl class="stages">
           <div><dt>Rumour</dt><dd>Only low-weight accounts so far. Shown so early user reports are not missed.</dd></div>
@@ -225,7 +213,7 @@
         <p>Claims that stay at Rumour or Claimed for 24 hours are marked unconfirmed. Coverage of small accounts is limited: posts are found through search rather than the full X firehose.</p>
         <p>Ransomware leak-site listings are claims by criminal groups and are shown only as counts by group, sector and country. Victim names are deliberately omitted.</p>
         <p>Attack patterns are assigned by rules over each entry's text, DefiLlama's classification and CISA's CWE codes. Similarity combines text overlap (TF-IDF cosine) with shared patterns and shared vendors or chains; groups are entries whose similarity clears a fixed threshold. Crypto entries are also compared with DefiLlama's full archive of past hacks. Where an incident is significant, a written analysis with the attack chain, open questions and mitigations is added and may correct the automatic tags.</p>
-        <h3 id="sources">Sources</h3>
+        <h3 class="t-sub" id="sources">Sources</h3>
         <ul class="sources">
           <li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog" target="_blank" rel="noopener">CISA Known Exploited Vulnerabilities catalog</a>, JSON feed.</li>
           <li><a href="https://www.ransomware.live" target="_blank" rel="noopener">ransomware.live</a> leak-site index, v2 API.</li>
@@ -236,36 +224,32 @@
           <li>News: <a href="https://therecord.media" target="_blank" rel="noopener">The Record</a>, <a href="https://thehackernews.com" target="_blank" rel="noopener">The Hacker News</a>, <a href="https://www.bleepingcomputer.com" target="_blank" rel="noopener">BleepingComputer</a>, <a href="https://databreaches.net" target="_blank" rel="noopener">DataBreaches.net</a>, <a href="https://krebsonsecurity.com" target="_blank" rel="noopener">Krebs on Security</a>, <a href="https://rekt.news" target="_blank" rel="noopener">rekt</a>.</li>
           <li>X: curated signals plus a live search link on every entry.</li>
         </ul>
-        <h3 id="elsewhere">Other trackers</h3>
+        <h3 class="t-sub" id="elsewhere">Other trackers</h3>
         <p>Useful alongside this page. Live threat maps show detections from one vendor's sensors rather than confirmed incidents, so they are linked here, not counted.</p>
         <ul class="sources">
           <li>Crypto: <a href="https://rekt.news/leaderboard" target="_blank" rel="noopener">rekt leaderboard</a>, <a href="https://smartcontractshacking.com/tools/web3-hacks-dashboard" target="_blank" rel="noopener">SCH Web3 hacks dashboard</a>, <a href="https://securityalliance.org" target="_blank" rel="noopener">SEAL 911</a> for active incidents.</li>
           <li>Breaches and ransomware: <a href="https://www.ransomware.live/" target="_blank" rel="noopener">ransomware.live</a>, <a href="https://axis-intelligence.com/data-breach-tracker/" target="_blank" rel="noopener">Axis Intelligence breach tracker</a>, <a href="https://cyberzenpulse.com/live" target="_blank" rel="noopener">Cyber Pulse</a>.</li>
           <li>Threat maps: <a href="https://cybermap.kaspersky.com/" target="_blank" rel="noopener">Kaspersky Cybermap</a>, <a href="https://www.fortiguard.com/threat-map" target="_blank" rel="noopener">FortiGuard</a>, <a href="https://attackmap.sonicwall.com/live-attack-map" target="_blank" rel="noopener">SonicWall</a>, and the <a href="https://www.defconlevel.com/cyber-threat-maps" target="_blank" rel="noopener">DEFCON Level index</a>.</li>
         </ul>
-        <h3 id="limits">Limitations</h3>
+        <h3 class="t-sub" id="limits">Limitations</h3>
         <p>Feeds lag reality by minutes to days, and coverage is uneven: crypto and ransomware are well instrumented; most corporate breaches surface only through disclosure. Loss figures are as reported and often revised. News items are filtered by keyword and may include advisories rather than incidents.</p>
         <p class="status" id="status"></p>
       </section>
 
-      <section id="cite">
-        <h2>Citation</h2>
+      <section class="t-p" id="cite">
+        <header><h2>Citation</h2></header>
         <pre class="cite" id="cite-block"></pre>
       </section>
     </article>
   </div>
 </main>
-
-<footer class="site">
-  <span>Breach Ledger</span>
-  <span id="foot-asof"></span>
-</footer>
-
+<div class="t-foot"><span>Select text to ask Perplexity <kbd>esc</kbd> dismiss</span><span><span id="foot-asof"></span>CISA KEV · ransomware.live · DefiLlama · SlowMist · HIBP · rekt · security press · X</span></div>
 <div class="fbar" id="fbar" hidden><span id="fbar-text"></span><button type="button" id="fbar-clear">Clear</button></div>
+</div>
 <button class="ask-pop" id="ask-pop" type="button" hidden>Ask Perplexity</button>
 
-<script src="app.js?v=20261123-1317"></script>
-<script src="term.js?v=20261124-0030"></script>
+<script src="app.js?v=20261124-1830"></script>
+<script src="term.js?v=20261124-1830"></script>
 <script src="board.js?v=20261124-1700"></script>
 </body>
 </html>

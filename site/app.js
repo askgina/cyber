@@ -309,6 +309,10 @@
     table(tbl, [{ label }, { label: "" }, { label: "7 days", num: true }], pairs.map(([n, c]) =>
       el("tr", {}, el("td", {}, n), el("td", { class: "bar" }, el("i", { style: `width:${(c / max) * 100}%` })), el("td", { class: "num" }, String(c)))));
   }
+  // KPI strip cells, same markup as the leaderboard's .b-k
+  function kpis(box, cells) {
+    box.replaceChildren(...cells.map(([n, l, s]) => el("div", { class: "b-k" }, el("span", {}, l), el("b", {}, String(n)), el("i", {}, s))));
+  }
 
   let D0 = {};
   function render(D) {
@@ -333,7 +337,7 @@
       [news48.length, "Incident reports", "security press, 48 hours"],
       [D.breaches ? compact(D.breaches.accounts_30d) : "—", "Breached accounts", `${D.breaches ? D.breaches.count_30d : 0} breaches added to HIBP, 30 days`],
     ];
-    $("#ticks").replaceChildren(...ticks.map(([n, l, s]) => el("div", { class: "tick" }, el("div", { class: "n" }, String(n)), el("div", { class: "l" }, l), el("div", { class: "s" }, s))));
+    kpis($("#ticks"), ticks);
 
     // Series
     const series = [["Ransomware", r.series], ["Crypto", c.series], ["Exploited CVEs", k.series]];
@@ -443,6 +447,7 @@
     pop.hidden = false;
   }
   document.addEventListener("mouseup", () => setTimeout(showPop, 0));
+  $("#main").addEventListener("scroll", () => { if (!pop.hidden) showPop(); }, { passive: true });
   document.addEventListener("keyup", (e) => { if (e.key === "Escape") pop.hidden = true; else if (e.shiftKey) showPop(); });
   document.addEventListener("selectionchange", () => { const s = window.getSelection(); if (!s || s.isCollapsed) setTimeout(() => { const s2 = window.getSelection(); if (!s2 || s2.isCollapsed) pop.hidden = true; }, 200); });
   let touchT; document.addEventListener("touchend", () => { clearTimeout(touchT); touchT = setTimeout(showPop, 350); });
@@ -458,7 +463,7 @@
         const id = e.target.id;
         document.querySelectorAll(".toc a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + id));
         const top = e.target.closest("section[id]")?.id || id;
-        document.querySelectorAll("header nav a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + top));
+        document.querySelectorAll(".r-jump a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + top));
       });
     }, { rootMargin: "0px 0px -75% 0px" });
     ids.forEach((id) => { const n = document.getElementById(id); n && obs.observe(n); });
@@ -585,7 +590,7 @@
       [kv.length, "Exploited flaws", "newly confirmed by CISA"],
       [nw.length, "Incident reports", "security press"],
     ];
-    $("#g-ticks").replaceChildren(...ticks.map(([n, l, s]) => el("div", { class: "tick" }, el("div", { class: "n" }, String(n)), el("div", { class: "l" }, l), el("div", { class: "s" }, s))));
+    kpis($("#g-ticks"), ticks);
 
     const tb = el("tbody");
     const LIM = 8;
@@ -675,17 +680,22 @@
       if (LIVE.prevIds) ids.forEach((id) => { if (!LIVE.prevIds.has(id)) LIVE.fresh.add(id); });
       LIVE.prevIds = ids;
       const open = [...document.querySelectorAll(".entry .more[aria-expanded='true']")].map((b) => b.closest(".entry").id.slice(2));
-      const y = window.scrollY;
+      const y = window.scrollY, my = $("#main").scrollTop;
       LIVE.extra = LIVE.extra.filter((e) => !events(D).some((x) => norm(x.title) === norm(e.title)));
       render(D);
       if (state.pattern || state.q) setFilter({});
       open.forEach((id) => { const n = document.getElementById("e-" + id); n && n._toggle(true); });
       LIVE.fresh.forEach((id) => { const n = document.getElementById("e-" + id); n && n.classList.add("is-new"); });
-      if (!first) window.scrollTo(0, y);
+      if (!first) { window.scrollTo(0, y); $("#main").scrollTop = my; }
       LIVE.checked = Date.now(); tick();
       if (first) {
         spy();
         if (/^#e-/.test(location.hash)) setTimeout(() => jumpTo(location.hash.slice(3)), 50);
+        else if (document.body.classList.contains("view-report") && location.hash.length > 1) {
+          // the section moved down as the lists above it filled in
+          const n = document.getElementById(location.hash.slice(1));
+          if (n && $("#main").contains(n)) n.scrollIntoView({ behavior: "instant" });
+        }
         pollLlama(); setTimeout(pollHIBP, 4000);
         setInterval(() => pollData(false), 5 * 60e3);
         setInterval(pollLlama, 2 * 60e3);
@@ -702,7 +712,8 @@
     $("#fbar-clear").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
 
   window.BL = Object.assign(window.BL || {}, {
-    get D() { return D0; }, get DET() { return DET; }, LABEL, KIND, LIVE, ROLE, STAGES,
+    // null until data.json has loaded: board.js renders straight away only when B.D is set
+    get D() { return D0.generated ? D0 : null; }, get DET() { return DET; }, LABEL, KIND, LIVE, ROLE, STAGES,
     detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, xSearch, escape, hoursAgo,
     setFilter, jumpTo: (id) => jumpTo(id), events: () => [...LIVE.extra, ...events(D0)],
     pollAll: () => { pollLlama(); pollHIBP(); pollData(false); },

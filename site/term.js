@@ -13,6 +13,7 @@
   function setView(v) {
     document.body.classList.toggle("view-term", v === "term");
     document.body.classList.toggle("view-board", v === "board");
+    document.body.classList.toggle("view-report", v === "report");
     if (v === "term") closeInsp(true);
     if (v !== "board" && B.closeBoard) B.closeBoard();
   }
@@ -29,7 +30,8 @@
     }
     setView("report");
     const n = document.getElementById(h.slice(1));
-    if (n) setTimeout(() => n.scrollIntoView(), 0); else if (h === "#report") window.scrollTo(0, 0);
+    // the report scrolls inside #main on wide screens and as a page on narrow ones
+    if (n) setTimeout(() => n.scrollIntoView(), 0); else if (h === "#report") { $("#main").scrollTop = 0; window.scrollTo(0, 0); }
   }
   window.addEventListener("hashchange", route);
 
