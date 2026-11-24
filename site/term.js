@@ -19,8 +19,8 @@
   }
   function route() {
     const h = location.hash;
-    if (!h || h === "#" || h === "#leaderboard" || h === "#top") return setView("board");
-    if (h === "#terminal") return setView("term");
+    if (!h || h === "#" || h === "#terminal") return setView("term");
+    if (h === "#leaderboard" || h === "#top") return setView("board");
     if (/^#e-/.test(h)) {
       const id = h.slice(3);
       if (document.body.classList.contains("view-board") && B.inspectBoard && B.inspectBoard(id)) return;
@@ -360,6 +360,7 @@
   }
   $("#t-ix").addEventListener("click", () => closeInsp());
   B.inspect = inspect;
+  B.index = () => IX;  // every inspectable record by id; used by the ⌘K palette
 
   // ---- filter
   function applyFilter() {

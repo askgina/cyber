@@ -1,13 +1,17 @@
 # Main flows (Breach Ledger)
 
-## Homepage leaderboard
-- The default view (no hash, #leaderboard, #top) is a CoinGecko-style ranked table of year-to-date crypto hacks.
+## Home: terminal
+- The default view (no hash, #terminal) is the terminal. Every view shares one top bar: Leaderboard / Terminal / Report, plus a Dark/Light toggle (light by default, choice remembered).
+- ⌘K (Ctrl+K off Mac) opens the command palette in any view: jump to a view or report section, switch theme, refresh data, search every incident, or ask Perplexity about the query.
+
+## Leaderboard (#leaderboard, #top)
+- CoinGecko-style ranked table of year-to-date crypto hacks.
 - Default sort is total amount lost, descending. Click Category or Amount lost (and Name or Date) to sort; click again to reverse.
 - Category chips filter the table; the search box filters by name, chain or technique.
-- Click a row to open a detail panel. Terminal and Report stay available in the header.
+- Click a row to open a detail panel.
 
-## Header nav
-- Click Today / Crypto / Ransomware / Exploited / Method -> page scrolls to section; nav item highlights.
+## Report section links
+- Click Today / Live / Patterns / Crypto / Ransomware / Breaches / Exploited / Method in the report's top bar -> the report scrolls to that section; the link highlights.
 
 ## Summary + figure
 - Abstract shows counts; 4 tick numbers; 3 rows of 30 day-squares.

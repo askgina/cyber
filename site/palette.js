@@ -1,0 +1,91 @@
+// ⌘K / Ctrl+K command palette: jump to views and report sections, switch theme, refresh,
+// search every incident the terminal knows about, or ask Perplexity about the query.
+(() => {
+  "use strict";
+  const B = window.BL || (window.BL = {});
+  const dlg = document.getElementById("pal");
+  const input = document.getElementById("pal-q");
+  const list = document.getElementById("pal-list");
+  if (!dlg || !input || !list) return;
+
+  const KIND = { news: "News", crypto: "Crypto", kev: "Exploited CVE", x: "X signal", inc: "Incident", breach: "Breach" };
+  const SECTIONS = [["glance", "Today"], ["live", "Live"], ["patterns", "Attack patterns"], ["crypto", "Crypto exploits"],
+    ["ransomware", "Ransomware claims"], ["breaches", "Data breaches"], ["exploited", "Exploited vulnerabilities"], ["method", "Method"]];
+  const go = (hash) => () => { location.hash = hash; };
+  const COMMANDS = [
+    { label: "Leaderboard", hint: "View", run: go("#leaderboard") },
+    { label: "Terminal", hint: "View", run: go("#terminal") },
+    { label: "Report", hint: "View", run: go("#report") },
+    ...SECTIONS.map(([id, label]) => ({ label: `Report: ${label}`, hint: "Section", run: go("#" + id) })),
+    { label: "Switch to dark mode", alt: "Switch to light mode", hint: "Theme", run: () => document.querySelector(".t-theme")?.click() },
+    { label: "Refresh data now", hint: "Data", run: () => B.pollAll && B.pollAll() },
+  ];
+
+  let rows = [], sel = 0;
+  const words = (q) => q.toLowerCase().split(/\s+/).filter(Boolean);
+  const hit = (text, ws) => { const t = text.toLowerCase(); return ws.every((w) => t.includes(w)); };
+
+  function results(q) {
+    const ws = words(q);
+    const dark = document.documentElement.dataset.theme === "dark";
+    const cmds = COMMANDS.map((c) => ({ ...c, label: dark && c.alt ? c.alt : c.label }))
+      .filter((c) => !ws.length || hit(c.label + " " + c.hint, ws));
+    if (!ws.length) return cmds;
+    const ix = B.index ? B.index() : {};
+    const found = [];
+    for (const [id, e] of Object.entries(ix)) {
+      if (!e || !e.title) continue;
+      if (hit([e.title, e.text || "", e.search || ""].join(" "), ws)) found.push({ id, e });
+    }
+    // incident title matches first, then newest
+    found.sort((a, b) => (hit(b.e.title, ws) - hit(a.e.title, ws)) || String(b.e.date || "").localeCompare(String(a.e.date || "")));
+    const recs = found.slice(0, 12).map(({ id, e }) => ({
+      label: e.title, hint: KIND[e.kind] || e.kind, sub: String(e.date || "").slice(0, 10), run: go("#e-" + id),
+    }));
+    const ask = { label: `Ask Perplexity: “${q.trim()}”`, hint: "Ask", run: () => window.open(B.askURL ? B.askURL(q.trim(), "Breach Ledger") : "https://www.perplexity.ai/search?q=" + encodeURIComponent(q.trim()), "_blank", "noopener") };
+    return [...cmds.slice(0, 4), ...recs, ask];
+  }
+
+  function draw() {
+    rows = results(input.value);
+    sel = Math.min(sel, Math.max(rows.length - 1, 0));
+    list.replaceChildren(...rows.map((r, i) => {
+      const li = document.createElement("li");
+      li.id = "pal-o" + i; li.setAttribute("role", "option"); li.setAttribute("aria-selected", String(i === sel));
+      const main = document.createElement("span"); main.className = "pal-l"; main.textContent = r.label;
+      const meta = document.createElement("span"); meta.className = "pal-h"; meta.textContent = r.sub ? `${r.hint} · ${r.sub}` : r.hint;
+      li.append(main, meta);
+      li.addEventListener("mousemove", () => { if (sel !== i) { sel = i; mark(); } });
+      li.addEventListener("click", () => choose(i));
+      return li;
+    }));
+    if (!rows.length) { const li = document.createElement("li"); li.className = "pal-none"; li.textContent = "No matches"; list.append(li); }
+    mark();
+  }
+  function mark() {
+    [...list.children].forEach((li, i) => li.setAttribute("aria-selected", String(i === sel)));
+    input.setAttribute("aria-activedescendant", rows.length ? "pal-o" + sel : "");
+    list.children[sel]?.scrollIntoView({ block: "nearest" });
+  }
+  function choose(i) { const r = rows[i]; if (!r) return; close(); r.run(); }
+
+  function open() { if (dlg.open) return; input.value = ""; sel = 0; draw(); dlg.showModal(); input.focus(); }
+  function close() { if (dlg.open) dlg.close(); }
+
+  document.addEventListener("keydown", (e) => {
+    if ((e.metaKey || e.ctrlKey) && !e.altKey && !e.shiftKey && e.key.toLowerCase() === "k") {
+      e.preventDefault(); e.stopPropagation();
+      dlg.open ? close() : open();
+    }
+  }, true);
+  document.querySelectorAll("[data-pal-open]").forEach((b) => b.addEventListener("click", open));
+  input.addEventListener("input", () => { sel = 0; draw(); });
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowDown") { e.preventDefault(); sel = (sel + 1) % Math.max(rows.length, 1); mark(); }
+    else if (e.key === "ArrowUp") { e.preventDefault(); sel = (sel - 1 + rows.length) % Math.max(rows.length, 1); mark(); }
+    else if (e.key === "Enter") { e.preventDefault(); choose(sel); }
+  });
+  dlg.addEventListener("click", (e) => { if (e.target === dlg) close(); });  // click on the backdrop
+  // Hints say ⌘K; other platforms use Ctrl+K.
+  if (!/Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent)) document.querySelectorAll("kbd").forEach((k) => { if (k.textContent === "⌘K") k.textContent = "Ctrl K"; });
+})();
