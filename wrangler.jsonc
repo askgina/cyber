@@ -19,8 +19,9 @@
   "r2_buckets": [
     { "binding": "STATE", "bucket_name": "breach-ledger-state" }
   ],
+  // standard-1 (1/2 vCPU): "basic" took ~9 min per build, too close to the 15-min cron limit.
   "containers": [
-    { "class_name": "Builder", "image": "./container/Dockerfile", "max_instances": 1, "instance_type": "basic" }
+    { "class_name": "Builder", "image": "./container/Dockerfile", "max_instances": 1, "instance_type": "standard-1" }
   ],
   "durable_objects": {
     "bindings": [{ "name": "BUILDER", "class_name": "Builder" }]
