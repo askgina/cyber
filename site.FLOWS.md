@@ -1,5 +1,11 @@
 # Main flows (Breach Ledger)
 
+## Homepage leaderboard
+- The default view (no hash, #leaderboard, #top) is a CoinGecko-style ranked table of year-to-date crypto hacks.
+- Default sort is total amount lost, descending. Click Category or Amount lost (and Name or Date) to sort; click again to reverse.
+- Category chips filter the table; the search box filters by name, chain or technique.
+- Click a row to open a detail panel. Terminal and Report stay available in the header.
+
 ## Header nav
 - Click Today / Crypto / Ransomware / Exploited / Method -> page scrolls to section; nav item highlights.
 

@@ -9,16 +9,22 @@
   const hm = (s) => new Date(s.length === 10 ? s + "T12:00:00Z" : s).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "UTC" });
   const when = (s) => s.length === 10 ? B.fmtDate(s) : (B.hoursAgo(s) < 24 ? hm(s) : B.fmtDate(s));
 
-  // ---- routing between terminal and report
+  // ---- routing between leaderboard, terminal and report
   function setView(v) {
     document.body.classList.toggle("view-term", v === "term");
+    document.body.classList.toggle("view-board", v === "board");
     if (v === "term") closeInsp(true);
+    if (v !== "board" && B.closeBoard) B.closeBoard();
   }
   function route() {
     const h = location.hash;
-    if (!h || h === "#terminal" || h === "#top") return setView("term");
+    if (!h || h === "#" || h === "#leaderboard" || h === "#top") return setView("board");
+    if (h === "#terminal") return setView("term");
     if (/^#e-/.test(h)) {
-      if (document.body.classList.contains("view-term")) { setView("term"); T.D && inspect(h.slice(3)); }
+      const id = h.slice(3);
+      if (document.body.classList.contains("view-board") && B.inspectBoard && B.inspectBoard(id)) return;
+      setView("term");
+      T.D && inspect(id);
       return;
     }
     setView("report");
@@ -424,5 +430,4 @@
   };
 
   route();
-  if (/^#e-/.test(location.hash) && !document.body.classList.contains("view-term")) setView("term");
 })();
