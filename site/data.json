@@ -1,6 +1,22 @@
 {
- "generated": "2026-11-24T18:56:58Z",
+ "generated": "2026-11-24T19:00:57Z",
  "errors": [
+  "gnews hacked: HTTP Error 429: Too Many Requests",
+  "gnews \"security incident\": HTTP Error 429: Too Many Requests",
+  "gnews \"systems offline\" cyber: HTTP Error 429: Too Many Requests",
+  "gnews \"personal information\" exposed: HTTP Error 429: Too Many Requests",
+  "gnews \"zero-day\" exploited: HTTP Error 429: Too Many Requests",
+  "gnews cyberattack company: HTTP Error 429: Too Many Requests",
+  "gnews \"ransomware\" claims: HTTP Error 429: Too Many Requests",
+  "gnews cyberattack \"school district\" : HTTP Error 429: Too Many Requests",
+  "gnews Datenleck OR Datenleak: HTTP Error 429: Too Many Requests",
+  "gnews cyberattaque OR \"fuite de donn: HTTP Error 429: Too Many Requests",
+  "gnews \"attacco hacker\" OR \"violazion: HTTP Error 429: Too Many Requests",
+  "gnews \ud574\ud0b9 OR \uac1c\uc778\uc815\ubcf4 \uc720\ucd9c: HTTP Error 429: Too Many Requests",
+  "gnews cyberattack OR \"data breach\": HTTP Error 429: Too Many Requests",
+  "gnews hack OR datalek OR cyberaanval: HTTP Error 429: Too Many Requests",
+  "gnews \u9ed1\u5ba2 OR \u6570\u636e\u6cc4\u9732 OR \u7f51\u7edc\u653b\u51fb: HTTP Error 429: Too Many Requests",
+  "gnews \"\u043a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a\u0430\" OR \"\u0443\u0442\u0435\u0447\u043a\u0430 \u0434\u0430\u043d\u043d\u044b\u0445: HTTP Error 429: Too Many Requests",
   "official maine: public database offline per Maine AG notice (HTTP Error 404: 404)"
  ],
  "kev": {
@@ -1323,8 +1339,8 @@
  },
  "ransomware": {
   "count_24h": 18,
-  "count_7d": 293,
-  "count_30d": 1260,
+  "count_7d": 294,
+  "count_30d": 1261,
   "groups_7d": [
    [
     "N0n",
@@ -1428,6 +1444,15 @@
    ]
   ],
   "items_24h": [
+   {
+    "date": "2026-11-24T14:57:06Z",
+    "victim": "G... R... S... D...",
+    "group": "SilentRansomGroup",
+    "sector": "Not Found",
+    "country": "??",
+    "url": "https://www.ransomware.live/id/Ry4uLiBSLi4uIFMuLi4gRC4uLkBTaWxlbnRSYW5zb21Hcm91cA==",
+    "desc": "Redacted entry - full company name pending disclosure (FULL DATA TIMER active)."
+   },
    {
     "date": "2026-11-24T14:51:33Z",
     "victim": "Rilievi Group",
@@ -1580,15 +1605,6 @@
     "country": "US",
     "url": "https://www.ransomware.live/id/R29sZGVuIFN0YXRlIEJhcHRpc3QgQ29sbGVnZUBEYXJrIFByb2plY3Q=",
     "desc": "About Golden State Baptist College Golden State Baptist College, a ministry of North Valley Baptist Church in Santa Clara, California, offers a range of academic programs including majors and a master"
-   },
-   {
-    "date": "2026-11-23T19:00:23Z",
-    "victim": "Quetico LLC",
-    "group": "aurora",
-    "sector": "Not Found",
-    "country": "??",
-    "url": "https://www.ransomware.live/id/UXVldGljbyBMTENAYXVyb3Jh",
-    "desc": "[logistics] Quetico LLC \u2014 a mid-market 3PL and apparel distribution company serving Nike, Adidas, Walmart, and Costco.\n\nThe exposed material includes:\n\n<redacted>\n305+ plaintext Social Security Number"
    }
   ],
   "coverage_days": 29.8,
@@ -1711,7 +1727,7 @@
    ],
    [
     "2026-11-24",
-    13
+    14
    ]
   ]
  },
@@ -18283,13 +18299,20 @@
      "title": "Iran-linked hackers posed as US expert to target Australian broadcaster"
     },
     {
+     "source": "NIVEL4",
+     "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBxdTZBR05lbEFBaWRnTV9ES2FZbEl6VUlZUlJiajhaUVptX0NNZnJiN2M4anRhWTQtVTlqbmN0MHdIWVRVSV9HeXRGXzVYam9KM2J4ZkM2dEhnRS1fY3lsS1hWZ2R4dU4yUWxpbHpOSGZIRGI2MGJiRFJzYkV0Z3c?oc=5",
+     "date": "2026-11-24T14:52:14Z",
+     "title": "Australian supermarket giant investigates cyberattack",
+     "title_orig": "Gigante de supermercados australiano investiga ciberataque"
+    },
+    {
      "source": "www.rivieramm.com",
      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPVGFDNGVJMlE5alRLcXNNbVNXeFBYWWVsa0ZzM3Q1b1UzOWh4YU5iSV80eEUxMldTRnNmd1d1bERNejU5VllkdTY5YkhNNEFydERsV0lzcjdSTXROUXg2WmlIaHpqNEtUeGQteWdpSjQzSFFEVnVWMUw1dkNWQ1hTeGhGRzE3X2hqSFIyN3ppbGx3WEpSVEhKSnJ6M3g5VmQwQWltUmsxZjdrYXFINmxQdDVmTmRUeE1COHh3T09PNWVoajJLbkpaR2hJZ2NfdkdyVGdhVmRQOUVWa2wxYTNR?oc=5",
      "date": "2026-11-24T18:27:08Z",
      "title": "US reportedly investigating claims of suspected Iran-linked cyberattacks targeting up to 50 ships"
     }
    ],
-   "n_outlets": 2,
+   "n_outlets": 3,
    "eid": "n-893413c8"
   },
   {
@@ -28889,6 +28912,74 @@
    "eid": "n-365439ac"
   },
   {
+   "date": "2026-11-19T22:53:03Z",
+   "source": "Toronto Star",
+   "title": "IIHF website still down after cyberattack put pro-Russia message on homepage",
+   "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOS1U3bHd2UWs1RlFNTS16WUZCSXptM2Z0WEdwNzZ4RXctczlxbkhHa1BBQjdya0Q4ejh4T2syTDNOY24zLUlvSTc1Mk16THpxLXgyemt4T2g1QU41cWp3NjJzOGV2YUVvVjQ0dDExT3p4aDNodVFYdmZqMW9jaGZzRkU5YTRBN2ZfVEo0TTIxbnZzNHlfRnpreWtSWUxCTThrUGRXb0ZVVzE1WUgwQ0ozVk5EWU1lV0RrRV9iQW1jUGt0cENwcmdCT1pfak5jOEpNdzB4bFZQaFlLTkNXbnFvNkFrUWRJaWRuTm9IdERxZDh1ZjJOdjV3?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-19T23:53:00Z",
+   "outlets": [
+    {
+     "source": "Toronto Star",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOS1U3bHd2UWs1RlFNTS16WUZCSXptM2Z0WEdwNzZ4RXctczlxbkhHa1BBQjdya0Q4ejh4T2syTDNOY24zLUlvSTc1Mk16THpxLXgyemt4T2g1QU41cWp3NjJzOGV2YUVvVjQ0dDExT3p4aDNodVFYdmZqMW9jaGZzRkU5YTRBN2ZfVEo0TTIxbnZzNHlfRnpreWtSWUxCTThrUGRXb0ZVVzE1WUgwQ0ozVk5EWU1lV0RrRV9iQW1jUGt0cENwcmdCT1pfak5jOEpNdzB4bFZQaFlLTkNXbnFvNkFrUWRJaWRuTm9IdERxZDh1ZjJOdjV3?oc=5",
+     "date": "2026-11-19T22:53:03Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "Winnipeg Free Press",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNakg4b2M4TDdWUjJGVlBsRlo0aWJkdWltMlJaUEk0UldGdWhOUmMyNEhtYWh2X095cC1ia1c0d3lBVVhuRGI0WmNsYmdpX1NJVmhBc2ttb1pZUTNObnpVcWFGN3dhcElXTUQwWTFJN29ycFBQRURJbHEyZWY3QUNJV0tvQXl1Q3FMbkl3bjkwRmtOQkRRaFJvRS1KQjVIZHl5eW5FYzJSbW9aREJoVFZaSy1kSzRUSWlwb1hQMzlPYjNjODVxbjVTdXhPTmdUTXM?oc=5",
+     "date": "2026-11-19T22:53:03Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "The Spec",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNUmMtbDMzd0RvRmZDNjh5SWJWUFlfX3JKMDZoS19OWDRibmtzZTJrNUVwa3dSV3FEQlgwMnVSanhZNlJkY3dlSUVuTDNFd3A1SjNoR3A0Qjh5M0tMVW05UDM0Vmd2ZjJGVEY0VGpNQ3N2V0NfMHlqQWo3U0g4bmJtcURnaVVPYlVtOXJqZURxUWM4MjZqZHdPVVJFVDNyYjhTMjR2R2ZRNGNHelVxOXVGclFrT0s5TGxPdVhCT2xHODlhdnpwTVZFTkVpUFhwSVNiXzVnRG5QVVNRU2pQMjI1ME15MlFxMldURGVJNTVDdldtSGVZTGVF?oc=5",
+     "date": "2026-11-19T22:53:03Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "thecanadianpressnews.ca",
+     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPSUdCUFZUYjlWRkxpY3BQT2ZZamYzS3UwQ2cwaHJEeTRLYy1YYVU2THhlSE1YdS1oaExNd3dwTHc1N3kyVS1QRG9oNEpzclBfVkNVaHJaMUZaSUpnNG1HbVpnRUc0bmpENXptS1p2ZDI5QUx5bV85a00yVk5ZLWNWTUFOOE8tU0UzbGd2emp3Y0pCa2VZRmZSYTcwWC01UTlNbDVRS0FTd1JpQlBEOFdCaHVsT1BIemJRa1laS0lYSmVfVWJsMXdBdE5KYTFGTWRBYW8wU09lOXhSUUU1MkFqUVQ1Q19OekQ1aFEzUWdXV1p4YjRtRGhxSmFyR3U4dw?oc=5",
+     "date": "2026-11-19T22:53:03Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "CTV News",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPczF2RXBtVF8yY0VDV1Z5QnVFRzRBOS1ycHFDUUpSaUc3Yy1sR3o3RlVGRG11RXF4TXVTamczbmVKQkQxbXVCcVhCZlVzMHUwUnhPNmdPeHJwaG5qWlFvOWJQNzd3WHJJN3EycGZnVGNsTl9fZU5xVU9ZV0tkaFh3d0w3bllYdC1tTXlGY05zb2dUUWVISkhRZkhna2I5TzNfU05VSkstNENXSWR0V2tmMVFCZkd4UQ?oc=5",
+     "date": "2026-11-19T22:56:43Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "Sportsnet.ca",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTm9zUS1KX3RTNUhfY01UZldTQVFmcElaOG12N01ybVJrTS1oai1Ia01LSEZHUjZnb2pJTVJ0ZTlQM1VqcFBINmEzRDJrZDZIZ3g5dzNGX3RzbW5GMXZlakhIZ093YWpZSkh3d3VjQUFITHpqMlZIaGZkb3hEWnFsZjY1LXBGRVA1WTlUOXp5OU9WRU5paEE4R2pWbTc3ZUFQQWxzWWtnQTlRcjV1RC1kb2VMT1BhT3FF?oc=5",
+     "date": "2026-11-19T23:07:00Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "NanaimoNewsNOW",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORFhScFRBNDlNdEFwOE8wenBSZ2tQdTNQeVJrT3B2MUw5TVlxTnNpdlFzT0x1QlRLbFNiemJMOUM0cnFRQXVzRm84dHdoTHl0YUlpNlBwczNsRWh5Q0ZpM2lCNVVCbG9uN3ZfenRwSE1QT1NWckd3RDdMb09lai00RlU4Y0hlM3ZpZF90WTh0a0dSVmhIZjlDMWFpcDkyUFNEQVpBbFY5bVhTWWVCNld0bEpRN0dIdw?oc=5",
+     "date": "2026-11-19T23:08:49Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "CFJC Today Kamloops",
+     "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPMHZLOW5FRW43UDdhMDNlQm9mOHA2OWJpb29YVWFOeTcxV1k3OUFhRU1CMkFLVjlURmxSbGQtcWNiTy00M2dIZUYyNi1PRHdPV1ZNNmppSk5qT1M5eWQ0Mm5nMDlRTkhGelNFd1J1Q3JjZ1IybVZkTXhJVnpfejBkWGNmWXhORkc1MDY2NlVvR1lyZk1zT2V5X1RnWUNxeG9DZVB5ekxaa3dYVDVkQmow?oc=5",
+     "date": "2026-11-19T23:13:46Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    },
+    {
+     "source": "Castanet",
+     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNRmZBajV2bUtEYVdtWWFESkRPTUp1YmdPY1REMlRFYUxSQUNuSy1BNWNNY3lrWGJ6akVINTllSGpOUUxtTUVyTUJlLTZzNlFtMWxZcWxzS1Q1b1JpSE9JUjlNOVcxbjFpc1hBUTdFWWtoMEtobEJSTHNzY3FwdnkxRkNaQ0htWEdZT2g3UlNRTmMxYmdmRm1nTEttbkhhOVQ4V1NQNkFUSzhNZXhsSDZybVRBMlAyUXZhazU1Wg?oc=5",
+     "date": "2026-11-19T23:53:00Z",
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
+    }
+   ],
+   "n_outlets": 9,
+   "eid": "n-159d96bf"
+  },
+  {
    "date": "2026-11-19T22:50:00Z",
    "source": "iXBT.games",
    "title": "Cyberleek hackers published a Grand Theft Auto VI build",
@@ -31558,12 +31649,10 @@
   },
   {
    "date": "2026-11-19T14:00:00Z",
-   "source": "London South East",
-   "title": "Next reports cyber attack at third-party supplier but no personal data",
-   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQjFwNWxXQW5pT0dtenVaTHFFdE1fazU1aXJvNkl3UzZRbXpZdGxnRUV3TXB5U3JrNFRSbnRiUnJNblFUanJsNzQxRVdvSkhwdVZNd0pOVkVvUWItcFh2bEYzbWVReHBrNHVHY0ZTekg0cl9GTzM3VmlrbUxnLUwydmxnQlNxbkFhamw3eWpQdXdrcUZtZHgxbWxFcDNjeXFxMk1vMWZLNklESTE4WHU3Nk9iRGpVa3VleWc?oc=5",
+   "source": "SC Media",
+   "title": "Next reports cyber incident involving third-party supplier",
+   "url": "https://www.scworld.com/brief/next-reports-cyber-incident-involving-third-party-supplier",
    "summary": "",
-   "via": "Google News",
-   "lang": "en",
    "latest": "2026-11-24T15:36:22Z",
    "outlets": [
     {
@@ -31631,8 +31720,8 @@
      "title": "Next says some data accessed in cyber incident affecting online supplier"
     }
    ],
-   "n_outlets": 53,
-   "eid": "n-57a801a7"
+   "n_outlets": 54,
+   "eid": "n-853c45e9"
   },
   {
    "date": "2026-11-19T14:00:00Z",
@@ -42267,84 +42356,9 @@
    ],
    "n_outlets": 11,
    "eid": "n-8882bb1f"
-  },
-  {
-   "date": "2026-11-17T18:59:56Z",
-   "source": "Yahoo Sports",
-   "title": "The IIHF confirms it has been the victim of a cyber attack",
-   "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbEJzX3ZTU0pVWnpYU0RWTW5XbGRzU1RPdHgwa29JQW1hUmFQOEV5bmF2MDhDTTJHMmJWM0lyME9mWjI3emg1YThzTWZLSkNCbjIxTVptLUJ0dHJQOFhmZVF5TS1PZGVyNTN5bmVSYnAzeVVqbEdXWC1ycEJmaFR0eUZYNGR3bW1oc2c?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "en",
-   "latest": "2026-11-19T23:53:00Z",
-   "outlets": [
-    {
-     "source": "Yahoo Sports",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbEJzX3ZTU0pVWnpYU0RWTW5XbGRzU1RPdHgwa29JQW1hUmFQOEV5bmF2MDhDTTJHMmJWM0lyME9mWjI3emg1YThzTWZLSkNCbjIxTVptLUJ0dHJQOFhmZVF5TS1PZGVyNTN5bmVSYnAzeVVqbEdXWC1ycEJmaFR0eUZYNGR3bW1oc2c?oc=5",
-     "date": "2026-11-17T18:59:56Z",
-     "title": "The IIHF confirms it has been the victim of a cyber attack"
-    },
-    {
-     "source": "Audimax.de",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMmxjck5KdVhSZ3Y4Z05Xcmh4SnFVZHhPdzdsTThSTjFWY1QyZExneENPUHJSdzk0S1psNkFrdkQzOVlEd1p0aU9LZ1BsRGpIWGZLUlNoNUVzaEc2TWVwanpuQi1tWGt5dmhZUF85X3k4Yk9UZm5VMmgwZnBxMDJYS0tXWHQ?oc=5",
-     "date": "2026-11-17T19:52:10Z",
-     "title": "IIHF target of a cyber attack: Website temporarily offline",
-     "title_orig": "IIHF-Ziel eines Cyberangriffs: Website vor\u00fcbergehend offline"
-    },
-    {
-     "source": "The New York Times",
-     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUk9uOVVKRVRpNzdheHV0MkZ1V3Z4QlZlN0hKUDNkR3c1c3dQRlRLVlFUTFE3azJJR2RmMmxLVENSOXdiR25oTDZuM0RMR0E2NHNvN0x3M3JHa1JmVzN6TnFfUGVUN2MteHk2ck15V2U2VmppV1Q0SzdYVzB0QnlWd09vQk5uTlo2MTMwWUdpbjdtbkVq?oc=5",
-     "date": "2026-11-17T21:08:39Z",
-     "title": "IIHF hit by apparent cyberattack days after excluding Russia from World Juniors - The Athletic"
-    },
-    {
-     "source": "Toronto Star",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOS1U3bHd2UWs1RlFNTS16WUZCSXptM2Z0WEdwNzZ4RXctczlxbkhHa1BBQjdya0Q4ejh4T2syTDNOY24zLUlvSTc1Mk16THpxLXgyemt4T2g1QU41cWp3NjJzOGV2YUVvVjQ0dDExT3p4aDNodVFYdmZqMW9jaGZzRkU5YTRBN2ZfVEo0TTIxbnZzNHlfRnpreWtSWUxCTThrUGRXb0ZVVzE1WUgwQ0ozVk5EWU1lV0RrRV9iQW1jUGt0cENwcmdCT1pfak5jOEpNdzB4bFZQaFlLTkNXbnFvNkFrUWRJaWRuTm9IdERxZDh1ZjJOdjV3?oc=5",
-     "date": "2026-11-19T22:53:03Z",
-     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
-    },
-    {
-     "source": "Winnipeg Free Press",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNakg4b2M4TDdWUjJGVlBsRlo0aWJkdWltMlJaUEk0UldGdWhOUmMyNEhtYWh2X095cC1ia1c0d3lBVVhuRGI0WmNsYmdpX1NJVmhBc2ttb1pZUTNObnpVcWFGN3dhcElXTUQwWTFJN29ycFBQRURJbHEyZWY3QUNJV0tvQXl1Q3FMbkl3bjkwRmtOQkRRaFJvRS1KQjVIZHl5eW5FYzJSbW9aREJoVFZaSy1kSzRUSWlwb1hQMzlPYjNjODVxbjVTdXhPTmdUTXM?oc=5",
-     "date": "2026-11-19T22:53:03Z",
-     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
-    },
-    {
-     "source": "The Spec",
-     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxNUmMtbDMzd0RvRmZDNjh5SWJWUFlfX3JKMDZoS19OWDRibmtzZTJrNUVwa3dSV3FEQlgwMnVSanhZNlJkY3dlSUVuTDNFd3A1SjNoR3A0Qjh5M0tMVW05UDM0Vmd2ZjJGVEY0VGpNQ3N2V0NfMHlqQWo3U0g4bmJtcURnaVVPYlVtOXJqZURxUWM4MjZqZHdPVVJFVDNyYjhTMjR2R2ZRNGNHelVxOXVGclFrT0s5TGxPdVhCT2xHODlhdnpwTVZFTkVpUFhwSVNiXzVnRG5QVVNRU2pQMjI1ME15MlFxMldURGVJNTVDdldtSGVZTGVF?oc=5",
-     "date": "2026-11-19T22:53:03Z",
-     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
-    },
-    {
-     "source": "thecanadianpressnews.ca",
-     "url": "https://news.google.com/rss/articles/CBMi_gFBVV95cUxPSUdCUFZUYjlWRkxpY3BQT2ZZamYzS3UwQ2cwaHJEeTRLYy1YYVU2THhlSE1YdS1oaExNd3dwTHc1N3kyVS1QRG9oNEpzclBfVkNVaHJaMUZaSUpnNG1HbVpnRUc0bmpENXptS1p2ZDI5QUx5bV85a00yVk5ZLWNWTUFOOE8tU0UzbGd2emp3Y0pCa2VZRmZSYTcwWC01UTlNbDVRS0FTd1JpQlBEOFdCaHVsT1BIemJRa1laS0lYSmVfVWJsMXdBdE5KYTFGTWRBYW8wU09lOXhSUUU1MkFqUVQ1Q19OekQ1aFEzUWdXV1p4YjRtRGhxSmFyR3U4dw?oc=5",
-     "date": "2026-11-19T22:53:03Z",
-     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
-    },
-    {
-     "source": "CTV News",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPczF2RXBtVF8yY0VDV1Z5QnVFRzRBOS1ycHFDUUpSaUc3Yy1sR3o3RlVGRG11RXF4TXVTamczbmVKQkQxbXVCcVhCZlVzMHUwUnhPNmdPeHJwaG5qWlFvOWJQNzd3WHJJN3EycGZnVGNsTl9fZU5xVU9ZV0tkaFh3d0w3bllYdC1tTXlGY05zb2dUUWVISkhRZkhna2I5TzNfU05VSkstNENXSWR0V2tmMVFCZkd4UQ?oc=5",
-     "date": "2026-11-19T22:56:43Z",
-     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
-    },
-    {
-     "source": "Sportsnet.ca",
-     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQTm9zUS1KX3RTNUhfY01UZldTQVFmcElaOG12N01ybVJrTS1oai1Ia01LSEZHUjZnb2pJTVJ0ZTlQM1VqcFBINmEzRDJrZDZIZ3g5dzNGX3RzbW5GMXZlakhIZ093YWpZSkh3d3VjQUFITHpqMlZIaGZkb3hEWnFsZjY1LXBGRVA1WTlUOXp5OU9WRU5paEE4R2pWbTc3ZUFQQWxzWWtnQTlRcjV1RC1kb2VMT1BhT3FF?oc=5",
-     "date": "2026-11-19T23:07:00Z",
-     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
-    },
-    {
-     "source": "NanaimoNewsNOW",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxORFhScFRBNDlNdEFwOE8wenBSZ2tQdTNQeVJrT3B2MUw5TVlxTnNpdlFzT0x1QlRLbFNiemJMOUM0cnFRQXVzRm84dHdoTHl0YUlpNlBwczNsRWh5Q0ZpM2lCNVVCbG9uN3ZfenRwSE1QT1NWckd3RDdMb09lai00RlU4Y0hlM3ZpZF90WTh0a0dSVmhIZjlDMWFpcDkyUFNEQVpBbFY5bVhTWWVCNld0bEpRN0dIdw?oc=5",
-     "date": "2026-11-19T23:08:49Z",
-     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage"
-    }
-   ],
-   "n_outlets": 12,
-   "eid": "n-8782853c"
   }
  ],
- "news_headlines_7d": 9939,
+ "news_headlines_7d": 9943,
  "registry": [
   {
    "id": "renfe-adif",
@@ -42823,7 +42837,7 @@
      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9JNnZRMm41VUFtWlhHLWZvMF9yZHFNZkZOLVZNekxPOGZDV1pvVVBWbWNIbnJJSERRb0dWQUo2YWhOdWdJVW9uSWk5UmVTUmFaZ1E?oc=5",
      "date": "2026-11-21T10:09:09Z",
      "eid": "n-893413c8",
-     "n": 2
+     "n": 3
     }
    ],
    "notices": [],
@@ -43761,7 +43775,7 @@
     }
    ],
    "latest": "2026-11-24T18:13:00Z",
-   "age_days": 2.05
+   "age_days": 2.06
   },
   {
    "id": "chaos-ransomware-arrests",
@@ -43926,7 +43940,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T16:54:37Z",
-   "age_days": 3.85
+   "age_days": 3.86
   },
   {
    "id": "eu-commission-ai-attack",
@@ -44421,7 +44435,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T16:48:59Z",
-   "age_days": 5.56
+   "age_days": 5.57
   },
   {
    "id": "bordeaux-university-hospital-scarlettgroup",
@@ -44499,7 +44513,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T16:46:02Z",
-   "age_days": 1.82
+   "age_days": 1.83
   },
   {
    "id": "usda-security-incident",
@@ -46276,205 +46290,6 @@
    "age_days": 98.29
   },
   {
-   "event_date": null,
-   "records": null,
-   "usd": null,
-   "actor": null,
-   "vector": null,
-   "updates": [],
-   "id": "next-plc-online-supplier-incident",
-   "org": "Next plc",
-   "title": "Next reports unauthorized access to limited data at an online supplier",
-   "first_reported": "2026-11-23T11:00:00Z",
-   "type": "third-party breach",
-   "sector": "retail",
-   "country": "GB",
-   "status": "confirmed",
-   "summary": "Next said an unnamed online supplier suffered a cyber incident that allowed unauthorized access to limited company data. Next said its own systems were not compromised and current evidence indicates that no customer personal data was affected. The investigation is ongoing.",
-   "match": [
-    "Next reports cyber attack at third-party supplier",
-    "UKs Next reports cyber attack on online provider",
-    "UK\u2019s Next flags cyber breach at online supplier",
-    "UK's Next flags cyber breach at online supplier",
-    "Next says some data accessed in cyber incident",
-    "Next issues cyber-attack warning",
-    "REG - Next PLC - Third-Party Data Incident",
-    "Next reports data breach following cyber attack with 'investigations ongoing'"
-   ],
-   "sources": [
-    {
-     "label": "Next\u2019s regulatory filing (RNS 2789E)",
-     "url": "https://www.tradingview.com/news/reuters.com,2026-11-23:newsml_RSW2789Ea:0-reg-next-plc-third-party-data-incident/"
-    },
-    {
-     "label": "Reuters, quoting Next",
-     "url": "https://www.reuters.com/legal/government/uks-next-flags-cyber-breach-online-supplier-says-no-customer-data-compromised-2026-11-23/"
-    },
-    {
-     "label": "The Guardian, via AOL",
-     "url": "https://www.aol.co.uk/articles/next-issues-cyber-attack-warning-115345000.html"
-    },
-    {
-     "label": "The Independent, quoting Next",
-     "url": "https://www.the-independent.com/news/business/spencer-b3089823.html"
-    }
-   ],
-   "affected": [
-    "Next plc and its unnamed third-party online supplier"
-   ],
-   "payloads": [
-    "Unauthorized access occurred in the supplier\u2019s environment. Next did not disclose the entry method or identify the data beyond describing it as limited company information."
-   ],
-   "guidance": [
-    "Scope the exposure with the supplier, preserve relevant logs and verify what data the supplier can access. Check Next\u2019s official channels for any further customer notices."
-   ],
-   "outlets": [
-    {
-     "source": "MarketScreener Schweiz",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbDVMYUk5SEFYY0N2U24zMThadnVMdGRQYjdlTHZrd1JVVDZza0dPXzhwRWVWM0k0eTh4NEwyS2ZoWkpkcW0wU005RDN4WWJCN21mcVo5SHVBeEp0RFpCLTJKLXAwaGlvQXFsWG9tYjNHNVFWT3M0WWpUZHF6M0lkRjJRaGl6bEZmTEhXRkR2NXB1WkxUMnM1eTJ3cEZvMVF1Vk9VSVhhLTgyMlF4a2pRMkRqWWx5ZTl0Qm4tcnJ1Q3hfNktqSnFXb09qM2pSWHRLMVoyb3otZlZEUQ?oc=5",
-     "date": "2026-11-23T11:08:19Z",
-     "title": "UKs Next reports cyber attack on online provider, no customer data affected",
-     "title_orig": "UKs Next meldet Cyberangriff bei Online-Anbieter, keine Kundendaten betroffen"
-    },
-    {
-     "source": "London South East",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQjFwNWxXQW5pT0dtenVaTHFFdE1fazU1aXJvNkl3UzZRbXpZdGxnRUV3TXB5U3JrNFRSbnRiUnJNblFUanJsNzQxRVdvSkhwdVZNd0pOVkVvUWItcFh2bEYzbWVReHBrNHVHY0ZTekg0cl9GTzM3VmlrbUxnLUwydmxnQlNxbkFhamw3eWpQdXdrcUZtZHgxbWxFcDNjeXFxMk1vMWZLNklESTE4WHU3Nk9iRGpVa3VleWc?oc=5",
-     "date": "2026-11-23T11:33:00Z",
-     "title": "Next reports cyber attack at third-party supplier but no personal data"
-    },
-    {
-     "source": "AOL.co.uk",
-     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNc2huWWowbGxTWGE5UHpETnZLaWoyR0FYdEZHQ2w0WlBYb1ktbk5FWnd2WktxdzVRWExDcFBLREw1RUlKN05mMDZ3a2NpY28wc3RHUFV2WjEtcV9STVpLZ0NranQyMlpNUVowRy1ZYlJmZFA0SzBDeXJOckFOaDVxYw?oc=5",
-     "date": "2026-11-23T11:37:25Z",
-     "title": "Next says some data accessed in cyber incident affecting online supplier"
-    },
-    {
-     "source": "Yahoo Finance UK",
-     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV254LTIxQnpKc0wyN0hZNzQyNDVhVWdYUzNvNVNkMkR3eVpFTzFteXFpMXVuNUJKR3B4cWZSbWt3c3psUFhlVy1uTUFIeVVLWWtXcW5jMUtraUdxMzFfZW43V2d3dzU3NGhwOVktUHRnMVE3VUs0bW5IMlAwWGVXdDQ3UDE?oc=5",
-     "date": "2026-11-23T11:37:25Z",
-     "title": "Next says some data accessed in cyber incident affecting online supplier"
-    },
-    {
-     "source": "The Irish News",
-     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTExQT2t1T3UtaHlSbndkTmJoZDFzNWQwUUFhdVJsNHJTbGE4Q000R2MzZ2EyR3ZPWWNQZjNtRkdDRlE5ejFlVWNEQWk1d0oxWThtTGR2b0tJc3JxeklFOTloUEtmVy10M3lYYXdERmNyMmxDbXdsR2ppZGUwSU4zSjZwanoyTERUblMzSFM1ZmEyNmFzdDJwYlE2UDFmcmllVlhWdG44SGVFSDhWajdSekhoRHRHVk1XU1Y0Vjk0QkNkQWFwZmhUcW9JN2g2cWs?oc=5",
-     "date": "2026-11-23T11:37:25Z",
-     "title": "Next says some data accessed in cyber incident affecting online supplier"
-    },
-    {
-     "source": "AOL.com",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBvU0l2alFWUV9ONzAtX1pRTTEyVWpZUlFOanlFMmlHYWtkUWZCUWc4Wk5RbVBWN0gzYTZGU0Q5MU5qS0JTYjR4TDU1TWUzX093cS00bV9RM3N6cE53Qm1LM211YmM3RHJVRWh5SG8xa3hQenAza0MySVd5OA?oc=5",
-     "date": "2026-11-23T11:41:07Z",
-     "title": "UK's Next flags cyber breach at online supplier, says no customer data compromised"
-    },
-    {
-     "source": "Stratford Herald",
-     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOExKbGh6a0l3d2ZDWDZSbjVTNXFyZFUtRXd1RXR4QUV0N3Y5SVRFR3hDZTRVY0lNeWt1MFFCQjhIOTVMSkpvV3VlR2hDS2M1M25xQ2h1MHNTSlNiUmdKbEVjakNkOHpiUzZOdkwyTTBJT2VzcHk3MTdSdk9pZnVOOTBKaEFYV1pGa3Q1ekQ3VjJDZzNNa1Q4bnJvN2tlc0RkWGlKSS0xejhad3FVTVl5UVpvQ01VcXQwM3QxN2g2QQ?oc=5",
-     "date": "2026-11-23T11:41:26Z",
-     "title": "Next says some data accessed in cyber incident affecting online supplier"
-    },
-    {
-     "source": "RTE.ie",
-     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4ycmNXeUhlZWRQa2hkZVRmenU2Qmw1LTdZYWhOTzgwVUFnak5Tc0VyalU4RXRMWHRpaDFUQXhUMF84bEljZktfbWJxMlJRLWRRYTRjTndnSFZVbUowLUJQcGczUzZzTUE?oc=5",
-     "date": "2026-11-23T11:43:25Z",
-     "title": "Next says some data accessed in cyber incident affecting online supplier"
-    },
-    {
-     "source": "The Guardian",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNS1FENjhQdTZmanJFdXRtUlFfNktPQkhmdUg5QUtJWDhVcGdLMmFVakJXb3VQTkFlQi0wbTc1ZnR3S09Ram5aa191U3doaW1nd3pWVUNCRG44bnpwdWFkWkJEXzgyWnBidWc2UU14WUl1ZkwtdVNNTFFvSjdzRlN1VXROd0dLTm92SF93RGJJWlpfOWxfQ1dLODFzNmdUUVM2bGhBTGl4SmJMQzVLWGhnTkR0dVRXTFNDRDlV?oc=5",
-     "date": "2026-11-23T11:56:00Z",
-     "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers"
-    },
-    {
-     "source": "Times & Star",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZHlJU2tRdTRLZklUSVJaRFlTSFR1SzBTYXNKblQ1UVdoN0xLbThEbG9zTGVwcWdOWW1yR3R0Mmo1UjFLTjI2Um9SQlBiYnpzWUt5c3VvMWhROGJZaDlKV2FXSl9IUTBfaEFyVURHNi1EeUplM1lMYzFhUjl5ank1VDFRV3c0ekRSX2U2Z2t1YzRkenZYYmpKdTZrTzdmU1RNX3VaTEpwTmttTDF2cFBnTDBaMzVpUVdfdnc?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
-    },
-    {
-     "source": "Somerset County Gazette",
-     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNajZuaHJZaEF0a2MzNXlUSTR2TW1uWi1SXzR6UDAxUnNoaGNzeFA4bm95RTVzNEtaUnBoTDlDTExRaWtPT3gzZUxLTEFpaFZVbWdNemhaU2ZoN3l4ZUswSHc4QlVEOTlfczdMeHJhd0kyWFhEclhXUVVFVE12SllDZ1hVS3VLVW4xRklSY1ZWV3VNN2lLZ1VxekF1QS1hcURIVFA5Nmo3RURFRFFEVTRSYU56akd2NU9rQU1sMDBiRUdLcFBva1E?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
-    },
-    {
-     "source": "Hillingdon Times",
-     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc1p6TEFiaVpXMzUwdm5QQlc3YWhZUjUxS3pZWk9hSFdleTRxelFMejVpdC1KY1l0OGM3YWE1LXViWnl5UXloS2Rta0ZnNHQ2MmFTX2k2R25VOTdxMmVwRnUtUDZxU1lTYnFaUFo0YkNMaHBsRXdneGs0WUtrOUNSbmNqelV2TWhibkRMdHJZWll6eW94TzJrNVNrVEpXOS1WeElkdFNQVVYzdV9wLUZiVGlJM3NPTnpPV2tacHpB?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
-    },
-    {
-     "source": "Peterborough Matters",
-     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZmh4WXU3MHp0emtXYlg3clNCMExPY3pTdFZJY3dxZEFOWnFLZ3czTDJhUWVqVkNKWHVFVjNWdGdiRmF3WkUwYW4xTU84WTZsZ2JOY1BxMXFuTTlYdFk2QTNOeC1xbnJ1U0oxMkJwZF92c3g0ZHBsSDFyS25QRjNwSGowTUlaVWdVdElvcUE2czVFaWlIaW91ZlROZ2MtcXdKYzRtMUdDSW5xUkdVYWY1eEhId0NUTFljYTBpMmhqOG1aVlU?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
-    },
-    {
-     "source": "Chelmsford Weekly News",
-     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdzN6bDNiV1hKM1FFTG82MEtiaFdXUjFOTFlvWG0yaVBpSWJDTjFERGZqeWxGckJmMUdhVldMSXd4T2lpWUFGd292SEo1N1JPZDRmdTYxU0ktS1l2TGFLLTM1RUZjMGFNbVRJNWhuMUtlb05OWkdMVzVQdEtYVG9oXzNuZkZXeXFBT3dxRS1PZC0xbE9NQkF3dlpoUzlId2JUbE90Tll1cWRYTEJmb2lXLWRJMGtYWnVtLWZFVUJ3VXlTZw?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
-    },
-    {
-     "source": "Northwich Guardian",
-     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSzRSUjgtcDRFcGhWbmNKd2owenl6aUxCcWIweTF5d3N3N1hNTFlWZHJtT0wzbVB3Qm04bUNTY0hjMUlialJiM09kdXNfWWcwTjZoN0dwbUZiblZoZFpNUmxjQ1VGZWRpVGFkM0QzUDlNb2x0ZzhuWTV6bk5xVTRwdjhUUnhpZE9feVNicTdmVGE4UnFQZDhrQW1Fby1vRjR4a2xDOHF1WjdwUm1vV29nRVE1czIyS1JMRk1yVGhGanE?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
-    },
-    {
-     "source": "Kilburn Times",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSWt1cDNHLWZNMWx5c2tlNmVZV05GLWxqeW1pSnBndXpMQVpKVjUtZkkyY0VBOU1MelJPUXNkVENvc2M5REhmb1dKV3dxWTdocy1SVTlOdDNuSmZ3dHVDTDh4V3ZvWm5LQnNjeGhuVkQxSU9UT24yZXBpVTlUSzdncTNhYXZvbnVsR0xlaklBbHk3b0V4VXZqck5VR1VtNzVuazNqQ0tDZGVWdWlsd3lyUmpVdkI5Ums3ZkE?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
-    }
-   ],
-   "n_outlets": 16,
-   "stories": [
-    {
-     "title": "Next reports data breach following cyber attack with 'investigations ongoing'",
-     "source": "Times & Star",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZHlJU2tRdTRLZklUSVJaRFlTSFR1SzBTYXNKblQ1UVdoN0xLbThEbG9zTGVwcWdOWW1yR3R0Mmo1UjFLTjI2Um9SQlBiYnpzWUt5c3VvMWhROGJZaDlKV2FXSl9IUTBfaEFyVURHNi1EeUplM1lMYzFhUjl5ank1VDFRV3c0ekRSX2U2Z2t1YzRkenZYYmpKdTZrTzdmU1RNX3VaTEpwTmttTDF2cFBnTDBaMzVpUVdfdnc?oc=5",
-     "date": "2026-11-23T12:02:31Z",
-     "eid": "n-3c4a2f15",
-     "n": 9
-    },
-    {
-     "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers",
-     "source": "The Guardian",
-     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNS1FENjhQdTZmanJFdXRtUlFfNktPQkhmdUg5QUtJWDhVcGdLMmFVakJXb3VQTkFlQi0wbTc1ZnR3S09Ram5aa191U3doaW1nd3pWVUNCRG44bnpwdWFkWkJEXzgyWnBidWc2UU14WUl1ZkwtdVNNTFFvSjdzRlN1VXROd0dLTm92SF93RGJJWlpfOWxfQ1dLODFzNmdUUVM2bGhBTGl4SmJMQzVLWGhnTkR0dVRXTFNDRDlV?oc=5",
-     "date": "2026-11-23T11:56:00Z",
-     "eid": "n-5b078c95",
-     "n": 3
-    },
-    {
-     "title": "UK's Next flags cyber breach at online supplier, says no customer data compromised",
-     "source": "AOL.com",
-     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBvU0l2alFWUV9ONzAtX1pRTTEyVWpZUlFOanlFMmlHYWtkUWZCUWc4Wk5RbVBWN0gzYTZGU0Q5MU5qS0JTYjR4TDU1TWUzX093cS00bV9RM3N6cE53Qm1LM211YmM3RHJVRWh5SG8xa3hQenAza0MySVd5OA?oc=5",
-     "date": "2026-11-23T11:41:07Z",
-     "eid": null,
-     "n": 1
-    },
-    {
-     "title": "UKs Next reports cyber attack on online provider, no customer data affected",
-     "source": "MarketScreener Schweiz",
-     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbDVMYUk5SEFYY0N2U24zMThadnVMdGRQYjdlTHZrd1JVVDZza0dPXzhwRWVWM0k0eTh4NEwyS2ZoWkpkcW0wU005RDN4WWJCN21mcVo5SHVBeEp0RFpCLTJKLXAwaGlvQXFsWG9tYjNHNVFWT3M0WWpUZHF6M0lkRjJRaGl6bEZmTEhXRkR2NXB1WkxUMnM1eTJ3cEZvMVF1Vk9VSVhhLTgyMlF4a2pRMkRqWWx5ZTl0Qm4tcnJ1Q3hfNktqSnFXb09qM2pSWHRLMVoyb3otZlZEUQ?oc=5",
-     "date": "2026-11-23T11:08:19Z",
-     "eid": "n-0d824cbe",
-     "n": 2
-    },
-    {
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "source": "London South East",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQjFwNWxXQW5pT0dtenVaTHFFdE1fazU1aXJvNkl3UzZRbXpZdGxnRUV3TXB5U3JrNFRSbnRiUnJNblFUanJsNzQxRVdvSkhwdVZNd0pOVkVvUWItcFh2bEYzbWVReHBrNHVHY0ZTekg0cl9GTzM3VmlrbUxnLUwydmxnQlNxbkFhamw3eWpQdXdrcUZtZHgxbWxFcDNjeXFxMk1vMWZLNklESTE4WHU3Nk9iRGpVa3VleWc?oc=5",
-     "date": "2026-11-19T14:00:00Z",
-     "eid": "n-57a801a7",
-     "n": 53
-    }
-   ],
-   "notices": [],
-   "latest": "2026-11-24T15:36:22Z",
-   "age_days": 1.33
-  },
-  {
    "id": "locservice",
    "org": "LocService",
    "title": "Rental platform LocService hacked; names, emails, invoices and private messages stolen",
@@ -46981,7 +46796,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T14:55:42Z",
-   "age_days": 2.4
+   "age_days": 2.41
   },
   {
    "id": "gleneagles-hotel",
@@ -48064,7 +47879,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T13:47:00Z",
-   "age_days": 1.98
+   "age_days": 1.99
   },
   {
    "id": "rakuten-securities-test-env",
@@ -48692,7 +48507,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T13:28:26Z",
-   "age_days": 8.5
+   "age_days": 8.51
   },
   {
    "id": "rosstat-november-cyberattack",
@@ -50892,7 +50707,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T09:05:06Z",
-   "age_days": 4.17
+   "age_days": 4.18
   },
   {
    "id": "autopay-card-data",
@@ -51650,7 +51465,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T08:40:52Z",
-   "age_days": 448.36
+   "age_days": 448.37
   },
   {
    "id": "plaid-karte-breach",
@@ -52882,6 +52697,205 @@
    "age_days": 23.29
   },
   {
+   "event_date": null,
+   "records": null,
+   "usd": null,
+   "actor": null,
+   "vector": null,
+   "updates": [],
+   "id": "next-plc-online-supplier-incident",
+   "org": "Next plc",
+   "title": "Next reports unauthorized access to limited data at an online supplier",
+   "first_reported": "2026-11-23T11:00:00Z",
+   "type": "third-party breach",
+   "sector": "retail",
+   "country": "GB",
+   "status": "confirmed",
+   "summary": "Next said an unnamed online supplier suffered a cyber incident that allowed unauthorized access to limited company data. Next said its own systems were not compromised and current evidence indicates that no customer personal data was affected. The investigation is ongoing.",
+   "match": [
+    "Next reports cyber attack at third-party supplier",
+    "UKs Next reports cyber attack on online provider",
+    "UK\u2019s Next flags cyber breach at online supplier",
+    "UK's Next flags cyber breach at online supplier",
+    "Next says some data accessed in cyber incident",
+    "Next issues cyber-attack warning",
+    "REG - Next PLC - Third-Party Data Incident",
+    "Next reports data breach following cyber attack with 'investigations ongoing'"
+   ],
+   "sources": [
+    {
+     "label": "Next\u2019s regulatory filing (RNS 2789E)",
+     "url": "https://www.tradingview.com/news/reuters.com,2026-11-23:newsml_RSW2789Ea:0-reg-next-plc-third-party-data-incident/"
+    },
+    {
+     "label": "Reuters, quoting Next",
+     "url": "https://www.reuters.com/legal/government/uks-next-flags-cyber-breach-online-supplier-says-no-customer-data-compromised-2026-11-23/"
+    },
+    {
+     "label": "The Guardian, via AOL",
+     "url": "https://www.aol.co.uk/articles/next-issues-cyber-attack-warning-115345000.html"
+    },
+    {
+     "label": "The Independent, quoting Next",
+     "url": "https://www.the-independent.com/news/business/spencer-b3089823.html"
+    }
+   ],
+   "affected": [
+    "Next plc and its unnamed third-party online supplier"
+   ],
+   "payloads": [
+    "Unauthorized access occurred in the supplier\u2019s environment. Next did not disclose the entry method or identify the data beyond describing it as limited company information."
+   ],
+   "guidance": [
+    "Scope the exposure with the supplier, preserve relevant logs and verify what data the supplier can access. Check Next\u2019s official channels for any further customer notices."
+   ],
+   "outlets": [
+    {
+     "source": "MarketScreener Schweiz",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbDVMYUk5SEFYY0N2U24zMThadnVMdGRQYjdlTHZrd1JVVDZza0dPXzhwRWVWM0k0eTh4NEwyS2ZoWkpkcW0wU005RDN4WWJCN21mcVo5SHVBeEp0RFpCLTJKLXAwaGlvQXFsWG9tYjNHNVFWT3M0WWpUZHF6M0lkRjJRaGl6bEZmTEhXRkR2NXB1WkxUMnM1eTJ3cEZvMVF1Vk9VSVhhLTgyMlF4a2pRMkRqWWx5ZTl0Qm4tcnJ1Q3hfNktqSnFXb09qM2pSWHRLMVoyb3otZlZEUQ?oc=5",
+     "date": "2026-11-23T11:08:19Z",
+     "title": "UKs Next reports cyber attack on online provider, no customer data affected",
+     "title_orig": "UKs Next meldet Cyberangriff bei Online-Anbieter, keine Kundendaten betroffen"
+    },
+    {
+     "source": "London South East",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQjFwNWxXQW5pT0dtenVaTHFFdE1fazU1aXJvNkl3UzZRbXpZdGxnRUV3TXB5U3JrNFRSbnRiUnJNblFUanJsNzQxRVdvSkhwdVZNd0pOVkVvUWItcFh2bEYzbWVReHBrNHVHY0ZTekg0cl9GTzM3VmlrbUxnLUwydmxnQlNxbkFhamw3eWpQdXdrcUZtZHgxbWxFcDNjeXFxMk1vMWZLNklESTE4WHU3Nk9iRGpVa3VleWc?oc=5",
+     "date": "2026-11-23T11:33:00Z",
+     "title": "Next reports cyber attack at third-party supplier but no personal data"
+    },
+    {
+     "source": "AOL.co.uk",
+     "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNc2huWWowbGxTWGE5UHpETnZLaWoyR0FYdEZHQ2w0WlBYb1ktbk5FWnd2WktxdzVRWExDcFBLREw1RUlKN05mMDZ3a2NpY28wc3RHUFV2WjEtcV9STVpLZ0NranQyMlpNUVowRy1ZYlJmZFA0SzBDeXJOckFOaDVxYw?oc=5",
+     "date": "2026-11-23T11:37:25Z",
+     "title": "Next says some data accessed in cyber incident affecting online supplier"
+    },
+    {
+     "source": "Yahoo Finance UK",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOV254LTIxQnpKc0wyN0hZNzQyNDVhVWdYUzNvNVNkMkR3eVpFTzFteXFpMXVuNUJKR3B4cWZSbWt3c3psUFhlVy1uTUFIeVVLWWtXcW5jMUtraUdxMzFfZW43V2d3dzU3NGhwOVktUHRnMVE3VUs0bW5IMlAwWGVXdDQ3UDE?oc=5",
+     "date": "2026-11-23T11:37:25Z",
+     "title": "Next says some data accessed in cyber incident affecting online supplier"
+    },
+    {
+     "source": "The Irish News",
+     "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQTExQT2t1T3UtaHlSbndkTmJoZDFzNWQwUUFhdVJsNHJTbGE4Q000R2MzZ2EyR3ZPWWNQZjNtRkdDRlE5ejFlVWNEQWk1d0oxWThtTGR2b0tJc3JxeklFOTloUEtmVy10M3lYYXdERmNyMmxDbXdsR2ppZGUwSU4zSjZwanoyTERUblMzSFM1ZmEyNmFzdDJwYlE2UDFmcmllVlhWdG44SGVFSDhWajdSekhoRHRHVk1XU1Y0Vjk0QkNkQWFwZmhUcW9JN2g2cWs?oc=5",
+     "date": "2026-11-23T11:37:25Z",
+     "title": "Next says some data accessed in cyber incident affecting online supplier"
+    },
+    {
+     "source": "AOL.com",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBvU0l2alFWUV9ONzAtX1pRTTEyVWpZUlFOanlFMmlHYWtkUWZCUWc4Wk5RbVBWN0gzYTZGU0Q5MU5qS0JTYjR4TDU1TWUzX093cS00bV9RM3N6cE53Qm1LM211YmM3RHJVRWh5SG8xa3hQenAza0MySVd5OA?oc=5",
+     "date": "2026-11-23T11:41:07Z",
+     "title": "UK's Next flags cyber breach at online supplier, says no customer data compromised"
+    },
+    {
+     "source": "Stratford Herald",
+     "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNOExKbGh6a0l3d2ZDWDZSbjVTNXFyZFUtRXd1RXR4QUV0N3Y5SVRFR3hDZTRVY0lNeWt1MFFCQjhIOTVMSkpvV3VlR2hDS2M1M25xQ2h1MHNTSlNiUmdKbEVjakNkOHpiUzZOdkwyTTBJT2VzcHk3MTdSdk9pZnVOOTBKaEFYV1pGa3Q1ekQ3VjJDZzNNa1Q4bnJvN2tlc0RkWGlKSS0xejhad3FVTVl5UVpvQ01VcXQwM3QxN2g2QQ?oc=5",
+     "date": "2026-11-23T11:41:26Z",
+     "title": "Next says some data accessed in cyber incident affecting online supplier"
+    },
+    {
+     "source": "RTE.ie",
+     "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4ycmNXeUhlZWRQa2hkZVRmenU2Qmw1LTdZYWhOTzgwVUFnak5Tc0VyalU4RXRMWHRpaDFUQXhUMF84bEljZktfbWJxMlJRLWRRYTRjTndnSFZVbUowLUJQcGczUzZzTUE?oc=5",
+     "date": "2026-11-23T11:43:25Z",
+     "title": "Next says some data accessed in cyber incident affecting online supplier"
+    },
+    {
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNS1FENjhQdTZmanJFdXRtUlFfNktPQkhmdUg5QUtJWDhVcGdLMmFVakJXb3VQTkFlQi0wbTc1ZnR3S09Ram5aa191U3doaW1nd3pWVUNCRG44bnpwdWFkWkJEXzgyWnBidWc2UU14WUl1ZkwtdVNNTFFvSjdzRlN1VXROd0dLTm92SF93RGJJWlpfOWxfQ1dLODFzNmdUUVM2bGhBTGl4SmJMQzVLWGhnTkR0dVRXTFNDRDlV?oc=5",
+     "date": "2026-11-23T11:56:00Z",
+     "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers"
+    },
+    {
+     "source": "Times & Star",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZHlJU2tRdTRLZklUSVJaRFlTSFR1SzBTYXNKblQ1UVdoN0xLbThEbG9zTGVwcWdOWW1yR3R0Mmo1UjFLTjI2Um9SQlBiYnpzWUt5c3VvMWhROGJZaDlKV2FXSl9IUTBfaEFyVURHNi1EeUplM1lMYzFhUjl5ank1VDFRV3c0ekRSX2U2Z2t1YzRkenZYYmpKdTZrTzdmU1RNX3VaTEpwTmttTDF2cFBnTDBaMzVpUVdfdnc?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
+    },
+    {
+     "source": "Somerset County Gazette",
+     "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNajZuaHJZaEF0a2MzNXlUSTR2TW1uWi1SXzR6UDAxUnNoaGNzeFA4bm95RTVzNEtaUnBoTDlDTExRaWtPT3gzZUxLTEFpaFZVbWdNemhaU2ZoN3l4ZUswSHc4QlVEOTlfczdMeHJhd0kyWFhEclhXUVVFVE12SllDZ1hVS3VLVW4xRklSY1ZWV3VNN2lLZ1VxekF1QS1hcURIVFA5Nmo3RURFRFFEVTRSYU56akd2NU9rQU1sMDBiRUdLcFBva1E?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
+    },
+    {
+     "source": "Hillingdon Times",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNc1p6TEFiaVpXMzUwdm5QQlc3YWhZUjUxS3pZWk9hSFdleTRxelFMejVpdC1KY1l0OGM3YWE1LXViWnl5UXloS2Rta0ZnNHQ2MmFTX2k2R25VOTdxMmVwRnUtUDZxU1lTYnFaUFo0YkNMaHBsRXdneGs0WUtrOUNSbmNqelV2TWhibkRMdHJZWll6eW94TzJrNVNrVEpXOS1WeElkdFNQVVYzdV9wLUZiVGlJM3NPTnpPV2tacHpB?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
+    },
+    {
+     "source": "Peterborough Matters",
+     "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQZmh4WXU3MHp0emtXYlg3clNCMExPY3pTdFZJY3dxZEFOWnFLZ3czTDJhUWVqVkNKWHVFVjNWdGdiRmF3WkUwYW4xTU84WTZsZ2JOY1BxMXFuTTlYdFk2QTNOeC1xbnJ1U0oxMkJwZF92c3g0ZHBsSDFyS25QRjNwSGowTUlaVWdVdElvcUE2czVFaWlIaW91ZlROZ2MtcXdKYzRtMUdDSW5xUkdVYWY1eEhId0NUTFljYTBpMmhqOG1aVlU?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
+    },
+    {
+     "source": "Chelmsford Weekly News",
+     "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdzN6bDNiV1hKM1FFTG82MEtiaFdXUjFOTFlvWG0yaVBpSWJDTjFERGZqeWxGckJmMUdhVldMSXd4T2lpWUFGd292SEo1N1JPZDRmdTYxU0ktS1l2TGFLLTM1RUZjMGFNbVRJNWhuMUtlb05OWkdMVzVQdEtYVG9oXzNuZkZXeXFBT3dxRS1PZC0xbE9NQkF3dlpoUzlId2JUbE90Tll1cWRYTEJmb2lXLWRJMGtYWnVtLWZFVUJ3VXlTZw?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
+    },
+    {
+     "source": "Northwich Guardian",
+     "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSzRSUjgtcDRFcGhWbmNKd2owenl6aUxCcWIweTF5d3N3N1hNTFlWZHJtT0wzbVB3Qm04bUNTY0hjMUlialJiM09kdXNfWWcwTjZoN0dwbUZiblZoZFpNUmxjQ1VGZWRpVGFkM0QzUDlNb2x0ZzhuWTV6bk5xVTRwdjhUUnhpZE9feVNicTdmVGE4UnFQZDhrQW1Fby1vRjR4a2xDOHF1WjdwUm1vV29nRVE1czIyS1JMRk1yVGhGanE?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
+    },
+    {
+     "source": "Kilburn Times",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNSWt1cDNHLWZNMWx5c2tlNmVZV05GLWxqeW1pSnBndXpMQVpKVjUtZkkyY0VBOU1MelJPUXNkVENvc2M5REhmb1dKV3dxWTdocy1SVTlOdDNuSmZ3dHVDTDh4V3ZvWm5LQnNjeGhuVkQxSU9UT24yZXBpVTlUSzdncTNhYXZvbnVsR0xlaklBbHk3b0V4VXZqck5VR1VtNzVuazNqQ0tDZGVWdWlsd3lyUmpVdkI5Ums3ZkE?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'"
+    }
+   ],
+   "n_outlets": 16,
+   "stories": [
+    {
+     "title": "Next reports data breach following cyber attack with 'investigations ongoing'",
+     "source": "Times & Star",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQZHlJU2tRdTRLZklUSVJaRFlTSFR1SzBTYXNKblQ1UVdoN0xLbThEbG9zTGVwcWdOWW1yR3R0Mmo1UjFLTjI2Um9SQlBiYnpzWUt5c3VvMWhROGJZaDlKV2FXSl9IUTBfaEFyVURHNi1EeUplM1lMYzFhUjl5ank1VDFRV3c0ekRSX2U2Z2t1YzRkenZYYmpKdTZrTzdmU1RNX3VaTEpwTmttTDF2cFBnTDBaMzVpUVdfdnc?oc=5",
+     "date": "2026-11-23T12:02:31Z",
+     "eid": "n-3c4a2f15",
+     "n": 9
+    },
+    {
+     "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers",
+     "source": "The Guardian",
+     "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNS1FENjhQdTZmanJFdXRtUlFfNktPQkhmdUg5QUtJWDhVcGdLMmFVakJXb3VQTkFlQi0wbTc1ZnR3S09Ram5aa191U3doaW1nd3pWVUNCRG44bnpwdWFkWkJEXzgyWnBidWc2UU14WUl1ZkwtdVNNTFFvSjdzRlN1VXROd0dLTm92SF93RGJJWlpfOWxfQ1dLODFzNmdUUVM2bGhBTGl4SmJMQzVLWGhnTkR0dVRXTFNDRDlV?oc=5",
+     "date": "2026-11-23T11:56:00Z",
+     "eid": "n-5b078c95",
+     "n": 3
+    },
+    {
+     "title": "UK's Next flags cyber breach at online supplier, says no customer data compromised",
+     "source": "AOL.com",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBvU0l2alFWUV9ONzAtX1pRTTEyVWpZUlFOanlFMmlHYWtkUWZCUWc4Wk5RbVBWN0gzYTZGU0Q5MU5qS0JTYjR4TDU1TWUzX093cS00bV9RM3N6cE53Qm1LM211YmM3RHJVRWh5SG8xa3hQenAza0MySVd5OA?oc=5",
+     "date": "2026-11-23T11:41:07Z",
+     "eid": null,
+     "n": 1
+    },
+    {
+     "title": "Next reports cyber attack at third-party supplier but no personal data",
+     "source": "London South East",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOQjFwNWxXQW5pT0dtenVaTHFFdE1fazU1aXJvNkl3UzZRbXpZdGxnRUV3TXB5U3JrNFRSbnRiUnJNblFUanJsNzQxRVdvSkhwdVZNd0pOVkVvUWItcFh2bEYzbWVReHBrNHVHY0ZTekg0cl9GTzM3VmlrbUxnLUwydmxnQlNxbkFhamw3eWpQdXdrcUZtZHgxbWxFcDNjeXFxMk1vMWZLNklESTE4WHU3Nk9iRGpVa3VleWc?oc=5",
+     "date": "2026-11-23T11:33:00Z",
+     "eid": null,
+     "n": 6
+    },
+    {
+     "title": "UKs Next reports cyber attack on online provider, no customer data affected",
+     "source": "MarketScreener Schweiz",
+     "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPbDVMYUk5SEFYY0N2U24zMThadnVMdGRQYjdlTHZrd1JVVDZza0dPXzhwRWVWM0k0eTh4NEwyS2ZoWkpkcW0wU005RDN4WWJCN21mcVo5SHVBeEp0RFpCLTJKLXAwaGlvQXFsWG9tYjNHNVFWT3M0WWpUZHF6M0lkRjJRaGl6bEZmTEhXRkR2NXB1WkxUMnM1eTJ3cEZvMVF1Vk9VSVhhLTgyMlF4a2pRMkRqWWx5ZTl0Qm4tcnJ1Q3hfNktqSnFXb09qM2pSWHRLMVoyb3otZlZEUQ?oc=5",
+     "date": "2026-11-23T11:08:19Z",
+     "eid": "n-0d824cbe",
+     "n": 2
+    }
+   ],
+   "notices": [],
+   "latest": "2026-11-24T08:00:00Z",
+   "age_days": 1.33
+  },
+  {
    "id": "reichenau-rax",
    "org": "Municipality of Reichenau an der Rax",
    "title": "Residents' sensitive data published after cyberattack on Austrian municipality",
@@ -53548,7 +53562,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T07:12:40Z",
-   "age_days": 3.8
+   "age_days": 3.81
   },
   {
    "id": "nzdf-websites",
@@ -54136,7 +54150,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T05:59:03Z",
-   "age_days": 73.16
+   "age_days": 73.17
   },
   {
    "id": "fireworks-ai-supply-chain",
@@ -54871,7 +54885,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T04:30:00Z",
-   "age_days": 3.62
+   "age_days": 3.63
   },
   {
    "id": "saint-pascal-municipal-incident",
@@ -57024,7 +57038,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T20:15:54Z",
-   "age_days": 14.25
+   "age_days": 14.26
   },
   {
    "id": "openrouter-minimax-prompt-exposure",
@@ -57236,7 +57250,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T19:42:43Z",
-   "age_days": 4.83
+   "age_days": 4.84
   },
   {
    "id": "binance-heist",
@@ -57457,7 +57471,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T19:16:14Z",
-   "age_days": 3.86
+   "age_days": 3.87
   },
   {
    "id": "basel-landschaft",
@@ -58743,7 +58757,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T16:14:58Z",
-   "age_days": 4.87
+   "age_days": 4.88
   },
   {
    "event_date": null,
@@ -58811,7 +58825,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T15:01:08Z",
-   "age_days": 1.39
+   "age_days": 1.4
   },
   {
    "id": "check-point-php2shell",
@@ -59939,7 +59953,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T11:59:48Z",
-   "age_days": 5.91
+   "age_days": 5.92
   },
   {
    "id": "jpmorgan-visa-mastercard-vendors",
@@ -60908,7 +60922,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T11:29:42Z",
-   "age_days": 7.82
+   "age_days": 7.83
   },
   {
    "id": "austria-foreign-ministry",
@@ -61142,7 +61156,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T10:48:47Z",
-   "age_days": 4.06
+   "age_days": 4.07
   },
   {
    "id": "moengage-zebpay",
@@ -62401,7 +62415,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T07:47:58Z",
-   "age_days": 2.15
+   "age_days": 2.16
   },
   {
    "id": "poste-italiane",
@@ -62917,7 +62931,7 @@
     }
    ],
    "latest": "2026-11-23T07:00:00Z",
-   "age_days": 2.08
+   "age_days": 2.09
   },
   {
    "id": "university-medical-imaging-aoqin-claim",
@@ -62954,7 +62968,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T06:51:00Z",
-   "age_days": 1.5
+   "age_days": 1.51
   },
   {
    "id": "corrigan-moving-aoqin-claim",
@@ -62990,7 +63004,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T06:50:00Z",
-   "age_days": 1.5
+   "age_days": 1.51
   },
   {
    "id": "bromcom-legacy-sso-breach",
@@ -63168,7 +63182,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T06:18:05Z",
-   "age_days": 1.94
+   "age_days": 1.95
   },
   {
    "id": "maersk-whitearmor",
@@ -63341,7 +63355,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T05:55:55Z",
-   "age_days": 1.64
+   "age_days": 1.65
   },
   {
    "id": "lighter-api-keys",
@@ -63502,7 +63516,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T04:43:36Z",
-   "age_days": 1.59
+   "age_days": 1.6
   },
   {
    "id": "caring-senior-care",
@@ -63613,7 +63627,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T04:42:57Z",
-   "age_days": 1.59
+   "age_days": 1.6
   },
   {
    "id": "baker-tilly-advisory-september-2026",
@@ -64204,7 +64218,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T02:26:49Z",
-   "age_days": 11.87
+   "age_days": 11.88
   },
   {
    "id": "rio-grande-municipal-disclosure-claim",
@@ -65112,7 +65126,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T23:11:00Z",
-   "age_days": 1.82
+   "age_days": 1.83
   },
   {
    "id": "agenzia-agora-panzer-claim",
@@ -65150,7 +65164,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T22:55:38Z",
-   "age_days": 1.83
+   "age_days": 1.84
   },
   {
    "id": "moreth-medusalocker-claim",
@@ -65188,7 +65202,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T22:41:43Z",
-   "age_days": 1.84
+   "age_days": 1.85
   },
   {
    "id": "l-and-t-technology-services-inc-ransom",
@@ -65805,7 +65819,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T19:36:08Z",
-   "age_days": 1.97
+   "age_days": 1.98
   },
   {
    "id": "aramid-bridge-voi-algorand-november",
@@ -66872,7 +66886,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T11:19:51Z",
-   "age_days": 35.33
+   "age_days": 35.34
   },
   {
    "id": "agniveer-recruitment-test-portal",
@@ -67010,7 +67024,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T11:02:12Z",
-   "age_days": 73.32
+   "age_days": 73.33
   },
   {
    "id": "cynthia-de-petris-rhysida-claim",
@@ -67048,7 +67062,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T10:43:39Z",
-   "age_days": 2.34
+   "age_days": 2.35
   },
   {
    "id": "kpmg-canada",
@@ -67846,7 +67860,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T07:22:00Z",
-   "age_days": 2.48
+   "age_days": 2.49
   },
   {
    "id": "invicta-watch-qilin-claim",
@@ -67944,7 +67958,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T06:55:12Z",
-   "age_days": 4.56
+   "age_days": 4.57
   },
   {
    "id": "latvia-csdd-august-2026",
@@ -68107,7 +68121,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T06:32:49Z",
-   "age_days": 6.47
+   "age_days": 6.48
   },
   {
    "id": "postech-portals",
@@ -69795,7 +69809,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T23:27:18Z",
-   "age_days": 2.81
+   "age_days": 2.82
   },
   {
    "id": "nyc-retirees-settlement-db",
@@ -69942,7 +69956,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T22:30:54Z",
-   "age_days": 5.33
+   "age_days": 5.34
   },
   {
    "id": "prime-intellect-model-substitution",
@@ -70688,6 +70702,14 @@
      "n": 1
     },
     {
+     "title": "IIHF website still down after cyberattack put pro-Russia message on homepage",
+     "source": "Toronto Star",
+     "url": "https://news.google.com/rss/articles/CBMi9wFBVV95cUxOS1U3bHd2UWs1RlFNTS16WUZCSXptM2Z0WEdwNzZ4RXctczlxbkhHa1BBQjdya0Q4ejh4T2syTDNOY24zLUlvSTc1Mk16THpxLXgyemt4T2g1QU41cWp3NjJzOGV2YUVvVjQ0dDExT3p4aDNodVFYdmZqMW9jaGZzRkU5YTRBN2ZfVEo0TTIxbnZzNHlfRnpreWtSWUxCTThrUGRXb0ZVVzE1WUgwQ0ozVk5EWU1lV0RrRV9iQW1jUGt0cENwcmdCT1pfak5jOEpNdzB4bFZQaFlLTkNXbnFvNkFrUWRJaWRuTm9IdERxZDh1ZjJOdjV3?oc=5",
+     "date": "2026-11-19T22:53:03Z",
+     "eid": "n-159d96bf",
+     "n": 9
+    },
+    {
      "title": "International hockey federation hit by cyberattack after Russia barred from World Juniors",
      "source": "The Kyiv Independent",
      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPV0xiVE1lNUowNWZYaU8zcWZfQkxpRk9IenRsSHltdmdQaG51RWp5YUd1R3pCa0NJTG1sV0ViUzhkeEh0UHZXYTYyYTRTdlRob0NBNG53UjRHODRDeUhLRzZkYmtmZ1hRUGxGajAyNnhWVGNhZnVaOHlCdlZEdE01WW03c1ExYUE0MlhtdENIMUp5MDV6NzdiaEpNejVCNjg1dmNPZW9yMG9hQ1A2ekhRdUlzN3o1MTNZd0E?oc=5",
@@ -70696,20 +70718,28 @@
      "n": 5
     },
     {
+     "title": "IIHF hit by apparent cyberattack days after excluding Russia from World Juniors - The Athletic",
+     "source": "The New York Times",
+     "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUk9uOVVKRVRpNzdheHV0MkZ1V3Z4QlZlN0hKUDNkR3c1c3dQRlRLVlFUTFE3azJJR2RmMmxLVENSOXdiR25oTDZuM0RMR0E2NHNvN0x3M3JHa1JmVzN6TnFfUGVUN2MteHk2ck15V2U2VmppV1Q0SzdYVzB0QnlWd09vQk5uTlo2MTMwWUdpbjdtbkVq?oc=5",
+     "date": "2026-11-17T21:08:39Z",
+     "eid": null,
+     "n": 1
+    },
+    {
+     "title": "IIHF target of a cyber attack: Website temporarily offline",
+     "source": "Audimax.de",
+     "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOMmxjck5KdVhSZ3Y4Z05Xcmh4SnFVZHhPdzdsTThSTjFWY1QyZExneENPUHJSdzk0S1psNkFrdkQzOVlEd1p0aU9LZ1BsRGpIWGZLUlNoNUVzaEc2TWVwanpuQi1tWGt5dmhZUF85X3k4Yk9UZm5VMmgwZnBxMDJYS0tXWHQ?oc=5",
+     "date": "2026-11-17T19:52:10Z",
+     "eid": null,
+     "n": 1
+    },
+    {
      "title": "International Ice Hockey Federation website hacked after Russia banned from event",
      "source": "BBC",
      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1aNTY0WVpQellKSm5sbHlITDdLRXVISlBRRnRpQ0NYNG1YR1h5ZE5VSU8xV2NHSEhGR1Badnl0dFBfMVNhLThEcEwxeWFMV3padkY3aGRhX3ppWnRTZURzMUIyMERRY3VUR0dB?oc=5",
      "date": "2026-11-17T19:35:00Z",
      "eid": "n-2f858f22",
      "n": 9
-    },
-    {
-     "title": "The IIHF confirms it has been the victim of a cyber attack",
-     "source": "Yahoo Sports",
-     "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQbEJzX3ZTU0pVWnpYU0RWTW5XbGRzU1RPdHgwa29JQW1hUmFQOEV5bmF2MDhDTTJHMmJWM0lyME9mWjI3emg1YThzTWZLSkNCbjIxTVptLUJ0dHJQOFhmZVF5TS1PZGVyNTN5bmVSYnAzeVVqbEdXWC1ycEJmaFR0eUZYNGR3bW1oc2c?oc=5",
-     "date": "2026-11-17T18:59:56Z",
-     "eid": "n-8782853c",
-     "n": 12
     }
    ],
    "notices": [],
@@ -70856,7 +70886,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T19:22:03Z",
-   "age_days": 3.47
+   "age_days": 3.48
   },
   {
    "id": "b18timebank-exploit",
@@ -72745,7 +72775,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T12:41:51Z",
-   "age_days": 7.1
+   "age_days": 7.11
   },
   {
    "id": "clevermate-claimed-data-exposure",
@@ -72957,7 +72987,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T10:27:00Z",
-   "age_days": 3.35
+   "age_days": 3.36
   },
   {
    "id": "collins-aerospace-europe-airports-2025",
@@ -73720,7 +73750,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T08:00:00Z",
-   "age_days": 10.72
+   "age_days": 10.73
   },
   {
    "id": "unicoop-firenze",
@@ -73802,7 +73832,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T08:00:00Z",
-   "age_days": 7.16
+   "age_days": 7.17
   },
   {
    "id": "dfw-fertility-barracuda-claim",
@@ -74175,7 +74205,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T06:00:00Z",
-   "age_days": 6.91
+   "age_days": 6.92
   },
   {
    "id": "amicus-rex-lawform",
@@ -75034,7 +75064,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T00:35:46Z",
-   "age_days": 3.76
+   "age_days": 3.77
   },
   {
    "id": "recruit-ring-karte",
@@ -76230,7 +76260,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T21:38:03Z",
-   "age_days": 4.14
+   "age_days": 4.15
   },
   {
    "id": "accuver-everest-claim",
@@ -76339,7 +76369,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T21:11:58Z",
-   "age_days": 35.29
+   "age_days": 35.3
   },
   {
    "id": "rassemblement-national-members",
@@ -76828,7 +76858,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T20:29:51Z",
-   "age_days": 191.2
+   "age_days": 191.21
   },
   {
    "id": "cambridge-university-hospitals-insider-access",
@@ -77603,7 +77633,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T18:30:00Z",
-   "age_days": 7.03
+   "age_days": 7.04
   },
   {
    "id": "cyberpower-powerpanel",
@@ -77934,7 +77964,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T17:48:30Z",
-   "age_days": 27.21
+   "age_days": 27.22
   },
   {
    "id": "apify-customer-account-access",
@@ -78389,7 +78419,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T15:46:07Z",
-   "age_days": 4.13
+   "age_days": 4.14
   },
   {
    "id": "pk-softech-publica-ransomware",
@@ -78965,7 +78995,7 @@
     "Ask Gina users with delegated (EVM and Solana) wallets. Ask Gina said it refunded all affected users their full balance; it did not publish the number of users or the amount."
    ],
    "guidance": [
-    "Log in to askgina.ai with your previous sign-in method and withdraw your funds. The app and its AI connectors are read-only for now.",
+    "In its November 20 incident post, Ask Gina asked users to log in to askgina.ai with their previous sign-in method and withdraw their funds, and said the app and its AI connectors were read-only at that time. Check Ask Gina's own channels for the current status.",
     "Ignore unsolicited recovery offers, and never share a seed phrase or private key."
    ],
    "payloads": [],
@@ -80604,7 +80634,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T08:05:00Z",
-   "age_days": 4.55
+   "age_days": 4.56
   },
   {
    "id": "wittenberg-net",
@@ -80875,7 +80905,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T07:49:34Z",
-   "age_days": 4.46
+   "age_days": 4.47
   },
   {
    "id": "romulus-cncmachinerms-campaign",
@@ -82881,7 +82911,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20",
-   "age_days": 11.96
+   "age_days": 11.97
   },
   {
    "id": "bookit-november-2026-booking-access",
@@ -83115,7 +83145,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20",
-   "age_days": 5.37
+   "age_days": 5.38
   },
   {
    "id": "shiseido-skin-assessment",
@@ -84236,7 +84266,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T21:49:35Z",
-   "age_days": 8.75
+   "age_days": 8.76
   },
   {
    "id": "valley-family-health",
@@ -84493,7 +84523,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T21:33:32Z",
-   "age_days": 7.25
+   "age_days": 7.26
   },
   {
    "id": "battelle-vermont-november-notice",
@@ -84995,7 +85025,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T16:03:16Z",
-   "age_days": 40.04
+   "age_days": 40.05
   },
   {
    "id": "bcd-travel-third-party-2026",
@@ -85452,7 +85482,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T13:33:00Z",
-   "age_days": 5.22
+   "age_days": 5.23
   },
   {
    "id": "tallinna-linnatransport-website",
@@ -85658,7 +85688,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T11:53:00Z",
-   "age_days": 5.29
+   "age_days": 5.3
   },
   {
    "id": "rathbones-client-data",
@@ -86077,7 +86107,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T09:48:47Z",
-   "age_days": 6.57
+   "age_days": 6.58
   },
   {
    "id": "ffgolf-licensee-data-claim",
@@ -86326,7 +86356,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T09:00:03Z",
-   "age_days": 5.41
+   "age_days": 5.42
   },
   {
    "id": "busan-universities-research-administration",
@@ -88020,7 +88050,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-18T08:31:00Z",
-   "age_days": 6.43
+   "age_days": 6.44
   },
   {
    "id": "gopax-streami-data-breach",
@@ -88187,7 +88217,7 @@
    ],
    "notices": [],
    "latest": "2026-11-18T06:48:52Z",
-   "age_days": 8.23
+   "age_days": 8.24
   },
   {
    "id": "fair-health-pixelleaks-claim",
@@ -88914,7 +88944,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-17T11:39:00Z",
-   "age_days": 7.3
+   "age_days": 7.31
   },
   {
    "id": "dexcom-november-filing",
@@ -89534,7 +89564,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-16T16:43:20Z",
-   "age_days": 8.09
+   "age_days": 8.1
   },
   {
    "id": "barracuda-artex",
@@ -90377,7 +90407,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-15T23:39:44Z",
-   "age_days": 8.8
+   "age_days": 8.81
   },
   {
    "id": "coles-cyber-incident",
@@ -91497,7 +91527,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-10T10:00:05Z",
-   "age_days": 14.37
+   "age_days": 14.38
   },
   {
    "id": "waseda-mywaseda-records",
@@ -91638,7 +91668,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-08T07:33:06Z",
-   "age_days": 16.47
+   "age_days": 16.48
   },
   {
    "id": "vanguard-july-2026",
@@ -91751,7 +91781,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-05T18:36:00Z",
-   "age_days": 22.14
+   "age_days": 22.15
   },
   {
    "id": "gyazo-helpfeel-september-2026-breach",
@@ -95946,7 +95976,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 36.4,
+   "age_h": 36.5,
    "eid": "x-91454966"
   },
   {
@@ -96080,7 +96110,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 40.3,
+   "age_h": 40.4,
    "eid": "x-4e728987"
   },
   {
@@ -96442,7 +96472,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.2,
    "stale": false,
-   "age_h": 41.6,
+   "age_h": 41.7,
    "eid": "x-39172e83"
   },
   {
@@ -96499,7 +96529,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 41.8,
+   "age_h": 41.9,
    "eid": "x-8e646d77"
   },
   {
@@ -96642,7 +96672,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 46.5,
+   "age_h": 46.6,
    "eid": "x-cd2fd6b5"
   },
   {
@@ -96698,7 +96728,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 47.0,
+   "age_h": 47.1,
    "eid": "x-c7c7a140"
   },
   {
@@ -96984,7 +97014,7 @@
    "hours_to_confirm": 4.9,
    "press_lead_h": 1.1,
    "stale": false,
-   "age_h": 47.8,
+   "age_h": 47.9,
    "eid": "x-1d661531"
   },
   {
@@ -97208,7 +97238,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.2,
    "stale": false,
-   "age_h": 49.1,
+   "age_h": 49.2,
    "eid": "x-2b507ecf"
   },
   {
@@ -97273,7 +97303,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -70.8,
    "stale": true,
-   "age_h": 49.9,
+   "age_h": 50.0,
    "eid": "x-f4f958f2"
   },
   {
@@ -97384,7 +97414,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 11.3,
    "stale": true,
-   "age_h": 50.8,
+   "age_h": 50.9,
    "eid": "x-a8754aa6"
   },
   {
@@ -97486,7 +97516,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 53.0,
+   "age_h": 53.1,
    "eid": "x-35eeeab2"
   },
   {
@@ -97609,7 +97639,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 61.1,
+   "age_h": 61.2,
    "eid": "x-e9f8c567"
   },
   {
@@ -97829,7 +97859,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 3.3,
    "stale": true,
-   "age_h": 66.7,
+   "age_h": 66.8,
    "eid": "x-2d3e2ee9"
   },
   {
@@ -98147,7 +98177,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": -5.0,
    "stale": false,
-   "age_h": 67.6,
+   "age_h": 67.7,
    "eid": "x-eb428de0"
   },
   {
@@ -98299,7 +98329,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -52.5,
    "stale": false,
-   "age_h": 67.9,
+   "age_h": 68.0,
    "eid": "x-f3649087"
   },
   {
@@ -98358,7 +98388,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-7c1c1bbc"
   },
   {
@@ -98417,7 +98447,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-34bd9478"
   },
   {
@@ -98476,7 +98506,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-d27e9ce4"
   },
   {
@@ -98535,7 +98565,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-fc0e20ff"
   },
   {
@@ -98611,7 +98641,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-abacfba6"
   },
   {
@@ -98670,7 +98700,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-74604584"
   },
   {
@@ -98729,7 +98759,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-0427da2b"
   },
   {
@@ -98788,7 +98818,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-3805b142"
   },
   {
@@ -98847,7 +98877,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 71.0,
+   "age_h": 71.1,
    "eid": "x-1fb3441b"
   },
   {
@@ -98906,7 +98936,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 72.3,
+   "age_h": 72.4,
    "eid": "x-db46d045"
   },
   {
@@ -99228,7 +99258,7 @@
    "hours_to_confirm": 0.1,
    "press_lead_h": 0.1,
    "stale": false,
-   "age_h": 72.6,
+   "age_h": 72.7,
    "eid": "x-57f29b3f"
   },
   {
@@ -99365,7 +99395,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 72.7,
+   "age_h": 72.8,
    "eid": "x-640578b9"
   },
   {
@@ -99434,7 +99464,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -6.3,
    "stale": false,
-   "age_h": 73.6,
+   "age_h": 73.7,
    "eid": "x-0cd68e71"
   },
   {
@@ -99496,7 +99526,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.6,
+   "age_h": 73.7,
    "eid": "x-a6c31c7f"
   },
   {
@@ -99558,7 +99588,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.6,
+   "age_h": 73.7,
    "eid": "x-cd027845"
   },
   {
@@ -99620,7 +99650,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.6,
+   "age_h": 73.7,
    "eid": "x-89013fad"
   },
   {
@@ -99674,7 +99704,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.6,
+   "age_h": 73.7,
    "eid": "x-dd18bf99"
   },
   {
@@ -99728,7 +99758,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.6,
+   "age_h": 73.7,
    "eid": "x-01603dce"
   },
   {
@@ -100004,7 +100034,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 76.2,
+   "age_h": 76.3,
    "eid": "x-37993888"
   },
   {
@@ -100555,7 +100585,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 30.3,
    "stale": false,
-   "age_h": 78.5,
+   "age_h": 78.6,
    "eid": "x-6db86515"
   },
   {
@@ -100625,7 +100655,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 21.9,
    "stale": false,
-   "age_h": 79.5,
+   "age_h": 79.6,
    "eid": "x-b4f582bd"
   },
   {
@@ -100696,7 +100726,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 80.8,
+   "age_h": 80.9,
    "eid": "x-7ba9b136"
   },
   {
@@ -101400,7 +101430,7 @@
    "hours_to_confirm": 1.7,
    "press_lead_h": -7.7,
    "stale": false,
-   "age_h": 83.4,
+   "age_h": 83.5,
    "eid": "x-b163fb32"
   },
   {
@@ -101475,7 +101505,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 83.4,
+   "age_h": 83.5,
    "eid": "x-d417acba"
   },
   {
@@ -101536,7 +101566,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 86.9,
+   "age_h": 87.0,
    "eid": "x-4bc3779a"
   },
   {
@@ -101692,7 +101722,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 88.0,
+   "age_h": 88.1,
    "eid": "x-d9f5f081"
   },
   {
@@ -102709,7 +102739,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -7.7,
    "stale": false,
-   "age_h": 89.3,
+   "age_h": 89.4,
    "eid": "x-565d5495"
   },
   {
@@ -102959,7 +102989,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.3,
    "stale": false,
-   "age_h": 89.7,
+   "age_h": 89.8,
    "eid": "x-e5c9ba88"
   },
   {
@@ -103084,7 +103114,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 90.1,
+   "age_h": 90.2,
    "eid": "x-41d76d2a"
   },
   {
@@ -103275,7 +103305,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 91.0,
+   "age_h": 91.1,
    "eid": "x-b0bed11b"
   },
   {
@@ -103344,7 +103374,7 @@
    "hours_to_confirm": -14.3,
    "press_lead_h": -14.3,
    "stale": false,
-   "age_h": 91.4,
+   "age_h": 91.5,
    "eid": "x-02fe5ac3"
   },
   {
@@ -103409,7 +103439,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 91.5,
+   "age_h": 91.6,
    "eid": "x-af78ff3f"
   },
   {
@@ -103651,7 +103681,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 92.3,
+   "age_h": 92.4,
    "eid": "x-886c7455"
   },
   {
@@ -103789,7 +103819,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 92.4,
+   "age_h": 92.5,
    "eid": "x-ce2d10ad"
   },
   {
@@ -103938,7 +103968,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 92.9,
+   "age_h": 93.0,
    "eid": "x-d73347aa"
   },
   {
@@ -104019,7 +104049,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 93.4,
+   "age_h": 93.5,
    "eid": "x-eecb97f9"
   },
   {
@@ -104168,7 +104198,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 14.3,
    "stale": false,
-   "age_h": 94.1,
+   "age_h": 94.2,
    "eid": "x-b14ab31c"
   },
   {
@@ -104245,7 +104275,7 @@
    "hours_to_confirm": -0.2,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 95.5,
+   "age_h": 95.6,
    "eid": "x-26574ff1"
   },
   {
@@ -104395,7 +104425,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -2.0,
    "stale": false,
-   "age_h": 95.5,
+   "age_h": 95.6,
    "eid": "x-a59a1bd5"
   },
   {
@@ -104522,7 +104552,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.8,
    "stale": false,
-   "age_h": 95.6,
+   "age_h": 95.7,
    "eid": "x-64ffd708"
   },
   {
@@ -104597,7 +104627,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -4.0,
    "stale": false,
-   "age_h": 95.7,
+   "age_h": 95.8,
    "eid": "x-3048272c"
   },
   {
@@ -104695,7 +104725,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.2,
    "stale": false,
-   "age_h": 96.0,
+   "age_h": 96.1,
    "eid": "x-1556c60e"
   },
   {
@@ -104996,7 +105026,7 @@
    "hours_to_confirm": 5.6,
    "press_lead_h": 65.1,
    "stale": false,
-   "age_h": 96.5,
+   "age_h": 96.6,
    "eid": "x-54aa91cc"
   },
   {
@@ -105311,7 +105341,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 97.3,
+   "age_h": 97.4,
    "eid": "x-b4d4f3a8"
   },
   {
@@ -105415,7 +105445,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 78.3,
    "stale": false,
-   "age_h": 97.4,
+   "age_h": 97.5,
    "eid": "x-c866ecc7"
   },
   {
@@ -105647,7 +105677,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -27.6,
    "stale": false,
-   "age_h": 97.8,
+   "age_h": 97.9,
    "eid": "x-fac4dc83"
   },
   {
@@ -105762,7 +105792,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -3.8,
    "stale": false,
-   "age_h": 98.2,
+   "age_h": 98.3,
    "eid": "x-0aa6a0bd"
   },
   {
@@ -105840,7 +105870,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 98.4,
+   "age_h": 98.5,
    "eid": "x-33aa3516"
   },
   {
@@ -105966,7 +105996,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 98.9,
+   "age_h": 99.0,
    "eid": "x-16536ff0"
   },
   {
@@ -106045,7 +106075,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -2.7,
    "stale": false,
-   "age_h": 98.9,
+   "age_h": 99.0,
    "eid": "x-c84f6055"
   },
   {
@@ -106116,7 +106146,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 99.0,
+   "age_h": 99.1,
    "eid": "x-8a5725b0"
   },
   {
@@ -106165,7 +106195,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 99.2,
+   "age_h": 99.3,
    "eid": "x-d0056ba9"
   },
   {
@@ -106220,7 +106250,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 99.6,
+   "age_h": 99.7,
    "eid": "x-0cdae788"
   },
   {
@@ -106347,7 +106377,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.3,
+   "age_h": 100.4,
    "eid": "x-45490ff0"
   },
   {
@@ -106453,7 +106483,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.3,
+   "age_h": 100.4,
    "eid": "x-31f22223"
   },
   {
@@ -106866,7 +106896,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.1,
    "stale": false,
-   "age_h": 101.9,
+   "age_h": 102.0,
    "eid": "x-503b2fe7"
   },
   {
@@ -107019,7 +107049,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 102.1,
+   "age_h": 102.2,
    "eid": "x-afb3de62"
   },
   {
@@ -107197,7 +107227,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 102.8,
+   "age_h": 102.9,
    "eid": "x-11af7156"
   },
   {
@@ -107617,7 +107647,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -1.6,
    "stale": false,
-   "age_h": 105.0,
+   "age_h": 105.1,
    "eid": "x-1e6e9963"
   },
   {
@@ -107802,7 +107832,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 105.6,
+   "age_h": 105.7,
    "eid": "x-b0a3ae00"
   },
   {
@@ -107944,7 +107974,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 105.9,
+   "age_h": 106.0,
    "eid": "x-82a1f65d"
   },
   {
@@ -108080,7 +108110,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 106.6,
+   "age_h": 106.7,
    "eid": "x-aee81824"
   },
   {
@@ -108191,7 +108221,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.8,
    "stale": false,
-   "age_h": 108.0,
+   "age_h": 108.1,
    "eid": "x-0a1e2869"
   },
   {
@@ -108296,7 +108326,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 6.5,
    "stale": false,
-   "age_h": 108.3,
+   "age_h": 108.4,
    "eid": "x-b1e9eeb7"
   },
   {
@@ -108373,7 +108403,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 108.8,
+   "age_h": 108.9,
    "eid": "x-929dbc66"
   },
   {
@@ -108444,7 +108474,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 108.9,
+   "age_h": 109.0,
    "eid": "x-958b8ce8"
   },
   {
@@ -108846,7 +108876,7 @@
    "hours_to_confirm": 5.7,
    "press_lead_h": 0.4,
    "stale": false,
-   "age_h": 109.1,
+   "age_h": 109.2,
    "eid": "x-37d402a7"
   },
   {
@@ -109075,7 +109105,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 9.9,
    "stale": false,
-   "age_h": 110.5,
+   "age_h": 110.6,
    "eid": "x-dcad2ced"
   },
   {
@@ -109216,7 +109246,7 @@
    "hours_to_confirm": -3.9,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 111.1,
+   "age_h": 111.2,
    "eid": "x-75f9ca7b"
   },
   {
@@ -109298,7 +109328,7 @@
    "hours_to_confirm": -0.1,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 111.1,
+   "age_h": 111.2,
    "eid": "x-69ae9d55"
   },
   {
@@ -109369,7 +109399,7 @@
    "hours_to_confirm": 1.2,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 111.9,
+   "age_h": 112.0,
    "eid": "x-26e703c2"
   },
   {
@@ -109703,7 +109733,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 11.4,
    "stale": false,
-   "age_h": 113.7,
+   "age_h": 113.8,
    "eid": "x-4211ef70"
   },
   {
@@ -109769,7 +109799,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 113.9,
+   "age_h": 114.0,
    "eid": "x-7b941bec"
   },
   {
@@ -109845,7 +109875,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.6,
    "stale": false,
-   "age_h": 114.4,
+   "age_h": 114.5,
    "eid": "x-0f97b676"
   },
   {
@@ -110073,7 +110103,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 114.7,
+   "age_h": 114.8,
    "eid": "x-77fc8232"
   },
   {
@@ -110279,7 +110309,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 115.8,
+   "age_h": 115.9,
    "eid": "x-a393b742"
   },
   {
@@ -110415,7 +110445,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 116.2,
+   "age_h": 116.3,
    "eid": "x-376bd42c"
   },
   {
@@ -110795,7 +110825,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 116.8,
+   "age_h": 116.9,
    "eid": "x-57b12011"
   },
   {
@@ -111035,7 +111065,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 5.3,
    "stale": false,
-   "age_h": 118.4,
+   "age_h": 118.5,
    "eid": "x-4f573e56"
   },
   {
@@ -111175,7 +111205,7 @@
    "hours_to_confirm": 28.5,
    "press_lead_h": -5.2,
    "stale": false,
-   "age_h": 119.5,
+   "age_h": 119.6,
    "eid": "x-6a8a046d"
   },
   {
@@ -111255,7 +111285,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.6,
    "stale": false,
-   "age_h": 119.8,
+   "age_h": 119.9,
    "eid": "x-fa40179a"
   },
   {
@@ -111405,7 +111435,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -28.0,
    "stale": false,
-   "age_h": 120.0,
+   "age_h": 120.1,
    "eid": "x-afc1c4f0"
   },
   {
@@ -111627,7 +111657,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 0.7,
    "stale": false,
-   "age_h": 120.6,
+   "age_h": 120.7,
    "eid": "x-7b9a9595"
   },
   {
@@ -111784,7 +111814,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 119.3,
    "stale": false,
-   "age_h": 121.9,
+   "age_h": 122.0,
    "eid": "x-d309dfe3"
   },
   {
@@ -112244,7 +112274,7 @@
    "hours_to_confirm": 49.4,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 122.6,
+   "age_h": 122.7,
    "eid": "x-2d44e830"
   },
   {
@@ -112329,7 +112359,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 122.6,
+   "age_h": 122.7,
    "eid": "x-735d7d51"
   },
   {
@@ -112394,7 +112424,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 123.8,
+   "age_h": 123.9,
    "eid": "x-89ac23e5"
   },
   {
@@ -112631,7 +112661,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.0,
+   "age_h": 124.1,
    "eid": "x-ff2e57c7"
   },
   {
@@ -112706,7 +112736,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.1,
+   "age_h": 124.2,
    "eid": "x-1c3d431c"
   },
   {
@@ -112766,7 +112796,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.1,
+   "age_h": 124.2,
    "eid": "x-a94024ef"
   },
   {
@@ -113384,7 +113414,7 @@
    "hours_to_confirm": 34.8,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 125.7,
+   "age_h": 125.8,
    "eid": "x-879dc3a5"
   },
   {
@@ -113455,7 +113485,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 0.2,
    "stale": false,
-   "age_h": 125.9,
+   "age_h": 126.0,
    "eid": "x-1dae4023"
   },
   {
@@ -113570,7 +113600,7 @@
    "hours_to_confirm": 4.1,
    "press_lead_h": 5.3,
    "stale": false,
-   "age_h": 126.3,
+   "age_h": 126.4,
    "eid": "x-3a3e5524"
   },
   {
@@ -113713,7 +113743,7 @@
    "hours_to_confirm": -12.7,
    "press_lead_h": -23.3,
    "stale": false,
-   "age_h": 126.3,
+   "age_h": 126.4,
    "eid": "x-28e9dc79"
   },
   {
@@ -113808,7 +113838,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 126.4,
+   "age_h": 126.5,
    "eid": "x-9ad9faa1"
   },
   {
@@ -113909,7 +113939,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 126.5,
+   "age_h": 126.6,
    "eid": "x-e7d75e5e"
   },
   {
@@ -113974,7 +114004,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.3,
+   "age_h": 127.4,
    "eid": "x-1897a686"
   },
   {
@@ -114039,7 +114069,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.3,
+   "age_h": 127.4,
    "eid": "x-e59c5ef9"
   },
   {
@@ -114104,7 +114134,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.3,
+   "age_h": 127.4,
    "eid": "x-d17085eb"
   },
   {
@@ -114215,7 +114245,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 15.1,
    "stale": false,
-   "age_h": 127.3,
+   "age_h": 127.4,
    "eid": "x-fa91d8d0"
   },
   {
@@ -114276,7 +114306,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.4,
+   "age_h": 127.5,
    "eid": "x-27edaf76"
   },
   {
@@ -114379,7 +114409,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 20.5,
    "stale": false,
-   "age_h": 128.2,
+   "age_h": 128.3,
    "eid": "x-cd4957a1"
   },
   {
@@ -114547,7 +114577,7 @@
    "hours_to_confirm": 110.2,
    "press_lead_h": -0.3,
    "stale": false,
-   "age_h": 129.1,
+   "age_h": 129.2,
    "eid": "x-24f0b9f1"
   },
   {
@@ -114618,7 +114648,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 129.3,
+   "age_h": 129.4,
    "eid": "x-37ffb879"
   },
   {
@@ -114732,7 +114762,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 98.8,
    "stale": false,
-   "age_h": 129.8,
+   "age_h": 129.9,
    "eid": "x-62afa396"
   },
   {
@@ -115257,7 +115287,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -15.1,
    "stale": false,
-   "age_h": 131.1,
+   "age_h": 131.2,
    "eid": "x-5a6c8d79"
   },
   {
@@ -115356,7 +115386,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 37.6,
    "stale": false,
-   "age_h": 135.5,
+   "age_h": 135.6,
    "eid": "x-238bed0f"
   },
   {
@@ -115532,7 +115562,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 2.3,
    "stale": false,
-   "age_h": 136.3,
+   "age_h": 136.4,
    "eid": "x-9893c906"
   },
   {
@@ -115640,7 +115670,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -4.6,
    "stale": false,
-   "age_h": 136.9,
+   "age_h": 137.0,
    "eid": "x-71215915"
   },
   {
@@ -115717,7 +115747,7 @@
    "hours_to_confirm": 142.2,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 137.1,
+   "age_h": 137.2,
    "eid": "x-7cc410dc"
   },
   {
@@ -115783,7 +115813,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 140.1,
+   "age_h": 140.2,
    "eid": "x-42e37a7c"
   },
   {
@@ -116000,7 +116030,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 141.6,
+   "age_h": 141.7,
    "eid": "x-fdbb2343"
   },
   {
@@ -116692,7 +116722,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 143.3,
+   "age_h": 143.4,
    "eid": "x-d73f92d4"
   },
   {
@@ -116757,7 +116787,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 143.4,
+   "age_h": 143.5,
    "eid": "x-838eb4f3"
   },
   {
@@ -116820,7 +116850,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 7.2,
    "stale": false,
-   "age_h": 143.5,
+   "age_h": 143.6,
    "eid": "x-77239847"
   },
   {
@@ -116933,7 +116963,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -2.3,
    "stale": false,
-   "age_h": 143.6,
+   "age_h": 143.7,
    "eid": "x-9047968d"
   },
   {
@@ -117317,7 +117347,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 13.6,
    "stale": false,
-   "age_h": 144.4,
+   "age_h": 144.5,
    "eid": "x-c0b3914d"
   },
   {
@@ -117523,7 +117553,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 147.1,
+   "age_h": 147.2,
    "eid": "x-7cc74178"
   },
   {
@@ -117619,7 +117649,7 @@
    "hours_to_confirm": 56.9,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 147.9,
+   "age_h": 148.0,
    "eid": "x-4760ebb4"
   },
   {
@@ -117912,7 +117942,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.7,
    "stale": false,
-   "age_h": 148.5,
+   "age_h": 148.6,
    "eid": "x-6f5cdee2"
   },
   {
@@ -117999,7 +118029,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 148.5,
+   "age_h": 148.6,
    "eid": "x-9d5dd0bb"
   },
   {
@@ -118143,7 +118173,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -4.1,
    "stale": false,
-   "age_h": 149.4,
+   "age_h": 149.5,
    "eid": "x-c5dfe8bc"
   },
   {
@@ -118201,7 +118231,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 150.0,
+   "age_h": 150.1,
    "eid": "x-86795d3e"
   },
   {
@@ -118428,7 +118458,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 16.8,
    "stale": false,
-   "age_h": 150.9,
+   "age_h": 151.0,
    "eid": "x-14355224"
   },
   {
@@ -118588,7 +118618,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 152.8,
+   "age_h": 152.9,
    "eid": "x-713b50e6"
   },
   {
@@ -118784,7 +118814,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 155.5,
+   "age_h": 155.6,
    "eid": "x-dfd6dfee"
   },
   {
@@ -118985,7 +119015,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 156.8,
+   "age_h": 156.9,
    "eid": "x-10879901"
   },
   {
@@ -119048,7 +119078,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 157.7,
+   "age_h": 157.8,
    "eid": "x-61d02f2e"
   },
   {
@@ -119134,7 +119164,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 157.7,
+   "age_h": 157.8,
    "eid": "x-ac8eaff4"
   },
   {
@@ -119254,7 +119284,7 @@
    "hours_to_confirm": -1.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 161.9,
+   "age_h": 162.0,
    "eid": "x-ac2193cd"
   },
   {
@@ -119336,7 +119366,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 69.6,
    "stale": false,
-   "age_h": 162.9,
+   "age_h": 163.0,
    "eid": "x-ff829756"
   },
   {
@@ -119799,7 +119829,7 @@
    "hours_to_confirm": 15.9,
    "press_lead_h": 13.8,
    "stale": false,
-   "age_h": 164.8,
+   "age_h": 164.9,
    "eid": "x-bbb595c5"
   },
   {
@@ -119868,7 +119898,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 165.2,
+   "age_h": 165.3,
    "eid": "x-f20a11b8"
   },
   {
@@ -119940,7 +119970,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 165.9,
+   "age_h": 166.0,
    "eid": "x-a4503abf"
   },
   {
@@ -120196,7 +120226,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 57.5,
    "stale": false,
-   "age_h": 169.8,
+   "age_h": 169.9,
    "eid": "x-ccd3bdf4"
   },
   {
@@ -120306,7 +120336,7 @@
    "hours_to_confirm": 40.5,
    "press_lead_h": 43.4,
    "stale": false,
-   "age_h": 170.7,
+   "age_h": 170.8,
    "eid": "x-188716de"
   },
   {
@@ -120522,7 +120552,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 170.9,
+   "age_h": 171.0,
    "eid": "x-6db7e50a"
   },
   {
@@ -120621,7 +120651,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 55.0,
    "stale": false,
-   "age_h": 172.4,
+   "age_h": 172.5,
    "eid": "x-7b7e6d9a"
   },
   {
@@ -120812,7 +120842,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 173.4,
+   "age_h": 173.5,
    "eid": "x-a57b74c7"
   },
   {
@@ -120918,7 +120948,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 175.2,
+   "age_h": 175.3,
    "eid": "x-558cdac7"
   },
   {
@@ -121016,7 +121046,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 19.0,
    "stale": false,
-   "age_h": 177.1,
+   "age_h": 177.2,
    "eid": "x-06e8b1ca"
   },
   {
@@ -121118,7 +121148,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 178.4,
+   "age_h": 178.5,
    "eid": "x-1270f469"
   },
   {
@@ -121315,7 +121345,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 178.8,
+   "age_h": 178.9,
    "eid": "x-cebc5ac8"
   },
   {
@@ -121442,7 +121472,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 178.8,
+   "age_h": 178.9,
    "eid": "x-9330e9a1"
   },
   {
@@ -121572,7 +121602,7 @@
    "hours_to_confirm": 3.9,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 180.7,
+   "age_h": 180.8,
    "eid": "x-8d02360c"
   },
   {
@@ -121678,7 +121708,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 60.2,
    "stale": false,
-   "age_h": 183.7,
+   "age_h": 183.8,
    "eid": "x-fd483653"
   },
   {
@@ -121760,7 +121790,7 @@
    "hours_to_confirm": -1.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 185.9,
+   "age_h": 186.0,
    "eid": "x-0bdfcaef"
   },
   {
@@ -122151,7 +122181,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 188.5,
+   "age_h": 188.6,
    "eid": "x-28696625"
   },
   {
@@ -122373,7 +122403,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 36.5,
    "stale": false,
-   "age_h": 192.6,
+   "age_h": 192.7,
    "eid": "x-67771918"
   },
   {
@@ -122489,7 +122519,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 194.7,
+   "age_h": 194.8,
    "eid": "x-341412fc"
   },
   {
@@ -122643,7 +122673,7 @@
    "hours_to_confirm": 14.9,
    "press_lead_h": 30.3,
    "stale": false,
-   "age_h": 196.4,
+   "age_h": 196.5,
    "eid": "x-d668ef99"
   },
   {
@@ -122710,7 +122740,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 72.7,
    "stale": false,
-   "age_h": 200.3,
+   "age_h": 200.4,
    "eid": "x-bf70a05f"
   },
   {
@@ -122779,7 +122809,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 207.4,
+   "age_h": 207.5,
    "eid": "x-2946bbb8"
   },
   {
@@ -123271,7 +123301,7 @@
    "hours_to_confirm": 14.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 231.8,
+   "age_h": 231.9,
    "eid": "x-d81516d6"
   },
   {
@@ -123366,7 +123396,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 237.3,
+   "age_h": 237.4,
    "eid": "x-bda3a434"
   },
   {
@@ -123508,7 +123538,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 239.1,
+   "age_h": 239.2,
    "eid": "x-69ede209"
   },
   {
@@ -123634,7 +123664,7 @@
    "hours_to_confirm": 1.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 242.9,
+   "age_h": 243.0,
    "eid": "x-6aec74ba"
   },
   {
@@ -123702,7 +123732,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 94.6,
    "stale": false,
-   "age_h": 249.9,
+   "age_h": 250.0,
    "eid": "x-edf78490"
   },
   {
@@ -123772,7 +123802,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 252.9,
+   "age_h": 253.0,
    "eid": "x-b2c89bd4"
   },
   {
@@ -123922,7 +123952,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 255.4,
+   "age_h": 255.5,
    "eid": "x-fbb57da1"
   },
   {
@@ -124062,7 +124092,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 265.1,
+   "age_h": 265.2,
    "eid": "x-a4577323"
   },
   {
@@ -124616,7 +124646,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 323.1,
+   "age_h": 323.2,
    "eid": "x-c19592d0"
   },
   {
@@ -124702,7 +124732,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 327.6,
+   "age_h": 327.7,
    "eid": "x-62546e4d"
   },
   {
@@ -125105,7 +125135,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 385.1,
+   "age_h": 385.2,
    "eid": "x-3d2ab317"
   },
   {
@@ -125196,7 +125226,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 469.7,
+   "age_h": 469.8,
    "eid": "x-47c6c52d"
   },
   {
@@ -125821,7 +125851,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 778.6,
+   "age_h": 778.7,
    "eid": "x-3c6e2c92"
   },
   {
@@ -126164,7 +126194,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 1403.4,
+   "age_h": 1403.5,
    "eid": "x-4fe7140c"
   },
   {
@@ -126267,7 +126297,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 1466.9,
+   "age_h": 1467.0,
    "eid": "x-d4276857"
   },
   {
@@ -126620,12 +126650,6 @@
  },
  "hourly": [
   {
-   "t": "2026-11-23T19:00:00Z",
-   "ransomware": 2,
-   "news": 17,
-   "x": 0
-  },
-  {
    "t": "2026-11-23T20:00:00Z",
    "ransomware": 0,
    "news": 16,
@@ -126664,7 +126688,7 @@
   {
    "t": "2026-11-24T02:00:00Z",
    "ransomware": 1,
-   "news": 15,
+   "news": 16,
    "x": 0
   },
   {
@@ -126730,12 +126754,12 @@
   {
    "t": "2026-11-24T13:00:00Z",
    "ransomware": 0,
-   "news": 29,
+   "news": 30,
    "x": 0
   },
   {
    "t": "2026-11-24T14:00:00Z",
-   "ransomware": 3,
+   "ransomware": 4,
    "news": 21,
    "x": 0
   },
@@ -126754,22 +126778,28 @@
   {
    "t": "2026-11-24T17:00:00Z",
    "ransomware": 0,
-   "news": 29,
+   "news": 30,
    "x": 0
   },
   {
    "t": "2026-11-24T18:00:00Z",
    "ransomware": 0,
-   "news": 16,
+   "news": 17,
+   "x": 0
+  },
+  {
+   "t": "2026-11-24T19:00:00Z",
+   "ransomware": 0,
+   "news": 0,
    "x": 0
   }
  ],
  "windows": {
   "bounds": {
-   "1h": "2026-11-24T17:56:58Z",
-   "24h": "2026-11-23T18:56:58Z",
-   "7d": "2026-11-17T18:56:58Z",
-   "30d": "2026-10-25T18:56:58Z",
+   "1h": "2026-11-24T18:00:57Z",
+   "24h": "2026-11-23T19:00:57Z",
+   "7d": "2026-11-17T19:00:57Z",
+   "30d": "2026-10-25T19:00:57Z",
    "ytd": "2026-01-01T00:00:00Z"
   },
   "rows": {
@@ -126818,10 +126848,10 @@
      "n": 18
     },
     "7d": {
-     "n": 293
+     "n": 294
     },
     "30d": {
-     "n": 1260
+     "n": 1261
     },
     "ytd": {
      "n": 9833,
@@ -126869,16 +126899,16 @@
    },
    "news": {
     "1h": {
-     "n": 16,
-     "headlines": 36
+     "n": 17,
+     "headlines": 34
     },
     "24h": {
-     "n": 525,
-     "headlines": 1410
+     "n": 528,
+     "headlines": 1414
     },
     "7d": {
-     "n": 2860,
-     "headlines": 9939
+     "n": 2865,
+     "headlines": 9943
     }
    },
    "incidents": {
@@ -129578,7 +129608,7 @@
      "kind": "news",
      "title": "Personal data from LaLiga's digital platform extracted in cyber attack",
      "date": "2026-11-23T10:17:00Z",
-     "score": 0.4,
+     "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: digital, personal"
     },
     {
@@ -132201,6 +132231,14 @@
    ],
    "related": [
     {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.41,
+     "why": "same pattern: Supply chain and third parties; terms: next"
+    },
+    {
      "id": "n-5b078c95",
      "kind": "news",
      "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers",
@@ -132231,14 +132269,6 @@
      "date": "2026-11-17T22:34:22Z",
      "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: major"
-    },
-    {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.3,
-     "why": "same pattern: Supply chain and third parties; terms: next"
     }
    ]
   },
@@ -132659,7 +132689,7 @@
      "kind": "news",
      "title": "Exclusive: China-backed hackers suspected behind ongoing EU Commission cyberattack",
      "date": "2026-11-23T11:55:06Z",
-     "score": 0.36,
+     "score": 0.35,
      "why": "same pattern: Data exposure and theft, AI systems and agents; terms: commission, cyberattack"
     },
     {
@@ -132828,14 +132858,6 @@
    ],
    "related": [
     {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.42,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: next"
-    },
-    {
      "id": "n-0d824cbe",
      "kind": "news",
      "title": "UKs Next reports cyber attack on online provider, no customer data affected",
@@ -132850,6 +132872,14 @@
      "date": "2026-11-23T13:09:15Z",
      "score": 0.4,
      "why": "same pattern: Supply chain and third parties; terms: cyber-attack, next"
+    },
+    {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.33,
+     "why": "same pattern: Supply chain and third parties; terms: next"
     },
     {
      "id": "x-41c84c0c",
@@ -132942,7 +132972,7 @@
      "kind": "news",
      "title": "European Commission Uncovers Data Breach in Cyberattack Investigation",
      "date": "2026-11-23T12:09:18Z",
-     "score": 0.36,
+     "score": 0.35,
      "why": "same pattern: Data exposure and theft, AI systems and agents; terms: commission, cyberattack"
     },
     {
@@ -133188,20 +133218,20 @@
    ],
    "related": [
     {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.48,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: next, cyber"
-    },
-    {
      "id": "n-5b078c95",
      "kind": "news",
      "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers",
      "date": "2026-11-23T11:56:00Z",
      "score": 0.41,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: next"
+    },
+    {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.39,
+     "why": "same pattern: Supply chain and third parties; terms: next, cyber"
     },
     {
      "id": "n-022366c6",
@@ -133228,7 +133258,6 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: provider, customer"
     }
    ],
-   "cluster": "cl-02cded",
    "analysis": {
     "summary": "Next said an unnamed online supplier suffered a cyber incident that allowed unauthorized access to limited company data. Next said its own systems were not compromised and current evidence indicates that no customer personal data was affected. The investigation is ongoing.",
     "attack_chain": [
@@ -133579,7 +133608,7 @@
      "kind": "news",
      "title": "Simple payment personal information leakage doubles\u2026 Declining digital finance utilization rate",
      "date": "2026-11-24T03:01:00Z",
-     "score": 0.4,
+     "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: digital, personal"
     }
    ],
@@ -135066,14 +135095,6 @@
    ],
    "related": [
     {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.38,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party"
-    },
-    {
      "id": "n-3ab40e7b",
      "kind": "news",
      "title": "Phoebe confirms patient information leaked in former third-party vendor data breach",
@@ -135102,6 +135123,14 @@
      "kind": "news",
      "title": "Carnegie Endowment for International Peace reports data breach",
      "date": "2026-11-20T18:42:26Z",
+     "score": 0.34,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party, breach"
+    },
+    {
+     "id": "x-5f47903b",
+     "kind": "x",
+     "title": "Phoebe Putney confirms patient data leaked in former vendor MedCom's breach",
+     "date": "2026-11-20T22:35:54Z",
      "score": 0.34,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party, breach"
     }
@@ -135329,7 +135358,7 @@
      "kind": "news",
      "title": "Curly, personal information of over 10,000 people leaked... \u201cPromise to compensate for the full amount of damage\u201d",
      "date": "2026-11-20T08:24:50Z",
-     "score": 0.46,
+     "score": 0.47,
      "why": "same pattern: Data exposure and theft; terms: curly, people, personal"
     },
     {
@@ -137866,14 +137895,6 @@
    ],
    "related": [
     {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.4,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supplier, personal"
-    },
-    {
      "id": "x-3048272c",
      "kind": "x",
      "title": "Universeum reports guest data exposure at booking supplier",
@@ -137904,6 +137925,14 @@
      "date": "2026-11-20T11:35:16Z",
      "score": 0.32,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: customer, breach, information"
+    },
+    {
+     "id": "n-34316fe7",
+     "kind": "news",
+     "title": "KEPCO Data Leak Exposes 1.5 Million Records",
+     "date": "2026-11-18T21:37:08Z",
+     "score": 0.32,
+     "why": "same pattern: Data exposure and theft; terms: 1.5, kepco"
     }
    ]
   },
@@ -138408,7 +138437,7 @@
      "kind": "news",
      "title": "BB (BBAS3) warns customers about personal data leaks; see what was exposed",
      "date": "2026-11-18T22:49:12Z",
-     "score": 0.39,
+     "score": 0.4,
      "why": "same pattern: Data exposure and theft; terms: customers, personal"
     }
    ],
@@ -139011,7 +139040,7 @@
      "kind": "news",
      "title": "Asahi GHD invests 13.5 billion yen in cyber attack countermeasures, strengthens intrusion detection and automatic blocking with AI",
      "date": "2026-11-20T23:57:00Z",
-     "score": 0.31,
+     "score": 0.32,
      "why": "same pattern: AI systems and agents; terms: cyber"
     }
    ]
@@ -141517,7 +141546,7 @@
      "kind": "news",
      "title": "Government Blames Glitches as Cyber Threats Are 'New Normal' With AI",
      "date": "2026-11-21T23:28:23Z",
-     "score": 0.31,
+     "score": 0.32,
      "why": "same pattern: AI systems and agents; terms: cyber"
     },
     {
@@ -141670,12 +141699,12 @@
      "why": "same pattern: Data exposure and theft; terms: hack, personal"
     },
     {
-     "id": "x-b1e9eeb7",
-     "kind": "x",
-     "title": "NZDF confirms compromise involving military website database",
-     "date": "2026-11-20T06:36:04Z",
+     "id": "n-9abe542a",
+     "kind": "news",
+     "title": "Samsung Securities Also Hit by Hack... Personal Info of Around 8,000 Users Leaked",
+     "date": "2026-11-23T01:08:51Z",
      "score": 0.41,
-     "why": "same pattern: Data exposure and theft; terms: website, personal, compromised"
+     "why": "same pattern: Data exposure and theft; terms: hack, personal"
     }
    ],
    "analysis": {
@@ -142404,12 +142433,12 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: vendor, third-party, breach"
     },
     {
-     "id": "n-57a801a7",
+     "id": "n-df32f52d",
      "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.35,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party"
+     "title": "Persistent Systems shares in focus after employee data breach at third-party US law firm; company clarifies",
+     "date": "2026-11-23T03:25:40Z",
+     "score": 0.34,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party, breach"
     }
    ],
    "cluster": "cl-f21e12"
@@ -145736,7 +145765,7 @@
      "kind": "news",
      "title": "Savings bank education management site \u2018hacked\u2019\u2026 Employee personal information leaked",
      "date": "2026-11-19T01:12:53Z",
-     "score": 0.36,
+     "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: hacked, information, personal"
     }
    ]
@@ -146662,7 +146691,7 @@
      "kind": "news",
      "title": "Curly's personal information leak expanded to 10,902 people... Confirm addition of employees and customers",
      "date": "2026-11-23T02:41:24Z",
-     "score": 0.46,
+     "score": 0.47,
      "why": "same pattern: Data exposure and theft; terms: curly, people, personal"
     },
     {
@@ -146960,12 +146989,12 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: vendor, confirms, information"
     },
     {
-     "id": "n-57a801a7",
+     "id": "n-814531fc",
      "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.39,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party"
+     "title": "Carnegie Endowment for International Peace reports data breach",
+     "date": "2026-11-20T18:42:26Z",
+     "score": 0.38,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party, vendor, breach"
     }
    ],
    "cluster": "cl-7c84dd"
@@ -149276,18 +149305,18 @@
      "why": "same pattern: Data exposure and theft; terms: personal, leaked, information"
     },
     {
-     "id": "n-7cbb17d4",
-     "kind": "news",
-     "title": "The Ministry of Digital Development is checking information about data leaks from the Supreme Court together with the National Security Committee",
-     "date": "2026-11-24T07:17:00Z",
-     "score": 0.38,
-     "why": "same pattern: Data exposure and theft; terms: development, information"
-    },
-    {
      "id": "n-20db7b12",
      "kind": "news",
      "title": "Unauthorized access to Nitori Holdings, personal information of up to 37.62 million people leaked",
      "date": "2026-11-23T23:05:10Z",
+     "score": 0.38,
+     "why": "same pattern: Data exposure and theft; terms: personal, leaked, information"
+    },
+    {
+     "id": "n-a67bc96d",
+     "kind": "news",
+     "title": "Gyeonggi Office of Education, personal information of 158 teachers leaked",
+     "date": "2026-11-22T09:22:31Z",
      "score": 0.38,
      "why": "same pattern: Data exposure and theft; terms: personal, leaked, information"
     }
@@ -149391,6 +149420,53 @@
      "date": "2026-11-21T10:29:19Z",
      "score": 0.36,
      "why": "same pattern: AI systems and agents; terms: cyberattacks"
+    }
+   ]
+  },
+  "n-159d96bf": {
+   "patterns": [
+    "state-linked"
+   ],
+   "related": [
+    {
+     "id": "n-2f858f22",
+     "kind": "news",
+     "title": "International Ice Hockey Federation website hacked after Russia banned from event",
+     "date": "2026-11-17T19:35:00Z",
+     "score": 0.34,
+     "why": "same pattern: State-linked activity; terms: website"
+    },
+    {
+     "id": "n-73c16e07",
+     "kind": "news",
+     "title": "Russian neural network outperforms Google models in cyberattack test",
+     "date": "2026-11-21T03:00:06Z",
+     "score": 0.32,
+     "why": "same pattern: State-linked activity; terms: cyberattack"
+    },
+    {
+     "id": "n-a7c580e5",
+     "kind": "news",
+     "title": "International hockey federation hit by cyberattack after Russia barred from World Juniors",
+     "date": "2026-11-18T02:31:23Z",
+     "score": 0.32,
+     "why": "same pattern: State-linked activity; terms: cyberattack"
+    },
+    {
+     "id": "n-70b529ca",
+     "kind": "news",
+     "title": "DNI Jay Clayton: This is not a cyber attack and this is not a coordinated effort by a nation state",
+     "date": "2026-11-17T21:03:00Z",
+     "score": 0.3,
+     "why": "same pattern: State-linked activity"
+    },
+    {
+     "id": "n-c94dcee3",
+     "kind": "news",
+     "title": "North Korea\u2019s Favorite Bitcoin Mixer Criticized for Not Blocking Stolen Funds",
+     "date": "2026-11-17T22:45:41Z",
+     "score": 0.3,
+     "why": "same pattern: State-linked activity"
     }
    ]
   },
@@ -151087,6 +151163,14 @@
      "why": "same pattern: Supply chain and third parties; terms: supplier, gas, europe"
     },
     {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.43,
+     "why": "same pattern: Supply chain and third parties; terms: supplier"
+    },
+    {
      "id": "n-1d92678d",
      "kind": "news",
      "title": "JPMorganChase reports cyberattack on third-party service providers",
@@ -151101,14 +151185,6 @@
      "date": "2026-11-23T15:06:49Z",
      "score": 0.33,
      "why": "same pattern: Supply chain and third parties; terms: cyberattack"
-    },
-    {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.33,
-     "why": "same pattern: Supply chain and third parties; terms: supplier"
     },
     {
      "id": "x-77239847",
@@ -151493,6 +151569,14 @@
      "why": "same pattern: Supply chain and third parties; terms: providers"
     },
     {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.42,
+     "why": "same pattern: Supply chain and third parties; terms: third-party"
+    },
+    {
      "id": "n-6ba0dfe7",
      "kind": "news",
      "title": "J.P. Morgan says third party service providers were target of cyberattack, some customers info compromised",
@@ -151515,14 +151599,6 @@
      "date": "2026-11-23T15:06:49Z",
      "score": 0.35,
      "why": "same pattern: Supply chain and third parties; terms: cyberattack"
-    },
-    {
-     "id": "c-94c7749d",
-     "kind": "crypto",
-     "title": "Polymarket International",
-     "date": "2026-10-29",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties; terms: third-party"
     }
    ],
    "cluster": "cl-243f03"
@@ -151780,91 +151856,52 @@
    ],
    "cluster": "cl-3cc22d"
   },
-  "n-57a801a7": {
+  "n-853c45e9": {
    "patterns": [
-    "supply-chain",
-    "data-exposure"
+    "supply-chain"
    ],
    "related": [
     {
-     "id": "n-0d824cbe",
+     "id": "n-8a16a858",
      "kind": "news",
-     "title": "UKs Next reports cyber attack on online provider, no customer data affected",
-     "date": "2026-11-23T11:08:19Z",
-     "score": 0.48,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: next, cyber"
+     "title": "Europe\u2019s Largest Natural Gas Supplier Battles Cyberattack",
+     "date": "2026-11-17T19:33:00Z",
+     "score": 0.44,
+     "why": "same pattern: Supply chain and third parties; terms: supplier"
     },
     {
-     "id": "n-5b078c95",
+     "id": "n-99047b16",
      "kind": "news",
-     "title": "Next issues cyber-attack warning after \u2018benign\u2019 data accessed by hackers",
-     "date": "2026-11-23T11:56:00Z",
+     "title": "Europe's biggest gas supplier battling cyberattack \u2013 with no timeline for recovery",
+     "date": "2026-11-19T15:37:00Z",
+     "score": 0.43,
+     "why": "same pattern: Supply chain and third parties; terms: supplier"
+    },
+    {
+     "id": "n-1d92678d",
+     "kind": "news",
+     "title": "JPMorganChase reports cyberattack on third-party service providers",
+     "date": "2026-11-19T14:57:11Z",
      "score": 0.42,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: next"
+     "why": "same pattern: Supply chain and third parties; terms: third-party"
     },
     {
-     "id": "x-3048272c",
-     "kind": "x",
-     "title": "Universeum reports guest data exposure at booking supplier",
-     "date": "2026-11-20T19:14:01Z",
+     "id": "n-a2ca986e",
+     "kind": "news",
+     "title": "Next is latest major firm to be hit by a cyber-attack after criminals hack one of its suppliers",
+     "date": "2026-11-23T13:09:15Z",
      "score": 0.41,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supplier"
+     "why": "same pattern: Supply chain and third parties; terms: next"
     },
     {
-     "id": "n-f3a43b39",
+     "id": "n-46a6b0b0",
      "kind": "news",
-     "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
-     "date": "2026-11-22T09:20:36Z",
-     "score": 0.4,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supplier, personal"
-    },
-    {
-     "id": "n-3ab40e7b",
-     "kind": "news",
-     "title": "Phoebe confirms patient information leaked in former third-party vendor data breach",
-     "date": "2026-11-20T08:00:00Z",
+     "title": "Optimizely Malware Attacks Highlight Third-Party Vendor Risks",
+     "date": "2026-11-17T22:34:22Z",
      "score": 0.39,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party"
+     "why": "same pattern: Supply chain and third parties; terms: third-party"
     }
-   ],
-   "cluster": "cl-02cded",
-   "analysis": {
-    "summary": "Next said an unnamed online supplier suffered a cyber incident that allowed unauthorized access to limited company data. Next said its own systems were not compromised and current evidence indicates that no customer personal data was affected. The investigation is ongoing.",
-    "attack_chain": [
-     "Unknown: Next did not name the supplier or disclose the initial access method.",
-     "Confirmed by Next: The incident exposed limited company data at the supplier.",
-     "No evidence reported: Next\u2019s own systems were not compromised and no customer personal data is known to have been affected."
-    ],
-    "open_questions": [
-     "What company data was accessed?",
-     "Does the supplier\u2019s investigation change the reported scope?"
-    ],
-    "mitigations": [
-     "Scope the exposure with the supplier, preserve relevant logs and verify what data the supplier can access. Check Next\u2019s official channels for any further customer notices."
-    ],
-    "sources": [
-     {
-      "label": "Next\u2019s regulatory filing (RNS 2789E)",
-      "url": "https://www.tradingview.com/news/reuters.com,2026-11-23:newsml_RSW2789Ea:0-reg-next-plc-third-party-data-incident/"
-     },
-     {
-      "label": "Reuters, quoting Next",
-      "url": "https://www.reuters.com/legal/government/uks-next-flags-cyber-breach-online-supplier-says-no-customer-data-compromised-2026-11-23/"
-     },
-     {
-      "label": "The Guardian, via AOL",
-      "url": "https://www.aol.co.uk/articles/next-issues-cyber-attack-warning-115345000.html"
-     },
-     {
-      "label": "The Independent, quoting Next",
-      "url": "https://www.the-independent.com/news/business/spencer-b3089823.html"
-     }
-    ],
-    "patterns": [
-     "supply-chain",
-     "data-exposure"
-    ]
-   }
+   ]
   },
   "n-d35c8831": {
    "patterns": [
@@ -151902,20 +151939,20 @@
      "why": "same pattern: Supply chain and third parties; terms: jpmorgan"
     },
     {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.35,
+     "why": "same pattern: Supply chain and third parties; terms: cyber"
+    },
+    {
      "id": "n-4ebef484",
      "kind": "news",
      "title": "JPMorgan Confirms Customer Data Breach Following Third-Party Compromise",
      "date": "2026-11-17T19:31:21Z",
      "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: jpmorgan"
-    },
-    {
-     "id": "n-8476cf37",
-     "kind": "news",
-     "title": "CISA warns of exploited N-able bug as company restores email platform",
-     "date": "2026-11-23T15:07:09Z",
-     "score": 0.32,
-     "why": "same pattern: Supply chain and third parties; terms: cyber"
     }
    ],
    "cluster": "cl-243f03"
@@ -153518,12 +153555,12 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: vendors, confirms"
     },
     {
-     "id": "n-57a801a7",
+     "id": "n-022366c6",
      "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.39,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party"
+     "title": "JP Morgan's suppliers exposed to cyber attack - customer data may have been leaked",
+     "date": "2026-11-19T15:13:00Z",
+     "score": 0.38,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: customer, exposed"
     }
    ],
    "cluster": "cl-3cac65"
@@ -158846,6 +158883,14 @@
      "why": "same pattern: Supply chain and third parties; terms: optimizely, major"
     },
     {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.39,
+     "why": "same pattern: Supply chain and third parties; terms: third-party"
+    },
+    {
      "id": "n-1d92678d",
      "kind": "news",
      "title": "JPMorganChase reports cyberattack on third-party service providers",
@@ -158868,14 +158913,6 @@
      "date": "2026-10-29",
      "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: third-party, website"
-    },
-    {
-     "id": "n-a2ca986e",
-     "kind": "news",
-     "title": "Next is latest major firm to be hit by a cyber-attack after criminals hack one of its suppliers",
-     "date": "2026-11-23T13:09:15Z",
-     "score": 0.34,
-     "why": "same pattern: Supply chain and third parties; terms: major"
     }
    ]
   },
@@ -159774,14 +159811,6 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: vendor, third-party, breach"
     },
     {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.39,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party"
-    },
-    {
      "id": "n-814531fc",
      "kind": "news",
      "title": "Carnegie Endowment for International Peace reports data breach",
@@ -159796,6 +159825,14 @@
      "date": "2026-11-23T03:25:40Z",
      "score": 0.37,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: third-party, breach"
+    },
+    {
+     "id": "x-a4577323",
+     "kind": "x",
+     "title": "Expedia confirms supply-chain breach as n0n claims nearly 1 billion traveller records",
+     "date": "2026-11-13T17:51:50Z",
+     "score": 0.37,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: hit, third-party, breach"
     }
    ]
   },
@@ -159961,20 +159998,20 @@
      "why": "same pattern: Supply chain and third parties; terms: supplier, gas, europe"
     },
     {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.44,
+     "why": "same pattern: Supply chain and third parties; terms: supplier"
+    },
+    {
      "id": "n-1d92678d",
      "kind": "news",
      "title": "JPMorganChase reports cyberattack on third-party service providers",
      "date": "2026-11-19T14:57:11Z",
      "score": 0.33,
      "why": "same pattern: Supply chain and third parties; terms: cyberattack"
-    },
-    {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.33,
-     "why": "same pattern: Supply chain and third parties; terms: supplier"
     },
     {
      "id": "n-db89ccc3",
@@ -160361,12 +160398,6 @@
      "why": "terms: hits, websites, major"
     }
    ]
-  },
-  "n-8782853c": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": []
   },
   "c-f4f7cd25": {
    "patterns": [
@@ -164286,6 +164317,14 @@
      "why": "same pattern: Supply chain and third parties; terms: third-party, website"
     },
     {
+     "id": "n-853c45e9",
+     "kind": "news",
+     "title": "Next reports cyber incident involving third-party supplier",
+     "date": "2026-11-19T14:00:00Z",
+     "score": 0.34,
+     "why": "same pattern: Supply chain and third parties; terms: third-party"
+    },
+    {
      "id": "n-39a2da01",
      "kind": "news",
      "title": "Optimizely Supply Chain Attack Hits 178 Major Websites",
@@ -164300,14 +164339,6 @@
      "date": "2026-11-19T14:57:11Z",
      "score": 0.34,
      "why": "same pattern: Supply chain and third parties; terms: third-party"
-    },
-    {
-     "id": "n-b3d18dbc",
-     "kind": "news",
-     "title": "Optimizely-ing For Trouble: When A Marketing Tool Becomes A Software Supply Chain Attack",
-     "date": "2026-11-20T21:13:39Z",
-     "score": 0.33,
-     "why": "same pattern: Supply chain and third parties; terms: supply, chain"
     }
    ],
    "precedents": [
@@ -165858,20 +165889,20 @@
      "why": "same pattern: Injection and code execution; terms: injection, crafted, controller"
     },
     {
-     "id": "k-5fc268bd",
-     "kind": "kev",
-     "title": "CVE-2026-90436 \u00b7 Apache Axis",
-     "date": "2026-11-18",
-     "score": 0.25,
-     "why": "same pattern: Injection and code execution; terms: application, load, crafted"
-    },
-    {
      "id": "k-e3895843",
      "kind": "kev",
      "title": "CVE-2026-123039 \u00b7 Check Point Multiple Products",
      "date": "2026-11-13",
      "score": 0.25,
      "why": "same pattern: Injection and code execution, Edge and perimeter devices; terms: products, command, gateway"
+    },
+    {
+     "id": "k-5fc268bd",
+     "kind": "kev",
+     "title": "CVE-2026-90436 \u00b7 Apache Axis",
+     "date": "2026-11-18",
+     "score": 0.25,
+     "why": "same pattern: Injection and code execution; terms: application, load, crafted"
     },
     {
      "id": "n-cb673b12",
@@ -168350,20 +168381,20 @@
      "why": "same pattern: Data exposure and theft; terms: ymca, youth, portal"
     },
     {
-     "id": "x-4f573e56",
-     "kind": "x",
-     "title": "POSTECH confirms exposure across university portals",
-     "date": "2026-11-19T20:33:52Z",
-     "score": 0.37,
-     "why": "same pattern: Data exposure and theft; terms: portal, people, confirms"
-    },
-    {
      "id": "n-20db7b12",
      "kind": "news",
      "title": "Unauthorized access to Nitori Holdings, personal information of up to 37.62 million people leaked",
      "date": "2026-11-23T23:05:10Z",
      "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: people, personal, unauthorized"
+    },
+    {
+     "id": "x-4f573e56",
+     "kind": "x",
+     "title": "POSTECH confirms exposure across university portals",
+     "date": "2026-11-19T20:33:52Z",
+     "score": 0.37,
+     "why": "same pattern: Data exposure and theft; terms: portal, people, confirms"
     },
     {
      "id": "n-302f24e9",
@@ -171573,7 +171604,7 @@
      "kind": "x",
      "title": "NZDF confirms compromise involving military website database",
      "date": "2026-11-20T06:36:04Z",
-     "score": 0.29,
+     "score": 0.28,
      "why": "same pattern: Data exposure and theft; terms: website, details, provider"
     },
     {
@@ -171668,14 +171699,6 @@
    ],
    "related": [
     {
-     "id": "n-57a801a7",
-     "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
-     "date": "2026-11-19T14:00:00Z",
-     "score": 0.41,
-     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supplier"
-    },
-    {
      "id": "x-c9040a32",
      "kind": "x",
      "title": "Peach Aviation discloses Cuenote vendor breach",
@@ -171706,6 +171729,14 @@
      "date": "2026-11-20T16:31:37Z",
      "score": 0.35,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: records, exposure, payment"
+    },
+    {
+     "id": "n-f3a43b39",
+     "kind": "news",
+     "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+     "date": "2026-11-22T09:20:36Z",
+     "score": 0.35,
+     "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: supplier, customer"
     }
    ],
    "analysis": {
@@ -174118,7 +174149,7 @@
      "kind": "x",
      "title": "Everest claims Accuver as an extortion victim",
      "date": "2026-11-20T21:32:14Z",
-     "score": 0.27,
+     "score": 0.28,
      "why": "same pattern: Ransomware and extortion; terms: extortion, independently, named"
     }
    ],
@@ -176437,11 +176468,11 @@
    ],
    "related": [
     {
-     "id": "n-57a801a7",
+     "id": "n-853c45e9",
      "kind": "news",
-     "title": "Next reports cyber attack at third-party supplier but no personal data",
+     "title": "Next reports cyber incident involving third-party supplier",
      "date": "2026-11-19T14:00:00Z",
-     "score": 0.33,
+     "score": 0.37,
      "why": "same pattern: Supply chain and third parties; terms: supplier"
     },
     {
@@ -184033,14 +184064,14 @@
   {
    "id": "unclassified",
    "label": "Unclassified",
-   "news": 416,
+   "news": 415,
    "crypto": 3,
    "kev": 3,
    "x": 41,
    "breach": 0,
    "usd": 225000.0,
-   "total": 463,
-   "recent7": 452
+   "total": 462,
+   "recent7": 451
   },
   {
    "id": "data-exposure",
@@ -184117,14 +184148,14 @@
   {
    "id": "state-linked",
    "label": "State-linked activity",
-   "news": 44,
+   "news": 45,
    "crypto": 0,
    "kev": 0,
    "x": 2,
    "breach": 0,
    "usd": 0,
-   "total": 46,
-   "recent7": 45
+   "total": 47,
+   "recent7": 46
   },
   {
    "id": "enterprise-platform",
