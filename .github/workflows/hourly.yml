@@ -17,7 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
+      # Branch head at run time, not the event SHA: a queued run must start from the caches the previous run pushed.
       - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.ref_name }}
 
       - uses: actions/setup-python@v7
         with:
@@ -36,8 +39,7 @@ jobs:
             echo "No changes"
           else
             git commit -m "data: hourly build $(date -u +%Y-%m-%dT%H:%MZ)"
-            # If another build pushed data meanwhile, this (newer) build's files win.
-            git pull --rebase -X theirs --autostash origin "${GITHUB_REF_NAME}"
+            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
