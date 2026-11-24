@@ -59,7 +59,9 @@ async function syncSearch(env, c) {
     const keys = changed.slice(i, i + 200);
     const b = await c.fetch(new Request("http://builder/out/search/bundle", { method: "POST", body: JSON.stringify(keys) }));
     const files = await b.json();
-    await Promise.all(Object.entries(files).map(([k, text]) => env.SEARCH_DOCS.put(k, text, { httpMetadata: { contentType: "text/markdown; charset=utf-8" } })));
+    const entries = Object.entries(files);
+    for (let j = 0; j < entries.length; j += 8)  // at most 8 uploads at a time
+      await Promise.all(entries.slice(j, j + 8).map(([k, text]) => env.SEARCH_DOCS.put(k, text, { httpMetadata: { contentType: "text/markdown; charset=utf-8" } })));
   }
   for (let i = 0; i < stale.length; i += 1000) await env.SEARCH_DOCS.delete(stale.slice(i, i + 1000));
   let job = null;
