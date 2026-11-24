@@ -36,7 +36,8 @@ jobs:
             echo "No changes"
           else
             git commit -m "data: hourly build $(date -u +%Y-%m-%dT%H:%MZ)"
-            git pull --rebase --autostash origin "${GITHUB_REF_NAME}"
+            # If another build pushed data meanwhile, this (newer) build's files win.
+            git pull --rebase -X theirs --autostash origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
 
