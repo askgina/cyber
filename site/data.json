@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T19:07:16Z",
+ "generated": "2026-11-24T19:12:13Z",
  "errors": [
   "official maine: public database offline per Maine AG notice (HTTP Error 404: 404)"
  ],
@@ -1322,9 +1322,9 @@
   ]
  },
  "ransomware": {
-  "count_24h": 18,
-  "count_7d": 294,
-  "count_30d": 1261,
+  "count_24h": 19,
+  "count_7d": 295,
+  "count_30d": 1262,
   "groups_7d": [
    [
     "N0n",
@@ -1362,7 +1362,7 @@
   "sectors_7d": [
    [
     "Manufacturing",
-    38
+    39
    ],
    [
     "Healthcare",
@@ -1403,11 +1403,11 @@
     12
    ],
    [
-    "CA",
-    10
+    "DE",
+    11
    ],
    [
-    "DE",
+    "CA",
     10
    ],
    [
@@ -1428,6 +1428,15 @@
    ]
   ],
   "items_24h": [
+   {
+    "date": "2026-11-24T14:58:35Z",
+    "victim": "Liftstar GmbH",
+    "group": "aurora",
+    "sector": "Manufacturing",
+    "country": "DE",
+    "url": "https://www.ransomware.live/id/TGlmdHN0YXIgR21iSEBhdXJvcmE=",
+    "desc": "[manufacturer] Liftstar GmbH is a German family-owned company (Seick family) that manufactures and sells stairlifts under the Lifta brand \u2014 Germany's best-known stairlift provider.\n\n<redacted>\n<redact"
+   },
    {
     "date": "2026-11-24T14:57:06Z",
     "victim": "G... R... S... D...",
@@ -1711,7 +1720,7 @@
    ],
    [
     "2026-11-24",
-    14
+    15
    ]
   ]
  },
@@ -4969,10 +4978,10 @@
    "eid": "n-be915d72"
   },
   {
-   "date": "2026-11-24T17:25:36Z",
+   "date": "2026-11-24T17:25:00Z",
    "source": "Bursada Bug\u00fcn",
    "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWdIBvAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYW5MSmdMU2JLQnBJUjhZSGVwWFItZzFTdkdBVlc3aEtXX2UzaFFwRzEtVkVNZ2JiX2otS0RZY1BYVW9PV2FOcFhkbW1SQjZ0R3dlSTRjc1lpTGR2VnF4c2xPaGcwWkNnNTF6cDdCVDZEc2FhQUtDQXpwaFlIY0cxQW5jY2lBRFBFZHRYRE1mNExHZU5hc1JLTFBnZnNLclp2VzAzS3o4Sk0yeGRwZHFUQ1pvWU5nYW1XSnfSAbwBQVVfeXFMUGxXa0NzZ2RaUEFnd0l0azdHZGlKdUhUNU9weEpKR2pjOUlHV0VPNzNkemE4akpKN0lxV2NpQWxoZ0YzV3VZdEsyZVZ0RXhqWHQyT2R3cmpncm5CendNWm81RHpkNGx2VWNyNG5PamUxc0kwRFNBVGJyaFA5T3ZMOHdIZWlMdjVPbG1ZWTl0dWlhNTBQQnQ0ZVZkbVVsajFEVVZCVnBkdWc3ejE1b01zVG4xdkRlUDdGcGhnMlk?oc=5",
    "summary": "",
    "via": "Google News",
    "lang": "tr",
@@ -4981,8 +4990,8 @@
    "outlets": [
     {
      "source": "Bursada Bug\u00fcn",
-     "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWdIBvAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWQ?oc=5",
-     "date": "2026-11-24T17:25:36Z",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYW5MSmdMU2JLQnBJUjhZSGVwWFItZzFTdkdBVlc3aEtXX2UzaFFwRzEtVkVNZ2JiX2otS0RZY1BYVW9PV2FOcFhkbW1SQjZ0R3dlSTRjc1lpTGR2VnF4c2xPaGcwWkNnNTF6cDdCVDZEc2FhQUtDQXpwaFlIY0cxQW5jY2lBRFBFZHRYRE1mNExHZU5hc1JLTFBnZnNLclp2VzAzS3o4Sk0yeGRwZHFUQ1pvWU5nYW1XSnfSAbwBQVVfeXFMUGxXa0NzZ2RaUEFnd0l0azdHZGlKdUhUNU9weEpKR2pjOUlHV0VPNzNkemE4akpKN0lxV2NpQWxoZ0YzV3VZdEsyZVZ0RXhqWHQyT2R3cmpncm5CendNWm81RHpkNGx2VWNyNG5PamUxc0kwRFNBVGJyaFA5T3ZMOHdIZWlMdjVPbG1ZWTl0dWlhNTBQQnQ0ZVZkbVVsajFEVVZCVnBkdWc3ejE1b01zVG4xdkRlUDdGcGhnMlk?oc=5",
+     "date": "2026-11-24T17:25:00Z",
      "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
      "title_orig": "BTSO'ya siber sald\u0131r\u0131! \u00d6zer Matl\u0131'dan ki\u015fisel verilerle ilgili a\u00e7\u0131klama"
     },
@@ -5002,7 +5011,7 @@
     }
    ],
    "n_outlets": 3,
-   "eid": "n-5e08a15c"
+   "eid": "n-e26e485b"
   },
   {
    "date": "2026-11-24T17:20:57Z",
@@ -5163,6 +5172,33 @@
    "eid": "n-bb5caeba"
   },
   {
+   "date": "2026-11-24T15:58:58Z",
+   "source": "Claim Depot",
+   "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLbXNxUVBsYjNzZ0NUcXdhZzlxMTNjeDNPTTZPaml3Z0VVZ0tydHlYYVpWREZ1bUdLdUZYX2hmX1pUY0VKb0VwVktzbWQwQmZ5NGhUeGZrVTFzUGdXenBYT0tMVHY?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-24T17:25:25Z",
+   "outlets": [
+    {
+     "source": "AEROIN",
+     "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSXhqbmttQWhWZklaemNwWFV6V25MSm45dzJpNS0zcHJuS3VqamVGZnRYeW5qX215UnZOdDBCRGhLQzNrX2Q2U2lQTms0eXRJU0tLVk5LYUE5VHkzaDhfZWx5VTV4MDRKeFhMN1N1RzVjY2NCYktzQjJ5MUtmNUhCMU5fZDFVTUxINmdLT1JzZV9UQUIwSnA2eWJSdk5OakJBX0pOdGdDLW9YcG5KS3VEeFNlQWZ3dmM4UWVmZ1BB0gG-AUFVX3lxTE5JeGpua21BaFZmSVp6Y3BYVXpXbkxKbjl3Mmk1LTNwcm5LdWpqZUZmdFh5bmpfbXlSdk50MEJEaEtDM2tfZDZTaVBOazR5dElTS0tWTkthQTlUeTNoOF9lbHlVNXgwNEp4WEw3U3VHNWNjY0JiS3NCMnkxS2Y1SEIxTl9kMVVNTEg2Z0tPUnNlX1RBQjBKcDZ5YlJ2Tk5qQkFfSk50Z0Mtb1hwbkpLdUR4U2VBZnd2YzhRZWZnUEE?oc=5",
+     "date": "2026-11-24T15:58:58Z",
+     "title": "Cirrus has data leak that may include customer information such as Social Security numbers",
+     "title_orig": "Cirrus tem vazamento de dados que podem incluir informa\u00e7\u00f5es de clientes, como n\u00fameros de Seguro Social"
+    },
+    {
+     "source": "Claim Depot",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLbXNxUVBsYjNzZ0NUcXdhZzlxMTNjeDNPTTZPaml3Z0VVZ0tydHlYYVpWREZ1bUdLdUZYX2hmX1pUY0VKb0VwVktzbWQwQmZ5NGhUeGZrVTFzUGdXenBYT0tMVHY?oc=5",
+     "date": "2026-11-24T17:25:25Z",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-354c1517"
+  },
+  {
    "date": "2026-11-24T15:47:00Z",
    "source": "The Star, Kenya",
    "title": "Government investigates alleged eCitizen data breach",
@@ -5170,7 +5206,7 @@
    "summary": "",
    "via": "Google News",
    "lang": "en",
-   "latest": "2026-11-24T18:29:15Z",
+   "latest": "2026-11-24T16:41:01Z",
    "outlets": [
     {
      "source": "The Star, Kenya",
@@ -5183,15 +5219,9 @@
      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUV8yMDdLLVF1M19aa0x0aHJkSHQ4YnVFM1dTNy04bzJhWnViSllaRXZoVTAzai1fdWNjempZWjMzWEljTjVheW10VEFQQ3hlSktoR1huaFJSVmd6c2JveHBFcXJlaUVwRnZQYktUem1kLWU3LXhVdEtTWUhDODRwTWpCOVdfbVBFM1ZPUG83OU9TZDZxdjMtU2FGT1pXdThtaDhNV2FB?oc=5",
      "date": "2026-11-24T16:41:01Z",
      "title": "State investigates claims of eCitizen hack targeting government identity databases"
-    },
-    {
-     "source": "Pulse Kenya",
-     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORW5Vd2NGRUJyZnduVjE5aWNrZTFPX251MDdjVXRuMlVxZ2ZFcW9qcUZWUGRreGdzTmRMb3F1cXd3M1Z3eUR5cU1RaVNVY19Pb2R0dF9aTWhZUWRjMXRNZm9VZjUwZ3dSN2pZWDc0eU5GU3FOOEp4Rk5MNW00YjlDMDFzemxIQWZLX3czejhyeFpyM0FQcHJQbnRRajNLNWEwT2F0LXV0SnZZYl9vT2kyVjFn?oc=5",
-     "date": "2026-11-24T18:29:15Z",
-     "title": "What data is at risk in the alleged 740GB eCitizen data breach?"
     }
    ],
-   "n_outlets": 3,
+   "n_outlets": 2,
    "eid": "n-45990407"
   },
   {
@@ -5702,6 +5732,38 @@
    "eid": "n-679cfcba"
   },
   {
+   "date": "2026-11-24T12:23:11Z",
+   "source": "People Daily",
+   "title": "Hackers claim to have stolen 740GB of data from Kenya\u2019s eCitizen platform",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSjJ0em0tNUlSbklONzE1S1VncnU2c1haRk92ODI4b0tCQ0U1Vk1MNlNFdFhJUlNKcW5BYW5ncXJlZ3FIYndiQTk4d3RjVnk0YVhZa2pJUGdKVDMzWmxEMWxOQ05qMVg0NGFSUXYwU0s2TlItQV85Nm9KM2M0djg4c0Z2MU5JeHJINjhtVE9HR1VPRWRLUk16a2Uwb3FwbmlNY3liQmg5OGk?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-24T18:29:15Z",
+   "outlets": [
+    {
+     "source": "People Daily",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSjJ0em0tNUlSbklONzE1S1VncnU2c1haRk92ODI4b0tCQ0U1Vk1MNlNFdFhJUlNKcW5BYW5ncXJlZ3FIYndiQTk4d3RjVnk0YVhZa2pJUGdKVDMzWmxEMWxOQ05qMVg0NGFSUXYwU0s2TlItQV85Nm9KM2M0djg4c0Z2MU5JeHJINjhtVE9HR1VPRWRLUk16a2Uwb3FwbmlNY3liQmg5OGk?oc=5",
+     "date": "2026-11-24T12:23:11Z",
+     "title": "Hackers claim to have stolen 740GB of data from Kenya\u2019s eCitizen platform"
+    },
+    {
+     "source": "Citizen Digital",
+     "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNX01taFZ4bmpoZnBsbEM5dkh5ckJVVzBINkRna3dvSlpESUM4SFhRVTJzS2lmMmZFQ3o5aGU5TFVpSm9yZWNXWjNjOW5FSmNONkI4YnczV0dJTXVvZExGXzdnMmtLQzVwcUV3QlpibC1wNWZQZG1SYTVwR3dkR3p5OTZwYWdhNW1lVzZGUGlZNHY2aURZRUM0LXd2SXRicE9KekplUEducEotTjRfSkN3a05pQmpKcG1E?oc=5",
+     "date": "2026-11-24T17:49:16Z",
+     "title": "Probe after hackers allegedly breach eCitizen, steal millions of personal data"
+    },
+    {
+     "source": "Pulse Kenya",
+     "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxORW5Vd2NGRUJyZnduVjE5aWNrZTFPX251MDdjVXRuMlVxZ2ZFcW9qcUZWUGRreGdzTmRMb3F1cXd3M1Z3eUR5cU1RaVNVY19Pb2R0dF9aTWhZUWRjMXRNZm9VZjUwZ3dSN2pZWDc0eU5GU3FOOEp4Rk5MNW00YjlDMDFzemxIQWZLX3czejhyeFpyM0FQcHJQbnRRajNLNWEwT2F0LXV0SnZZYl9vT2kyVjFn?oc=5",
+     "date": "2026-11-24T18:29:15Z",
+     "title": "What data is at risk in the alleged 740GB eCitizen data breach?"
+    }
+   ],
+   "n_outlets": 3,
+   "eid": "n-c582cb89"
+  },
+  {
    "date": "2026-11-24T12:05:00Z",
    "source": "www.abc.com.py",
    "title": "A cyberattack leaves Portugal's energy certificate portal out of service",
@@ -5731,15 +5793,40 @@
    "eid": "n-fe250e6c"
   },
   {
-   "date": "2026-11-24T11:43:59Z",
-   "source": "Maeil Business News Market",
-   "title": "GTA 6, unofficial PC version hacked... Modify and transplant files with AI",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uak9UbUo5LXdvSmFuU2NmOXVDZ2tva2R4N0p4ZHNNS0QtSGRjYjJ6Q2FRZWN5S2ZKeTZJX1luM0JrcEVKSDlYVURKbmxLa1ZzMnc?oc=5",
+   "date": "2026-11-24T11:58:35Z",
+   "source": "CyberSecurityNews",
+   "title": "Hackers Continue EvilTokens Phishing After Microsoft Takedown to Hijack Microsoft 365 Accounts",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UZ3hvU3RvOHBXR192aW1xU1Uxb1N5V3ZqbTFsUGFRaG51d3N2Y2lOUDczcHcxQXNYRDJMOVpBejF5Rk01alByWXZaTHF4LWpGd0RwUmYxMExYMVd1Nklr0gFkQVVfeXFMTkhmSG5JTG1TRmdfUHcwNmMtRXkwY21qeF9QX1V2TTJMc3pXVlFxOUt1U1FMbFkyejBLTUpqeFFhWEVoVzN6Rm9hVW53RE9ZODNRdFJQZEs4VVhhbXJGem1aYVp3WQ?oc=5",
    "summary": "",
    "via": "Google News",
-   "lang": "ko",
-   "title_orig": "GTA 6, \ud574\ud0b9\uc73c\ub85c \ube44\uacf5\uc2dd PC\ud310 \ub6ab\ub824\u2026AI\ub85c \ud30c\uc77c \ubcc0\uc870\ud574 \uc774\uc2dd",
-   "latest": "2026-11-24T11:43:59Z",
+   "lang": "en",
+   "latest": "2026-11-24T13:00:54Z",
+   "outlets": [
+    {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UZ3hvU3RvOHBXR192aW1xU1Uxb1N5V3ZqbTFsUGFRaG51d3N2Y2lOUDczcHcxQXNYRDJMOVpBejF5Rk01alByWXZaTHF4LWpGd0RwUmYxMExYMVd1Nklr0gFkQVVfeXFMTkhmSG5JTG1TRmdfUHcwNmMtRXkwY21qeF9QX1V2TTJMc3pXVlFxOUt1U1FMbFkyejBLTUpqeFFhWEVoVzN6Rm9hVW53RE9ZODNRdFJQZEs4VVhhbXJGem1aYVp3WQ?oc=5",
+     "date": "2026-11-24T11:58:35Z",
+     "title": "Hackers Continue EvilTokens Phishing After Microsoft Takedown to Hijack Microsoft 365 Accounts"
+    },
+    {
+     "source": "i-hls.com",
+     "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1yRERZeVNIbThtRTVINDBHQ0JGWDg3dzNKT1FnV0hvanctVlF1SF9PZjNhY2RaN3o5QndjYXBiV0FjbV91Q0ZNQw?oc=5",
+     "date": "2026-11-24T13:00:54Z",
+     "title": "The Microsoft Data Breach That Could Make Phishing More Convincing"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-3b1a314f"
+  },
+  {
+   "date": "2026-11-24T11:43:59Z",
+   "source": "BigGo Finance",
+   "title": "GTA 6 Rakes In approximately $3.7 Billion on Launch Day; Hacked Leak Raises Specter of Unofficial PC Version",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uaDcyTi0xRWgxRTFPb0hHV25YRlFCZXpWQy0yMjVtZmlUNFBlMUtBVllxU0RIa0N2dXpmcXJURkMzaUpCMjlMeHJBLWE1R3E5ZVdLN2tMWldOWWRFVUtMOVNDWldFZm1jSXItMDV6RWZQRHVJWlE?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-24T17:55:00Z",
    "outlets": [
     {
      "source": "Maeil Business News Market",
@@ -5754,10 +5841,16 @@
      "date": "2026-11-24T11:43:59Z",
      "title": "GTA 6, unofficial PC version hacked... Modify and transplant files with AI",
      "title_orig": "GTA 6, \ud574\ud0b9\uc73c\ub85c \ube44\uacf5\uc2dd PC\ud310 \ub6ab\ub824\u2026AI\ub85c \ud30c\uc77c \ubcc0\uc870\ud574 \uc774\uc2dd"
+    },
+    {
+     "source": "BigGo Finance",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uaDcyTi0xRWgxRTFPb0hHV25YRlFCZXpWQy0yMjVtZmlUNFBlMUtBVllxU0RIa0N2dXpmcXJURkMzaUpCMjlMeHJBLWE1R3E5ZVdLN2tMWldOWWRFVUtMOVNDWldFZm1jSXItMDV6RWZQRHVJWlE?oc=5",
+     "date": "2026-11-24T17:55:00Z",
+     "title": "GTA 6 Rakes In approximately $3.7 Billion on Launch Day; Hacked Leak Raises Specter of Unofficial PC Version"
     }
    ],
-   "n_outlets": 2,
-   "eid": "n-50d20aca"
+   "n_outlets": 3,
+   "eid": "n-621b30b4"
   },
   {
    "date": "2026-11-24T11:32:29Z",
@@ -6698,6 +6791,32 @@
    "eid": "n-c0755ecc"
   },
   {
+   "date": "2026-11-24T07:48:35Z",
+   "source": "CyberSecurityNews",
+   "title": "Critical Bluetooth Flaw Could Let Hackers Take Control of Trailer Brakes While Driving",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9QSE54N010RVk5QVdoWVdqZTlhem44eHNZLURya0laUUxYelVuckNfdnBFWDNPV2FkLUg5cVdINGlyTEk1NjhyZE1HUkZ1MkY5S3lFQWNWSExXSllZRXB1V0JrUHfSAWpBVV95cUxOUEMzNV95bVNvSTFqUHp5Q2tFaHJQTVdJdW84ZUZTRk9lSjhJNEhlWThGSlliblVsbGx5UjVsdHhBWTZDMTJVeFZEYkdqRjJqRGxfR084ZUZLaVFqcDZLYkJDcGtaUnU3alJB?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-24T12:27:03Z",
+   "outlets": [
+    {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9QSE54N010RVk5QVdoWVdqZTlhem44eHNZLURya0laUUxYelVuckNfdnBFWDNPV2FkLUg5cVdINGlyTEk1NjhyZE1HUkZ1MkY5S3lFQWNWSExXSllZRXB1V0JrUHfSAWpBVV95cUxOUEMzNV95bVNvSTFqUHp5Q2tFaHJQTVdJdW84ZUZTRk9lSjhJNEhlWThGSlliblVsbGx5UjVsdHhBWTZDMTJVeFZEYkdqRjJqRGxfR084ZUZLaVFqcDZLYkJDcGtaUnU3alJB?oc=5",
+     "date": "2026-11-24T07:48:35Z",
+     "title": "Critical Bluetooth Flaw Could Let Hackers Take Control of Trailer Brakes While Driving"
+    },
+    {
+     "source": "The 420.in",
+     "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQLWR1RE8tbndJU0ljUTZxR2czN2hxcC1ORlNSOGkzREFWam1KbWNacEpyZ0JVaGhkUnVHbEoxNENldkJRWFFKbVJYa3Axc2xiTWNucHJNZl9fRHpuTm9CbzYwSzlJX1RqckFrN2NtNDh3c2NnYnB4TlFCcUdWUUs4Sjdn?oc=5",
+     "date": "2026-11-24T12:27:03Z",
+     "title": "Bluetooth Flaws Let Hackers Control Trailer Brakes Without Authentication, CISA Warns"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-f82960a4"
+  },
+  {
    "date": "2026-11-24T07:32:57Z",
    "source": "The Register",
    "title": "European Commission confirms personal data stolen in AI-assisted cyberattack",
@@ -7301,6 +7420,33 @@
    "eid": "n-df0328c3"
   },
   {
+   "date": "2026-11-24T03:59:40Z",
+   "source": "Cryptonews.net",
+   "title": "Clockwork Laundering: Binance Hackers Follow a Daily Cadence Linked to China",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzbHVzb0dESjNza0VhWVNLeHladGRhdTgtQi1vbjd2MmI3c0R1UEVMamZ1V1VLbkg3NzJtZlVueHJ2Wjd3NktwdjJhWWNidnFTVUxuWmFMeS1Zdw?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-24T04:45:52Z",
+   "outlets": [
+    {
+     "source": "Cryptonews.net",
+     "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFAzbHVzb0dESjNza0VhWVNLeHladGRhdTgtQi1vbjd2MmI3c0R1UEVMamZ1V1VLbkg3NzJtZlVueHJ2Wjd3NktwdjJhWWNidnFTVUxuWmFMeS1Zdw?oc=5",
+     "date": "2026-11-24T03:59:40Z",
+     "title": "Clockwork Laundering: Binance Hackers Follow a Daily Cadence Linked to China"
+    },
+    {
+     "source": "Bitcoin News",
+     "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPYWZlYXhTRUt4SmVueE1lR2RPN2tERXlqNGJ1YjlESzRRVVhCWGd1NURvd3NTb3d2eVctNmg5UkE2bVhKaXZMdlU5dDk5b3pkU2JLRlB0bHFiTHRCaDllenVScTcxT05BMmQ1NVhUalFoejJvV1NlZkN0RGZqWEN2eFhRX1psR2FtUW4xb1dfMXpsVXlmdWVBSFFnYmVSSlVGOE4yd0E5NDM?oc=5",
+     "date": "2026-11-24T04:45:52Z",
+     "title": "Clockwork Laundering: Binance Hackers Follow a Daily Cadence Linked to China"
+    }
+   ],
+   "n_outlets": 2,
+   "eid": "n-244cda75",
+   "crypto": "c-846757cf"
+  },
+  {
    "date": "2026-11-24T03:50:26Z",
    "source": "South China Morning Post",
    "title": "Hacked Russian data suggests nearly 500,000 soldiers dead, reports say",
@@ -7762,6 +7908,13 @@
      "title_orig": "\u0421\u0428\u0410 \u0440\u0430\u0441\u0441\u043b\u0435\u0434\u0443\u044e\u0442 \u043f\u0440\u0438\u0447\u0430\u0441\u0442\u043d\u043e\u0441\u0442\u044c \u0418\u0440\u0430\u043d\u0430 \u043a \u0441\u0435\u0440\u0438\u0438 \u043a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a \u043d\u0430 \u0441\u0443\u0434\u0430"
     },
     {
+     "source": "Armiya.az",
+     "url": "https://news.google.com/rss/articles/CBMiR0FVX3lxTE5YcHNaNkNZMHF1X0lyQ0gyZldWb2xhYkhMMmtXR3l0cUxFYWhMSXpaZk1CQWRKYTdDcS1EZUJTLW9ScmlFeU40?oc=5",
+     "date": "2026-11-24T06:08:00Z",
+     "title": "US is investigating Iran's involvement in a series of cyberattacks on ships",
+     "title_orig": "\u0421\u0428\u0410 \u0440\u0430\u0441\u0441\u043b\u0435\u0434\u0443\u044e\u0442 \u043f\u0440\u0438\u0447\u0430\u0441\u0442\u043d\u043e\u0441\u0442\u044c \u0418\u0440\u0430\u043d\u0430 \u043a \u0441\u0435\u0440\u0438\u0438 \u043a\u0438\u0431\u0435\u0440\u0430\u0442\u0430\u043a \u043d\u0430 \u0441\u0443\u0434\u0430"
+    },
+    {
      "source": "Anadolu Ajans\u0131",
      "url": "https://news.google.com/rss/articles/CBMirwVBVV95cUxQRlpoSWp0UUVDWnZxZC1aQXBjWl9GNmM5VzhtM1BSR19naXltUmRvV3A2VmpGc1JzUjkzeUdOaWJGSFR2ZUZQNDFqRUdMZzdzVlA1RzZFSXRITU81SEFjNE44ZGRtS0hHeXVYVnhEcHVpZXVROE1FRTJkQWVPRUY1OU5XczY0RFozQzdDeEtRaC1INnVFVjgyaXRDcjdVWElUYXl4djRaVE53cUwxc1Y0cVdTbzBJd0gyZExyWllYREpIb2dmSktPS3FyU21QQmJzT29YaW5qYmozVVZDVGptZzVHWEhEWG1nR1JxdDhCMUNEcGw1ek9FdWNramJ5WGFieFVKM1J6N2xRX29zRE41RFJCYXNfUGx4Y2FaS3BWbWwxT0ZQRkttVThqYXhWSjJuWFR3dG50MFEzd05HRUNIdGdmWHN0UG40VWljSVdnaURfOGE0bXZHOFdJb08xRTlMN1RYNFFqQk5sbEJ6Z2NFc0Y3V2I3cE0xWFc2MUp6Z1hwbEVJajBVVTliVkg5WEk2WlFKUFFXWEtRVnJCalhRZ0dNdXdfMlJCbGtOTk5aenpvblZ0dnM3ZXFlLU1ydG5tODBBRWR6enlBSVNRem9WT1FndXJDUnZDcnRCY0xicDdNb3JOVkQteHh2bXpVNHdLZEpjRlMzdWU4Vk9zdTZQamljVDZSNTNGQ0p2cWZhNG9DdzROWkRXODVneXhZX0t1YmVQVGRFNHJ6QndyMGw5ZzB4MVBEYjZaZnhIMGdxRk9kRkV0c05YYXlWczhMYl9iU21rVjNIcHVaaVF0QlBCRWhoOGRQcTRuelNxdzJkRnNaeXk3VTZQVUR2MG5ZUFhYdHR4ODRhTHlma1VFVkIxMm0za3pWLTFMTndBSVhCeXQxeDFGMTdUTUNlWjMyZ2c?oc=5",
      "date": "2026-11-24T08:24:53Z",
@@ -7795,7 +7948,7 @@
      "title": "WSJ Report: US Investigates Iran in 50 Tanker Cyberattacks"
     }
    ],
-   "n_outlets": 9,
+   "n_outlets": 10,
    "eid": "n-d80d4ab6"
   },
   {
@@ -9954,6 +10107,12 @@
      "title": "99 IPs but a C2 ain\u2019t one: An Active Intrusion Campaign Against Check Point Security Management Servers"
     },
     {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBIUUVPRW9DZHpsTnVNdm0xRC1jUFFJZHN0T1ZHdE1qWl84VVBpZWNpM0lnYl9YNnNrenpPRmw1WVJHajdWcHA3RjFGZGF6ZUFnNGVNZTE4ck9tRTZuZTlWRkZzWGtFSHFlSGI1ZTZFOTRNWUpsRHd1d3Zn0gF_QVVfeXFMTVNTWGJTaEtnbXFPLWszSGNnZHRnS3VtQ0Q5OFpfMkwyQy1uQ2FRTm1vZWsxSGJqMjJZU0RwWWd1T2M2UVp0OTAwc0F4M0swN1lvcTNMRGNQbTV0RWUwcDV2U08xaDhkZGU3UXlhQm9HcE5sWUk4ZTlxS2pLVUdxUQ?oc=5",
+     "date": "2026-11-24T07:48:35Z",
+     "title": "Hackers Target Check Point Security Management Servers, Putting Corporate Firewall Controls at Risk"
+    },
+    {
      "source": "SecurityWeek",
      "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/",
      "date": "2026-11-24T14:21:56Z",
@@ -9978,7 +10137,7 @@
      "title": "Hackers Compromise Check Point Security Servers At 22 Organisations Across 17 Countries"
     }
    ],
-   "n_outlets": 5,
+   "n_outlets": 6,
    "eid": "n-22bf6552"
   },
   {
@@ -15597,7 +15756,7 @@
    "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
    "url": "https://www.securityweek.com/1-5-million-impacted-by-data-breach-at-south-korean-electric-company-kepco/",
    "summary": "Hackers stole personal information from the company\u2019s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek .",
-   "latest": "2026-11-24T17:17:43Z",
+   "latest": "2026-11-24T17:19:47Z",
    "outlets": [
     {
      "source": "iNews24",
@@ -41021,6 +41180,52 @@
    "eid": "n-70b529ca"
   },
   {
+   "date": "2026-11-17T21:02:13Z",
+   "source": "Action News Jax",
+   "title": "NSA\u2019s classified communications network, some Apple services go down; no evidence of cyber attack",
+   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUjVROFN1azZNZEtxUmZkQjJ4R0NOamt1Smo0U1ItUUxveEVSRGFEQk5WNlpza3l0SmtXUGNQOXYtcWZZSlY3Rk5YVVJtY3JnX3V1R3M5QUpEWVQxVWZGNHlDcVgxblFFaEFBcHNuTUs5WldveEw2ZGNVcWgtZW5ab2lrb0FjVW81M3NlRF8wTHNjSU5TVmhnbWNlMjNyMzNvOGRHSDdSWU90VEYyTVltVllYeHhwNE1NdVlLTDZ5U0U1ZW5QMXFvOWpUUmZUbFJyaVNhUUd5Y2hOb2lnQ3V3MmdfbFBzT1VqY0JiNUE1OGNHd9IBhgJBVV95cUxNZ3d1dWNDVWpHSTM4aV9BUW10OVM4cEJPWFpBTDZGem0yME03MjdrZ3RtQ0FsaFpGZnMzekFnc1RKbXp6WF96YzEzejRiLUdPOFhMQUhHYVlabHNhay1sLWVUeV80QjZTMnZGVU9oUXAtLUt0elJaMTA1b3RjNEk3ZVpzU2FCQ3kxc1BMQkdPeUNkLTBlSUE2UWJyQk1WbFRZM0RBdkxfQTRUT0dsYWV0Y2Q1MW5oVzNCd2JaQ3VubllvTzNDMWdzNFJiZjFVYWxnSDJkNFVMQVJRNldRUzNqLXUySlByVDA5ckFjaEZaa3pDYmV5Zkk0UWlrdzNNc3J6ZTJORjJB?oc=5",
+   "summary": "",
+   "via": "Google News",
+   "lang": "en",
+   "latest": "2026-11-19T17:22:05Z",
+   "outlets": [
+    {
+     "source": "Action News Jax",
+     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUjVROFN1azZNZEtxUmZkQjJ4R0NOamt1Smo0U1ItUUxveEVSRGFEQk5WNlpza3l0SmtXUGNQOXYtcWZZSlY3Rk5YVVJtY3JnX3V1R3M5QUpEWVQxVWZGNHlDcVgxblFFaEFBcHNuTUs5WldveEw2ZGNVcWgtZW5ab2lrb0FjVW81M3NlRF8wTHNjSU5TVmhnbWNlMjNyMzNvOGRHSDdSWU90VEYyTVltVllYeHhwNE1NdVlLTDZ5U0U1ZW5QMXFvOWpUUmZUbFJyaVNhUUd5Y2hOb2lnQ3V3MmdfbFBzT1VqY0JiNUE1OGNHd9IBhgJBVV95cUxNZ3d1dWNDVWpHSTM4aV9BUW10OVM4cEJPWFpBTDZGem0yME03MjdrZ3RtQ0FsaFpGZnMzekFnc1RKbXp6WF96YzEzejRiLUdPOFhMQUhHYVlabHNhay1sLWVUeV80QjZTMnZGVU9oUXAtLUt0elJaMTA1b3RjNEk3ZVpzU2FCQ3kxc1BMQkdPeUNkLTBlSUE2UWJyQk1WbFRZM0RBdkxfQTRUT0dsYWV0Y2Q1MW5oVzNCd2JaQ3VubllvTzNDMWdzNFJiZjFVYWxnSDJkNFVMQVJRNldRUzNqLXUySlByVDA5ckFjaEZaa3pDYmV5Zkk0UWlrdzNNc3J6ZTJORjJB?oc=5",
+     "date": "2026-11-17T21:02:13Z",
+     "title": "NSA\u2019s classified communications network, some Apple services go down; no evidence of cyber attack"
+    },
+    {
+     "source": "Time Magazine",
+     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNHFzdmZiWmFCZnlOMFZicFJXTFJUaGFhWnV0TVl5dFlMRlc1TlFyRW9sb0xJVTh1SkRDTDhVWWhscW9mNm1zMHRCMGlrQ0l6bkZnbFFUcURwTlFLWjltcGF6QzdiYjNFVHk0U3Y0Yk5HcHE3TnlqbEwtQndTSUM4RHMxTTFPdm5hREVaaFNadlc2U1cxYldhWmN1eHltSnZrR3Rxa2tSOTZrcm5DZ3Rydk9YZzY1akV0Rmc?oc=5",
+     "date": "2026-11-18T18:01:01Z",
+     "title": "NSA\u2019s Classified Network Was Disrupted. What Does That Mean for National Security?"
+    },
+    {
+     "source": "The Jerusalem Post",
+     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1BaDJURjU0X29VVHpZZnl1a3FvSk5xQnRpcDJSR0NDM3FJcWZ5SF9JeGc3YjFqLUxvZ3ZSMDFaWmtnZEdmSXFJMlJabVMtN0FUamRzM1JYYUNOczZKblVz?oc=5",
+     "date": "2026-11-19T04:36:10Z",
+     "title": "NSA outage disrupted classified US intelligence communications with Mideast amid Iran war - report"
+    },
+    {
+     "source": "Blackout News",
+     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcGNDU3lEZ3BOTUsydHdNR1I1ZEJmM2k5ZnQ5M2dWODk1UEMtb2xOQkkzaGQxdm1OOTAwU3FZRTg0OE8tUlVGRGgzR2psQUxVSm9FaVdTeUxNM0FSQktZclY0eEdmZktLOFRRYkh1VF9tdjlWaUhtWXNZY0JkS3hWMm1mbUtrbGowajdGMW5uS0ZIc2RKcDNEVzlocEZPYXI5Q25MTGtmM2gwMFZ2dFhfTVpuVFNBZw?oc=5",
+     "date": "2026-11-19T17:02:34Z",
+     "title": "US secret service NSA communications network down - apparently not a cyber attack",
+     "title_orig": "Kommunikationsnetz von US-Geheimdienst NSA ausgefallen \u2013 Offenbar kein Cyberangriff"
+    },
+    {
+     "source": "EFN",
+     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMzN6OXhwZlFFYXJSbXRTSzQyeVBRR3FuT1NfRDcwUncxaW8wczlkTzdBMEdVdTJ3Si1vaEdlcmxpUHc0Nm1CakxXWEFycVFSMTFSb0VJVGJsTGhzNDdwOXJDNWFETkxlSFhkWnpDelFJcDRfTFFsYWRSWmg0VmxoMk10aw?oc=5",
+     "date": "2026-11-19T17:22:05Z",
+     "title": "Software giant falls after cyber attack \u2013 NSA network down",
+     "title_orig": "Mjukvaruj\u00e4tte faller efter cyberattack \u2013 NSA-n\u00e4tverk ligger nere"
+    }
+   ],
+   "n_outlets": 5,
+   "eid": "n-8470142e"
+  },
+  {
    "date": "2026-11-17T20:56:10Z",
    "source": "\u6df1\u6f6eTechFlow",
    "title": "TechFlow Intelligence: California Sues OpenAI Over \u201cUncontrolled AI,\u201d NVIDIA Rejects Jensen Huang\u2019s Return After Trilli\u2026",
@@ -42398,62 +42603,9 @@
    ],
    "n_outlets": 7,
    "eid": "n-fb05a48b"
-  },
-  {
-   "date": "2026-11-17T19:10:17Z",
-   "source": "Action News Jax",
-   "title": "NSA\u2019s classified communications network, some Apple services go down; no evidence of cyber attack",
-   "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUjVROFN1azZNZEtxUmZkQjJ4R0NOamt1Smo0U1ItUUxveEVSRGFEQk5WNlpza3l0SmtXUGNQOXYtcWZZSlY3Rk5YVVJtY3JnX3V1R3M5QUpEWVQxVWZGNHlDcVgxblFFaEFBcHNuTUs5WldveEw2ZGNVcWgtZW5ab2lrb0FjVW81M3NlRF8wTHNjSU5TVmhnbWNlMjNyMzNvOGRHSDdSWU90VEYyTVltVllYeHhwNE1NdVlLTDZ5U0U1ZW5QMXFvOWpUUmZUbFJyaVNhUUd5Y2hOb2lnQ3V3MmdfbFBzT1VqY0JiNUE1OGNHd9IBhgJBVV95cUxNZ3d1dWNDVWpHSTM4aV9BUW10OVM4cEJPWFpBTDZGem0yME03MjdrZ3RtQ0FsaFpGZnMzekFnc1RKbXp6WF96YzEzejRiLUdPOFhMQUhHYVlabHNhay1sLWVUeV80QjZTMnZGVU9oUXAtLUt0elJaMTA1b3RjNEk3ZVpzU2FCQ3kxc1BMQkdPeUNkLTBlSUE2UWJyQk1WbFRZM0RBdkxfQTRUT0dsYWV0Y2Q1MW5oVzNCd2JaQ3VubllvTzNDMWdzNFJiZjFVYWxnSDJkNFVMQVJRNldRUzNqLXUySlByVDA5ckFjaEZaa3pDYmV5Zkk0UWlrdzNNc3J6ZTJORjJB?oc=5",
-   "summary": "",
-   "via": "Google News",
-   "lang": "en",
-   "latest": "2026-11-19T17:22:05Z",
-   "outlets": [
-    {
-     "source": "Lausitzer Rundschau",
-     "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPZUtjbmFId1J6SUpUSUdRS0RLMUJwUmtQVEswLUN0VjJyaHFfSV9BcHZQWnNSSkJRV19EQm1qWEZVTHRqV2JrbjRpaUt5eDNGZDZKeERMRDNVUkE3RmpMSzBzMUIxQk9LYlAweWpwU1hKYUthUTJIRG9qWmVKekNwTktlRFgxN3JfMHY3LTNWb3ZxY1NTOU8wUG9GamtEQ0FOLWZVWEZpVDJOdHlqQ19fcEUxT0NkNmt2UWpiZjVXRXhqUnBMdFludlotNTJtRElYeGktWEJwbzdkUUFqeXZkdTdKalhyeTYyNUVF?oc=5",
-     "date": "2026-11-17T19:10:17Z",
-     "title": "Cyber attack in Washington?: CNN \u2013 Internal communications network of the US secret service NSA failed",
-     "title_orig": "Cyberangriff in Washington?: CNN \u2013 Internes Kommunikationsnetz des US-Geheimdienstes NSA ausgefallen"
-    },
-    {
-     "source": "Action News Jax",
-     "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNUjVROFN1azZNZEtxUmZkQjJ4R0NOamt1Smo0U1ItUUxveEVSRGFEQk5WNlpza3l0SmtXUGNQOXYtcWZZSlY3Rk5YVVJtY3JnX3V1R3M5QUpEWVQxVWZGNHlDcVgxblFFaEFBcHNuTUs5WldveEw2ZGNVcWgtZW5ab2lrb0FjVW81M3NlRF8wTHNjSU5TVmhnbWNlMjNyMzNvOGRHSDdSWU90VEYyTVltVllYeHhwNE1NdVlLTDZ5U0U1ZW5QMXFvOWpUUmZUbFJyaVNhUUd5Y2hOb2lnQ3V3MmdfbFBzT1VqY0JiNUE1OGNHd9IBhgJBVV95cUxNZ3d1dWNDVWpHSTM4aV9BUW10OVM4cEJPWFpBTDZGem0yME03MjdrZ3RtQ0FsaFpGZnMzekFnc1RKbXp6WF96YzEzejRiLUdPOFhMQUhHYVlabHNhay1sLWVUeV80QjZTMnZGVU9oUXAtLUt0elJaMTA1b3RjNEk3ZVpzU2FCQ3kxc1BMQkdPeUNkLTBlSUE2UWJyQk1WbFRZM0RBdkxfQTRUT0dsYWV0Y2Q1MW5oVzNCd2JaQ3VubllvTzNDMWdzNFJiZjFVYWxnSDJkNFVMQVJRNldRUzNqLXUySlByVDA5ckFjaEZaa3pDYmV5Zkk0UWlrdzNNc3J6ZTJORjJB?oc=5",
-     "date": "2026-11-17T21:02:13Z",
-     "title": "NSA\u2019s classified communications network, some Apple services go down; no evidence of cyber attack"
-    },
-    {
-     "source": "Time Magazine",
-     "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNNHFzdmZiWmFCZnlOMFZicFJXTFJUaGFhWnV0TVl5dFlMRlc1TlFyRW9sb0xJVTh1SkRDTDhVWWhscW9mNm1zMHRCMGlrQ0l6bkZnbFFUcURwTlFLWjltcGF6QzdiYjNFVHk0U3Y0Yk5HcHE3TnlqbEwtQndTSUM4RHMxTTFPdm5hREVaaFNadlc2U1cxYldhWmN1eHltSnZrR3Rxa2tSOTZrcm5DZ3Rydk9YZzY1akV0Rmc?oc=5",
-     "date": "2026-11-18T18:01:01Z",
-     "title": "NSA\u2019s Classified Network Was Disrupted. What Does That Mean for National Security?"
-    },
-    {
-     "source": "The Jerusalem Post",
-     "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1BaDJURjU0X29VVHpZZnl1a3FvSk5xQnRpcDJSR0NDM3FJcWZ5SF9JeGc3YjFqLUxvZ3ZSMDFaWmtnZEdmSXFJMlJabVMtN0FUamRzM1JYYUNOczZKblVz?oc=5",
-     "date": "2026-11-19T04:36:10Z",
-     "title": "NSA outage disrupted classified US intelligence communications with Mideast amid Iran war - report"
-    },
-    {
-     "source": "Blackout News",
-     "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPcGNDU3lEZ3BOTUsydHdNR1I1ZEJmM2k5ZnQ5M2dWODk1UEMtb2xOQkkzaGQxdm1OOTAwU3FZRTg0OE8tUlVGRGgzR2psQUxVSm9FaVdTeUxNM0FSQktZclY0eEdmZktLOFRRYkh1VF9tdjlWaUhtWXNZY0JkS3hWMm1mbUtrbGowajdGMW5uS0ZIc2RKcDNEVzlocEZPYXI5Q25MTGtmM2gwMFZ2dFhfTVpuVFNBZw?oc=5",
-     "date": "2026-11-19T17:02:34Z",
-     "title": "US secret service NSA communications network down - apparently not a cyber attack",
-     "title_orig": "Kommunikationsnetz von US-Geheimdienst NSA ausgefallen \u2013 Offenbar kein Cyberangriff"
-    },
-    {
-     "source": "EFN",
-     "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMzN6OXhwZlFFYXJSbXRTSzQyeVBRR3FuT1NfRDcwUncxaW8wczlkTzdBMEdVdTJ3Si1vaEdlcmxpUHc0Nm1CakxXWEFycVFSMTFSb0VJVGJsTGhzNDdwOXJDNWFETkxlSFhkWnpDelFJcDRfTFFsYWRSWmg0VmxoMk10aw?oc=5",
-     "date": "2026-11-19T17:22:05Z",
-     "title": "Software giant falls after cyber attack \u2013 NSA network down",
-     "title_orig": "Mjukvaruj\u00e4tte faller efter cyberattack \u2013 NSA-n\u00e4tverk ligger nere"
-    }
-   ],
-   "n_outlets": 6,
-   "eid": "n-8470142e"
   }
  ],
- "news_headlines_7d": 9957,
+ "news_headlines_7d": 9981,
  "registry": [
   {
    "id": "renfe-adif",
@@ -42937,7 +43089,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T18:27:08Z",
-   "age_days": 3.37
+   "age_days": 3.38
   },
   {
    "id": "fbi-ncic-apparent-intrusion",
@@ -43870,7 +44022,7 @@
     }
    ],
    "latest": "2026-11-24T18:13:00Z",
-   "age_days": 2.06
+   "age_days": 2.07
   },
   {
    "id": "chaos-ransomware-arrests",
@@ -44035,7 +44187,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T16:54:37Z",
-   "age_days": 3.86
+   "age_days": 3.87
   },
   {
    "id": "eu-commission-ai-attack",
@@ -44608,7 +44760,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T16:46:02Z",
-   "age_days": 1.83
+   "age_days": 1.84
   },
   {
    "id": "usda-security-incident",
@@ -45058,7 +45210,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T16:39:46Z",
-   "age_days": 4.89
+   "age_days": 4.9
   },
   {
    "id": "deutsche-bank-leak",
@@ -47739,7 +47891,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T14:01:07Z",
-   "age_days": 22.19
+   "age_days": 22.2
   },
   {
    "id": "cleverbridge-november-payment-card-theft",
@@ -47974,7 +48126,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T13:47:00Z",
-   "age_days": 1.99
+   "age_days": 2.0
   },
   {
    "id": "rakuten-securities-test-env",
@@ -49233,7 +49385,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T12:44:40Z",
-   "age_days": 8.21
+   "age_days": 8.22
   },
   {
    "id": "peninsula-energy-lance-cyber-incident",
@@ -50484,7 +50636,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T09:33:35Z",
-   "age_days": 1.61
+   "age_days": 1.62
   },
   {
    "id": "cisco-expressway-cve-2026-76466",
@@ -50589,19 +50741,33 @@
      "title": "Cisco Expressway Zero-Day Exploited in the Wild as CISA Sets Monday Patch Deadline"
     },
     {
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1qUkRaUmpHeDl3UkJFWmFkdDhwY3NQcnJOcjVXM052ZUdPYVlDMjlZSS0xOU8zSVNIN1kxOGh4VVRsVDFFdzU2SDVCYVNKQWdVX3NuREx0SGp1bEs2MkZERzh5NzVfNzVCTmRfZEY5U0pwTGV4ZnNFQU1KONIBgAFBVV95cUxNUUhmdk56MUhQUnpjczVCc2wwOUxkRElXTEpUQVRQcXg1VmEzMmkxUm5sVTVwVzM0akFIaXU0ci1saEd1enA2T25fejh5RHVVbFk5bUV5SXRTMTZSeS00MWVtZ1VXMWxJNTBvRER0YzRWWjZSWi1WNUE0TktmLTNLaw?oc=5",
+     "date": "2026-11-24T07:48:35Z",
+     "title": "Hackers Actively Exploiting Cisco Expressway Vulnerability to Gain Full Root Access"
+    },
+    {
      "source": "Cyber Daily",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNUdlSWZYRjJhNUNudHp4Rm5hUERpeS1KRC11ZEkybXZtdF9qbWtyZjBkNlo1bWdNanZkbXFzb1Y0MUJMbDZOU3JCTGZJV1FMNTVEa3NyY2szRUpjNnVMV0lWYUFieVlCRTVLYWdZRmdMeUg2RTc3ZEVfS0R6S2NadGpmX3hOckVIVlRrUk1ZNFdnMjk1SVdFbHp6NmYzMnkxSW5HWF84QUVpS3hFdG03LTE5Yw?oc=5",
      "date": "2026-11-24T09:19:51Z",
      "title": "Patch now! Hackers targeting month-old Cisco Expressway RCE vulnerability"
     }
    ],
-   "n_outlets": 11,
+   "n_outlets": 12,
    "stories": [
     {
      "title": "Patch now! Hackers targeting month-old Cisco Expressway RCE vulnerability",
      "source": "Cyber Daily",
      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPNUdlSWZYRjJhNUNudHp4Rm5hUERpeS1KRC11ZEkybXZtdF9qbWtyZjBkNlo1bWdNanZkbXFzb1Y0MUJMbDZOU3JCTGZJV1FMNTVEa3NyY2szRUpjNnVMV0lWYUFieVlCRTVLYWdZRmdMeUg2RTc3ZEVfS0R6S2NadGpmX3hOckVIVlRrUk1ZNFdnMjk1SVdFbHp6NmYzMnkxSW5HWF84QUVpS3hFdG03LTE5Yw?oc=5",
      "date": "2026-11-24T09:19:51Z",
+     "eid": null,
+     "n": 1
+    },
+    {
+     "title": "Hackers Actively Exploiting Cisco Expressway Vulnerability to Gain Full Root Access",
+     "source": "CyberSecurityNews",
+     "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE1qUkRaUmpHeDl3UkJFWmFkdDhwY3NQcnJOcjVXM052ZUdPYVlDMjlZSS0xOU8zSVNIN1kxOGh4VVRsVDFFdzU2SDVCYVNKQWdVX3NuREx0SGp1bEs2MkZERzh5NzVfNzVCTmRfZEY5U0pwTGV4ZnNFQU1KONIBgAFBVV95cUxNUUhmdk56MUhQUnpjczVCc2wwOUxkRElXTEpUQVRQcXg1VmEzMmkxUm5sVTVwVzM0akFIaXU0ci1saEd1enA2T25fejh5RHVVbFk5bUV5SXRTMTZSeS00MWVtZ1VXMWxJNTBvRER0YzRWWjZSWi1WNUE0TktmLTNLaw?oc=5",
+     "date": "2026-11-24T07:48:35Z",
      "eid": null,
      "n": 1
     },
@@ -50802,7 +50968,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T09:05:06Z",
-   "age_days": 4.18
+   "age_days": 4.19
   },
   {
    "id": "autopay-card-data",
@@ -51446,7 +51612,7 @@
     }
    ],
    "latest": "2026-11-24T08:49:28Z",
-   "age_days": 6.4
+   "age_days": 6.41
   },
   {
    "id": "lotte-card-2025-customer-data-breach",
@@ -53443,7 +53609,7 @@
     }
    ],
    "latest": "2026-11-24T07:40:27Z",
-   "age_days": 8.39
+   "age_days": 8.4
   },
   {
    "id": "staples-canada-print",
@@ -54245,7 +54411,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T05:59:03Z",
-   "age_days": 73.17
+   "age_days": 73.18
   },
   {
    "id": "fireworks-ai-supply-chain",
@@ -55049,7 +55215,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T04:02:59Z",
-   "age_days": 5.94
+   "age_days": 5.95
   },
   {
    "id": "prism-medical-products-october-2026",
@@ -56145,7 +56311,7 @@
    ],
    "notices": [],
    "latest": "2026-11-24T01:01:23Z",
-   "age_days": 4.45
+   "age_days": 4.46
   },
   {
    "id": "cabonline-booking-data",
@@ -56242,13 +56408,6 @@
      "title_orig": "Polisen utreder misst\u00e4nkt dataintr\u00e5ng hos taxibolag"
     },
     {
-     "source": "TV4 Nyheterna",
-     "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE9XNDBYNGhrU0V3VkNyb3E3S2JRRjF2Wm1xekRQN1plbUVtcGJJOE5ZRFBuMVM1dGJoWWRpU0E1QnpSdDgtTUNxMkszRW5kYnRubVNQaDVTLXBfbHZZVkE?oc=5",
-     "date": "2026-11-20T15:22:58Z",
-     "title": "Suspected data breach at taxi companies is being investigated",
-     "title_orig": "Misst\u00e4nkt dataintr\u00e5ng hos taxibolag utreds"
-    },
-    {
      "source": "Svenska Epoch Times",
      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNd1VoZW1mZWpiUEhXMnpuRVN0S0FMdlJrVHJyQm9mbFF6YmtLa0F3Q1g4ZUQwS2pLYXpXLVRmem9nUnFOUnNORXlCcmhFVzVJR1hyaklhMXlfTlJBN1d5MmF2Y3lEb3RiaHZiNHF3ZmFMdGZsMUQzUDJfY1ZTSjFTSU1Jbw?oc=5",
      "date": "2026-11-20T15:40:46Z",
@@ -56298,6 +56457,13 @@
      "title_orig": "Cabonline drabbade av dataintr\u00e5ng \u2013 personuppgifter har l\u00e4ckt"
     },
     {
+     "source": "TV4 Nyheterna",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQXzZKMmw2a0c3QmYtaWVOSG1aV0p1bHFhekpJWnhpdVpNdW8yOWh5M2xvMjJXY2Y2OGhpUW1hQ1lxM2JWZk9LaXNXeFdRSUVpaFpINDh1cGlhdXJxMEVLeEJGYkVTQU1najQzTTJnWWdra1VualVjVGJMZ09QaVVuQVYzT0Z0UlM0eWd4cTl4eExIWGM?oc=5",
+     "date": "2026-11-23T19:01:26Z",
+     "title": "Taxi giant hacked - customers affected",
+     "title_orig": "Taxij\u00e4tte hackad \u2013 kunder drabbade"
+    },
+    {
      "source": "Sveriges Radio",
      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWXg4cUhHSWZZNDhjUzVrVkFhX25lRFZXek9kZVBpcllJX3BGLUt6dWZ3TWNDTGUxMXpEWG5OWWUyWTV2WXNrWTg3b25DYlpsVDhScWRFYXBYYmpBdFhsVm1Hdm8za2JVUDJCZlhQcy1JZVkzb1ZYTFl5TG80UF9pOTQ2MmFtZXdSaWNqeU5vVHY2V1U?oc=5",
      "date": "2026-11-24T00:25:09Z",
@@ -56312,6 +56478,14 @@
      "source": "Sveriges Radio",
      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQWXg4cUhHSWZZNDhjUzVrVkFhX25lRFZXek9kZVBpcllJX3BGLUt6dWZ3TWNDTGUxMXpEWG5OWWUyWTV2WXNrWTg3b25DYlpsVDhScWRFYXBYYmpBdFhsVm1Hdm8za2JVUDJCZlhQcy1JZVkzb1ZYTFl5TG80UF9pOTQ2MmFtZXdSaWNqeU5vVHY2V1U?oc=5",
      "date": "2026-11-24T00:25:09Z",
+     "eid": null,
+     "n": 1
+    },
+    {
+     "title": "Taxi giant hacked - customers affected",
+     "source": "TV4 Nyheterna",
+     "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQXzZKMmw2a0c3QmYtaWVOSG1aV0p1bHFhekpJWnhpdVpNdW8yOWh5M2xvMjJXY2Y2OGhpUW1hQ1lxM2JWZk9LaXNXeFdRSUVpaFpINDh1cGlhdXJxMEVLeEJGYkVTQU1najQzTTJnWWdra1VualVjVGJMZ09QaVVuQVYzT0Z0UlM0eWd4cTl4eExIWGM?oc=5",
+     "date": "2026-11-23T19:01:26Z",
      "eid": null,
      "n": 1
     },
@@ -56506,7 +56680,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T23:11:49Z",
-   "age_days": 1.67
+   "age_days": 1.68
   },
   {
    "id": "germany-ba-property-intrusion",
@@ -56647,7 +56821,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T23:05:27Z",
-   "age_days": 3.85
+   "age_days": 3.86
   },
   {
    "id": "enerflo-texas-notice",
@@ -57262,7 +57436,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T20:00:20Z",
-   "age_days": 3.62
+   "age_days": 3.63
   },
   {
    "id": "rockstar-cyberleek-november-build-claim",
@@ -57353,7 +57527,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T19:42:43Z",
-   "age_days": 4.84
+   "age_days": 4.85
   },
   {
    "id": "binance-heist",
@@ -57423,7 +57597,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T19:20:00Z",
-   "age_days": 25.96
+   "age_days": 25.97
   },
   {
    "id": "monadnock-hospital",
@@ -57574,7 +57748,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T19:16:14Z",
-   "age_days": 3.87
+   "age_days": 3.88
   },
   {
    "id": "basel-landschaft",
@@ -58293,7 +58467,7 @@
     }
    ],
    "latest": "2026-11-23T17:08:00Z",
-   "age_days": 8.3
+   "age_days": 8.31
   },
   {
    "id": "ifood-second-hack",
@@ -59004,7 +59178,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T13:58:07Z",
-   "age_days": 10.58
+   "age_days": 10.59
   },
   {
    "id": "fort-smith-municipal-breach",
@@ -59488,7 +59662,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T12:43:00Z",
-   "age_days": 4.14
+   "age_days": 4.15
   },
   {
    "id": "screenconnect-client-cve-2026-84869",
@@ -59788,7 +59962,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T12:00:53Z",
-   "age_days": 1.44
+   "age_days": 1.45
   },
   {
    "id": "tfl-oyster-photocard",
@@ -60071,7 +60245,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T11:59:48Z",
-   "age_days": 5.92
+   "age_days": 5.93
   },
   {
    "id": "jpmorgan-visa-mastercard-vendors",
@@ -62184,7 +62358,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T09:40:55Z",
-   "age_days": 1.42
+   "age_days": 1.43
   },
   {
    "id": "ymca-singapore-youth-for-causes",
@@ -62267,7 +62441,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T09:20:05Z",
-   "age_days": 3.73
+   "age_days": 3.74
   },
   {
    "id": "tata-steel-ijmuiden-prosecutor-intrusion",
@@ -62527,7 +62701,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T07:47:58Z",
-   "age_days": 2.16
+   "age_days": 2.17
   },
   {
    "id": "poste-italiane",
@@ -63116,7 +63290,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23T06:50:00Z",
-   "age_days": 1.51
+   "age_days": 1.52
   },
   {
    "id": "bromcom-legacy-sso-breach",
@@ -64629,7 +64803,7 @@
    ],
    "notices": [],
    "latest": "2026-11-23T01:43:16Z",
-   "age_days": 3.51
+   "age_days": 3.52
   },
   {
    "id": "kenya-ecitizen-byte-to-breach-claim",
@@ -65005,7 +65179,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-23",
-   "age_days": 3.18
+   "age_days": 3.19
   },
   {
    "id": "lee-health-partner-clinic-medusalocker",
@@ -65789,7 +65963,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T19:57:46Z",
-   "age_days": 1.96
+   "age_days": 1.97
   },
   {
    "id": "rokkatei-online-shop",
@@ -67519,7 +67693,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T10:22:00Z",
-   "age_days": 2.36
+   "age_days": 2.37
   },
   {
    "id": "norwegian-air-skimming",
@@ -67628,7 +67802,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T10:01:00Z",
-   "age_days": 4.95
+   "age_days": 4.96
   },
   {
    "id": "sri-lanka-dmt-website",
@@ -67695,7 +67869,7 @@
    ],
    "notices": [],
    "latest": "2026-11-22T09:59:05Z",
-   "age_days": 2.55
+   "age_days": 2.56
   },
   {
    "id": "amc-air-insurance-claims-exposure",
@@ -68376,7 +68550,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T04:37:00Z",
-   "age_days": 13.38
+   "age_days": 13.39
   },
   {
    "id": "noran-usan-breach",
@@ -69323,7 +69497,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22T01:48:09Z",
-   "age_days": 5.04
+   "age_days": 5.05
   },
   {
    "id": "balanz-capital-alleged-data-sale",
@@ -69510,7 +69684,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-22",
-   "age_days": 37.37
+   "age_days": 37.38
   },
   {
    "id": "sos-oxygene-november-2026-claim",
@@ -70068,7 +70242,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T22:30:54Z",
-   "age_days": 5.34
+   "age_days": 5.35
   },
   {
    "id": "prime-intellect-model-substitution",
@@ -70139,7 +70313,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T22:15:38Z",
-   "age_days": 5.17
+   "age_days": 5.18
   },
   {
    "id": "fullerton-health-migrant-worker-portal",
@@ -70616,7 +70790,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T20:13:00Z",
-   "age_days": 2.95
+   "age_days": 2.96
   },
   {
    "id": "iihf-website-hack",
@@ -70998,7 +71172,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T19:22:03Z",
-   "age_days": 3.48
+   "age_days": 3.49
   },
   {
    "id": "b18timebank-exploit",
@@ -71140,7 +71314,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T19:12:32Z",
-   "age_days": 7.21
+   "age_days": 7.22
   },
   {
    "id": "replo-precautionary-customer-notice",
@@ -71217,7 +71391,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T18:34:09Z",
-   "age_days": 3.02
+   "age_days": 3.03
   },
   {
    "id": "three-royal-chemical-safepay-claim",
@@ -71256,7 +71430,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T18:32:47Z",
-   "age_days": 3.02
+   "age_days": 3.03
   },
   {
    "id": "factotal-safepay-claim",
@@ -71294,7 +71468,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T18:31:39Z",
-   "age_days": 3.02
+   "age_days": 3.03
   },
   {
    "id": "offshore-construction-specialists-safepay-claim",
@@ -71752,7 +71926,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T17:20:00Z",
-   "age_days": 3.07
+   "age_days": 3.08
   },
   {
    "id": "sfr-november-unverified-data-claim",
@@ -71884,7 +72058,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T17:00:32Z",
-   "age_days": 6.37
+   "age_days": 6.38
   },
   {
    "id": "guidancetn-leak",
@@ -72302,7 +72476,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T15:32:00Z",
-   "age_days": 3.25
+   "age_days": 3.26
   },
   {
    "id": "pflugsmuehle-refrigeration",
@@ -72736,7 +72910,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T13:57:20Z",
-   "age_days": 4.35
+   "age_days": 4.36
   },
   {
    "id": "aek-athens-fc-website-defacement",
@@ -72816,7 +72990,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T13:19:30Z",
-   "age_days": 5.09
+   "age_days": 5.1
   },
   {
    "id": "ufla-academic-data",
@@ -75128,7 +75302,7 @@
    ],
    "notices": [],
    "latest": "2026-11-21T00:41:28Z",
-   "age_days": 12.84
+   "age_days": 12.85
   },
   {
    "id": "optimizely-configured-commerce-server",
@@ -75176,7 +75350,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-21T00:35:46Z",
-   "age_days": 3.77
+   "age_days": 3.78
   },
   {
    "id": "recruit-ring-karte",
@@ -75865,7 +76039,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T22:54:34Z",
-   "age_days": 3.84
+   "age_days": 3.85
   },
   {
    "id": "university-hospitals-ohio-october-2026",
@@ -75941,7 +76115,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T22:50:14Z",
-   "age_days": 32.21
+   "age_days": 32.22
   },
   {
    "id": "ledger-cryptobilis-wallet-theft",
@@ -76084,7 +76258,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T22:28:52Z",
-   "age_days": 7.27
+   "age_days": 7.28
   },
   {
    "id": "sony-small-amount-short-term-insurance",
@@ -76307,7 +76481,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T21:40:00Z",
-   "age_days": 6.84
+   "age_days": 6.85
   },
   {
    "id": "universeum-booking-vendor",
@@ -76481,7 +76655,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T21:11:58Z",
-   "age_days": 35.3
+   "age_days": 35.31
   },
   {
    "id": "rassemblement-national-members",
@@ -76604,7 +76778,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T20:56:08Z",
-   "age_days": 7.92
+   "age_days": 7.93
   },
   {
    "id": "container-store",
@@ -77517,7 +77691,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T18:47:45Z",
-   "age_days": 4.01
+   "age_days": 4.02
   },
   {
    "id": "richmond-public-schools",
@@ -77989,7 +78163,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T17:48:39Z",
-   "age_days": 4.05
+   "age_days": 4.06
   },
   {
    "id": "sap-netweaver-cve-2025-42884",
@@ -78021,7 +78195,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T17:48:39Z",
-   "age_days": 4.05
+   "age_days": 4.06
   },
   {
    "id": "northcrypto-greenmerc-reporting-tool",
@@ -78120,7 +78294,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T16:58:00Z",
-   "age_days": 12.97
+   "age_days": 12.98
   },
   {
    "id": "sussex-county-prosecutor-network",
@@ -78424,7 +78598,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T15:56:48Z",
-   "age_days": 4.13
+   "age_days": 4.14
   },
   {
    "id": "gmc-doctor-information-disclosure",
@@ -78756,7 +78930,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-20T14:30:00Z",
-   "age_days": 4.19
+   "age_days": 4.2
   },
   {
    "id": "ocean-protocol-retired-pool-outflow",
@@ -79423,7 +79597,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T13:07:14Z",
-   "age_days": 4.68
+   "age_days": 4.69
   },
   {
    "id": "valdemoro-municipal-cyberattack",
@@ -80540,7 +80714,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T09:10:39Z",
-   "age_days": 4.41
+   "age_days": 4.42
   },
   {
    "id": "greiz-ronneburg-hospital",
@@ -81738,7 +81912,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T04:03:00Z",
-   "age_days": 9.36
+   "age_days": 9.37
   },
   {
    "id": "careers360-data-claim",
@@ -81965,7 +82139,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T02:39:02Z",
-   "age_days": 11.34
+   "age_days": 11.35
   },
   {
    "id": "bywater-communico-library-accounts",
@@ -82033,7 +82207,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T02:36:43Z",
-   "age_days": 5.98
+   "age_days": 5.99
   },
   {
    "id": "goldwin-karte",
@@ -82660,7 +82834,7 @@
    ],
    "notices": [],
    "latest": "2026-11-20T00:00:00Z",
-   "age_days": 5.72
+   "age_days": 5.73
   },
   {
    "id": "opn-healthcare-california-notice",
@@ -84182,7 +84356,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19T22:09:32Z",
-   "age_days": 4.87
+   "age_days": 4.88
   },
   {
    "id": "sao-paulo-smart-sampa-credentials",
@@ -84527,7 +84701,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T21:36:59Z",
-   "age_days": 49.2
+   "age_days": 49.21
   },
   {
    "id": "tsume-management-system",
@@ -84811,7 +84985,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T18:45:30Z",
-   "age_days": 5.25
+   "age_days": 5.26
   },
   {
    "id": "katun-october-2026",
@@ -85594,7 +85768,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T13:33:00Z",
-   "age_days": 5.23
+   "age_days": 5.24
   },
   {
    "id": "tallinna-linnatransport-website",
@@ -85800,7 +85974,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T11:53:00Z",
-   "age_days": 5.3
+   "age_days": 5.31
   },
   {
    "id": "rathbones-client-data",
@@ -86269,7 +86443,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T09:40:44Z",
-   "age_days": 5.39
+   "age_days": 5.4
   },
   {
    "id": "x-league-comsbi-disclosure",
@@ -86468,7 +86642,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T09:00:03Z",
-   "age_days": 5.42
+   "age_days": 5.43
   },
   {
    "id": "busan-universities-research-administration",
@@ -86522,7 +86696,7 @@
    ],
    "notices": [],
    "latest": "2026-11-19T08:41:08Z",
-   "age_days": 5.6
+   "age_days": 5.61
   },
   {
    "id": "tsmc-cloud-provider",
@@ -87601,7 +87775,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19",
-   "age_days": 14.59
+   "age_days": 14.6
   },
   {
    "id": "samtec-vortex-extortion-claim",
@@ -87641,7 +87815,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-19",
-   "age_days": 14.59
+   "age_days": 14.6
   },
   {
    "id": "dentaquest-may-network-breach",
@@ -88156,7 +88330,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-18T08:31:00Z",
-   "age_days": 6.44
+   "age_days": 6.45
   },
   {
    "id": "gopax-streami-data-breach",
@@ -88323,7 +88497,7 @@
    ],
    "notices": [],
    "latest": "2026-11-18T06:48:52Z",
-   "age_days": 8.24
+   "age_days": 8.25
   },
   {
    "id": "fair-health-pixelleaks-claim",
@@ -88361,7 +88535,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-18T06:34:00Z",
-   "age_days": 6.52
+   "age_days": 6.53
   },
   {
    "id": "paytaca-november-fraudulent-orders",
@@ -88411,7 +88585,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-18T01:02:58Z",
-   "age_days": 6.75
+   "age_days": 6.76
   },
   {
    "id": "exor-games-pei",
@@ -90561,7 +90735,7 @@
     }
    ],
    "latest": "2026-11-15T20:00:00Z",
-   "age_days": 8.96
+   "age_days": 8.97
   },
   {
    "id": "tjmg-court-leak",
@@ -91319,7 +91493,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-12T14:00:00Z",
-   "age_days": 12.21
+   "age_days": 12.22
   },
   {
    "id": "access-dental-management",
@@ -91774,7 +91948,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-11-08T07:33:06Z",
-   "age_days": 16.48
+   "age_days": 16.49
   },
   {
    "id": "vanguard-july-2026",
@@ -93226,7 +93400,7 @@
    "stories": [],
    "notices": [],
    "latest": "2026-10-21T19:30:06Z",
-   "age_days": 33.98
+   "age_days": 33.99
   },
   {
    "id": "stitch-companionship-september-2026",
@@ -95926,7 +96100,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -12.7,
    "stale": true,
-   "age_h": 33.9,
+   "age_h": 34.0,
    "eid": "x-abf11859"
   },
   {
@@ -96027,7 +96201,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -72.1,
    "stale": true,
-   "age_h": 33.9,
+   "age_h": 34.0,
    "eid": "x-d79663ce"
   },
   {
@@ -96082,7 +96256,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 36.6,
+   "age_h": 36.7,
    "eid": "x-91454966"
   },
   {
@@ -96157,7 +96331,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.9,
    "stale": true,
-   "age_h": 39.6,
+   "age_h": 39.7,
    "eid": "x-4f4fae5c"
   },
   {
@@ -96216,7 +96390,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 40.5,
+   "age_h": 40.6,
    "eid": "x-4e728987"
   },
   {
@@ -96323,7 +96497,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.0,
    "stale": true,
-   "age_h": 40.5,
+   "age_h": 40.6,
    "eid": "x-f453cf2d"
   },
   {
@@ -96379,7 +96553,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 41.2,
+   "age_h": 41.3,
    "eid": "x-3a5c614f"
   },
   {
@@ -96435,7 +96609,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 41.2,
+   "age_h": 41.3,
    "eid": "x-17f69763"
   },
   {
@@ -96635,7 +96809,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 42.0,
+   "age_h": 42.1,
    "eid": "x-8e646d77"
   },
   {
@@ -96719,7 +96893,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -24.9,
    "stale": true,
-   "age_h": 43.2,
+   "age_h": 43.3,
    "eid": "x-59858f8c"
   },
   {
@@ -96778,7 +96952,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 46.7,
+   "age_h": 46.8,
    "eid": "x-cd2fd6b5"
   },
   {
@@ -97120,7 +97294,7 @@
    "hours_to_confirm": 4.9,
    "press_lead_h": 1.1,
    "stale": false,
-   "age_h": 48.0,
+   "age_h": 48.1,
    "eid": "x-1d661531"
   },
   {
@@ -97193,7 +97367,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.2,
    "stale": true,
-   "age_h": 48.0,
+   "age_h": 48.1,
    "eid": "x-8e9d0125"
   },
   {
@@ -97344,7 +97518,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.2,
    "stale": false,
-   "age_h": 49.3,
+   "age_h": 49.4,
    "eid": "x-2b507ecf"
   },
   {
@@ -97409,7 +97583,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -70.8,
    "stale": true,
-   "age_h": 50.1,
+   "age_h": 50.2,
    "eid": "x-f4f958f2"
   },
   {
@@ -97520,7 +97694,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 11.3,
    "stale": true,
-   "age_h": 51.0,
+   "age_h": 51.1,
    "eid": "x-a8754aa6"
   },
   {
@@ -97622,7 +97796,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 53.2,
+   "age_h": 53.3,
    "eid": "x-35eeeab2"
   },
   {
@@ -97745,7 +97919,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 61.3,
+   "age_h": 61.4,
    "eid": "x-e9f8c567"
   },
   {
@@ -97889,7 +98063,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": true,
-   "age_h": 64.8,
+   "age_h": 64.9,
    "eid": "x-3ef42975"
   },
   {
@@ -97965,7 +98139,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 3.3,
    "stale": true,
-   "age_h": 66.9,
+   "age_h": 67.0,
    "eid": "x-2d3e2ee9"
   },
   {
@@ -98090,7 +98264,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 67.1,
+   "age_h": 67.2,
    "eid": "x-6fb93117"
   },
   {
@@ -98283,7 +98457,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": -5.0,
    "stale": false,
-   "age_h": 67.8,
+   "age_h": 67.9,
    "eid": "x-eb428de0"
   },
   {
@@ -98435,7 +98609,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -52.5,
    "stale": false,
-   "age_h": 68.1,
+   "age_h": 68.2,
    "eid": "x-f3649087"
   },
   {
@@ -99364,7 +99538,7 @@
    "hours_to_confirm": 0.1,
    "press_lead_h": 0.1,
    "stale": false,
-   "age_h": 72.8,
+   "age_h": 72.9,
    "eid": "x-57f29b3f"
   },
   {
@@ -99570,7 +99744,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -6.3,
    "stale": false,
-   "age_h": 73.8,
+   "age_h": 73.9,
    "eid": "x-0cd68e71"
   },
   {
@@ -99632,7 +99806,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.8,
+   "age_h": 73.9,
    "eid": "x-a6c31c7f"
   },
   {
@@ -99694,7 +99868,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.8,
+   "age_h": 73.9,
    "eid": "x-cd027845"
   },
   {
@@ -99756,7 +99930,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.8,
+   "age_h": 73.9,
    "eid": "x-89013fad"
   },
   {
@@ -99810,7 +99984,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.8,
+   "age_h": 73.9,
    "eid": "x-dd18bf99"
   },
   {
@@ -99864,7 +100038,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.8,
+   "age_h": 73.9,
    "eid": "x-01603dce"
   },
   {
@@ -99945,7 +100119,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 73.9,
+   "age_h": 74.0,
    "eid": "x-687fbd04"
   },
   {
@@ -100071,7 +100245,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 76.1,
+   "age_h": 76.2,
    "eid": "x-5233adf4"
   },
   {
@@ -100140,7 +100314,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 76.4,
+   "age_h": 76.5,
    "eid": "x-37993888"
   },
   {
@@ -100436,7 +100610,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 47.6,
    "stale": false,
-   "age_h": 76.4,
+   "age_h": 76.5,
    "eid": "x-814fee4f"
   },
   {
@@ -100691,7 +100865,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 30.3,
    "stale": false,
-   "age_h": 78.7,
+   "age_h": 78.8,
    "eid": "x-6db86515"
   },
   {
@@ -100761,7 +100935,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 21.9,
    "stale": false,
-   "age_h": 79.7,
+   "age_h": 79.8,
    "eid": "x-b4f582bd"
   },
   {
@@ -100911,7 +101085,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 81.5,
+   "age_h": 81.6,
    "eid": "x-596a0783"
   },
   {
@@ -100981,7 +101155,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 81.8,
+   "age_h": 81.9,
    "eid": "x-7cea2b4b"
   },
   {
@@ -101611,7 +101785,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 83.6,
+   "age_h": 83.7,
    "eid": "x-d417acba"
   },
   {
@@ -101672,7 +101846,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 87.1,
+   "age_h": 87.2,
    "eid": "x-4bc3779a"
   },
   {
@@ -101737,7 +101911,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 87.6,
+   "age_h": 87.7,
    "eid": "x-5ed6a51c"
   },
   {
@@ -101828,7 +102002,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 88.2,
+   "age_h": 88.3,
    "eid": "x-d9f5f081"
   },
   {
@@ -102488,7 +102662,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 88.8,
+   "age_h": 88.9,
    "eid": "x-e442a7e4"
   },
   {
@@ -102555,7 +102729,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -26.9,
    "stale": false,
-   "age_h": 89.2,
+   "age_h": 89.3,
    "eid": "x-f34fdcd2"
   },
   {
@@ -102626,7 +102800,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 89.2,
+   "age_h": 89.3,
    "eid": "x-ba26668b"
   },
   {
@@ -103095,7 +103269,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.3,
    "stale": false,
-   "age_h": 89.9,
+   "age_h": 90.0,
    "eid": "x-e5c9ba88"
   },
   {
@@ -103159,7 +103333,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 90.0,
+   "age_h": 90.1,
    "eid": "x-14e1053e"
   },
   {
@@ -103220,7 +103394,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 90.3,
+   "age_h": 90.4,
    "eid": "x-41d76d2a"
   },
   {
@@ -103292,7 +103466,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 90.9,
+   "age_h": 91.0,
    "eid": "x-f5413f92"
   },
   {
@@ -103411,7 +103585,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 91.2,
+   "age_h": 91.3,
    "eid": "x-b0bed11b"
   },
   {
@@ -103480,7 +103654,7 @@
    "hours_to_confirm": -14.3,
    "press_lead_h": -14.3,
    "stale": false,
-   "age_h": 91.6,
+   "age_h": 91.7,
    "eid": "x-02fe5ac3"
   },
   {
@@ -103545,7 +103719,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 91.7,
+   "age_h": 91.8,
    "eid": "x-af78ff3f"
   },
   {
@@ -103737,7 +103911,7 @@
    "hours_to_confirm": 20.2,
    "press_lead_h": -34.5,
    "stale": false,
-   "age_h": 92.4,
+   "age_h": 92.5,
    "eid": "x-d5bd5a8a"
   },
   {
@@ -103787,7 +103961,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 92.5,
+   "age_h": 92.6,
    "eid": "x-886c7455"
   },
   {
@@ -103861,7 +104035,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -26.9,
    "stale": false,
-   "age_h": 92.5,
+   "age_h": 92.6,
    "eid": "x-5f47903b"
   },
   {
@@ -103925,7 +104099,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 92.6,
+   "age_h": 92.7,
    "eid": "x-ce2d10ad"
   },
   {
@@ -103997,7 +104171,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 1.7,
    "stale": false,
-   "age_h": 93.0,
+   "age_h": 93.1,
    "eid": "x-fa2b1624"
   },
   {
@@ -104074,7 +104248,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 93.1,
+   "age_h": 93.2,
    "eid": "x-d73347aa"
   },
   {
@@ -104155,7 +104329,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 93.6,
+   "age_h": 93.7,
    "eid": "x-eecb97f9"
   },
   {
@@ -104304,7 +104478,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 14.3,
    "stale": false,
-   "age_h": 94.3,
+   "age_h": 94.4,
    "eid": "x-b14ab31c"
   },
   {
@@ -104531,7 +104705,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -2.0,
    "stale": false,
-   "age_h": 95.7,
+   "age_h": 95.8,
    "eid": "x-a59a1bd5"
   },
   {
@@ -104658,7 +104832,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.8,
    "stale": false,
-   "age_h": 95.8,
+   "age_h": 95.9,
    "eid": "x-64ffd708"
   },
   {
@@ -104733,7 +104907,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -4.0,
    "stale": false,
-   "age_h": 95.9,
+   "age_h": 96.0,
    "eid": "x-3048272c"
   },
   {
@@ -104831,7 +105005,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.2,
    "stale": false,
-   "age_h": 96.2,
+   "age_h": 96.3,
    "eid": "x-1556c60e"
   },
   {
@@ -105132,7 +105306,7 @@
    "hours_to_confirm": 5.6,
    "press_lead_h": 65.1,
    "stale": false,
-   "age_h": 96.7,
+   "age_h": 96.8,
    "eid": "x-54aa91cc"
   },
   {
@@ -105387,7 +105561,7 @@
    "hours_to_confirm": 78.3,
    "press_lead_h": -0.2,
    "stale": false,
-   "age_h": 97.4,
+   "age_h": 97.5,
    "eid": "x-c97b9914"
   },
   {
@@ -105447,7 +105621,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 97.5,
+   "age_h": 97.6,
    "eid": "x-b4d4f3a8"
   },
   {
@@ -105551,7 +105725,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 78.3,
    "stale": false,
-   "age_h": 97.6,
+   "age_h": 97.7,
    "eid": "x-c866ecc7"
   },
   {
@@ -105783,7 +105957,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -27.6,
    "stale": false,
-   "age_h": 98.0,
+   "age_h": 98.1,
    "eid": "x-fac4dc83"
   },
   {
@@ -105898,7 +106072,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -3.8,
    "stale": false,
-   "age_h": 98.4,
+   "age_h": 98.5,
    "eid": "x-0aa6a0bd"
   },
   {
@@ -105976,7 +106150,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 98.6,
+   "age_h": 98.7,
    "eid": "x-33aa3516"
   },
   {
@@ -106102,7 +106276,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 99.1,
+   "age_h": 99.2,
    "eid": "x-16536ff0"
   },
   {
@@ -106181,7 +106355,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -2.7,
    "stale": false,
-   "age_h": 99.1,
+   "age_h": 99.2,
    "eid": "x-c84f6055"
   },
   {
@@ -106301,7 +106475,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 99.4,
+   "age_h": 99.5,
    "eid": "x-d0056ba9"
   },
   {
@@ -106356,7 +106530,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 99.8,
+   "age_h": 99.9,
    "eid": "x-0cdae788"
   },
   {
@@ -106483,7 +106657,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.5,
+   "age_h": 100.6,
    "eid": "x-45490ff0"
   },
   {
@@ -106589,7 +106763,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.5,
+   "age_h": 100.6,
    "eid": "x-31f22223"
   },
   {
@@ -106654,7 +106828,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.7,
+   "age_h": 100.8,
    "eid": "x-ef5d7279"
   },
   {
@@ -106713,7 +106887,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.7,
+   "age_h": 100.8,
    "eid": "x-391da432"
   },
   {
@@ -106777,7 +106951,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 100.8,
+   "age_h": 100.9,
    "eid": "x-db9c84c0"
   },
   {
@@ -107002,7 +107176,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.1,
    "stale": false,
-   "age_h": 102.1,
+   "age_h": 102.2,
    "eid": "x-503b2fe7"
   },
   {
@@ -107155,7 +107329,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 102.3,
+   "age_h": 102.4,
    "eid": "x-afb3de62"
   },
   {
@@ -107230,7 +107404,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 17.0,
    "stale": false,
-   "age_h": 102.8,
+   "age_h": 102.9,
    "eid": "x-d679d928"
   },
   {
@@ -107333,7 +107507,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 103.0,
+   "age_h": 103.1,
    "eid": "x-11af7156"
   },
   {
@@ -107442,7 +107616,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 2.7,
    "stale": false,
-   "age_h": 103.1,
+   "age_h": 103.2,
    "eid": "x-120c25cc"
   },
   {
@@ -107546,7 +107720,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -3.5,
    "stale": false,
-   "age_h": 103.5,
+   "age_h": 103.6,
    "eid": "x-c9040a32"
   },
   {
@@ -107659,7 +107833,7 @@
    "hours_to_confirm": -58.6,
    "press_lead_h": 69.2,
    "stale": false,
-   "age_h": 104.5,
+   "age_h": 104.6,
    "eid": "x-faad2faf"
   },
   {
@@ -107753,7 +107927,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -1.6,
    "stale": false,
-   "age_h": 105.2,
+   "age_h": 105.3,
    "eid": "x-1e6e9963"
   },
   {
@@ -107884,7 +108058,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -15.4,
    "stale": false,
-   "age_h": 105.2,
+   "age_h": 105.3,
    "eid": "x-dc5d83b9"
   },
   {
@@ -107938,7 +108112,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 105.8,
+   "age_h": 105.9,
    "eid": "x-b0a3ae00"
   },
   {
@@ -108080,7 +108254,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 106.1,
+   "age_h": 106.2,
    "eid": "x-82a1f65d"
   },
   {
@@ -108216,7 +108390,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 106.8,
+   "age_h": 106.9,
    "eid": "x-aee81824"
   },
   {
@@ -108327,7 +108501,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.8,
    "stale": false,
-   "age_h": 108.2,
+   "age_h": 108.3,
    "eid": "x-0a1e2869"
   },
   {
@@ -108432,7 +108606,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 6.5,
    "stale": false,
-   "age_h": 108.5,
+   "age_h": 108.6,
    "eid": "x-b1e9eeb7"
   },
   {
@@ -108509,7 +108683,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 109.0,
+   "age_h": 109.1,
    "eid": "x-929dbc66"
   },
   {
@@ -108580,7 +108754,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 109.1,
+   "age_h": 109.2,
    "eid": "x-958b8ce8"
   },
   {
@@ -108982,7 +109156,7 @@
    "hours_to_confirm": 5.7,
    "press_lead_h": 0.4,
    "stale": false,
-   "age_h": 109.3,
+   "age_h": 109.4,
    "eid": "x-37d402a7"
   },
   {
@@ -109079,7 +109253,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 109.9,
+   "age_h": 110.0,
    "eid": "x-43d544d0"
   },
   {
@@ -109211,7 +109385,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 9.9,
    "stale": false,
-   "age_h": 110.7,
+   "age_h": 110.8,
    "eid": "x-dcad2ced"
   },
   {
@@ -109269,7 +109443,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 111.0,
+   "age_h": 111.1,
    "eid": "x-6bee0584"
   },
   {
@@ -109434,7 +109608,7 @@
    "hours_to_confirm": -0.1,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 111.3,
+   "age_h": 111.4,
    "eid": "x-69ae9d55"
   },
   {
@@ -109605,7 +109779,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 4.6,
    "stale": false,
-   "age_h": 112.5,
+   "age_h": 112.6,
    "eid": "x-cbe816fa"
   },
   {
@@ -109731,7 +109905,7 @@
    "hours_to_confirm": 17.1,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 113.5,
+   "age_h": 113.6,
    "eid": "x-97a62f1a"
   },
   {
@@ -109839,7 +110013,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 11.4,
    "stale": false,
-   "age_h": 113.9,
+   "age_h": 114.0,
    "eid": "x-4211ef70"
   },
   {
@@ -109905,7 +110079,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 114.1,
+   "age_h": 114.2,
    "eid": "x-7b941bec"
   },
   {
@@ -109981,7 +110155,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.6,
    "stale": false,
-   "age_h": 114.6,
+   "age_h": 114.7,
    "eid": "x-0f97b676"
   },
   {
@@ -110134,7 +110308,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 56.9,
    "stale": false,
-   "age_h": 114.6,
+   "age_h": 114.7,
    "eid": "x-585238e3"
   },
   {
@@ -110209,7 +110383,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 114.9,
+   "age_h": 115.0,
    "eid": "x-77fc8232"
   },
   {
@@ -110347,7 +110521,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 99.8,
    "stale": false,
-   "age_h": 115.3,
+   "age_h": 115.4,
    "eid": "x-2448dad2"
   },
   {
@@ -110415,7 +110589,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 116.0,
+   "age_h": 116.1,
    "eid": "x-a393b742"
   },
   {
@@ -110480,7 +110654,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 116.0,
+   "age_h": 116.1,
    "eid": "x-884ccde0"
   },
   {
@@ -110551,7 +110725,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 116.4,
+   "age_h": 116.5,
    "eid": "x-376bd42c"
   },
   {
@@ -110857,7 +111031,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 2.2,
    "stale": false,
-   "age_h": 116.8,
+   "age_h": 116.9,
    "eid": "x-68ab71ea"
   },
   {
@@ -111013,7 +111187,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -1.2,
    "stale": false,
-   "age_h": 117.5,
+   "age_h": 117.6,
    "eid": "x-d4e0d2a7"
   },
   {
@@ -111098,7 +111272,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 15.1,
    "stale": false,
-   "age_h": 118.5,
+   "age_h": 118.6,
    "eid": "x-40a25af7"
   },
   {
@@ -111311,7 +111485,7 @@
    "hours_to_confirm": 28.5,
    "press_lead_h": -5.2,
    "stale": false,
-   "age_h": 119.7,
+   "age_h": 119.8,
    "eid": "x-6a8a046d"
   },
   {
@@ -111391,7 +111565,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -0.6,
    "stale": false,
-   "age_h": 120.0,
+   "age_h": 120.1,
    "eid": "x-fa40179a"
   },
   {
@@ -111520,10 +111694,10 @@
      "title": "Hackers leak GTA 6 Xbox file, fueling PC speculation"
     },
     {
-     "eid": "n-50d20aca",
-     "source": "Maeil Business News Market",
+     "eid": "n-621b30b4",
+     "source": "BigGo Finance",
      "date": "2026-11-24T11:43:59Z",
-     "title": "GTA 6, unofficial PC version hacked... Modify and transplant files with AI"
+     "title": "GTA 6 Rakes In approximately $3.7 Billion on Launch Day; Hacked Leak Raises Specter of Unofficial PC Version"
     },
     {
      "eid": null,
@@ -111541,7 +111715,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -28.0,
    "stale": false,
-   "age_h": 120.2,
+   "age_h": 120.3,
    "eid": "x-afc1c4f0"
   },
   {
@@ -111763,7 +111937,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 0.7,
    "stale": false,
-   "age_h": 120.8,
+   "age_h": 120.9,
    "eid": "x-7b9a9595"
   },
   {
@@ -111920,7 +112094,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 119.3,
    "stale": false,
-   "age_h": 122.1,
+   "age_h": 122.2,
    "eid": "x-d309dfe3"
   },
   {
@@ -112380,7 +112554,7 @@
    "hours_to_confirm": 49.4,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 122.8,
+   "age_h": 122.9,
    "eid": "x-2d44e830"
   },
   {
@@ -112465,7 +112639,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 122.8,
+   "age_h": 122.9,
    "eid": "x-735d7d51"
   },
   {
@@ -112530,7 +112704,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.0,
+   "age_h": 124.1,
    "eid": "x-89ac23e5"
   },
   {
@@ -112767,7 +112941,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.2,
+   "age_h": 124.3,
    "eid": "x-ff2e57c7"
   },
   {
@@ -112842,7 +113016,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.3,
+   "age_h": 124.4,
    "eid": "x-1c3d431c"
   },
   {
@@ -112902,7 +113076,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 124.3,
+   "age_h": 124.4,
    "eid": "x-a94024ef"
   },
   {
@@ -113305,7 +113479,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": -24.4,
    "stale": false,
-   "age_h": 125.8,
+   "age_h": 125.9,
    "eid": "x-41c84c0c"
   },
   {
@@ -113499,6 +113673,12 @@
      "title": "Patch now! Hackers targeting month-old Cisco Expressway RCE vulnerability"
     },
     {
+     "eid": null,
+     "source": "CyberSecurityNews",
+     "date": "2026-11-24T07:48:35Z",
+     "title": "Hackers Actively Exploiting Cisco Expressway Vulnerability to Gain Full Root Access"
+    },
+    {
      "eid": "n-bc11c30f",
      "source": "SecurityWeek",
      "date": "2026-11-23T11:35:15Z",
@@ -113520,7 +113700,7 @@
    "hours_to_confirm": 34.8,
    "press_lead_h": -0.0,
    "stale": false,
-   "age_h": 125.9,
+   "age_h": 126.0,
    "eid": "x-879dc3a5"
   },
   {
@@ -113591,7 +113771,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 0.2,
    "stale": false,
-   "age_h": 126.1,
+   "age_h": 126.2,
    "eid": "x-1dae4023"
   },
   {
@@ -113849,7 +114029,7 @@
    "hours_to_confirm": -12.7,
    "press_lead_h": -23.3,
    "stale": false,
-   "age_h": 126.5,
+   "age_h": 126.6,
    "eid": "x-28e9dc79"
   },
   {
@@ -113944,7 +114124,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 126.6,
+   "age_h": 126.7,
    "eid": "x-9ad9faa1"
   },
   {
@@ -114110,7 +114290,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.5,
+   "age_h": 127.6,
    "eid": "x-1897a686"
   },
   {
@@ -114175,7 +114355,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.5,
+   "age_h": 127.6,
    "eid": "x-e59c5ef9"
   },
   {
@@ -114240,7 +114420,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.5,
+   "age_h": 127.6,
    "eid": "x-d17085eb"
   },
   {
@@ -114351,7 +114531,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 15.1,
    "stale": false,
-   "age_h": 127.5,
+   "age_h": 127.6,
    "eid": "x-fa91d8d0"
   },
   {
@@ -114412,7 +114592,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 127.6,
+   "age_h": 127.7,
    "eid": "x-27edaf76"
   },
   {
@@ -114515,7 +114695,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 20.5,
    "stale": false,
-   "age_h": 128.4,
+   "age_h": 128.5,
    "eid": "x-cd4957a1"
   },
   {
@@ -114683,7 +114863,7 @@
    "hours_to_confirm": 110.2,
    "press_lead_h": -0.3,
    "stale": false,
-   "age_h": 129.3,
+   "age_h": 129.4,
    "eid": "x-24f0b9f1"
   },
   {
@@ -114754,7 +114934,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 129.5,
+   "age_h": 129.6,
    "eid": "x-37ffb879"
   },
   {
@@ -114868,7 +115048,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 98.8,
    "stale": false,
-   "age_h": 130.0,
+   "age_h": 130.1,
    "eid": "x-62afa396"
   },
   {
@@ -115022,7 +115202,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 18.6,
    "stale": false,
-   "age_h": 130.5,
+   "age_h": 130.6,
    "eid": "x-4898e531"
   },
   {
@@ -115393,7 +115573,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -15.1,
    "stale": false,
-   "age_h": 131.3,
+   "age_h": 131.4,
    "eid": "x-5a6c8d79"
   },
   {
@@ -115492,7 +115672,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 37.6,
    "stale": false,
-   "age_h": 135.7,
+   "age_h": 135.8,
    "eid": "x-238bed0f"
   },
   {
@@ -115668,7 +115848,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 2.3,
    "stale": false,
-   "age_h": 136.5,
+   "age_h": 136.6,
    "eid": "x-9893c906"
   },
   {
@@ -115776,7 +115956,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -4.6,
    "stale": false,
-   "age_h": 137.1,
+   "age_h": 137.2,
    "eid": "x-71215915"
   },
   {
@@ -115853,7 +116033,7 @@
    "hours_to_confirm": 142.2,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 137.3,
+   "age_h": 137.4,
    "eid": "x-7cc410dc"
   },
   {
@@ -115919,7 +116099,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 140.3,
+   "age_h": 140.4,
    "eid": "x-42e37a7c"
   },
   {
@@ -115988,7 +116168,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 141.4,
+   "age_h": 141.5,
    "eid": "x-9d9651da"
   },
   {
@@ -116136,7 +116316,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 141.8,
+   "age_h": 141.9,
    "eid": "x-fdbb2343"
   },
   {
@@ -116262,7 +116442,7 @@
    "hours_to_confirm": 3.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 142.4,
+   "age_h": 142.5,
    "eid": "x-3bb0206f"
   },
   {
@@ -116378,7 +116558,7 @@
    "hours_to_confirm": 3.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 142.4,
+   "age_h": 142.5,
    "eid": "x-2cfd1831"
   },
   {
@@ -116538,7 +116718,7 @@
    "hours_to_confirm": 3.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 142.4,
+   "age_h": 142.5,
    "eid": "x-d1039eb3"
   },
   {
@@ -116668,7 +116848,7 @@
    "hours_to_confirm": 4.2,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 143.3,
+   "age_h": 143.4,
    "eid": "x-b6ae67f0"
   },
   {
@@ -116752,7 +116932,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 26.8,
    "stale": false,
-   "age_h": 143.4,
+   "age_h": 143.5,
    "eid": "x-5ac59fc6"
   },
   {
@@ -116828,7 +117008,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 143.5,
+   "age_h": 143.6,
    "eid": "x-d73f92d4"
   },
   {
@@ -116893,7 +117073,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 143.6,
+   "age_h": 143.7,
    "eid": "x-838eb4f3"
   },
   {
@@ -116956,7 +117136,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 7.2,
    "stale": false,
-   "age_h": 143.7,
+   "age_h": 143.8,
    "eid": "x-77239847"
   },
   {
@@ -117069,7 +117249,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -2.3,
    "stale": false,
-   "age_h": 143.8,
+   "age_h": 143.9,
    "eid": "x-9047968d"
   },
   {
@@ -117183,7 +117363,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.7,
    "stale": false,
-   "age_h": 144.1,
+   "age_h": 144.2,
    "eid": "x-8c1cdedb"
   },
   {
@@ -117379,7 +117559,7 @@
    "hours_to_confirm": 5.3,
    "press_lead_h": 0.0,
    "stale": false,
-   "age_h": 144.4,
+   "age_h": 144.5,
    "eid": "x-24fe8d96"
   },
   {
@@ -117453,7 +117633,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 13.6,
    "stale": false,
-   "age_h": 144.6,
+   "age_h": 144.7,
    "eid": "x-c0b3914d"
   },
   {
@@ -117586,7 +117766,7 @@
    "hours_to_confirm": 149.8,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 144.9,
+   "age_h": 145.0,
    "eid": "x-59a8ff73"
   },
   {
@@ -117659,7 +117839,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 147.3,
+   "age_h": 147.4,
    "eid": "x-7cc74178"
   },
   {
@@ -118048,7 +118228,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.7,
    "stale": false,
-   "age_h": 148.7,
+   "age_h": 148.8,
    "eid": "x-6f5cdee2"
   },
   {
@@ -118135,7 +118315,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 148.7,
+   "age_h": 148.8,
    "eid": "x-9d5dd0bb"
   },
   {
@@ -118279,7 +118459,7 @@
    "hours_to_confirm": null,
    "press_lead_h": -4.1,
    "stale": false,
-   "age_h": 149.6,
+   "age_h": 149.7,
    "eid": "x-c5dfe8bc"
   },
   {
@@ -118337,7 +118517,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 150.2,
+   "age_h": 150.3,
    "eid": "x-86795d3e"
   },
   {
@@ -118453,7 +118633,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 150.8,
+   "age_h": 150.9,
    "eid": "x-de95861b"
   },
   {
@@ -118564,7 +118744,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 16.8,
    "stale": false,
-   "age_h": 151.1,
+   "age_h": 151.2,
    "eid": "x-14355224"
   },
   {
@@ -118648,7 +118828,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 0.4,
    "stale": false,
-   "age_h": 151.3,
+   "age_h": 151.4,
    "eid": "x-a12056dc"
   },
   {
@@ -118724,7 +118904,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 153.0,
+   "age_h": 153.1,
    "eid": "x-713b50e6"
   },
   {
@@ -118808,7 +118988,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 154.2,
+   "age_h": 154.3,
    "eid": "x-aa4335e2"
   },
   {
@@ -118920,7 +119100,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 155.7,
+   "age_h": 155.8,
    "eid": "x-dfd6dfee"
   },
   {
@@ -119056,7 +119236,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 23.2,
    "stale": false,
-   "age_h": 155.9,
+   "age_h": 156.0,
    "eid": "x-2249e5d1"
   },
   {
@@ -119121,7 +119301,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 157.0,
+   "age_h": 157.1,
    "eid": "x-10879901"
   },
   {
@@ -119184,7 +119364,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 157.9,
+   "age_h": 158.0,
    "eid": "x-61d02f2e"
   },
   {
@@ -119270,7 +119450,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 157.9,
+   "age_h": 158.0,
    "eid": "x-ac8eaff4"
   },
   {
@@ -119390,7 +119570,7 @@
    "hours_to_confirm": -1.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 162.1,
+   "age_h": 162.2,
    "eid": "x-ac2193cd"
   },
   {
@@ -119472,7 +119652,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 69.6,
    "stale": false,
-   "age_h": 163.1,
+   "age_h": 163.2,
    "eid": "x-ff829756"
   },
   {
@@ -119568,7 +119748,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 163.1,
+   "age_h": 163.2,
    "eid": "x-7aabe083"
   },
   {
@@ -119935,7 +120115,7 @@
    "hours_to_confirm": 15.9,
    "press_lead_h": 13.8,
    "stale": false,
-   "age_h": 165.0,
+   "age_h": 165.1,
    "eid": "x-bbb595c5"
   },
   {
@@ -120004,7 +120184,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 165.4,
+   "age_h": 165.5,
    "eid": "x-f20a11b8"
   },
   {
@@ -120076,7 +120256,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 166.1,
+   "age_h": 166.2,
    "eid": "x-a4503abf"
   },
   {
@@ -120225,7 +120405,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 2.6,
    "stale": false,
-   "age_h": 167.9,
+   "age_h": 168.0,
    "eid": "x-1eb83fbc"
   },
   {
@@ -120332,7 +120512,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 57.5,
    "stale": false,
-   "age_h": 170.0,
+   "age_h": 170.1,
    "eid": "x-ccd3bdf4"
   },
   {
@@ -120549,7 +120729,7 @@
    "hours_to_confirm": -2.2,
    "press_lead_h": 13.8,
    "stale": false,
-   "age_h": 170.9,
+   "age_h": 171.0,
    "eid": "x-46dbf09c"
   },
   {
@@ -120658,7 +120838,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 171.1,
+   "age_h": 171.2,
    "eid": "x-6db7e50a"
   },
   {
@@ -120757,7 +120937,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 55.0,
    "stale": false,
-   "age_h": 172.6,
+   "age_h": 172.7,
    "eid": "x-7b7e6d9a"
   },
   {
@@ -120868,7 +121048,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 173.5,
+   "age_h": 173.6,
    "eid": "x-135e32a3"
   },
   {
@@ -120948,7 +121128,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 173.6,
+   "age_h": 173.7,
    "eid": "x-a57b74c7"
   },
   {
@@ -121054,7 +121234,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 175.4,
+   "age_h": 175.5,
    "eid": "x-558cdac7"
   },
   {
@@ -121152,7 +121332,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 19.0,
    "stale": false,
-   "age_h": 177.3,
+   "age_h": 177.4,
    "eid": "x-06e8b1ca"
   },
   {
@@ -121254,7 +121434,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 178.6,
+   "age_h": 178.7,
    "eid": "x-1270f469"
   },
   {
@@ -121451,7 +121631,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 179.0,
+   "age_h": 179.1,
    "eid": "x-cebc5ac8"
   },
   {
@@ -121578,7 +121758,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 179.0,
+   "age_h": 179.1,
    "eid": "x-9330e9a1"
   },
   {
@@ -121814,7 +121994,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 60.2,
    "stale": false,
-   "age_h": 183.9,
+   "age_h": 184.0,
    "eid": "x-fd483653"
   },
   {
@@ -121896,7 +122076,7 @@
    "hours_to_confirm": -1.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 186.1,
+   "age_h": 186.2,
    "eid": "x-0bdfcaef"
   },
   {
@@ -122164,7 +122344,7 @@
    "hours_to_confirm": -0.1,
    "press_lead_h": 19.3,
    "stale": false,
-   "age_h": 187.0,
+   "age_h": 187.1,
    "eid": "x-a15220ac"
   },
   {
@@ -122287,7 +122467,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 188.7,
+   "age_h": 188.8,
    "eid": "x-28696625"
   },
   {
@@ -122399,7 +122579,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 190.1,
+   "age_h": 190.2,
    "eid": "x-134eaec8"
   },
   {
@@ -122509,7 +122689,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 36.5,
    "stale": false,
-   "age_h": 192.8,
+   "age_h": 192.9,
    "eid": "x-67771918"
   },
   {
@@ -122779,7 +122959,7 @@
    "hours_to_confirm": 14.9,
    "press_lead_h": 30.3,
    "stale": false,
-   "age_h": 196.6,
+   "age_h": 196.7,
    "eid": "x-d668ef99"
   },
   {
@@ -122846,7 +123026,7 @@
    "hours_to_confirm": null,
    "press_lead_h": 72.7,
    "stale": false,
-   "age_h": 200.5,
+   "age_h": 200.6,
    "eid": "x-bf70a05f"
   },
   {
@@ -122915,7 +123095,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 207.6,
+   "age_h": 207.7,
    "eid": "x-2946bbb8"
   },
   {
@@ -123050,7 +123230,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 215.4,
+   "age_h": 215.5,
    "eid": "x-61acccf1"
   },
   {
@@ -123407,7 +123587,7 @@
    "hours_to_confirm": 14.3,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 232.0,
+   "age_h": 232.1,
    "eid": "x-d81516d6"
   },
   {
@@ -123502,7 +123682,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 237.5,
+   "age_h": 237.6,
    "eid": "x-bda3a434"
   },
   {
@@ -123644,7 +123824,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 239.3,
+   "age_h": 239.4,
    "eid": "x-69ede209"
   },
   {
@@ -123770,7 +123950,7 @@
    "hours_to_confirm": 1.6,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 243.1,
+   "age_h": 243.2,
    "eid": "x-6aec74ba"
   },
   {
@@ -123838,7 +124018,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": 94.6,
    "stale": false,
-   "age_h": 250.1,
+   "age_h": 250.2,
    "eid": "x-edf78490"
   },
   {
@@ -123908,7 +124088,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 253.1,
+   "age_h": 253.2,
    "eid": "x-b2c89bd4"
   },
   {
@@ -124058,7 +124238,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 255.6,
+   "age_h": 255.7,
    "eid": "x-fbb57da1"
   },
   {
@@ -124664,7 +124844,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 297.0,
+   "age_h": 297.1,
    "eid": "x-d84c80b4"
   },
   {
@@ -124838,7 +125018,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 327.8,
+   "age_h": 327.9,
    "eid": "x-62546e4d"
   },
   {
@@ -125118,7 +125298,7 @@
    "hours_to_confirm": 12.1,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 349.6,
+   "age_h": 349.7,
    "eid": "x-49272dec"
   },
   {
@@ -125241,7 +125421,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 385.3,
+   "age_h": 385.4,
    "eid": "x-3d2ab317"
   },
   {
@@ -125332,7 +125512,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 469.9,
+   "age_h": 470.0,
    "eid": "x-47c6c52d"
   },
   {
@@ -125450,7 +125630,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 534.8,
+   "age_h": 534.9,
    "eid": "x-fd2b61c8"
   },
   {
@@ -125550,7 +125730,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 596.5,
+   "age_h": 596.6,
    "eid": "x-6b647e4b"
   },
   {
@@ -125858,7 +126038,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 764.3,
+   "age_h": 764.4,
    "eid": "x-ae1f0346"
   },
   {
@@ -125957,7 +126137,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 778.8,
+   "age_h": 778.9,
    "eid": "x-3c6e2c92"
   },
   {
@@ -126300,7 +126480,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 1403.6,
+   "age_h": 1403.7,
    "eid": "x-4fe7140c"
   },
   {
@@ -126403,7 +126583,7 @@
    "hours_to_confirm": 0.0,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 1467.1,
+   "age_h": 1467.2,
    "eid": "x-d4276857"
   },
   {
@@ -126500,7 +126680,7 @@
    "hours_to_confirm": null,
    "press_lead_h": null,
    "stale": false,
-   "age_h": 1759.9,
+   "age_h": 1760.0,
    "eid": "x-671e1d05"
   }
  ],
@@ -126824,31 +127004,31 @@
   {
    "t": "2026-11-24T07:00:00Z",
    "ransomware": 1,
-   "news": 20,
+   "news": 22,
    "x": 0
   },
   {
    "t": "2026-11-24T08:00:00Z",
    "ransomware": 1,
-   "news": 26,
+   "news": 27,
    "x": 0
   },
   {
    "t": "2026-11-24T09:00:00Z",
    "ransomware": 0,
-   "news": 38,
+   "news": 39,
    "x": 0
   },
   {
    "t": "2026-11-24T10:00:00Z",
    "ransomware": 0,
-   "news": 32,
+   "news": 33,
    "x": 0
   },
   {
    "t": "2026-11-24T11:00:00Z",
    "ransomware": 1,
-   "news": 29,
+   "news": 32,
    "x": 0
   },
   {
@@ -126860,19 +127040,19 @@
   {
    "t": "2026-11-24T13:00:00Z",
    "ransomware": 0,
-   "news": 32,
+   "news": 31,
    "x": 0
   },
   {
    "t": "2026-11-24T14:00:00Z",
-   "ransomware": 4,
-   "news": 21,
+   "ransomware": 5,
+   "news": 22,
    "x": 0
   },
   {
    "t": "2026-11-24T15:00:00Z",
    "ransomware": 0,
-   "news": 22,
+   "news": 25,
    "x": 0
   },
   {
@@ -126884,7 +127064,7 @@
   {
    "t": "2026-11-24T17:00:00Z",
    "ransomware": 0,
-   "news": 30,
+   "news": 31,
    "x": 0
   },
   {
@@ -126902,10 +127082,10 @@
  ],
  "windows": {
   "bounds": {
-   "1h": "2026-11-24T18:07:16Z",
-   "24h": "2026-11-23T19:07:16Z",
-   "7d": "2026-11-17T19:07:16Z",
-   "30d": "2026-10-25T19:07:16Z",
+   "1h": "2026-11-24T18:12:13Z",
+   "24h": "2026-11-23T19:12:13Z",
+   "7d": "2026-11-17T19:12:13Z",
+   "30d": "2026-10-25T19:12:13Z",
    "ytd": "2026-01-01T00:00:00Z"
   },
   "rows": {
@@ -126951,13 +127131,13 @@
      "n": 0
     },
     "24h": {
-     "n": 18
+     "n": 19
     },
     "7d": {
-     "n": 294
+     "n": 295
     },
     "30d": {
-     "n": 1261
+     "n": 1262
     },
     "ytd": {
      "n": 9833,
@@ -127005,16 +127185,16 @@
    },
    "news": {
     "1h": {
-     "n": 14,
-     "headlines": 28
+     "n": 13,
+     "headlines": 26
     },
     "24h": {
-     "n": 530,
-     "headlines": 1428
+     "n": 540,
+     "headlines": 1448
     },
     "7d": {
-     "n": 2861,
-     "headlines": 9957
+     "n": 2875,
+     "headlines": 9981
     }
    },
    "incidents": {
@@ -127053,7 +127233,7 @@
      "n": 0
     },
     "7d": {
-     "n": 215
+     "n": 214
     }
    }
   }
@@ -127498,7 +127678,7 @@
     }
    ]
   },
-  "n-5e08a15c": {
+  "n-e26e485b": {
    "patterns": [
     "data-exposure"
    ],
@@ -127544,7 +127724,7 @@
      "why": "same pattern: Data exposure and theft; terms: statement, personal"
     }
    ],
-   "cluster": "cl-a728c2"
+   "cluster": "cl-681e5a"
   },
   "n-233e037b": {
    "patterns": [
@@ -127724,6 +127904,53 @@
     }
    ]
   },
+  "n-354c1517": {
+   "patterns": [
+    "data-exposure"
+   ],
+   "related": [
+    {
+     "id": "n-8ddc6201",
+     "kind": "news",
+     "title": "Cyberattack exposes customer names and emails at major financial companies",
+     "date": "2026-11-20T05:03:02Z",
+     "score": 0.49,
+     "why": "same pattern: Data exposure and theft; terms: names, exposes"
+    },
+    {
+     "id": "n-200cd960",
+     "kind": "news",
+     "title": "Douglas County data leak exposes Social Security numbers after public records request",
+     "date": "2026-11-20T02:14:15Z",
+     "score": 0.48,
+     "why": "same pattern: Data exposure and theft; terms: numbers, exposes, social"
+    },
+    {
+     "id": "n-fcdec304",
+     "kind": "news",
+     "title": "Noran Usan data breach exposes 362,000 customers' bank accounts, phone numbers",
+     "date": "2026-11-18T10:23:50Z",
+     "score": 0.46,
+     "why": "same pattern: Data exposure and theft; terms: numbers, exposes, breach"
+    },
+    {
+     "id": "n-40d8f71b",
+     "kind": "news",
+     "title": "First Trinity Financial Data Breach Exposes Personal and Financial Data",
+     "date": "2026-11-18T16:24:10Z",
+     "score": 0.45,
+     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
+    },
+    {
+     "id": "n-dc25daad",
+     "kind": "news",
+     "title": "News - Uber data breach exposes personal data of 150,000 people",
+     "date": "2026-11-23T10:05:00Z",
+     "score": 0.43,
+     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
+    }
+   ]
+  },
   "n-45990407": {
    "patterns": [
     "data-exposure"
@@ -127734,7 +127961,7 @@
      "kind": "x",
      "title": "VECERT relays an unverified data compromise claim involving Kenya\u2019s eCitizen",
      "date": "2026-11-23T01:08:20Z",
-     "score": 0.46,
+     "score": 0.45,
      "why": "same pattern: Data exposure and theft; terms: ecitizen"
     },
     {
@@ -127750,7 +127977,7 @@
      "kind": "news",
      "title": "Geisinger investigates potential data leak",
      "date": "2026-11-18T01:13:48Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: investigates"
     },
     {
@@ -127766,7 +127993,7 @@
      "kind": "news",
      "title": "Cyber attack on government systems: How Moldovans will be able to check their data",
      "date": "2026-11-20T15:26:23Z",
-     "score": 0.38,
+     "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: government"
     }
    ],
@@ -128273,58 +128500,80 @@
    ],
    "related": []
   },
+  "n-c582cb89": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": [
+    {
+     "id": "x-8e646d77",
+     "kind": "x",
+     "title": "VECERT relays an unverified data compromise claim involving Kenya\u2019s eCitizen",
+     "date": "2026-11-23T01:08:20Z",
+     "score": 0.32,
+     "why": "terms: kenya, ecitizen, claim"
+    }
+   ]
+  },
   "n-fe250e6c": {
    "patterns": [
     "unclassified"
    ],
    "related": []
   },
-  "n-50d20aca": {
+  "n-3b1a314f": {
    "patterns": [
-    "ai"
+    "enterprise-platform",
+    "phishing"
    ],
    "related": [
     {
-     "id": "n-d0842264",
+     "id": "n-60518022",
      "kind": "news",
-     "title": "Amazon urges automated defenses after AI agents hacked a university",
-     "date": "2026-11-20T08:00:00Z",
+     "title": "Microsoft admits hackers accessed customers' private data",
+     "date": "2026-11-23T14:19:13Z",
      "score": 0.34,
-     "why": "same pattern: AI systems and agents; terms: hacked"
+     "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
-     "id": "n-22bf6552",
+     "id": "n-f084a3d1",
      "kind": "news",
-     "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
-     "date": "2026-11-23T15:14:12Z",
-     "score": 0.33,
-     "why": "same pattern: AI systems and agents; terms: hacked"
+     "title": "Hackers use Microsoft Outlook security flaw to steal your login data",
+     "date": "2026-11-20T14:09:17Z",
+     "score": 0.34,
+     "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
-     "id": "n-708e5261",
+     "id": "n-1f045f7f",
      "kind": "news",
-     "title": "More banks say customers using AI agents are on their own \u2014 even if they get hacked",
-     "date": "2026-11-18T17:32:10Z",
+     "title": "Sabotage? US rules out hacker attack after failures that hit Microsoft, NSA and air traffic",
+     "date": "2026-11-18T19:40:45Z",
      "score": 0.32,
-     "why": "same pattern: AI systems and agents; terms: hacked"
+     "why": "same pattern: Enterprise platform zero-days, Phishing and social engineering; terms: microsoft"
     },
     {
-     "id": "n-9bcbff78",
-     "kind": "news",
-     "title": "FBI warns that AI is helping hackers launch faster global cyberattacks",
-     "date": "2026-11-17T20:37:57Z",
+     "id": "k-4ab8e010",
+     "kind": "kev",
+     "title": "CVE-2026-124194 \u00b7 Microsoft Office",
+     "date": "2026-11-10",
      "score": 0.3,
-     "why": "same pattern: AI systems and agents"
+     "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
-     "id": "n-e5e7385c",
+     "id": "n-eb3d9e02",
      "kind": "news",
-     "title": "TechFlow Intelligence: California Sues OpenAI Over \u201cUncontrolled AI,\u201d NVIDIA Rejects Jensen Huang\u2019s Return After Trilli\u2026",
-     "date": "2026-11-17T20:56:10Z",
-     "score": 0.3,
-     "why": "same pattern: AI systems and agents"
+     "title": "Can Akamai Strengthen Its Mobile Security Reach With Microsoft Tie-Up?",
+     "date": "2026-11-23T15:51:00Z",
+     "score": 0.29,
+     "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     }
    ]
+  },
+  "n-621b30b4": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
   },
   "n-c3276514": {
    "patterns": [
@@ -129023,7 +129272,7 @@
      "why": "same pattern: Data exposure and theft; terms: information, personal, leaked"
     }
    ],
-   "cluster": "cl-a728c2"
+   "cluster": "cl-681e5a"
   },
   "n-d6e6a6b6": {
    "patterns": [
@@ -129125,6 +129374,12 @@
      "why": "same pattern: Data exposure and theft; terms: leak"
     }
    ]
+  },
+  "n-f82960a4": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
   },
   "n-d5d9dc67": {
    "patterns": [
@@ -129529,7 +129784,7 @@
      "why": "same pattern: Data exposure and theft; terms: information, customer, unauthorized"
     }
    ],
-   "cluster": "cl-a728c2"
+   "cluster": "cl-681e5a"
   },
   "n-9b4a3eb6": {
    "patterns": [
@@ -129559,7 +129814,7 @@
      "kind": "news",
      "title": "Travelstart Confirms Customer Data Breach",
      "date": "2026-11-24T06:13:53Z",
-     "score": 0.33,
+     "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: breach"
     },
     {
@@ -129645,6 +129900,12 @@
    "cluster": "cl-a3e07f"
   },
   "n-df0328c3": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
+  },
+  "n-244cda75": {
    "patterns": [
     "unclassified"
    ],
@@ -131136,12 +131397,12 @@
      "why": "same pattern: Data exposure and theft; terms: exposes, breach"
     },
     {
-     "id": "n-784984c5",
+     "id": "n-e6439cc9",
      "kind": "news",
-     "title": "KEPCO breach exposes personal data of 1.52 million people",
-     "date": "2026-11-19T04:50:28Z",
+     "title": "Ochsner Health, Louisiana's largest health provider, saw data breach in September, officials say",
+     "date": "2026-11-20T02:45:00Z",
      "score": 0.4,
-     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
+     "why": "same pattern: Data exposure and theft; terms: health, breach"
     }
    ]
   },
@@ -131304,7 +131565,7 @@
      "kind": "news",
      "title": "Vanderbilt Faces Class-Action Lawsuit Over Data Breach",
      "date": "2026-11-17T20:09:36Z",
-     "score": 0.49,
+     "score": 0.48,
      "why": "same pattern: Data exposure and theft; terms: lawsuit, breach"
     },
     {
@@ -131784,7 +132045,7 @@
      "kind": "news",
      "title": "Microsoft admits hackers accessed customers' private data",
      "date": "2026-11-23T14:19:13Z",
-     "score": 0.39,
+     "score": 0.38,
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
@@ -131959,14 +132220,6 @@
      "why": "same pattern: AI systems and agents; terms: hacked"
     },
     {
-     "id": "n-50d20aca",
-     "kind": "news",
-     "title": "GTA 6, unofficial PC version hacked... Modify and transplant files with AI",
-     "date": "2026-11-24T11:43:59Z",
-     "score": 0.33,
-     "why": "same pattern: AI systems and agents; terms: hacked"
-    },
-    {
      "id": "n-708e5261",
      "kind": "news",
      "title": "More banks say customers using AI agents are on their own \u2014 even if they get hacked",
@@ -131981,6 +132234,14 @@
      "date": "2026-11-24T14:24:11Z",
      "score": 0.32,
      "why": "same pattern: AI systems and agents; terms: organizations"
+    },
+    {
+     "id": "n-9bcbff78",
+     "kind": "news",
+     "title": "FBI warns that AI is helping hackers launch faster global cyberattacks",
+     "date": "2026-11-17T20:37:57Z",
+     "score": 0.3,
+     "why": "same pattern: AI systems and agents"
     }
    ]
   },
@@ -132180,7 +132441,7 @@
      "kind": "kev",
      "title": "CVE-2026-124194 \u00b7 Microsoft Office",
      "date": "2026-11-10",
-     "score": 0.4,
+     "score": 0.39,
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
@@ -132188,7 +132449,7 @@
      "kind": "news",
      "title": "Can Akamai Strengthen Its Mobile Security Reach With Microsoft Tie-Up?",
      "date": "2026-11-23T15:51:00Z",
-     "score": 0.39,
+     "score": 0.38,
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
@@ -132429,7 +132690,7 @@
      "kind": "kev",
      "title": "CVE-2026-90817 \u00b7 Vanderbilt University Research Electronic Data Capture (REDCap)",
      "date": "2026-11-18",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Injection and code execution; terms: injection, code, allow"
     },
     {
@@ -133879,7 +134140,7 @@
      "kind": "news",
      "title": "La Poste Cyberattack Exposes Personal Data of 22 Million People",
      "date": "2026-11-17T22:44:19Z",
-     "score": 0.56,
+     "score": 0.55,
      "why": "same pattern: Data exposure and theft; terms: exposes, people, personal"
     },
     {
@@ -134183,7 +134444,7 @@
      "kind": "news",
      "title": "AI raises cyberattack risks in 2027",
      "date": "2026-11-19T16:47:23Z",
-     "score": 0.44,
+     "score": 0.45,
      "why": "same pattern: AI systems and agents; terms: risks"
     },
     {
@@ -134457,11 +134718,19 @@
      "why": "same pattern: Data exposure and theft; terms: people, information, personal"
     },
     {
+     "id": "n-354c1517",
+     "kind": "news",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.43,
+     "why": "same pattern: Data exposure and theft; terms: names, numbers"
+    },
+    {
      "id": "n-3b8cf421",
      "kind": "news",
      "title": "Hackers reportedly stole customer information, including names and email addresses",
      "date": "2026-11-18T18:00:06Z",
-     "score": 0.42,
+     "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: names, information"
     },
     {
@@ -134478,14 +134747,6 @@
      "title": "Unauthorized access to Nitori Holdings, personal information of up to 37.62 million people leaked",
      "date": "2026-11-23T23:05:10Z",
      "score": 0.41,
-     "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
-    },
-    {
-     "id": "n-9cd0043c",
-     "kind": "news",
-     "title": "Hundreds of thousands of people\u2019s personal information leaked from KEPCO\u2019s computer system\u2026 \u201cA sense of responsibility\u201d",
-     "date": "2026-11-22T09:56:38Z",
-     "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: people, personal, leaked"
     }
    ]
@@ -134731,10 +134992,10 @@
      "why": "same pattern: Data exposure and theft; terms: official, information"
     },
     {
-     "id": "n-5e08a15c",
+     "id": "n-e26e485b",
      "kind": "news",
      "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
-     "date": "2026-11-24T17:25:36Z",
+     "date": "2026-11-24T17:25:00Z",
      "score": 0.46,
      "why": "same pattern: Data exposure and theft; terms: statement, personal"
     },
@@ -134763,7 +135024,7 @@
      "why": "same pattern: Data exposure and theft; terms: personal, information"
     }
    ],
-   "cluster": "cl-a728c2"
+   "cluster": "cl-681e5a"
   },
   "n-451979c6": {
    "patterns": [
@@ -136112,7 +136373,7 @@
      "kind": "x",
      "title": "Fusionist investigates unauthorized ACE minting on BNB Smart Chain",
      "date": "2026-11-22T19:08:28Z",
-     "score": 0.51,
+     "score": 0.5,
      "why": "same pattern: Bridges and cross-chain; terms: fusionist, ace, 3.7"
     },
     {
@@ -138122,7 +138383,7 @@
      "kind": "news",
      "title": "KEPCO's personal information was stolen again... 1.52 million people's information leaked",
      "date": "2026-11-22T09:16:00Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: information, personal, leaked"
     },
     {
@@ -138241,7 +138502,7 @@
      "kind": "news",
      "title": "La Poste Cyberattack Exposes Personal Data of 22 Million People",
      "date": "2026-11-17T22:44:19Z",
-     "score": 0.42,
+     "score": 0.43,
      "why": "same pattern: Data exposure and theft; terms: people, personal"
     },
     {
@@ -139479,11 +139740,11 @@
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
-     "id": "k-4ab8e010",
-     "kind": "kev",
-     "title": "CVE-2026-124194 \u00b7 Microsoft Office",
-     "date": "2026-11-10",
-     "score": 0.28,
+     "id": "n-3b1a314f",
+     "kind": "news",
+     "title": "Hackers Continue EvilTokens Phishing After Microsoft Takedown to Hijack Microsoft 365 Accounts",
+     "date": "2026-11-24T11:58:35Z",
+     "score": 0.29,
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     }
    ],
@@ -141252,7 +141513,7 @@
      "kind": "news",
      "title": "Binance obtains $6.5 billion freezing order from Abu Dhabi court in bid to recover stolen crypto",
      "date": "2026-11-18T19:40:00Z",
-     "score": 0.23,
+     "score": 0.22,
      "why": "terms: freezing, 6.5, order"
     }
    ]
@@ -144095,7 +144356,7 @@
      "kind": "news",
      "title": "Government investigates alleged eCitizen data breach",
      "date": "2026-11-24T15:47:00Z",
-     "score": 0.38,
+     "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: government"
     },
     {
@@ -144177,7 +144438,7 @@
      "kind": "news",
      "title": "Data breach at Cabonline - customer details leaked",
      "date": "2026-11-19T18:30:59Z",
-     "score": 0.43,
+     "score": 0.44,
      "why": "same pattern: Data exposure and theft; terms: customer, leaked"
     },
     {
@@ -145123,7 +145384,7 @@
      "kind": "news",
      "title": "AI raises cyberattack risks in 2027",
      "date": "2026-11-19T16:47:23Z",
-     "score": 0.34,
+     "score": 0.35,
      "why": "same pattern: AI systems and agents; terms: cyberattack"
     },
     {
@@ -148186,7 +148447,7 @@
      "kind": "news",
      "title": "UCHealth Data Breach Exposes Patient and Employee Information",
      "date": "2026-11-17T21:49:09Z",
-     "score": 0.43,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: exposes, information, breach"
     }
    ]
@@ -148423,6 +148684,14 @@
      "why": "same pattern: Data exposure and theft; terms: companies, major"
     },
     {
+     "id": "n-354c1517",
+     "kind": "news",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.49,
+     "why": "same pattern: Data exposure and theft; terms: names, exposes"
+    },
+    {
      "id": "n-3b8cf421",
      "kind": "news",
      "title": "Hackers reportedly stole customer information, including names and email addresses",
@@ -148445,14 +148714,6 @@
      "date": "2026-11-17T22:44:19Z",
      "score": 0.45,
      "why": "same pattern: Data exposure and theft; terms: exposes, cyberattack"
-    },
-    {
-     "id": "n-7812f05f",
-     "kind": "news",
-     "title": "Major US banking and payment firms hit by customer data leak - media",
-     "date": "2026-11-20T10:25:00Z",
-     "score": 0.43,
-     "why": "same pattern: Data exposure and theft; terms: major, customer"
     }
    ]
   },
@@ -148726,7 +148987,7 @@
      "kind": "news",
      "title": "Dozens of credit union branches hit by data breach",
      "date": "2026-11-17T20:08:41Z",
-     "score": 0.55,
+     "score": 0.54,
      "why": "same pattern: Data exposure and theft; terms: union, credit, breach"
     },
     {
@@ -149077,6 +149338,14 @@
    ],
    "related": [
     {
+     "id": "n-354c1517",
+     "kind": "news",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.48,
+     "why": "same pattern: Data exposure and theft; terms: numbers, exposes, social"
+    },
+    {
      "id": "n-34316fe7",
      "kind": "news",
      "title": "KEPCO Data Leak Exposes 1.5 Million Records",
@@ -149107,14 +149376,6 @@
      "date": "2026-11-19T11:31:00Z",
      "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: numbers, leak"
-    },
-    {
-     "id": "n-40d8f71b",
-     "kind": "news",
-     "title": "First Trinity Financial Data Breach Exposes Personal and Financial Data",
-     "date": "2026-11-18T16:24:10Z",
-     "score": 0.39,
-     "why": "same pattern: Data exposure and theft; terms: exposes"
     }
    ]
   },
@@ -150707,7 +150968,7 @@
      "kind": "news",
      "title": "Hacker attack against Universeum - customer data may have been leaked",
      "date": "2026-11-20T15:14:13Z",
-     "score": 0.43,
+     "score": 0.44,
      "why": "same pattern: Data exposure and theft; terms: customer, leaked"
     },
     {
@@ -151213,7 +151474,7 @@
      "kind": "news",
      "title": "How Indian Companies Can Reduce Security Risks in AI-Powered Applications",
      "date": "2026-11-23T09:30:20Z",
-     "score": 0.44,
+     "score": 0.45,
      "why": "same pattern: AI systems and agents; terms: risks"
     },
     {
@@ -151237,7 +151498,7 @@
      "kind": "news",
      "title": "What does the AI cyberattack in Europe demand for the security of the digital euro?",
      "date": "2026-11-20T12:13:00Z",
-     "score": 0.34,
+     "score": 0.35,
      "why": "same pattern: AI systems and agents; terms: cyberattack"
     },
     {
@@ -151704,10 +151965,10 @@
      "why": "same pattern: Data exposure and theft; terms: exposes, breach"
     },
     {
-     "id": "n-b4099a75",
+     "id": "n-354c1517",
      "kind": "news",
-     "title": "UCHealth Data Breach Exposes Patient and Employee Information",
-     "date": "2026-11-17T21:49:09Z",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
      "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: exposes, breach"
     }
@@ -155833,11 +156094,19 @@
      "why": "same pattern: Enterprise platform zero-days, Disruption and outages; terms: microsoft, out"
     },
     {
+     "id": "n-3b1a314f",
+     "kind": "news",
+     "title": "Hackers Continue EvilTokens Phishing After Microsoft Takedown to Hijack Microsoft 365 Accounts",
+     "date": "2026-11-24T11:58:35Z",
+     "score": 0.32,
+     "why": "same pattern: Enterprise platform zero-days, Phishing and social engineering; terms: microsoft"
+    },
+    {
      "id": "n-60518022",
      "kind": "news",
      "title": "Microsoft admits hackers accessed customers' private data",
      "date": "2026-11-23T14:19:13Z",
-     "score": 0.25,
+     "score": 0.24,
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
@@ -155847,14 +156116,6 @@
      "date": "2026-11-20T14:09:17Z",
      "score": 0.24,
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
-    },
-    {
-     "id": "x-a4503abf",
-     "kind": "x",
-     "title": "Airbyte contains Cloud intrusion and restores most data syncs",
-     "date": "2026-11-17T21:01:18Z",
-     "score": 0.23,
-     "why": "same pattern: Enterprise platform zero-days, Disruption and outages"
     }
    ]
   },
@@ -155915,7 +156176,7 @@
      "kind": "news",
      "title": "Binance's $6.5 Billion Freezing Order Doesn't Return a Dollar Yet",
      "date": "2026-11-21T06:26:57Z",
-     "score": 0.23,
+     "score": 0.22,
      "why": "terms: freezing, 6.5, order"
     }
    ]
@@ -156496,11 +156757,11 @@
      "why": "same pattern: Data exposure and theft; terms: exposes, personal, breach"
     },
     {
-     "id": "n-b4099a75",
+     "id": "n-354c1517",
      "kind": "news",
-     "title": "UCHealth Data Breach Exposes Patient and Employee Information",
-     "date": "2026-11-17T21:49:09Z",
-     "score": 0.44,
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.45,
      "why": "same pattern: Data exposure and theft; terms: exposes, breach"
     }
    ]
@@ -157552,6 +157813,14 @@
    ],
    "related": [
     {
+     "id": "n-354c1517",
+     "kind": "news",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.46,
+     "why": "same pattern: Data exposure and theft; terms: numbers, exposes, breach"
+    },
+    {
      "id": "n-82f5fd1e",
      "kind": "news",
      "title": "Rakuten Securities Data Breach Exposes Information From Millions of Customer Accounts",
@@ -157582,14 +157851,6 @@
      "date": "2026-11-24T08:35:58Z",
      "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: bank, customers"
-    },
-    {
-     "id": "n-c12ed279",
-     "kind": "news",
-     "title": "Contractor hack exposes data of 66 YeByeol Insurance customers",
-     "date": "2026-11-22T06:09:21Z",
-     "score": 0.4,
-     "why": "same pattern: Data exposure and theft; terms: exposes, customers"
     }
    ]
   },
@@ -157971,10 +158232,10 @@
      "why": "same pattern: Data exposure and theft; terms: due, information, personal"
     },
     {
-     "id": "n-5e08a15c",
+     "id": "n-e26e485b",
      "kind": "news",
      "title": "Cyber attack on BTSO! Statement from \u00d6zer Matl\u0131 regarding personal data",
-     "date": "2026-11-24T17:25:36Z",
+     "date": "2026-11-24T17:25:00Z",
      "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: regarding, personal"
     },
@@ -158246,7 +158507,7 @@
      "kind": "x",
      "title": "Microsoft Agent Framework PyPI supply-chain compromise",
      "date": "2026-11-17T22:08:13Z",
-     "score": 0.55,
+     "score": 0.54,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: microsoft, pypi, package"
     },
     {
@@ -158941,7 +159202,7 @@
      "kind": "news",
      "title": "Government investigates alleged eCitizen data breach",
      "date": "2026-11-24T15:47:00Z",
-     "score": 0.41,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: investigates"
     },
     {
@@ -159187,7 +159448,7 @@
      "kind": "news",
      "title": "News - Uber data breach exposes personal data of 150,000 people",
      "date": "2026-11-23T10:05:00Z",
-     "score": 0.56,
+     "score": 0.55,
      "why": "same pattern: Data exposure and theft; terms: exposes, people, personal"
     },
     {
@@ -159514,20 +159775,20 @@
      "why": "same pattern: Data exposure and theft; terms: info"
     },
     {
-     "id": "n-dc25daad",
-     "kind": "news",
-     "title": "News - Uber data breach exposes personal data of 150,000 people",
-     "date": "2026-11-23T10:05:00Z",
-     "score": 0.41,
-     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
-    },
-    {
      "id": "n-cfc3be5b",
      "kind": "news",
      "title": "KEPCO reports another massive data breach, exposing info of 1.52 mln people",
      "date": "2026-11-22T10:37:45Z",
      "score": 0.41,
      "why": "same pattern: Data exposure and theft; terms: info, breach"
+    },
+    {
+     "id": "n-dc25daad",
+     "kind": "news",
+     "title": "News - Uber data breach exposes personal data of 150,000 people",
+     "date": "2026-11-23T10:05:00Z",
+     "score": 0.41,
+     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
     }
    ]
   },
@@ -159561,20 +159822,20 @@
      "why": "same pattern: Data exposure and theft; terms: exposes, information, breach"
     },
     {
-     "id": "n-dc25daad",
-     "kind": "news",
-     "title": "News - Uber data breach exposes personal data of 150,000 people",
-     "date": "2026-11-23T10:05:00Z",
-     "score": 0.43,
-     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
-    },
-    {
      "id": "n-46b73041",
      "kind": "news",
      "title": "Travelstart data breach exposes customer details and flight ticket information",
      "date": "2026-11-20T06:00:39Z",
-     "score": 0.43,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: exposes, information, breach"
+    },
+    {
+     "id": "n-dc25daad",
+     "kind": "news",
+     "title": "News - Uber data breach exposes personal data of 150,000 people",
+     "date": "2026-11-23T10:05:00Z",
+     "score": 0.42,
+     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
     }
    ]
   },
@@ -159757,6 +160018,12 @@
      "why": "same pattern: State-linked activity; terms: cyber"
     }
    ]
+  },
+  "n-8470142e": {
+   "patterns": [
+    "unclassified"
+   ],
+   "related": []
   },
   "n-e5e7385c": {
    "patterns": [
@@ -160101,7 +160368,7 @@
      "kind": "news",
      "title": "VHV Company Data Breach Lawsuit Investigation",
      "date": "2026-11-23T18:09:09Z",
-     "score": 0.49,
+     "score": 0.48,
      "why": "same pattern: Data exposure and theft; terms: lawsuit, breach"
     },
     {
@@ -160148,7 +160415,7 @@
      "kind": "news",
      "title": "The Atlantic Federal Credit Union Data Breach",
      "date": "2026-11-20T03:59:00Z",
-     "score": 0.55,
+     "score": 0.54,
      "why": "same pattern: Data exposure and theft; terms: union, credit, breach"
     },
     {
@@ -160508,20 +160775,20 @@
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: mastercard, visa, customer"
     },
     {
-     "id": "n-fc406d2f",
-     "kind": "news",
-     "title": "Nvidia investigates potential security incident involving third-party partner",
-     "date": "2026-11-18T07:00:07Z",
-     "score": 0.37,
-     "why": "same pattern: Supply chain and third parties, Ransomware and extortion; terms: dark, web, third-party"
-    },
-    {
      "id": "n-f2557bbf",
      "kind": "news",
      "title": "Hackers stole customer data linked to Visa, Mastercard and JPMorgan Chase",
      "date": "2026-11-22T15:26:31Z",
      "score": 0.37,
      "why": "same pattern: Data exposure and theft; terms: jpmorgan, mastercard, visa"
+    },
+    {
+     "id": "n-fc406d2f",
+     "kind": "news",
+     "title": "Nvidia investigates potential security incident involving third-party partner",
+     "date": "2026-11-18T07:00:07Z",
+     "score": 0.37,
+     "why": "same pattern: Supply chain and third parties, Ransomware and extortion; terms: dark, web, third-party"
     },
     {
      "id": "n-31b66897",
@@ -160592,12 +160859,12 @@
      "why": "same pattern: Data exposure and theft; terms: exposes, breach"
     },
     {
-     "id": "n-784984c5",
+     "id": "n-e6439cc9",
      "kind": "news",
-     "title": "KEPCO breach exposes personal data of 1.52 million people",
-     "date": "2026-11-19T04:50:28Z",
-     "score": 0.41,
-     "why": "same pattern: Data exposure and theft; terms: exposes, breach"
+     "title": "Ochsner Health, Louisiana's largest health provider, saw data breach in September, officials say",
+     "date": "2026-11-20T02:45:00Z",
+     "score": 0.4,
+     "why": "same pattern: Data exposure and theft; terms: health, breach"
     }
    ]
   },
@@ -160695,12 +160962,6 @@
     }
    ],
    "cluster": "cl-918e93"
-  },
-  "n-8470142e": {
-   "patterns": [
-    "unclassified"
-   ],
-   "related": []
   },
   "c-f4f7cd25": {
    "patterns": [
@@ -161409,7 +161670,7 @@
      "title": "Fluidkey",
      "date": "2026-11-19T18:20:00Z",
      "score": 0.57,
-     "why": "same pattern: Key and credential compromise, Data exposure and theft; shared: fluidkey; terms: fluidkey, transfers, accounts"
+     "why": "same pattern: Key and credential compromise, Data exposure and theft; shared: fluidkey; terms: fluidkey, transfers, keys"
     },
     {
      "id": "n-26e10c50",
@@ -161886,7 +162147,7 @@
      "title": "LUKSO reports theft of 1.4 million LYX through email recovery service",
      "date": "2026-11-18T07:26:38Z",
      "score": 0.43,
-     "why": "same pattern: Key and credential compromise; terms: lukso, lyx, universal"
+     "why": "same pattern: Key and credential compromise; terms: lukso, universal, lyx"
     },
     {
      "id": "c-f4f7cd25",
@@ -162238,7 +162499,7 @@
      "technique": "Unbacked Mint",
      "classification": "Token & Share Accounting",
      "score": 0.46,
-     "why": "wflow, ankrflow, flow"
+     "why": "ankrflow, wflow, flow"
     },
     {
      "name": "Balancer V1",
@@ -162575,7 +162836,17 @@
      "why": "same pattern: Smart contract logic flaws; terms: collateral, process, share"
     }
    ],
-   "precedents": []
+   "precedents": [
+    {
+     "name": "Matez",
+     "date": "2024-11-21",
+     "amount": 80000,
+     "technique": "Arithmetic Error",
+     "classification": "Token & Share Accounting",
+     "score": 0.14,
+     "why": "arithmetic, bnb, chain"
+    }
+   ]
   },
   "c-c5d24106": {
    "patterns": [
@@ -163382,7 +163653,7 @@
      "technique": "Missing Input Validation",
      "classification": "Input Validation",
      "score": 0.23,
-     "why": "optimism, input, validation"
+     "why": "input, optimism, validation"
     },
     {
      "name": "Hedgey",
@@ -165721,7 +165992,7 @@
      "kind": "news",
      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
      "date": "2026-11-23T13:22:20Z",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Injection and code execution; terms: injection, code, allow"
     },
     {
@@ -166066,7 +166337,7 @@
      "kind": "news",
      "title": "Microsoft admits hackers accessed customers' private data",
      "date": "2026-11-23T14:19:13Z",
-     "score": 0.4,
+     "score": 0.39,
      "why": "same pattern: Enterprise platform zero-days; terms: microsoft"
     },
     {
@@ -167175,7 +167446,7 @@
      "kind": "x",
      "title": "Barracuda lists Dallas Fort Worth Fertility Associates in an unverified extortion claim",
      "date": "2026-11-21T07:31:12Z",
-     "score": 0.36,
+     "score": 0.35,
      "why": "same pattern: Ransomware and extortion; terms: claim, listed, unverified"
     },
     {
@@ -167339,7 +167610,7 @@
      "title": "Unverified claim involving records attributed to SFR",
      "date": "2026-11-21T17:18:49Z",
      "score": 0.37,
-     "why": "same pattern: Data exposure and theft; terms: french, whether, claim"
+     "why": "same pattern: Data exposure and theft; terms: french, whether, attributed"
     },
     {
      "id": "x-10879901",
@@ -167601,7 +167872,7 @@
      "kind": "x",
      "title": "VECERT relays an unverified data compromise claim involving Kenya\u2019s eCitizen",
      "date": "2026-11-23T01:08:20Z",
-     "score": 0.47,
+     "score": 0.48,
      "why": "same pattern: Data exposure and theft; terms: vecert, claim, naming"
     },
     {
@@ -167823,7 +168094,7 @@
      "kind": "x",
      "title": "VECERT tracks an unverified security claim involving the Municipality of R\u00edo Grande",
      "date": "2026-11-23T01:53:17Z",
-     "score": 0.47,
+     "score": 0.48,
      "why": "same pattern: Data exposure and theft; terms: vecert, claim, naming"
     },
     {
@@ -167839,7 +168110,7 @@
      "kind": "news",
      "title": "Government investigates alleged eCitizen data breach",
      "date": "2026-11-24T15:47:00Z",
-     "score": 0.46,
+     "score": 0.45,
      "why": "same pattern: Data exposure and theft; terms: ecitizen"
     },
     {
@@ -167847,7 +168118,7 @@
      "kind": "x",
      "title": "Alleged EDUTEC Chile data exposure",
      "date": "2026-11-20T00:12:52Z",
-     "score": 0.38,
+     "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: vecert, claim, unverified"
     },
     {
@@ -167855,7 +168126,7 @@
      "kind": "x",
      "title": "Alleged hosting intrusion and Trubank exposure",
      "date": "2026-11-20T15:44:43Z",
-     "score": 0.38,
+     "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: vecert, claim, unverified"
     }
    ],
@@ -168083,7 +168354,7 @@
      "kind": "news",
      "title": "A $2 million exploit leads to a $3.7 million free-for-all as traders empty Fusionist's ACE bridge",
      "date": "2026-11-22T23:17:00Z",
-     "score": 0.51,
+     "score": 0.5,
      "why": "same pattern: Bridges and cross-chain; terms: fusionist, ace, 3.7"
     },
     {
@@ -169804,7 +170075,7 @@
      "title": "Unverified claim involving records attributed to SFR",
      "date": "2026-11-21T17:18:49Z",
      "score": 0.42,
-     "why": "same pattern: Data exposure and theft; terms: claim, monitor, linked"
+     "why": "same pattern: Data exposure and theft; terms: claim, monitor, unverified"
     },
     {
      "id": "x-0cd68e71",
@@ -169944,7 +170215,7 @@
      "title": "Alleged hosting intrusion and Trubank exposure",
      "date": "2026-11-20T15:44:43Z",
      "score": 0.43,
-     "why": "same pattern: Data exposure and theft; terms: relayed, established, claim"
+     "why": "same pattern: Data exposure and theft; terms: relayed, established, attributed"
     },
     {
      "id": "x-a6c31c7f",
@@ -169960,7 +170231,7 @@
      "title": "Unverified data exposure claim involving La Maison des Travaux",
      "date": "2026-11-21T17:18:49Z",
      "score": 0.42,
-     "why": "same pattern: Data exposure and theft; terms: claim, monitor, linked"
+     "why": "same pattern: Data exposure and theft; terms: claim, monitor, unverified"
     },
     {
      "id": "x-89013fad",
@@ -170460,7 +170731,7 @@
      "title": "Journalists and politicians report targeted messaging-account phishing",
      "date": "2026-11-18T14:24:10Z",
      "score": 0.36,
-     "why": "same pattern: Phishing and social engineering, State-linked activity; terms: targeted, intelligence, phishing"
+     "why": "same pattern: Phishing and social engineering, State-linked activity; terms: targeted, intelligence, campaign"
     },
     {
      "id": "n-893413c8",
@@ -170977,12 +171248,12 @@
      "why": "same pattern: Ransomware and extortion; terms: site, listing, does"
     },
     {
-     "id": "n-dd54c81b",
-     "kind": "news",
-     "title": "Ransomware leak site victims nearly quintuple in five years",
-     "date": "2026-11-24T08:36:00Z",
+     "id": "x-e59c5ef9",
+     "kind": "x",
+     "title": "Vortex claims data theft from TrueBlue",
+     "date": "2026-11-19T11:36:01Z",
      "score": 0.4,
-     "why": "same pattern: Ransomware and extortion; terms: site, leak"
+     "why": "same pattern: Ransomware and extortion; terms: organization, listing, does"
     }
    ],
    "cluster": "cl-ead373"
@@ -171025,12 +171296,12 @@
      "why": "same pattern: Ransomware and extortion; terms: site, listing, does"
     },
     {
-     "id": "n-dd54c81b",
-     "kind": "news",
-     "title": "Ransomware leak site victims nearly quintuple in five years",
-     "date": "2026-11-24T08:36:00Z",
+     "id": "x-e59c5ef9",
+     "kind": "x",
+     "title": "Vortex claims data theft from TrueBlue",
+     "date": "2026-11-19T11:36:01Z",
      "score": 0.41,
-     "why": "same pattern: Ransomware and extortion; terms: site, leak"
+     "why": "same pattern: Ransomware and extortion; terms: organization, listing, does"
     }
    ],
    "cluster": "cl-ead373"
@@ -171405,7 +171676,7 @@
      "kind": "news",
      "title": "Eskenazi reports data breach involving patient electronic health information",
      "date": "2026-11-20T22:26:00Z",
-     "score": 0.31,
+     "score": 0.32,
      "why": "terms: eskenazi, health, patient"
     },
     {
@@ -172794,7 +173065,7 @@
      "title": "Unverified claim involving records attributed to SFR",
      "date": "2026-11-21T17:18:49Z",
      "score": 0.43,
-     "why": "same pattern: Data exposure and theft; terms: relayed, established, claim"
+     "why": "same pattern: Data exposure and theft; terms: relayed, established, attributed"
     },
     {
      "id": "x-3a5c614f",
@@ -173355,7 +173626,7 @@
      "kind": "x",
      "title": "Unverified data exposure claim involving GoTronic",
      "date": "2026-11-21T17:18:49Z",
-     "score": 0.43,
+     "score": 0.42,
      "why": "same pattern: Data exposure and theft; terms: authenticity, claim, unverified"
     },
     {
@@ -173912,7 +174183,7 @@
      "kind": "news",
      "title": "Rakuten Securities Data Breach Exposes Information From Millions of Customer Accounts",
      "date": "2026-11-23T22:00:00Z",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Data exposure and theft; terms: customer, accounts"
     }
    ],
@@ -175369,7 +175640,7 @@
      "kind": "x",
      "title": "VECERT relays an unverified data compromise claim involving Kenya\u2019s eCitizen",
      "date": "2026-11-23T01:08:20Z",
-     "score": 0.37,
+     "score": 0.38,
      "why": "same pattern: Data exposure and theft; terms: independently, verified, claim"
     },
     {
@@ -175644,7 +175915,7 @@
      "title": "Fluidkey",
      "date": "2026-11-19",
      "score": 0.57,
-     "why": "same pattern: Key and credential compromise, Data exposure and theft; shared: fluidkey; terms: fluidkey, transfers, accounts"
+     "why": "same pattern: Key and credential compromise, Data exposure and theft; shared: fluidkey; terms: fluidkey, transfers, keys"
     },
     {
      "id": "n-26e10c50",
@@ -178009,12 +178280,12 @@
      "why": "same pattern: Data exposure and theft; terms: different, counts"
     },
     {
-     "id": "x-fa91d8d0",
+     "id": "x-d309dfe3",
      "kind": "x",
-     "title": "Ochsner Health notifies patients after two employee accounts were accessed",
-     "date": "2026-11-19T11:36:01Z",
+     "title": "GoFundMe Pro says some donor data was accessed",
+     "date": "2026-11-19T17:02:43Z",
      "score": 0.34,
-     "why": "same pattern: Data exposure and theft; terms: accounts, accessed"
+     "why": "same pattern: Data exposure and theft; terms: accessed, party, establish"
     }
    ],
    "analysis": {
@@ -178257,12 +178528,12 @@
      "why": "same pattern: Data exposure and theft; terms: phone, names, numbers"
     },
     {
-     "id": "n-fcdec304",
+     "id": "n-354c1517",
      "kind": "news",
-     "title": "Noran Usan data breach exposes 362,000 customers' bank accounts, phone numbers",
-     "date": "2026-11-18T10:23:50Z",
-     "score": 0.39,
-     "why": "same pattern: Data exposure and theft; terms: phone, numbers, breach"
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.41,
+     "why": "same pattern: Data exposure and theft; terms: names, numbers, breach"
     }
    ],
    "analysis": {
@@ -178792,7 +179063,7 @@
      "title": "Erin Molan says she was targeted in an Iran-linked phishing campaign",
      "date": "2026-11-21T10:09:18Z",
      "score": 0.36,
-     "why": "same pattern: Phishing and social engineering, State-linked activity; terms: targeted, intelligence, phishing"
+     "why": "same pattern: Phishing and social engineering, State-linked activity; terms: targeted, intelligence, campaign"
     },
     {
      "id": "n-1b59c391",
@@ -179278,7 +179549,7 @@
      "title": "LUKSO",
      "date": "2026-11-18",
      "score": 0.43,
-     "why": "same pattern: Key and credential compromise; terms: lukso, lyx, universal"
+     "why": "same pattern: Key and credential compromise; terms: lukso, universal, lyx"
     },
     {
      "id": "n-c36db610",
@@ -179802,7 +180073,7 @@
      "kind": "news",
      "title": "Attackers Compromise Microsoft's Agent Framework PyPI Package to Steal Cloud Credentials",
      "date": "2026-11-18T06:45:00Z",
-     "score": 0.55,
+     "score": 0.54,
      "why": "same pattern: Supply chain and third parties, Key and credential compromise; terms: microsoft, pypi, package"
     },
     {
@@ -182680,7 +182951,7 @@
      "kind": "x",
      "title": "Vendor data breach exposes Chase, Visa, Mastercard customer info",
      "date": "2026-11-19T13:17:07Z",
-     "score": 0.35,
+     "score": 0.34,
      "why": "same pattern: Supply chain and third parties, Data exposure and theft; terms: held, exposes, exposure"
     }
    ],
@@ -183651,20 +183922,20 @@
      "why": "same pattern: Data exposure and theft; terms: phone, names, numbers"
     },
     {
+     "id": "n-354c1517",
+     "kind": "news",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.4,
+     "why": "same pattern: Data exposure and theft; terms: names, numbers, breach"
+    },
+    {
      "id": "b-cc049559",
      "kind": "breach",
      "title": "Too Lost",
      "date": "2026-11-20T19:17:16Z",
      "score": 0.39,
      "why": "same pattern: Data exposure and theft; terms: numbers, addresses, email"
-    },
-    {
-     "id": "n-fcdec304",
-     "kind": "news",
-     "title": "Noran Usan data breach exposes 362,000 customers' bank accounts, phone numbers",
-     "date": "2026-11-18T10:23:50Z",
-     "score": 0.38,
-     "why": "same pattern: Data exposure and theft; terms: phone, numbers, breach"
     }
    ],
    "cluster": "cl-5e9cb3",
@@ -183835,7 +184106,7 @@
      "kind": "news",
      "title": "Noran Usan data breach exposes 362,000 customers' bank accounts, phone numbers",
      "date": "2026-11-18T10:23:50Z",
-     "score": 0.33,
+     "score": 0.32,
      "why": "same pattern: Data exposure and theft; terms: numbers, phone, bank"
     }
    ]
@@ -183871,20 +184142,20 @@
      "why": "same pattern: Data exposure and theft; terms: birth, addresses, numbers"
     },
     {
+     "id": "n-354c1517",
+     "kind": "news",
+     "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+     "date": "2026-11-24T15:58:58Z",
+     "score": 0.28,
+     "why": "same pattern: Data exposure and theft; terms: names, numbers, breach"
+    },
+    {
      "id": "x-9047968d",
      "kind": "x",
      "title": "Chargemap reports data breach after unauthorized access",
      "date": "2026-11-18T19:19:56Z",
      "score": 0.28,
      "why": "same pattern: Data exposure and theft; terms: names, numbers, email"
-    },
-    {
-     "id": "b-8a5ec5e1",
-     "kind": "breach",
-     "title": "SberSpasibo",
-     "date": "2026-11-11T01:44:58Z",
-     "score": 0.28,
-     "why": "same pattern: Data exposure and theft; terms: birth, numbers, dates"
     }
    ]
   },
@@ -184369,26 +184640,26 @@
   {
    "id": "unclassified",
    "label": "Unclassified",
-   "news": 415,
+   "news": 419,
    "crypto": 3,
    "kev": 3,
    "x": 41,
    "breach": 0,
    "usd": 225000.0,
-   "total": 462,
-   "recent7": 451
+   "total": 466,
+   "recent7": 455
   },
   {
    "id": "data-exposure",
    "label": "Data exposure and theft",
-   "news": 259,
+   "news": 260,
    "crypto": 0,
    "kev": 0,
    "x": 83,
    "breach": 8,
    "usd": 0,
-   "total": 350,
-   "recent7": 333
+   "total": 351,
+   "recent7": 334
   },
   {
    "id": "supply-chain",
@@ -184405,14 +184676,14 @@
   {
    "id": "ai",
    "label": "AI systems and agents",
-   "news": 63,
+   "news": 62,
    "crypto": 0,
    "kev": 1,
    "x": 6,
    "breach": 0,
    "usd": 0,
-   "total": 70,
-   "recent7": 69
+   "total": 69,
+   "recent7": 68
   },
   {
    "id": "ransomware",
@@ -184465,13 +184736,13 @@
   {
    "id": "enterprise-platform",
    "label": "Enterprise platform zero-days",
-   "news": 29,
+   "news": 30,
    "crypto": 0,
    "kev": 7,
    "x": 10,
    "breach": 0,
    "usd": 0,
-   "total": 46,
+   "total": 47,
    "recent7": 44
   },
   {

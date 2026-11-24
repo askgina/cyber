@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T19:07:16Z",
+ "generated": "2026-11-24T19:12:13Z",
  "queue": [
   {
    "date": "2026-11-24T08:35:58Z",
@@ -134,6 +134,18 @@
    ]
   },
   {
+   "date": "2026-11-23T15:14:12Z",
+   "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
+   "source": "SecurityWeek",
+   "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/",
+   "n_outlets": 6,
+   "also": [
+    "Hackers Target Check Point Security Management Servers, Putting Corporate Firewall Controls at Risk",
+    "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
+    "Hackers stole data from 24 Check Point management servers in an AI-assisted campaign, GreyNoise says"
+   ]
+  },
+  {
    "date": "2026-11-23T19:50:26Z",
    "title": "Queens Public Library restores nearly all public tech services after cyberattack",
    "source": "QNS.com",
@@ -167,18 +179,6 @@
     "CrowdStrike acquires security company Zscaler for $43.9 billion",
     "CrowdStrike buys Zscaler in €40 billion cybersecurity deal",
     "CrowdStrike (CRWD) to acquire Zscaler in $43.9 bn all-stock cybersecurity deal"
-   ]
-  },
-  {
-   "date": "2026-11-23T15:14:12Z",
-   "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
-   "source": "SecurityWeek",
-   "url": "https://www.securityweek.com/check-point-security-management-servers-hacked-in-ai-assisted-campaign/",
-   "n_outlets": 5,
-   "also": [
-    "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
-    "Hackers stole data from 24 Check Point management servers in an AI-assisted campaign, GreyNoise says",
-    "Hackers compromise Check Point Servers in 22 organizations"
    ]
   },
   {
@@ -637,6 +637,28 @@
    ]
   },
   {
+   "date": "2026-11-24T11:43:59Z",
+   "title": "GTA 6 Rakes In approximately $3.7 Billion on Launch Day; Hacked Leak Raises Specter of Unofficial PC Version",
+   "source": "BigGo Finance",
+   "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9uaDcyTi0xRWgxRTFPb0hHV25YRlFCZXpWQy0yMjVtZmlUNFBlMUtBVllxU0RIa0N2dXpmcXJURkMzaUpCMjlMeHJBLWE1R3E5ZVdLN2tMWldOWWRFVUtMOVNDWldFZm1jSXItMDV6RWZQRHVJWlE?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "GTA 6, unofficial PC version hacked... Modify and transplant files with AI",
+    "GTA 6 Rakes In approximately $3.7 Billion on Launch Day; Hacked Leak Raises Specter of Unofficial PC Version"
+   ]
+  },
+  {
+   "date": "2026-11-24T12:23:11Z",
+   "title": "Hackers claim to have stolen 740GB of data from Kenya’s eCitizen platform",
+   "source": "People Daily",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNSjJ0em0tNUlSbklONzE1S1VncnU2c1haRk92ODI4b0tCQ0U1Vk1MNlNFdFhJUlNKcW5BYW5ncXJlZ3FIYndiQTk4d3RjVnk0YVhZa2pJUGdKVDMzWmxEMWxOQ05qMVg0NGFSUXYwU0s2TlItQV85Nm9KM2M0djg4c0Z2MU5JeHJINjhtVE9HR1VPRWRLUk16a2Uwb3FwbmlNY3liQmg5OGk?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "Probe after hackers allegedly breach eCitizen, steal millions of personal data",
+    "What data is at risk in the alleged 740GB eCitizen data breach?"
+   ]
+  },
+  {
    "date": "2026-11-24T12:28:00Z",
    "title": "William and Kate’s home broken into in huge security breach",
    "source": "Joe.co.uk",
@@ -645,17 +667,6 @@
    "also": [
     "Prince William and Princess Kate Face Major Security Breach as Intruders Break into Norfolk Home",
     "Anmer Hall break-in: Everything we know after intruders target William and Kate’s home"
-   ]
-  },
-  {
-   "date": "2026-11-24T15:47:00Z",
-   "title": "Government investigates alleged eCitizen data breach",
-   "source": "The Star, Kenya",
-   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWEd3VGhCTE5nbk5oSE4wd2RrVzR3dDhBblBvYWI1WEZhNmhUbjZPdWtVWHk2TzgwUUpLaTQ1X3pSb25XaEVmY2c1dzdjZ3B4bHhKTnFPLUpvQk9IdTMxb3NZRVY3RXpEcjR2QVBFdjVTUzEyTUM0LUxhT0dUeG9XUV9PNjJSS1FJamVBSA?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "State investigates claims of eCitizen hack targeting government identity databases",
-    "What data is at risk in the alleged 740GB eCitizen data breach?"
    ]
   },
   {
@@ -670,10 +681,10 @@
    ]
   },
   {
-   "date": "2026-11-24T17:25:36Z",
+   "date": "2026-11-24T17:25:00Z",
    "title": "Cyber attack on BTSO! Statement from Özer Matlı regarding personal data",
    "source": "Bursada Bugün",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWdIBvAFBVV95cUxQbFdrQ3NnZFpQQWd3SXRrN0dkaUp1SFQ1T3B4SkpHamM5SUdXRU83M2R6YThqSko3SXFXY2lBbGhnRjNXdVl0SzJlVnRFeGpYdDJPZHdyamdybkJ6d01abzVEemQ0bHZVY3I0bk9qZTFzSTBEU0FUYnJoUDlPdkw4d0hlaUx2NU9sbVlZOXR1aWE1MFBCdDRlVmRtVWxqMURVVkJWcGR1Zzd6MTVvTXNUbjF2RGVQN0ZwaGcyWQ?oc=5",
+   "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQYW5MSmdMU2JLQnBJUjhZSGVwWFItZzFTdkdBVlc3aEtXX2UzaFFwRzEtVkVNZ2JiX2otS0RZY1BYVW9PV2FOcFhkbW1SQjZ0R3dlSTRjc1lpTGR2VnF4c2xPaGcwWkNnNTF6cDdCVDZEc2FhQUtDQXpwaFlIY0cxQW5jY2lBRFBFZHRYRE1mNExHZU5hc1JLTFBnZnNLclp2VzAzS3o4Sk0yeGRwZHFUQ1pvWU5nYW1XSnfSAbwBQVVfeXFMUGxXa0NzZ2RaUEFnd0l0azdHZGlKdUhUNU9weEpKR2pjOUlHV0VPNzNkemE4akpKN0lxV2NpQWxoZ0YzV3VZdEsyZVZ0RXhqWHQyT2R3cmpncm5CendNWm81RHpkNGx2VWNyNG5PamUxc0kwRFNBVGJyaFA5T3ZMOHdIZWlMdjVPbG1ZWTl0dWlhNTBQQnQ0ZVZkbVVsajFEVVZCVnBkdWc3ejE1b01zVG4xdkRlUDdGcGhnMlk?oc=5",
    "n_outlets": 3,
    "also": [
     "Cyber attack on BTSO! Remarkable statement from President Matlı",
@@ -1421,6 +1432,16 @@
    ]
   },
   {
+   "date": "2026-11-24T07:48:35Z",
+   "title": "Critical Bluetooth Flaw Could Let Hackers Take Control of Trailer Brakes While Driving",
+   "source": "CyberSecurityNews",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE9QSE54N010RVk5QVdoWVdqZTlhem44eHNZLURya0laUUxYelVuckNfdnBFWDNPV2FkLUg5cVdINGlyTEk1NjhyZE1HUkZ1MkY5S3lFQWNWSExXSllZRXB1V0JrUHfSAWpBVV95cUxOUEMzNV95bVNvSTFqUHp5Q2tFaHJQTVdJdW84ZUZTRk9lSjhJNEhlWThGSlliblVsbGx5UjVsdHhBWTZDMTJVeFZEYkdqRjJqRGxfR084ZUZLaVFqcDZLYkJDcGtaUnU3alJB?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Bluetooth Flaws Let Hackers Control Trailer Brakes Without Authentication, CISA Warns"
+   ]
+  },
+  {
    "date": "2026-11-24T08:31:15Z",
    "title": "\"Weleda\", about 200,000 personal information and 40,000 credit card information leaked due to unauthorized access (FASHIONSNAP)",
    "source": "Yahoo!ニュース",
@@ -1571,13 +1592,13 @@
    ]
   },
   {
-   "date": "2026-11-24T11:43:59Z",
-   "title": "GTA 6, unofficial PC version hacked... Modify and transplant files with AI",
-   "source": "매일경제 마켓",
-   "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9uak9UbUo5LXdvSmFuU2NmOXVDZ2tva2R4N0p4ZHNNS0QtSGRjYjJ6Q2FRZWN5S2ZKeTZJX1luM0JrcEVKSDlYVURKbmxLa1ZzMnc?oc=5",
+   "date": "2026-11-24T11:58:35Z",
+   "title": "Hackers Continue EvilTokens Phishing After Microsoft Takedown to Hijack Microsoft 365 Accounts",
+   "source": "CyberSecurityNews",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1UZ3hvU3RvOHBXR192aW1xU1Uxb1N5V3ZqbTFsUGFRaG51d3N2Y2lOUDczcHcxQXNYRDJMOVpBejF5Rk01alByWXZaTHF4LWpGd0RwUmYxMExYMVd1Nklr0gFkQVVfeXFMTkhmSG5JTG1TRmdfUHcwNmMtRXkwY21qeF9QX1V2TTJMc3pXVlFxOUt1U1FMbFkyejBLTUpqeFFhWEVoVzN6Rm9hVW53RE9ZODNRdFJQZEs4VVhhbXJGem1aYVp3WQ?oc=5",
    "n_outlets": 2,
    "also": [
-    "GTA 6, unofficial PC version hacked... Modify and transplant files with AI"
+    "The Microsoft Data Breach That Could Make Phishing More Convincing"
    ]
   },
   {
@@ -1668,6 +1689,26 @@
    "n_outlets": 2,
    "also": [
     "Macadam: data leak after a cyberattack at its service provider"
+   ]
+  },
+  {
+   "date": "2026-11-24T15:47:00Z",
+   "title": "Government investigates alleged eCitizen data breach",
+   "source": "The Star, Kenya",
+   "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPWEd3VGhCTE5nbk5oSE4wd2RrVzR3dDhBblBvYWI1WEZhNmhUbjZPdWtVWHk2TzgwUUpLaTQ1X3pSb25XaEVmY2c1dzdjZ3B4bHhKTnFPLUpvQk9IdTMxb3NZRVY3RXpEcjR2QVBFdjVTUzEyTUM0LUxhT0dUeG9XUV9PNjJSS1FJamVBSA?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "State investigates claims of eCitizen hack targeting government identity databases"
+   ]
+  },
+  {
+   "date": "2026-11-24T15:58:58Z",
+   "title": "Seclore Data Breach Exposes Names and Social Security Numbers",
+   "source": "Claim Depot",
+   "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBLbXNxUVBsYjNzZ0NUcXdhZzlxMTNjeDNPTTZPaml3Z0VVZ0tydHlYYVpWREZ1bUdLdUZYX2hmX1pUY0VKb0VwVktzbWQwQmZ5NGhUeGZrVTFzUGdXenBYT0tMVHY?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Seclore Data Breach Exposes Names and Social Security Numbers"
    ]
   },
   {
@@ -1977,38 +2018,6 @@
    "title": "The Biggest IPO Ever Landed and The Market Dropped",
    "source": "The Tech Buzz",
    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxObk84bDBaSjdtUDF1Ny1fcWMzUjR1bWRhT1pjNDRKbi0xalYwN1hXYUVsQjhTSG1ZTWYwMmc1N0xjaTJWX0g0YzVVUXpoNkM0WDRkeVN1QzF5LUtoLVI1NUFPYnNraGlFQmk3TGlBbXNfWkFqRFI1ZlF2RUJ3UjdTWlNxX05QOFJyY1BKWjFnMUpxbG1YUzh5RC1HVGNrRUxxRF9KUU5tb0lRaENhclNsSHREZFBZQ25vX3h1Y1RDRDlDVTdORlVZ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T23:32:00Z",
-   "title": "Data leak at AAAEP, thousands of driving license candidates affected",
-   "source": "French Breaches",
-   "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbUtSWGxDM0pITUZkbllNdTNOaGZDTl80REttOFBfUUpxX3huQThsTF91U1JoUWZSSGZwdmhiQ1BEMXEzVnREYjAzNGRZZWQ1Um5pY2dOcEU3S2pERy1XM1A4OXpyMzVoOHlOMEFHRUNoM25tRHVuUGN5WWxnVUljUWJ1WXVwY1owd3JSY2ZFdnYtQW55X0p4bzN0aWlkNFJL?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-23T00:37:45Z",
-   "title": "Over the past three years, the scale of corporate personal information breaches has exceeded 140 million people and accounts... “There is no citizen who has not been robbed.”",
-   "source": "핀포인트뉴스",
-   "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE9EU1Exa3pCQm8ydEw4QUJkRmZvY3lSOVJidU1RamtrNFJVME1VSGJOZ25BV2piVHhOOFkwR2V1cEhFNUxrSmdnd0thWkFyN2NJa1N1QmFYcGhRVzhicVl3bEFwcU9naXM3cFdFQl9xU1F1LVk?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-23T00:47:57Z",
-   "title": "Gaming Data Protection UAE: PDPL Compliance Guide",
-   "source": "Global Advisory Experts",
-   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQelpjS0N5Rk1mRUYyYVhTVVJEdWxEd0V5OGZ3WDFpSEtVNXFRSWVBYW9yRTc0a3o3NXU3M3FhV2JjdFBBTDdUQzJqM1czZmh0cC1acjZqWHRHZmxYbWpSWkVuZmVRMy1PcjN3cl9VNW9NOFNtcHdOMk9wc1dJUHNiOVc5a2tfWDZLaW5fMXo2eUs?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-23T01:10:39Z",
-   "title": "[Kim Deok-hae’s Column] The stigma of being a republic of personal information leaks must end now.",
-   "source": "복지TV부울경방송",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBwU3BXMnk5RDdfX3hoY2dsUVJwUzhBcEZnQ0NLS0ZRLXl4Y0FVVS1SeU1vd0xFQWJmY1lkbTZTcVI0ZWRNeHlRNTZkWEtncWY1cVlfSVctYXRDcUhienZOamdnYklQQktI?oc=5",
    "n_outlets": 1,
    "also": []
   }
