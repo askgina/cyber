@@ -29,7 +29,8 @@ def records(D, A):
             lines.append("Sources: " + "; ".join(f"{s.get('label')} <{s.get('url')}>" for s in r.get("sources") or []))
             yield "incident", (r.get("first_reported") or a["d"])[:10], r.get("title") or r.get("org"), "r-" + (a.get("r") or r.get("id")), "\n".join(l for l in lines if l)
         elif k in ("crypto", "kev", "breach", "notice", "sec"):
-            yield k, a["d"][:10], f"{a['o']}: {a.get('t', '')}", f"a:{k}|{a['d']}|{a['o']}", f"{a.get('t', '')}\n{a.get('x', '')}\nDate: {a['d'][:10]}. Source: {a.get('u', '')}"
+            ref = f"a:{k}|{a['d']}|{a['o']}|{a.get('t') or ''}|{a.get('u') or ''}"  # unique: same-day records can share a name
+            yield k, a["d"][:10], f"{a['o']}: {a.get('t', '')}", ref, f"{a.get('t', '')}\n{a.get('x', '')}\nDate: {a['d'][:10]}. Source: {a.get('u', '')}"
     for x in D.get("x") or []:
         posts = "\n".join(f"- {p.get('url')} ({p.get('role')}, {p.get('stance')}): {p.get('note', '')}" for p in x.get("posts") or [])
         yield "x-signal", (x.get("date") or "")[:10], x.get("subject") or x.get("project"), x.get("eid"), f"{x.get('claim', '')}\nStage: {x.get('stage')}. Credibility: {x.get('score')}/100.\n{posts}"

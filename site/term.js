@@ -237,7 +237,7 @@
         a.m = +a.d.slice(5, 7) - 1;
         if (a.k === "inc" && a.r) { a.id = "r-" + a.r; if (a.rec) AR.ix[a.id] = { it: { ...a.rec, id: a.r, n_outlets: (a.rec.sources || []).length, latest: (a.rec.updates || []).length ? a.rec.updates[a.rec.updates.length - 1].date : a.rec.first_reported, notices: [], outlets: [], stories: [] }, kind: "inc", title: a.rec.org || a.o, text: [a.rec.title, a.rec.summary].filter(Boolean).join(". ").replace(/\.\. /, ". "), date: a.rec.first_reported || a.d, url: null }; }
         else { a.id = "a-" + i; AR.ix[a.id] = { it: { _arc: a, links: a.u ? [{ label: "Source", url: a.u }] : [] }, kind: "arc", label: AKL[a.k] || "Record", title: a.o, text: a.t, date: a.d, url: null }; }
-        AR.byKey["a:" + a.k + "|" + a.d + "|" + a.o] = a.id;  // stable key used by search results (⌘K)
+        AR.byKey["a:" + a.k + "|" + a.d + "|" + a.o + "|" + (a.t || "") + "|" + (a.u || "")] = a.id;  // stable key used by search results (⌘K); same-day records can share a name
       });
       // a crypto hack that is also a tracked incident shows once in "All" (as the incident); the build marks it "dup"
       const incById = {}; (j.items || []).forEach((a) => { if (a.k === "inc") incById[a.id] = a; });
