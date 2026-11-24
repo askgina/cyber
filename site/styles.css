@@ -542,7 +542,7 @@ button.t-live{background:none;border:0;padding:0;cursor:pointer;color:inherit}bu
 .board .b-note { margin: .6rem .75rem 1rem; }
 .b-panel > header { flex-wrap: wrap; }
 .b-panel > header .t-m { white-space: normal; }
-@media (max-width: 36rem) { .b-k { padding: .45rem .6rem; } .b-k b { font-size: 1.1rem; } }
+@media (max-width: 36rem) { .b-k { padding: .45rem .6rem; } .b-k b { font-size: 1.1rem; } .t-live { order: 4; } #t-checked { display: none; } .t-live + .t-cmd { flex: 1 1 0; } }
 .b-table-wrap { overflow-x: auto; }
 .board-tbl { max-width: none; font-size: .8125rem; }
 .board-tbl thead th { background: var(--paper); white-space: nowrap; }
