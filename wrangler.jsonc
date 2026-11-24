@@ -5,6 +5,10 @@
   "observability": {
     "enabled": true
   },
+  // Public address. Cloudflare manages the DNS record and certificate; the workers.dev URL keeps working.
+  "routes": [
+    { "pattern": "cyber.askgina.ai", "custom_domain": true }
+  ],
   // Static site; data.json/archive.json and the manual build endpoint go through the Worker.
   "assets": {
     "directory": "site",
