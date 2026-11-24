@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-24T16:22:54Z",
+ "generated": "2026-11-24T17:14:17Z",
  "queue": [
   {
    "date": "2026-11-24T08:35:58Z",
@@ -14,27 +14,39 @@
    ]
   },
   {
+   "date": "2026-11-23T17:32:24Z",
+   "title": "Hacked Rosstat data shows half a million Russian soldiers have been killed in Ukraine — The Insider has identified most of them by name",
+   "source": "https://theins.press/en",
+   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBpdW5oekQ5QnMzRTJNUjI3S3FLdkJXWVlIYnNpOVpINkh6YWVnY1hHVnNUdzB3TjJJSUhOVVhvNjdGb2s2ekRKU29R?oc=5",
+   "n_outlets": 15,
+   "also": [
+    "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
+    "More than 700,000 Russian troops died in the war in Ukraine by late September 2026, Meduza and Mediazona estimate",
+    "More Than 700,000 Russian Soldiers Killed or Missing in War Against Ukraine — Leaked Rosstat Data"
+   ]
+  },
+  {
    "date": "2026-11-24T00:00:00Z",
    "title": "Exclusive | U.S. Eyes Iran as Possible Culprit in Dozens of New Cyberattacks Against Ships",
    "source": "WSJ",
    "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOaDNLV040WjYxakp4SFpkLW1ZSWo1M3dJOE8xV3pZTmRDZ0EwclVFclVWQlZpazJiRTJwNWtCdmZGeTZkcmJqQUlWbVo5ME92cFZXSUFFOUkyUmp3SldOYmR5S2xXZUVHR1lSZXgzSEFWdHhkTm5HeEM4NVEyc0djNFNrTW9GTFh5WW1j?oc=5",
-   "n_outlets": 15,
+   "n_outlets": 12,
    "also": [
     "US eyes Iran as possible culprit in dozens of new cyberattacks against ships, WSJ reports",
     "US says Iran is possible culprit in dozens of cyberattacks, bomb threats against ships - report",
-    "US is investigating Iran and Russia's involvement in cyberattacks on 50 tankers"
+    "Iran the prime suspect after cyberattacks on dozens of fuel tankers"
    ]
   },
   {
-   "date": "2026-11-23T17:55:48Z",
-   "title": "Over 700,000 Russian Soldiers Have Died in Ukraine, Analysis Indicates",
-   "source": "The New York Times",
-   "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPbGtaSVAtSnh5RTRGUmp6ZW5BbUhiZFlPTnloTlB0MHpsaFRsWmJkQTB4czRDWUl6OEdfcXZmUVNITFY1ZjFSOHoyLW94VHFxZm9SLTRJZHUtM0hZNmMyX3JMSVBCUk5VV3hzU211VVpUb1lBcENuWGtTZm05TG00bDFCSGM?oc=5",
+   "date": "2026-11-24T00:08:49Z",
+   "title": "GTA 6 hacker sentenced to seven years and released the same day",
+   "source": "Help Net Security",
+   "url": "https://www.helpnetsecurity.com/2026/11/24/gta-vi-hacker-sentenced-seven-years-released-on-licence/",
    "n_outlets": 11,
    "also": [
-    "More than 700,000 Russian troops died in the war in Ukraine by late September 2026, Meduza and Mediazona estimate",
-    "Hack reveals that almost 500,000 Russian soldiers have died in the war in Ukraine",
-    "Hackers invaded Rosstat and reported that 490,000 Russian soldiers died, and the actual number may exceed 700,000"
+    "GTA VI hacker released despite being sentenced to 7 years in UK prison",
+    "GTA VI hacker released despite being sentenced to 7 years in UK prison",
+    "Hacker who stole 90 GTA VI videos sentenced to seven years"
    ]
   },
   {
@@ -47,18 +59,6 @@
     "Japan's McDonald's App Hit by Third-Party Breach; Purchase History and Location Data Exposed",
     "Unauthorized access to McDonald's official app (CNET Japan)",
     "McDonald's Japan confirms unauthorized access to official app database"
-   ]
-  },
-  {
-   "date": "2026-11-24T00:08:49Z",
-   "title": "GTA 6 hacker sentenced to seven years and released the same day",
-   "source": "Help Net Security",
-   "url": "https://www.helpnetsecurity.com/2026/11/24/gta-vi-hacker-sentenced-seven-years-released-on-licence/",
-   "n_outlets": 9,
-   "also": [
-    "GTA VI hacker released despite being sentenced to 7 years in UK prison",
-    "GTA VI hacker released despite being sentenced to 7 years in UK prison",
-    "Hacker who stole 90 GTA VI videos sentenced to seven years"
    ]
   },
   {
@@ -90,11 +90,23 @@
    "title": "Decathlon victim of a new data leak: what we know about this cyberattack",
    "source": "Capital.fr",
    "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxORUhRNzFoNWlZYWt6VHc3VVFhNF9uLUxFQXozMkc5ejJZbDY4V0o5WmlmV0NTUGktNVRldlZxOTdOVVNnMUtrYlpsY2JBNUREMEpWcVYzLWZhYkhEbmtXWlQtT09FWVRBUTlFWE80S19ZSlZKSVo5NGlrcU1EX0h0TmdiWWRaMUgwLWFfa0ZTdlp3RWdSSUVzek9lcFNyR190UDJFREFLMWNiRkMzQTFtNXpnazV6eGUzS0R1WGNQOU9XcWUxWEF0ZEoyM3ZPMk1DZ3N5Sg?oc=5",
-   "n_outlets": 7,
+   "n_outlets": 8,
    "also": [
     "Decathlon data leak: what do we know about the attack?",
     "A fake delivery person could know your Decathlon order: how to spot the trap after the data leak",
-    "Decathlon victim of a cyberattack: more than 130,000 email addresses and telephone numbers stolen"
+    "Decathlon victim of a data leak: even the instructions left for delivery people are exposed"
+   ]
+  },
+  {
+   "date": "2026-11-24T02:11:14Z",
+   "title": "US suspects Iranian cyberattacks on up to 50 energy tankers",
+   "source": "Israel National News",
+   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBONUt1QTdZeUlYMlZFVkF4TXlOdWhyMHYxeFcxQXQxOE9RZXZLVFR6WlV3Zlp0alQxVGc1b0VhaHA4dEtza0h0UFBxQ3dVQktSX0VPa0hxSmZmdw?oc=5",
+   "n_outlets": 8,
+   "also": [
+    "US investigating possible Iranian role in cyberattacks on up to 50 tankers - report | LIVE BLOG",
+    "US probes possible Iranian role in cyberattacks on energy tankers",
+    "US investigates possible Iranian role in cyberattacks on commercial ships: report"
    ]
   },
   {
@@ -107,18 +119,6 @@
     "US ports and cargo ships under daily cyberattacks",
     "U.S. ports are under massive cyberattacks",
     "US Ports Under Cyberattack: Oil Export Hub Faces Thousands of Daily Attempts as AI Threats Escalate"
-   ]
-  },
-  {
-   "date": "2026-11-24T01:12:51Z",
-   "title": "U.S. Probes Suspected Iranian Cyberattacks on Up to 50 Ships, WSJ Reports",
-   "source": "gCaptain",
-   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMGpFMmNFdm80MzVCOGRBU3lFT3c2WnhzSmNJTzhKb0VGTXdva05VcTMtM3kyVzgtcE1ZY21FLUdDVE9odGdxSFNWTVJ0UUx3NE5oWVBRZ0dsdFBBT1VBaDZnN1BnUVJVUGxqNllOeEV2QkNFYUtYNzZyVzR6bTZLNlFtajNIRUFNVEVlY0FuX3hpRS1DM0xYTA?oc=5",
-   "n_outlets": 6,
-   "also": [
-    "WSJ reports US investigation into possible Iranian cyberattacks on 50 ships",
-    "U.S. Probes Suspected Iranian Cyberattacks on Up to 50 Ships, WSJ Reports",
-    "Alleged cyberattack on 50 ships: U.S. investigates Iranian connection"
    ]
   },
   {
@@ -142,7 +142,7 @@
    "also": [
     "Unauthorized access to JAXA's Earth observation data provision system, account information of 2,000 users leaked; no prospects for recovery due to backdoor installation",
     "Unauthorized access to JAXA, information on 2,000 people leaked Satellite data disclosure system",
-    "Unauthorized access to JAXA system, some account names leaked | NHK News | AI/Net/IT, cyber attacks, space"
+    "Unauthorized access to JAXA, account information of 2,000 people leaked from the Earth Observation Data Publication System"
    ]
   },
   {
@@ -182,6 +182,30 @@
    ]
   },
   {
+   "date": "2026-11-23T19:50:26Z",
+   "title": "Queens Public Library restores nearly all public tech services after cyberattack",
+   "source": "QNS.com",
+   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1iaDFQZUt4SGdNQnFVcWtQUXdKZ2s4TmZpa0pYcEJYNDl2VlpZckd4VjY1aE1aV2ZSZU16TUVTbkhaay1pVHROZUhnVHdaOFJvejIzdGZqWVdQdEhfdEVN?oc=5",
+   "n_outlets": 5,
+   "also": [
+    "Queens Library Restores Most Tech Services After Attack",
+    "Queens Public Library restores most services nearly 3 weeks after ransomware attack",
+    "Queens Public Library restores nearly all services after ransomware attack"
+   ]
+  },
+  {
+   "date": "2026-11-24T01:12:51Z",
+   "title": "U.S. Probes Suspected Iranian Cyberattacks on Up to 50 Ships, WSJ Reports",
+   "source": "gCaptain",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPMGpFMmNFdm80MzVCOGRBU3lFT3c2WnhzSmNJTzhKb0VGTXdva05VcTMtM3kyVzgtcE1ZY21FLUdDVE9odGdxSFNWTVJ0UUx3NE5oWVBRZ0dsdFBBT1VBaDZnN1BnUVJVUGxqNllOeEV2QkNFYUtYNzZyVzR6bTZLNlFtajNIRUFNVEVlY0FuX3hpRS1DM0xYTA?oc=5",
+   "n_outlets": 5,
+   "also": [
+    "WSJ reports US investigation into possible Iranian cyberattacks on 50 ships",
+    "U.S. Probes Suspected Iranian Cyberattacks on Up to 50 Ships, WSJ Reports",
+    "Alleged cyberattack on 50 ships: U.S. investigates Iranian connection"
+   ]
+  },
+  {
    "date": "2026-11-24T08:21:09Z",
    "title": "Spreading malicious emails impersonating employees of the Personal Information Commission... “Do not open attached files”",
    "source": "연합뉴스",
@@ -218,6 +242,18 @@
    ]
   },
   {
+   "date": "2026-11-23T14:52:08Z",
+   "title": "Hacker receives 7 year sentence over GTA 6 cyber attack",
+   "source": "Tech Digest",
+   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZm5JZ0Rkd2NkS2tsWXRaa2d0Z1V6OXlTWjE0bjNsVUYzQ0Q0a0FuYUZ3cDk5YmlBRzU3aEh0Q2tmR0Q3QjhxQlJpVXdoVnZ6ZGlXUnd3elpVbjVwcHJsZjlSV0RscEctRlVaS2hjbEZWTVpraWVKYndubTZSTnFwNGNuNHo1U1l6NXFMMjgtaXdNVEdQbUZyb1VB?oc=5",
+   "n_outlets": 4,
+   "also": [
+    "GTA VI hacker gets 7-year sentence in UK, but walks free",
+    "GTA 6 hacker freed on the same day as receiving 7-year jail sentence",
+    "GTA 6 Hacker Gets 7-Year Jail Sentence, But Walks Free"
+   ]
+  },
+  {
    "date": "2026-11-23T16:18:17Z",
    "title": "The city and agglomeration of Quimper victims of a cyberattack, no information on a possible data theft",
    "source": "ici.fr",
@@ -239,18 +275,6 @@
     "GlobeTopper Cyberattack: $70K in Gift Cards Stolen, $2.5M Lost to Downtime",
     "Cyberattack on gift card distributor GlobeTopper cost an estimated $2.5 million in lost revenue",
     "GlobeTopper faces up to $2.5 million in lost revenue after hackers steal $70,000 in gift cards"
-   ]
-  },
-  {
-   "date": "2026-11-23T19:50:26Z",
-   "title": "Queens Public Library restores nearly all public tech services after cyberattack",
-   "source": "QNS.com",
-   "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1iaDFQZUt4SGdNQnFVcWtQUXdKZ2s4TmZpa0pYcEJYNDl2VlpZckd4VjY1aE1aV2ZSZU16TUVTbkhaay1pVHROZUhnVHdaOFJvejIzdGZqWVdQdEhfdEVN?oc=5",
-   "n_outlets": 4,
-   "also": [
-    "Queens Library Restores Most Tech Services After Attack",
-    "Queens Public Library restores most services nearly 3 weeks after ransomware attack",
-    "Queens Public Library restores nearly all services after ransomware attack"
    ]
   },
   {
@@ -314,15 +338,15 @@
    ]
   },
   {
-   "date": "2026-11-24T02:11:14Z",
-   "title": "US suspects Iranian cyberattacks on up to 50 energy tankers",
-   "source": "Israel National News",
-   "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFBONUt1QTdZeUlYMlZFVkF4TXlOdWhyMHYxeFcxQXQxOE9RZXZLVFR6WlV3Zlp0alQxVGc1b0VhaHA4dEtza0h0UFBxQ3dVQktSX0VPa0hxSmZmdw?oc=5",
+   "date": "2026-11-24T16:00:36Z",
+   "title": "BREAKING: Gatwick Airport parking system hacked as drivers warned bank details may have been stolen",
+   "source": "AOL.co.uk",
+   "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZWkyQWJiYXFfc1o4SzVIbS1aT3ZqTHgwdkQya0VUQU9mY040T05ycFhBbGhmTzBMbkZQR3lHSjVqNUpHTlRlTVRiTmlNMk5ydGRCZHl2em9jc2pjMkZabTJQeWliUkdVeG53LWJJWFl3aHFqLTFCazRzd0I2U1hzel9fZnROSGVGX3lybDV3?oc=5",
    "n_outlets": 4,
    "also": [
-    "US probes Iran’s role in cyberattacks targeting energy tankers",
-    "Cyberattacks on Tankers Raise Fears of Iranian Disruption to Shipping, Ports",
-    "US investigates alleged Iranian cyberattacks on up to 50 energy tankers: Report"
+    "Gatwick Airport customers hit by payment system data breach",
+    "Gatwick Airport disables parking payment app after customer data breach",
+    "Airport customers hit by payment data breach"
    ]
   },
   {
@@ -389,6 +413,17 @@
    "also": [
     "The finals of Hotai AI Hackathon 2026 are announced. The whole group joins forces across brands to create a new cross-domain AI situation | Hot highlights | Business information",
     "Hotai AI Hackathon finals revealed cross-domain topics from 6 major brands, with a record high of 554 proposals | Car World"
+   ]
+  },
+  {
+   "date": "2026-11-23T07:58:00Z",
+   "title": "Ransomware attacks hit record high",
+   "source": "CAJ News Africa",
+   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE54SXRHN3B1RUoyRDJ3RXY2RWRmaV9iQWhPQ2VwTnVISlM1X3gtTVR3MmwzU1VPR09VSmRDQ3ppYVNDQXNPcGxJMGRNUllFdTdpc0FpdjRWMGRvelNoY1JtSUYtNXpYMEc3V1V2OXM0MUY4TUZvNjhUREpGa1k?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "Hotai AI Hackathon finals announced, the whole group joins forces across brands to come up with questions",
+    "Ransomware attacks hit record high"
    ]
   },
   {
@@ -469,14 +504,14 @@
    ]
   },
   {
-   "date": "2026-11-23T14:52:08Z",
-   "title": "Hacker receives 7 year sentence over GTA 6 cyber attack",
-   "source": "Tech Digest",
-   "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPZm5JZ0Rkd2NkS2tsWXRaa2d0Z1V6OXlTWjE0bjNsVUYzQ0Q0a0FuYUZ3cDk5YmlBRzU3aEh0Q2tmR0Q3QjhxQlJpVXdoVnZ6ZGlXUnd3elpVbjVwcHJsZjlSV0RscEctRlVaS2hjbEZWTVpraWVKYndubTZSTnFwNGNuNHo1U1l6NXFMMjgtaXdNVEdQbUZyb1VB?oc=5",
+   "date": "2026-11-23T14:08:50Z",
+   "title": "GTA 6 hacker released on licence with warning ‘don’t let this happen again’",
+   "source": "DataBreaches.net",
+   "url": "https://databreaches.net/2026/11/23/gta-6-hacker-released-on-licence-with-warning-dont-let-this-happen-again/",
    "n_outlets": 3,
    "also": [
-    "GTA VI hacker gets 7-year sentence in UK, but walks free",
-    "GTA 6 hacker freed on the same day as receiving 7-year jail sentence"
+    "GTA 6 hacker released on licence with warning ‘don’t let this happen again’",
+    "GTA VI Hacker Kurtaj Released On Licence"
    ]
   },
   {
@@ -488,17 +523,6 @@
    "also": [
     "Enexis and Evides will open Ossendrecht for new cables and pipelines for two years",
     "Enexis and Evides will open Ossendrecht for new cables and pipelines for two years"
-   ]
-  },
-  {
-   "date": "2026-11-23T18:16:45Z",
-   "title": "At least 490,000 Russian soldiers killed in Ukraine, data leak reveals",
-   "source": "Euronews.com",
-   "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSmQ0NktNbDhmRnRrNzk5SE9ZOXcyLXFGbS14ME92TXpHS0pTY2p3cjFkOEY5aExhRy04c0pPeUVsMFlGbnVkXzdvTm5lVEgzRjRFdjhLYkVRUlpMSHpZYS1reEhjR3JvMXNQdk1xQnNRaEVYdEtmd1BCSGwxaldRTjlYOW53M0RVM3FISkZ3Wlg4d2twTG1TV0taZFpRRHk2ZHVMX3ZtWmIxNVhwSmtfelFR?oc=5",
-   "n_outlets": 3,
-   "also": [
-    "Data leak reveals heavy Russian losses in Ukraine",
-    "At least 490,000 Russian soldiers killed in Ukraine, data leak reveals"
    ]
   },
   {
@@ -521,6 +545,17 @@
    "also": [
     "Data leak at Eurovanille, more than 3,500 email addresses claimed",
     "La Fabrique d'écharpe: claimed data leak targeting 6,565 customers"
+   ]
+  },
+  {
+   "date": "2026-11-24T00:27:15Z",
+   "title": "Report: Iran suspected in cyberattacks on dozens of oil and gas ships as bomb threats alarm crews",
+   "source": "Ynetnews",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBYRnQ0aVpTWm5GYjZnOWUyblhhOE5NUVZ5UE92TU1wMHNWcmhXOWVyLWlHXzRfOVQ4c1NkYktPMDNSc2VlR2ZySVRxMlVlWHh1X19sOEdlZw?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "WSJ: About 50 cargo ships are suspected of being attacked by hackers and some received bomb threats. Washington lists Iran as the main suspect (16:34) - 20261124 - International",
+    "Iran suspected of cyberattacks on up to 50 tankers with explosive cargo; some hit with bomb threats - report"
    ]
   },
   {
@@ -590,6 +625,17 @@
    ]
   },
   {
+   "date": "2026-11-24T12:47:49Z",
+   "title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
+   "source": "CoinDesk",
+   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUjJaZTlKcG05YXhVY1ZydGQ5YWY5ZWdjdjlvZlFXRW5GVVJJSjlxYXIzOU9jTTNXX3VxOWpnVGVVaXhhdnRFSTVzUUVCSkJ1WFZsQU9GTmQxVHNBcFRMS2xMN0hYcDI0bjVFZ0RKdHJWVGRsckpxankybFhyQjAtdUdtTnF3aW55SzNZdWxMaEpXUW9iQWJzZ1ZaODltUFhKdFFzRU0tZDMteHRfV3c4d0ladEJ1aDROY0t0WWx0Ml8wN0J1TXNka2FRMHpRTXBmTlZYX0wybF9TWTdYcDVMSWJZZEtVd0U?oc=5",
+   "n_outlets": 3,
+   "also": [
+    "Crypto Trader Ansem Says Wallet Was Hacked After $2 Million of Meme Coins Sold",
+    "Ansem says hackers drained $2.57 million from his Pump.fun wallet"
+   ]
+  },
+  {
    "date": "2026-11-24T14:21:56Z",
    "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
    "source": "SecurityWeek",
@@ -601,33 +647,14 @@
    ]
   },
   {
-   "date": "2026-11-22T16:33:32Z",
-   "title": "Housewife hacked to death by husband over family feud in Manikganj",
-   "source": "The Country Today",
-   "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOY2lVN2N4aHV2LWxYV1YxZ21FYUxRZ0Y2RjVHZEJkUW1JNXRtZ2wwN0gwNW1FaUJSNWRURXhZdzkzUEU4V0FUUHlxMEpJYXI3Mlp1a29JbU80RloxZE5mNFVQQVlzbkdDZUplUXJCQS1aSHJxV3Rydm1oYzBiSFR0c0IxdjhrREMtWHFPSmxEQl9GMnFwUWlFSUNrb1hRN3hLcEhBUTVMUQ?oc=5",
-   "n_outlets": 2,
+   "date": "2026-11-24T16:30:03Z",
+   "title": "Colombia’s Cartagena airport briefly suspends landings due to security incident",
+   "source": "ThePrint",
+   "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORXNZeDVwSkJMcG9PQzBzN2ZZcC1hZElwaHJQMjh3SjhmSlJ1WDBZZmhlcGZoSlByTUg5bDlraHlfZXFNSTVUWHlzc0RaOExydVZPUzJvTC14UlFmc0tNa2k0ZkFDNWUydFZxV1JpN2tnbkFvNTVGZ19ram5vdHJsU0Q1LVhVekNlNUhNYWo5S1FUNFhZTmtJdjBDYWlscXAtb2tQWjNiaUpOV3hySGZlSmJ6d9IBuAFBVV95cUxQbV9UeFc3UG1KWWZiTnRyZ2pQeWJ5ZDdnR0dwUnpGT3o0WTN0THRqTmlnOE5ocUxVRWNXdFdFZGhIV2ZjNlUxOWlRNW5FY1FyN0tzSXFldEJOUU8xMm44R0ZqSXg4N2VXajRRMUxRaDI2dU5VcTlkcUJSV21lWDhxNWxRbmlNZUtNVDhCVG1lYTZ1dlpnMW1xcm9INzg3eGk1MkpyYjhWdEZuQXFyQm84LVV4Yk1CLVdT?oc=5",
+   "n_outlets": 3,
    "also": [
-    "Woman arrested for hacking husband to death"
-   ]
-  },
-  {
-   "date": "2026-11-22T16:45:00Z",
-   "title": "The cold truth behind the beautiful pictures of Rwanda: 'Tortured prisoners had to walk in circles until they collapsed'",
-   "source": "Brabants Dagblad",
-   "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQZnVNdTFFS3hyMXpVWUVYNFp2RmlvcmlMVTFaRmhfLTl4bHVsUTh6aTFRaU9HWHRPVGwtYWtvUHBKZTNhVEhOR2h0eUJSdGh4WVQ4S1poWW50ZEFGQ3N2NTVvYlExMEZ4eF9uWlZPY3ZMQU1mejM4b0RnTmJCMUdWM1V0dVFYdG1OX2tVZjNrSE9EWHR3MWY0SUctekIzSVdPZW9rWENXSktOMW1VM0VEeFJGblN2bXpBTnB3cW9SdXFHR0EydS1mbDRGNVhzOGlmbG5oY2d2SmI4Q1pPZkkwcjQwQXBVbWVrX1pJ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "The cold truth behind the beautiful pictures of Rwanda: 'Tortured prisoners had to walk in circles until they collapsed'"
-   ]
-  },
-  {
-   "date": "2026-11-22T17:07:12Z",
-   "title": "Bessent demanded that Nvidia speed up the review of a possible data leak to China -",
-   "source": "ГИПОРТ",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOYmpvaFZZRksta0ZoNXctX0lhcmVGcnFZTERUenRyOEhPUHpsaVlSNjJvdWxuS21KdXZ6dzFtUkh0Tml3bWVETzV5dmdVQS1xVERPNkhMN1kwWFliampjZEYya0dNeXJ5cnFUQmJCM1lLS2F1MHFpU3JvRFZrSjFUUUZPbWc1c3J6amFhWlp2QnFvc2FmcnpuLWFPVEZfM2gxNzA3bms0U21RbXQ3LUxoYkktbXhDdw?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "The US demands that Nvidia speed up the investigation into a possible data leak to China"
+    "Colombia’s Cartagena airport briefly suspends landings due to security incident",
+    "Colombia's Cartagena airport briefly suspends landings due to security incident"
    ]
   },
   {
@@ -771,16 +798,6 @@
    ]
   },
   {
-   "date": "2026-11-23T07:58:00Z",
-   "title": "Ransomware attacks hit record high",
-   "source": "CAJ News Africa",
-   "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE54SXRHN3B1RUoyRDJ3RXY2RWRmaV9iQWhPQ2VwTnVISlM1X3gtTVR3MmwzU1VPR09VSmRDQ3ppYVNDQXNPcGxJMGRNUllFdTdpc0FpdjRWMGRvelNoY1JtSUYtNXpYMEc3V1V2OXM0MUY4TUZvNjhUREpGa1k?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Ransomware attacks hit record high"
-   ]
-  },
-  {
    "date": "2026-11-23T08:07:00Z",
    "title": "Cyber attack attempts on US ports reached record level",
    "source": "CGTN Türk",
@@ -911,16 +928,6 @@
    ]
   },
   {
-   "date": "2026-11-23T12:56:00Z",
-   "title": "Samsung data breach: Customer names, addresses, contact details and other personal information compromised",
-   "source": "Digit",
-   "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxPWXNpQ2VDUjc5UVdxSHdxeXpKSXRlV1g4Z0x6VHZqSzJ6bkw2bnhzaGdCZGVuaG1DMXl4WXhiVlRPbGRxZ2tXSkRmaEd3OTBHUEFCU3JFTnVBN0VwMWpVQU1GazV1NDItWl9OT01weHhrQS1XVzZaOVpEN0IwcFlFY0d3blVBNUJGU0JsZjJtX252TVFKNnVaSXhpTWVReWlZZzBTQU9nemFUM2FULTh0QmtvdEJRSkZnRHRTUDdyZ2R3WnZZUE93al93cjlWbG1OclA0dlhSQmlIUdIB4AFBVV95cUxQNzFDQU5RUS1GT3lrTGw5ZnZMeHRrNDVjaHc4c1JsOTI4NHE4d2VOaUdOMmVRb2tWRjRZM0NlcXZXM1RHRHMzMW9rYVhFT0pfejBrY2RfclJpRHBnQXJWUzJjam8wR01ESFlNN2h3SmVRc3BzNTFFQ2xJMHNraG5jS0NIOVBXcFYxdXVDUldwajlJZGpaaUFfYkpobzlNcEV0WUdBaXVhcGZ6WE1PcnU4TVlQTXI1b2JiZzNNUlJDSTZzdkVxQVYwQmZSUk01ODlHNmYtVEZPcUo5VEl1RG5DRQ?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Samsung Data Leak: Names, Addresses And Account Details Of Thousands Of Customers Exposed Online"
-   ]
-  },
-  {
    "date": "2026-11-23T13:00:00Z",
    "title": "Is your business prepared to face a cyber attack? 5 questions to know",
    "source": "El Economista",
@@ -948,16 +955,6 @@
    "n_outlets": 2,
    "also": [
     "Next is latest major firm to be hit by a cyber-attack after criminals hack one of its suppliers"
-   ]
-  },
-  {
-   "date": "2026-11-23T14:08:50Z",
-   "title": "GTA 6 hacker released on licence with warning 'don't let this happen again'",
-   "source": "BBC",
-   "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5Ib2NHeDh2MDBCX0ZyZHdybUlycXRJSWRfU0FzOVFQOHZiYjByVFc0Rm9vbVBrenkwVUJCQnNRWHExMTNpbjhCYkE2QXpHdGFHa2ZPb01lbFYtcWc?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "GTA VI Hacker Kurtaj Released On Licence"
    ]
   },
   {
@@ -1041,6 +1038,16 @@
    ]
   },
   {
+   "date": "2026-11-23T16:16:00Z",
+   "title": "Man who committed cyber attacks on gaming companies and telecoms industry sentenced",
+   "source": "City of London Police",
+   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxPSHlURDNFSXBUaWhUbGozXy1aYks4VzZOVDBuRzdoZmJyYkZWbnJ2azFZTDdhUEd5TVBERFk1V3BuZTFVMkxETUx6eWhWUmZFM0kyamxuSXdBTy1uZm52WGNWNjhRaTJULU1WQXhhb25NcGJ2Q1o0VzBjTFozT0lVMEFSZTN4aWYzbjZNU0FHOUc2VjVQYVNfUmJEY3NOUXpQbFZuMTNaR09UaFdCLWFOazg1RkV4T1pVczRYV2djRFR5MzlPQ2NZbHljNUVoRjlvZzNzNHpJcFhzVnQtUDRkdzRMTkhFMm1VMmlscUl0T0JFOHJMOUZfTkJpdmZybm40OXVwVQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Police leaked information - sentenced for data breach"
+   ]
+  },
+  {
    "date": "2026-11-23T16:24:00Z",
    "title": "System is unavailable, but the government denies a new hacker attack",
    "source": "Gazeta Digital",
@@ -1071,6 +1078,16 @@
    ]
   },
   {
+   "date": "2026-11-23T16:58:07Z",
+   "title": "Leaked data on Russian losses in Ukraine. Journalists reveal what they found in the documents",
+   "source": "Wiadomości Onet",
+   "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOZTZfb19LNlA3cF9JbmVvX3RKMHpQN1I5UzczWV9hZnJfV3Y4b2RyUUItQnEzcUp4YjBTMGowVE5oOUplV1dWQmlWdHl4M0pfb1g5aVM2RnprdzB5OWUyOWRyd1A3TnNrWDJ6cHpYUVU2SlF4ZTZuR3huUkIyTC1IRGhWeDd2YXgydlFHWlNZTEFrZ1FFQUVjaEExWnVpMml2M0JoZXV5VVhhaUZvMVE?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Data leak reveals heavy Russian losses in Ukraine"
+   ]
+  },
+  {
    "date": "2026-11-23T17:26:31Z",
    "title": "After the spectacular cyberattack suffered by Crédit Mutuel Arkéa, the Delubac bank also the victim of a “computer intrusion”",
    "source": "BFM",
@@ -1088,16 +1105,6 @@
    "n_outlets": 2,
    "also": [
     "The hacker behind early GTA VI leaks has been sentenced — and released"
-   ]
-  },
-  {
-   "date": "2026-11-23T17:32:24Z",
-   "title": "Hacked Rosstat data shows half a million Russian soldiers have been killed in Ukraine — The Insider has identified most of them by name",
-   "source": "https://theins.press/en",
-   "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBpdW5oekQ5QnMzRTJNUjI3S3FLdkJXWVlIYnNpOVpINkh6YWVnY1hHVnNUdzB3TjJJSUhOVVhvNjdGb2s2ekRKU29R?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "More Than 700,000 Russian Soldiers Killed or Missing in War Against Ukraine — Leaked Rosstat Data"
    ]
   },
   {
@@ -1241,6 +1248,16 @@
    ]
   },
   {
+   "date": "2026-11-24T00:37:12Z",
+   "title": "US is investigating Iran and Russia's involvement in cyberattacks on 50 tankers",
+   "source": "Techora.ru",
+   "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPNlBnTC04TTVFQjZ2Zm42R25MTFBwNVJEOG5MMndDNXl4REgxVXRiZEZXVlJjaTNneUpkZlNJbGlCTnFUaG95T2d2b2FRVXllSHEwYzJ1Yk5QNzlYak9ZMWRxZU9sUURoRWdKUTBmRzBPVURid1l0aTJObV8wTXhVUEIyNWJ3UQ?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "US is studying Iran's possible involvement in cyberattacks on tankers"
+   ]
+  },
+  {
    "date": "2026-11-24T00:59:52Z",
    "title": "US investigates Iranian involvement in cyber attack on ship = WSJ (Reuters)",
    "source": "Yahoo!ニュース",
@@ -1268,16 +1285,6 @@
    "n_outlets": 2,
    "also": [
     "``Do it someday'' is the key to success... A mechanism to in-house ``vulnerability diagnosis'' that protects companies from cyber attacks without a shortage of specialized human resources and with automatic AI patrols"
-   ]
-  },
-  {
-   "date": "2026-11-24T02:00:31Z",
-   "title": "Presses stopped for two South Island newspapers as ‘cyber attack’ hits media company",
-   "source": "The Press",
-   "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTEZEc0lHTnEyWFBKTEhndWw4emVyelhDREEwNV9kSHNrZmFUbW1CdERjRGIwNTZnd1pDZmROdTc0WXc4YlNhV3NLQVhRbkRtazJsdm5sZzRFUy1EMUlsamZYUTRZZ2hTWUtOWUJFZmE5VnBSVG82cmJZWGFiVnFTVF9kcGYweHoxX2FrVjQxWTI0UjNIa1ljZjN3X2VzLXp3ekEzVmhZUDQ3RXkzbmdmdDFidWRVQVM0Z29Ucw?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Presses stopped for two South Island newspapers as ‘cyber attack’ hits media company"
    ]
   },
   {
@@ -1321,6 +1328,16 @@
    ]
   },
   {
+   "date": "2026-11-24T04:42:27Z",
+   "title": "Account Hijacking — Why Your Online Accounts Can Be Hacked Without Your Password",
+   "source": "The Korea Daily",
+   "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85c083UzgwZmJFMDc3ZFpqN1RYTVd0Y0JHc1lkQXhad0t4T3daZ1BQa3JrZEpSa2FnZTBtN3B4M2lrSlZ2TGZCYlNPYXk1cE9mcU9TMjBOYnNjcGY1LUtFYkJiVGZJVXVicmNIWmZB?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Hackers are hijacking legit Windows apps to slip password stealers onto your PC"
+   ]
+  },
+  {
    "date": "2026-11-24T05:13:51Z",
    "title": "Troy Hunt analyzes corporate responses to data breach notifications",
    "source": "SC Media",
@@ -1338,6 +1355,16 @@
    "n_outlets": 2,
    "also": [
     "Unauthorized access to Weleda official online shop, 45,689 card information and 198,792 personal information may have been leaked"
+   ]
+  },
+  {
+   "date": "2026-11-24T06:06:51Z",
+   "title": "A former US military security expert warns that cyberattacks are increasing rapidly, and OT is at fault as well as IT.",
+   "source": "ITmedia",
+   "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBDbVVJeGtiVVF5MGd5YlpGcVZfVWw1SWZZMVhRMlVoY1luNHhZdG5RS1poWFpWa3IwZUNJTnRHQlhvU1lGdHA5dHM2ekNJaHJxSnY5bW44RlozdUJKejRETGlHV0JJclp1WHc?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Exploding cyber attacks, not only IT but also OT, former US military security expert warns (ITmedia NEWS)"
    ]
   },
   {
@@ -1371,13 +1398,23 @@
    ]
   },
   {
-   "date": "2026-11-24T08:34:10Z",
-   "title": "Iran suspected of cyberattacks on up to 50 tankers with explosive cargo; some hit with bomb threats - report",
-   "source": "i24NEWS",
-   "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQal9rcEhJY2E3VDhTdWQzMEQ2dTNtNENLNDJmb0VyX0paTFBzdEw5NjRNdExJSkVOQ3R3c3BNTVE3azdWcE43YUc2S3BVcTVfQlFUaFZRM1pzZ3BkS1hCUWJxMFBKcHRaQ1ZseHNMV3dSTGREcFhBbDlMRUNzNE90bGNLaDJpSHRMM2s4T0p2dTh4YlMwRGJQeFpwQnBFeFpYVnN4VzFMWHZGT2NQeHdlX0JtcEh3OHNRaXRKOUtPZWRERzRGQzdKV0kwUnh0aERhRnRINXVoYnY1SHRTR3pPZnB1M2lmWlJG?oc=5",
+   "date": "2026-11-24T07:12:26Z",
+   "title": "Hackers steal data of 1.5M people from Korean power giant",
+   "source": "NewsBytes",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVkFNMHpHOXlMRWJvZE1tNXBHWG03amRuRC14aXduTEZzdHFDNEF2bnAtWjUtMVBJSXRIYnZJLUVRaXAxVHA3Qzd6em02U1pBWjFsd09sZHJzLUNHOTVJdVNKUmRYTDVOTXBqTVBNUldSWTZQQVdDNkQ0TE4wbkFvWUd0MFA5dTdCOW1ReHB1X3BLd1pZRU53ZVg5ZGFYbHRueXhCM0NBS1g?oc=5",
    "n_outlets": 2,
    "also": [
-    "Iran suspected of cyberattacks on up to 50 tankers with explosive cargo; some hit with bomb threats - report"
+    "South Korean power giant confirms data breach - KEPCO says incident affected 1.5 million people"
+   ]
+  },
+  {
+   "date": "2026-11-24T08:31:15Z",
+   "title": "\"Weleda\", about 200,000 personal information and 40,000 credit card information leaked due to unauthorized access (FASHIONSNAP)",
+   "source": "Yahoo!ニュース",
+   "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE4yQ2xyYWxyOFJta0R0bzNZdEV6eUtVUG0wY3lmRF9lOFg0Ykx5bmJxQk1uVlpfSnVmc045Q2N5ZmhpdHV3Z2thY3BSV0kwQVAwMG4tR185bjVrV0VfNHpCT3JHY0Z0RUdwT21xcHk3TDJabzFzQ0xJQ3hVQUtJOHM?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Cosmetics retailer Weleda: ``Credit card information may have been leaked'' for 45,000 people [Latest news on information leaks and personal information leaks]"
    ]
   },
   {
@@ -1431,6 +1468,16 @@
    ]
   },
   {
+   "date": "2026-11-24T09:26:35Z",
+   "title": "Hack or Sell-Off? Ansem's Wallet Dumps $2 Million as His Meme Coin Crashes 40%",
+   "source": "BeInCrypto",
+   "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1mU1JJYUhfZEZLV3B1bmw0MkUydjRlNkhZQzFRNHpub2owelNJYjFoeGJXdkQyaVh5cjloX3NJMEM2YjFvMG9ta1p0cFZiV2RpNk85VVlBSVhBbVNjY3JtOHNRcUZkWUJWTTBR?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Hack or Sell-Off? Ansem's Wallet Dumps $2 Million as His Meme Coin Crashes 40%"
+   ]
+  },
+  {
    "date": "2026-11-24T09:34:18Z",
    "title": "Hacker attack forces US uranium mine to shut down operations",
    "source": "Cybernews",
@@ -1438,16 +1485,6 @@
    "n_outlets": 2,
    "also": [
     "A hacker attack on a uranium mine. Its operations were disrupted."
-   ]
-  },
-  {
-   "date": "2026-11-24T09:36:55Z",
-   "title": "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold",
-   "source": "CoinDesk",
-   "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUjJaZTlKcG05YXhVY1ZydGQ5YWY5ZWdjdjlvZlFXRW5GVVJJSjlxYXIzOU9jTTNXX3VxOWpnVGVVaXhhdnRFSTVzUUVCSkJ1WFZsQU9GTmQxVHNBcFRMS2xMN0hYcDI0bjVFZ0RKdHJWVGRsckpxankybFhyQjAtdUdtTnF3aW55SzNZdWxMaEpXUW9iQWJzZ1ZaODltUFhKdFFzRU0tZDMteHRfV3c4d0ladEJ1aDROY0t0WWx0Ml8wN0J1TXNka2FRMHpRTXBmTlZYX0wybF9TWTdYcDVMSWJZZEtVd0U?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Crypto trader Ansem says his wallet was hacked as $2 million in memecoins were sold"
    ]
   },
   {
@@ -1468,6 +1505,16 @@
    "n_outlets": 2,
    "also": [
     "Keio Group's personal information leaked over 10 million people due to ransomware attack"
+   ]
+  },
+  {
+   "date": "2026-11-24T10:00:00Z",
+   "title": "Information leaks through easy remote control with fake virus screen; Reporter experiences simulated cyber attack; Hokkaido police call for adoption of double and triple authentication system as damage continues in Hokkaido",
+   "source": "TBS NEWS DIG",
+   "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5ubXROVDNITlYwY2x2M1o3TUpMaS0wdG1CQzlsZXRZQTcxWFdBWHpkWWEybVFxY25pOHJXUFVYaHZ6dkdRUWxIQ0xZLS1iWU5pWUVnMkxJNA?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Information leaks through easy remote control with fake virus screen; Reporter experiences simulated cyber attack; Hokkaido police call for adoption of double and triple authentication system as damage continues in Hokkaido"
    ]
   },
   {
@@ -1498,16 +1545,6 @@
    "n_outlets": 2,
    "also": [
     "ANSEM Memecoin Plunges 60% as $2.15M USDC Moves to Arbitrum — Hack Suspected"
-   ]
-  },
-  {
-   "date": "2026-11-24T11:15:00Z",
-   "title": "Crypto Trader Ansem Says Wallet Was Hacked After $2 Million of Meme Coins Sold",
-   "source": "bloomingbit",
-   "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE02Q3M1dm9tMG5Ccm9BRk9ZYlZLSVNQcFU1TjdieWpRelItVXhzRnR2d09YR1N1N0RQaGE0dkFlMU5hTnBRbk12TFV1aWNOcVZxVjJlRw?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Crypto Trader Ansem Says Wallet Was Hacked After $2 Million of Meme Coins Sold"
    ]
   },
   {
@@ -1581,6 +1618,16 @@
    ]
   },
   {
+   "date": "2026-11-24T12:48:02Z",
+   "title": "GBI Traces $151,000 in Crypto Stolen in Columbia County Scam",
+   "source": "Valdosta Today",
+   "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPQXhEalloQk9OU2lfN1lxOEVVU2xpd1cyV2RoZjZJLWY4NjRmbVJMTTVpaklIVEhIWFR4NWdGSzJvY0VmN0U2dGNpbGp1bjhWeHdvS2lrdWJpTThqOTJWYnpxb04yYkx1YjZjb1NITUhkYXB4Z3JfUEstN3loLUZ4cjJBNHNxbDlBMkNFT2tDd004NUJ5amxzblpWZ1VmSENOZkh2a283WXlrVVU?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Over $150K in stolen crypto returned to Columbia County resident"
+   ]
+  },
+  {
    "date": "2026-11-24T13:46:03Z",
    "title": "CertiK Trains Interpol Investigators to Trace and Freeze Stolen Crypto",
    "source": "Decrypt",
@@ -1591,16 +1638,6 @@
    ]
   },
   {
-   "date": "2026-11-24T13:52:36Z",
-   "title": "French sports retailer Decathlon hit by cyberattack, data of more than 130,000 customers exposed",
-   "source": "Anadolu Ajansı",
-   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQTdrRVNIZWotenJRa0RXX21Gc0pHaXdMNm9GZTVxMmdyaGxEc1p3WnBETm9yUURoeTU5c3hEOFJreXAxRVF0Ym1OcmRGT01GX05kTkFUSEQxdDkydi1CU2Q4TGRWYTdvVnFnT3hudFo1cFNoTXFXemgxaDhVOFdNVGE0clJyMFJKZjJGU3ozbndqbUJVZ3pUdmowUm94dHVqS01oNzJkS0wxcGVRU3FCMGx0WHpjenZpeE53U05RWUpNZUptRFljNWVzaw?oc=5",
-   "n_outlets": 2,
-   "also": [
-    "Decathlon cyberattack exposes data of more than 130,000 customers"
-   ]
-  },
-  {
    "date": "2026-11-24T14:02:00Z",
    "title": "Dertiende editie van hackathon Hack The Future voor studenten start",
    "source": "pzc.nl",
@@ -1608,6 +1645,16 @@
    "n_outlets": 2,
    "also": [
     "Dertiende editie van hackathon Hack The Future voor studenten start"
+   ]
+  },
+  {
+   "date": "2026-11-24T14:26:00Z",
+   "title": "Diplomatic relations severed due to Iranian cyber attack, threat continues as Albanian government official reports ``change of strategy''",
+   "source": "HOME広島ホームテレビ",
+   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE92ajVxS2RZZm1HY3NQUFk1Ynd3N3pDNDVZWVRleWlYQjNkZWtpcHFGaXJKa1N1UkZETTJXNnh0WnlMdmM3M3pLZDEzM0oyUXg3UFVjNVo5akZraWEybmdLUkNHeWE0RDJR?oc=5",
+   "n_outlets": 2,
+   "also": [
+    "Diplomatic relations severed due to Iranian cyber attack, threat continues as Albanian government official reports ``change of strategy''"
    ]
   },
   {
@@ -1639,54 +1686,6 @@
    "also": [
     "Macadam: data leak after a cyberattack at its service provider"
    ]
-  },
-  {
-   "date": "2026-11-22T16:25:00Z",
-   "title": "Hezbollah, Russia: What did the Minden AfD politician know?",
-   "source": "Westfalen-Blatt",
-   "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNUWxxMXA3YWFkUElMNzhzMldTMW9tWFJncjFtTnk3Wk1qWFltdWZKY2Uza196MnBXU0VCTUlfeHBseF9YNTJMeWdCeUdpRnlnUmtDajAzSzhIX2c4VXZ6dmFKUG01NmhkLTFKQ3J0bXlGa1hUQjFfOG5MQUtoVkxpTFdPYnFhWlNnZFpibEdzVWtteUdOeW1LN2pjR2RnOFFvVF9zNmlxdU0wX3dvbnRNRFRJY2JZYUE?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T16:35:10Z",
-   "title": "US seaports in hackers' crosshairs: number of cyberattacks sharply rises",
-   "source": "Zamon.uz",
-   "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPRnpyZTJTRXVqLUFWZW91ZGQ1WmJ5bFlwa0l4eGwwQmpuVDFLcUlzaVRTcldsVjhZQ0oyWlZTTDg4RDBQTXhORHQ5dlJNdkttZGtDQ1FObk9LZWpxUmxGbG9FcExSQlJpdmdXUUstbWV3SVpfbVA3blZOeEoxUTVTU2xNSjBGNGhZUGFSU2VuRDV1RXhPWkE4QVFYUHBjSXBUNGRN?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T16:38:00Z",
-   "title": "Hybrid warfare, how to fight without firing a shot. The in-depth analysis at MappaMondi",
-   "source": "RaiNews",
-   "url": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQc0tuaW0wWm9ORnBuUGk0ZFIxb09zZ3RSYzJMbkFVSnRETXNidmRVcUctaVQ1dWpjeFZZdnZhenFVUUxUdk9WYnRhQ3A5R1V1YU02QXdmZkxyUkw1cDdENHZfbW1hZEVrLXYwOXVSbXVWZGZZeWdqbkhVMTcyY2dfOEl0T1VqMTJVV241M1RmbFVVVGJmLVJvSEV3bUlyN294U29qUFVXTmdlRjBZaDJncDJqaWxldXppYlFxTTVCejFHREluamo1bkhUdzRmbDhjMGxqbjRGX0VWRF85OEdDOWRFTUU4WF8wUmFHRHprcGs4eUJ4N2syb29QV29HMldCQTZjWtIBigJBVV95cUxPT0RzNjliNGRKYmZhczBNV19BUVpJTU1fTFlhbkVKTFY1VGJLTXA2bU5rQ3hYaGNqNFB0c3ZlWTJfZkNBSUpMZG55cnRsN3RUd0V0bWNzVlZ5UDBscVJWaVI2VjBTQVdVWWo0cWR5cTlieVAxT3p4WFdodkFnWXcyUmhNWUh5eW9KTmlzLWpralFhNXNXTHNhdHdNaERaSy1JbEN2TjJuLW52eWtJVzc2YTZTOU94TTFMUEVPY3JQNDJLMUhCVXJGcFpabmtxQkJER25jdExPdnFOR3FBMTVfckl3dFZyeHZ0WjBWMHNjYjNzWFdIUXM5c2FNRF9fZ1NXLVBSNDlBaHVxZw?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T16:41:10Z",
-   "title": "Was the Delta outage a cyberattack? No sign so far, and no link to United's outage shown",
-   "source": "Nacionale",
-   "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOTWF2dWVsWFJBZVUzRzJBVE0tOUJFMFNacW1wdlB4cnNLdU1XRzJObnFlY3VfRG5aVGNnLXA4Y2k3VEtMYWJxcklzcklKYjJnVTlENlZYa1Q1R0xLSm42LUI4THZab1RzcElIV2ZjcXBxMFJ4ME5pNEJMVjFzQlFxSk5ocmhhYXBXbFVTc2VxcEgtdktmbEtLT1dJcWxValBIYTJoTWxZYVZHZG92cF9hdDM5Mkk5UQ?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T16:55:00Z",
-   "title": "US IT chaos: How to tell if it's an outage or a cyberattack",
-   "source": "t3n",
-   "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBaU1l3VFlTNEFzZG52SlppOHZLZTRNbDdsQXFoNWpzOGRwS0dTX2NnTlVjVW5FUG05cVdvbVo3NW5lcUZVUXE2TW5Dald2c3NVMFpqN212R0MzVEs5eEpGb210c3EydnN5?oc=5",
-   "n_outlets": 1,
-   "also": []
-  },
-  {
-   "date": "2026-11-22T17:10:00Z",
-   "title": "Russia wants to break Ukraine with frost. Poles are helping again. PLN 10 million is needed",
-   "source": "Super Tydzień Chełmski",
-   "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNblFNaEhvVENneWYyNFA3NVpKY25MWXlMWXQ4cUtfczFqdnlYUlZRMDF1enRhOEVCYlFBRzJ4LU5obFBCRlZKNk1fRGZOWmZkOEd0b1AxQl9CLS1xUkRLcXdIQzR4U2tLNnZweGpFVjRvd2I2MF81SW5IMXlkdmYtMHdZcl9sYW5lZ3Q1em84NElVcV91OTJINS0zdXRFVjRKWWNtSElGUWhwYVJ6NzlINE5fdGV5MXlnTHJpNlMwOA?oc=5",
-   "n_outlets": 1,
-   "also": []
   },
   {
    "date": "2026-11-22T17:15:00Z",
@@ -1989,6 +1988,22 @@
    "title": "Talking Germany - Constanze Kurz, Author and Hacker",
    "source": "DW.com",
    "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNWWpVOG9iOVpoVGJhY3ZFRk1MYjhOUlhDaXE5VGNoX1VzMHBOYkR6QzJWYU9WUVRPV2JGRElyMF9ZRGdLb1diTkVBSlJMclVFRGlfNzlvcVhPc0xCbS1sclgtVW94ajFBRG9oSVBuVXN0WG01MlU3aklSbGNMUVhUTDFWWmV3UjFRdWtKdTZR?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T22:19:32Z",
+   "title": "WhatsApp hack to request bank transfers",
+   "source": "www.expreso.com.mx",
+   "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOem5xTFBDUFB5WlhxNG53REw2M25CZERLMjBLWTUyV3pQR2hCMlJvTG01cGZZb2tfZ3pBS1QzRWl2THU5S1dEdlVpamVnTk5uV1pEM2hjNVp3WmNkR1E5UmNqeWNBLVVRNlpwMEZWMV9tYkcwQ0dkTmhPUE1GXzJJamVNcFV0RUVOMXloSTgtUVdaQWhkenVkMA?oc=5",
+   "n_outlets": 1,
+   "also": []
+  },
+  {
+   "date": "2026-11-22T22:25:46Z",
+   "title": "Cyber attack forces university hospital in Guadeloupe to cancel treatments",
+   "source": "Nachrichten.fr",
+   "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQWDJiNkpCcjFRWFdMTXJINm9QSEtpRjBZOUJkWnJRNndmRXpfNW1OUGFJcWdnbjFHNm00alJEQmxjaGRRUDg5bkxoZ3AxbXVVOE5vUjFsTFU3N3R2VVB1b3pfMzNGQmhHbmNGWkxiT2lEVFo0UVRaOENOWGMzQUt6alMxcGR5X2owQXdWN3UtQ0NnZExUUmZfUEx2SkJqcmo5SHAtdlZubFk?oc=5",
    "n_outlets": 1,
    "also": []
   }
