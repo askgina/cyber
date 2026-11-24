@@ -110,8 +110,9 @@
       const cr = r.crypto ? `${r.crypto.n}${r.crypto.usd ? " · " + B.fmtUSD(r.crypto.usd) : ""}` : "n/a";
       const top = r.crypto && r.crypto.top && r.crypto.top.usd >= 1e7 && (w === "7d" || w === "30d" || w === "ytd") ? r.crypto.top : null;
       const br = r.breach ? `${r.breach.n}${r.breach.acc ? " · " + B.compact(r.breach.acc) : ""}` : "n/a";
-      const box = el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: w === "ytd" ? "Every record in the year-to-date archive: curated incidents, crypto exploits, ransomware leak-site claims, exploited CVEs (CISA KEV), HIBP breaches, official notices and SEC filings. One incident can appear under more than one type." : "Press-reported incidents (curated registry, one per incident), crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP. Official notices are listed but not added to the total." },
-        el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, w === "ytd" ? "records" : "incidents")),
+      const ad = w === "ytd" && W.archive && W.archive.ytd ? W.archive.ytd.dup || 0 : 0;
+      const box = el("div", { class: "t-k t-w" + (changed ? " chg" : ""), title: w === "ytd" ? `Every entry in the YTD archive (its "All" count): curated incidents, crypto exploits, ransomware leak-site claims, exploited CVEs (CISA KEV), HIBP breaches, official notices and SEC filings.${ad ? ` ${ad.toLocaleString("en-US")} crypto hacks that are also curated incidents are counted once, so the lines add up to ${ad.toLocaleString("en-US")} more than the total.` : ""}` : "Press-reported incidents (curated registry, one per incident), crypto exploits, ransomware leak-site claims, newly exploited CVEs (CISA KEV) and breaches added to HIBP. Official notices are listed but not added to the total." },
+        el("div", { class: "wh" }, el("span", {}, label), el("b", {}, n), el("i", {}, w === "ytd" ? "entries" : "incidents")),
         el("div", { class: "wb" },
           line("Press-reported", r.inc && w !== "30d" ? r.inc.n.toLocaleString("en-US") : "n/a"),
           line("Crypto", cr),
