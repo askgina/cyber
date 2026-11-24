@@ -103,9 +103,15 @@
     input.setAttribute("aria-activedescendant", rows.length ? "pal-o" + sel : "");
     list.children[sel]?.scrollIntoView({ block: "nearest" });
   }
-  function choose(i) { const r = rows[i]; if (!r) return; close(); r.run(); }
+  function choose(i) {
+    const r = rows[i]; if (!r) return;
+    // what kind of result was picked; the query text itself is never sent
+    const via = r.hint === "Ask" ? "ask" : /^By meaning/.test(r.hint || "") ? "meaning" : r.id ? "word" : "command";
+    if (window.cyberTrack) window.cyberTrack("palette_pick", { via, qlen: input.value.trim().length, kind: (r.hint || "").replace("By meaning · ", "").slice(0, 24) });
+    close(); r.run();
+  }
 
-  function open() { if (dlg.open) return; input.value = ""; sel = 0; draw(); dlg.showModal(); input.focus(); }
+  function open() { if (dlg.open) return; input.value = ""; sel = 0; draw(); dlg.showModal(); input.focus(); if (window.cyberTrack) window.cyberTrack("palette_open", {}); }
   function close() { if (dlg.open) dlg.close(); }
 
   document.addEventListener("keydown", (e) => {

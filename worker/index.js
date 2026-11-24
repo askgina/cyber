@@ -91,9 +91,51 @@ async function search(env, q) {
   return out;
 }
 
+// ---- Analytics: no cookies, no stored IPs. Page loads are counted here (works with VPNs and ad blockers);
+// the page sends a few named events to /e on our own domain. Both go to Analytics Engine and, if POSTHOG_KEY is set,
+// to PostHog EU (project "cyber").
+const BOT = /bot|crawl|spider|slurp|preview|monitor|headless|lighthouse|curl|wget|python|httpclient|go-http|java\//i;
+const EVENTS = new Set(["view", "open_record", "palette_open", "palette_pick", "ask_click", "theme"]);
+function device(ua) { return /mobile|iphone|android/i.test(ua) ? "mobile" : /ipad|tablet/i.test(ua) ? "tablet" : "desktop"; }
+function track(env, ctx, req, event, props = {}, distinctId = null) {
+  const ua = req.headers.get("user-agent") || "";
+  if (BOT.test(ua)) return;
+  const country = (req.cf && req.cf.country) || "XX";
+  let ref = "";
+  try { const r = req.headers.get("referer"); if (r) { const h = new URL(r).hostname; if (h !== new URL(req.url).hostname) ref = h; } } catch {}
+  const dev = device(ua);
+  env.EVENTS.writeDataPoint({ indexes: [event], blobs: [event, country, ref, dev, String(props.view || props.kind || props.via || "")], doubles: [1, Number(props.qlen) || 0] });
+  if (env.POSTHOG_KEY) {
+    const did = distinctId || crypto.randomUUID();
+    ctx.waitUntil(fetch("https://eu.i.posthog.com/i/v0/e/", {
+      method: "POST", headers: { "content-type": "application/json" },
+      body: JSON.stringify({ api_key: env.POSTHOG_KEY, event,
+        properties: { distinct_id: did, ...props, app: "cyber", $process_person_profile: false, $geoip_disable: true, country, referrer_host: ref || null, device: dev } }),
+    }).catch(() => {}));
+  }
+}
+
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
+    if (url.pathname === "/e" && req.method === "POST") {
+      const ip = req.headers.get("cf-connecting-ip") || "unknown";
+      const { success } = await env.EVENT_LIMIT.limit({ key: ip });
+      if (!success) return new Response(null, { status: 204 });
+      try {
+        const b = JSON.parse((await req.text()).slice(0, 2000));
+        if (EVENTS.has(b.e)) {
+          const p = {};
+          for (const [k, v] of Object.entries(b.p || {}).slice(0, 8)) if (/^[a-z_]{1,24}$/.test(k) && ["string", "number", "boolean"].includes(typeof v)) p[k] = typeof v === "string" ? v.slice(0, 80) : v;
+          track(env, ctx, req, b.e, p, typeof b.s === "string" ? b.s.slice(0, 40) : null);
+        }
+      } catch {}
+      return new Response(null, { status: 204 });
+    }
+    // count page loads server-side (the HTML document, not assets)
+    if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html") && (req.headers.get("sec-fetch-dest") || "document") === "document") {
+      track(env, ctx, req, "pageload");
+    }
     const key = DATA[url.pathname];
     if (key) {
       const o = await env.STATE.get(key);

@@ -1,0 +1,39 @@
+// Cookieless usage events, sent to /e on our own domain (the Worker forwards them to Analytics Engine and PostHog).
+// Nothing is stored on the device: the id below lives only for this page load. Search text is never sent.
+(() => {
+  "use strict";
+  const sid = (crypto.randomUUID && crypto.randomUUID()) || String(Math.random()).slice(2);
+  function track(e, p) {
+    try {
+      const body = JSON.stringify({ e, p: p || {}, s: sid });
+      if (!(navigator.sendBeacon && navigator.sendBeacon("/e", new Blob([body], { type: "application/json" }))))
+        fetch("/e", { method: "POST", body, keepalive: true, headers: { "content-type": "application/json" } });
+    } catch (err) { /* analytics must never break the page */ }
+  }
+  window.cyberTrack = track;
+
+  // views and record opens, from the URL hash
+  const VIEWS = { "": "terminal", "#": "terminal", "#terminal": "terminal", "#leaderboard": "leaderboard", "#top": "leaderboard", "#report": "report" };
+  let last = null;
+  function route() {
+    const h = location.hash;
+    if (h.startsWith("#e-")) {
+      const id = h.slice(3);
+      track("open_record", { kind: id.split(/[-:]/)[0], id: id.slice(0, 60), from: document.body.className.replace("view-", "") });
+      return;
+    }
+    const view = VIEWS[h] || "report:" + h.slice(1);
+    if (view === last) return;
+    last = view;
+    track("view", { view });
+  }
+  window.addEventListener("hashchange", route);
+  route();
+
+  // Ask Perplexity links and the theme toggle
+  document.addEventListener("click", (ev) => {
+    const a = ev.target.closest && ev.target.closest('a[href*="perplexity.ai"]');
+    if (a) track("ask_click", { from: document.body.className.replace("view-", "") });
+    if (ev.target.closest && ev.target.closest(".t-theme")) setTimeout(() => track("theme", { mode: document.documentElement.dataset.theme === "dark" ? "dark" : "light" }), 0);
+  }, true);
+})();
