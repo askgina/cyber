@@ -35,8 +35,9 @@ def fetch_repo(dest):
                 raise
             time.sleep(3 * (attempt + 1))
     with tarfile.open(fileobj=io.BytesIO(data), mode="r:gz") as t:
+        # GitHub names the top folder <repo>-<branch>; read it from the archive so a repo rename can't break the build
+        top = os.path.join(WORK, t.getmembers()[0].name.split("/")[0])
         t.extractall(WORK, filter="data")
-    top = os.path.join(WORK, "breach-ledger-main")
     shutil.rmtree(dest, ignore_errors=True)
     os.rename(top, dest)
 
