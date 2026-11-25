@@ -18,7 +18,7 @@ Before the first split build, the details and history endpoints return `404` wit
 
 ## Data and license
 
-Cyber's published dataset is available under the [Creative Commons Attribution 4.0 International license (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Credit [Cyber](https://cyber.askgina.ai/) and keep the original source attributions when reusing the data. Linked third-party material remains subject to its own terms. The breach catalog comes from [Have I Been Pwned](https://haveibeenpwned.com/) (CC BY 4.0).
+The code is released under the [MIT License](LICENSE). Cyber's published dataset is available under the [Creative Commons Attribution 4.0 International license (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/). Credit [Cyber](https://cyber.askgina.ai/) and keep the original source attributions when reusing the data. Linked third-party material remains subject to its own terms. The breach catalog comes from [Have I Been Pwned](https://haveibeenpwned.com/) (CC BY 4.0).
 
 - `pipeline/build_data.py` pulls public feeds and writes the data in `site/`.
 - `pipeline/x_signals.json` contains facts and links curated by hand. Cyber does not collect posts from X automatically.
