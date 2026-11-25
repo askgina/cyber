@@ -3,7 +3,7 @@
   "info": {
     "title": "Cyber public API",
     "version": "1.0.0",
-    "description": "Search the public Breach Ledger and fetch its JSON snapshots. The hourly build cadence is a target, not a freshness guarantee. Live and archive coverage can overlap. Versioning and deprecation: the API changes additively, this document's info version is the current version, a breaking change would ship under a new path, deprecations are announced on /api and /method before removal, and retired record URLs answer 301 or 410. The human-readable guide is /api and /api.md."
+    "description": "Search the public Breach Ledger and fetch its JSON snapshots. The hourly build cadence is a target, not a freshness guarantee. Live and archive coverage can overlap. Versioning and deprecation: the API changes additively, this document's info version is the current version, a breaking change would ship under a new path, deprecations are announced on /api and /method before removal, and retired record URLs answer 301 or 410. The human-readable guide is /api and /api.md. Pagination: search ranks at most thirty records and answers one page at a time, eight results by default, with limit 1-20 and an opaque nextCursor; snapshots are complete documents without a cursor."
   },
   "servers": [{ "url": "https://cyber.askgina.ai" }],
   "externalDocs": {
@@ -24,13 +24,32 @@
             "required": false,
             "description": "Public search terms only. Cyber trims the query, collapses whitespace, and truncates it to 300 UTF-16 code units. Unless rate-limited, an absent query or one shorter than three code units after normalization returns an empty result set.",
             "schema": { "type": "string" }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "description": "Page size between 1 and 20. Absent or empty means the default of 8; anything else answers 400 invalid limit.",
+            "schema": { "type": "integer", "minimum": 1, "maximum": 20, "default": 8 }
+          },
+          {
+            "name": "cursor",
+            "in": "query",
+            "required": false,
+            "description": "Opaque nextCursor copied from the previous page of the same query. A cursor is bound to the normalized query and to the five-minute result cache; a malformed cursor, one from another query, or one naming an offset past the ranked set answers 400 invalid cursor.",
+            "schema": { "type": "string" }
           }
         ],
         "responses": {
           "200": {
-            "description": "Up to eight ranked results, or an empty list.",
+            "description": "One page of the ranking, at most limit results and in total no more than thirty. nextCursor is the opaque string for the following page, or null on the last page.",
             "headers": { "Cache-Control": { "$ref": "#/components/headers/SearchCacheControl" } },
             "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchResponse" } } }
+          },
+          "400": {
+            "description": "limit or cursor was malformed, out of range, or issued for another query. Send the first request again without a cursor.",
+            "headers": { "Cache-Control": { "$ref": "#/components/headers/SearchCacheControl" } },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchError" } } }
           },
           "405": {
             "description": "A method other than GET was used.",
@@ -176,9 +195,10 @@
     "schemas": {
       "SearchResponse": {
         "type": "object",
-        "required": ["results"],
+        "required": ["results", "nextCursor"],
         "properties": {
-          "results": { "type": "array", "maxItems": 8, "items": { "$ref": "#/components/schemas/SearchResult" } }
+          "results": { "type": "array", "maxItems": 20, "items": { "$ref": "#/components/schemas/SearchResult" } },
+          "nextCursor": { "type": ["string", "null"], "description": "Pass this back as cursor to read the next page; null on the last page." }
         }
       },
       "SearchResult": {

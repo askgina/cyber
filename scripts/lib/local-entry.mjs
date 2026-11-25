@@ -2,12 +2,15 @@ import worker from '../../worker/index.js';
 import { ARCHIVE_TITLE, SEARCH_CONTROL, SEARCH_REF, SEARCH_TITLE, UNRESOLVED_TITLE } from './search-fixture.mjs';
 
 const AI_SEARCH = {
-  async search() {
-    return { chunks: [
+  async search({ query = '' } = {}) {
+    const rows = [
       [SEARCH_TITLE, LOCAL_SEARCH_LIVE_REF ?? SEARCH_REF],
       [ARCHIVE_TITLE, LOCAL_SEARCH_ARCHIVE_REF ?? 'a:fixture|2026-11-24|Test||'],
       [UNRESOLVED_TITLE, SEARCH_REF],
-    ].map(([title, ref]) => ({
+    ];
+    // Twelve more ranked hits so a cursor walk over several pages is exercised end to end.
+    if (/paged/.test(query)) for (let i = 1; i <= 12; i += 1) rows.push([`Local fixture: paged record ${i}`, `r-paged-${i}`]);
+    return { chunks: rows.map(([title, ref]) => ({
       item: { key: 'inc/2026-11-24.md' }, score: 1,
       text: `# ${title}\n\nRecord: ${ref}\n\nA fixed response from the in-process search stub.`,
     })) };

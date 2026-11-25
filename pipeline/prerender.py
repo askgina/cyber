@@ -742,6 +742,7 @@ def api_page():
         (link("/.well-known/api-catalog", "/.well-known/api-catalog"), "RFC 9727 linkset pointing at the API and its description"),
     ]
     errors = [
+        ("400", "The limit or cursor parameter is malformed, out of range, or issued for another query"),
         ("404", "No such API path, or a snapshot part that has not been built"),
         ("405", "A method other than GET, or HEAD for snapshots; Allow names the accepted methods"),
         ("429", "Rate limited; Retry-After gives the wait in seconds"),
@@ -767,7 +768,9 @@ def api_page():
         section("Versioning",
                 ("p", "The public API changes additively: fields may be added, while existing paths and field meanings stay stable, and /openapi.json records the current info.version. A breaking change would ship under a new path, so /api/search keeps its meaning. Retired record pages answer 301 or 410 instead of disappearing."), anchor="versioning"),
         section("Pagination",
-                ("p", "Search returns at most eight results in one response. Snapshots are complete documents, not pages: the archive lists items newest first from a start date and offers no cursor. Read a snapshot in full and filter locally instead of walking pages."), anchor="pagination"),
+                ("p", "Search ranks at most thirty records for a query and answers one page at a time: eight results by default, and limit accepts 1 to 20. The response carries nextCursor, an opaque string to send back as cursor for the following page, and null on the last page."),
+                ("p", "A cursor belongs to the query that produced it and to the five-minute result cache. Expired, foreign or malformed cursors answer 400 invalid cursor, so repeat the first request instead of guessing an offset."),
+                ("p", "Snapshots are complete documents, not pages: the archive lists items newest first from a start date and offers no cursor. Read a snapshot in full and filter locally instead of walking pages."), anchor="pagination"),
         section("Citing and reuse",
                 ("p", "Each record links to the sources it came from; cite the record page and the original source. The compiled data is published under CC BY 4.0 with Ask Gina as the publisher."), anchor="reuse"),
         section("Agent entry points",

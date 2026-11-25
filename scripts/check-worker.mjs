@@ -383,6 +383,32 @@ async function main() {
   await run(cold, undefined, 200, searchResponse, '429 not cached');
   await run(failure, searchMode('upstream-error'), 502, (r, name) => searchResponse(r, name, 'search unavailable'), 'upstream unavailable');
   await run(failure, undefined, 200, searchResponse, '502 not cached');
+  const paged = '/api/search?q=paged-fixture';
+  const titles = [], cursors = [];
+  let next = null;
+  for (let pageNumber = 1; pageNumber <= 3; pageNumber += 1) {
+    const url = `${paged}&limit=5${next ? `&cursor=${encodeURIComponent(next)}` : ''}`;
+    await run(url, undefined, 200, async (r, name) => {
+      const data = await searchResponse(r, name);
+      const results = Array.isArray(data?.results) ? data.results : [];
+      check.equal(`${name} page size`, results.length, 5);
+      titles.push(...results.map((item) => item.title));
+      next = typeof data?.nextCursor === 'string' ? data.nextCursor : null;
+      cursors.push(next);
+      check.equal(`${name} nextCursor null on last page`, next === null, pageNumber === 3);
+    }, `search page ${pageNumber}`);
+  }
+  check.equal('search cursors walk the whole ranking', `${titles.length}/${new Set(titles).size}`, '15/15');
+  await run(`${paged}&limit=20`, undefined, 200, async (r, name) => {
+    const data = await searchResponse(r, name);
+    check.equal(`${name} results`, Array.isArray(data?.results) ? data.results.length : -1, 15);
+    check.equal(`${name} nextCursor`, data?.nextCursor, null);
+  }, 'limit above the ranking');
+  for (const suffix of ['limit=0', 'limit=21', 'limit=abc']) {
+    await run(`${paged}&${suffix}`, undefined, 400, (r, name) => searchResponse(r, name, 'invalid limit'), `rejects ${suffix}`);
+  }
+  await run(`${paged}&limit=5&cursor=not-a-cursor`, undefined, 400, (r, name) => searchResponse(r, name, 'invalid cursor'), 'rejects a malformed cursor');
+  await run(`/api/search?q=ransomware&limit=5&cursor=${encodeURIComponent(cursors[0])}`, undefined, 400, (r, name) => searchResponse(r, name, 'invalid cursor'), 'rejects a cursor from another query');
   await run('/e', { method: 'POST', headers: { 'Content-Type': MIME.json }, body: JSON.stringify({ e: 'view', p: { view: 'report' } }) }, 204);
   await run('/__build', undefined, 403);
   check.done();
