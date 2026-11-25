@@ -415,11 +415,13 @@ async function main(base, timeout) {
         const observedPath = new URL(page.url()).pathname;
         assert(observedPath === path, `direct load at pathname ${path}`, observedPath);
         // Live records can be opened in the SPA drawer or served as a prerendered
-        // record. In either representation require the exact incident headline.
+        // record. A prerendered record renders its headline uppercased while the drawer keeps the
+        // source casing, so require the same headline, not the same letters' case.
         const titleLocator = page.locator(`${DRAWER_TITLE}:visible, main h1:visible`).first();
         await titleLocator.waitFor({ state: 'visible' });
         const directTitle = normalize(await titleLocator.innerText());
-        assert(directTitle === title, `visible incident headline ${json(title)}`, json(directTitle));
+        assert(directTitle.toLocaleLowerCase() === title.toLocaleLowerCase(),
+          `visible incident headline ${json(title)}`, json(directTitle));
       });
     });
   } finally {
