@@ -251,6 +251,13 @@ async function main() {
     type(r, name, MIME.json);
     retryable(r, name);
   }, 'R2 unavailable on data');
+  await run('/api', { headers: { 'x-ledger-local-pages': 'r2-error' } }, 200, async (r, name) => {
+    type(r, name, MIME.html);
+    const body = await r.text();
+    check.record(`${name} static baseline`, body.includes('<title>Public API — Cyber</title>'), 'site/api.html served', 'wrong page');
+  }, 'no manifest, static baseline');
+  await run('/api.md', { headers: { 'x-ledger-local-pages': 'r2-error' } }, 200,
+    (r, name) => type(r, name, MIME.md), 'no manifest, static baseline');
   if (indexable) {
     await run(`/incidents/${indexable}`, { headers: { 'x-ledger-local-pages': 'pages-object-error' } }, 503, retryable, 'R2 unavailable on page object');
     // With no readable manifest either, the route degrades to the static shell instead of failing.

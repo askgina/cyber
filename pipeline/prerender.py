@@ -33,6 +33,7 @@ INVALID_TEXT = re.compile(r"[^\x09\x0a\x0d\x20-\ud7ff\ue000-\ufffd\U00010000-\U0
 SITEMAP = "http://www.sitemaps.org/schemas/sitemap/0.9"
 ATOM = "http://www.w3.org/2005/Atom"
 NAV = {"/": "Terminal", "/leaderboard": "Leaderboard", "/report": "Report", "/method": "Method", "/api": "API"}
+SHELL_VIEWS = ("/", "/leaderboard", "/report")
 TYPES = {"inc": "Curated incident", "crypto": "Crypto tracker record", "kev": "CISA KEV catalog entry",
          "breach": "Have I Been Pwned listing", "notice": "Official notice", "sec": "SEC filing",
          "news": "News report", "x": "X signal"}
@@ -1398,6 +1399,10 @@ def build(root, write_static_baselines=False):
             manifest["routes"][path]["scope"] = scopes[path]
         if write_static_baselines and path in NAV:
             write(site / md_key, md)
+            # Standalone core pages also ship as static assets so the route answers before the
+            # first build publishes a manifest entry. "/" and the shell views keep their template.
+            if path not in SHELL_VIEWS:
+                write(site / html_key, html)
     for key, content in assets.items():
         manifest["assets"]["/" + key] = {"key": key, "sha": write(out / key, content), "type": ASSET_TYPES[key] + "; charset=utf-8"}
         if write_static_baselines and key != LLMS_FULL:

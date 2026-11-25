@@ -269,7 +269,11 @@ export async function serveDocumentRoute(req, env, url, { wantMarkdown = false }
       }), { robots: "noindex, nofollow", tokens: wantMarkdown ? markdownTokens(body) : undefined });
     }
     const entry = manifest.routes?.[pathname];
-    if (!entry) return { matched: false };
+    // A core page added by a deploy answers from its static baseline until a build publishes it.
+    if (!entry) {
+      if (!isCoreDocumentRoute(pathname)) return { matched: false };
+      break;
+    }
     const response = await readPage(req, env, wantMarkdown ? entry.md : entry.html, contentType, DOCUMENT_CACHE, wantMarkdown);
     if (response) return matched(response, { robots: entry.index === false ? "noindex, follow" : undefined });
     if (attempt) {
@@ -285,11 +289,17 @@ export async function serveDocumentRoute(req, env, url, { wantMarkdown = false }
   const core = isCoreDocumentRoute(pathname);
   const live = !wantMarkdown && INCIDENT_ROUTE.test(pathname) && await liveIncidentExists(env, pathname.slice("/incidents/".length));
   if (!core && !live) return { matched: false };
-  const path = wantMarkdown ? (pathname === "/" ? "/index.md" : `${pathname}.md`) : "/";
   if (!wantMarkdown) {
-    const response = await env.ASSETS.fetch(new Request(new URL(path, url), req));
+    // Assets resolve a path to its `.html` file, so a standalone core page answers directly and
+    // everything else degrades to the shell.
+    let response = await env.ASSETS.fetch(new Request(url, req));
+    if (response.status === 404 && pathname !== "/") {
+      await response.body?.cancel();
+      response = await env.ASSETS.fetch(new Request(new URL("/", url), req));
+    }
     return response.status === 404 ? { matched: false } : matched(response);
   }
+  const path = pathname === "/" ? "/index.md" : `${pathname}.md`;
   const response = await env.ASSETS.fetch(new Request(new URL(path, url)));
   if (response.status === 404) return { matched: false };
   if (!response.ok) return matched(response, { isDocument: false });
