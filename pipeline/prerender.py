@@ -1025,7 +1025,7 @@ def standalone_html(page):
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<script src="/theme-init.js"></script>
+<script src="/theme-init.js"></script>{'<script src="/open-app.js"></script>' if page["path"].startswith("/incidents/") else ""}
 <link rel="stylesheet" href="/styles.css">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {metadata(page)}

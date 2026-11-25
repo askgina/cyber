@@ -303,7 +303,7 @@
       const dl = el("dl", { class: "facts" }, rows.map(([k, v]) => el("div", {}, el("dt", {}, k), el("dd", {}, v))));
       body.append(dl);
       if (r.desc) body.append(el("p", { class: "d" }, r.desc));
-      if (id) body.append(el("a", { href: R.incidentPath(id), class: "link" }, "Link to this entry"));
+      if (id) body.append(B.shareButton(id, r.name || ""));
     }
     box.hidden = false;
     if (opening) $("#b-ix").focus({ preventScroll: true });

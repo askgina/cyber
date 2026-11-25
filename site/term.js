@@ -426,7 +426,7 @@
       const links = [...(it.links || []), ...(e.url ? [{ label: it.source || "Source", url: e.url }] : [])];
       ib.append(el("p", { class: "t-il" }, ...B.breakdownAnchors(title, text || "", id),
         ...links.map((l) => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label)),
-        el("a", { href: R.incidentPath(req.id) }, "Link to this entry")));
+        B.shareButton(req.id, title)));
       if (ready) {
         ib.append(B.detailPanel(it, kind, id, title, text || ""));
         ib.querySelectorAll(".dask").forEach((n) => n.remove());
