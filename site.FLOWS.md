@@ -1,7 +1,7 @@
 # Main flows (Cyber)
 
 ## Home: terminal
-- The default view (no hash, #terminal) is the terminal. Every view shares one top bar: Leaderboard / Terminal / Report, an Ask assistant picker (Perplexity, ChatGPT or Claude; choice remembered), plus a Dark/Light toggle (light by default, choice remembered).
+- The default view (no hash, #terminal) is the terminal. Every view shares one top bar: Leaderboard / Terminal / Report, plus a Dark/Light toggle (light by default, choice remembered).
 - ⌘K (Ctrl+K off Mac) opens the command palette in any view: jump to a view or report section, switch theme, refresh data, search every incident, or ask Perplexity, ChatGPT or Claude about the query.
 
 ## Leaderboard (#leaderboard, #top)
@@ -24,10 +24,9 @@
 - KEV table with NVD / CISA KEV / X / Ask links.
 
 ## Ask
-- Top-bar picker (Ask: Perplexity / ChatGPT / Claude) sets the assistant used by every Ask button, selection popover and `ask …` in the terminal. Remembered on this device.
-- "Ask <assistant> about today" opens that assistant with today's summary prompt.
-- Select text in an entry -> "Ask <assistant>" pop button appears -> opens with selection + section + entry + page URL.
-- Each entry note and terminal detail has an "Ask <assistant>" link. ⌘K lists all three, chosen assistant first.
+- Every Ask control shows Perplexity, ChatGPT and Claude (inspector, report, notes, selection popup, ⌘K).
+- "Ask … about today" opens that assistant with today's summary prompt.
+- Select text in an entry -> popup with Ask Perplexity / ChatGPT / Claude -> opens with selection + section + entry + page URL.
 - ChatGPT and Claude prompts ask them to search the web; Perplexity already does.
 
 # Requested change checks

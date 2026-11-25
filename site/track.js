@@ -43,8 +43,11 @@
 
   // Ask links (any assistant) and the theme toggle
   document.addEventListener("click", (ev) => {
-    const a = ev.target.closest && ev.target.closest('a[href*="perplexity.ai"], a[href*="chatgpt.com"], a[href*="claude.ai"], #ask-pop');
-    if (a) track("ask_click", { from: document.body.className.replace("view-", ""), via: (window.BL && window.BL.askName ? window.BL.askName() : "").toLowerCase() });
+    const a = ev.target.closest && ev.target.closest('a[href*="perplexity.ai"], a[href*="chatgpt.com"], a[href*="claude.ai"], .ask-pop a[data-ask]');
+    if (a) {
+      const via = a.dataset.ask || (a.href.includes("chatgpt.com") ? "chatgpt" : a.href.includes("claude.ai") ? "claude" : "perplexity");
+      track("ask_click", { from: document.body.className.replace("view-", ""), via });
+    }
     if (ev.target.closest && ev.target.closest(".t-theme")) setTimeout(() => track("theme", { mode: document.documentElement.dataset.theme === "dark" ? "dark" : "light" }), 0);
   }, true);
 })();

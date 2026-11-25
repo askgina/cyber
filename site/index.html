@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect x=%222%22 y=%225%22 width=%2212%22 height=%226%22 fill=%22%23000443%22/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=20261125-0400">
+<link rel="stylesheet" href="styles.css?v=20261125-1100">
 </head>
 <body class="view-term">
 <a class="skip" href="#term">Skip to content</a>
@@ -38,7 +38,6 @@
     <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="t-q" type="search" placeholder="Filter by company, CVE, chain or pattern. Type ask … to ask an AI assistant" autocomplete="off" aria-label="Filter the terminal"><kbd>/</kbd></label>
     <span class="t-clock" id="t-clock" aria-label="Current time, UTC"></span>
     <nav class="t-views" aria-label="Views"><a href="#leaderboard">Leaderboard</a><a href="#terminal" aria-current="page">Terminal</a><a href="#report">Report</a></nav>
-    <select class="t-ask" aria-label="Assistant used by Ask"><option value="perplexity">Ask: Perplexity</option><option value="chatgpt">Ask: ChatGPT</option><option value="claude">Ask: Claude</option></select>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
   </div>
   <div class="t-ticker" aria-label="Latest incidents"><div class="t-tape" id="t-tape"></div></div>
@@ -60,7 +59,6 @@
     <a class="t-brand" href="#leaderboard">Cyber</a>
     <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="b-q" type="search" placeholder="Search hacks by name, chain or technique" autocomplete="off" aria-label="Search hacks"></label>
     <nav class="t-views" aria-label="Views"><a href="#leaderboard" aria-current="page">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report">Report</a></nav>
-    <select class="t-ask" aria-label="Assistant used by Ask"><option value="perplexity">Ask: Perplexity</option><option value="chatgpt">Ask: ChatGPT</option><option value="claude">Ask: Claude</option></select>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
   </div>
   <div class="b-kpi" id="b-kpi" aria-label="Leaderboard totals"></div>
@@ -84,7 +82,6 @@
     <a class="t-brand" href="#report">Cyber</a>
     <nav class="t-cmd r-jump" aria-label="Sections"><span aria-hidden="true">&gt;</span><a href="#glance">Today</a><a href="#live">Live</a><a href="#patterns">Patterns</a><a href="#crypto">Crypto</a><a href="#ransomware">Ransomware</a><a href="#breaches">Breaches</a><a href="#exploited">Exploited</a><a href="#method">Method</a></nav>
     <nav class="t-views" aria-label="Views"><a href="#leaderboard">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report" aria-current="page">Report</a></nav>
-    <select class="t-ask" aria-label="Assistant used by Ask"><option value="perplexity">Ask: Perplexity</option><option value="chatgpt">Ask: ChatGPT</option><option value="claude">Ask: Claude</option></select>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
   </div>
 
@@ -101,9 +98,11 @@
     <div class="abstract-wrap">
       <p class="abstract" id="abstract">Loading the latest record…</p>
       <div class="actions">
-        <a class="btn" id="ask-today" href="#" target="_blank" rel="noopener">Ask <span class="ask-name">Perplexity</span> about today</a>
+        <a class="btn" data-ask-today="perplexity" href="#" target="_blank" rel="noopener">Ask Perplexity about today</a>
+        <a class="btn" data-ask-today="chatgpt" href="#" target="_blank" rel="noopener">Ask ChatGPT about today</a>
+        <a class="btn" data-ask-today="claude" href="#" target="_blank" rel="noopener">Ask Claude about today</a>
         <a class="link" href="#method">Read the method</a>
-        <span class="hint">Select any text on this page to ask <span class="ask-name">Perplexity</span> about it.</span>
+        <span class="hint">Select any text on this page to ask Perplexity, ChatGPT or Claude about it.</span>
       </div>
     </div>
   </section>
@@ -265,20 +264,20 @@
     </article>
   </div>
 </main>
-<div class="t-foot"><span><kbd>⌘K</kbd> search · Select text to ask <span class="ask-name">Perplexity</span> <kbd>esc</kbd> dismiss</span><span><span id="foot-asof"></span>CISA KEV · ransomware.live · DefiLlama · SlowMist · HIBP · rekt · security press · X</span></div>
+<div class="t-foot"><span><kbd>⌘K</kbd> search · Select text to ask Perplexity, ChatGPT or Claude <kbd>esc</kbd> dismiss</span><span><span id="foot-asof"></span>CISA KEV · ransomware.live · DefiLlama · SlowMist · HIBP · rekt · security press · X</span></div>
 <div class="fbar" id="fbar" hidden><span id="fbar-text"></span><button type="button" id="fbar-clear">Clear</button></div>
 </div>
-<button class="ask-pop" id="ask-pop" type="button" hidden>Ask <span class="ask-name">Perplexity</span></button>
+<div class="ask-pop" id="ask-pop" hidden><a href="#" data-ask="perplexity">Ask Perplexity</a><a href="#" data-ask="chatgpt">Ask ChatGPT</a><a href="#" data-ask="claude">Ask Claude</a></div>
 
 <dialog class="pal" id="pal" aria-label="Search and commands">
   <div class="pal-in"><span aria-hidden="true">&gt;</span><input id="pal-q" type="text" aria-label="Search incidents and commands" placeholder="Search incidents, CVEs, companies, or jump to a view…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="pal-list" aria-autocomplete="list"><kbd>esc</kbd></div>
   <ul class="pal-list" id="pal-list" role="listbox"></ul>
   <div class="pal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move <kbd>enter</kbd> open</span><span><kbd>⌘K</kbd> toggle</span></div>
 </dialog>
-<script src="app.js?v=20261125-0400"></script>
-<script src="term.js?v=20261125-0400"></script>
+<script src="app.js?v=20261125-1100"></script>
+<script src="term.js?v=20261125-1100"></script>
 <script src="board.js?v=20261124-1700"></script>
-<script src="track.js?v=20261125-0400"></script>
-<script src="palette.js?v=20261125-0400"></script>
+<script src="track.js?v=20261125-1100"></script>
+<script src="palette.js?v=20261125-1100"></script>
 </body>
 </html>

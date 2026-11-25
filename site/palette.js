@@ -47,11 +47,8 @@
     // results by meaning (AI Search), loaded after the instant word matches; skip records already listed
     const listed = new Set(recs.map((r) => r.id));
     const sem = SEM.q === q.trim() ? SEM.rows.filter((r) => !listed.has(r.id)) : [];
-    // one Ask row per assistant, the chosen one first
-    const ids = B.ASK ? Object.keys(B.ASK) : ["perplexity"];
-    const cur = ids.find((id) => B.askName && B.askName() === B.ASK[id].name) || ids[0];
-    const asks = [cur, ...ids.filter((id) => id !== cur)].map((id) => ({
-      label: `Ask ${B.ASK ? B.ASK[id].name : "Perplexity"}: “${q.trim()}”`, hint: "Ask", ask: id,
+    const asks = Object.keys(B.ASK || { perplexity: { name: "Perplexity" } }).map((id) => ({
+      label: `Ask ${B.ASK[id].name}: “${q.trim()}”`, hint: "Ask", ask: id,
       run: () => window.open(B.askURL(q.trim(), "Cyber", id), "_blank", "noopener"),
     }));
     return [...cmds.slice(0, 4), ...recs, ...sem, ...asks];

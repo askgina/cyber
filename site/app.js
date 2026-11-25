@@ -2,17 +2,15 @@
   "use strict";
   // Canonical public address of this page, used in "Ask" prompts.
   const PAGE_URL = "https://cyber.askgina.ai/";
-  // Assistants for "Ask": the choice is remembered on this device (top bar picker); ⌘K offers all three.
+  // Assistants for "Ask": every Ask control shows Perplexity, ChatGPT and Claude.
   const ASK = {
     perplexity: { name: "Perplexity", url: "https://www.perplexity.ai/search?q=" },
     chatgpt: { name: "ChatGPT", url: "https://chatgpt.com/?q=" },
     claude: { name: "Claude", url: "https://claude.ai/new?q=" },
   };
   const WEB_HINT = "\n\nSearch the web for the latest reporting before answering.";
-  const askId = () => { try { const v = localStorage.getItem("cyber-ask"); return ASK[v] ? v : "perplexity"; } catch (e) { return "perplexity"; } };
-  const askName = (id = askId()) => ASK[id].name;
   // ChatGPT and Claude only browse when asked, so their prompts say so; Perplexity always searches
-  const askHref = (q, id = askId()) => ASK[id].url + encodeURIComponent(id === "perplexity" ? q : q + WEB_HINT);
+  const askHref = (q, id) => ASK[id].url + encodeURIComponent(id === "perplexity" ? q : q + WEB_HINT);
   const $ = (s, r = document) => r.querySelector(s);
   const el = (tag, attrs = {}, ...kids) => {
     const n = document.createElement(tag);
@@ -30,28 +28,11 @@
   const ago = (s) => { const h = hoursAgo(s); return h < 1 ? `${Math.max(1, Math.round(h * 60))}m ago` : h < 48 ? `${Math.round(h)}h ago` : fmtDate(s); };
   const xSearch = (q) => "https://x.com/search?f=live&q=" + encodeURIComponent(q);
 
-  function askURL(text, context, id) {
+  function askURL(text, context, id = "perplexity") {
     const q = `${text.trim()}\n\nContext: from Cyber, a daily cyber incident tracker (${PAGE_URL})${context ? `, ${context}` : ""}. Explain what happened, how credible the claim is, and summarise the latest reporting with sources.`;
     return askHref(q, id);
   }
-  // "Ask <assistant>" label whose name follows the picker
-  const askLabel = (before = "Ask ", after = "") => [before, el("span", { class: "ask-name" }, askName()), after];
-  function setAsk(id) {
-    if (!ASK[id]) return;
-    try { localStorage.setItem("cyber-ask", id); } catch (e) {}
-    document.querySelectorAll(".ask-name").forEach((n) => { n.textContent = ASK[id].name; });
-    document.querySelectorAll("select.t-ask").forEach((s) => { s.value = id; });
-  }
-  // Ask links are rendered once; point them at the chosen assistant when clicked
-  document.addEventListener("click", (e) => {
-    const a = e.target.closest && e.target.closest("a[href]");
-    const m = a && a.href.match(/^https:\/\/(?:www\.perplexity\.ai\/search|chatgpt\.com\/|claude\.ai\/new)\?q=(.*)$/);
-    if (!m) return;
-    const q = decodeURIComponent(m[1]).replace(WEB_HINT, "");
-    a.href = askHref(q);
-  }, true);
-  document.addEventListener("change", (e) => { if (e.target.matches && e.target.matches("select.t-ask")) setAsk(e.target.value); });
-  document.addEventListener("DOMContentLoaded", () => setAsk(askId()));
+  const askAnchors = (text, context, cls = "btn") => Object.keys(ASK).map((id) => el("a", { class: cls, href: askURL(text, context, id), target: "_blank", rel: "noopener" }, "Ask " + ASK[id].name));
 
   // Side note with numbered links (SID-style margin notes)
   let noteNo = 0;
@@ -62,7 +43,7 @@
       ol.append(el("li", {}, el("span", {}, String(noteNo)), el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label)));
     }
     noteNo++;
-    ol.append(el("li", {}, el("span", {}, String(noteNo)), el("a", { href: askURL(askText, askCtx), target: "_blank", rel: "noopener", class: "ask-link" }, ...askLabel())));
+    ol.append(el("li", {}, el("span", {}, String(noteNo)), el("span", { class: "ask-row" }, ...askAnchors(askText, askCtx, "ask-link"))));
     return el("aside", { class: "note", "aria-label": "Sources" }, ol);
   }
 
@@ -70,12 +51,13 @@
   let DET = {}, LABEL = {}, LISTS = {}, ITEM = {};
   const state = { pattern: null, q: "", expanded: {} };
 
-  function breakdownURL(title, text, id) {
+  function breakdownURL(title, text, id, ask = "perplexity") {
     const det = DET[id] || {};
     const rel = (det.related || []).slice(0, 3).map((r) => r.title).join("; ");
     const q = `Give a full technical breakdown of this incident: "${title}". ${(text || "").slice(0, 600)}\n\nCover: the attack chain step by step, MITRE ATT&CK techniques, indicators of compromise, who is affected, how confirmed it is, how it compares with similar incidents${rel ? ` (for example ${rel})` : ""}, and concrete mitigations for software teams. Cite sources.\n\nContext: from Cyber, a daily cyber incident tracker (${PAGE_URL}#e-${id}).`;
-    return askHref(q);
+    return askHref(q, ask);
   }
+  const breakdownAnchors = (title, text, id, cls = "btn") => Object.keys(ASK).map((ask) => el("a", { class: cls, href: breakdownURL(title, text, id, ask), target: "_blank", rel: "noopener" }, "Ask " + ASK[ask].name));
 
   function facts(rows) {
     return el("dl", { class: "facts" }, rows.filter((r) => r[1] != null && r[1] !== "" && !(Array.isArray(r[1]) && !r[1].length))
@@ -207,8 +189,7 @@
         el("span", { class: "rs", title: "Text similarity" }, p.score.toFixed(2))))));
       box.append(sec);
     }
-    box.append(el("p", { class: "dask" }, el("a", { class: "btn", href: breakdownURL(title, text, id), target: "_blank", rel: "noopener" }, ...askLabel("Ask ", " for a full breakdown")),
-      " ", el("a", { class: "link", href: `#e-${id}` }, "Link to this entry")));
+    box.append(el("p", { class: "dask" }, ...breakdownAnchors(title, text, id), el("a", { class: "link", href: `#e-${id}` }, "Link to this entry")));
     return box;
   }
 
@@ -355,7 +336,9 @@
     // Abstract
     const biggest = [...crypto7].sort((a, b) => (b.amount || 0) - (a.amount || 0))[0];
     $("#abstract").innerHTML = `What was hacked today, who was hit, how much was taken and how they got in, from ransomware leak sites, CISA, DefiLlama, SlowMist, Have I Been Pwned, the security press and X. Polled live, rebuilt hourly. This week: <b>${c.count_7d} crypto exploits</b> (${fmtUSD(c.usd_7d)}), <b>${r.count_7d ?? "—"} ransomware claims</b>, <b>${k.count_7d} exploited flaws</b>${biggest ? `; largest loss ${escape(biggest.name)}, ${fmtUSD(biggest.amount)}` : ""}.`;
-    $("#ask-today").href = askURL("What are the most significant cyber security incidents, hacks and exploited vulnerabilities reported in the last 24 hours?", "today's summary");
+    document.querySelectorAll("[data-ask-today]").forEach((a) => {
+      a.href = askURL("What are the most significant cyber security incidents, hacks and exploited vulnerabilities reported in the last 24 hours?", "today's summary", a.dataset.askToday);
+    });
 
     // Ticks
     const ticks = [
@@ -451,7 +434,7 @@
 
   function escape(s) { return String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch])); }
 
-  // Selection → Ask (chosen assistant)
+  // Selection → Ask Perplexity, ChatGPT or Claude
   const pop = $("#ask-pop");
   let selText = "", selCtx = "";
   function sectionOf(node) {
@@ -480,7 +463,12 @@
   document.addEventListener("selectionchange", () => { const s = window.getSelection(); if (!s || s.isCollapsed) setTimeout(() => { const s2 = window.getSelection(); if (!s2 || s2.isCollapsed) pop.hidden = true; }, 200); });
   let touchT; document.addEventListener("touchend", () => { clearTimeout(touchT); touchT = setTimeout(showPop, 350); });
   pop.addEventListener("mousedown", (e) => e.preventDefault());
-  pop.addEventListener("click", () => { window.open(askURL(selText, selCtx), "_blank", "noopener"); pop.hidden = true; });
+  pop.addEventListener("click", (e) => {
+    const a = e.target.closest("a[data-ask]");
+    if (!a) return;
+    window.open(askURL(selText, selCtx, a.dataset.ask), "_blank", "noopener");
+    pop.hidden = true;
+  });
 
   // Active section in TOC + nav
   function spy() {
@@ -743,7 +731,7 @@
   window.BL = Object.assign(window.BL || {}, {
     // null until data.json has loaded: board.js renders straight away only when B.D is set
     get D() { return D0.generated ? D0 : null; }, get DET() { return DET; }, LABEL, KIND, LIVE, ROLE, STAGES,
-    detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, askName, askLabel, setAsk, ASK, xSearch, escape, hoursAgo,
+    detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, askAnchors, breakdownAnchors, ASK, xSearch, escape, hoursAgo,
     setFilter, jumpTo: (id) => jumpTo(id), events: () => [...LIVE.extra, ...events(D0)],
     pollAll: () => { pollLlama(); pollHIBP(); pollData(false); },
   });

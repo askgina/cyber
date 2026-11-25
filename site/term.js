@@ -341,7 +341,7 @@
     ib.append(el("h2", {}, title));
     if (text) ib.append(el("p", { class: "t-id" }, text));
     const links = [...(it.links || []), ...(e.url ? [{ label: it.source || "Source", url: e.url }] : [])];
-    ib.append(el("p", { class: "t-il" }, el("a", { class: "btn", href: B.breakdownURL(title, text || "", id), target: "_blank", rel: "noopener" }, ...B.askLabel()),
+    ib.append(el("p", { class: "t-il" }, ...B.breakdownAnchors(title, text || "", id),
       ...links.map((l) => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label))));
     ib.append(B.detailPanel(it, kind, id, title, text || ""));
     ib.querySelectorAll(".dask").forEach((n) => n.remove());
