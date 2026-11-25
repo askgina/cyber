@@ -19,7 +19,7 @@ STATE = ["pipeline/victims_cache.json", "pipeline/ransom_monthly.json", "pipelin
          "pipeline/first_seen.json", "pipeline/translate_cache.json", "pipeline/triage_queue.json",
          "pipeline/archive_cache", "pipeline/.prerender-state.json", "site/data.json", "site/archive.json"]
 LOCK = threading.Lock()
-SERVER_VERSION = "2026-11-25.3 prerender"  # bump on changes; the build response reports it
+SERVER_VERSION = "2026-11-25.4 repo-rename"  # bump on changes; the build response reports it
 SPLIT_OUTPUTS = ("data-hot.json", "data-details.json", "data-history.json")
 DATA_OUTPUTS = ("data.json", "archive.json") + SPLIT_OUTPUTS
 
@@ -144,7 +144,7 @@ class H(BaseHTTPRequestHandler):
             code, res = run(blob)
             self._send(code, res)
         except Exception as e:
-            self._send(500, {"ok": False, "error": repr(e)})
+            self._send(500, {"ok": False, "server": SERVER_VERSION, "error": repr(e), "path": getattr(e, "filename", None)})
         finally:
             LOCK.release()
 

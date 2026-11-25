@@ -40,7 +40,11 @@ async function buildOnce(env) {
   const state = await env.STATE.get("state.tar.gz");
   const r = await c.fetch(new Request("http://builder/run", { method: "POST", body: state ? await state.arrayBuffer() : null }));
   const res = await r.json().catch(() => ({ ok: false, error: "bad response" }));
-  if (!r.ok || !res.ok) throw new Error(`build failed (${r.status}): ${JSON.stringify(res).slice(0, 2000)}`);
+  if (!r.ok || !res.ok) {
+    // stop it so the next run starts fresh (and on the current image) instead of reusing a broken instance
+    try { await c.stop(); } catch (e) { console.log("container stop failed", String(e)); }
+    throw new Error(`build failed (${r.status}): ${JSON.stringify(res).slice(0, 2000)}`);
+  }
   const bufs = {};
   for (const [name, type] of OUTPUTS) {
     const o = await c.fetch(new Request("http://builder/out/" + name));
