@@ -1,6 +1,8 @@
-// Breach Ledger on Cloudflare: serves the static site, serves data.json/archive.json from R2,
+// Cyber on Cloudflare: serves the static site and JSON from R2,
 // and runs the hourly build in a Container (cron), storing its outputs and caches in R2.
 import { Container, getContainer } from "@cloudflare/containers";
+import { applySecurityHeaders, mergeVary, SITE_ORIGIN } from "./headers.js";
+import { DATA_ROUTES, handleDataRoute } from "./data.js";
 
 export class Builder extends Container {
   defaultPort = 8080;
@@ -9,8 +11,15 @@ export class Builder extends Container {
   sleepAfter = "15m";
 }
 
-const DATA = { "/data.json": "data.json", "/archive.json": "archive.json" };
-const OUTPUTS = [["state.tar.gz", "application/gzip"], ["data.json", "application/json"], ["archive.json", "application/json"]];
+const OUTPUTS = [
+  ["state.tar.gz", "application/gzip"],
+  ["data.json", "application/json"],
+  ["archive.json", "application/json"],
+  // Optional until both the container and the pipeline produce the split. Upload hot last.
+  ["data-details.json", "application/json", true],
+  ["data-history.json", "application/json", true],
+  ["data-hot.json", "application/json", true],
+];
 
 // After a deploy, Cloudflare swaps the Builder's new code in lazily and resets any request in flight at that moment.
 // Retry once in that case; any other failure is reported.
@@ -30,11 +39,26 @@ async function buildOnce(env) {
   const res = await r.json().catch(() => ({ ok: false, error: "bad response" }));
   if (!r.ok || !res.ok) throw new Error(`build failed (${r.status}): ${JSON.stringify(res).slice(0, 2000)}`);
   const bufs = {};
-  for (const [name, type] of OUTPUTS) {
+  const split = [];
+  let splitComplete = true;
+  for (const [name, type, optional] of OUTPUTS) {
     const o = await c.fetch(new Request("http://builder/out/" + name));
+    if (optional && o.status === 404) {
+      splitComplete = false;
+      continue;
+    }
     if (!o.ok) throw new Error(`could not read ${name} from the builder: ${o.status}`);
-    bufs[name] = await o.arrayBuffer();
-    await env.STATE.put(name, bufs[name], { httpMetadata: { contentType: type } });
+    const bytes = await o.arrayBuffer();
+    if (optional) split.push([name, type, bytes]);
+    else {
+      await env.STATE.put(name, bytes, { httpMetadata: { contentType: type } });
+      if (name === "data.json" || name === "archive.json") bufs[name] = bytes;
+    }
+  }
+  if (splitComplete) {
+    for (const [name, type, bytes] of split) {
+      await env.STATE.put(name, bytes, { httpMetadata: { contentType: type } });
+    }
   }
   try { res.search = await syncSearch(env, c); }
   catch (e) { res.search = { error: String(e) }; console.log("search sync failed", String(e)); }  // the data build still counts as done
@@ -122,6 +146,59 @@ async function search(env, q) {
   return out;
 }
 
+async function handleSearch(req, env, ctx, url) {
+  const q = (url.searchParams.get("q") || "").trim().replace(/\s+/g, " ").slice(0, 300);
+  if (q.length < 3) return Response.json({ results: [] });
+  // Identical queries are cached for 5 minutes; new ones are limited per IP (AI Search is metered).
+  const cacheKey = new Request(`${url.origin}/api/search?q=${encodeURIComponent(q.toLowerCase())}`);
+  const cached = await caches.default.match(cacheKey);
+  if (cached) return cached;
+  const ip = req.headers.get("cf-connecting-ip") || "unknown";
+  const { success } = await env.SEARCH_LIMIT.limit({ key: ip });
+  if (!success) return Response.json({ results: [], error: "too many searches, try again in a minute" }, { status: 429 });
+  try {
+    const res = Response.json({ results: await search(env, q) }, { headers: { "cache-control": "public, max-age=300" } });
+    ctx.waitUntil(caches.default.put(cacheKey, res.clone()));
+    return res;
+  } catch (e) {
+    console.log("search failed", String(e));
+    return Response.json({ results: [], error: "search unavailable" }, { status: 502 });
+  }
+}
+
+function prefersMarkdown(accept) {
+  const weights = new Map();
+  for (const range of (accept || "").toLowerCase().split(",")) {
+    const [type, ...params] = range.split(";").map((part) => part.trim());
+    const q = params.map((param) => /^q\s*=\s*(.*)$/.exec(param)).find(Boolean);
+    const weight = q ? Number(q[1]) : 1;
+    if (weight >= 0 && weight <= 1) weights.set(type, Math.max(weights.get(type) ?? 0, weight));
+  }
+  const wildcard = weights.get("text/*") ?? weights.get("*/*") ?? 0;
+  const html = weights.get("text/html") ?? wildcard;
+  const markdown = weights.get("text/markdown") ?? wildcard;
+  return markdown > 0 && (markdown > html || (markdown === html && weights.has("text/markdown") && !weights.has("text/html")));
+}
+
+async function notFound(req, env, url) {
+  const isMd = url.pathname === "/404.md" || prefersMarkdown(req.headers.get("accept"));
+  const isHead = req.method === "HEAD";
+  const asset = (path) => env.ASSETS.fetch(new Request(new URL(path, url), { method: isHead ? "HEAD" : "GET" }));
+  let page = await asset(isMd ? "/404.md" : "/404.html");
+  // With automatic trailing slashes, ASSETS redirects /404.html to /404.
+  if (!isMd && page.status === 307) page = await asset("/404");
+  // The templates may not exist yet during rollout. Return a useful 404 either way.
+  const fallback = isMd ? "# Not found\n\n[Return to Cyber](/)\n" :
+    '<!doctype html><html lang="en"><meta charset="utf-8"><title>Not found | Cyber</title><h1>Not found</h1><p><a href="/">Return to Cyber</a></p></html>';
+  return applySecurityHeaders(new Response(isHead ? null : (page.ok ? page.body : fallback), {
+    status: 404,
+    headers: {
+      "Content-Type": isMd ? "text/markdown; charset=utf-8" : "text/html; charset=utf-8",
+      Vary: mergeVary(page.ok ? page.headers.get("Vary") : null, "Accept"),
+    },
+  }), { isHtml: !isMd, noindex: true });
+}
+
 // ---- Analytics: no cookies, no stored IPs. Page loads are counted here (works with VPNs and ad blockers);
 // the page sends a few named events to /e on our own domain. Both go to Analytics Engine and, if POSTHOG_KEY is set,
 // to PostHog EU (project "cyber").
@@ -173,7 +250,22 @@ async function track(env, ctx, req, event, props = {}, distinctId = null) {
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
-    if (url.pathname === "/e" && req.method === "POST") {
+    const { pathname } = url;
+    if (pathname === "/index.html" || pathname === "/index" || pathname === "/index/") {
+      return applySecurityHeaders(Response.redirect(`${SITE_ORIGIN}/`, 301));
+    }
+    if (pathname === "/") {
+      // Count page loads server-side (the HTML document, not assets).
+      if (req.method === "GET" && (req.headers.get("sec-fetch-dest") || "document") === "document") {
+        ctx.waitUntil(track(env, ctx, req, "pageload"));
+      }
+      return applySecurityHeaders(await env.ASSETS.fetch(req), { isHtml: true, isRoot: true });
+    }
+    if (Object.hasOwn(DATA_ROUTES, pathname)) return handleDataRoute(req, env, pathname);
+    if (pathname === "/api/search") {
+      return applySecurityHeaders(await handleSearch(req, env, ctx, url), { noindex: true });
+    }
+    if (pathname === "/e" && req.method === "POST") {
       const ip = req.headers.get("cf-connecting-ip") || "unknown";
       const { success } = await env.EVENT_LIMIT.limit({ key: ip });
       if (!success) return new Response(null, { status: 204 });
@@ -187,39 +279,15 @@ export default {
       } catch {}
       return new Response(null, { status: 204 });
     }
-    // count page loads server-side (the HTML document, not assets)
-    if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html") && (req.headers.get("sec-fetch-dest") || "document") === "document") {
-      ctx.waitUntil(track(env, ctx, req, "pageload"));
-    }
-    const key = DATA[url.pathname];
-    if (key) {
-      const o = await env.STATE.get(key);
-      if (!o) return new Response("Not built yet", { status: 503 });
-      return new Response(o.body, { headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-cache", etag: o.httpEtag } });
-    }
-    if (url.pathname === "/api/search") {
-      const q = (url.searchParams.get("q") || "").trim().replace(/\s+/g, " ").slice(0, 300);
-      if (q.length < 3) return Response.json({ results: [] });
-      // identical queries are served from the edge cache for 5 minutes; new ones are limited per IP (AI Search is metered)
-      const cacheKey = new Request(`${url.origin}/api/search?q=${encodeURIComponent(q.toLowerCase())}`);
-      const cached = await caches.default.match(cacheKey);
-      if (cached) return cached;
-      const ip = req.headers.get("cf-connecting-ip") || "unknown";
-      const { success } = await env.SEARCH_LIMIT.limit({ key: ip });
-      if (!success) return Response.json({ results: [], error: "too many searches, try again in a minute" }, { status: 429 });
-      try {
-        const res = Response.json({ results: await search(env, q) }, { headers: { "cache-control": "public, max-age=300" } });
-        ctx.waitUntil(caches.default.put(cacheKey, res.clone()));
-        return res;
-      } catch (e) { console.log("search failed", String(e)); return Response.json({ results: [], error: "search unavailable" }, { status: 502 }); }
-    }
     // Manual run (first deploy, or to refresh now). Waits for the build, so the caller sees the result.
-    if (url.pathname === "/__build") {
+    if (pathname === "/__build") {
       if (req.method !== "POST" || !env.BUILD_TOKEN || req.headers.get("authorization") !== `Bearer ${env.BUILD_TOKEN}`) return new Response("Forbidden", { status: 403 });
       try { return Response.json(await runBuild(env)); }
       catch (e) { return Response.json({ ok: false, error: String(e) }, { status: 500 }); }
     }
-    return env.ASSETS.fetch(req);
+    if (["/404", "/404/", "/404.html", "/404.md"].includes(pathname)) return notFound(req, env, url);
+    const asset = await env.ASSETS.fetch(req);
+    return asset.status === 404 ? notFound(req, env, url) : asset;
   },
   async scheduled(event, env, ctx) {
     ctx.waitUntil(runBuild(env));

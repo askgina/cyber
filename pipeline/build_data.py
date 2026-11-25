@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Hourly data build for The Breach Ledger. Writes site/data.json."""
+"""Hourly data build for The Breach Ledger. Writes the monolith and split payloads."""
 import json, re, time, html, urllib.request, urllib.parse, datetime as dt, os, sys
 from xml.etree import ElementTree as ET
 from collections import Counter
+import split_data
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "site", "data.json")
@@ -580,5 +581,8 @@ def _gather(o, key=None, acc=None):
 translate.prefetch(_gather(data, None, []))
 data = _english(data)
 translate.save()
-json.dump(data, open(OUT, "w"), indent=1)
+with open(OUT + ".tmp", "w", encoding="utf-8") as f:
+    json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
+os.replace(OUT + ".tmp", OUT)
+split_data.write_split_files(data, os.path.join(ROOT, "site"))
 print("ok", {k: (len(v["items"]) if isinstance(v, dict) and "items" in v else None) for k, v in data.items()}, "news", len(news), "errors", errors)

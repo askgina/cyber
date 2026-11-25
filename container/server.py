@@ -4,7 +4,7 @@
 POST /run      body: state.tar.gz from R2 (caches from the previous run; may be empty on the first run).
                Downloads the latest code and curated data from GitHub main, restores the caches over it,
                runs pipeline/build_data.py, then packs the outputs.
-GET  /out/NAME data.json, archive.json or state.tar.gz from the last successful run.
+GET  /out/NAME JSON data (full, split, or archive) or state.tar.gz from the last successful run.
 """
 import io, json, os, shutil, subprocess, tarfile, threading, time, urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -17,7 +17,9 @@ STATE = ["pipeline/victims_cache.json", "pipeline/ransom_monthly.json", "pipelin
          "pipeline/first_seen.json", "pipeline/translate_cache.json", "pipeline/triage_queue.json",
          "pipeline/archive_cache", "site/data.json", "site/archive.json"]
 LOCK = threading.Lock()
-SERVER_VERSION = "2026-11-25.1 search-docs"  # bump on changes; the build response reports it
+SERVER_VERSION = "2026-11-25.2 split-payload"  # bump on changes; the build response reports it
+SPLIT_OUTPUTS = ("data-hot.json", "data-details.json", "data-history.json")
+DATA_OUTPUTS = ("data.json", "archive.json") + SPLIT_OUTPUTS
 
 
 def fetch_repo(dest):
@@ -53,8 +55,10 @@ def pack_outputs(repo):
         for p in STATE:
             if os.path.exists(os.path.join(repo, p)):
                 t.add(os.path.join(repo, p), arcname=p)
-    for name in ("data.json", "archive.json"):
-        shutil.copy(os.path.join(repo, "site", name), os.path.join(OUT, name))
+    for name in DATA_OUTPUTS:
+        path = os.path.join(repo, "site", name)
+        if name not in SPLIT_OUTPUTS or os.path.isfile(path):
+            shutil.copy(path, os.path.join(OUT, name))
     # AI Search documents (one file per type per day) and their manifest; the Worker uploads only changed ones
     if os.path.isdir(os.path.join(repo, "search_docs")):
         shutil.copytree(os.path.join(repo, "search_docs"), os.path.join(OUT, "search"))
@@ -112,12 +116,14 @@ class H(BaseHTTPRequestHandler):
             LOCK.release()
 
     def do_GET(self):
-        name = self.path.removeprefix("/out/")
         if self.path == "/health":
             return self._send(200, {"ok": True})
+        if not self.path.startswith("/out/"):
+            return self._send(404, {"error": "not found"})
+        name = self.path.removeprefix("/out/")
         if name == "search/manifest.json" and os.path.exists(os.path.join(OUT, name)):
             return self._send(200, open(os.path.join(OUT, name), "rb").read())
-        if name not in ("data.json", "archive.json", "state.tar.gz") or not os.path.exists(os.path.join(OUT, name)):
+        if name not in DATA_OUTPUTS + ("state.tar.gz",) or not os.path.exists(os.path.join(OUT, name)):
             return self._send(404, {"error": "not found"})
         ctype = "application/gzip" if name.endswith(".gz") else "application/json"
         self._send(200, open(os.path.join(OUT, name), "rb").read(), ctype)

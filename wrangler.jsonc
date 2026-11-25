@@ -2,24 +2,31 @@
   "name": "breach-ledger",
   "main": "worker/index.js",
   "compatibility_date": "2026-11-23",
+  "workers_dev": false,
+  "preview_urls": false,
   "observability": {
     "enabled": true
   },
-  // Public address. Cloudflare manages the DNS record and certificate; the workers.dev URL keeps working.
+  // Public address. Cloudflare manages the DNS record and certificate.
   "routes": [
     { "pattern": "cyber.askgina.ai", "custom_domain": true }
   ],
-  // Static site; data.json/archive.json and the manual build endpoint go through the Worker.
+  // Keep static assets asset-first, except for routes owned by the Worker.
   "assets": {
     "directory": "site",
     "binding": "ASSETS",
-    "run_worker_first": ["/", "/index.html", "/e", "/data.json", "/archive.json", "/__build", "/api/search"]
+    "run_worker_first": [
+      "/", "/index.html", "/index", "/index/",
+      "/404", "/404/", "/404.html", "/404.md",
+      "/data.json", "/data-hot.json", "/data-details.json", "/data-history.json", "/archive.json",
+      "/e", "/__build", "/api/search"
+    ]
   },
   // Hourly build at :07, run in the Builder container.
   "triggers": {
     "crons": ["7 * * * *"]
   },
-  // Build outputs (data.json, archive.json) and caches (state.tar.gz); AI Search documents (one file per type per day).
+  // JSON build outputs and caches (state.tar.gz); AI Search documents (one file per type per day).
   "r2_buckets": [
     { "binding": "STATE", "bucket_name": "breach-ledger-state" },
     { "binding": "SEARCH_DOCS", "bucket_name": "breach-ledger-ai-search" }

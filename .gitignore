@@ -8,3 +8,7 @@ pipeline/__pycache__/
 !.env.example
 node_modules/
 search_docs/
+pages/
+site/data-hot.json
+site/data-details.json
+site/data-history.json
