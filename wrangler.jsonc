@@ -55,7 +55,8 @@
   // standard-1 (1/2 vCPU): "basic" took ~9 min per build, too close to the 15-min cron limit.
   "containers": [
     // rollout_active_grace_period: a deploy waits up to 15 min for a running build before replacing the container.
-    { "class_name": "Builder", "image": "./container/Dockerfile", "max_instances": 1, "instance_type": "standard-1", "rollout_active_grace_period": 900 }
+    // max_instances 2: a renamed instance (hourly-vN) can start while an old one is still idling out.
+    { "class_name": "Builder", "image": "./container/Dockerfile", "max_instances": 2, "instance_type": "standard-1", "rollout_active_grace_period": 900 }
   ],
   "durable_objects": {
     "bindings": [{ "name": "BUILDER", "class_name": "Builder" }],
