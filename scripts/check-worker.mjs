@@ -266,11 +266,13 @@ async function main() {
     }, 'R2 unavailable everywhere serves the shell');
   }
 
-  let etag;
+  let etag, modified;
   await run('/data-hot.json', undefined, 200, async (r, name) => {
     type(r, name, MIME.json);
     etag = r.headers.get('etag');
+    modified = r.headers.get('last-modified');
     check.record(`${name} ETag`, /^"[^"\r\n]+"$/.test(etag ?? ''), 'strong quoted ETag', etag);
+    check.record(`${name} Last-Modified`, Number.isFinite(Date.parse(modified ?? '')), 'an HTTP date', modified);
     await parse(r, name, 'JSON data object', (body) => {
       const doc = JSON.parse(body);
       if (!doc || typeof doc !== 'object' || Array.isArray(doc)) throw new Error('not a JSON object');
@@ -281,6 +283,7 @@ async function main() {
     if (!condition) continue;
     await run('/data-hot.json', { headers: { 'If-None-Match': condition } }, 304, async (r, name) => {
       check.equal(`${name} ETag`, r.headers.get('etag'), etag);
+      check.equal(`${name} Last-Modified`, r.headers.get('last-modified'), modified);
       check.equal(`${name} body length`, (await r.arrayBuffer()).byteLength, 0);
     }, `If-None-Match ${condition.startsWith('W/') ? 'weak' : 'strong'}`);
   }
@@ -288,6 +291,7 @@ async function main() {
     type(r, name, MIME.json);
     check.equal(`${name} body length`, (await r.arrayBuffer()).byteLength, 0);
     if (etag) check.equal(`${name} ETag`, r.headers.get('etag'), etag);
+    check.equal(`${name} Last-Modified`, r.headers.get('last-modified'), modified);
   });
   await run('/data-hot.json', { method: 'POST' }, 405, (r, name) => {
     type(r, name, MIME.json);

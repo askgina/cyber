@@ -1,0 +1,49 @@
+name: Build freshness
+
+# The hourly build at :07 publishes data.json, the split payload and the pages manifest. A missed tick keeps
+# the site serving last hour's ledger with no other symptom, and a failure inside the cron only reaches the
+# Worker's logs. This fails the run (a repo notification) when the newest build output is over an hour old.
+on:
+  schedule:
+    - cron: '43 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Read the newest build output's age from the live site
+        shell: bash
+        run: |
+          set -euo pipefail
+          headers=$(mktemp)
+          trap 'rm -f "$headers"' EXIT
+          curl --fail --silent --show-error --connect-timeout 15 --max-time 60 \
+            --head https://cyber.askgina.ai/data-hot.json > "$headers"
+          python3 - "$headers" <<'PY'
+          import datetime
+          import email.utils
+          import sys
+
+          # A tick publishes within ~15 minutes of :07, so a healthy check at :43 sees an output under an
+          # hour old. 70 minutes absorbs a delayed scheduled run and still catches exactly one lost hour.
+          MAX_AGE_MINUTES = 70
+
+          lines = open(sys.argv[1], encoding="utf-8").read().splitlines()
+          stamp = next((line.split(":", 1)[1].strip() for line in lines
+                        if line.lower().startswith("last-modified:")), None)
+          if not stamp:
+              raise SystemExit("no last-modified on /data-hot.json: the Worker change is not deployed, "
+                               "or the build output is unreadable")
+          built = email.utils.parsedate_to_datetime(stamp)
+          age = (datetime.datetime.now(datetime.timezone.utc) - built).total_seconds() / 60
+          print(f"newest build output: {built.isoformat()} ({age:.0f} min old)")
+          if age > MAX_AGE_MINUTES:
+              raise SystemExit(f"stale build: the newest output is {age:.0f} min old "
+                               f"(limit {MAX_AGE_MINUTES}); check the :07 cron and POST builder/run in the "
+                               f"Worker logs")
+          PY

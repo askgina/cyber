@@ -38,7 +38,9 @@ export async function handleDataRoute(req, env, pathname) {
 
   if (head) {
     const etag = head.httpEtag;
-    const headers = { etag, "cache-control": "no-cache" };
+    // last-modified is the build generation that wrote the object: it is how a stale build is detected
+    // externally (see .github/workflows/build-freshness.yml) and how a client ages the ledger.
+    const headers = { etag, "cache-control": "no-cache", "last-modified": head.uploaded.toUTCString() };
     if (etagMatches(req.headers.get("if-none-match"), etag)) {
       return applySecurityHeaders(new Response(null, { status: 304, headers }));
     }
@@ -57,6 +59,7 @@ export async function handleDataRoute(req, env, pathname) {
     if (o) {
       // A build may have updated the object between head() and get(). Use the body's ETag.
       headers.etag = o.httpEtag;
+      headers["last-modified"] = o.uploaded.toUTCString();
       return applySecurityHeaders(new Response(o.body, { headers }));
     }
   }
