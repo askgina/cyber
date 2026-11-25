@@ -29,16 +29,45 @@ async function buildOnce(env) {
   const r = await c.fetch(new Request("http://builder/run", { method: "POST", body: state ? await state.arrayBuffer() : null }));
   const res = await r.json().catch(() => ({ ok: false, error: "bad response" }));
   if (!r.ok || !res.ok) throw new Error(`build failed (${r.status}): ${JSON.stringify(res).slice(0, 2000)}`);
+  const bufs = {};
   for (const [name, type] of OUTPUTS) {
     const o = await c.fetch(new Request("http://builder/out/" + name));
     if (!o.ok) throw new Error(`could not read ${name} from the builder: ${o.status}`);
-    await env.STATE.put(name, await o.arrayBuffer(), { httpMetadata: { contentType: type } });
+    bufs[name] = await o.arrayBuffer();
+    await env.STATE.put(name, bufs[name], { httpMetadata: { contentType: type } });
   }
   try { res.search = await syncSearch(env, c); }
   catch (e) { res.search = { error: String(e) }; console.log("search sync failed", String(e)); }  // the data build still counts as done
+  try { res.stats = await emitStats(env, bufs["data.json"], bufs["archive.json"], res); }
+  catch (e) { console.log("stats failed", String(e)); }
   console.log("build ok", res.generated, `${res.seconds}s`, `restored ${res.restored_files} cache files`, JSON.stringify(res.search));
   try { await c.stop(); } catch (e) { console.log("container stop failed (it idles out after 15m)", String(e)); }  // don't pay for idle time
   return res;
+}
+
+// Headline numbers of the ledger, sent to PostHog after every build (event "ledger_stats") for the Impact dashboard.
+async function emitStats(env, dataBuf, archiveBuf, res) {
+  if (!env.POSTHOG_KEY || !dataBuf) return null;
+  const td = new TextDecoder(), D = JSON.parse(td.decode(dataBuf)), W = (D.windows || {}).rows || {};
+  const ytd = (k) => ((W[k] || {}).ytd || {});
+  const A = archiveBuf ? (JSON.parse(td.decode(archiveBuf)).items || []) : [];
+  const countries = new Set();
+  for (const a of A) { const cc = (a.x || "").split(" · ").pop(); if (/^[A-Z]{2}$/.test(cc)) countries.add(cc); }
+  (D.registry || []).forEach((r) => { if (/^[A-Z]{2}$/.test(r.country || "")) countries.add(r.country); });
+  const s = {
+    records_ytd: (W.archive && W.archive.ytd && W.archive.ytd.n) || 0,
+    crypto_hacks_ytd: ytd("crypto").n || 0, crypto_usd_ytd: Math.round(ytd("crypto").usd || 0),
+    ransomware_claims_ytd: ytd("ransomware").n || 0, exploited_vulns_ytd: ytd("kev").n || 0,
+    breaches_ytd: ytd("breach").n || 0, breached_accounts_ytd: ytd("breach").acc || 0,
+    curated_incidents_ytd: ytd("incidents").n || 0, official_notices_ytd: ytd("notices").n || 0,
+    countries_affected: countries.size,
+    news_outlets_indexed: new Set((D.news || []).map((n) => n.source)).size, news_stories_indexed: (D.news || []).length,
+    x_signals: (D.x || []).length, x_posts_analysed: (D.x || []).reduce((t, x) => t + ((x.posts || []).length), 0),
+    searchable_documents: (res.search && res.search.files) || 0, build_seconds: res.seconds || 0,
+  };
+  await fetch("https://eu.i.posthog.com/i/v0/e/", { method: "POST", headers: { "content-type": "application/json" },
+    body: JSON.stringify({ api_key: env.POSTHOG_KEY, event: "ledger_stats", properties: { distinct_id: "cyber-ledger", app: "cyber", $process_person_profile: false, ...s } }) });
+  return s;
 }
 
 // AI Search: upload only search documents whose content changed, delete ones that no longer exist,
