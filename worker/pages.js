@@ -3,6 +3,7 @@ import { documentHeaders, MARKDOWN, markdownTokens } from "./negotiate.js";
 import { INCIDENT_ROUTE, isCoreDocumentRoute, PRERENDERED_ASSETS } from "./routes.js";
 
 const MANIFEST_KEY = "pages-manifest.json";
+const BUNDLES = 3; // Bundle downloads in flight while their objects upload.
 const TTL_MS = 60_000;
 const HTML = "text/html; charset=utf-8";
 const DOCUMENT_CACHE = "public, max-age=0, must-revalidate";
@@ -84,17 +85,19 @@ export async function syncPages(env, c) {
   const changed = [...desired.keys()].filter((key) => stored.get(key)?.sha !== desired.get(key).sha);
   const stale = [...new Set([...published.keys(), ...listed.keys()])].filter((key) => !desired.has(key));
 
-  for (let i = 0; i < changed.length; i += 100) {
-    const keys = changed.slice(i, i + 100);
-    const bundle = await c.fetch(new Request("http://builder/out/pages/bundle", {
-      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(keys),
-    }));
-    if (!bundle.ok) throw new Error(`could not read pages bundle: ${bundle.status}`);
-    const files = await bundle.json();
-    // The builder omits missing keys. Never publish a manifest with an incomplete bundle.
-    for (const key of keys) {
-      if (!files || !Object.hasOwn(files, key) || typeof files[key] !== "string") {
-        throw new Error(`missing pages bundle object: ${key}`);
+  // Batch order follows the manifest, so an interrupted run resumes where it stopped.
+  const batches = [];
+  for (let i = 0; i < changed.length; i += 100) batches.push(changed.slice(i, i + 100));
+  let next = 0;
+  let failure;
+
+  async function drain() {
+    while (!failure && next < batches.length) {
+      try {
+        await uploadBatch(batches[next++]);
+      } catch (error) {
+        // Stop starting new batches; the lanes already in flight finish what they hold.
+        failure ??= error;
       }
     }
   }
@@ -126,6 +129,7 @@ export async function syncPages(env, c) {
   // A full sync has thousands of objects to move and a build only gets a few minutes for
   // it, so overlap bundle downloads with uploads instead of paying each round trip in turn.
   await Promise.all(Array.from({ length: Math.min(BUNDLES, batches.length) }, drain));
+  if (failure) throw failure;
 
   // Leave the current manifest untouched until every referenced upload has succeeded.
   await env.STATE.put(MANIFEST_KEY, JSON.stringify(manifest), { httpMetadata: { contentType: "application/json" } });
