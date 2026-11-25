@@ -45,6 +45,30 @@ async function readManifest(env) {
   }
 }
 
+// Each uploaded object records its manifest sha, and R2 lists them cheaply. A sync that is
+// cut off part-way (a full one takes minutes) therefore resumes instead of re-uploading
+// thousands of objects for a manifest that has not been published yet.
+async function storedObjects(env) {
+  const stored = new Map();
+  let cursor;
+  try {
+    do {
+      const page = await env.STATE.list({ prefix: "pages/", cursor, include: ["customMetadata"] });
+      for (const object of page.objects) {
+        // An object without a recorded sha (uploaded before this bookkeeping) must be
+        // uploaded again, and is still tracked so a dropped route can be deleted.
+        const sha = object.customMetadata?.sha;
+        stored.set(object.key.slice("pages/".length), sha ? { sha } : {});
+      }
+      cursor = page.truncated ? page.cursor : undefined;
+    } while (cursor);
+  } catch (e) {
+    console.error("pages listing failed", String(e));
+    return new Map();
+  }
+  return stored;
+}
+
 export async function syncPages(env, c) {
   const result = await c.fetch(new Request("http://builder/out/pages/manifest.json"));
   if (!result.ok) return { skipped: "no pages manifest" };
@@ -53,9 +77,12 @@ export async function syncPages(env, c) {
     throw new Error("invalid pages manifest");
   }
   const desired = pageObjects(manifest);
-  const prev = pageObjects(await readManifest(env));
-  const changed = [...desired.keys()].filter((key) => prev.get(key)?.sha !== desired.get(key).sha);
-  const stale = [...prev.keys()].filter((key) => !desired.has(key));
+  const published = pageObjects(await readManifest(env));
+  const listed = await storedObjects(env);
+  // Objects a previous, interrupted run already stored count as done. Published entries win.
+  const stored = new Map([...listed, ...published]);
+  const changed = [...desired.keys()].filter((key) => stored.get(key)?.sha !== desired.get(key).sha);
+  const stale = [...new Set([...published.keys(), ...listed.keys()])].filter((key) => !desired.has(key));
 
   for (let i = 0; i < changed.length; i += 100) {
     const keys = changed.slice(i, i + 100);
@@ -70,9 +97,12 @@ export async function syncPages(env, c) {
         throw new Error(`missing pages bundle object: ${key}`);
       }
     }
-    for (let j = 0; j < keys.length; j += 8) {
-      const uploads = await Promise.allSettled(keys.slice(j, j + 8).map(async (key) => {
-        await env.STATE.put(`pages/${key}`, files[key], { httpMetadata: { contentType: desired.get(key).contentType } });
+    for (let j = 0; j < keys.length; j += 16) {
+      const uploads = await Promise.allSettled(keys.slice(j, j + 16).map(async (key) => {
+        await env.STATE.put(`pages/${key}`, files[key], {
+          httpMetadata: { contentType: desired.get(key).contentType },
+          customMetadata: { sha: desired.get(key).sha },
+        });
       }));
       const failure = uploads.find((upload) => upload.status === "rejected");
       if (failure) throw failure.reason;

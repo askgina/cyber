@@ -117,8 +117,9 @@ export async function runCli(name, main) {
 
 if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
   await runCli('check', async (signal) => {
+    const sync = await runGate('scripts/check-pages-sync.mjs', [], signal);
     const site = await runGate('scripts/check-site.mjs', [], signal);
     const worker = await runLocalGate('scripts/check-worker.mjs', { signal });
-    return site && worker;
+    return sync && site && worker;
   });
 }
