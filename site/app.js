@@ -197,9 +197,25 @@
         el("span", { class: "rs", title: "Text similarity" }, p.score.toFixed(2))))));
       box.append(sec);
     }
-    box.append(el("p", { class: "dask" }, ...breakdownAnchors(title, text, id),
-      " ", el("a", { class: "link", href: R.incidentPath(id) }, "Link to this entry")));
+    box.append(el("p", { class: "dask" }, ...breakdownAnchors(title, text, id), " ", shareButton(id, title)));
     return box;
+  }
+
+  // Share a record: the native share sheet on phones, otherwise copy the link.
+  function shareButton(id, title) {
+    const b = el("button", { type: "button", class: "share" }, "Share");
+    b.addEventListener("click", async () => {
+      const url = R.SITE_ORIGIN + R.incidentPath(id, { includeSearch: false });
+      if (navigator.share && matchMedia("(pointer: coarse)").matches) {
+        try { await navigator.share({ title: title + " — Cyber", url }); } catch (e) { /* closed the sheet */ }
+      } else {
+        try { await navigator.clipboard.writeText(url); b.textContent = "Link copied"; }
+        catch (e) { window.prompt("Copy this link", url); }
+        setTimeout(() => { b.textContent = "Share"; }, 2000);
+      }
+      track("share", { kind: id.split("-")[0] });
+    });
+    return b;
   }
 
   function entry({ id, kind, it, k, t, d, links, ask, ctx, clamp, title, text }) {
@@ -873,7 +889,7 @@
   window.BL = {
     ...window.BL,
     get D() { return D0.generated ? D0 : null; }, get DET() { return DET; }, LABEL, KIND, LIVE, ROLE, STAGES,
-    detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, askAnchors, breakdownAnchors, ASK, xSearch, escape, hoursAgo,
+    detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, askAnchors, breakdownAnchors, shareButton, ASK, xSearch, escape, hoursAgo,
     renderReport, setReportRoute, jumpTo, closeReportEntry, events: () => [...LIVE.extra, ...events(D0)],
     ensureDetails, ensureHistory,
     get detailsLoaded() { return tierReady("details"); }, get historyLoaded() { return tierReady("history"); },

@@ -812,3 +812,6 @@ body > main.b-ib { max-width: 52rem; margin: 0 auto; padding: clamp(1.5rem, 4vmi
   .t-r:focus-visible, .t-tabs button.on, .t-achips button.on { print-color-adjust: exact; }
   .sources a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 0.8em; color: #444; overflow-wrap: anywhere; }
 }
+/* Share a record: outlined like the theme toggle, beside the Ask buttons */
+.share { font: 500 .6875rem var(--mono); text-transform: uppercase; letter-spacing: .04em; color: var(--ink); background: none; border: 1px solid var(--line, var(--smoke)); padding: .15rem .5rem; cursor: pointer; white-space: nowrap; }
+.share:hover, .share:focus-visible { border-color: var(--ink); }
