@@ -99,14 +99,29 @@ async function search(env, q) {
 const BOT = /bot|crawl|spider|slurp|preview|monitor|headless|lighthouse|curl|wget|python|httpclient|go-http|java\//i;
 const EVENTS = new Set(["view", "open_record", "palette_open", "palette_pick", "ask_click", "theme"]);
 function device(ua) { return /mobile|iphone|android/i.test(ua) ? "mobile" : /ipad|tablet/i.test(ua) ? "tablet" : "desktop"; }
-function track(env, ctx, req, event, props = {}, distinctId = null) {
+// Anonymous visitor ids, one per period: HMAC(secret, period key | IP | user agent). Nothing is stored on the device and
+// no IP is kept; ids reset every day/week/month, so uniques can be counted per period but a person cannot be followed
+// across periods. Approximate: visitors sharing an IP and browser (office NAT, VPN exit) count once.
+async function visitorIds(env, req, ua) {
+  if (!env.VISITOR_SECRET) return {};
+  const ip = req.headers.get("cf-connecting-ip") || "";
+  const d = new Date(), day = d.toISOString().slice(0, 10), month = day.slice(0, 7);
+  const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate())); t.setUTCDate(t.getUTCDate() + 4 - (t.getUTCDay() || 7));
+  const week = `${t.getUTCFullYear()}-W${String(Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7)).padStart(2, "0")}`;  // ISO week
+  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(env.VISITOR_SECRET), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
+  const h = async (p) => [...new Uint8Array(await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(`${p}|${ip}|${ua}`)))].slice(0, 12).map((b) => b.toString(16).padStart(2, "0")).join("");
+  return { visitor_day: await h("d" + day), visitor_week: await h("w" + week), visitor_month: await h("m" + month) };
+}
+
+async function track(env, ctx, req, event, props = {}, distinctId = null) {
   const ua = req.headers.get("user-agent") || "";
   if (BOT.test(ua)) return;
   const country = (req.cf && req.cf.country) || "XX";
   let ref = "";
   try { const r = req.headers.get("referer"); if (r) { const h = new URL(r).hostname; if (h !== new URL(req.url).hostname) ref = h; } } catch {}
   const dev = device(ua);
-  env.EVENTS.writeDataPoint({ indexes: [event], blobs: [event, country, ref, dev, String(props.view || props.kind || props.via || "")], doubles: [1, Number(props.qlen) || 0] });
+  const vid = await visitorIds(env, req, ua);
+  env.EVENTS.writeDataPoint({ indexes: [event], blobs: [event, country, ref, dev, String(props.view || props.kind || props.via || ""), vid.visitor_day || "", vid.visitor_week || "", vid.visitor_month || ""], doubles: [1, Number(props.qlen) || 0] });
   if (env.POSTHOG_KEY) {
     const did = distinctId || crypto.randomUUID();
     const host = new URL(req.url).hostname;
@@ -120,7 +135,7 @@ function track(env, ctx, req, event, props = {}, distinctId = null) {
     ctx.waitUntil(fetch("https://eu.i.posthog.com/i/v0/e/", {
       method: "POST", headers: { "content-type": "application/json" },
       body: JSON.stringify({ api_key: env.POSTHOG_KEY, event: isLoad ? "$pageview" : event,
-        properties: { distinct_id: did, ...props, ...web, app: "cyber", $process_person_profile: false, $geoip_disable: true,
+        properties: { distinct_id: did, ...props, ...web, ...vid, app: "cyber", $process_person_profile: false, $geoip_disable: true,
           $geoip_country_code: country, $device_type: dev[0].toUpperCase() + dev.slice(1), $browser: browser, $os: os, country, referrer_host: ref || null } }),
     }).catch(() => {}));
   }
@@ -138,14 +153,14 @@ export default {
         if (EVENTS.has(b.e)) {
           const p = {};
           for (const [k, v] of Object.entries(b.p || {}).slice(0, 8)) if (/^[a-z_]{1,24}$/.test(k) && ["string", "number", "boolean"].includes(typeof v)) p[k] = typeof v === "string" ? v.slice(0, 80) : v;
-          track(env, ctx, req, b.e, p, typeof b.s === "string" ? b.s.slice(0, 40) : null);
+          ctx.waitUntil(track(env, ctx, req, b.e, p, typeof b.s === "string" ? b.s.slice(0, 40) : null));
         }
       } catch {}
       return new Response(null, { status: 204 });
     }
     // count page loads server-side (the HTML document, not assets)
     if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html") && (req.headers.get("sec-fetch-dest") || "document") === "document") {
-      track(env, ctx, req, "pageload");
+      ctx.waitUntil(track(env, ctx, req, "pageload"));
     }
     const key = DATA[url.pathname];
     if (key) {
