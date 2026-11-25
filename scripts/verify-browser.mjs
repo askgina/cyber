@@ -20,20 +20,26 @@ const DRAWER = '#t-insp';
 const DRAWER_TITLE = '#t-ib h2';
 const BASELINE_ID = 'n-9456adfe';
 const COLD_MS = 8000; // Match the baseline's request observation window.
-const USAGE = 'Usage: node scripts/verify-browser.mjs --base-url <http(s)://host>';
+const STATE_MS = 8000; // Local fixtures answer fast; remote runs pass a larger --timeout.
+const USAGE = 'Usage: node scripts/verify-browser.mjs --base-url <http(s)://host> [--timeout <ms>]';
 
 function assert(ok, expected, observed) {
   if (!ok) throw new Error(`expected ${expected}; observed ${observed}`);
 }
 
-function baseURL() {
-  const { values } = parseArgs({ options: { 'base-url': { type: 'string' }, help: { type: 'boolean' } } });
+function options() {
+  const { values } = parseArgs({ options: {
+    'base-url': { type: 'string' }, timeout: { type: 'string' }, help: { type: 'boolean' },
+  } });
   if (values.help) { console.log(USAGE); return; }
   const base = URL.parse(values['base-url'] ?? '');
   if (!base || !['http:', 'https:'].includes(base.protocol) || base.username || base.password || base.href !== `${base.origin}/`) {
     throw new Error(USAGE);
   }
-  return base;
+  // A remote origin needs more than local fixture latency for a multi-MB data load.
+  const timeout = values.timeout === undefined ? STATE_MS : Number(values.timeout);
+  if (!Number.isInteger(timeout) || timeout < 1000 || timeout > 120_000) throw new Error(USAGE);
+  return { base, timeout };
 }
 
 async function observe(context, page, base) {
@@ -193,7 +199,7 @@ async function checkRoute(page, path, token) {
   assert(actual.token === token, `navigation to ${path} without a full reload`, 'new document');
 }
 
-async function main(base) {
+async function main(base, timeout) {
   const browser = await chromium.launch({ executablePath: process.env.CHROME_PATH || undefined, headless: true });
   const rows = [], failures = [];
   console.log(`Browser gate: axe-core ${axe.version}, Chromium ${browser.version()}, ${base.origin}`);
@@ -201,7 +207,7 @@ async function main(base) {
   async function run(profile, label, fn, row) {
     const context = await browser.newContext(profile);
     const page = await context.newPage();
-    page.setDefaultTimeout(8000);
+    page.setDefaultTimeout(timeout);
     page.setDefaultNavigationTimeout(20_000);
     const start = failures.length;
     const fail = (name, message) => failures.push(`${label} — ${name}: ${message}`);
@@ -220,7 +226,7 @@ async function main(base) {
       // Don't close a context while its own beacon or lazy GET is still in
       // flight. Cross-origin data polling does not hold up this check.
       if (monitor) await check('Same-origin requests finish', async () => {
-        const deadline = Date.now() + 8000;
+        const deadline = Date.now() + timeout;
         while (monitor.pending.size && Date.now() < deadline) await delay(50);
         assert(!monitor.pending.size, 'all same-origin requests to finish',
           `still pending: ${[...monitor.pending].map((request) => request.url()).join(', ')}`);
@@ -425,8 +431,8 @@ async function main(base) {
 }
 
 try {
-  const base = baseURL();
-  if (base) await main(base);
+  const config = options();
+  if (config) await main(config.base, config.timeout);
 } catch (error) {
   console.error(`Browser gate: ${error.message}`);
   process.exitCode = 1;

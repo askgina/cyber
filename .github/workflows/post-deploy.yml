@@ -34,4 +34,5 @@ jobs:
         run: npx --no-install playwright-core install --with-deps chromium
       - name: Browser verification
         if: ${{ !cancelled() && steps.chromium.outcome == 'success' }}
-        run: npm run check:browser -- --base-url https://cyber.askgina.ai
+        # A remote origin plus a multi-MB data payload needs more than local fixture latency.
+        run: npm run check:browser -- --base-url https://cyber.askgina.ai --timeout 25000
