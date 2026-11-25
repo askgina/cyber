@@ -1,0 +1,49 @@
+{
+  "entries": [
+    {
+      "identifier": "urn:air:cyber.askgina.ai:ledger:api-catalog",
+      "displayName": "Cyber API catalog",
+      "type": "application/linkset+json",
+      "url": "https://cyber.askgina.ai/.well-known/api-catalog",
+      "description": "Find the public search and snapshot endpoints and their documentation.",
+      "representativeQueries": [
+        "What public APIs does Cyber offer?",
+        "Where can I fetch the archive snapshot?"
+      ]
+    },
+    {
+      "identifier": "urn:air:cyber.askgina.ai:ledger:openapi",
+      "displayName": "Cyber OpenAPI description",
+      "type": "application/json",
+      "url": "https://cyber.askgina.ai/openapi.json",
+      "description": "Read the request parameters, response schemas, and status codes for search and snapshots.",
+      "representativeQueries": [
+        "How do I format a semantic search query?",
+        "What fields does the live snapshot return?"
+      ]
+    },
+    {
+      "identifier": "urn:air:cyber.askgina.ai:ledger:read-cyber",
+      "displayName": "Read Cyber skill",
+      "type": "text/markdown",
+      "url": "https://cyber.askgina.ai/.well-known/agent-skills/read-cyber/SKILL.md",
+      "description": "Find and cite public records without overstating the confidence of a report.",
+      "representativeQueries": [
+        "How do I cite an incident from Cyber?",
+        "Is this record live or archived?",
+        "How should I report an unconfirmed claim?"
+      ]
+    },
+    {
+      "identifier": "urn:air:cyber.askgina.ai:ledger:reading-index",
+      "displayName": "Cyber reading index",
+      "type": "text/markdown",
+      "url": "https://cyber.askgina.ai/llms.txt",
+      "description": "Start here to find Cyber's public records, coverage, and methodology.",
+      "representativeQueries": [
+        "What incidents does Cyber cover?",
+        "Where can I read Cyber's methodology?"
+      ]
+    }
+  ]
+}

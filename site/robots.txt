@@ -1,0 +1,51 @@
+User-agent: *
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+# Explicitly allow these crawlers on public pages while excluding service endpoints.
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+User-agent: Claude-SearchBot
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+User-agent: Claude-User
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/search
+Disallow: /e
+Disallow: /__build
+
+Sitemap: https://cyber.askgina.ai/sitemap.xml
+Schemamap: https://cyber.askgina.ai/schemamap.xml

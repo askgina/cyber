@@ -1,0 +1,31 @@
+{
+  "linkset": [
+    {
+      "anchor": "https://cyber.askgina.ai/.well-known/api-catalog",
+      "item": [
+        { "href": "https://cyber.askgina.ai/api/search", "type": "application/json" },
+        { "href": "https://cyber.askgina.ai/data.json", "type": "application/json" },
+        { "href": "https://cyber.askgina.ai/data-hot.json", "type": "application/json" },
+        { "href": "https://cyber.askgina.ai/archive.json", "type": "application/json" }
+      ],
+      "service-desc": [{ "href": "https://cyber.askgina.ai/openapi.json", "type": "application/json" }],
+      "service-doc": [{ "href": "https://cyber.askgina.ai/llms.txt", "type": "text/markdown" }]
+    },
+    {
+      "anchor": "https://cyber.askgina.ai/api/search",
+      "service-desc": [{ "href": "https://cyber.askgina.ai/openapi.json", "type": "application/json" }]
+    },
+    {
+      "anchor": "https://cyber.askgina.ai/data.json",
+      "service-desc": [{ "href": "https://cyber.askgina.ai/openapi.json", "type": "application/json" }]
+    },
+    {
+      "anchor": "https://cyber.askgina.ai/data-hot.json",
+      "service-desc": [{ "href": "https://cyber.askgina.ai/openapi.json", "type": "application/json" }]
+    },
+    {
+      "anchor": "https://cyber.askgina.ai/archive.json",
+      "service-desc": [{ "href": "https://cyber.askgina.ai/openapi.json", "type": "application/json" }]
+    }
+  ]
+}

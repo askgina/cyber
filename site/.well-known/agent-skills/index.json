@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "read-cyber",
+      "type": "skill-md",
+      "description": "Use when you need to find, verify, or cite a public cyber incident, disclosure, or archived record in Cyber.",
+      "url": "https://cyber.askgina.ai/.well-known/agent-skills/read-cyber/SKILL.md",
+      "digest": "sha256:7e2a0084ce15d3dc146c036e0c16bb9a96caa41bddedc6509c56be7ec76b88d4"
+    }
+  ]
+}

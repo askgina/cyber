@@ -1,6 +1,13 @@
-// Breach Ledger on Cloudflare: serves the static site, serves data.json/archive.json from R2,
+// Cyber on Cloudflare: serves the static site and JSON from R2,
 // and runs the hourly build in a Container (cron), storing its outputs and caches in R2.
 import { Container, getContainer } from "@cloudflare/containers";
+import { applySecurityHeaders, SITE_ORIGIN } from "./headers.js";
+import { DATA_ROUTES, handleDataRoute } from "./data.js";
+import { AI_AGENT_UA, isRegisteredDocumentRoute, LLMS_ROUTES, markdownDocumentPath, normalizePath, PRERENDERED_ASSETS } from "./routes.js";
+import { serveDocumentRoute, servePrerenderedAsset, syncPages } from "./pages.js";
+import { documentHeaders, MARKDOWN, markdownTokens, prefersMarkdown } from "./negotiate.js";
+import { handleSearch } from "./search.js";
+import { EVENTS, track, trackAgentFetch, trackHumanPageview } from "./analytics.js";
 
 export class Builder extends Container {
   defaultPort = 8080;
@@ -9,8 +16,13 @@ export class Builder extends Container {
   sleepAfter = "15m";
 }
 
-const DATA = { "/data.json": "data.json", "/archive.json": "archive.json" };
-const OUTPUTS = [["state.tar.gz", "application/gzip"], ["data.json", "application/json"], ["archive.json", "application/json"]];
+const OUTPUTS = [
+  ["state.tar.gz", "application/gzip"],
+  ["data.json", "application/json"],
+  ["archive.json", "application/json"],
+];
+// Optional as a set. Upload hot last so clients don't start using the new split early.
+const SPLIT_OUTPUTS = ["data-details.json", "data-history.json", "data-hot.json"];
 
 // After a deploy, Cloudflare swaps the Builder's new code in lazily and resets any request in flight at that moment.
 // Retry once in that case; any other failure is reported.
@@ -33,16 +45,39 @@ async function buildOnce(env) {
   for (const [name, type] of OUTPUTS) {
     const o = await c.fetch(new Request("http://builder/out/" + name));
     if (!o.ok) throw new Error(`could not read ${name} from the builder: ${o.status}`);
-    bufs[name] = await o.arrayBuffer();
-    await env.STATE.put(name, bufs[name], { httpMetadata: { contentType: type } });
+    const bytes = await o.arrayBuffer();
+    await env.STATE.put(name, bytes, { httpMetadata: { contentType: type } });
+    if (name === "data.json" || name === "archive.json") bufs[name] = bytes;
   }
+  await syncSplitData(env, c);
   try { res.search = await syncSearch(env, c); }
   catch (e) { res.search = { error: String(e) }; console.log("search sync failed", String(e)); }  // the data build still counts as done
+  try { res.pages = await syncPages(env, c); }
+  catch (e) { res.pages = { error: String(e) }; console.log("pages sync failed", String(e)); }
   try { res.stats = await emitStats(env, bufs["data.json"], bufs["archive.json"], res); }
   catch (e) { console.log("stats failed", String(e)); }
-  console.log("build ok", res.generated, `${res.seconds}s`, `restored ${res.restored_files} cache files`, JSON.stringify(res.search));
+  console.log("build ok", res.generated, `${res.seconds}s`, `restored ${res.restored_files} cache files`, JSON.stringify({ search: res.search, pages: res.pages }));
   try { await c.stop(); } catch (e) { console.log("container stop failed (it idles out after 15m)", String(e)); }  // don't pay for idle time
   return res;
+}
+
+async function syncSplitData(env, c) {
+  try {
+    // Read every part before writing any, including checking that each body can be read.
+    const split = [];
+    for (const name of SPLIT_OUTPUTS) {
+      const response = await c.fetch(new Request("http://builder/out/" + name));
+      if (!response.ok) throw new Error(`could not read ${name} from the builder: ${response.status}`);
+      split.push([name, await response.arrayBuffer()]);
+    }
+    for (const [name, bytes] of split) {
+      await env.STATE.put(name, bytes, { httpMetadata: { contentType: "application/json" } });
+    }
+  } catch (e) {
+    // Remove stale or partially written split data. data.json is already fresh.
+    console.log("split data unavailable; falling back to data.json", String(e));
+    await env.STATE.delete(SPLIT_OUTPUTS);
+  }
 }
 
 // Headline numbers of the ledger, sent to PostHog after every build (event "ledger_stats") for the Impact dashboard.
@@ -101,79 +136,72 @@ async function syncSearch(env, c) {
   return { files: Object.keys(manifest).length, changed: changed.length, removed: stale.length, job };
 }
 
-// Search by meaning over the ledger (⌘K). Returns record headings, so the page can link back to the record.
-async function search(env, q) {
-  const r = await env.AI_SEARCH.search({
-    query: q,
-    ai_search_options: { retrieval: { retrieval_type: "hybrid", max_num_results: 12, keyword_match_mode: "or" }, reranking: { enabled: true } },
-  });
-  const seen = new Set(), out = [];
-  for (const ch of r.chunks || []) {
-    const key = ch.item && ch.item.key || "";
-    const [kind, day] = key.replace(/\.md$/, "").split("/");
-    const heading = ((ch.text || "").match(/^#\s+(.+)$/m) || [])[1];
-    if (!heading || seen.has(heading)) continue;
-    seen.add(heading);
-    const body = (ch.text || "").split(/^#\s+.+$/m)[1] || "";
-    const ref = ((body.match(/^Record:[ \t]*(.+)$/m) || [])[1] || "").trim() || null;
-    out.push({ title: heading.trim(), ref, kind, date: day, score: Math.round((ch.score || 0) * 100) / 100, snippet: body.replace(/^Record:.*$/m, "").replace(/\s+/g, " ").trim().slice(0, 160) });
-    if (out.length >= 8) break;
-  }
-  return out;
+async function notFound(req, env, url, isMd = url.pathname === "/404.md" || (canRead(req) && prefersMarkdown(req))) {
+  const isHead = req.method === "HEAD";
+  const asset = (path) => env.ASSETS.fetch(new Request(new URL(path, url), { method: isHead && !isMd ? "HEAD" : "GET" }));
+  let page = await asset(isMd ? "/404.md" : "/404.html");
+  // ASSETS redirects /404.html to /404 when stripping HTML extensions.
+  if (!isMd && page.status === 307) page = await asset("/404");
+  const fallback = isMd ? "# Not found\n\n[Return to Cyber](/)\n" :
+    '<!doctype html><html lang="en"><meta charset="utf-8"><title>Not found | Cyber</title><h1>Not found</h1><p><a href="/">Return to Cyber</a></p></html>';
+  const body = isMd ? (page.ok ? await page.text() : fallback) : (page.ok ? page.body : fallback);
+  const extraHeaders = documentHeaders(page.headers, "/404", isMd, isMd ? markdownTokens(body) : undefined);
+  return applySecurityHeaders(new Response(isHead ? null : body, {
+    status: 404, headers: { "Content-Type": isMd ? MARKDOWN : "text/html; charset=utf-8" },
+  }), { isHtml: !isMd, noindex: true, extraHeaders });
 }
 
-// ---- Analytics: no cookies, no stored IPs. Page loads are counted here (works with VPNs and ad blockers);
-// the page sends a few named events to /e on our own domain. Both go to Analytics Engine and, if POSTHOG_KEY is set,
-// to PostHog EU (project "cyber").
-const BOT = /bot|crawl|spider|slurp|preview|monitor|headless|lighthouse|curl|wget|python|httpclient|go-http|java\//i;
-const EVENTS = new Set(["view", "open_record", "palette_open", "palette_pick", "ask_click", "theme"]);
-function device(ua) { return /mobile|iphone|android/i.test(ua) ? "mobile" : /ipad|tablet/i.test(ua) ? "tablet" : "desktop"; }
-// Anonymous visitor ids, one per period: HMAC(secret, period key | IP | user agent). Nothing is stored on the device and
-// no IP is kept; ids reset every day/week/month, so uniques can be counted per period but a person cannot be followed
-// across periods. Approximate: visitors sharing an IP and browser (office NAT, VPN exit) count once.
-async function visitorIds(env, req, ua) {
-  if (!env.VISITOR_SECRET) return {};
-  const ip = req.headers.get("cf-connecting-ip") || "";
-  const d = new Date(), day = d.toISOString().slice(0, 10), month = day.slice(0, 7);
-  const t = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), d.getUTCDate())); t.setUTCDate(t.getUTCDate() + 4 - (t.getUTCDay() || 7));
-  const week = `${t.getUTCFullYear()}-W${String(Math.ceil(((t - Date.UTC(t.getUTCFullYear(), 0, 1)) / 864e5 + 1) / 7)).padStart(2, "0")}`;  // ISO week
-  const key = await crypto.subtle.importKey("raw", new TextEncoder().encode(env.VISITOR_SECRET), { name: "HMAC", hash: "SHA-256" }, false, ["sign"]);
-  const h = async (p) => [...new Uint8Array(await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(`${p}|${ip}|${ua}`)))].slice(0, 12).map((b) => b.toString(16).padStart(2, "0")).join("");
-  return { visitor_day: await h("d" + day), visitor_week: await h("w" + week), visitor_month: await h("m" + month) };
+function canRead(req) {
+  return req.method === "GET" || req.method === "HEAD";
 }
 
-async function track(env, ctx, req, event, props = {}, distinctId = null) {
-  const ua = req.headers.get("user-agent") || "";
-  if (BOT.test(ua)) return;
-  const country = (req.cf && req.cf.country) || "XX";
-  let ref = "";
-  try { const r = req.headers.get("referer"); if (r) { const h = new URL(r).hostname; if (h !== new URL(req.url).hostname) ref = h; } } catch {}
-  const dev = device(ua);
-  const vid = await visitorIds(env, req, ua);
-  env.EVENTS.writeDataPoint({ indexes: [event], blobs: [event, country, ref, dev, String(props.view || props.kind || props.via || ""), vid.visitor_day || "", vid.visitor_week || "", vid.visitor_month || ""], doubles: [1, Number(props.qlen) || 0] });
-  if (env.POSTHOG_KEY) {
-    const did = distinctId || crypto.randomUUID();
-    const host = new URL(req.url).hostname;
-    const browser = /edg\//i.test(ua) ? "Edge" : /firefox\//i.test(ua) ? "Firefox" : /chrome\//i.test(ua) ? "Chrome" : /safari\//i.test(ua) ? "Safari" : "Other";
-    const os = /iphone|ipad|ios/i.test(ua) ? "iOS" : /android/i.test(ua) ? "Android" : /mac os/i.test(ua) ? "Mac OS X" : /windows/i.test(ua) ? "Windows" : /linux/i.test(ua) ? "Linux" : "Other";
-    // Real page loads (counted on the server) become PostHog pageviews, so its built-in Web analytics charts work.
-    // View changes inside the app stay as the separate "view" event, so they don't inflate pageviews.
-    const isLoad = event === "pageload";
-    const web = isLoad ? { $current_url: `https://${host}/`, $pathname: "/", $host: host,
-      $referring_domain: ref || "$direct", $referrer: ref ? "https://" + ref + "/" : "$direct" } : {};
-    ctx.waitUntil(fetch("https://eu.i.posthog.com/i/v0/e/", {
-      method: "POST", headers: { "content-type": "application/json" },
-      body: JSON.stringify({ api_key: env.POSTHOG_KEY, event: isLoad ? "$pageview" : event,
-        properties: { distinct_id: did, ...props, ...web, ...vid, app: "cyber", $process_person_profile: false, $geoip_disable: true,
-          $geoip_country_code: country, $device_type: dev[0].toUpperCase() + dev.slice(1), $browser: browser, $os: os, country, referrer_host: ref || null } }),
-    }).catch(() => {}));
+function methodNotAllowed() {
+  return applySecurityHeaders(new Response("Method Not Allowed", { status: 405, headers: { Allow: "GET, HEAD" } }));
+}
+
+async function handleDocument(req, env, ctx, url, companion) {
+  const target = new URL(url);
+  if (companion) target.pathname = companion;
+  const pathname = target.pathname;
+  const wantMarkdown = Boolean(companion) || prefersMarkdown(req);
+  const result = await serveDocumentRoute(req, env, target, { wantMarkdown });
+  if (!result.matched) return notFound(req, env, url, wantMarkdown);
+  const { response, status } = result;
+  if (status < 500 && (wantMarkdown || AI_AGENT_UA.test(req.headers.get("User-Agent") || ""))) {
+    trackAgentFetch(env, ctx, req, pathname, wantMarkdown ? "markdown" : "html");
+  } else if (status === 200 && /^text\/html(?:\s*;|$)/i.test(response.headers.get("Content-Type") || "")) {
+    trackHumanPageview(env, ctx, req, pathname);
   }
+  return response;
 }
 
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
-    if (url.pathname === "/e" && req.method === "POST") {
+    const { pathname } = url;
+    if (Object.hasOwn(PRERENDERED_ASSETS, pathname)) {
+      if (!canRead(req)) return methodNotAllowed();
+      const response = await servePrerenderedAsset(req, env, pathname);
+      if ((response.status === 200 || response.status === 304) && LLMS_ROUTES.has(pathname)) {
+        trackAgentFetch(env, ctx, req, pathname, "llms");
+      }
+      return response;
+    }
+    const normalized = normalizePath(pathname);
+    const registered = isRegisteredDocumentRoute(normalized);
+    const companion = markdownDocumentPath(normalized);
+    if (registered || companion) {
+      if (!canRead(req)) return methodNotAllowed();
+      if (normalized !== pathname) {
+        return applySecurityHeaders(Response.redirect(`${SITE_ORIGIN}${normalized}${url.search}`, 301));
+      }
+      return handleDocument(req, env, ctx, url, companion);
+    }
+    if (Object.hasOwn(DATA_ROUTES, pathname)) return handleDataRoute(req, env, pathname);
+    if (pathname === "/api/search") {
+      return handleSearch(req, env, ctx, url);
+    }
+    if (pathname === "/e" && req.method === "POST") {
       const ip = req.headers.get("cf-connecting-ip") || "unknown";
       const { success } = await env.EVENT_LIMIT.limit({ key: ip });
       if (!success) return new Response(null, { status: 204 });
@@ -182,44 +210,20 @@ export default {
         if (EVENTS.has(b.e)) {
           const p = {};
           for (const [k, v] of Object.entries(b.p || {}).slice(0, 8)) if (/^[a-z_]{1,24}$/.test(k) && ["string", "number", "boolean"].includes(typeof v)) p[k] = typeof v === "string" ? v.slice(0, 80) : v;
-          ctx.waitUntil(track(env, ctx, req, b.e, p, typeof b.s === "string" ? b.s.slice(0, 40) : null));
+          ctx.waitUntil(track(env, req, b.e, p, typeof b.s === "string" ? b.s.slice(0, 40) : null));
         }
       } catch {}
       return new Response(null, { status: 204 });
     }
-    // count page loads server-side (the HTML document, not assets)
-    if (req.method === "GET" && (url.pathname === "/" || url.pathname === "/index.html") && (req.headers.get("sec-fetch-dest") || "document") === "document") {
-      ctx.waitUntil(track(env, ctx, req, "pageload"));
-    }
-    const key = DATA[url.pathname];
-    if (key) {
-      const o = await env.STATE.get(key);
-      if (!o) return new Response("Not built yet", { status: 503 });
-      return new Response(o.body, { headers: { "content-type": "application/json; charset=utf-8", "cache-control": "no-cache", etag: o.httpEtag } });
-    }
-    if (url.pathname === "/api/search") {
-      const q = (url.searchParams.get("q") || "").trim().replace(/\s+/g, " ").slice(0, 300);
-      if (q.length < 3) return Response.json({ results: [] });
-      // identical queries are served from the edge cache for 5 minutes; new ones are limited per IP (AI Search is metered)
-      const cacheKey = new Request(`${url.origin}/api/search?q=${encodeURIComponent(q.toLowerCase())}`);
-      const cached = await caches.default.match(cacheKey);
-      if (cached) return cached;
-      const ip = req.headers.get("cf-connecting-ip") || "unknown";
-      const { success } = await env.SEARCH_LIMIT.limit({ key: ip });
-      if (!success) return Response.json({ results: [], error: "too many searches, try again in a minute" }, { status: 429 });
-      try {
-        const res = Response.json({ results: await search(env, q) }, { headers: { "cache-control": "public, max-age=300" } });
-        ctx.waitUntil(caches.default.put(cacheKey, res.clone()));
-        return res;
-      } catch (e) { console.log("search failed", String(e)); return Response.json({ results: [], error: "search unavailable" }, { status: 502 }); }
-    }
     // Manual run (first deploy, or to refresh now). Waits for the build, so the caller sees the result.
-    if (url.pathname === "/__build") {
+    if (pathname === "/__build") {
       if (req.method !== "POST" || !env.BUILD_TOKEN || req.headers.get("authorization") !== `Bearer ${env.BUILD_TOKEN}`) return new Response("Forbidden", { status: 403 });
       try { return Response.json(await runBuild(env)); }
       catch (e) { return Response.json({ ok: false, error: String(e) }, { status: 500 }); }
     }
-    return env.ASSETS.fetch(req);
+    if (["/404", "/404/", "/404.html", "/404.md"].includes(pathname)) return notFound(req, env, url);
+    const asset = await env.ASSETS.fetch(req);
+    return asset.status === 404 ? notFound(req, env, url) : asset;
   },
   async scheduled(event, env, ctx) {
     ctx.waitUntil(runBuild(env));

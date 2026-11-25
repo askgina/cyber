@@ -1,4 +1,7 @@
 # Served from R2 by the Worker (written by the hourly build), not uploaded as static assets.
 data.json
+data-hot.json
+data-details.json
+data-history.json
 archive.json
 .assetsignore

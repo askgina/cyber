@@ -1,0 +1,22 @@
+# Cyber patterns
+
+> Defined pattern tags and their source-linked records.
+
+Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. License: CC BY 4.0.
+
+## Patterns
+
+- [AI systems and agents](https://cyber.askgina.ai/patterns/ai.md)
+- [Bridges and cross-chain](https://cyber.askgina.ai/patterns/bridge.md)
+- [Data exposure and theft](https://cyber.askgina.ai/patterns/data-exposure.md)
+- [Disruption and outages](https://cyber.askgina.ai/patterns/outage.md)
+- [Edge and perimeter devices](https://cyber.askgina.ai/patterns/edge-device.md)
+- [Enterprise platform zero-days](https://cyber.askgina.ai/patterns/enterprise-platform.md)
+- [Injection and code execution](https://cyber.askgina.ai/patterns/injection-rce.md)
+- [Key and credential compromise](https://cyber.askgina.ai/patterns/key-compromise.md)
+- [Memory corruption](https://cyber.askgina.ai/patterns/memory.md)
+- [Phishing and social engineering](https://cyber.askgina.ai/patterns/phishing.md)
+- [Ransomware and extortion](https://cyber.askgina.ai/patterns/ransomware.md)
+- [Smart contract logic flaws](https://cyber.askgina.ai/patterns/contract-logic.md)
+- [State-linked activity](https://cyber.askgina.ai/patterns/state-linked.md)
+- [Supply chain and third parties](https://cyber.askgina.ai/patterns/supply-chain.md)

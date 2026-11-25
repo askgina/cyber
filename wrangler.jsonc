@@ -2,24 +2,37 @@
   "name": "breach-ledger",
   "main": "worker/index.js",
   "compatibility_date": "2026-11-23",
+  "workers_dev": false,
+  "preview_urls": false,
   "observability": {
     "enabled": true
   },
-  // Public address. Cloudflare manages the DNS record and certificate; the workers.dev URL keeps working.
+  // Public address. Cloudflare manages the DNS record and certificate.
   "routes": [
     { "pattern": "cyber.askgina.ai", "custom_domain": true }
   ],
-  // Static site; data.json/archive.json and the manual build endpoint go through the Worker.
+  // Keep static assets asset-first, except for routes owned by the Worker.
   "assets": {
     "directory": "site",
     "binding": "ASSETS",
-    "run_worker_first": ["/", "/index.html", "/e", "/data.json", "/archive.json", "/__build", "/api/search"]
+    "run_worker_first": [
+      "/", "/index.html", "/index.html/", "/index", "/index/",
+      "/leaderboard", "/leaderboard/", "/report", "/report/", "/method", "/method/",
+      // The first two wildcards also cover /incidents/llms.txt and /patterns/llms.txt.
+      "/incidents/*", "/patterns/*", "/daily/*",
+      "/sitemap.xml", "/feed.xml", "/feed.json", "/schemamap.xml",
+      "/llms.txt", "/llms-full.txt", "/method/llms.txt",
+      "/index.md", "/leaderboard.md", "/report.md", "/method.md",
+      "/404", "/404/", "/404.html", "/404.md",
+      "/data.json", "/data-hot.json", "/data-details.json", "/data-history.json", "/archive.json",
+      "/e", "/__build", "/api/search"
+    ]
   },
   // Hourly build at :07, run in the Builder container.
   "triggers": {
     "crons": ["7 * * * *"]
   },
-  // Build outputs (data.json, archive.json) and caches (state.tar.gz); AI Search documents (one file per type per day).
+  // JSON build outputs and caches (state.tar.gz); AI Search documents (one file per type per day).
   "r2_buckets": [
     { "binding": "STATE", "bucket_name": "breach-ledger-state" },
     { "binding": "SEARCH_DOCS", "bucket_name": "breach-ledger-ai-search" }
@@ -28,9 +41,10 @@
   "ai_search": [
     { "binding": "AI_SEARCH", "instance_name": "breach-ledger" }
   ],
-  // /api/search: 20 new (uncached) searches per minute per IP. /e (analytics events): 120 per minute per IP.
+  // Per IP per minute: 60 search requests, of which at most 10 may be cache misses; 120 analytics events.
   "ratelimits": [
-    { "name": "SEARCH_LIMIT", "namespace_id": "1001", "simple": { "limit": 20, "period": 60 } },
+    { "name": "SEARCH_LIMIT", "namespace_id": "1001", "simple": { "limit": 10, "period": 60 } },
+    { "name": "SEARCH_REQ_LIMIT", "namespace_id": "1003", "simple": { "limit": 60, "period": 60 } },
     { "name": "EVENT_LIMIT", "namespace_id": "1002", "simple": { "limit": 120, "period": 60 } }
   ],
   // Page loads and events (cookieless), queryable with the Analytics Engine SQL API.

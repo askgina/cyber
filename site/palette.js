@@ -3,6 +3,7 @@
 (() => {
   "use strict";
   const B = window.BL || (window.BL = {});
+  const R = window.BLRoutes;
   const dlg = document.getElementById("pal");
   const input = document.getElementById("pal-q");
   const list = document.getElementById("pal-list");
@@ -11,12 +12,12 @@
   const KIND = { news: "News", crypto: "Crypto", kev: "Exploited CVE", x: "X signal", inc: "Incident", breach: "Breach" };
   const SECTIONS = [["glance", "Today"], ["live", "Live"], ["patterns", "Attack patterns"], ["crypto", "Crypto exploits"],
     ["ransomware", "Ransomware claims"], ["breaches", "Data breaches"], ["exploited", "Exploited vulnerabilities"], ["method", "Method"]];
-  const go = (hash) => () => { location.hash = hash; };
+  const go = (path) => () => R.navigate(path);
   const COMMANDS = [
-    { label: "Leaderboard", hint: "View", run: go("#leaderboard") },
-    { label: "Terminal", hint: "View", run: go("#terminal") },
-    { label: "Report", hint: "View", run: go("#report") },
-    ...SECTIONS.map(([id, label]) => ({ label: `Report: ${label}`, hint: "Section", run: go("#" + id) })),
+    { label: "Leaderboard", hint: "View", run: go("/leaderboard") },
+    { label: "Terminal", hint: "View", run: go("/") },
+    { label: "Report", hint: "View", run: go("/report") },
+    ...SECTIONS.map(([id, label]) => ({ label: `Report: ${label}`, hint: "Section", run: go(id === "method" ? "/method" : "/report#" + id) })),
     { label: "Switch to dark mode", alt: "Switch to light mode", hint: "Theme", run: () => document.querySelector(".t-theme")?.click() },
     { label: "Refresh data now", hint: "Data", run: () => B.pollAll && B.pollAll() },
   ];
@@ -42,7 +43,7 @@
     // incident title matches first, then newest
     found.sort((a, b) => (hit(b.e.title, ws) - hit(a.e.title, ws)) || String(b.e.date || "").localeCompare(String(a.e.date || "")));
     const recs = found.slice(0, 12).map(({ id, e }) => ({
-      id, label: e.title, hint: KIND[e.kind] || e.kind, sub: String(e.date || "").slice(0, 10), run: go("#e-" + id),
+      id, label: e.title, hint: KIND[e.kind] || e.kind, sub: String(e.date || "").slice(0, 10), run: () => R.navigate(R.incidentPath(id)),
     }));
     // results by meaning (AI Search), loaded after the instant word matches; skip records already listed
     const listed = new Set(recs.map((r) => r.id));
@@ -54,18 +55,26 @@
     return [...cmds.slice(0, 4), ...recs, ...sem, ...asks];
   }
 
-  // ---- search by meaning: /api/search (Cloudflare AI Search) returns record headings; map them back to records
+  // ---- search by meaning: prefer the published document over the snapshot lookup
   const SEM = { q: "", rows: [] };
   const SEMKIND = { incident: "Incident", crypto: "Crypto", kev: "Exploited CVE", breach: "Breach", notice: "Notice", sec: "SEC 8-K", "x-signal": "X signal", news: "News" };
-  // Open a search hit: ids are page record ids (#e-<id>); "a:<type>|<date>|<name>" refs and incidents older than the
+  function publishedRecord(value) {
+    if (typeof value !== "string" || !value.startsWith(R.SITE_ORIGIN)) return null;
+    const path = value.slice(R.SITE_ORIGIN.length);
+    if (!/^\/incidents\/[a-z0-9][a-z0-9._-]{0,120}$/i.test(path)) return null;
+    const route = R.parseLocation(path);
+    return route?.incidentId ? route : null;
+  }
+  // Open a search hit: archive refs and incidents older than the
   // live data are resolved after the archive loads.
   async function openRecord(ref) {
     if (!ref) return;
     const ix = () => (B.index ? B.index() : {});
-    if (!ref.startsWith("a:") && ix()[ref]) { location.hash = "#e-" + ref; return; }
+    if (Object.hasOwn(ix(), ref)) return R.navigate(R.incidentPath(ref));
+    const from = location.href;
     if (B.loadArchive) await B.loadArchive();
-    const id = ref.startsWith("a:") ? (B.arcId && B.arcId(ref)) : (ix()[ref] ? ref : null);
-    if (id) location.hash = "#e-" + id;
+    const id = ref.startsWith("a:") ? B.arcId?.(ref) : Object.hasOwn(ix(), ref) ? ref : null;
+    if (id && location.href === from) R.navigate(R.incidentPath(id));
   }
   let semTimer, semCtl;
   function semSearch(q) {
@@ -76,10 +85,16 @@
       semCtl = new AbortController();
       try {
         const r = await fetch("/api/search?q=" + encodeURIComponent(q), { signal: semCtl.signal });
-        const j = await r.json();
+        const j = r.ok ? await r.json() : { results: [] };
         if (input.value.trim() !== q) return;
         SEM.q = q;
-        SEM.rows = (j.results || []).filter((x) => x.ref).map((x) => ({ id: x.ref, label: x.title, hint: "By meaning · " + (SEMKIND[x.kind] || x.kind), sub: x.date, run: () => openRecord(x.ref) }));
+        SEM.rows = (j.results || []).flatMap((x) => {
+          const doc = publishedRecord(x.url);
+          if (!doc && !x.ref) return [];
+          return [{ id: doc?.incidentId || x.ref, label: x.title, hint: "By meaning · " + (SEMKIND[x.kind] || x.kind), sub: x.date,
+            // Archive documents may not exist in BL.index(). Load the registered document, not the in-page inspector.
+            run: () => doc ? location.assign(doc.path) : openRecord(x.ref) }];
+        });
         draw();
       } catch (e) { /* aborted or offline: keep the word matches */ }
     }, 300);
