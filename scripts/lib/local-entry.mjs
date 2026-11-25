@@ -46,11 +46,19 @@ export default {
     if (!bindings.has(env)) bindings.set(env, { ...env, AI_SEARCH, BUILDER, SEARCH_REQ_LIMIT: allow, SEARCH_LIMIT: allow });
     const local = bindings.get(env);
     const pagesMode = request.headers.get('x-ledger-local-pages');
-    if (pagesMode === 'r2-error' || (path === '/llms.txt' && ['static-fallback', 'missing-asset'].includes(pagesMode))) {
+    const storageFailure = (key) => pagesMode === 'r2-error' ||
+      (pagesMode === 'pages-object-error' && key.startsWith('pages/'));
+    if (pagesMode === 'r2-error' || pagesMode === 'pages-object-error' ||
+      (path === '/llms.txt' && ['static-fallback', 'missing-asset'].includes(pagesMode))) {
       const STATE = {
         async get(key) {
-          if (pagesMode === 'r2-error') throw new Error('injected pages R2 failure');
+          if (storageFailure(key)) throw new Error('injected pages R2 failure');
+          if (pagesMode === 'pages-object-error') return env.STATE.get(key);
           return key === 'pages-manifest.json' ? null : env.STATE.get(key);
+        },
+        async head(key) {
+          if (storageFailure(key)) throw new Error('injected pages R2 failure');
+          return env.STATE.head(key);
         },
       };
       const ASSETS = pagesMode === 'missing-asset' ? { async fetch() { return new Response(null, { status: 404 }); } } : env.ASSETS;

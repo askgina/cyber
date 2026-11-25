@@ -35,8 +35,14 @@ function pageObjects(manifest) {
 }
 
 async function readManifest(env) {
-  const object = await env.STATE.get(MANIFEST_KEY);
-  return object ? await object.json() : null;
+  try {
+    const object = await env.STATE.get(MANIFEST_KEY);
+    return object ? await object.json() : null;
+  } catch (e) {
+    // A transient R2 error must not become a 500; without a manifest core routes use static assets.
+    console.error("pages manifest read failed", String(e));
+    return null;
+  }
 }
 
 export async function syncPages(env, c) {
@@ -99,6 +105,16 @@ async function readPage(req, env, key, contentType, cacheControl, withTokens = f
   const isHead = req.method === "HEAD";
   const condition = req.headers.get("If-None-Match");
   const headers = { "Content-Type": contentType, "Cache-Control": cacheControl };
+  try {
+    return await readPageObject(env, objectKey, headers, condition, isHead, withTokens);
+  } catch (e) {
+    // Null means "not served from R2": callers retry a stale manifest or answer a retryable 503.
+    console.error("page read failed", String(e));
+    return null;
+  }
+}
+
+async function readPageObject(env, objectKey, headers, condition, isHead, withTokens) {
   if (!withTokens && (isHead || condition)) {
     const head = await env.STATE.head(objectKey);
     if (!head) return null;
@@ -156,12 +172,18 @@ export async function servePrerenderedAsset(req, env, pathname) {
 async function liveIncidentExists(env, id) {
   const cached = incidentCache.get(env);
   if (cached && Date.now() < cached.expires) return cached.ids.has(id);
-  const object = await env.STATE.get("data.json");
-  const data = object ? await object.json() : null;
-  const ids = new Set(Object.keys(data?.details || {}));
-  for (const record of data?.registry || []) ids.add(`r-${record.id}`);
-  incidentCache.set(env, { ids, expires: Date.now() + TTL_MS });
-  return ids.has(id);
+  try {
+    const object = await env.STATE.get("data.json");
+    const data = object ? await object.json() : null;
+    const ids = new Set(Object.keys(data?.details || {}));
+    for (const record of data?.registry || []) ids.add(`r-${record.id}`);
+    incidentCache.set(env, { ids, expires: Date.now() + TTL_MS });
+    return ids.has(id);
+  } catch (e) {
+    // Unreadable index: let the request fall through to the shell instead of 404ing a live record.
+    console.error("live incident index read failed", String(e));
+    return true;
+  }
 }
 
 export async function serveDocumentRoute(req, env, url, { wantMarkdown = false } = {}) {
@@ -199,7 +221,9 @@ export async function serveDocumentRoute(req, env, url, { wantMarkdown = false }
     const response = await readPage(req, env, wantMarkdown ? entry.md : entry.html, contentType, DOCUMENT_CACHE, wantMarkdown);
     if (response) return matched(response, { robots: entry.index === false ? "noindex, follow" : undefined });
     if (attempt) {
-      return matched(new Response(isHead ? null : "Page temporarily unavailable", { status: 503 }), { isDocument: false });
+      return matched(new Response(isHead ? null : "Page temporarily unavailable", {
+        status: 503, headers: { "Retry-After": "60", "Cache-Control": "no-store" },
+      }), { isDocument: false });
     }
     // A cached old manifest may reference a key just cleaned up after a flip. Refresh once.
     if (manifestCache.get(env)?.manifest === manifest) manifestCache.delete(env);

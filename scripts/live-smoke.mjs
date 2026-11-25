@@ -66,7 +66,9 @@ async function main(base) {
       const validTag = /^(?:W\/)?"[\x21\x23-\x7e\x80-\xff]*"$/.test(actualTag ?? '');
       if (hot) check('ETag', validTag, 'a quoted HTTP entity tag', actualTag);
       if (revalidation) {
-        check('ETag', actualTag === etag, etag, actualTag);
+        // Cloudflare adds or drops the weak marker when it compresses a body, so compare entity tags weakly.
+        const opaque = (tag) => (tag ?? '').replace(/^W\//, '');
+        check('ETag', opaque(actualTag) === opaque(etag), etag, actualTag);
         check('Response body', response.body === null, 'no body on 304', 'body present');
       }
       row.Result = start === failures.length ? 'PASS' : 'FAIL';

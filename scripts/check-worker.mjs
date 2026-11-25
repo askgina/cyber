@@ -239,7 +239,15 @@ async function main() {
   await run('/llms.txt', { headers: { 'x-ledger-local-pages': 'missing-asset' } }, 503, (r, name) => {
     check.equal(`${name} Retry-After`, r.headers.get('retry-after'), '3600');
   }, 'missing in R2 and static assets');
-  if (indexable) await run(`/incidents/${indexable}`, { headers: { 'x-ledger-local-pages': 'r2-error' } }, 500, undefined, 'R2 read failure');
+  const retryable = (r, name) => check.equal(`${name} Retry-After`, r.headers.get('retry-after'), '60');
+  await run('/data-hot.json', { headers: { 'x-ledger-local-pages': 'r2-error' } }, 503, retryable, 'R2 unavailable on data');
+  if (indexable) {
+    await run(`/incidents/${indexable}`, { headers: { 'x-ledger-local-pages': 'pages-object-error' } }, 503, retryable, 'R2 unavailable on page object');
+    // With no readable manifest either, the route degrades to the static shell instead of failing.
+    await run(`/incidents/${indexable}`, { headers: { 'x-ledger-local-pages': 'r2-error' } }, 200, (r, name) => {
+      type(r, name, MIME.html);
+    }, 'R2 unavailable everywhere serves the shell');
+  }
 
   let etag;
   await run('/data-hot.json', undefined, 200, async (r, name) => {

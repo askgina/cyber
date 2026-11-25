@@ -9,6 +9,12 @@ export const DATA_ROUTES = {
 };
 
 const JSON_TYPE = "application/json; charset=utf-8";
+// An R2 internal error is transient, so answer 503: a 500 tells clients not to retry.
+function storageUnavailable() {
+  return applySecurityHeaders(new Response("Storage temporarily unavailable", {
+    status: 503, headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store", "retry-after": "60" },
+  }));
+}
 
 export async function handleDataRoute(req, env, pathname) {
   const isHead = req.method === "HEAD";
@@ -19,10 +25,16 @@ export async function handleDataRoute(req, env, pathname) {
   }
 
   let key = DATA_ROUTES[pathname];
-  let head = await env.STATE.head(key);
-  if (!head && key === "data-hot.json") {
-    key = "data.json";
+  let head;
+  try {
     head = await env.STATE.head(key);
+    if (!head && key === "data-hot.json") {
+      key = "data.json";
+      head = await env.STATE.head(key);
+    }
+  } catch (e) {
+    console.error("data head failed", String(e));
+    return storageUnavailable();
   }
 
   if (head) {
@@ -36,7 +48,13 @@ export async function handleDataRoute(req, env, pathname) {
       headers["content-length"] = String(head.size);
       return applySecurityHeaders(new Response(null, { headers }));
     }
-    const o = await env.STATE.get(key);
+    let o;
+    try {
+      o = await env.STATE.get(key);
+    } catch (e) {
+      console.error("data get failed", String(e));
+      return storageUnavailable();
+    }
     if (o) {
       // A build may have updated the object between head() and get(). Use the body's ETag.
       headers.etag = o.httpEtag;
