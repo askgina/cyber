@@ -29,9 +29,10 @@ jobs:
           import email.utils
           import sys
 
-          # A tick publishes within ~15 minutes of :07, so a healthy check at :43 sees an output under an
-          # hour old. 70 minutes absorbs a delayed scheduled run and still catches exactly one lost hour.
-          MAX_AGE_MINUTES = 70
+          # A build publishes 6-9 minutes after :07 (35 minutes when a deploy forces a cold container), so a
+          # healthy :43 check sees an output under an hour old and a delayed scheduled run adds a few more
+          # minutes. A missed tick is only visible once the next one does not arrive either.
+          MAX_AGE_MINUTES = 75
 
           lines = open(sys.argv[1], encoding="utf-8").read().splitlines()
           stamp = next((line.split(":", 1)[1].strip() for line in lines
