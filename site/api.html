@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<script src="/theme-init.js"></script>
+<link rel="stylesheet" href="/styles.css">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<title>Public API — Cyber</title>
+<meta name="description" content="Read and search Cyber&#x27;s public snapshots: read-only JSON endpoints, search by meaning, conditional requests, rate limits, JSON errors and a versioning policy.">
+<link rel="canonical" href="https://cyber.askgina.ai/api">
+<link rel="alternate" type="text/markdown" href="https://cyber.askgina.ai/api.md">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cyber">
+<meta property="og:title" content="Public API — Cyber">
+<meta property="og:description" content="Read and search Cyber&#x27;s public snapshots: read-only JSON endpoints, search by meaning, conditional requests, rate limits, JSON errors and a versioning policy.">
+<meta property="og:url" content="https://cyber.askgina.ai/api">
+<meta property="og:image" content="https://cyber.askgina.ai/og-default.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Public API — Cyber">
+<meta name="twitter:description" content="Read and search Cyber&#x27;s public snapshots: read-only JSON endpoints, search by meaning, conditional requests, rate limits, JSON errors and a versioning policy.">
+<meta name="twitter:image" content="https://cyber.askgina.ai/og-default.png">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://cyber.askgina.ai/api#record","name":"Public API","url":"https://cyber.askgina.ai/api","description":"Read and search Cyber's public snapshots: read-only JSON endpoints, search by meaning, conditional requests, rate limits, JSON errors and a versioning policy.","dateModified":"2026-11-25","isPartOf":{"@id":"https://cyber.askgina.ai/#website"},"publisher":{"@id":"https://cyber.askgina.ai/#organization"}},{"@type":"BreadcrumbList","@id":"https://cyber.askgina.ai/api#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Cyber","item":"https://cyber.askgina.ai/"},{"@type":"ListItem","position":2,"name":"Public API","item":"https://cyber.askgina.ai/api"}]},{"@type":"WebSite","@id":"https://cyber.askgina.ai/#website","name":"Cyber","url":"https://cyber.askgina.ai/","description":"A register of cyber incidents, crypto exploits, breach notices, exploited vulnerabilities and early signals from public sources.","publisher":{"@id":"https://cyber.askgina.ai/#organization"}},{"@type":"Organization","@id":"https://cyber.askgina.ai/#organization","name":"Ask Gina","url":"https://askgina.ai/","sameAs":["https://github.com/t-y-b-b/breach-ledger","https://github.com/t-y-b-b"]}]}</script>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<div class="doc-page">
+<header><a href="/">Cyber</a><nav aria-label="Views"><a href="/">Terminal</a><a href="/leaderboard">Leaderboard</a><a href="/report">Report</a><a href="/method">Method</a><a href="/api" aria-current="page">API</a></nav></header>
+<main id="content" tabindex="-1">
+<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Cyber</a></li><li aria-current="page">Public API</li></ol></nav>
+<h1>Public API</h1>
+<p>Read and search Cyber&#x27;s public snapshots: read-only JSON endpoints, search by meaning, conditional requests, rate limits, JSON errors and a versioning policy.</p>
+<section id="endpoints">
+<h2>Endpoints</h2>
+<p>Every public endpoint is a read-only GET. There is no key, no sign-up and no write API.</p>
+<table class="tbl"><thead><tr><th scope="col">Path</th><th scope="col">Returns</th></tr></thead><tbody><tr><td><a href="/api/search">/api/search?q=</a></td><td>Ranked search results over indexed records, at most eight</td></tr><tr><td><a href="/data.json">/data.json</a></td><td>Live snapshot: recent records, counts, brief and details</td></tr><tr><td><a href="/data-hot.json">/data-hot.json</a></td><td>Compact snapshot for the dashboard; falls back to the live snapshot</td></tr><tr><td><a href="/data-details.json">/data-details.json</a></td><td>Expanded details for compact-snapshot records</td></tr><tr><td><a href="/data-history.json">/data-history.json</a></td><td>History series for compact-snapshot records</td></tr><tr><td><a href="/archive.json">/archive.json</a></td><td>Yearly archive with counts by kind</td></tr><tr><td><a href="/openapi.json">/openapi.json</a></td><td>OpenAPI 3.1 description of these endpoints</td></tr><tr><td><a href="/.well-known/api-catalog">/.well-known/api-catalog</a></td><td>RFC 9727 linkset pointing at the API and its description</td></tr></tbody></table>
+</section>
+<section id="search">
+<h2>Search</h2>
+<p>GET /api/search?q=terms searches indexed records by meaning. The query is trimmed, whitespace-collapsed and cut to 300 characters; a query shorter than three characters returns an empty list.</p>
+<p>A result carries a title, date, kind, score, a short snippet and, when the record has a public page, a canonical url with scope live or archive. A ref is an internal handle, not a citation: open the record at its published URL before repeating a claim.</p>
+<p>Search caches results for five minutes per normalized query.</p>
+</section>
+<section id="limits">
+<h2>Rate limits</h2>
+<p>Search allows 60 requests per minute per client address, of which at most 10 may be uncached. Every search response carries RateLimit-Limit, RateLimit-Reset and RateLimit-Policy; a refused request answers 429 with Retry-After: 60.</p>
+<p>Snapshots are static objects and are not rate-limited. Prefer conditional requests and the compact snapshot: /data.json is several megabytes.</p>
+</section>
+<section id="errors">
+<h2>Errors</h2>
+<p>Errors are JSON. A search error keeps the results key so one shape parses: {&quot;results&quot;:[],&quot;error&quot;:&quot;rate limited&quot;}. A snapshot error is {&quot;error&quot;:&quot;…&quot;}.</p>
+<table class="tbl"><thead><tr><th scope="col">Status</th><th scope="col">Meaning</th></tr></thead><tbody><tr><td>404</td><td>No such API path, or a snapshot part that has not been built</td></tr><tr><td>405</td><td>A method other than GET, or HEAD for snapshots; Allow names the accepted methods</td></tr><tr><td>429</td><td>Rate limited; Retry-After gives the wait in seconds</td></tr><tr><td>502</td><td>The search backend is unavailable; this is not an empty result</td></tr><tr><td>503</td><td>Storage is unavailable or the build has not produced this part; retry after Retry-After</td></tr></tbody></table>
+</section>
+<section id="conditional">
+<h2>Conditional requests</h2>
+<p>Snapshots return an ETag with Cache-Control: no-cache. Send If-None-Match to revalidate; a matching strong or weak tag returns 304 with no body. Search responses are no-store.</p>
+</section>
+<section id="versioning">
+<h2>Versioning</h2>
+<p>The public API changes additively: fields may be added, while existing paths and field meanings stay stable, and /openapi.json records the current info.version. A breaking change would ship under a new path, so /api/search keeps its meaning. Retired record pages answer 301 or 410 instead of disappearing.</p>
+</section>
+<section id="pagination">
+<h2>Pagination</h2>
+<p>Search returns at most eight results in one response. Snapshots are complete documents, not pages: the archive lists items newest first from a start date and offers no cursor. Read a snapshot in full and filter locally instead of walking pages.</p>
+</section>
+<section id="reuse">
+<h2>Citing and reuse</h2>
+<p>Each record links to the sources it came from; cite the record page and the original source. The compiled data is published under CC BY 4.0 with Ask Gina as the publisher.</p>
+</section>
+<section id="agents">
+<h2>Agent entry points</h2>
+<ul class="sources"><li><a href="/openapi.json">OpenAPI description</a></li><li><a href="/.well-known/api-catalog">API catalog linkset</a></li><li><a href="/llms.txt">Site guide for agents</a></li><li><a href="/.well-known/agent-skills/read-cyber/SKILL.md">Read Cyber skill</a></li><li><a href="/method">Method and sources</a></li></ul>
+</section>
+</main>
+<footer><a href="/api.md">Markdown</a> · <a href="/feed.xml">RSS</a> · <a href="/method">Method and sources</a></footer>
+</div>
+</body>
+</html>
