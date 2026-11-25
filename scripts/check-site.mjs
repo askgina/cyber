@@ -25,7 +25,7 @@ const PUBLIC_OPERATIONS = {
   '/data-hot.json': 'getHotSnapshot',
   '/archive.json': 'getArchiveSnapshot',
 };
-const DISCOVERY_WORKER_ROUTES = new Set([...Object.keys(PUBLIC_OPERATIONS), '/llms-full.txt']);
+const DISCOVERY_WORKER_ROUTES = new Set([...Object.keys(PUBLIC_OPERATIONS), '/llms-full.txt', '/api']);
 
 async function inspect(label, expected, read) {
   try {
@@ -319,7 +319,26 @@ async function checkPrerender() {
     }));
   }
   await checkDiscovery('pages', assetPaths);
+  await checkAPIPage(manifest);
   return manifest;
+}
+
+async function checkAPIPage(manifest) {
+  const entry = manifest?.routes?.['/api'];
+  const homeKey = manifest?.routes?.['/']?.html;
+  if (!entry || !homeKey) return;
+  const html = await inspect('pages API docs', 'readable prerendered /api page', () => readFile(artifactFile(PAGES, entry.html), 'utf8'));
+  const home = await inspect('pages homepage', 'readable prerendered /', () => readFile(artifactFile(PAGES, homeKey), 'utf8'));
+  if (home) {
+    check.record('pages/index.html API docs link', /<a href="\/api"[^>]*>API docs<\/a>/.test(home), 'link to the public API docs', 'missing');
+    check.record('pages/index.html publisher sameAs', /"@type":"Organization"[^}]*"sameAs":\[[^\]]*github\.com/.test(home),
+      'Organization JSON-LD with sameAs profile links', 'missing');
+  }
+  if (html) {
+    for (const path of ['/api/search', '/data.json', '/openapi.json']) {
+      check.record(`pages/api.html link ${path}`, html.includes(`href="${path}"`), 'documented endpoint link', 'missing');
+    }
+  }
 }
 
 async function checkBudgets() {

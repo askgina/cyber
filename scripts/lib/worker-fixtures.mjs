@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 export const ROOT = fileURLToPath(new URL('../../', import.meta.url));
 export const SITE = join(ROOT, 'site');
 export const PAGES = join(ROOT, 'pages');
-export const CORE_ROUTES = ['/', '/leaderboard', '/report', '/method'];
+export const CORE_ROUTES = ['/', '/leaderboard', '/report', '/method', '/api'];
 export const SPLIT_FILES = ['data-hot.json', 'data-details.json', 'data-history.json'];
 export const DISCOVERY_FILES = {
   '/sitemap.xml': 'application/xml',

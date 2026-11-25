@@ -117,6 +117,12 @@ async function main() {
     });
   }
   for (const path of CORE_ROUTES.slice(1)) await run(path, undefined, 200, (r, name) => type(r, name, MIME.html));
+  await run('/api', undefined, 200, async (r, name) => {
+    const body = await r.text();
+    for (const needle of ['/api/search', '/data.json', '/openapi.json', 'RateLimit-Limit']) {
+      check.record(`${name} mentions ${needle}`, body.includes(needle), 'endpoint documented on the API page', 'missing');
+    }
+  }, 'API docs');
 
   let sitemap;
   for (const [path, expectedType] of Object.entries(DISCOVERY_FILES)) {
@@ -152,14 +158,15 @@ async function main() {
   const browser = 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,*/*;q=0.8';
   const weightedCases = [
     ['text/html;q=.4,text/markdown;q=.9', 'Mozilla/5.0', true, 'Markdown preferred'],
-    ['text/html;q=.9,text/markdown;q=.4', readerAgents[0], false, 'HTML preferred over agent UA'],
+    ['text/html;q=.9,text/markdown;q=.4', readerAgents[0], true, 'agent UA wins over HTML preference'],
     ['text/*;q=.7,text/html;q=.2', 'Mozilla/5.0', true, 'text wildcard'],
     ['*/*;q=.6,text/html;q=.1', 'Mozilla/5.0', true, 'global wildcard'],
     ['text/markdown;q=0,*/*;q=.9', readerAgents[0], false, 'explicit Markdown veto'],
     ['text/*;q=0,*/*;q=.9', readerAgents[0], false, 'text wildcard veto'],
     ['text/html;q=.7,text/markdown;q=.7', 'Mozilla/5.0', false, 'normal tie defaults to HTML'],
     [browser, 'Mozilla/5.0', false, 'browser Accept'],
-    [browser, readerAgents[0], false, 'browser Accept overrides agent UA'],
+    [browser, readerAgents[0], true, 'agent UA wins over browser Accept'],
+    ['text/html', readerAgents[0], true, 'agent UA asking for HTML'],
     ...readerAgents.map((ua) => ['*/*', `${ua}/1.0`, true, ua]),
   ];
   for (const [accept, ua, markdown, label] of weightedCases) {
@@ -240,7 +247,10 @@ async function main() {
     check.equal(`${name} Retry-After`, r.headers.get('retry-after'), '3600');
   }, 'missing in R2 and static assets');
   const retryable = (r, name) => check.equal(`${name} Retry-After`, r.headers.get('retry-after'), '60');
-  await run('/data-hot.json', { headers: { 'x-ledger-local-pages': 'r2-error' } }, 503, retryable, 'R2 unavailable on data');
+  await run('/data-hot.json', { headers: { 'x-ledger-local-pages': 'r2-error' } }, 503, (r, name) => {
+    type(r, name, MIME.json);
+    retryable(r, name);
+  }, 'R2 unavailable on data');
   if (indexable) {
     await run(`/incidents/${indexable}`, { headers: { 'x-ledger-local-pages': 'pages-object-error' } }, 503, retryable, 'R2 unavailable on page object');
     // With no readable manifest either, the route degrades to the static shell instead of failing.
@@ -273,9 +283,19 @@ async function main() {
     if (etag) check.equal(`${name} ETag`, r.headers.get('etag'), etag);
   });
   await run('/data-hot.json', { method: 'POST' }, 405, (r, name) => {
+    type(r, name, MIME.json);
     const allow = r.headers.get('allow');
     check.record(`${name} Allow`, ['GET', 'HEAD'].every((method) => allow?.split(/\s*,\s*/).includes(method)), 'GET and HEAD', allow);
   });
+  for (const path of ['/api/nonexistent', '/api/v1/search']) {
+    await run(path, undefined, 404, async (r, name) => {
+      type(r, name, MIME.json);
+      noindex(r, name);
+      await parse(r, name, 'JSON error object', (body) => {
+        if (JSON.parse(body).error !== 'not found') throw new Error('expected a not-found error');
+      });
+    }, 'unknown API path');
+  }
   await run('/archive.json', undefined, 200, (r, name) => type(r, name, MIME.json));
 
   await run('/robots.txt', undefined, 200, async (r, name) => {
@@ -296,6 +316,10 @@ async function main() {
     type(r, name, MIME.json);
     check.equal(`${name} X-Robots-Tag`, r.headers.get(ROBOTS), 'noindex, nofollow');
     check.equal(`${name} Cache-Control`, r.headers.get('cache-control'), 'no-store');
+    check.equal(`${name} RateLimit-Limit`, r.headers.get('ratelimit-limit'), '60');
+    check.equal(`${name} RateLimit-Reset`, r.headers.get('ratelimit-reset'), '60');
+    check.record(`${name} RateLimit-Policy`, /"search";q=60;w=60/.test(r.headers.get('ratelimit-policy') ?? ''),
+      'search quota policy', r.headers.get('ratelimit-policy'));
     const data = await parse(r, name, 'search result JSON', JSON.parse);
     if (expectedError && data) {
       check.equal(`${name} error`, data.error, expectedError);

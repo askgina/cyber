@@ -47,12 +47,24 @@ async function search(env, q) {
   return out;
 }
 
+// Per-IP per-minute policy from wrangler.jsonc: 60 requests, of which at most 10 may miss the cache.
+// The binding reports only success, so the response advertises the policy rather than a made-up remainder.
+const RATE_LIMIT_HEADERS = {
+  "RateLimit-Limit": "60",
+  "RateLimit-Reset": "60",
+  "RateLimit-Policy": '"search";q=60;w=60, "search-miss";q=10;w=60',
+};
+
 function reply(results, { status = 200, error, headers } = {}) {
   const response = Response.json(error ? { results, error } : { results }, { status, headers });
-  return applySecurityHeaders(response, { noindex: true, extraHeaders: { "Cache-Control": "no-store" } });
+  return applySecurityHeaders(response, { noindex: true, extraHeaders: { ...RATE_LIMIT_HEADERS, "Cache-Control": "no-store", ...headers } });
 }
 
 const rateLimited = () => reply([], { status: 429, error: "rate limited", headers: { "Retry-After": "60" } });
+
+export function apiNotFound() {
+  return applySecurityHeaders(Response.json({ error: "not found" }, { status: 404, headers: RATE_LIMIT_HEADERS }), { noindex: true });
+}
 
 export async function handleSearch(req, env, ctx, url) {
   if (req.method !== "GET") return reply([], { status: 405, error: "method not allowed", headers: { Allow: "GET" } });

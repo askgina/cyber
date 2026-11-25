@@ -18,11 +18,12 @@
     "run_worker_first": [
       "/", "/index.html", "/index.html/", "/index", "/index/",
       "/leaderboard", "/leaderboard/", "/report", "/report/", "/method", "/method/",
+      "/api", "/api/",
       // The first two wildcards also cover /incidents/llms.txt and /patterns/llms.txt.
       "/incidents/*", "/patterns/*", "/daily/*",
       "/sitemap.xml", "/feed.xml", "/feed.json", "/schemamap.xml",
       "/llms.txt", "/llms-full.txt", "/method/llms.txt",
-      "/index.md", "/leaderboard.md", "/report.md", "/method.md",
+      "/index.md", "/leaderboard.md", "/report.md", "/method.md", "/api.md",
       "/404", "/404/", "/404.html", "/404.md",
       "/data.json", "/data-hot.json", "/data-details.json", "/data-history.json", "/archive.json",
       "/e", "/__build", "/api/search"

@@ -32,7 +32,7 @@ CVE = re.compile(r"cve-[0-9]{4}-[0-9]{4,}", re.I)
 INVALID_TEXT = re.compile(r"[^\x09\x0a\x0d\x20-\ud7ff\ue000-\ufffd\U00010000-\U0010ffff]")
 SITEMAP = "http://www.sitemaps.org/schemas/sitemap/0.9"
 ATOM = "http://www.w3.org/2005/Atom"
-NAV = {"/": "Terminal", "/leaderboard": "Leaderboard", "/report": "Report", "/method": "Method"}
+NAV = {"/": "Terminal", "/leaderboard": "Leaderboard", "/report": "Report", "/method": "Method", "/api": "API"}
 TYPES = {"inc": "Curated incident", "crypto": "Crypto tracker record", "kev": "CISA KEV catalog entry",
          "breach": "Have I Been Pwned listing", "notice": "Official notice", "sec": "SEC filing",
          "news": "News report", "x": "X signal"}
@@ -47,6 +47,7 @@ SHARED_NOTICE_AGENCIES = {"HHS OCR", "Oregon DOJ"}
 X_HOSTS = {"x.com", "www.x.com", "twitter.com", "www.twitter.com", "mobile.twitter.com"}
 TAXONOMY_DATE = "2026-11-20"  # Revision of the bundled pattern definitions in enrich.py.
 METHOD_DATE = "2026-11-25"  # Revision of the method text below.
+API_DATE = "2026-11-25"  # Revision of the public API documentation below.
 
 
 def text(value):
@@ -728,6 +729,58 @@ def method_page():
     return new_page("/method", "view", "Method and sources", "How Cyber collects, deduplicates and classifies records, scores early signals, and reports uncertainty.", METHOD_DATE, sections)
 
 
+def api_page():
+    endpoints = [
+        (link("/api/search?q=", "/api/search"), "Ranked search results over indexed records, at most eight"),
+        (link("/data.json", "/data.json"), "Live snapshot: recent records, counts, brief and details"),
+        (link("/data-hot.json", "/data-hot.json"), "Compact snapshot for the dashboard; falls back to the live snapshot"),
+        (link("/data-details.json", "/data-details.json"), "Expanded details for compact-snapshot records"),
+        (link("/data-history.json", "/data-history.json"), "History series for compact-snapshot records"),
+        (link("/archive.json", "/archive.json"), "Yearly archive with counts by kind"),
+        (link("/openapi.json", "/openapi.json"), "OpenAPI 3.1 description of these endpoints"),
+        (link("/.well-known/api-catalog", "/.well-known/api-catalog"), "RFC 9727 linkset pointing at the API and its description"),
+    ]
+    errors = [
+        ("404", "No such API path, or a snapshot part that has not been built"),
+        ("405", "A method other than GET, or HEAD for snapshots; Allow names the accepted methods"),
+        ("429", "Rate limited; Retry-After gives the wait in seconds"),
+        ("502", "The search backend is unavailable; this is not an empty result"),
+        ("503", "Storage is unavailable or the build has not produced this part; retry after Retry-After"),
+    ]
+    sections = [
+        section("Endpoints",
+                ("p", "Every public endpoint is a read-only GET. There is no key, no sign-up and no write API."),
+                ("table", (("Path", "Returns"), endpoints)), anchor="endpoints"),
+        section("Search",
+                ("p", "GET /api/search?q=terms searches indexed records by meaning. The query is trimmed, whitespace-collapsed and cut to 300 characters; a query shorter than three characters returns an empty list."),
+                ("p", "A result carries a title, date, kind, score, a short snippet and, when the record has a public page, a canonical url with scope live or archive. A ref is an internal handle, not a citation: open the record at its published URL before repeating a claim."),
+                ("p", "Search caches results for five minutes per normalized query."), anchor="search"),
+        section("Rate limits",
+                ("p", "Search allows 60 requests per minute per client address, of which at most 10 may be uncached. Every search response carries RateLimit-Limit, RateLimit-Reset and RateLimit-Policy; a refused request answers 429 with Retry-After: 60."),
+                ("p", "Snapshots are static objects and are not rate-limited. Prefer conditional requests and the compact snapshot: /data.json is several megabytes."), anchor="limits"),
+        section("Errors",
+                ("p", 'Errors are JSON. A search error keeps the results key so one shape parses: {"results":[],"error":"rate limited"}. A snapshot error is {"error":"…"}.'),
+                ("table", (("Status", "Meaning"), errors)), anchor="errors"),
+        section("Conditional requests",
+                ("p", "Snapshots return an ETag with Cache-Control: no-cache. Send If-None-Match to revalidate; a matching strong or weak tag returns 304 with no body. Search responses are no-store."), anchor="conditional"),
+        section("Versioning",
+                ("p", "The public API changes additively: fields may be added, while existing paths and field meanings stay stable, and /openapi.json records the current info.version. A breaking change would ship under a new path, so /api/search keeps its meaning. Retired record pages answer 301 or 410 instead of disappearing."), anchor="versioning"),
+        section("Pagination",
+                ("p", "Search returns at most eight results in one response. Snapshots are complete documents, not pages: the archive lists items newest first from a start date and offers no cursor. Read a snapshot in full and filter locally instead of walking pages."), anchor="pagination"),
+        section("Citing and reuse",
+                ("p", "Each record links to the sources it came from; cite the record page and the original source. The compiled data is published under CC BY 4.0 with Ask Gina as the publisher."), anchor="reuse"),
+        section("Agent entry points",
+                ("list", [link("OpenAPI description", "/openapi.json"),
+                          link("API catalog linkset", "/.well-known/api-catalog"),
+                          link("Site guide for agents", "/llms.txt"),
+                          link("Read Cyber skill", "/.well-known/agent-skills/read-cyber/SKILL.md"),
+                          link("Method and sources", "/method")]), anchor="agents"),
+    ]
+    return new_page("/api", "view", "Public API",
+                    "Read and search Cyber's public snapshots: read-only JSON endpoints, search by meaning, conditional requests, rate limits, JSON errors and a versioning policy.",
+                    API_DATE, sections)
+
+
 def core_pages(data, records, generated, collections):
     recent = sorted_records(records)
     asof = at_utc(generated)
@@ -745,7 +798,8 @@ def core_pages(data, records, generated, collections):
             brief_rows.append((link(org, href) if href else org, what, text(item.get("scale")) or "—"))
     latest_day = next(iter(sorted((p for p in collections if p.startswith("/daily/")), reverse=True)), "")
     browse = [link("Incident report", "/report"), link("Crypto leaderboard", "/leaderboard"), link("Method and sources", "/method"),
-              link("RSS feed", "/feed.xml"), link("Live data (JSON)", "/data.json"), link("Archive (JSON)", "/archive.json")]
+              link("API docs", "/api"), link("RSS feed", "/feed.xml"),
+              link("Live data (JSON)", "/data.json"), link("Archive (JSON)", "/archive.json")]
     if latest_day:
         browse.append(link("Latest daily snapshot", latest_day))
     windows = data.get("windows") or {}
@@ -796,10 +850,12 @@ def core_pages(data, records, generated, collections):
     report_page = new_page("/report", "view", "Cyber incident report",
                            "Current reporting, early signals, crypto exploits, ransomware claim counts, breach listings, official notices and CISA KEV additions.",
                            generated, report, members=recent[:24])
-    return {p["path"]: p for p in (terminal, board, report_page, method_page())}
+    return {p["path"]: p for p in (terminal, board, report_page, method_page(), api_page())}
 
 
-PUBLISHER = {"@type": "Organization", "@id": HOME + "#organization", "name": "Ask Gina", "url": "https://askgina.ai/"}
+PUBLISHER = {"@type": "Organization", "@id": HOME + "#organization", "name": "Ask Gina", "url": "https://askgina.ai/",
+             # Verified profiles let a reader tie this publisher to one identity.
+             "sameAs": ["https://github.com/t-y-b-b/breach-ledger", "https://github.com/t-y-b-b"]}
 WEBSITE = {"@type": "WebSite", "@id": HOME + "#website", "name": SITE_NAME, "url": HOME,
            "description": DESCRIPTION, "publisher": {"@id": PUBLISHER["@id"]}}
 DATASET = {"@type": "Dataset", "@id": HOME + "#dataset", "name": "Cyber — Daily record of cyber incidents",
@@ -814,7 +870,7 @@ def page_type(page):
         return "WebPage"
     if page["kind"] == "incident":
         return "TechArticle" if page["record"]["type"] == "kev" else "NewsArticle"
-    return "WebPage" if page["path"] == "/method" else "CollectionPage"
+    return "WebPage" if page["path"] in ("/method", "/api") else "CollectionPage"
 
 
 def breadcrumbs(page):

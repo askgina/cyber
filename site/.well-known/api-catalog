@@ -9,7 +9,11 @@
         { "href": "https://cyber.askgina.ai/archive.json", "type": "application/json" }
       ],
       "service-desc": [{ "href": "https://cyber.askgina.ai/openapi.json", "type": "application/json" }],
-      "service-doc": [{ "href": "https://cyber.askgina.ai/llms.txt", "type": "text/markdown" }]
+      "service-doc": [
+        { "href": "https://cyber.askgina.ai/api", "type": "text/html" },
+        { "href": "https://cyber.askgina.ai/api.md", "type": "text/markdown" },
+        { "href": "https://cyber.askgina.ai/llms.txt", "type": "text/markdown" }
+      ]
     },
     {
       "anchor": "https://cyber.askgina.ai/api/search",

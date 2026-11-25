@@ -6,7 +6,7 @@ import { DATA_ROUTES, handleDataRoute } from "./data.js";
 import { AI_AGENT_UA, isRegisteredDocumentRoute, LLMS_ROUTES, markdownDocumentPath, normalizePath, PRERENDERED_ASSETS } from "./routes.js";
 import { serveDocumentRoute, servePrerenderedAsset, syncPages } from "./pages.js";
 import { documentHeaders, MARKDOWN, markdownTokens, prefersMarkdown } from "./negotiate.js";
-import { handleSearch } from "./search.js";
+import { apiNotFound, handleSearch } from "./search.js";
 import { EVENTS, track, trackAgentFetch, trackHumanPageview } from "./analytics.js";
 
 export class Builder extends Container {
@@ -201,6 +201,8 @@ export default {
     if (pathname === "/api/search") {
       return handleSearch(req, env, ctx, url);
     }
+    // A JSON API answers unknown paths in JSON, not with the HTML not-found page.
+    if (pathname.startsWith("/api/")) return apiNotFound();
     if (pathname === "/e" && req.method === "POST") {
       const ip = req.headers.get("cf-connecting-ip") || "unknown";
       const { success } = await env.EVENT_LIMIT.limit({ key: ip });

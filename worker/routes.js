@@ -1,4 +1,4 @@
-const CORE_ROUTES = new Set(["/", "/leaderboard", "/report", "/method"]);
+const CORE_ROUTES = new Set(["/", "/leaderboard", "/report", "/method", "/api"]);
 export const INCIDENT_ROUTE = /^\/incidents\/[a-z0-9][a-z0-9._-]{0,120}$/i;
 const PATTERN_ROUTE = /^\/patterns\/[a-z0-9][a-z0-9-]{0,80}$/i;
 const DAILY_ROUTE = /^\/daily\/\d{4}-\d{2}-\d{2}$/;

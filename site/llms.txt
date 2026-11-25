@@ -10,6 +10,7 @@ Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. License: CC BY 4.0.
 - [Hacks leaderboard: 2026 year to date](https://cyber.askgina.ai/leaderboard.md)
 - [Cyber incident report](https://cyber.askgina.ai/report.md)
 - [Method and sources](https://cyber.askgina.ai/method.md)
+- [Public API](https://cyber.askgina.ai/api.md)
 - [Incident index](https://cyber.askgina.ai/incidents/llms.txt): Source-backed records by kind, labeled live or archive.
 - [Pattern index](https://cyber.askgina.ai/patterns/llms.txt)
 - [Method index](https://cyber.askgina.ai/method/llms.txt)

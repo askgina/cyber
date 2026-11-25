@@ -9,20 +9,19 @@ export const DATA_ROUTES = {
 };
 
 const JSON_TYPE = "application/json; charset=utf-8";
+// Every data-route error is JSON so a client can parse one shape.
+function failure(status, error, headers = {}) {
+  return applySecurityHeaders(Response.json({ error }, { status, headers: { "cache-control": "no-store", ...headers } }), { noindex: true });
+}
+
 // An R2 internal error is transient, so answer 503: a 500 tells clients not to retry.
 function storageUnavailable() {
-  return applySecurityHeaders(new Response("Storage temporarily unavailable", {
-    status: 503, headers: { "content-type": "text/plain; charset=utf-8", "cache-control": "no-store", "retry-after": "60" },
-  }));
+  return failure(503, "storage temporarily unavailable", { "retry-after": "60" });
 }
 
 export async function handleDataRoute(req, env, pathname) {
   const isHead = req.method === "HEAD";
-  if (req.method !== "GET" && !isHead) {
-    return applySecurityHeaders(new Response("Method Not Allowed", {
-      status: 405, headers: { Allow: "GET, HEAD" },
-    }));
-  }
+  if (req.method !== "GET" && !isHead) return failure(405, "method not allowed", { Allow: "GET, HEAD" });
 
   let key = DATA_ROUTES[pathname];
   let head;
@@ -67,7 +66,5 @@ export async function handleDataRoute(req, env, pathname) {
       status: 404, headers: { "content-type": JSON_TYPE, "cache-control": "no-cache" },
     }));
   }
-  return applySecurityHeaders(new Response(isHead ? null : "Not built yet", {
-    status: 503, headers: { "content-type": "text/plain; charset=utf-8" },
-  }));
+  return failure(503, "not built yet", { "retry-after": "60" });
 }

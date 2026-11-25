@@ -16,11 +16,11 @@ export function prefersMarkdown(req) {
   const wildcard = weights.get("text/*") ?? weights.get("*/*") ?? 0;
   const html = weights.get("text/html") ?? wildcard;
   const markdown = weights.get("text/markdown") ?? wildcard;
-  if (markdown > html) return true;
-  // A range for another type is not an explicit Markdown veto. A matching
-  // q=0 is, even if a less specific wildcard has a positive weight.
-  const veto = (weights.get("text/markdown") ?? weights.get("text/*") ?? weights.get("*/*")) === 0;
-  return html <= markdown && !veto && READER_UA.test(req.headers.get("User-Agent") || "");
+  // An explicit q=0 for Markdown, for every text type, or for everything refuses it.
+  if ([weights.get("text/markdown"), weights.get("text/*"), weights.get("*/*")].some((weight) => weight === 0)) return false;
+  // Machine readers parse Markdown best, so they get it even when they ask for HTML.
+  if (READER_UA.test(req.headers.get("User-Agent") || "")) return true;
+  return markdown > html;
 }
 
 export function documentHeaders(existing, pathname, markdown, tokens) {

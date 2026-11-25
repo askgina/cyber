@@ -86,6 +86,7 @@ A register of cyber incidents, crypto exploits, breach notices, exploited vulner
 - [Incident report](<https://cyber.askgina.ai/report>)
 - [Crypto leaderboard](<https://cyber.askgina.ai/leaderboard>)
 - [Method and sources](<https://cyber.askgina.ai/method>)
+- [API docs](<https://cyber.askgina.ai/api>)
 - [RSS feed](<https://cyber.askgina.ai/feed.xml>)
 - [Live data (JSON)](<https://cyber.askgina.ai/data.json>)
 - [Archive (JSON)](<https://cyber.askgina.ai/archive.json>)
