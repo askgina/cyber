@@ -4,40 +4,121 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<script>
-  // Theme: light by default; "dark" is remembered. Set before first paint to avoid a flash.
-  (function () {
-    var root = document.documentElement;
-    try { if (localStorage.getItem("bl-theme") === "dark") root.dataset.theme = "dark"; } catch (e) {}
-    function sync() { var on = root.dataset.theme === "dark"; document.querySelectorAll(".t-theme").forEach(function (b) { b.setAttribute("aria-pressed", String(on)); }); }
-    document.addEventListener("DOMContentLoaded", sync);
-    document.addEventListener("click", function (e) {
-      if (!e.target.closest(".t-theme")) return;
-      var dark = root.dataset.theme !== "dark";
-      if (dark) root.dataset.theme = "dark"; else delete root.dataset.theme;
-      try { localStorage.setItem("bl-theme", dark ? "dark" : "light"); } catch (e2) {}
-      sync();
-    });
-  })();
-</script>
+<script src="/theme-init.js"></script>
 <title>Cyber — A daily record of cyber incidents</title>
 <meta name="description" content="An hourly-updated register of cyber security incidents: crypto exploits, ransomware leak-site claims, exploited vulnerabilities, news and early signals from X.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22%3E%3Crect x=%222%22 y=%225%22 width=%2212%22 height=%226%22 fill=%22%23000443%22/%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=20261124-2315">
+<meta name="site-origin" content="https://cyber.askgina.ai">
+<link rel="canonical" href="https://cyber.askgina.ai/">
+<link rel="ard" href="/.well-known/ard.json">
+<meta name="theme-color" content="#000443" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0a0a0a" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Cyber Incidents RSS Feed" href="https://cyber.askgina.ai/feed.xml">
+<link rel="alternate" type="application/feed+json" title="Cyber Incidents JSON Feed" href="https://cyber.askgina.ai/feed.json">
+<link rel="alternate" type="text/markdown" title="Cyber (Markdown)" href="https://cyber.askgina.ai/index.md">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Cyber">
+<meta property="og:title" content="Cyber — A daily record of cyber incidents">
+<meta property="og:description" content="An hourly-updated register of cyber security incidents: crypto exploits, ransomware leak-site claims, exploited vulnerabilities, news and early signals from X.">
+<meta property="og:url" content="https://cyber.askgina.ai/">
+<meta property="og:image" content="https://cyber.askgina.ai/og-default.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cyber — A daily record of cyber incidents by Ask Gina">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cyber — A daily record of cyber incidents">
+<meta name="twitter:description" content="An hourly-updated register of cyber security incidents: crypto exploits, ransomware leak-site claims, exploited vulnerabilities, news and early signals from X.">
+<meta name="twitter:image" content="https://cyber.askgina.ai/og-default.png">
+<meta name="twitter:image:alt" content="Cyber — A daily record of cyber incidents by Ask Gina">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://cyber.askgina.ai/#organization",
+      "name": "Ask Gina",
+      "url": "https://askgina.ai",
+      "sameAs": ["https://cyber.askgina.ai/"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://cyber.askgina.ai/#website",
+      "name": "Cyber",
+      "url": "https://cyber.askgina.ai/",
+      "publisher": {"@id": "https://cyber.askgina.ai/#organization"},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {"@type": "EntryPoint", "urlTemplate": "https://cyber.askgina.ai/?q={search_term_string}"},
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://cyber.askgina.ai/#dataset",
+      "name": "Cyber — Daily Record of Cyber Incidents",
+      "description": "An hourly-updated register of cyber security incidents: crypto exploits, ransomware leak-site claims, exploited vulnerabilities, news and early signals from X.",
+      "url": "https://cyber.askgina.ai/",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "creator": {"@id": "https://cyber.askgina.ai/#organization"},
+      "publisher": {"@id": "https://cyber.askgina.ai/#organization"},
+      "isAccessibleForFree": true,
+      "distribution": [
+        {"@type": "DataDownload", "contentUrl": "https://cyber.askgina.ai/data.json", "encodingFormat": "application/json"},
+        {"@type": "DataDownload", "contentUrl": "https://cyber.askgina.ai/archive.json", "encodingFormat": "application/json"}
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://cyber.askgina.ai/#itemlist",
+      "name": "Cyber incident resources",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Incident report", "url": "https://cyber.askgina.ai/report"},
+        {"@type": "ListItem", "position": 2, "name": "Hacks leaderboard", "url": "https://cyber.askgina.ai/leaderboard"},
+        {"@type": "ListItem", "position": 3, "name": "Method", "url": "https://cyber.askgina.ai/method"}
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://cyber.askgina.ai/#breadcrumb",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cyber.askgina.ai/"}
+      ]
+    }
+  ]
+}
+</script>
+<link rel="preload" href="/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css?v=20261125-1100">
 </head>
-<body class="view-term">
-<a class="skip" href="#term">Skip to content</a>
+<body>
+<a class="skip" href="#no-js">Skip to content</a>
+<noscript>
+  <section id="no-js" role="main" tabindex="-1" aria-labelledby="no-js-title">
+    <h1 id="no-js-title">Cyber — A daily record of cyber incidents</h1>
+    <p>Ask Gina rebuilds Cyber hourly from public sources, including CISA’s Known Exploited Vulnerabilities catalog, DefiLlama, SlowMist, Have I Been Pwned, ransomware.live, security reporting and early signals from X. Cyber distinguishes confirmed reports from unverified claims; loss figures may be revised.</p>
+    <ul>
+      <li><a href="/report">Incident report</a></li>
+      <li><a href="/leaderboard">Year-to-date hacks leaderboard</a></li>
+      <li><a href="/method">Method and sources</a></li>
+      <li><a href="/feed.xml">RSS feed</a></li>
+      <li><a href="/llms.txt">Machine-readable site guide</a></li>
+      <li><a href="/data.json">Download incident data (JSON)</a></li>
+    </ul>
+  </section>
+</noscript>
 
-<div id="term" class="term">
+<div id="term" class="term" role="main" aria-label="Terminal workspace" tabindex="-1">
   <div class="t-top">
-    <a class="t-brand" href="#terminal">Cyber</a>
+    <a class="t-brand" href="/">Cyber</a>
     <button type="button" id="t-live" class="t-live" title="Refresh now (u)"><i class="dot" aria-hidden="true"></i>Live <span id="t-checked" aria-live="off"></span></button>
     <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="t-q" type="search" placeholder="Filter by company, CVE, chain or pattern. Type ask … to ask Perplexity" autocomplete="off" aria-label="Filter the terminal"><kbd>/</kbd></label>
     <span class="t-clock" id="t-clock" aria-label="Current time, UTC"></span>
-    <nav class="t-views" aria-label="Views"><a href="#leaderboard">Leaderboard</a><a href="#terminal" aria-current="page">Terminal</a><a href="#report">Report</a></nav>
+    <nav class="t-views" aria-label="Views"><a href="/leaderboard">Leaderboard</a><a href="/" aria-current="page">Terminal</a><a href="/report">Report</a></nav>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
   </div>
   <div class="t-ticker" aria-label="Latest incidents"><div class="t-tape" id="t-tape"></div></div>
@@ -50,15 +131,15 @@
     <section class="t-p p-mkt" data-k="5" aria-labelledby="th5"><header><span id="th5"><kbd>5</kbd><span class="t-tabs" id="t-tabs" role="tablist"></span></span><span class="t-m" id="t-mkt-m"></span></header><div class="t-b" id="t-mkt"></div></section>
   </div>
   <div class="t-foot"><span><kbd>⌘K</kbd> search <kbd>/</kbd> filter <kbd>1</kbd>–<kbd>5</kbd> panel <kbd>j</kbd><kbd>k</kbd> move <kbd>enter</kbd> open <kbd>esc</kbd> close <kbd>r</kbd> report <kbd>u</kbd> refresh</span><span id="t-src">CISA KEV · ransomware.live · DefiLlama · SlowMist · HIBP · rekt · security press · X</span></div>
-  <aside class="t-insp" id="t-insp" hidden aria-label="Incident detail"><div class="t-ih"><span id="t-ik"></span><button type="button" id="t-ix" aria-label="Close detail">Close <kbd>esc</kbd></button></div><div class="t-ib" id="t-ib"></div></aside>
+  <aside class="t-insp" id="t-insp" hidden aria-label="Incident detail"><div class="t-ih"><span id="t-ik"></span><button type="button" id="t-ix">Close <kbd>esc</kbd><span class="sr"> detail</span></button></div><div class="t-ib" id="t-ib"></div></aside>
 </div>
 
 
-<div id="board" class="board" aria-label="Hacks leaderboard">
+<div id="board" class="board" role="main" aria-label="Hacks leaderboard" tabindex="-1">
   <div class="t-top">
-    <a class="t-brand" href="#leaderboard">Cyber</a>
+    <a class="t-brand" href="/">Cyber</a>
     <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="b-q" type="search" placeholder="Search hacks by name, chain or technique" autocomplete="off" aria-label="Search hacks"></label>
-    <nav class="t-views" aria-label="Views"><a href="#leaderboard" aria-current="page">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report">Report</a></nav>
+    <nav class="t-views" aria-label="Views"><a href="/leaderboard" aria-current="page">Leaderboard</a><a href="/">Terminal</a><a href="/report">Report</a></nav>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
   </div>
   <div class="b-kpi" id="b-kpi" aria-label="Leaderboard totals"></div>
@@ -72,20 +153,20 @@
   </section>
   <div class="t-foot"><span><kbd>⌘K</kbd> search <kbd>enter</kbd> open <kbd>esc</kbd> close</span><span>DefiLlama · SlowMist · year-to-date archive</span></div>
   <aside class="b-insp" id="b-insp" hidden aria-label="Hack detail">
-    <div class="b-ih"><span id="b-ik"></span><button type="button" id="b-ix" aria-label="Close detail">Close <kbd>esc</kbd></button></div>
+    <div class="b-ih"><span id="b-ik"></span><button type="button" id="b-ix">Close <kbd>esc</kbd><span class="sr"> detail</span></button></div>
     <div class="b-ib" id="b-ib"></div>
   </aside>
 </div>
 
-<div id="rep" class="rep">
+<div id="rep" class="rep" tabindex="-1">
   <div class="t-top">
-    <a class="t-brand" href="#report">Cyber</a>
-    <nav class="t-cmd r-jump" aria-label="Sections"><span aria-hidden="true">&gt;</span><a href="#glance">Today</a><a href="#live">Live</a><a href="#patterns">Patterns</a><a href="#crypto">Crypto</a><a href="#ransomware">Ransomware</a><a href="#breaches">Breaches</a><a href="#exploited">Exploited</a><a href="#method">Method</a></nav>
-    <nav class="t-views" aria-label="Views"><a href="#leaderboard">Leaderboard</a><a href="#terminal">Terminal</a><a href="#report" aria-current="page">Report</a></nav>
+    <a class="t-brand" href="/">Cyber</a>
+    <nav class="t-cmd r-jump" aria-label="Sections"><span aria-hidden="true">&gt;</span><a href="/report#glance">Today</a><a href="/report#live">Live</a><a href="/report#patterns">Patterns</a><a href="/report#crypto">Crypto</a><a href="/report#ransomware">Ransomware</a><a href="/report#breaches">Breaches</a><a href="/report#exploited">Exploited</a><a href="/method">Method</a></nav>
+    <nav class="t-views" aria-label="Views"><a href="/leaderboard">Leaderboard</a><a href="/">Terminal</a><a href="/report" aria-current="page">Report</a></nav>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
   </div>
 
-<main id="main" class="r-main">
+<main id="main" class="r-main" tabindex="-1">
   <section class="t-p opening" id="top" aria-labelledby="r-title">
     <header>
       <h1 id="r-title">Cyber: A Daily Record of Cyber Incidents</h1>
@@ -99,7 +180,7 @@
       <p class="abstract" id="abstract">Loading the latest record…</p>
       <div class="actions">
         <a class="btn" id="ask-today" href="#" target="_blank" rel="noopener">Ask Perplexity about today</a>
-        <a class="link" href="#method">Read the method</a>
+        <a class="link" href="/method">Read the method</a>
         <span class="hint">Select any text on this page to ask Perplexity about it.</span>
       </div>
     </div>
@@ -146,18 +227,18 @@
   <div class="body">
     <aside class="toc" aria-label="Contents">
       <ol>
-        <li><a href="#today">Today</a>
-          <ol><li><a href="#news">Reported</a></li><li><a href="#x-signals">Early signals on X</a></li></ol></li>
-        <li><a href="#patterns">Attack patterns</a>
-          <ol><li><a href="#clusters">Related incidents</a></li></ol></li>
-        <li><a href="#crypto">Crypto exploits</a></li>
-        <li><a href="#ransomware">Ransomware claims</a>
-          <ol><li><a href="#groups">Groups</a></li><li><a href="#sectors">Sectors and countries</a></li></ol></li>
-        <li><a href="#breaches">Data breaches</a></li>
-        <li><a href="#exploited">Exploited vulnerabilities</a></li>
-        <li><a href="#method">Method</a>
-          <ol><li><a href="#stages">Confidence stages</a></li><li><a href="#sources">Sources</a></li><li><a href="#elsewhere">Other trackers</a></li><li><a href="#limits">Limitations</a></li></ol></li>
-        <li><a href="#cite">Citation</a></li>
+        <li><a href="/report#today">Today</a>
+          <ol><li><a href="/report#news">Reported</a></li><li><a href="/report#x-signals">Early signals on X</a></li></ol></li>
+        <li><a href="/report#patterns">Attack patterns</a>
+          <ol><li><a href="/report#clusters">Related incidents</a></li></ol></li>
+        <li><a href="/report#crypto">Crypto exploits</a></li>
+        <li><a href="/report#ransomware">Ransomware claims</a>
+          <ol><li><a href="/report#groups">Groups</a></li><li><a href="/report#sectors">Sectors and countries</a></li></ol></li>
+        <li><a href="/report#breaches">Data breaches</a></li>
+        <li><a href="/report#exploited">Exploited vulnerabilities</a></li>
+        <li><a href="/method">Method</a>
+          <ol><li><a href="/method#stages">Confidence stages</a></li><li><a href="/method#sources">Sources</a></li><li><a href="/method#elsewhere">Other trackers</a></li><li><a href="/method#limits">Limitations</a></li></ol></li>
+        <li><a href="/report#cite">Citation</a></li>
       </ol>
     </aside>
 
@@ -252,6 +333,7 @@
         </ul>
         <h3 class="t-sub" id="limits">Limitations</h3>
         <p>Feeds lag reality by minutes to days, and coverage is uneven: crypto and ransomware are well instrumented; most corporate breaches surface only through disclosure. Loss figures are as reported and often revised. News items are filtered by keyword and may include advisories rather than incidents.</p>
+        <p><strong>For agents and developers:</strong> See the <a href="/llms.txt">site guide</a>, <a href="/openapi.json">API schema</a> and <a href="/.well-known/agent-skills/read-cyber/SKILL.md">agent skill</a>. Read the <a href="/feed.xml">RSS feed</a> or download the <a href="/data.json">JSON snapshot</a>.</p>
         <p class="status" id="status"></p>
       </section>
 
@@ -272,10 +354,12 @@
   <ul class="pal-list" id="pal-list" role="listbox"></ul>
   <div class="pal-foot"><span><kbd>↑</kbd><kbd>↓</kbd> move <kbd>enter</kbd> open</span><span><kbd>⌘K</kbd> toggle</span></div>
 </dialog>
-<script src="app.js?v=20261125-0210"></script>
-<script src="term.js?v=20261125-0200"></script>
-<script src="board.js?v=20261124-1700"></script>
-<script src="track.js?v=20261125-0320"></script>
-<script src="palette.js?v=20261125-0300"></script>
+<script src="/routes.js?v=20261125-1200"></script>
+<script src="/app.js?v=20261125-1200"></script>
+<script src="/term.js?v=20261125-1200"></script>
+<script src="/board.js?v=20261125-1200"></script>
+<script src="/track.js?v=20261125-1200"></script>
+<script src="/palette.js?v=20261125-1300"></script>
+<script src="/webmcp.js?v=20261125-1300"></script>
 </body>
 </html>

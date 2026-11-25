@@ -1,0 +1,35 @@
+# Cyber
+
+> A register of cyber incidents, crypto exploits, breach notices, exploited vulnerabilities and early signals from public sources.
+
+Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. License: CC BY 4.0.
+
+## Start here
+
+- [Cyber — A daily record of cyber incidents](https://cyber.askgina.ai/index.md)
+- [Hacks leaderboard: 2026 year to date](https://cyber.askgina.ai/leaderboard.md)
+- [Cyber incident report](https://cyber.askgina.ai/report.md)
+- [Method and sources](https://cyber.askgina.ai/method.md)
+- [Incident index](https://cyber.askgina.ai/incidents/llms.txt): Source-backed records by kind, labeled live or archive.
+- [Pattern index](https://cyber.askgina.ai/patterns/llms.txt)
+- [Method index](https://cyber.askgina.ai/method/llms.txt)
+
+## Latest daily snapshots
+
+- [Daily incident snapshot: 2026-11-24](https://cyber.askgina.ai/daily/2026-11-24.md)
+- [Daily incident snapshot: 2026-11-23](https://cyber.askgina.ai/daily/2026-11-23.md)
+- [Daily incident snapshot: 2026-11-22](https://cyber.askgina.ai/daily/2026-11-22.md)
+
+## Read programmatically
+
+- [OpenAPI](https://cyber.askgina.ai/openapi.json)
+- [Read Cyber skill](https://cyber.askgina.ai/.well-known/agent-skills/read-cyber/SKILL.md)
+- [RSS](https://cyber.askgina.ai/feed.xml)
+- [JSON Feed](https://cyber.askgina.ai/feed.json)
+- [Live data (JSON)](https://cyber.askgina.ai/data.json)
+- [Archive data (JSON)](https://cyber.askgina.ai/archive.json)
+- [Sitemap](https://cyber.askgina.ai/sitemap.xml)
+
+## Optional
+
+- [Consolidated corpus](https://cyber.askgina.ai/llms-full.txt): All indexable pages in one document.

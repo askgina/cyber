@@ -2,6 +2,7 @@
 (() => {
   "use strict";
   const B = window.BL;
+  const R = window.BLRoutes;
   const { el } = B;
   const $ = (s, r = document) => r.querySelector(s);
   const T = { tab: "inc", prevKpi: {}, seenFeed: null, panel: 0, q: "" };
@@ -9,30 +10,100 @@
   const hm = (s) => new Date(s.length === 10 ? s + "T12:00:00Z" : s).toLocaleTimeString("en-GB", { hour: "2-digit", minute: "2-digit", timeZone: "UTC" });
   const when = (s) => s.length === 10 ? B.fmtDate(s) : (B.hoursAgo(s) < 24 ? hm(s) : B.fmtDate(s));
 
-  // ---- routing between leaderboard, terminal and report
+  // ---- one route controller for all three views
+  const inView = (v) => document.body.classList.contains("view-" + v);
+  const viewPath = { term: "/", board: "/leaderboard", report: "/report" };
+  let currentRoute, returnTo = "/", reportEntry, recordTitle, scrollFrame, reportSection;
+  const skip = $(".skip");
+  const skipTarget = () => inView("report") ? "#main" : inView("board") ? "#board" : "#term";
+  skip.addEventListener("click", (e) => { e.preventDefault(); $(skipTarget()).focus(); });
+  const historyTabs = new Set(["crypto", "kev", "breach"]);
+  function hydrateView() {
+    if (inView("report")) { B.ensureHistory(); B.ensureDetails(); }
+    else if (inView("term") && (historyTabs.has(T.tab) || T.q)) B.ensureHistory();
+  }
   function setView(v) {
+    const entering = !inView(v);
     document.body.classList.toggle("view-term", v === "term");
     document.body.classList.toggle("view-board", v === "board");
     document.body.classList.toggle("view-report", v === "report");
-    if (v === "term") closeInsp(true);
-    if (v !== "board" && B.closeBoard) B.closeBoard();
+    skip.href = skipTarget();
+    document.querySelectorAll(".t-views a").forEach((a) => {
+      if (a.getAttribute("href") === viewPath[v]) a.setAttribute("aria-current", "page");
+      else a.removeAttribute("aria-current");
+    });
+    if (v === "board" && entering) B.bootBoard?.();
+    if (v === "report" && entering) B.renderReport();
+    if (v === "term" && T.D && T.tab === "arc") drawMkt(T.D);
+    hydrateView();
   }
-  function route() {
-    const h = location.hash;
-    if (!h || h === "#" || h === "#terminal") return setView("term");
-    if (h === "#leaderboard" || h === "#top") return setView("board");
-    if (/^#e-/.test(h)) {
-      const id = h.slice(3);
-      if (document.body.classList.contains("view-board") && B.inspectBoard && B.inspectBoard(id)) return;
-      setView("term");
-      T.D && inspect(id);
+  function scrollReport(section, waitForData = true) {
+    cancelAnimationFrame(scrollFrame);
+    scrollFrame = requestAnimationFrame(() => {
+      if (!inView("report") || currentRoute.incidentId) return;
+      if (!section) { $("#main").scrollTop = 0; window.scrollTo(0, 0); return; }
+      const n = document.getElementById(section);
+      if (n && $("#main").contains(n)) n.scrollIntoView();
+    });
+    if (waitForData && section && B.D && (!B.historyLoaded || !B.detailsLoaded)) {
+      const route = currentRoute;
+      Promise.all([B.ensureHistory(), B.ensureDetails()]).then(() => {
+        if (currentRoute === route) scrollReport(section, false);
+      });
+    }
+  }
+
+  function showRoutedIncident() {
+    const id = currentRoute?.incidentId;
+    if (!id) return;
+    if (inView("board") && B.inspectBoard?.(id)) { closeInsp(true); return; }
+    if (inView("report") && (reportEntry === id || B.jumpTo(id))) {
+      reportEntry = id;
+      closeInsp(true);
       return;
     }
-    setView("report");
-    const n = document.getElementById(h.slice(1));
-    // the report scrolls inside #main on wide screens and as a page on narrow ones
-    if (n) setTimeout(() => n.scrollIntoView(), 0); else if (h === "#report") { $("#main").scrollTop = 0; window.scrollTo(0, 0); }
+    if (inspection?.id !== id) inspect(id);
   }
+  B.showRoutedIncident = showRoutedIncident;
+  B.setIncidentTitle = (id, title) => {
+    if (currentRoute?.incidentId === id) R.syncMetadata(currentRoute, recordTitle = title);
+  };
+  B.dismissIncident = () => {
+    if (currentRoute?.incidentId) R.navigate(returnTo, { replace: true });
+  };
+
+  function route() {
+    const legacyFrom = R.parseLocation(location.pathname);
+    const legacyBase = currentRoute?.path === legacyFrom?.path ? returnTo
+      : legacyFrom && !legacyFrom.incidentId ? legacyFrom.path + location.search : "/";
+    const migrated = R.migrateLegacyHash();
+    const next = R.parseLocation(location.pathname, location.hash) || R.parseLocation("/");
+    if (migrated && next.incidentId && legacyBase !== "/") {
+      history.replaceState({ blFrom: legacyBase }, "");
+    }
+    returnTo = R.recordBackground(next);
+    const url = new URL(returnTo, location.origin);
+    const base = R.parseLocation(url.pathname, url.hash) || R.parseLocation("/");
+    const q = base.path === "/" ? url.searchParams.get("q")?.trim() : null;
+    const view = q ? "report" : base.view;
+    const changedRecord = currentRoute?.incidentId !== next.incidentId || !inView(view);
+    if (changedRecord || !next.incidentId) {
+      if (reportEntry) B.closeReportEntry(reportEntry);
+      reportEntry = recordTitle = null;
+      closeInsp(true);
+      B.closeBoard?.();
+    }
+    currentRoute = next;
+    R.syncMetadata(next, recordTitle);
+    setView(view);
+    if (view === "report") {
+      B.setReportRoute(base, q);
+      reportSection = base.section || (base.pattern ? "patterns" : base.date ? "glance" : null);
+    }
+    if (next.incidentId) showRoutedIncident();
+    else if (view === "report") scrollReport(reportSection);
+  }
+  window.addEventListener("popstate", route);
   window.addEventListener("hashchange", route);
 
   // ---- index of every entry by id
@@ -53,9 +124,11 @@
     cells.forEach((c) => r.append(c));
     r.addEventListener("click", (e) => {
       if (e.target.closest("a")) return;
-      if (id) inspect(id); else if (url) window.open(url, "_blank", "noopener");
+      if (id) R.navigate(R.incidentPath(id)); else if (url) window.open(url, "_blank", "noopener");
     });
-    r.addEventListener("keydown", (e) => { if (e.key === "Enter") r.click(); });
+    r.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); r.click(); }
+    });
     return r;
   }
   const c = (cls, ...kids) => el("span", { class: cls }, ...kids);
@@ -131,14 +204,17 @@
   function drawTape(ev) {
     const items = ev.slice(0, 18).map((e) => el("button", { type: "button", class: "t-ti", "data-id": e.id || null, "data-url": e.url || null, title: "Open" }, c("tk", KIND_S[e.kind] || e.kind), " ", e.title, e.sub ? c("ts", " " + e.sub) : null));
     const tape = $("#t-tape");
-    tape.replaceChildren(el("div", { class: "t-run" }, items), el("div", { class: "t-run", "aria-hidden": "true" }, items.map((n) => n.cloneNode(true))));
+    const clone = el("div", { class: "t-run", "aria-hidden": "true", inert: "" }, items.map((n) => n.cloneNode(true)));
+    clone.inert = true;
+    clone.querySelectorAll("button, a").forEach((n) => { n.tabIndex = -1; });
+    tape.replaceChildren(el("div", { class: "t-run" }, items), clone);
     tape.style.setProperty("--dur", Math.max(40, items.length * 5) + "s");
     if (!tape.dataset.wired) {
       tape.dataset.wired = "1";
       // the tape is clickable: open the item in the inspector, or its source if it has no detail view
       tape.addEventListener("click", (x) => {
         const b = x.target.closest(".t-ti"); if (!b) return;
-        if (b.dataset.id && IX[b.dataset.id]) inspect(b.dataset.id);
+        if (b.dataset.id) R.navigate(R.incidentPath(b.dataset.id));
         else if (b.dataset.url) window.open(b.dataset.url, "_blank", "noopener");
       });
     }
@@ -185,7 +261,7 @@
         { id: e.id, url: e.url, cls: fresh || e.live ? "fresh" : null, key: k }));
     });
     T.seenFeed = new Set(ev.map((e) => e.id || e.key));
-    $("#t-feed-m").textContent = `${ev.length} items`;
+    $("#t-feed-m").textContent = `${ev.length} ${B.historyLoaded ? "items" : "recent items"}`;
     drawTape(ev);
   }
 
@@ -208,7 +284,7 @@
     series.forEach(([name, key]) => {
       const max = Math.max(1, ...H.map((h) => h[key]));
       const tot = H.reduce((a, h) => a + h[key], 0);
-      g.append(c("hl", name), el("span", { class: "hc" }, H.map((h) => el("i", { style: `--v:${h[key] ? Math.max(.18, h[key] / max) : 0}`, title: `${hm(h.t)} UTC: ${h[key]}` }))), c("hn", String(tot)));
+      g.append(c("hl", name), el("span", { class: "hc" }, H.map((h) => el("i", { class: h[key] ? null : "z", style: `--v:${h[key] ? Math.max(.18, h[key] / max) : 0}`, title: `${hm(h.t)} UTC: ${h[key]}` }))), c("hn", String(tot)));
     });
     g.append(c("hl", ""), el("span", { class: "hx" }, c("", "-24h"), c("", "-12h"), c("", "now")), c("hn", ""));
     box.append(g);
@@ -231,7 +307,7 @@
   const AR = { data: null, p: null, err: null, kind: "all", month: null, ix: {}, byKey: {} };
   function loadArchive() {
     if (AR.p) return AR.p;
-    AR.p = fetch("./archive.json", { cache: "no-cache" }).then((r) => r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status))).then((j) => {
+    AR.p = fetch("/archive.json", { cache: "no-cache" }).then((r) => r.ok ? r.json() : Promise.reject(new Error("HTTP " + r.status))).then((j) => {
       (j.items || []).forEach((a, i) => {
         a._s = [a.o, a.t, a.s, a.x, a.k === "inc" && a.rec ? [a.rec.summary, (a.rec.affected || []).join(" ")].join(" ") : ""].filter(Boolean).join(" ").toLowerCase();
         a.m = +a.d.slice(5, 7) - 1;
@@ -244,8 +320,8 @@
       (j.items || []).forEach((a) => { if (a.dup && incById[a.dup]) incById[a.dup]._s += " " + a._s; });
       AR.data = j;
       for (const [k, v] of Object.entries(AR.ix)) if (!IX[k]) IX[k] = v;  // live records keep their richer entries
-      drawMkt(T.D); applyFilter();
-    }).catch((e) => { AR.err = String(e.message || e); drawMkt(T.D); });
+      if (T.D && inView("term")) { drawMkt(T.D); applyFilter(); }
+    }).catch((e) => { AR.err = String(e.message || e); if (T.D && inView("term")) drawMkt(T.D); });
     return AR.p;
   }
   function arcMatches(q, kind, month, keepDup) {
@@ -256,7 +332,8 @@
   function drawArchive(box) {
     if (!AR.data) {
       box.append(el("p", { class: "t-empty" }, AR.err ? `Archive unavailable (${AR.err}).` : "Loading every record since January 1…"));
-      loadArchive(); $("#t-mkt-m").textContent = "";
+      if (inView("term")) loadArchive();
+      $("#t-mkt-m").textContent = "";
       return;
     }
     const q = T.q;
@@ -272,7 +349,7 @@
     const nowM = new Date().getUTCMonth(), max = Math.max(1, ...mc);
     const months = el("div", { class: "t-amon", role: "group", "aria-label": "Month" }, ...MON.slice(0, nowM + 1).map((m, i) => {
       const b = el("button", { type: "button", class: AR.month === i ? "on" : null, title: `${m}: ${mc[i].toLocaleString("en-US")} records${AR.month === i ? " (click to clear)" : ""}`, "aria-pressed": String(AR.month === i) },
-        el("span", { class: "bar" }, el("i", { style: `--v:${mc[i] ? Math.max(.06, mc[i] / max) : 0}` })), el("span", { class: "ml" }, m));
+        el("span", { class: "bar" }, el("i", { class: mc[i] ? null : "z", style: `--v:${mc[i] ? Math.max(.06, mc[i] / max) : 0}` })), el("span", { class: "ml" }, m));
       b.addEventListener("click", () => { AR.month = AR.month === i ? null : i; drawMkt(T.D); });
       return b;
     }));
@@ -293,7 +370,7 @@
     const nArc = AR.data && T.q ? arcMatches(T.q, "all", null).length : null;
     $("#t-tabs").replaceChildren(...Object.entries(TABS).map(([k, l]) => {
       const b = el("button", { type: "button", role: "tab", "aria-selected": String(T.tab === k), class: T.tab === k ? "on" : null }, l, k === "arc" && nArc != null ? el("i", { class: "tn" }, " " + nArc.toLocaleString("en-US")) : null);
-      b.addEventListener("click", () => { T.tab = k; drawMkt(T.D); applyFilter(); });
+      b.addEventListener("click", () => { T.tab = k; hydrateView(); drawMkt(T.D); applyFilter(); });
       return b;
     }));
     const box = $("#t-mkt"); box.replaceChildren();
@@ -309,7 +386,7 @@
     } else if (T.tab === "crypto") {
       const items = [...D.crypto.items].sort((a, b) => (b.amount || 0) - (a.amount || 0));
       items.forEach((i) => box.append(row([c("c-t", B.fmtDate(i.date)), c("c-org", el("b", {}, i.name), el("small", {}, i.offchain ? "Bank-account fraud, not counted in crypto totals" : [i.technique, i.chains.slice(0, 2).join(", ")].filter((x) => x && x !== "Unknown").join(" · "))), c("c-sc", B.fmtUSD(i.amount))], { id: i.eid, cls: i.offchain ? "dim" : null })));
-      $("#t-mkt-m").textContent = `${D.crypto.count_30d} · ${B.fmtUSD(D.crypto.usd_30d)}`;
+      $("#t-mkt-m").textContent = B.historyLoaded ? `${D.crypto.count_30d} · ${B.fmtUSD(D.crypto.usd_30d)}` : `${items.length} recent rows`;
     } else if (T.tab === "ransom") {
       const r = D.ransomware;
       const max = Math.max(1, ...(r.groups_7d || []).map((g) => g[1]));
@@ -319,54 +396,105 @@
       $("#t-mkt-m").textContent = `${r.count_7d} claims · 7d`;
     } else if (T.tab === "kev") {
       D.kev.items.forEach((v) => box.append(row([c("c-t", B.fmtDate(v.date)), c("c-org", el("b", {}, `${v.vendor} ${v.product}`), el("small", {}, `${v.id}${v.ransomware ? " · ransomware use" : ""}`)), c("c-sc", v.due ? "due " + B.fmtDate(v.due) : "")], { id: v.eid })));
-      $("#t-mkt-m").textContent = `${D.kev.count_30d} · 30d`;
+      $("#t-mkt-m").textContent = B.historyLoaded ? `${D.kev.count_30d} · 30d` : `${D.kev.items.length} recent rows`;
     } else {
       const items = (D.breaches || {}).items || [];
       items.forEach((b) => box.append(row([c("c-t", B.fmtDate(b.added)), c("c-org", el("b", {}, b.title), el("small", {}, (b.classes || []).slice(0, 3).join(", "))), c("c-sc", B.compact(b.count || 0))], { id: b.eid })));
-      $("#t-mkt-m").textContent = `${items.length} · 30d`;
+      $("#t-mkt-m").textContent = `${items.length} · ${B.historyLoaded ? "30d" : "recent"}`;
     }
   }
 
   // ---- inspector
-  let IX = {}, lastFocus = null;
-  function inspect(id) {
-    // a headline about a listed crypto hack opens that hack, with every outlet on it
-    if (IX[id] && IX[id].kind === "news" && IX[id].it.crypto && IX[IX[id].it.crypto]) id = IX[id].it.crypto;
+  let IX = {}, inspection = null;
+  const rowSelector = (id) => `.t-r[data-id="${CSS.escape(id)}"]`;
+  function selectRow(id) {
+    document.querySelectorAll("#term .t-r.sel").forEach((n) => n.classList.remove("sel"));
+    if (id) document.querySelectorAll(rowSelector(id)).forEach((n) => n.classList.add("sel"));
+  }
+  function drawInspector(req) {
+    // A headline about a listed crypto hack opens that hack, with every outlet on it.
+    const source = IX[req.id];
+    const id = source?.kind === "news" && IX[source.it.crypto] ? source.it.crypto : req.id;
     const e = IX[id]; if (!e) return;
-    lastFocus = document.activeElement;
-    const { it, kind, title, text } = e;
-    const det = B.DET[id] || {};
-    const ib = $("#t-ib"); ib.replaceChildren();
-    $("#t-ik").textContent = `${e.label || B.KIND[kind]} · ${e.date.length === 10 ? B.fmtDate(e.date) : B.fmtLong(e.date)}`;
-    ib.append(el("h2", {}, title));
-    if (text) ib.append(el("p", { class: "t-id" }, text));
-    const links = [...(it.links || []), ...(e.url ? [{ label: it.source || "Source", url: e.url }] : [])];
-    ib.append(el("p", { class: "t-il" }, el("a", { class: "btn", href: B.breakdownURL(title, text || "", id), target: "_blank", rel: "noopener" }, "Ask Perplexity"),
-      ...links.map((l) => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label))));
-    ib.append(B.detailPanel(it, kind, id, title, text || ""));
-    ib.querySelectorAll(".dask").forEach((n) => n.remove());
-    const p = $("#t-insp"); p.hidden = false; ib.scrollTop = 0;
+    const ready = !B.ensureDetails || B.detailsLoaded || e === AR.ix[id];
+    const ib = $("#t-ib");
+    if (req.record !== e.it || req.ready !== ready || req.shownId !== id) {
+      const { it, kind, title, text } = e;
+      $("#t-ik").textContent = `${e.label || B.KIND[kind]} · ${e.date.length === 10 ? B.fmtDate(e.date) : B.fmtLong(e.date)}`;
+      ib.replaceChildren(el("h2", {}, title));
+      if (text) ib.append(el("p", { class: "t-id" }, text));
+      const links = [...(it.links || []), ...(e.url ? [{ label: it.source || "Source", url: e.url }] : [])];
+      ib.append(el("p", { class: "t-il" }, el("a", { class: "btn", href: B.breakdownURL(title, text || "", id), target: "_blank", rel: "noopener" }, "Ask Perplexity"),
+        ...links.map((l) => el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label)),
+        el("a", { href: R.incidentPath(req.id) }, "Link to this entry")));
+      if (ready) {
+        ib.append(B.detailPanel(it, kind, id, title, text || ""));
+        ib.querySelectorAll(".dask").forEach((n) => n.remove());
+      } else ib.append(el("p", { class: "t-detail-status", role: "status" }, "Loading details…"));
+      req.record = e.it; req.ready = ready; req.shownId = id;
+    }
+    selectRow(req.id);
+    B.setIncidentTitle(req.id, e.title);
+  }
+  async function resolveInspector(req) {
+    const snapshot = T.D;
+    const current = () => inspection === req && T.D === snapshot;
+    if (!Object.hasOwn(IX, req.id)) {
+      await B.ensureHistory();
+      if (!current()) return;
+      if (!Object.hasOwn(IX, req.id)) await loadArchive();
+      if (!current()) return;
+      if (!Object.hasOwn(IX, req.id)) { $("#t-ib").textContent = "This incident is unavailable."; return; }
+    }
+    drawInspector(req);
+    if (!req.ready) {
+      const loaded = await B.ensureDetails();
+      if (!current()) return;
+      if (loaded) drawInspector(req);
+      else {
+        const status = $("#t-ib .t-detail-status");
+        if (status) status.textContent = "Details are temporarily unavailable. Reopen to retry.";
+      }
+    }
+  }
+  function inspect(id) {
+    const p = $("#t-insp");
+    const focus = document.activeElement;
+    inspection = { id, opener: p.contains(focus) ? inspection?.opener : focus };
+    // Board/archive misses and report records outside the visible lists use the same drawer.
+    const host = $(inView("report") ? "#rep" : skipTarget());
+    if (p.parentElement !== host) host.append(p);
+    p.classList.toggle("b-insp", !inView("term"));
+    $("#t-ik").textContent = "Incident detail";
+    const ib = $("#t-ib");
+    ib.textContent = "Loading incident…"; ib.scrollTop = 0;
+    p.hidden = false;
     $("#t-ix").focus({ preventScroll: true });
-    document.querySelectorAll(".t-r.sel").forEach((n) => n.classList.remove("sel"));
-    document.querySelectorAll(`.t-r[data-id="${id}"]`).forEach((n) => n.classList.add("sel"));
-    if (location.hash !== "#e-" + id) history.replaceState(null, "", "#e-" + id);
+    if (T.D) return resolveInspector(inspection);
   }
   function closeInsp(silent) {
-    const p = $("#t-insp"); if (p.hidden) return;
-    p.hidden = true;
-    if (!silent) { history.replaceState(null, "", "#terminal"); lastFocus && lastFocus.focus && lastFocus.focus({ preventScroll: true }); }
+    const req = inspection; inspection = null;
+    const p = $("#t-insp");
+    if (!req && p.hidden) return;
+    p.hidden = true; selectRow(null);
+    if (silent) return;
+    B.dismissIncident();
+    const opener = req?.opener;
+    const target = opener?.isConnected && opener !== document.body ? opener : opener?.dataset.id ? $(rowSelector(opener.dataset.id)) : null;
+    (target && !target.hidden ? target : $(skipTarget())).focus({ preventScroll: true });
   }
   $("#t-ix").addEventListener("click", () => closeInsp());
-  B.inspect = inspect;
+  B.inspect = (id) => R.navigate(R.incidentPath(id));
   B.index = () => IX;  // every inspectable record by id; used by the ⌘K palette
-  B.loadArchive = () => loadArchive();
+  B.loadArchive = async () => { await B.ensureHistory(); return loadArchive(); };
   B.arcId = (key) => AR.byKey[key] || null;
 
   // ---- filter
   function applyFilter() {
     const q = $("#t-q").value.trim().toLowerCase();
     T.q = q.startsWith("ask ") ? "" : q;
-    if (T.q.length >= 3 && !AR.p) loadArchive();
+    if (T.lastQ !== T.q && T.q && inView("term")) B.ensureHistory();
+    if (T.q.length >= 3 && !AR.p && inView("term")) loadArchive();
     if (T.lastQ !== T.q) {
       // searching always covers everything since Jan 1; clearing returns to the previous tab
       if (T.q.length >= 3 && T.tab !== "arc") { T.prevTab = T.tab; T.tab = "arc"; }
@@ -375,7 +503,14 @@
     document.querySelectorAll("#term .t-b .t-r:not(.t-hd):not(.arc)").forEach((r) => { const e = r.dataset.id && IX[r.dataset.id]; r.hidden = !!T.q && !(r.textContent + " " + (e ? e.title + " " + (e.text || "") + " " + (e.search || "") : "")).toLowerCase().includes(T.q); });
   }
   let qt;
-  $("#t-q").addEventListener("input", () => { clearTimeout(qt); qt = setTimeout(applyFilter, 120); });
+  $("#t-q").addEventListener("input", () => { clearTimeout(qt); if (T.D) qt = setTimeout(applyFilter, 120); });
+  // Palette word matches read the shared index; redraw once the 30-day rows arrive.
+  let paletteInput = 0;
+  $("#pal-q").addEventListener("input", async ({ target }) => {
+    const input = ++paletteInput;
+    if (!target.value.trim() || B.historyLoaded) return;
+    if (await B.ensureHistory() && input === paletteInput && $("#pal").open) target.dispatchEvent(new Event("input"));
+  });
   $("#t-q").addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       const v = $("#t-q").value.trim();
@@ -397,12 +532,13 @@
   function refresh() { const c = $("#t-checked"); c.textContent = "refreshing…"; B.pollAll(); }
   $("#t-live").addEventListener("click", refresh);
   document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && !$("#pal").open && !$("#t-insp").hidden) { e.preventDefault(); closeInsp(); return; }
     if (!document.body.classList.contains("view-term")) return;
     if (e.target.matches("input, textarea") || e.metaKey || e.ctrlKey || e.altKey) return;
     if (e.key === "/") { e.preventDefault(); $("#t-q").focus(); return; }
     if (e.key === "Escape") { closeInsp(); return; }
     if (/^[1-5]$/.test(e.key)) { focusPanel(+e.key - 1); return; }
-    if (e.key === "r") { location.hash = "#report"; return; }
+    if (e.key === "r") { R.navigate("/report"); return; }
     if (e.key === "u") { refresh(); return; }
     if (e.key === "j" || e.key === "k" || e.key === "ArrowDown" || e.key === "ArrowUp") {
       if (!$("#t-insp").hidden && e.target.closest("#t-insp")) return;
@@ -424,13 +560,22 @@
   };
 
   B.onRender = (D) => {
+    const first = !T.D, changed = T.D !== D;
     T.D = D; IX = index(D); for (const [k, v] of Object.entries(AR.ix)) if (!IX[k]) IX[k] = v;
-    const openId = !$("#t-insp").hidden && location.hash.startsWith("#e-") ? location.hash.slice(3) : null;
     drawKpi(D); drawHit(); drawFeed(); drawX(D); drawAct(D); drawMkt(D); applyFilter();
-    if (!T.booted) { T.booted = true; if (/^#e-/.test(location.hash) && document.body.classList.contains("view-term")) { const id0 = location.hash.slice(3); if (IX[id0]) inspect(id0); else loadArchive().then(() => inspect(id0)); } }
-    else if (openId && IX[openId]) document.querySelectorAll(`.t-r[data-id="${openId}"]`).forEach((n) => n.classList.add("sel"));
+    if (changed) hydrateView();
+    const req = inspection;
+    if (!inView("board") || !B.inspectBoard) showRoutedIncident();
+    if (req && inspection === req) {
+      if (changed) { req.record = null; resolveInspector(req); }
+      else if (Object.hasOwn(IX, req.id)) drawInspector(req);
+    }
+    if (first && inView("report") && !currentRoute.incidentId && reportSection) {
+      scrollReport(reportSection);
+    }
     B.onTick();
   };
 
   route();
+  if (B.D) B.onRender(B.D);
 })();

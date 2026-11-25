@@ -1,0 +1,9 @@
+# Cyber method
+
+> How the ledger collects records and describes evidence and uncertainty.
+
+Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. License: CC BY 4.0.
+
+## Method and scope
+
+- [Method and sources](https://cyber.askgina.ai/method.md): How Cyber collects, deduplicates and classifies records, scores early signals, and reports uncertainty.

@@ -1,0 +1,1110 @@
+{
+  "description": "A register of cyber incidents, crypto exploits, breach notices, exploited vulnerabilities and early signals from public sources.",
+  "feed_url": "https://cyber.askgina.ai/feed.json",
+  "home_page_url": "https://cyber.askgina.ai/",
+  "items": [
+    {
+      "content_text": "Cybersecurity company Radware says attackers gained access to some of its customers' account details and cloud access keys through an unsecured internal Cloud WAF (Web Application Firewall) management API that was left exposed online. [...] This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T17:49:05Z",
+      "date_published": "2026-11-24T17:49:05Z",
+      "id": "https://cyber.askgina.ai/incidents/n-adb18ca6",
+      "tags": [
+        "News report"
+      ],
+      "title": "Radware discloses breach exposing customer cloud access keys",
+      "url": "https://cyber.askgina.ai/incidents/n-adb18ca6"
+    },
+    {
+      "content_text": "A bicameral, bipartisan letter from lawmakers said identity verification companies still have significant security work to do in the wake of a data breach at IDscan in September. This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T18:03:32Z",
+      "date_published": "2026-11-24T17:49:00Z",
+      "id": "https://cyber.askgina.ai/incidents/n-2db8a639",
+      "tags": [
+        "News report"
+      ],
+      "title": "Lawmakers warn ID verification companies to bolster security after September hack",
+      "url": "https://cyber.askgina.ai/incidents/n-2db8a639"
+    },
+    {
+      "content_text": "On or about November 19, FulcrumSec added Gingko Bioworks Holdings to its clear net leak site. As has been its practice, the threat actor(s) provided a great detail of analysis and details about the data they acquired. In short, they claim to have acquired: 9.9 TB total exfil • 1 This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T17:34:23Z",
+      "date_published": "2026-11-24T17:34:23Z",
+      "id": "https://cyber.askgina.ai/incidents/n-3127c44d",
+      "tags": [
+        "News report"
+      ],
+      "title": "Gingko Bioworks Holdings issued a statement on October 8 about a data breach. Getting an update from them has been difficult.",
+      "url": "https://cyber.askgina.ai/incidents/n-3127c44d"
+    },
+    {
+      "content_text": "A previously undocumented Iran-aligned cyber espionage group called Volant Manticore has targeted telecommunications companies, airlines, and critical infrastructure in Cyprus. Central to the group's operations is a backdoor called KuboShell that uses the InterPlanetary File Syst This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T16:54:07Z",
+      "date_published": "2026-11-24T16:54:07Z",
+      "id": "https://cyber.askgina.ai/incidents/n-6b48789d",
+      "tags": [
+        "News report"
+      ],
+      "title": "Iran-Aligned Volant Manticore Uses IPFS-Based KuboShell Backdoor in Espionage Campaigns",
+      "url": "https://cyber.askgina.ai/incidents/n-6b48789d"
+    },
+    {
+      "content_text": "Astelia has announced autonomous network mitigation, a new capability that defends against AI-driven exploits by blocking attack paths to reachable vulnerabilities at the network level. Organizations can now eliminate the 1% of vulnerabilities attackers can reach without waiting This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T14:24:11Z",
+      "date_published": "2026-11-24T14:24:11Z",
+      "id": "https://cyber.askgina.ai/incidents/n-ecb734b1",
+      "tags": [
+        "News report"
+      ],
+      "title": "Astelia blocks attack paths to vulnerabilities without waiting for patches",
+      "url": "https://cyber.askgina.ai/incidents/n-ecb734b1"
+    },
+    {
+      "content_text": "Britain’s National Cyber Security Centre said it has observed “a marked rise” since September in cyberattacks assisted by artificial intelligence and warned the technology was increasing attackers’ speed, scale and persistence. This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T13:45:00Z",
+      "date_published": "2026-11-24T13:45:00Z",
+      "id": "https://cyber.askgina.ai/incidents/n-f11098c5",
+      "tags": [
+        "News report"
+      ],
+      "title": "UK cyber agency seeing ‘marked rise’ in AI-driven attacks",
+      "url": "https://cyber.askgina.ai/incidents/n-f11098c5"
+    },
+    {
+      "content_text": "U.S. Cybersecurity and Infrastructure Security Agency (CISA) adds N-able MailAssure and Project MONAI flaws to its Known Exploited Vulnerabilities catalog. The U.S. Cybersecurity and Infrastructure Security Agency (CISA) added N-able MailAssure and Project MONAI vulnerabilities t This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T12:48:09Z",
+      "date_published": "2026-11-24T12:48:09Z",
+      "id": "https://cyber.askgina.ai/incidents/n-44f44f12",
+      "tags": [
+        "News report"
+      ],
+      "title": "U.S. CISA adds N-able MailAssure and Project MONAI flaws to its Known Exploited Vulnerabilities catalog",
+      "url": "https://cyber.askgina.ai/incidents/n-44f44f12"
+    },
+    {
+      "content_text": "The ShinyHunters leak site went dark in September, but a crew that supplied it with victims seems to have found a new home under the “Inception” name, Okta’s threat intelligence team has discovered. Okta tracks the crew as O-UNC-053, a cluster that has been running social enginee This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T12:47:07Z",
+      "date_published": "2026-11-24T12:47:07Z",
+      "id": "https://cyber.askgina.ai/incidents/n-88747994",
+      "tags": [
+        "News report"
+      ],
+      "title": "ShinyHunters-linked crew resurfaces on new leak site",
+      "url": "https://cyber.askgina.ai/incidents/n-88747994"
+    },
+    {
+      "content_text": "As reported by Cyber Insider, researchers have discovered a security vulnerability in Android devices where camera metadata can inadvertently expose audio information. This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T13:12:12Z",
+      "date_published": "2026-11-24T10:37:11Z",
+      "id": "https://cyber.askgina.ai/incidents/n-13211243",
+      "tags": [
+        "News report"
+      ],
+      "title": "Android camera metadata can leak audio data",
+      "url": "https://cyber.askgina.ai/incidents/n-13211243"
+    },
+    {
+      "content_text": "OpenAI and Cisco launched an open-source Linux security tool named Shirudo that deploys temporary runtime protections to block vulnerability exploitation while administrators prepare and roll out patches, without restarting services. [...] This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T13:34:23Z",
+      "date_published": "2026-11-24T10:16:10Z",
+      "id": "https://cyber.askgina.ai/incidents/n-e94ac3e9",
+      "tags": [
+        "News report"
+      ],
+      "title": "New Shirudo tool uses AI to shield unpatched Linux systems from exploits",
+      "url": "https://cyber.askgina.ai/incidents/n-e94ac3e9"
+    },
+    {
+      "content_text": "McDonald’s Japan disclosed a cybersecurity breach that exposed customers’ purchase histories and mobile device location data. This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T15:58:35Z",
+      "date_published": "2026-11-24T00:50:00Z",
+      "id": "https://cyber.askgina.ai/incidents/n-17faeada",
+      "tags": [
+        "News report"
+      ],
+      "title": "McDonald’s Japan discloses breach exposing customer purchase and location data",
+      "url": "https://cyber.askgina.ai/incidents/n-17faeada"
+    },
+    {
+      "content_text": "The Lapsus$ member who leaked footage of Grand Theft Auto VI (GTA 6) was sentenced to seven years in prison on Monday and released from custody on licence the same day, City of London Police announced. Arion Kurtaj, 21, formerly of Oxfordshire, pleaded guilty to six charges, incl This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T18:11:04Z",
+      "date_published": "2026-11-24T00:08:49Z",
+      "id": "https://cyber.askgina.ai/incidents/n-78138acb",
+      "tags": [
+        "News report"
+      ],
+      "title": "GTA 6 hacker sentenced to seven years and released the same day",
+      "url": "https://cyber.askgina.ai/incidents/n-78138acb"
+    },
+    {
+      "content_text": "Idunno AntiCsrf contains a deserialization of untrusted data vulnerability that allows an unauthenticated remote attacker to execute arbitrary code via object injection. The impacted product(s) could be end-of-life (EoL) and/or end-of-service (EoS). Users are advised to discontinue use and/or transition to a supported version. CISA lists the vulnerability as exploited. The catalog addition date is not the date of any individual attack.",
+      "date_modified": "2026-11-24T00:00:00Z",
+      "date_published": "2026-11-24T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/k-e4e8a8e0",
+      "tags": [
+        "CISA KEV catalog entry"
+      ],
+      "title": "CVE-2026-131914: Idunno AntiCsrf Deserialization of Untrusted Data Vulnerability",
+      "url": "https://cyber.askgina.ai/incidents/k-e4e8a8e0"
+    },
+    {
+      "content_text": "Optimizely Web Experimentation contains an external control of critical state data vulnerability in its account signup flow that could allow an attacker to impersonate existing customer users and modify Project JavaScript. Successful exploitation can result in attacker-controlled JavaScript being distributed through Optimizely-hosted assets and executed in browsers visiting affected customer websites. CISA lists the vulnerability as exploited. The catalog addition date is not the date of any individual attack.",
+      "date_modified": "2026-11-24T00:00:00Z",
+      "date_published": "2026-11-24T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/k-79d7bf35",
+      "tags": [
+        "CISA KEV catalog entry"
+      ],
+      "title": "CVE-2026-132224: Optimizely Web Experimentation External Control of Critical State Data Vulnerability",
+      "url": "https://cyber.askgina.ai/incidents/k-79d7bf35"
+    },
+    {
+      "content_text": "Drupal Core contains a not failing securely vulnerability that could allow an unauthenticated attacker to take over an existing site or execute arbitrary code via the Drupal installer. Under specific conditions, the attacker can use install.php to attempt to reinstall Drupal on the site. CISA lists the vulnerability as exploited. The catalog addition date is not the date of any individual attack.",
+      "date_modified": "2026-11-24T00:00:00Z",
+      "date_published": "2026-11-24T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/k-1a076dbe",
+      "tags": [
+        "CISA KEV catalog entry"
+      ],
+      "title": "CVE-2026-132165: Drupal Core Remote Code Execution Vulnerability",
+      "url": "https://cyber.askgina.ai/incidents/k-1a076dbe"
+    },
+    {
+      "content_text": "Bullpen disclosed unauthorized transfers affecting approximately 18–19 accounts created during its April–June 2024 early beta. One affected user, Ansem, reported that his Solana wallet had been compromised, potentially through unauthorized access to his Bullpen profile, where its private key had been imported. Approximately $2.57M in assets was transferred or liquidated from the wallet and moved to Arbitrum through Relay. Bullpen disabled the affected test service while investigating the access vector and determining the full extent of user losses Tracker figures are reported estimates and may be revised. A listing is not an independent verification.",
+      "date_modified": "2026-11-24T00:00:00Z",
+      "date_published": "2026-11-24T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/c-f4f7cd25",
+      "tags": [
+        "Crypto tracker record"
+      ],
+      "title": "Bullpen: reported crypto exploit",
+      "url": "https://cyber.askgina.ai/incidents/c-f4f7cd25"
+    },
+    {
+      "content_text": "A cyberattack disrupted operations at B2B top-up solutions provider GlobeTopper, causing an estimated $2.5 million in lost revenue, while the attacker redeemed digital gift cards worth $70,000. [...] This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T09:33:33Z",
+      "date_published": "2026-11-23T16:50:01Z",
+      "id": "https://cyber.askgina.ai/incidents/n-0af9a751",
+      "tags": [
+        "News report"
+      ],
+      "title": "GlobeTopper loses $2.5 million after hackers steal $70k in gift cards",
+      "url": "https://cyber.askgina.ai/incidents/n-0af9a751"
+    },
+    {
+      "content_text": "Microsoft closed an Azure API Management flaw exploited to target secrets at Norwegian energy companies, with other sectors also affected. The post Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms appeared first on SecurityWeek . This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-23T15:47:40Z",
+      "date_published": "2026-11-23T15:47:40Z",
+      "id": "https://cyber.askgina.ai/incidents/n-e101d52c",
+      "tags": [
+        "News report"
+      ],
+      "title": "Azure Flaw Exploited to Target Secrets at Norwegian Energy Firms",
+      "url": "https://cyber.askgina.ai/incidents/n-e101d52c"
+    },
+    {
+      "content_text": "The attacks were launched from 99 IP addresses and targeted organizations across multiple industries and countries. The post Check Point Security Management Servers Hacked in AI-Assisted Campaign appeared first on SecurityWeek . This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T17:41:29Z",
+      "date_published": "2026-11-23T15:14:12Z",
+      "id": "https://cyber.askgina.ai/incidents/n-22bf6552",
+      "tags": [
+        "News report"
+      ],
+      "title": "Check Point Security Management Servers Hacked in AI-Assisted Campaign",
+      "url": "https://cyber.askgina.ai/incidents/n-22bf6552"
+    },
+    {
+      "content_text": "The U.S. cyber agency is giving government departments until Thanksgiving to patch a vulnerability impacting a critical email security platform that blocks spam, malware and other threats. This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T15:00:00Z",
+      "date_published": "2026-11-23T15:07:09Z",
+      "id": "https://cyber.askgina.ai/incidents/n-8476cf37",
+      "tags": [
+        "News report"
+      ],
+      "title": "CISA warns of exploited N-able bug as company restores email platform",
+      "url": "https://cyber.askgina.ai/incidents/n-8476cf37"
+    },
+    {
+      "content_text": "News on Japan reports: Tower Records announced that approximately 11 million customer records may have been compromised in a cyberattack on November 19th, 2026, with millions of records containing personal details such as names, dates of birth and delivery addresses, although the This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-23T14:15:28Z",
+      "date_published": "2026-11-23T14:15:28Z",
+      "id": "https://cyber.askgina.ai/incidents/n-09fa056d",
+      "tags": [
+        "News report"
+      ],
+      "title": "Jpn: Tower Records Online Hit by Cyberattack, 11 Million Customer Records Potentially Leaked",
+      "url": "https://cyber.askgina.ai/incidents/n-09fa056d"
+    },
+    {
+      "content_text": "Here’s an example of a case and a sentence that will have no deterrent value, because no matter what a judge intends, the sentence will be taken as a free pass by young people engaging in cybercrime — Dissent. Joe Tidy reports: A cyber criminal who hacked the maker of Grand Theft This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T08:30:38Z",
+      "date_published": "2026-11-23T14:08:50Z",
+      "id": "https://cyber.askgina.ai/incidents/n-af17806b",
+      "tags": [
+        "News report"
+      ],
+      "title": "GTA 6 hacker released on licence with warning ‘don’t let this happen again’",
+      "url": "https://cyber.askgina.ai/incidents/n-af17806b"
+    },
+    {
+      "content_text": "Attackers abused a flaw in the GoodCloud remote management service to push malware to devices, and cleaning them requires new firmware. The post GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw appeared first on SecurityWeek . This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-23T13:26:22Z",
+      "date_published": "2026-11-23T13:26:22Z",
+      "id": "https://cyber.askgina.ai/incidents/n-851d3d22",
+      "tags": [
+        "News report"
+      ],
+      "title": "GL.iNet Routers, KVMs Compromised via Remote Management Service Flaw",
+      "url": "https://cyber.askgina.ai/incidents/n-851d3d22"
+    },
+    {
+      "content_text": "A critical security flaw has been disclosed in the popular binary-parser library that could allow an attacker who controls parser definitions to execute arbitrary code. The vulnerability, tracked as CVE-2026-134814 (CVSS score: 9.2 / 8.1), is a case of code injection impacting bi This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-23T13:22:20Z",
+      "date_published": "2026-11-23T13:22:20Z",
+      "id": "https://cyber.askgina.ai/incidents/n-cb673b12",
+      "tags": [
+        "News report"
+      ],
+      "title": "Critical binary-parser Flaw Enables JavaScript Injection via Malicious Parser Definitions",
+      "url": "https://cyber.askgina.ai/incidents/n-cb673b12"
+    },
+    {
+      "content_text": "Microsoft is warning customers that a security vulnerability in Azure API Management (APIM) Classic tiers was exploited to steal stored API credentials, with Norwegian authorities linking the flaw to cyberattacks against energy companies. [...] This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T12:04:37Z",
+      "date_published": "2026-11-23T12:29:00Z",
+      "id": "https://cyber.askgina.ai/incidents/n-53716c44",
+      "tags": [
+        "News report"
+      ],
+      "title": "Microsoft Azure flaw exploited to steal customers' API credentials",
+      "url": "https://cyber.askgina.ai/incidents/n-53716c44"
+    },
+    {
+      "content_text": "Names and email addresses of EU Academy users were exposed in the AI-assisted cyberattack the European Commission detected in October. The post European Commission Uncovers Data Breach in Cyberattack Investigation appeared first on SecurityWeek . This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T16:48:59Z",
+      "date_published": "2026-11-23T12:09:18Z",
+      "id": "https://cyber.askgina.ai/incidents/n-d2294fb1",
+      "tags": [
+        "News report"
+      ],
+      "title": "European Commission Uncovers Data Breach in Cyberattack Investigation",
+      "url": "https://cyber.askgina.ai/incidents/n-d2294fb1"
+    },
+    {
+      "content_text": "Arobases confirmed unauthorized access to a backup server between October 29 and November 1 and said some data offered for sale came from the backups. The agency shut off access on November 2 and notified clients and France’s privacy regulator on November 10. It reported no evidence of code execution on customer servers and did not confirm the claimed volume or list of affected clients. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-23T12:01:00Z",
+      "date_published": "2026-11-23T12:01:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-arobases-client-backup-server-breach",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Arobases confirms unauthorized access to its client backup server",
+      "url": "https://cyber.askgina.ai/incidents/r-arobases-client-backup-server-breach"
+    },
+    {
+      "content_text": "Next said an unnamed online supplier suffered a cyber incident that allowed unauthorized access to limited company data. Next said its own systems were not compromised and current evidence indicates that no customer personal data was affected. The investigation is ongoing. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-24T08:00:00Z",
+      "date_published": "2026-11-23T11:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-next-plc-online-supplier-incident",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Next reports unauthorized access to limited data at an online supplier",
+      "url": "https://cyber.askgina.ai/incidents/r-next-plc-online-supplier-incident"
+    },
+    {
+      "content_text": "Ransomware.live indexed an Osiris listing claiming that data was taken. The listing is not independent evidence of a breach. Aurora Cannabis has not publicly confirmed the claim in the sources reviewed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T10:17:00Z",
+      "date_published": "2026-11-23T10:17:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-aurora-cannabis-osiris-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Osiris names Aurora Cannabis in an unverified ransomware claim",
+      "url": "https://cyber.askgina.ai/incidents/r-aurora-cannabis-osiris-claim"
+    },
+    {
+      "content_text": "Uzbekistan’s Tax Committee linked data circulating online to an unnamed online cash register operator and said it found no evidence of unauthorized access to the committee’s systems. It is assessing the operator’s compliance with security requirements. The data types and number of affected people were not disclosed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: investigating.",
+      "date_modified": "2026-11-23T15:01:08Z",
+      "date_published": "2026-11-23T09:32:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-uzbekistan-online-cash-register-operator-disclosure",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Uzbekistan Tax Committee links circulating data to an outside cash register operator",
+      "url": "https://cyber.askgina.ai/incidents/r-uzbekistan-online-cash-register-operator-disclosure"
+    },
+    {
+      "content_text": "Snowys said malicious code on its website targeted information customers entered between October 5 and November 16. Customer contact details and passwords entered on the site may have been captured, but Snowys could not confirm that an attacker received them and reported no indication that payment cards were involved. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-23T09:43:24Z",
+      "date_published": "2026-11-23T09:23:04Z",
+      "id": "https://cyber.askgina.ai/incidents/r-snowys-outdoors-website-compromise",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Snowys Outdoors finds malicious code on its retail website",
+      "url": "https://cyber.askgina.ai/incidents/r-snowys-outdoors-website-compromise"
+    },
+    {
+      "content_text": "The Seoul Metropolitan Office of Education notified users that names and mobile numbers of 636 Jeongdok library survey participants were exposed. That was 936 survey entries including duplicates. The office said it blocked access to the information. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-23T09:40:55Z",
+      "date_published": "2026-11-23T08:57:05Z",
+      "id": "https://cyber.askgina.ai/incidents/r-jeongdok-library-survey-exposure",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Seoul education office reports exposure of Jeongdok library survey data",
+      "url": "https://cyber.askgina.ai/incidents/r-jeongdok-library-survey-exposure"
+    },
+    {
+      "content_text": "LaLiga said someone accessed one fan-services platform between November 14 and 16 and took personal data from users of LaLiga digital services and some clubs. LaLiga contained the attack on November 16 and notified affected clubs, Spain’s data protection authority and national police. It did not publish a count or specify the types of data taken. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-23T12:00:53Z",
+      "date_published": "2026-11-23T08:30:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-laliga-fan-platform-data-breach",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "LaLiga confirms theft of personal data from a fan-services platform",
+      "url": "https://cyber.askgina.ai/incidents/r-laliga-fan-platform-data-breach"
+    },
+    {
+      "content_text": "For all the talk of AI use by attackers and defenders, little attention is paid to ways CISOs and their security pros can leverage AI uniquely to expediate tasks, cut through the noise, facilitate decision-making, and potentially save big on auditing. Several specific AI prompts This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-23T08:25:00Z",
+      "date_published": "2026-11-23T08:25:00Z",
+      "id": "https://cyber.askgina.ai/incidents/n-d718c3ba",
+      "tags": [
+        "News report"
+      ],
+      "title": "Clever AI prompt ideas every security leader should steal",
+      "url": "https://cyber.askgina.ai/incidents/n-d718c3ba"
+    },
+    {
+      "content_text": "Based on information from Bleeping Computer, OpenRouter has removed three artificial intelligence providers from its platform after an investigation revealed they violated data-handling policies and exposed sensitive information. This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T10:04:42Z",
+      "date_published": "2026-11-23T08:06:36Z",
+      "id": "https://cyber.askgina.ai/incidents/n-d530b5a0",
+      "tags": [
+        "News report"
+      ],
+      "title": "OpenRouter removes three AI providers following data exposure incidents",
+      "url": "https://cyber.askgina.ai/incidents/n-d530b5a0"
+    },
+    {
+      "content_text": "LaLiga, Spain's top men's football league, disclosed a data breach that exposed personal information belonging to users of its services and those of some affiliated clubs. [...] This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T17:45:03Z",
+      "date_published": "2026-11-23T08:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/n-f714b482",
+      "tags": [
+        "News report"
+      ],
+      "title": "Spanish LaLiga confirms hackers stole soccer fans’ personal data",
+      "url": "https://cyber.askgina.ai/incidents/n-f714b482"
+    },
+    {
+      "content_text": "The US Cybersecurity and Infrastructure Security Agency (CISA) warned federal agencies that attackers are now exploiting a recently patched critical Cisco Expressway vulnerability in the wild. [...] This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-23T07:44:19Z",
+      "date_published": "2026-11-23T07:44:19Z",
+      "id": "https://cyber.askgina.ai/incidents/n-5d81d809",
+      "tags": [
+        "News report"
+      ],
+      "title": "CISA flags critical Cisco RCE flaw as actively exploited in attacks",
+      "url": "https://cyber.askgina.ai/incidents/n-5d81d809"
+    },
+    {
+      "content_text": "Two public trackers recorded an Aoqin listing naming University Medical Imaging. Both report the same claim; neither independently verifies intrusion, theft or disruption. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T06:51:00Z",
+      "date_published": "2026-11-23T06:51:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-university-medical-imaging-aoqin-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Aoqin makes an unverified extortion claim naming University Medical Imaging",
+      "url": "https://cyber.askgina.ai/incidents/r-university-medical-imaging-aoqin-claim"
+    },
+    {
+      "content_text": "Two public trackers recorded an Aoqin listing naming Corrigan Moving Systems. Both report the same claim; neither independently verifies intrusion, theft or disruption. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T06:50:00Z",
+      "date_published": "2026-11-23T06:50:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-corrigan-moving-aoqin-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Aoqin makes an unverified extortion claim naming Corrigan Moving Systems",
+      "url": "https://cyber.askgina.ai/incidents/r-corrigan-moving-aoqin-claim"
+    },
+    {
+      "content_text": "In September 2026, UK education software provider Bromcom suffered a data breach involving a legacy single sign-on (SSO) registration system . The incident exposed 355k unique email addresses belonging to staff and pupils at UK schools, alongside SSO registration reference numbers. Bromcom confirmed that no passwords or authentication tokens were exposed, and that the incident did not enable access to Microsoft or Google accounts or its school management system. Listing date and breach date are distinct. Counts and data classes are as reported by Have I Been Pwned.",
+      "date_modified": "2026-11-23T06:36:04Z",
+      "date_published": "2026-11-23T06:36:04Z",
+      "id": "https://cyber.askgina.ai/incidents/b-cfe3cbcd",
+      "tags": [
+        "Have I Been Pwned listing"
+      ],
+      "title": "Bromcom: Have I Been Pwned listing",
+      "url": "https://cyber.askgina.ai/incidents/b-cfe3cbcd"
+    },
+    {
+      "content_text": "Ransomware.live recorded an extortion listing naming the U.S. rail manufacturer’s domain, kinkisharyo.com, and attributing it to a group calling itself Everstake. No compromise or impact has been independently established. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T06:29:00Z",
+      "date_published": "2026-11-23T06:29:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-kinki-sharyo-everstake-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Everstake makes an unverified extortion claim naming KINKISHARYO International",
+      "url": "https://cyber.askgina.ai/incidents/r-kinki-sharyo-everstake-claim"
+    },
+    {
+      "content_text": "A public tracker recorded a listing by Spacebears naming Master Result Soluções Contábeis. Neither an intrusion nor data loss has been independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T04:44:15Z",
+      "date_published": "2026-11-23T04:44:15Z",
+      "id": "https://cyber.askgina.ai/incidents/r-master-result-spacebears-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Spacebears makes an unverified claim naming Master Result Soluções Contábeis",
+      "url": "https://cyber.askgina.ai/incidents/r-master-result-spacebears-claim"
+    },
+    {
+      "content_text": "A public tracker recorded a listing by Spacebears naming Digital Instruments & Control Systems. Neither an intrusion nor data loss has been independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T04:43:36Z",
+      "date_published": "2026-11-23T04:43:36Z",
+      "id": "https://cyber.askgina.ai/incidents/r-dics-spacebears-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Spacebears makes an unverified claim naming Digital Instruments & Control Systems",
+      "url": "https://cyber.askgina.ai/incidents/r-dics-spacebears-claim"
+    },
+    {
+      "content_text": "A public tracker recorded a listing by Spacebears naming Staufen Baumaschinen. Neither an intrusion nor data loss has been independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T04:42:57Z",
+      "date_published": "2026-11-23T04:42:57Z",
+      "id": "https://cyber.askgina.ai/incidents/r-staufen-baumaschinen-spacebears-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Spacebears makes an unverified claim naming Staufen Baumaschinen",
+      "url": "https://cyber.askgina.ai/incidents/r-staufen-baumaschinen-spacebears-claim"
+    },
+    {
+      "content_text": "Suzlon said it took immediate mitigation steps after a cyber incident and informed India’s CERT-In. It reported no observed impact on business-critical applications. A separate Blackout claim listed Suzlon; the company did not attribute the incident or confirm ransomware or data theft. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-24T09:33:35Z",
+      "date_published": "2026-11-23T04:24:56Z",
+      "id": "https://cyber.askgina.ai/incidents/r-suzlon-energy-blackout-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Suzlon Energy confirms cyber incident; Blackout claim remains unverified",
+      "url": "https://cyber.askgina.ai/incidents/r-suzlon-energy-blackout-claim"
+    },
+    {
+      "content_text": "A public tracker recorded a listing by Spacebears naming Groupe Piment. Neither an intrusion nor data loss has been independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T04:17:00Z",
+      "date_published": "2026-11-23T04:17:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-groupe-piment-spacebears-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Spacebears makes an unverified claim naming Groupe Piment",
+      "url": "https://cyber.askgina.ai/incidents/r-groupe-piment-spacebears-claim"
+    },
+    {
+      "content_text": "FrenchBreaches reported finding 118,130 distinct email addresses in files attributed to the French nonprofit Fondation des Femmes. The report does not establish how the files were obtained, whether a private database was accessed or how many people were affected. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T05:55:55Z",
+      "date_published": "2026-11-23T03:32:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-fondation-des-femmes-petition-data-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "FrenchBreaches reports an unconfirmed data claim involving Fondation des Femmes",
+      "url": "https://cyber.askgina.ai/incidents/r-fondation-des-femmes-petition-data-claim"
+    },
+    {
+      "content_text": "HD Hyundai Robotics said an outside party accessed a website server on November 19 and the company discovered the intrusion on November 20. Its Korean notice says subscriber data leaked, while the English notice says information may have been accessed. The company did not publish a count. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-23T23:11:49Z",
+      "date_published": "2026-11-23T02:57:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-hd-hyundai-robotics-website-data-breach",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "HD Hyundai Robotics discloses unauthorized access to website subscriber data",
+      "url": "https://cyber.askgina.ai/incidents/r-hd-hyundai-robotics-website-data-breach"
+    },
+    {
+      "content_text": "Falcon listed Fisher & Paykel Healthcare and claimed it took company data. The claim is unverified, and no connection to the company’s separately disclosed October incident has been established. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T02:39:09Z",
+      "date_published": "2026-11-23T02:39:09Z",
+      "id": "https://cyber.askgina.ai/incidents/r-fisher-paykel-healthcare-falcon-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Falcon lists Fisher & Paykel Healthcare in an unverified extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-fisher-paykel-healthcare-falcon-claim"
+    },
+    {
+      "content_text": "Two French publications reviewed files attributed to a Decathlon home-delivery system. Cyberattaque.org counted 163,646 customer rows, while Fuites Infos reported about 137,000 identified customers. Decathlon has not confirmed the data’s origin, the number of affected people or who operated the delivery system. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-24T10:53:56Z",
+      "date_published": "2026-11-23T02:37:59Z",
+      "id": "https://cyber.askgina.ai/incidents/r-decathlon-france-customer-delivery-data-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Published files are claimed to contain Decathlon customer and delivery data",
+      "url": "https://cyber.askgina.ai/incidents/r-decathlon-france-customer-delivery-data-claim"
+    },
+    {
+      "content_text": "VECERT reported an online claim naming Venezuela National Institute of Land Transport. It could not verify an intrusion, the authenticity of the alleged material, or whether any data was exposed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T01:53:17Z",
+      "date_published": "2026-11-23T01:53:17Z",
+      "id": "https://cyber.askgina.ai/incidents/r-venezuela-intt-disclosure-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "AlexG4Cvv2 makes an unverified claim naming Venezuela National Institute of Land Transport",
+      "url": "https://cyber.askgina.ai/incidents/r-venezuela-intt-disclosure-claim"
+    },
+    {
+      "content_text": "VECERT reported an online claim naming Municipality of Río Grande (Argentina). It could not verify an intrusion, the authenticity of the alleged material, or whether any data was exposed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T01:53:17Z",
+      "date_published": "2026-11-23T01:53:17Z",
+      "id": "https://cyber.askgina.ai/incidents/r-rio-grande-municipal-disclosure-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "ElCarniceroXv makes an unverified claim naming Municipality of Río Grande (Argentina)",
+      "url": "https://cyber.askgina.ai/incidents/r-rio-grande-municipal-disclosure-claim"
+    },
+    {
+      "content_text": "Samsung Securities confirmed that an intrusion into its customer feedback system exposed personal information belonging to 8,241 people after it detected signs of intrusion on November 21. Exposed data varied by customer and included names, account numbers, addresses, contact details and driver’s license numbers. The company said it blocked access, reported the incident to regulators and planned individual notices. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-24T08:21:36Z",
+      "date_published": "2026-11-23T01:12:23Z",
+      "id": "https://cyber.askgina.ai/incidents/r-samsung-securities-voc-november-2026",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Samsung Securities confirms customer feedback system breach",
+      "url": "https://cyber.askgina.ai/incidents/r-samsung-securities-voc-november-2026"
+    },
+    {
+      "content_text": "VECERT reported an online claim naming Kenya’s national eCitizen platform. The claimed data theft and impact on sign-in services have not been independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T01:08:20Z",
+      "date_published": "2026-11-23T01:08:20Z",
+      "id": "https://cyber.askgina.ai/incidents/r-kenya-ecitizen-byte-to-breach-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "VECERT relays an unverified data compromise claim involving Kenya’s eCitizen",
+      "url": "https://cyber.askgina.ai/incidents/r-kenya-ecitizen-byte-to-breach-claim"
+    },
+    {
+      "content_text": "FBI investigates an apparent breach of its NCIC criminal database, raising concerns over sensitive law enforcement data and security. The FBI is investigating a possible breach of a database that police use to check arrest warrants and access criminal records. According to the BB This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T07:19:09Z",
+      "date_published": "2026-11-23T00:18:39Z",
+      "id": "https://cyber.askgina.ai/incidents/n-42e5f99f",
+      "tags": [
+        "News report"
+      ],
+      "title": "Hackers May Have Breached FBI Database Used by Police Nationwide",
+      "url": "https://cyber.askgina.ai/incidents/n-42e5f99f"
+    },
+    {
+      "content_text": "Breach date(s): 2026-01-19. Reported 2026-11-23. The notice date is not necessarily the date of compromise.",
+      "date_modified": "2026-11-23T00:00:00Z",
+      "date_published": "2026-11-23T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/o-874931a8",
+      "tags": [
+        "Official notice"
+      ],
+      "title": "Kern County Behavioral Health & Recovery Services reported a data breach to the California AG",
+      "url": "https://cyber.askgina.ai/incidents/o-874931a8"
+    },
+    {
+      "content_text": "N-able MailAssure (SpamExperts) contains a server-side request forgery vulnerability in the LDAP synchronization connection check that allows an authenticated API user to connect to arbitrary internal hosts and ports, determine which are reachable, and send crafted data to internal services. CISA lists the vulnerability as exploited. The catalog addition date is not the date of any individual attack.",
+      "date_modified": "2026-11-23T00:00:00Z",
+      "date_published": "2026-11-23T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/k-ec15804f",
+      "tags": [
+        "CISA KEV catalog entry"
+      ],
+      "title": "CVE-2026-134624: N-able MailAssure (SpamExperts) Server-Side Request Forgery (SSRF) Vulnerability",
+      "url": "https://cyber.askgina.ai/incidents/k-ec15804f"
+    },
+    {
+      "content_text": "Project MONAI MONAI Label contains a path traversal vulnerability that allows an unauthenticated remote attacker to write arbitrary files outside the intended datastore directory, potentially resulting in remote code execution. CISA lists the vulnerability as exploited. The catalog addition date is not the date of any individual attack.",
+      "date_modified": "2026-11-23T00:00:00Z",
+      "date_published": "2026-11-23T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/k-4ab84f9c",
+      "tags": [
+        "CISA KEV catalog entry"
+      ],
+      "title": "CVE-2026-133968: Project MONAI MONAI Label Path Traversal Vulnerability",
+      "url": "https://cyber.askgina.ai/incidents/k-4ab84f9c"
+    },
+    {
+      "content_text": "INC Ransom listed Cybage Software and claimed it obtained employee-related and contractual material. Monitoring services picked up the listing, but the company has not confirmed the claim or disclosed any customer impact. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T23:19:00Z",
+      "date_published": "2026-11-22T23:19:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-cybage-software-inc-ransom",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "INC Ransom lists Cybage Software in unverified extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-cybage-software-inc-ransom"
+    },
+    {
+      "content_text": "Bell MTS said a cyberattack at the provider of its residential and small-business email service led to account lockouts and password resets in Manitoba. The Winnipeg Free Press reported that some accounts were accessed; Bell’s statement to CBC described that access as possible. Bell said this was separate from the intrusion into Bell Canada’s internal systems and that self-service password resets had been restored. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-22T23:11:00Z",
+      "date_published": "2026-11-22T23:11:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-bell-mts-third-party-email-cyberattack",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Bell MTS confirms a cyberattack at its email provider",
+      "url": "https://cyber.askgina.ai/incidents/r-bell-mts-third-party-email-cyberattack"
+    },
+    {
+      "content_text": "Scarlettgroup named Bordeaux University Hospital on its leak site. Monitoring services recorded the listing; the hospital has not publicly confirmed an intrusion, data theft or disruption. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-24T16:46:02Z",
+      "date_published": "2026-11-22T23:09:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-bordeaux-university-hospital-scarlettgroup",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Scarlettgroup claims it targeted Bordeaux University Hospital",
+      "url": "https://cyber.askgina.ai/incidents/r-bordeaux-university-hospital-scarlettgroup"
+    },
+    {
+      "content_text": "Public ransomware trackers recorded a Panzer listing naming Agenzia Agorà. Neither an intrusion nor any data loss was independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T22:55:38Z",
+      "date_published": "2026-11-22T22:55:38Z",
+      "id": "https://cyber.askgina.ai/incidents/r-agenzia-agora-panzer-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Panzer makes an unverified extortion claim naming Agenzia Agorà",
+      "url": "https://cyber.askgina.ai/incidents/r-agenzia-agora-panzer-claim"
+    },
+    {
+      "content_text": "Public ransomware trackers recorded a MedusaLocker listing naming Moreth. Neither an intrusion nor any data loss was independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T22:41:43Z",
+      "date_published": "2026-11-22T22:41:43Z",
+      "id": "https://cyber.askgina.ai/incidents/r-moreth-medusalocker-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "MedusaLocker makes an unverified extortion claim naming Moreth",
+      "url": "https://cyber.askgina.ai/incidents/r-moreth-medusalocker-claim"
+    },
+    {
+      "content_text": "INC Ransom listed L&T Technology Services and claimed it obtained employee-related and contractual material. Monitoring services picked up the listing, but the company has not confirmed the claim or disclosed any customer impact. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T22:34:00Z",
+      "date_published": "2026-11-22T22:34:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-l-and-t-technology-services-inc-ransom",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "INC Ransom lists L&T Technology Services in unverified extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-l-and-t-technology-services-inc-ransom"
+    },
+    {
+      "content_text": "Peninsula Energy said a November 20 incident affected an operating system at its Lance uranium project in Wyoming. The company said its administrative systems in Australia and the United States were not breached. It requested a trading halt and expected a temporary operational impact, but did not say whether production stopped. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-24T11:55:11Z",
+      "date_published": "2026-11-22T22:32:31Z",
+      "id": "https://cyber.askgina.ai/incidents/r-peninsula-energy-lance-cyber-incident",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Peninsula Energy reports cyber incident at its Lance uranium project",
+      "url": "https://cyber.askgina.ai/incidents/r-peninsula-energy-lance-cyber-incident"
+    },
+    {
+      "content_text": "French reporting described an unconfirmed sale listing for a dataset attributed to Wanda Collection, with roughly 97,000 email addresses claimed. The listing describes account, invoice and delivery information. The retailer has not confirmed the source or scale. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T00:00:00Z",
+      "date_published": "2026-11-22T21:51:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-wanda-collection-customer-data-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Seller claims access to Wanda Collection customer and order data",
+      "url": "https://cyber.askgina.ai/incidents/r-wanda-collection-customer-data-claim"
+    },
+    {
+      "content_text": "French reporting described a dataset offered for sale and attributed to La Chouette Mauve, with more than 111,000 email addresses claimed. The retailer has not confirmed the origin, scale or count of affected people. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T00:00:00Z",
+      "date_published": "2026-11-22T21:51:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-la-chouette-mauve-customer-data-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Seller claims access to La Chouette Mauve customer and order data",
+      "url": "https://cyber.askgina.ai/incidents/r-la-chouette-mauve-customer-data-claim"
+    },
+    {
+      "content_text": "BitBiashara said it lost control of its previous Nostr account and announced a replacement identity through its official X account. It did not disclose how the account was compromised or report a financial loss. This is a claim from cited sources. The confidence stage reflects available evidence, not a verdict. Confidence stage: Confirmed.",
+      "date_modified": "2026-11-22T20:25:28Z",
+      "date_published": "2026-11-22T20:25:28Z",
+      "id": "https://cyber.askgina.ai/incidents/x-cd2fd6b5",
+      "tags": [
+        "X signal"
+      ],
+      "title": "BitBiashara reports compromise of its former Nostr account",
+      "url": "https://cyber.askgina.ai/incidents/x-cd2fd6b5"
+    },
+    {
+      "content_text": "BitBiashara said it lost control of its previous Nostr account and announced a replacement identity through its official X account. It did not disclose how the account was compromised or report a financial loss. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-22T20:25:28Z",
+      "date_published": "2026-11-22T20:25:28Z",
+      "id": "https://cyber.askgina.ai/incidents/r-bitbiashara-nostr-account-compromise",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "BitBiashara reports compromise of its former Nostr account",
+      "url": "https://cyber.askgina.ai/incidents/r-bitbiashara-nostr-account-compromise"
+    },
+    {
+      "content_text": "Fuites Infos reported about 80,800 product reservation rows in a file attributed to LAPSA, linked to about 16,200 distinct email addresses. The publication found no fields for payment details, passwords or postal addresses. LAPSA has not confirmed the file’s origin or any intrusion. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T06:18:05Z",
+      "date_published": "2026-11-22T20:20:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-lapsa-alduin-data-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Alduin claims access to LAPSA customer and order information",
+      "url": "https://cyber.askgina.ai/incidents/r-lapsa-alduin-data-claim"
+    },
+    {
+      "content_text": "One X account alleged that 13.43 million NES were minted and bridged without authorization. The post estimated about $440,000 in sale proceeds; its separate $3.14 million nominal token valuation is not a verified loss. No public confirmation of this November incident from Nesa was found. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T19:57:46Z",
+      "date_published": "2026-11-22T19:57:46Z",
+      "id": "https://cyber.askgina.ai/incidents/r-nesa-november-2026-bridge-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Nesa bridge faces an unverified report of new unauthorized NES minting",
+      "url": "https://cyber.askgina.ai/incidents/r-nesa-november-2026-bridge-claim"
+    },
+    {
+      "content_text": "Public ransomware trackers recorded a Qilin listing naming Viapan Group. Neither an intrusion nor any data loss was independently verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T19:36:08Z",
+      "date_published": "2026-11-22T19:36:08Z",
+      "id": "https://cyber.askgina.ai/incidents/r-viapan-group-qilin-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Qilin makes an unverified extortion claim naming Viapan Group",
+      "url": "https://cyber.askgina.ai/incidents/r-viapan-group-qilin-claim"
+    },
+    {
+      "content_text": "Two French publications reported a sale claim concerning Subtil Diamant data. The seller claimed 94,133 email addresses and nearly 15 million rows, not that many customers; Fuites Infos described sample records containing customer, order and delivery information. Subtil Diamant has not confirmed the claim. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-24T13:47:00Z",
+      "date_published": "2026-11-22T19:19:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-subtil-diamant-customer-data-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Seller claims access to Subtil Diamant account and order records",
+      "url": "https://cyber.askgina.ai/incidents/r-subtil-diamant-customer-data-claim"
+    },
+    {
+      "content_text": "Fusionist asked users to pause ACE activity on BNB Smart Chain after unauthorized token minting was reported. The Block estimated about $2 million in attacker proceeds and separately valued later withdrawals of 53.7 million ACE from bridge reserves at about $3.7 million. Those figures measure different effects; Fusionist has not published a reconciled loss total. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: investigating.",
+      "date_modified": "2026-11-22T23:17:00Z",
+      "date_published": "2026-11-22T19:08:28Z",
+      "id": "https://cyber.askgina.ai/incidents/r-fusionist-ace-bridge",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Fusionist investigates suspected attack on the ACE bridge",
+      "url": "https://cyber.askgina.ai/incidents/r-fusionist-ace-bridge"
+    },
+    {
+      "content_text": "Netbeat notified customers of unauthorized access to part of its hosting infrastructure. Reporting on the notice says customer and billing data were affected; credentials for hosted sites and API keys may also have been exposed. Netbeat took affected servers offline and began resetting customer passwords. The number affected is not known. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-24T07:43:01Z",
+      "date_published": "2026-11-22T18:55:10Z",
+      "id": "https://cyber.askgina.ai/incidents/r-netbeat-hosting-infrastructure-intrusion",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Netbeat reports an intrusion into its hosting infrastructure",
+      "url": "https://cyber.askgina.ai/incidents/r-netbeat-hosting-infrastructure-intrusion"
+    },
+    {
+      "content_text": "The hospital director said a cyberattack disrupted phones, imaging and other systems at three sites from the evening of November 21 local time. He said staff found encrypted, inaccessible databases, activated emergency procedures and postponed non-urgent care. An IT provider is a possible lead, not a confirmed entry point; patient-data theft has not been reported. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-24T18:13:00Z",
+      "date_published": "2026-11-22T17:38:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-guadeloupe-university-hospital-cyberattack",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Cyberattack disrupts three Guadeloupe University Hospital sites",
+      "url": "https://cyber.askgina.ai/incidents/r-guadeloupe-university-hospital-cyberattack"
+    },
+    {
+      "content_text": "Cranston police took the department network offline after detecting a possible database intrusion on November 21. Calls for service, phones and radio continued normally. Police said they had no indication that personal information had been accessed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: investigating.",
+      "date_modified": "2026-11-23T07:00:00Z",
+      "date_published": "2026-11-22T16:58:04Z",
+      "id": "https://cyber.askgina.ai/incidents/r-cranston-police-suspected-intrusion",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Cranston police take network offline after detecting a possible intrusion",
+      "url": "https://cyber.askgina.ai/incidents/r-cranston-police-suspected-intrusion"
+    },
+    {
+      "content_text": "INC Ransom claimed it held Persistent Systems data. Persistent said its own systems were secure and that employee immigration records may have been taken from an external law firm; the broader claim remains unverified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-23T07:47:58Z",
+      "date_published": "2026-11-22T15:14:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-persistent-systems-inc-ransom-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "INC Ransom claims theft of data from Persistent Systems",
+      "url": "https://cyber.askgina.ai/incidents/r-persistent-systems-inc-ransom-claim"
+    },
+    {
+      "content_text": "DireWolf named EconSys in a leak-site listing. No confirmation from the organization, reliable exposure count, or verified access details were found in the sources reviewed. The listing does not establish that any government agency or customer was affected. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T15:07:00Z",
+      "date_published": "2026-11-22T15:07:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-econsys-direwolf-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "DireWolf lists EconSys in an extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-econsys-direwolf-claim"
+    },
+    {
+      "content_text": "Hyflock named Samsung Group on its leak site and claimed it took 1 TB of data. The listing does not establish the affected business or systems, and Samsung had not confirmed the allegation in the sources reviewed. No link to the earlier U.S. advertising vendor breach is established. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T13:52:00Z",
+      "date_published": "2026-11-22T13:52:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-samsung-hyflock-november-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Hyflock claims it took data from Samsung Group",
+      "url": "https://cyber.askgina.ai/incidents/r-samsung-hyflock-november-claim"
+    },
+    {
+      "content_text": "A threat actor breached the internal network of Korea Electric Power Corporation (KEPCO) and accessed two systems containing customer, employee, and contractor data. [...] This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T14:55:42Z",
+      "date_published": "2026-11-22T11:20:00Z",
+      "id": "https://cyber.askgina.ai/incidents/n-f1397973",
+      "tags": [
+        "News report"
+      ],
+      "title": "South Korea’s power giant KEPCO confirms data breach impacting 1.5 million",
+      "url": "https://cyber.askgina.ai/incidents/n-f1397973"
+    },
+    {
+      "content_text": "Rhysida named Law Offices of Cynthia A. de Petris in a leak-site listing. No confirmation from the organization, reliable exposure count, or verified access details were found in the sources reviewed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T10:43:39Z",
+      "date_published": "2026-11-22T10:43:39Z",
+      "id": "https://cyber.askgina.ai/incidents/r-cynthia-de-petris-rhysida-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Rhysida lists Law Offices of Cynthia A. de Petris in an extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-cynthia-de-petris-rhysida-claim"
+    },
+    {
+      "content_text": "N0n named Dynamic Education Services in a leak-site listing. No confirmation from the organization, reliable exposure count, or verified access details were found in the sources reviewed. The date of any intrusion is not independently established. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T10:22:00Z",
+      "date_published": "2026-11-22T10:22:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-dynamic-education-n0n-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "N0n lists Dynamic Education Services in an extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-dynamic-education-n0n-claim"
+    },
+    {
+      "content_text": "EndZone named UCA General Insurance Services in a leak-site listing. No confirmation from the organization, reliable exposure count, or verified access details were found in the sources reviewed. The tracker provides no victim domain. The identity and location of the affected entity are not verified. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T09:21:28Z",
+      "date_published": "2026-11-22T09:21:28Z",
+      "id": "https://cyber.askgina.ai/incidents/r-uca-general-endzone-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "EndZone lists UCA General Insurance Services in an extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-uca-general-endzone-claim"
+    },
+    {
+      "content_text": "Hackers stole personal information from the company’s customer portal and supplier relationship management platform. The post 1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO appeared first on SecurityWeek . This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T17:19:47Z",
+      "date_published": "2026-11-22T09:20:36Z",
+      "id": "https://cyber.askgina.ai/incidents/n-f3a43b39",
+      "tags": [
+        "News report"
+      ],
+      "title": "1.5 Million Impacted by Data Breach at South Korean Electric Company KEPCO",
+      "url": "https://cyber.askgina.ai/incidents/n-f3a43b39"
+    },
+    {
+      "content_text": "Korea Electric Power Corporation (KEPCO) confirmed exposure for 650,487 users of its billing platform. It reported a separate procurement-system breach and treated all 869,761 procurement users as potentially affected because it could not establish the precise scope. The combined count does not establish how many distinct people had data exposed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-24T14:55:42Z",
+      "date_published": "2026-11-22T09:16:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-kepco-on-procurement-data-breach",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "KEPCO confirms breach of customer service and procurement systems",
+      "url": "https://cyber.askgina.ai/incidents/r-kepco-on-procurement-data-breach"
+    },
+    {
+      "content_text": "Ransomware.live recorded a Hyflock listing naming Universidad Dominicana O&M. No statement from the organization or independent confirmation of an intrusion or data theft was found. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T07:22:00Z",
+      "date_published": "2026-11-22T07:22:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-dominicana-om-hyflock-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Hyflock claims a compromise of Universidad Dominicana O&M",
+      "url": "https://cyber.askgina.ai/incidents/r-dominicana-om-hyflock-claim"
+    },
+    {
+      "content_text": "Ransomware.live recorded a Qilin listing naming Invicta Watch Group. No statement from the organization or independent confirmation of an intrusion or data theft was found. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T07:13:00Z",
+      "date_published": "2026-11-22T07:13:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-invicta-watch-qilin-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Qilin claims a compromise of Invicta Watch Group",
+      "url": "https://cyber.askgina.ai/incidents/r-invicta-watch-qilin-claim"
+    },
+    {
+      "content_text": "The Department of Motor Traffic said its official website was attacked on the night of November 21. Its separate appointment portal remained operational, and the department said scheduled appointments were unaffected. It did not disclose evidence of data exposure. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-22T09:59:05Z",
+      "date_published": "2026-11-22T05:49:06Z",
+      "id": "https://cyber.askgina.ai/incidents/r-sri-lanka-dmt-website",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Sri Lanka’s Department of Motor Traffic confirms website cyberattack",
+      "url": "https://cyber.askgina.ai/incidents/r-sri-lanka-dmt-website"
+    },
+    {
+      "content_text": "Open Source Vulnerabilities (OSV) published advisories for five malicious npm packages under the @c1-ease scope, crediting Amazon Inspector. The advisories identify affected package versions but do not identify organizations that installed them or confirm data theft. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-22T02:35:58Z",
+      "date_published": "2026-11-22T02:35:58Z",
+      "id": "https://cyber.askgina.ai/incidents/r-npm-c1-ease-malicious-packages",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "OSV lists five malicious npm packages under the @c1-ease scope",
+      "url": "https://cyber.askgina.ai/incidents/r-npm-c1-ease-malicious-packages"
+    },
+    {
+      "content_text": "News outlets reported an unverified claim that a seller had 2.55 million customer records associated with Balanz Capital. Neither the data’s authenticity nor an intrusion into the brokerage was independently verified. The figure is a claim about records, not confirmed affected people. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-22T00:19:41Z",
+      "date_published": "2026-11-22T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-balanz-capital-alleged-data-sale",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Unverified data sale claim names Argentine brokerage Balanz Capital",
+      "url": "https://cyber.askgina.ai/incidents/r-balanz-capital-alleged-data-sale"
+    },
+    {
+      "content_text": "An attacker exploited privileged minting authority associated with Fusionist's Endurance Bridge to create unbacked ACE tokens on BSC. The attacker sold the unauthorized tokens through decentralized exchanges, extracting approximately $1.04M in stablecoins across dozens of transactions. The origin of the unauthorized minting authority remains unknown, and Fusionist advised users to suspend ACE transfers, trading and bridging on BSC while investigating Tracker figures are reported estimates and may be revised. A listing is not an independent verification.",
+      "date_modified": "2026-11-22T00:00:00Z",
+      "date_published": "2026-11-22T00:00:00Z",
+      "id": "https://cyber.askgina.ai/incidents/c-31c40b98",
+      "tags": [
+        "Crypto tracker record"
+      ],
+      "title": "Endurance Bridge: reported crypto exploit",
+      "url": "https://cyber.askgina.ai/incidents/c-31c40b98"
+    },
+    {
+      "content_text": "Aramid estimated about $8,500 in direct losses and reported separate outflows of about 125 million VOI from escrow. The project said the incident was isolated to a bridge contract, with no compromise of its signing infrastructure. Aramid paused bridging; the final reconciled impact, including VOI outflows, was not established. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: contained.",
+      "date_modified": "2026-11-22T17:08:29Z",
+      "date_published": "2026-11-21T23:59:30Z",
+      "id": "https://cyber.askgina.ai/incidents/r-aramid-bridge-voi-algorand-november",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Voi Network reports unauthorized outflows from the Aramid bridge",
+      "url": "https://cyber.askgina.ai/incidents/r-aramid-bridge-voi-algorand-november"
+    },
+    {
+      "content_text": "Together AI confirmed an unauthorized party downloaded stored test samples of customer prompts after a repository credential was exposed. The requests were submitted in June and July; the company did not disclose when the download took place or how many customers were affected. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: confirmed.",
+      "date_modified": "2026-11-21T23:27:18Z",
+      "date_published": "2026-11-21T23:27:18Z",
+      "id": "https://cyber.askgina.ai/incidents/r-together-ai-serverless-prompt-leak",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Together AI confirms unauthorized download of stored prompt samples",
+      "url": "https://cyber.askgina.ai/incidents/r-together-ai-serverless-prompt-leak"
+    },
+    {
+      "content_text": "Together AI confirmed an unauthorized party downloaded stored samples from June and July serverless inference requests. The company did not disclose the number of customers or prompts. This is a claim from cited sources. The confidence stage reflects available evidence, not a verdict. Confidence stage: Post-mortem.",
+      "date_modified": "2026-11-22T17:39:15Z",
+      "date_published": "2026-11-21T23:20:07Z",
+      "id": "https://cyber.askgina.ai/incidents/x-eb428de0",
+      "tags": [
+        "X signal"
+      ],
+      "title": "Together AI confirms unauthorized download of stored prompt samples",
+      "url": "https://cyber.askgina.ai/incidents/x-eb428de0"
+    },
+    {
+      "content_text": "Rackspace Spot cloud platform users were recently targeted by unauthorized actors who leveraged compromised credentials to access sensitive Kubernetes clusters, as first reported by Bleeping Computer. This entry summarizes attributed news coverage, not an independent confirmation.",
+      "date_modified": "2026-11-24T09:46:04Z",
+      "date_published": "2026-11-21T23:10:24Z",
+      "id": "https://cyber.askgina.ai/incidents/n-07882a25",
+      "tags": [
+        "News report"
+      ],
+      "title": "Rackspace discloses security breach of Spot cloud platform",
+      "url": "https://cyber.askgina.ai/incidents/n-07882a25"
+    },
+    {
+      "content_text": "Rackspace told customers that an intruder used leaked credentials to access its Spot cloud platform on November 17 and could read Kubernetes Secrets in affected clusters. Rackspace restored service and advised affected customers to replace credentials. It did not disclose how many customers were affected or confirm the theft of specific secrets. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: contained.",
+      "date_modified": "2026-11-24T06:00:13Z",
+      "date_published": "2026-11-21T22:59:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-rackspace-spot-kubernetes",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Rackspace Spot warns of possible access to customer Kubernetes secrets",
+      "url": "https://cyber.askgina.ai/incidents/r-rackspace-spot-kubernetes"
+    },
+    {
+      "content_text": "Threat monitors recorded a leak-site claim naming Fort Smith EMS, the emergency medical service provider. The sources reviewed do not establish data theft, disruption to emergency services or a connection to the city government’s earlier breach. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-21T20:13:00Z",
+      "date_published": "2026-11-21T20:13:00Z",
+      "id": "https://cyber.askgina.ai/incidents/r-fort-smith-ems-gentlemen-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "The Gentlemen claims it targeted Fort Smith EMS",
+      "url": "https://cyber.askgina.ai/incidents/r-fort-smith-ems-gentlemen-claim"
+    },
+    {
+      "content_text": "Replo co-founder Noah Gilmore said the company contacted some customers as a precaution after a security concern. He said its review found no evidence that customer data was accessed or leaked and that customers who were not contacted did not need to act. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: investigating.",
+      "date_modified": "2026-11-21T18:39:40Z",
+      "date_published": "2026-11-21T18:39:40Z",
+      "id": "https://cyber.askgina.ai/incidents/r-replo-precautionary-customer-notice",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "Replo contacts some customers as a precaution; no evidence of customer data exposure",
+      "url": "https://cyber.askgina.ai/incidents/r-replo-precautionary-customer-notice"
+    },
+    {
+      "content_text": "SafePay named Treasure Island Industrial Corporation in a leak-site listing. No confirmation from the organization, reliable exposure count, or verified access details were found in the sources reviewed. This record reflects the cited reports and may be revised as more evidence becomes available. Reported status: claimed.",
+      "date_modified": "2026-11-21T18:34:09Z",
+      "date_published": "2026-11-21T18:34:09Z",
+      "id": "https://cyber.askgina.ai/incidents/r-treasure-island-industrial-safepay-claim",
+      "tags": [
+        "Curated incident"
+      ],
+      "title": "SafePay lists Treasure Island Industrial Corporation in an extortion claim",
+      "url": "https://cyber.askgina.ai/incidents/r-treasure-island-industrial-safepay-claim"
+    }
+  ],
+  "language": "en",
+  "title": "Cyber — Cyber incidents",
+  "version": "https://jsonfeed.org/version/1.1"
+}

@@ -1,0 +1,47 @@
+name: Weekly Ora scan
+
+on:
+  schedule:
+    - cron: '23 8 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - name: Request a fresh Ora scan and write the job summary
+        shell: bash
+        run: |
+          response=$(mktemp)
+          trap 'rm -f "$response"' EXIT
+          curl --fail --silent --show-error --connect-timeout 15 --max-time 240 \
+            --request POST 'https://ora.ai/api/scan?include=essentials&fresh=1' \
+            --header 'content-type: application/json' \
+            --data '{"url":"https://cyber.askgina.ai/","force":true,"fresh":true}' \
+            --output "$response"
+          python3 - "$response" <<'PY'
+          import json
+          import os
+          import re
+          import sys
+
+          with open(sys.argv[1], encoding="utf-8") as source:
+              scan = json.load(source)
+          overall = scan["score"]
+          essentials = scan["essentials"]["score"]
+          if type(overall) not in (int, float) or type(essentials) not in (int, float):
+              raise ValueError("Ora returned nonnumeric scores")
+          failed = sorted({check["id"] for layer in scan["layers"] for check in layer["checks"]
+                           if check["status"] == "fail"})
+          if not all(re.fullmatch(r"[a-zA-Z0-9_-]+", item) for item in failed):
+              raise ValueError("Ora returned invalid check IDs")
+          with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+              summary.write("## Weekly Ora scan: cyber.askgina.ai\n\n")
+              summary.write(f"- Overall score: **{overall}/100**\n- Essentials score: **{essentials}/100**\n\n")
+              summary.write("### Failing check IDs\n\n")
+              summary.write("".join(f"- `{item}`\n" for item in failed) if failed else "None.\n")
+          PY

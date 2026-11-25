@@ -48,3 +48,4 @@ Disallow: /e
 Disallow: /__build
 
 Sitemap: https://cyber.askgina.ai/sitemap.xml
+Schemamap: https://cyber.askgina.ai/schemamap.xml

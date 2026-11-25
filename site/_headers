@@ -29,3 +29,28 @@
 
 /404.md
   X-Robots-Tag: noindex, nofollow
+
+/.well-known/ard.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+
+/.well-known/api-catalog
+  Content-Type: application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"
+  Link: </.well-known/api-catalog>; rel="api-catalog"
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+
+/openapi.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+
+/.well-known/agent-skills/index.json
+  Content-Type: application/json; charset=utf-8
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300
+
+/.well-known/agent-skills/read-cyber/SKILL.md
+  Access-Control-Allow-Origin: *
+  Cache-Control: public, max-age=300

@@ -21,18 +21,17 @@ export function mergeVary(existing, ...tokens) {
   return [...fields.values()].join(", ");
 }
 
-export function applySecurityHeaders(res, { isHtml = false, isRoot = false, noindex = false, extraHeaders = {} } = {}) {
+export function applySecurityHeaders(res, { isHtml = false, noindex = false, extraHeaders = {} } = {}) {
   const headers = new Headers(res.headers);
+  for (const [name, value] of new Headers(extraHeaders)) headers.set(name, value);
   headers.set("Strict-Transport-Security", "max-age=31536000; includeSubDomains");
   headers.set("X-Frame-Options", "DENY");
   headers.set("X-Content-Type-Options", "nosniff");
   headers.set("Referrer-Policy", "strict-origin-when-cross-origin");
   headers.set("Permissions-Policy", "camera=(), microphone=(), geolocation=(), payment=(), usb=()");
   headers.set("Content-Security-Policy", CSP);
-  if (isHtml || isRoot) headers.append("Link", DISCOVERY_LINKS.join(", "));
-  if (isRoot) headers.append("Link", `<${SITE_ORIGIN}/index.md>; rel="alternate"; type="text/markdown"`);
+  if (isHtml) headers.append("Link", DISCOVERY_LINKS.join(", "));
   if (noindex) headers.set("X-Robots-Tag", "noindex, nofollow");
-  for (const [name, value] of new Headers(extraHeaders)) headers.set(name, value);
   return new Response(res.body, { status: res.status, statusText: res.statusText, headers });
 }
 

@@ -584,5 +584,13 @@ translate.save()
 with open(OUT + ".tmp", "w", encoding="utf-8") as f:
     json.dump(data, f, separators=(",", ":"), ensure_ascii=False)
 os.replace(OUT + ".tmp", OUT)
-split_data.write_split_files(data, os.path.join(ROOT, "site"))
+try:
+    split_data.write_split_files(data, os.path.join(ROOT, "site"))
+except Exception as exc:
+    reason = f"{type(exc).__name__}: {exc}"
+    try:
+        split_data.remove_split_files(os.path.join(ROOT, "site"))
+    except OSError as cleanup_exc:
+        reason += f"; {cleanup_exc}"
+    print("Split payload generation failed; keeping data.json only:", " ".join(reason.splitlines()), file=sys.stderr)
 print("ok", {k: (len(v["items"]) if isinstance(v, dict) and "items" in v else None) for k, v in data.items()}, "news", len(news), "errors", errors)

@@ -2,12 +2,18 @@
   "name": "breach-ledger",
   "private": true,
   "scripts": {
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "check": "node scripts/run-check.mjs",
+    "check:browser": "node scripts/verify-browser.mjs",
+    "check:browser:local": "node scripts/run-check-browser.mjs",
+    "smoke:live": "node scripts/live-smoke.mjs"
   },
   "dependencies": {
     "@cloudflare/containers": "^0.3.7"
   },
   "devDependencies": {
+    "axe-core": "^4.14.1",
+    "playwright-core": "^1.65.1",
     "wrangler": "^4.168.0"
   }
 }

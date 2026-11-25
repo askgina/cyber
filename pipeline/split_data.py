@@ -21,7 +21,9 @@ _DATE_FIELDS = {
 }
 _WRAPPED = {"crypto", "kev", "breaches"}
 _LIST_FIELDS = {
-    "news": set("eid date title source n_outlets crypto url".split()),
+    # The feed links by eid. The potentially long source URL is only used by
+    # Report and the inspector, which hydrate Details.
+    "news": set("eid date title source n_outlets crypto".split()),
     "registry": set(
         "id org title type status country usd records n_outlets first_reported latest event_date affected".split()
     ),
@@ -31,6 +33,7 @@ _LIST_FIELDS = {
     ),
 }
 _SPLIT_KEYS = {"registry_aliases", "split", "hot_days"}
+_SPLIT_FILES = ("data-hot.json", "data-details.json", "data-history.json")
 _LOG = logging.getLogger(__name__)
 
 
@@ -173,8 +176,7 @@ def _compact_bytes(payload: dict) -> bytes:
     return json.dumps(payload, separators=(",", ":"), ensure_ascii=False).encode("utf-8")
 
 
-def write_split_files(data: dict, site_dir: str, enforce_cap: bool = True) -> dict:
-    """Atomically replace each split file and return byte counts by filename."""
+def _split_file_bytes(data: dict, enforce_cap: bool) -> dict[str, bytes]:
     clock = _generation_time(data)
     for days in (HOT_DAYS, 5, 3):
         hot, details, history = _build_split_payloads(data, clock, HOT_DAYS, days)
@@ -185,7 +187,7 @@ def write_split_files(data: dict, site_dir: str, enforce_cap: bool = True) -> di
         if days == 3:
             raise ValueError(
                 f"data-hot.json is {size:,} UTF-8 bytes with a 3-day news/registry window; "
-                f"cap is {HOT_MAX_BYTES:,} bytes. Split files were not replaced."
+                f"cap is {HOT_MAX_BYTES:,} bytes."
             )
         _LOG.warning(
             "data-hot.json is %s bytes with a %d-day news/registry window (cap %s); "
@@ -193,26 +195,51 @@ def write_split_files(data: dict, site_dir: str, enforce_cap: bool = True) -> di
             f"{size:,}", days, f"{HOT_MAX_BYTES:,}", 5 if days == HOT_DAYS else 3,
         )
 
-    # Serialize and stage everything before replacing any files. Replace Hot
-    # last so readers see the new startup generation only after its cold tiers.
-    payloads = {
+    return {
         "data-details.json": _compact_bytes(details),
         "data-history.json": _compact_bytes(history),
         "data-hot.json": hot_bytes,
     }
+
+
+def _remove_files(paths) -> None:
+    failures = []
+    for path in paths:
+        try:
+            path.unlink(missing_ok=True)
+        except OSError as exc:
+            failures.append(str(exc))
+    if failures:
+        raise OSError("Could not remove split files: " + "; ".join(failures))
+
+
+def remove_split_files(site_dir: str) -> None:
+    """Remove a split generation, starting with its Hot entry point."""
+    _remove_files(Path(site_dir) / name for name in _SPLIT_FILES)
+
+
+def write_split_files(data: dict, site_dir: str, enforce_cap: bool = True) -> dict:
+    """Replace the split set or remove it on failure; return byte counts by filename."""
+    paths = {name: Path(site_dir) / name for name in _SPLIT_FILES}
     staged = []
     try:
+        payloads = _split_file_bytes(data, enforce_cap)
+        # Stage every file before replacing any. Install Hot last so it never
+        # advertises a new generation before both cold tiers are in place.
         for name, body in payloads.items():
-            path = Path(site_dir) / name
+            path = paths[name]
             tmp = path.with_suffix(".json.tmp")
             with tmp.open("wb") as f:
                 staged.append((tmp, path))
                 f.write(body)
         for tmp, path in staged:
             os.replace(tmp, path)
-    finally:
-        for tmp, _ in staged:
-            tmp.unlink(missing_ok=True)
+    except Exception as exc:
+        try:
+            _remove_files([*paths.values(), *(tmp for tmp, _ in staged)])
+        except OSError as cleanup_exc:
+            raise OSError(f"{exc}; {cleanup_exc}") from exc
+        raise
     return {name: len(body) for name, body in payloads.items()}
 
 
@@ -220,8 +247,12 @@ def main() -> None:
     site_dir = Path(__file__).resolve().parents[1] / "site"
     with (site_dir / "data.json").open(encoding="utf-8") as f:
         data = json.load(f)
-    for name, size in write_split_files(data, str(site_dir)).items():
+    sizes = write_split_files(data, str(site_dir))
+    with (site_dir / "data-hot.json").open(encoding="utf-8") as f:
+        hot_days = json.load(f)["hot_days"]
+    for name, size in sizes.items():
         print(f"{name}: {size:,} UTF-8 bytes")
+    print(f"hot_days: {hot_days}")
 
 
 if __name__ == "__main__":

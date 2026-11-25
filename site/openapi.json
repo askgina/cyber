@@ -1,0 +1,299 @@
+{
+  "openapi": "3.1.2",
+  "info": {
+    "title": "Cyber public API",
+    "version": "1.0.0",
+    "description": "Search the public Breach Ledger and fetch its JSON snapshots. The hourly build cadence is a target, not a freshness guarantee. Live and archive coverage can overlap."
+  },
+  "servers": [{ "url": "https://cyber.askgina.ai" }],
+  "externalDocs": {
+    "description": "Cyber reading index and coverage guide",
+    "url": "https://cyber.askgina.ai/llms.txt"
+  },
+  "security": [],
+  "paths": {
+    "/api/search": {
+      "get": {
+        "operationId": "searchIncidentsByMeaning",
+        "summary": "Search Cyber by meaning",
+        "description": "Search indexed ledger records. Treat results as leads and verify the record at its published URL. An opaque ref is not a citation or a public URL.",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "description": "Public search terms only. Cyber trims the query, collapses whitespace, and truncates it to 300 UTF-16 code units. Unless rate-limited, an absent query or one shorter than three code units after normalization returns an empty result set.",
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Up to eight ranked results, or an empty list.",
+            "headers": { "Cache-Control": { "$ref": "#/components/headers/SearchCacheControl" } },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchResponse" } } }
+          },
+          "405": {
+            "description": "A method other than GET was used.",
+            "headers": {
+              "Allow": { "schema": { "type": "string", "const": "GET" } },
+              "Cache-Control": { "$ref": "#/components/headers/SearchCacheControl" }
+            },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchError" } } }
+          },
+          "429": {
+            "description": "Search is rate-limited. Wait for Retry-After before retrying.",
+            "headers": {
+              "Retry-After": {
+                "description": "Seconds to wait before making another search request.",
+                "schema": { "type": "integer", "minimum": 1 }
+              },
+              "Cache-Control": { "$ref": "#/components/headers/SearchCacheControl" }
+            },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchError" } } }
+          },
+          "502": {
+            "description": "The search backend is unavailable. This is not an empty search result.",
+            "headers": { "Cache-Control": { "$ref": "#/components/headers/SearchCacheControl" } },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/SearchError" } } }
+          }
+        }
+      }
+    },
+    "/data.json": {
+      "get": {
+        "operationId": "getLiveSnapshot",
+        "summary": "Get the live ledger snapshot",
+        "description": "Read the full live snapshot. Curated records in the live list were updated within the last 45 days. Check generated and errors before relying on the data.",
+        "parameters": [{ "$ref": "#/components/parameters/IfNoneMatch" }],
+        "responses": {
+          "200": {
+            "description": "Live snapshot, which can include partial upstream failures.",
+            "headers": {
+              "ETag": { "$ref": "#/components/headers/SnapshotETag" },
+              "Cache-Control": { "$ref": "#/components/headers/SnapshotCacheControl" }
+            },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/LiveSnapshot" } } }
+          },
+          "304": { "$ref": "#/components/responses/SnapshotNotModified" },
+          "405": { "$ref": "#/components/responses/SnapshotMethodNotAllowed" },
+          "503": { "$ref": "#/components/responses/SnapshotNotBuilt" }
+        }
+      }
+    },
+    "/data-hot.json": {
+      "get": {
+        "operationId": "getHotSnapshot",
+        "summary": "Get the compact live snapshot",
+        "description": "Read recent records with abbreviated details. When the compact snapshot is unavailable, Cyber returns the full live snapshot instead. The split field identifies the compact form.",
+        "parameters": [{ "$ref": "#/components/parameters/IfNoneMatch" }],
+        "responses": {
+          "200": {
+            "description": "Compact live snapshot or full live snapshot fallback.",
+            "headers": {
+              "ETag": { "$ref": "#/components/headers/SnapshotETag" },
+              "Cache-Control": { "$ref": "#/components/headers/SnapshotCacheControl" }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "oneOf": [
+                    { "$ref": "#/components/schemas/HotSnapshot" },
+                    { "$ref": "#/components/schemas/LiveSnapshot", "not": { "required": ["split"] } }
+                  ]
+                }
+              }
+            }
+          },
+          "304": { "$ref": "#/components/responses/SnapshotNotModified" },
+          "405": { "$ref": "#/components/responses/SnapshotMethodNotAllowed" },
+          "503": { "$ref": "#/components/responses/SnapshotNotBuilt" }
+        }
+      }
+    },
+    "/archive.json": {
+      "get": {
+        "operationId": "getArchiveSnapshot",
+        "summary": "Get the archive snapshot",
+        "description": "Read historical records and counts by kind. The start date marks the scope of the archive, not a guarantee of complete coverage.",
+        "parameters": [{ "$ref": "#/components/parameters/IfNoneMatch" }],
+        "responses": {
+          "200": {
+            "description": "Archive snapshot.",
+            "headers": {
+              "ETag": { "$ref": "#/components/headers/SnapshotETag" },
+              "Cache-Control": { "$ref": "#/components/headers/SnapshotCacheControl" }
+            },
+            "content": { "application/json": { "schema": { "$ref": "#/components/schemas/ArchiveSnapshot" } } }
+          },
+          "304": { "$ref": "#/components/responses/SnapshotNotModified" },
+          "405": { "$ref": "#/components/responses/SnapshotMethodNotAllowed" },
+          "503": { "$ref": "#/components/responses/SnapshotNotBuilt" }
+        }
+      }
+    }
+  },
+  "components": {
+    "parameters": {
+      "IfNoneMatch": {
+        "name": "If-None-Match",
+        "in": "header",
+        "description": "Send a previously received ETag to revalidate the selected representation.",
+        "schema": { "type": "string" }
+      }
+    },
+    "headers": {
+      "SearchCacheControl": {
+        "description": "Clients must not store the search response.",
+        "schema": { "type": "string", "const": "no-store" }
+      },
+      "SnapshotETag": {
+        "description": "Entity tag for the snapshot selected for this request.",
+        "schema": { "type": "string" }
+      },
+      "SnapshotCacheControl": {
+        "description": "Revalidate before reusing a cached snapshot.",
+        "schema": { "type": "string", "const": "no-cache" }
+      }
+    },
+    "responses": {
+      "SnapshotNotModified": {
+        "description": "If-None-Match matched the current ETag. No response body.",
+        "headers": {
+          "ETag": { "$ref": "#/components/headers/SnapshotETag" },
+          "Cache-Control": { "$ref": "#/components/headers/SnapshotCacheControl" }
+        }
+      },
+      "SnapshotMethodNotAllowed": {
+        "description": "A method other than GET or HEAD was used.",
+        "headers": { "Allow": { "schema": { "type": "string", "const": "GET, HEAD" } } },
+        "content": { "text/plain": { "schema": { "type": "string", "const": "Method Not Allowed" } } }
+      },
+      "SnapshotNotBuilt": {
+        "description": "No snapshot is available for this request yet.",
+        "content": { "text/plain": { "schema": { "type": "string", "const": "Not built yet" } } }
+      }
+    },
+    "schemas": {
+      "SearchResponse": {
+        "type": "object",
+        "required": ["results"],
+        "properties": {
+          "results": { "type": "array", "maxItems": 8, "items": { "$ref": "#/components/schemas/SearchResult" } }
+        }
+      },
+      "SearchResult": {
+        "type": "object",
+        "required": ["title", "ref", "kind", "score", "snippet", "url", "scope"],
+        "properties": {
+          "title": { "type": "string" },
+          "ref": { "type": ["string", "null"], "description": "Opaque lookup key, or null when unavailable." },
+          "kind": { "type": "string" },
+          "date": { "type": "string", "description": "Index day, normally YYYY-MM-DD, not necessarily the date of the incident." },
+          "score": { "type": "number", "description": "Search ranking score, not a record confidence score." },
+          "snippet": { "type": "string", "maxLength": 160 },
+          "url": { "type": ["string", "null"], "format": "uri", "description": "Canonical HTML URL, or null when the hit has no active record route." },
+          "scope": { "enum": ["live", "archive", null], "description": "Coverage scope of the resolved record, or null when unknown." }
+        }
+      },
+      "SearchError": {
+        "type": "object",
+        "required": ["results", "error"],
+        "properties": {
+          "results": { "type": "array", "maxItems": 0 },
+          "error": { "type": "string", "enum": ["method not allowed", "rate limited", "search unavailable"] }
+        }
+      },
+      "LiveSnapshot": {
+        "type": "object",
+        "required": ["generated", "errors", "kev", "ransomware", "crypto", "news", "news_headlines_7d", "registry", "notices", "triage_n", "x", "breaches", "hourly", "windows", "brief", "details", "clusters", "patterns", "pattern_defs"],
+        "properties": {
+          "generated": { "type": "string", "format": "date-time", "description": "Build timestamp in UTC, not the time of every source update." },
+          "errors": { "type": "array", "items": { "type": "string" }, "description": "Partial upstream failures." },
+          "kev": { "$ref": "#/components/schemas/IdentifiedRecordGroup" },
+          "ransomware": {
+            "type": "object",
+            "properties": { "items_24h": { "type": "array", "items": { "$ref": "#/components/schemas/LinkedRecord" } } }
+          },
+          "crypto": { "$ref": "#/components/schemas/IdentifiedRecordGroup" },
+          "news": { "type": "array", "items": { "$ref": "#/components/schemas/IdentifiedRecord" } },
+          "news_headlines_7d": { "type": "integer" },
+          "registry": { "type": "array", "items": { "$ref": "#/components/schemas/RegistryRecord" } },
+          "notices": { "type": "array", "items": { "$ref": "#/components/schemas/LinkedRecord" } },
+          "triage_n": { "type": "integer" },
+          "x": { "type": "array", "items": { "$ref": "#/components/schemas/IdentifiedRecord" } },
+          "breaches": { "$ref": "#/components/schemas/IdentifiedRecordGroup" },
+          "hourly": { "type": "array", "items": { "type": "object" } },
+          "windows": { "type": "object" },
+          "brief": { "type": ["object", "null"], "description": "Current editorial brief, or null when unavailable." },
+          "details": { "type": "object", "additionalProperties": { "type": "object" } },
+          "clusters": { "type": "array", "items": { "type": "object" } },
+          "patterns": { "type": "array", "items": { "type": "object" } },
+          "pattern_defs": { "type": "array", "items": { "type": "object" } }
+        }
+      },
+      "IdentifiedRecordGroup": {
+        "type": "object",
+        "properties": { "items": { "type": "array", "items": { "$ref": "#/components/schemas/IdentifiedRecord" } } }
+      },
+      "LinkedRecord": {
+        "type": "object",
+        "properties": { "url": { "type": "string", "description": "Source link. It can be empty when unavailable." } }
+      },
+      "IdentifiedRecord": {
+        "$ref": "#/components/schemas/LinkedRecord",
+        "properties": {
+          "eid": { "type": "string", "description": "Ledger event ID when emitted." },
+          "stage": { "type": "string", "description": "Confidence stage for records that report one." }
+        }
+      },
+      "RegistryRecord": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string", "description": "Curated registry slug without the route prefix." },
+          "title": { "type": "string" },
+          "status": { "type": "string", "description": "Confidence or disclosure status of the record." },
+          "sources": { "type": "array", "items": { "$ref": "#/components/schemas/LinkedRecord" } }
+        }
+      },
+      "HotSnapshot": {
+        "$ref": "#/components/schemas/LiveSnapshot",
+        "required": ["split", "hot_days", "registry_aliases"],
+        "properties": {
+          "split": { "type": "boolean", "const": true },
+          "hot_days": { "type": "integer", "description": "Recent window in days for the news and curated registry lists." },
+          "registry_aliases": { "type": "array", "items": { "type": "string" } }
+        }
+      },
+      "ArchiveSnapshot": {
+        "type": "object",
+        "required": ["generated", "from", "counts", "monthly", "items"],
+        "properties": {
+          "generated": { "type": "string", "format": "date-time" },
+          "from": { "type": "string", "format": "date" },
+          "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+          "monthly": {
+            "type": "object",
+            "additionalProperties": { "type": "array", "minItems": 12, "maxItems": 12, "items": { "type": "integer", "minimum": 0 } }
+          },
+          "items": { "type": "array", "items": { "$ref": "#/components/schemas/ArchiveRecord" } }
+        }
+      },
+      "ArchiveRecord": {
+        "type": "object",
+        "required": ["d", "k", "o", "t"],
+        "properties": {
+          "d": { "type": "string", "description": "Date or timestamp as stored." },
+          "k": { "type": "string", "enum": ["inc", "crypto", "ransom", "kev", "breach", "notice", "sec"] },
+          "o": { "type": "string", "description": "Name or organization." },
+          "t": { "type": "string", "description": "Title." },
+          "s": { "type": "string", "description": "Scale or label." },
+          "u": { "type": "string", "description": "Source URL, when available." },
+          "x": { "type": "string", "description": "Additional context." },
+          "r": { "type": "string", "description": "Registry slug for a curated incident." },
+          "rec": { "$ref": "#/components/schemas/RegistryRecord" },
+          "dup": { "type": "string", "description": "Candidate duplicate registry ID, not a verified match." }
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,22 @@
 (() => {
   "use strict";
   // Canonical public address of this page, used in "Ask Perplexity" prompts.
-  const PAGE_URL = "https://cyber.askgina.ai/";
+  const R = window.BLRoutes;
+  const PAGE_URL = R.SITE_ORIGIN + "/";
   const PPLX = "https://www.perplexity.ai/search?q=";
   const $ = (s, r = document) => r.querySelector(s);
   const el = (tag, attrs = {}, ...kids) => {
     const n = document.createElement(tag);
     for (const [k, v] of Object.entries(attrs)) {
       if (v == null) continue;
-      if (k === "class") n.className = v; else if (k === "html") n.innerHTML = v; else n.setAttribute(k, v);
+      if (k === "class") n.className = v;
+      else if (k === "html") n.innerHTML = v;
+      else if (k === "style") {
+        for (const decl of v.split(";")) {
+          const colon = decl.indexOf(":");
+          if (colon > 0) n.style.setProperty(decl.slice(0, colon).trim(), decl.slice(colon + 1).trim());
+        }
+      } else n.setAttribute(k, v);
     }
     for (const c of kids.flat()) if (c != null) n.append(c.nodeType ? c : document.createTextNode(c));
     return n;
@@ -27,7 +35,7 @@
 
   // Side note with numbered links (SID-style margin notes)
   let noteNo = 0;
-  function note(links, askText, askCtx) {
+  function note(links = [], askText, askCtx) {
     const ol = el("ol");
     for (const l of links) {
       noteNo++;
@@ -41,11 +49,12 @@
   const KIND = { inc: "Incident", news: "News", crypto: "Crypto", kev: "Exploited", x: "X signal", breach: "Breach" };
   let DET = {}, LABEL = {}, LISTS = {}, ITEM = {};
   const state = { pattern: null, q: "", expanded: {} };
+  let routeQuery;
 
   function breakdownURL(title, text, id) {
     const det = DET[id] || {};
     const rel = (det.related || []).slice(0, 3).map((r) => r.title).join("; ");
-    const q = `Give a full technical breakdown of this incident: "${title}". ${(text || "").slice(0, 600)}\n\nCover: the attack chain step by step, MITRE ATT&CK techniques, indicators of compromise, who is affected, how confirmed it is, how it compares with similar incidents${rel ? ` (for example ${rel})` : ""}, and concrete mitigations for software teams. Cite sources.\n\nContext: from Cyber, a daily cyber incident tracker (${PAGE_URL}#e-${id}).`;
+    const q = `Give a full technical breakdown of this incident: "${title}". ${(text || "").slice(0, 600)}\n\nCover: the attack chain step by step, MITRE ATT&CK techniques, indicators of compromise, who is affected, how confirmed it is, how it compares with similar incidents${rel ? ` (for example ${rel})` : ""}, and concrete mitigations for software teams. Cite sources.\n\nContext: from Cyber, a daily cyber incident tracker (${R.SITE_ORIGIN}${R.incidentPath(id, { includeSearch: false })}).`;
     return PPLX + encodeURIComponent(q);
   }
 
@@ -57,7 +66,7 @@
   function patChips(ps) {
     return el("span", { class: "chips" }, ps.map((p) => {
       const b = el("button", { type: "button", class: "chip" + (state.pattern === p ? " on" : "") }, LABEL[p] || p);
-      b.addEventListener("click", () => setFilter({ pattern: p }, true));
+      b.addEventListener("click", () => selectPattern(p));
       return b;
     }));
   }
@@ -107,7 +116,7 @@
         ["Databases", db || "Not yet in DefiLlama, SlowMist, HIBP or CISA"],
         ["Press", it.press_lead_h != null ? `First article ${hrs(it.press_lead_h)} after the first post` : null]];
     }
-    if (kind === "crypto") { const x = xFor(id); if (x) rows.push(["First on X", `${fmtLong(x.date)} (${x.posts.length} posts, now ${x.stage.toLowerCase()})`]); }
+    if (kind === "crypto") { const x = xFor(id); if (x) rows.push(["First on X", `${fmtLong(x.date)} (${x.n_posts ?? x.posts_n ?? (x.posts || []).length} posts, now ${x.stage.toLowerCase()})`]); }
     rows.unshift(["Pattern", (det.patterns || []).length ? patChips(det.patterns) : null]);
     box.append(facts(rows));
     const tm = (t) => `${fmtDate(t)} ${t.length > 10 ? new Date(t).toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit", hour12: false, timeZone: "UTC" }) : ""}`;
@@ -160,12 +169,11 @@
     if ((det.related || []).length) {
       const sec = el("div", { class: "dsec" }, el("h4", {}, "Similar incidents"));
       sec.append(el("ul", { class: "rel" }, det.related.map((r) => {
-        const b = el("a", { href: `#e-${r.id}`, class: "jump" }, r.title);
-        b.addEventListener("click", (e) => { e.preventDefault(); jumpTo(r.id); });
+        const b = el("a", { href: R.incidentPath(r.id), class: "jump" }, r.title);
         return el("li", {}, el("span", { class: "rk" }, `${KIND[r.kind]} · ${fmtDate(r.date)}`), el("span", { class: "rt" }, b, el("span", { class: "why" }, r.why)), el("span", { class: "rs", title: "Similarity score" }, r.score.toFixed(2)));
       })));
       if (det.cluster) {
-        const c = el("a", { href: `#${det.cluster}` }, "related-incident group");
+        const c = el("a", { href: `/report#${det.cluster}` }, "related-incident group");
         sec.append(el("p", { class: "dsrc" }, "Part of a ", c, " in Attack patterns."));
       }
       box.append(sec);
@@ -180,7 +188,7 @@
       box.append(sec);
     }
     box.append(el("p", { class: "dask" }, el("a", { class: "btn", href: breakdownURL(title, text, id), target: "_blank", rel: "noopener" }, "Ask Perplexity for a full breakdown"),
-      " ", el("a", { class: "link", href: `#e-${id}` }, "Link to this entry")));
+      " ", el("a", { class: "link", href: R.incidentPath(id) }, "Link to this entry")));
     return box;
   }
 
@@ -193,19 +201,23 @@
     let p;
     if (d) { p = el("p", { class: "d" + (clamp && d.length > 260 ? " clamp" : "") }, d); main.append(p); }
     const b = el("button", { class: "more", type: "button", "aria-expanded": "false" }, "Details");
-    const nrel = (det.related || []).length;
+    const nrel = det.related_n ?? (det.related || []).length;
     if (nrel) b.append(el("span", { class: "cnt" }, ` · ${nrel} similar`));
     let panel = null;
     const toggle = (force) => {
       const open = force ?? !panel;
-      if (open && !panel) { panel = detailPanel(it, kind, id, title, text); main.append(panel); p && p.classList.remove("clamp"); }
+      if (open && !panel) {
+        panel = tierReady("details") ? detailPanel(it, kind, id, title, text) : el("p", { class: "d-load", role: "status" }, detailsStatus());
+        main.append(panel); p && p.classList.remove("clamp");
+      }
       else if (!open && panel) { panel.remove(); panel = null; p && clamp && d.length > 260 && p.classList.add("clamp"); }
       b.setAttribute("aria-expanded", String(open)); b.firstChild.textContent = open ? "Hide details" : "Details";
     };
-    b.addEventListener("click", () => toggle());
+    b.addEventListener("click", () => { if (panel) window.BL.dismissIncident(); else R.navigate(R.incidentPath(id)); });
     main.insertBefore(b, p ? p.nextSibling : null);
     const n = el("div", { class: "entry", id: `e-${id}`, "data-ctx": ctx }, main, note(links, ask, ctx));
     n._toggle = toggle;
+    n._title = title;
     return n;
   }
 
@@ -235,8 +247,14 @@
     }
   }
 
-  function setFilter(f, scroll) {
+  function setFilter(f) {
     Object.assign(state, f);
+    if (!D0.generated) return;
+    if (state.pattern || state.q) ensureHistory();
+    if (state.q) ensureDetails();
+    drawFilter();
+  }
+  function drawFilter() {
     Object.keys(LISTS).forEach(drawList);
     drawPatterns();
     const active = state.pattern || state.q;
@@ -244,24 +262,36 @@
     $("#fbar").hidden = !active; $("#clear-filter").hidden = !active;
     if (active) $("#fbar-text").textContent = `Showing ${total} ${total === 1 ? "entry" : "entries"}: ${[state.pattern && LABEL[state.pattern], state.q && `"${state.q}"`].filter(Boolean).join(" + ")}`;
     if ($("#q").value !== state.q) $("#q").value = state.q;
-    if (scroll && state.pattern) $("#patterns").scrollIntoView({ behavior: "smooth" });
+  }
+
+  function selectPattern(pattern) {
+    R.navigate(pattern ? R.patternPath(pattern) : "/report#patterns");
+  }
+  function setReportRoute(route, q) {
+    const pattern = route.pattern || null;
+    const search = q || (state.q === routeQuery ? "" : state.q);
+    routeQuery = q;
+    if (state.pattern !== pattern || state.q !== search) setFilter({ pattern, q: search });
   }
 
   function jumpTo(id) {
-    if (document.body.classList.contains("view-term") && window.BL && BL.inspect) return BL.inspect(id);
     let n = document.getElementById("e-" + id);
     if (!n) {
-      const key = ITEM[id]; if (!key) return;
-      if (state.pattern || state.q) setFilter({ pattern: null, q: "" });
+      const key = Object.hasOwn(ITEM, id) && ITEM[id];
+      if (!key) return false;
+      if (state.pattern || state.q) return false; // use the drawer without clearing the report's filters
       state.expanded[key] = true; drawList(key);
       n = document.getElementById("e-" + id);
     }
-    if (!n) return;
+    if (!n?._toggle) return false;
     n._toggle(true);
+    ensureDetails();
     n.scrollIntoView({ behavior: "smooth", block: "start" });
     n.classList.remove("flash"); void n.offsetWidth; n.classList.add("flash");
-    history.replaceState(null, "", "#e-" + id);
+    window.BL.setIncidentTitle(id, n._title);
+    return true;
   }
+  function closeReportEntry(id) { document.getElementById("e-" + id)?._toggle?.(false); }
 
   function drawPatterns() {
     const P = D0.patterns || [];
@@ -269,7 +299,7 @@
     table($("#patterns-tbl"), [{ label: "Pattern" }, { label: "", cls: "hide-sm" }, { label: "News", num: true }, { label: "Crypto", num: true }, { label: "Exploited", num: true }, { label: "Breaches", num: true, cls: "hide-sm" }, { label: "X", num: true, cls: "hide-sm" }, { label: "7 days", num: true }, { label: "Crypto losses", num: true, cls: "hide-sm" }],
       P.map((p) => {
         const b = el("button", { type: "button", class: "plink", "aria-pressed": String(state.pattern === p.id) }, p.label);
-        b.addEventListener("click", () => setFilter({ pattern: state.pattern === p.id ? null : p.id }));
+        b.addEventListener("click", () => selectPattern(state.pattern === p.id ? null : p.id));
         const tr = el("tr", { class: state.pattern === p.id ? "on" : null },
           el("td", {}, b), el("td", { class: "bar hide-sm" }, el("i", { style: `width:${(p.total / max) * 100}%` })),
           ...[p.news, p.crypto, p.kev].map((v) => el("td", { class: "num" }, v ? String(v) : "·")),
@@ -283,12 +313,14 @@
   function drawClusters() {
     const C = D0.clusters || [];
     const box = $("#cluster-list"); box.replaceChildren();
-    if (!C.length) { box.append(el("p", { class: "empty" }, "No strongly related incidents this window.")); return; }
+    if (!C.length) {
+      box.append(el("p", { class: "empty" }, tierReady("history") ? "No strongly related incidents this window." : tiers.history.error ? "Related incidents are temporarily unavailable." : "Loading related incidents…"));
+      return;
+    }
     C.forEach((c) => {
       const kinds = Object.entries(c.kinds).map(([k, n]) => `${n} ${KIND[k].toLowerCase()}`).join(", ");
       const ul = el("ul", { class: "rel" }, c.members.map((m, ix) => {
-        const a = el("a", { href: `#e-${m}`, class: "jump" }, c.titles[ix]);
-        a.addEventListener("click", (e) => { e.preventDefault(); jumpTo(m); });
+        const a = el("a", { href: R.incidentPath(m), class: "jump" }, c.titles[ix]);
         return el("li", {}, el("span", { class: "rk" }, KIND[{ n: "news", c: "crypto", k: "kev", x: "x", b: "breach" }[m[0]]]), el("span", { class: "rt" }, a));
       }));
       const main = el("div", { class: "main" },
@@ -315,9 +347,9 @@
   }
 
   let D0 = {};
+  const isReport = () => document.body.classList.contains("view-report");
   function render(D) {
-    D0 = D; DET = D.details || {}; noteNo = 0;
-    (D.pattern_defs || []).forEach((p) => { LABEL[p.id] = p.label; });
+    noteNo = 0; LISTS = {}; ITEM = {};
     const k = D.kev, r = D.ransomware, c = D.crypto;
     const news48 = D.news.filter((n) => hoursAgo(n.date) <= 48);
     const crypto7 = c.items.filter((i) => hoursAgo(i.date + "T23:59:59Z") <= 24 * 7);
@@ -350,7 +382,7 @@
         el("div", { class: "total" }, String(total)));
     });
     const s0 = series[0][1];
-    rows.push(el("div", { class: "axis" }, el("span"), el("span", {}, el("span", {}, fmtDate(s0[0][0])), el("span", {}, fmtDate(s0[14][0])), el("span", {}, "Today")), el("span", { style: "text-align:right" }, "30 days")));
+    rows.push(el("div", { class: "axis" }, el("span"), el("span", {}, el("span", {}, fmtDate(s0[0][0])), el("span", {}, fmtDate(s0[14][0])), el("span", {}, "Today")), el("span", { class: "align-r" }, "30 days")));
     $("#series").replaceChildren(...rows);
 
     // Today
@@ -359,7 +391,7 @@
       id: n.eid, kind: "news", it: n, title: n.title, text: n.summary,
       k: [el("span", {}, n.source), el("span", {}, ago(n.date))],
       t: escape(n.title), d: n.summary, clamp: true,
-      links: [{ label: n.source, url: n.url }, { label: "Search X", url: xSearch(n.title.split(/[:—–-]/)[0].slice(0, 90)) }],
+      links: [...(n.url ? [{ label: n.source, url: n.url }] : []), { label: "Search X", url: xSearch(n.title.split(/[:—–-]/)[0].slice(0, 90)) }],
       ask: n.title, ctx: `news item from ${n.source}`,
     }), 8);
 
@@ -376,7 +408,7 @@
       id: i.eid, kind: "crypto", it: i, title: i.name, text: i.desc,
       k: [el("span", {}, fmtDate(i.date)), i.chains.length ? el("span", {}, i.chains.slice(0, 3).join(", ") + (i.chains.length > 3 ? ` +${i.chains.length - 3}` : "")) : null, el("span", {}, i.technique || i.classification || ""), (i.sources || []).length > 1 ? el("span", { title: i.sources.join(", ") }, `${i.sources.length} sources`) : null],
       t: `${escape(i.name)} <span class="amt">· ${fmtUSD(i.amount)}</span>${i.returned ? ` <span class="amt">(${fmtUSD(i.returned)} returned)</span>` : ""}`,
-      d: i.desc, clamp: true, links: i.links, ask: `${i.name} crypto exploit (${i.date}): ${i.desc.slice(0, 300)}`, ctx: "crypto exploit entry",
+      d: i.desc, clamp: true, links: i.links, ask: `${i.name} crypto exploit (${i.date}): ${(i.desc || "").slice(0, 300)}`, ctx: "crypto exploit entry",
     }), 10);
 
     // Ransomware
@@ -398,7 +430,7 @@
       id: b.eid, kind: "breach", it: b, title: b.title, text: b.desc,
       k: [el("span", {}, `added ${ago(b.added)}`), b.domain ? el("span", {}, b.domain) : null, b.breach_date ? el("span", {}, `breached ${b.breach_date.slice(0, 7)}`) : null],
       t: `${escape(b.title)} <span class="amt">· ${b.count ? b.count.toLocaleString("en-US") : "?"} accounts</span>`,
-      d: b.desc, clamp: true, links: b.links, ask: `${b.title} data breach: ${b.desc.slice(0, 300)}`, ctx: "Have I Been Pwned breach entry",
+      d: b.desc, clamp: true, links: b.links, ask: `${b.title} data breach: ${(b.desc || "").slice(0, 300)}`, ctx: "Have I Been Pwned breach entry",
     }), 8);
 
     drawLive(D);
@@ -408,7 +440,7 @@
       id: v.eid, kind: "kev", it: v, title: `${v.id}: ${v.name}`, text: v.desc,
       k: [el("span", {}, v.id), el("span", {}, `added ${fmtDate(v.date)}`), v.ransomware ? el("span", { class: "stage Confirmed" }, "ransomware use") : null],
       t: `${escape(v.vendor)} ${escape(v.product)} <span class="amt">· ${escape(v.name.toLowerCase().startsWith(v.vendor.toLowerCase() + " ") ? v.name.slice(v.vendor.length + 1) : v.name)}</span>`,
-      d: v.desc, clamp: true, links: v.links, ask: `${v.id}: ${v.name}. ${v.desc}`, ctx: "CISA KEV entry",
+      d: v.desc, clamp: true, links: v.links, ask: `${v.id}: ${v.name}. ${v.desc || ""}`, ctx: "CISA KEV entry",
     }), 10);
 
     // Patterns
@@ -455,15 +487,16 @@
   pop.addEventListener("click", () => { window.open(askURL(selText, selCtx), "_blank", "noopener"); pop.hidden = true; });
 
   // Active section in TOC + nav
+  const sectionLink = (a) => a.pathname === "/method" && !a.hash ? "method" : a.hash.slice(1);
   function spy() {
     const ids = ["glance", "live", "today", "news", "x-signals", "patterns", "clusters", "crypto", "ransomware", "groups", "sectors", "breaches", "exploited", "method", "stages", "sources", "elsewhere", "limits", "cite"];
     const obs = new IntersectionObserver((ents) => {
       ents.forEach((e) => {
         if (!e.isIntersecting) return;
         const id = e.target.id;
-        document.querySelectorAll(".toc a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + id));
+        document.querySelectorAll(".toc a").forEach((a) => a.classList.toggle("on", sectionLink(a) === id));
         const top = e.target.closest("section[id]")?.id || id;
-        document.querySelectorAll(".r-jump a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + top));
+        document.querySelectorAll(".r-jump a").forEach((a) => a.classList.toggle("on", sectionLink(a) === top));
       });
     }, { rootMargin: "0px 0px -75% 0px" });
     ids.forEach((id) => { const n = document.getElementById(id); n && obs.observe(n); });
@@ -487,13 +520,13 @@
   }
 
   function drawLive(D) {
+    if (!isReport()) return;
     const ev = [...LIVE.extra, ...events(D)].sort((a, b) => ts(b.t) - ts(a.t) || (b.t.length - a.t.length));
     const feed = $("#feed"); feed.replaceChildren();
     ev.slice(0, 12).forEach((e) => {
       const fresh = LIVE.fresh.has(e.id) || e.live || (LIVE.seen && e.t.length > 10 && ts(e.t) > LIVE.seen);
       const when = el("span", { class: "when", "data-ago": e.t.length > 10 ? e.t : null }, e.t.length > 10 ? ago(e.t) : fmtDate(e.t));
-      const title = e.id ? el("a", { href: `#e-${e.id}`, class: "jump" }, e.title) : el("a", { href: e.url, target: "_blank", rel: "noopener" }, e.title);
-      if (e.id) title.addEventListener("click", (x) => { x.preventDefault(); jumpTo(e.id); });
+      const title = e.id ? el("a", { href: R.incidentPath(e.id), class: "jump" }, e.title) : el("a", { href: e.url, target: "_blank", rel: "noopener" }, e.title);
       feed.append(el("li", { class: fresh ? "fresh" : null }, when, el("span", { class: "fk" }, KIND[e.kind]), el("span", { class: "ft" }, title, el("span", { class: "fs" }, e.sub)), fresh ? el("span", { class: "new" }, "New") : el("span")));
     });
     if (LIVE.seen) {
@@ -513,26 +546,21 @@
     });
     if (H.length) rows.push(el("div", { class: "axis" }, el("span"), el("span", {}, el("span", {}, "24h ago"), el("span", {}, "12h"), el("span", {}, "Now")), el("span")));
     $("#hours").replaceChildren(...rows);
-    setTimeout(() => window.BL && BL.onRender && BL.onRender(D0), 0);
   }
 
   function drawGlance(D) {
     const IXT = (eid) => { const n = (D.news || []).find((x) => x.eid === eid) || (D.x || []).find((x) => x.eid === eid); return n ? n.date : null; };
     const day = 24;
     const B = D.breaches || { items: [] };
-    const R = D.ransomware || {};
+    const ransomware = D.ransomware || {};
     const inDay = (t) => t && (t.length === 10 ? hoursAgo(t + "T23:59:59Z") <= day : hoursAgo(t) <= day);
     const pats = (id) => ((DET[id] || {}).patterns || []).filter((p) => p !== "unclassified");
     const cr = D.crypto.items.filter((c) => !c.offchain && inDay(c.date));
     const br = B.items.filter((b) => inDay(b.added));
     const kv = D.kev.items.filter((v) => inDay(v.date));
     const nw = D.news.filter((n) => inDay(n.date));
-    const rv = R.items_24h || [];
+    const rv = ransomware.items_24h || [];
     const brief = D.brief && D.brief.incidents ? D.brief : null;
-
-    $("#g-date").textContent = ", " + new Date(D.generated).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
-    $("#g-brief").textContent = brief ? brief.headline : "";
-    $("#g-brief").hidden = !brief;
 
     // Rows: curated first, then anything structured the brief did not cover.
     const rows = [];
@@ -543,22 +571,22 @@
     const briefByOrg = new Map((brief?.incidents || []).map((i) => [i.org.toLowerCase(), i]));
     // Curated incident registry: every outlet and notice attached, so one row per real incident.
     const regScale = (r) => r.usd ? fmtUSD(r.usd) : r.records ? `${compact(r.records)} records` : (r.n_outlets ? `${r.n_outlets} outlet${r.n_outlets === 1 ? "" : "s"}` : "");
-    const regRow = (r) => ({ org: r.org, what: r.title, scale: regScale(r), patterns: [], type: r.type, rid: "r-" + r.id, eid: (r.stories[0] || {}).eid, since: r.first_reported.slice(0, 10), n_outlets: r.n_outlets, reg: r, t: r.first_reported });
+    const regRow = (r) => ({ org: r.org, what: r.title, scale: regScale(r), patterns: [], type: r.type, rid: "r-" + r.id, eid: r.stories?.[0]?.eid, since: r.first_reported.slice(0, 10), n_outlets: r.n_outlets, reg: r, t: r.first_reported });
     (D.registry || []).forEach((r) => {
       const h = hoursAgo(r.first_reported);
       const item = briefByOrg.get(r.org.toLowerCase());
       if (h <= day && !item?.update) rows.push(regRow(r));
       else if (hoursAgo(r.latest) <= day || item?.update) {
         const row = regRow(r);
-        ups.push({ ...row, eid: item?.eid || row.eid, t: r.latest, since: item?.update && item.since === null ? null : item?.since || r.event_date || row.since, what: item?.update ? item.what : ((r.updates || []).slice(-1)[0] || {}).text || (r.stories[0] || {}).title || r.title });
+        ups.push({ ...row, eid: item?.eid || row.eid, t: r.latest, since: item?.update && item.since === null ? null : item?.since || r.event_date || row.since, what: item?.update ? item.what : r.updates?.at(-1)?.text || r.stories?.[0]?.title || r.title });
         if (item?.eid) seen.add(item.eid);
       }
       else return;
-      r.stories.forEach((s) => s.eid && seen.add(s.eid));
+      r.stories?.forEach((s) => s.eid && seen.add(s.eid));
     });
     // most-covered first: coverage breadth is the best available signal of significance
     const sig = (r) => (r.reg ? r.reg.n_outlets + Math.log10(1 + (r.reg.records || 0)) * 2 + Math.log10(1 + (r.reg.usd || 0)) * 2 : 0);
-    const regOrgs = (D.registry || []).map((r) => (r.match || []).map((m) => m.toLowerCase())).flat().filter((m) => m.length >= 4);
+    const regOrgs = [...new Set([...(D.registry_aliases || []), ...(D.registry || []).flatMap((r) => r.match || [])].map((m) => m.toLowerCase()).filter((m) => m.length >= 4))];
     const regNames = (D.registry || []).filter((r) => hoursAgo(r.latest) <= day * 3).map((r) => r.org.toLowerCase().replace(/\s*\(.*?\)/g, "").trim()).filter((m) => m.length >= 4);
     const covered = (i) => { const o = (i.org || "").toLowerCase().replace(/\s*\(.*?\)/g, "").trim(); return regOrgs.some((m) => (i.org || "").toLowerCase().includes(m)) || (o.length >= 4 && regNames.some((m) => o.includes(m) || m.includes(o))); };
     if (brief) brief.incidents.filter((i) => !(i.eid && seen.has(i.eid)) && !covered(i)).forEach((i) => { (isOld(i) ? ups : rows).push({ ...i, t: (DET[i.eid] && IXT(i.eid)) || (i.since ? i.since + "T12:00:00Z" : null), patterns: i.patterns || pats(i.eid) }); i.eid && seen.add(i.eid); });
@@ -583,6 +611,17 @@
     const named = rv.filter((v) => v.victim && !/\*/.test(v.victim));
     const usd = cr.reduce((a, c) => a + (c.amount || 0), 0);
     const acc = br.reduce((a, b) => a + (b.count || 0), 0);
+    const cnt = {};
+    rows.forEach((r) => (r.patterns || []).forEach((p) => { cnt[p] = (cnt[p] || 0) + 1; }));
+    if (rv.length) cnt.ransomware = (cnt.ransomware || 0) + rv.length;
+    const pr = Object.entries(cnt).sort((a, b) => b[1] - a[1]).slice(0, 8);
+    LIVE.today = { rows, ups, rv, named, usd, acc, cr, br, kv, nw, pats: pr };
+    if (!isReport()) return;
+
+    $("#g-date").textContent = ", " + new Date(D.generated).toLocaleDateString("en-US", { weekday: "long", month: "long", day: "numeric", timeZone: "UTC" });
+    $("#g-brief").textContent = brief ? brief.headline : "";
+    $("#g-brief").hidden = !brief;
+
     const ticks = [
       [rows.length + rv.length, "Organisations hit", `${rows.length} reported, ${rv.length} on leak sites`],
       [usd ? fmtUSD(usd) : "$0", "Stolen in crypto", `${cr.length} exploit${cr.length === 1 ? "" : "s"}`],
@@ -595,17 +634,15 @@
     const tb = el("tbody");
     const LIM = 8;
     rows.forEach((r, ix) => {
-      const name = r.eid ? el("a", { href: `#e-${r.eid}`, class: "jump" }, r.org) : el("span", {}, r.org);
-      if (r.eid) name.addEventListener("click", (x) => { x.preventDefault(); jumpTo(r.eid); });
-      const chips = (r.patterns || []).slice(0, 1).map((p) => { const b = el("button", { type: "button", class: "chip" }, LABEL[p] || p); b.addEventListener("click", () => setFilter({ pattern: p }, true)); return b; });
+      const name = r.eid ? el("a", { href: R.incidentPath(r.eid), class: "jump" }, r.org) : el("span", {}, r.org);
+      const chips = (r.patterns || []).slice(0, 1).map((p) => { const b = el("button", { type: "button", class: "chip" }, LABEL[p] || p); b.addEventListener("click", () => selectPattern(p)); return b; });
       tb.append(el("tr", { class: ix >= LIM && !LIVE.allHit ? "more-row" : null, hidden: ix >= LIM && !LIVE.allHit ? "" : null }, el("td", { class: "org" }, name, el("span", { class: "what" }, r.what)), el("td", { class: "num sc" }, r.scale || ""), el("td", { class: "pc" }, chips)));
     });
     const ub = el("tbody", { class: "upd" });
     if (ups.length) {
       ub.append(el("tr", {}, el("th", { colspan: "3" }, "Developments on older incidents")));
       ups.forEach((r) => {
-        const name = r.eid ? el("a", { href: `#e-${r.eid}`, class: "jump" }, r.org) : el("span", {}, r.org);
-        if (r.eid) name.addEventListener("click", (x) => { x.preventDefault(); jumpTo(r.eid); });
+        const name = r.eid ? el("a", { href: R.incidentPath(r.eid), class: "jump" }, r.org) : el("span", {}, r.org);
         ub.append(el("tr", {}, el("td", { class: "org" }, name, el("span", { class: "what" }, r.what)), el("td", { class: "num sc" }, r.since ? "since " + fmtDate(r.since) : ""), el("td", { class: "pc" })));
       });
     }
@@ -616,15 +653,10 @@
     mb.onclick = () => { LIVE.allHit = !LIVE.allHit; drawGlance(D0); };
 
     // Patterns today
-    const cnt = {};
-    rows.forEach((r) => (r.patterns || []).forEach((p) => { cnt[p] = (cnt[p] || 0) + 1; }));
-    if (rv.length) cnt.ransomware = (cnt.ransomware || 0) + rv.length;
-    const pr = Object.entries(cnt).sort((a, b) => b[1] - a[1]).slice(0, 8);
-    LIVE.today = { rows, ups, rv, named, usd, acc, cr, br, kv, nw, pats: pr };
     const max = Math.max(1, ...pr.map((p) => p[1]));
     $("#g-pat").replaceChildren(...pr.map(([p, n]) => {
       const b = el("button", { type: "button", class: "gpr" }, el("span", { class: "gl" }, LABEL[p] || p), el("span", { class: "gb" }, el("i", { style: `--w:${Math.max(4, (n / max) * 100)}%` })), el("span", { class: "gn" }, String(n)));
-      b.addEventListener("click", () => setFilter({ pattern: p }, true));
+      b.addEventListener("click", () => selectPattern(p));
       return b;
     }));
 
@@ -633,7 +665,7 @@
     const topG = Object.entries(groups).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([g, n]) => `${g} (${n})`).join(", ");
     $("#g-ransom").replaceChildren(
       ...named.slice(0, 8).map((v) => el("li", {}, el("a", { href: v.url || "https://www.ransomware.live", target: "_blank", rel: "noopener" }, v.victim), el("span", { class: "fs" }, [v.group, v.sector && !/not found/i.test(v.sector) ? v.sector : null, v.country && v.country !== "??" ? v.country : null].filter(Boolean).join(" · ")))),
-      el("li", { class: "more" }, `${rv.length} claims in 24 hours${named.length > 8 ? `, ${named.length - 8} more named` : ""}. Most active: ${topG || "none"}. `, el("a", { href: "#ransomware" }, "Groups and sectors")));
+      el("li", { class: "more" }, `${rv.length} claims in 24 hours${named.length > 8 ? `, ${named.length - 8} more named` : ""}. Most active: ${topG || "none"}. `, el("a", { href: "/report#ransomware" }, "Groups and sectors")));
   }
 
   function tick() {
@@ -657,7 +689,7 @@
         LIVE.extra.push({ key, live: true, kind: "crypto", t: new Date().toISOString(), amount: h.amount || 0, title: h.name, url: "https://defillama.com/hacks",
           sub: `${fmtUSD(h.amount)} · newly listed on DefiLlama, ${fmtDate(new Date(h.date * 1000).toISOString())}` });
       });
-      LIVE.checked = Date.now(); drawLive(D0); tick();
+      LIVE.checked = Date.now(); drawLive(D0); window.BL.onRender?.(D0); tick();
     } catch (e) { /* keep last state */ }
   }
   async function pollHIBP() {
@@ -669,55 +701,166 @@
         if (LIVE.extra.some((e) => e.key === key)) return;
         LIVE.extra.push({ key, live: true, kind: "breach", t: b.AddedDate, count: b.PwnCount || 0, title: b.Title, url: `https://haveibeenpwned.com/Breach/${b.Name}`, sub: `${compact(b.PwnCount || 0)} accounts · just added to HIBP` });
       });
-      LIVE.checked = Date.now(); drawLive(D0); tick();
+      LIVE.checked = Date.now(); drawLive(D0); window.BL.onRender?.(D0); tick();
     } catch (e) {}
   }
-  async function pollData(first) {
+  const newTiers = () => ({ details: {}, history: {} });
+  let tiers = newTiers();
+  const tierReady = (name) => !D0.split || !!tiers[name].loaded;
+  const detailsStatus = () => tiers.details.error ? "Details are temporarily unavailable. Reopen to retry." : "Loading details…";
+  const listParts = (D) => [
+    ...["news", "x", "registry", "notices"].map((kind) => [kind, D, kind]),
+    ...["crypto", "kev", "breaches"].map((kind) => [kind, D[kind], "items"]),
+  ].filter(([, obj, key]) => Array.isArray(obj?.[key]));
+
+  function mergeDetails(D, res) {
+    if (!res.details || !res.records) throw new Error("Invalid details payload");
+    for (const [kind, obj, key] of listParts(D)) {
+      for (const row of obj[key]) {
+        const id = kind === "registry" ? "r-" + row.id : row.eid;
+        if (tiers.history.coldRows?.has(row) || !Object.hasOwn(res.records, id)) continue;
+        if (kind === "x") delete row.n_posts; // drop the derived count; restore any original key below
+        Object.assign(row, res.records[id]);
+      }
+    }
+    if (Object.hasOwn(D, "details")) D.details = res.details;
+    DET = D.details || {};
+  }
+
+  function mergeHistory(D, res) {
+    if (!res.older || !Array.isArray(res.clusters)) throw new Error("Invalid history payload");
+    const coldRows = new WeakSet();
+    const lists = listParts(D).map(([kind, obj, key]) => {
+      const hot = obj[key];
+      const cold = res.older[kind] || []; // { i: original index, v: full row }
+      if (!Array.isArray(cold)) throw new Error("Invalid history rows for " + kind);
+      const size = hot.length + cold.length;
+      cold.forEach(({ i, v }, n) => {
+        if (!v || typeof v !== "object" || !Number.isInteger(i) || i < 0 || i >= size || (n > 0 && i <= cold[n - 1].i)) {
+          throw new Error("Invalid history position for " + kind);
+        }
+        coldRows.add(v);
+      });
+      let h = 0, c = 0;
+      return [obj, key, Array.from({ length: size }, (_, i) => i === cold[c]?.i ? cold[c++].v : hot[h++])];
+    });
+    for (const [obj, key, rows] of lists) obj[key] = rows;
+    tiers.history.coldRows = coldRows;
+    if (Object.hasOwn(D, "clusters")) D.clusters = res.clusters;
+  }
+
+  async function getJSON(path) {
+    const r = await fetch(path, { cache: "no-cache" });
+    if (!r.ok) throw new Error(`${path}: HTTP ${r.status}`);
+    return r.json();
+  }
+
+  function ensureTier(name, merge) {
+    const D = D0;
+    if (!D.generated) return Promise.resolve(false);
+    if (tierReady(name)) return Promise.resolve(true);
+    const tier = tiers[name];
+    if (tier.promise) return tier.promise;
+    tier.error = false;
+    const updateStatus = () => {
+      if (name === "details") document.querySelectorAll("#rep .d-load").forEach((n) => { n.textContent = detailsStatus(); });
+      else if (isReport()) drawClusters();
+    };
+    updateStatus();
+    // One request per tier for the active build. A poll can replace the build while it is in flight.
+    tier.promise = getJSON(`/data-${name}.json`).then((res) => {
+      if (D !== D0) return false;
+      if (res.generated !== D0.generated) throw new Error(`Mismatched ${name} generation`);
+      merge(D, res);
+      tier.loaded = true;
+      refreshViews();
+      return true;
+    }).catch((e) => {
+      if (D === D0) {
+        tier.error = true;
+        updateStatus();
+        console.warn(`Could not load ${name}`, e);
+      }
+      return false;
+    }).finally(() => { tier.promise = null; });
+    return tier.promise;
+  }
+  const ensureDetails = () => ensureTier("details", mergeDetails);
+  const ensureHistory = () => ensureTier("history", mergeHistory);
+
+  function renderReport() {
+    if (!D0.generated || !isReport()) return;
+    const focus = document.activeElement?.closest(".entry .more")?.closest(".entry")?.id;
+    const open = [...document.querySelectorAll(".entry .more[aria-expanded='true']")].map((b) => b.closest(".entry").id);
+    const y = window.scrollY, main = $("#main"), my = main.scrollTop;
+    render(D0);
+    if (state.pattern || state.q) drawFilter();
+    open.forEach((id) => document.getElementById(id)?._toggle?.(true));
+    LIVE.fresh.forEach((id) => document.getElementById("e-" + id)?.classList.add("is-new"));
+    if (focus) document.getElementById(focus)?.querySelector(".more")?.focus({ preventScroll: true });
+    window.scrollTo(0, y); main.scrollTop = my;
+  }
+
+  function refreshViews() {
+    if (isReport()) renderReport(); else drawGlance(D0);
+    window.BL.onRender?.(D0);
+  }
+
+  let dataRequest;
+  function pollData() {
+    if (!dataRequest) dataRequest = updateData().finally(() => { dataRequest = null; });
+    return dataRequest;
+  }
+  async function updateData() {
+    const first = !D0.generated;
     try {
-      const D = await (await fetch("data.json", { cache: "no-store" })).json();
-      if (!first && D.generated === D0.generated) { LIVE.checked = Date.now(); tick(); return; }
-      const ids = new Set(events(D).map((e) => e.id));
+      // During rollout the hot route may be absent (or temporarily serve a non-JSON response).
+      const D = await getJSON("/data-hot.json").catch(() => getJSON("/data.json"));
+      LIVE.checked = Date.now();
+      if (!first && D.generated === D0.generated && (!D0.split || D.split)) { tick(); return; }
+      const ev = events(D);
+      const ids = new Set(ev.map((e) => e.id));
       if (LIVE.prevIds) ids.forEach((id) => { if (!LIVE.prevIds.has(id)) LIVE.fresh.add(id); });
       LIVE.prevIds = ids;
-      const open = [...document.querySelectorAll(".entry .more[aria-expanded='true']")].map((b) => b.closest(".entry").id.slice(2));
-      const y = window.scrollY, my = $("#main").scrollTop;
-      LIVE.extra = LIVE.extra.filter((e) => !events(D).some((x) => norm(x.title) === norm(e.title)));
-      render(D);
-      if (state.pattern || state.q) setFilter({});
-      open.forEach((id) => { const n = document.getElementById("e-" + id); n && n._toggle(true); });
-      LIVE.fresh.forEach((id) => { const n = document.getElementById("e-" + id); n && n.classList.add("is-new"); });
-      if (!first) { window.scrollTo(0, y); $("#main").scrollTop = my; }
-      LIVE.checked = Date.now(); tick();
+      LIVE.extra = LIVE.extra.filter((e) => !ev.some((x) => norm(x.title) === norm(e.title)));
+      D0 = D; DET = D.details || {}; tiers = newTiers();
+      (D.pattern_defs || []).forEach((p) => { LABEL[p.id] = p.label; });
+      refreshViews();
+      tick();
       if (first) {
         spy();
-        if (/^#e-/.test(location.hash)) setTimeout(() => jumpTo(location.hash.slice(3)), 50);
-        else if (document.body.classList.contains("view-report") && location.hash.length > 1) {
-          // the section moved down as the lists above it filled in
-          const n = document.getElementById(location.hash.slice(1));
-          if (n && $("#main").contains(n)) n.scrollIntoView({ behavior: "instant" });
-        }
         pollLlama(); setTimeout(pollHIBP, 4000);
-        setInterval(() => pollData(false), 5 * 60e3);
+        setInterval(pollData, 5 * 60e3);
         setInterval(pollLlama, 2 * 60e3);
         setInterval(pollHIBP, 10 * 60e3);
         setInterval(tick, 1000);
       }
     } catch (e) {
-      console.error("data.json load/render failed", e);
+      console.error("Incident data load/render failed", e);
       if (first) $("#abstract").textContent = "The record could not be loaded. Try again in a moment.";
     }
   }
 
-    let qt; $("#q").addEventListener("input", (e) => { clearTimeout(qt); qt = setTimeout(() => setFilter({ q: e.target.value.trim() }), 150); });
-    $("#clear-filter").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
-    $("#fbar-clear").addEventListener("click", () => setFilter({ pattern: null, q: "" }));
+    const search = (q) => {
+      if (isReport()) window.BL.dismissIncident();
+      setFilter({ q });
+    };
+    let qt; $("#q").addEventListener("input", (e) => { clearTimeout(qt); qt = setTimeout(() => search(e.target.value.trim()), 150); });
+    const clearFilter = () => {
+      if (state.pattern) selectPattern(null);
+      search("");
+    };
+    $("#clear-filter").addEventListener("click", clearFilter);
+    $("#fbar-clear").addEventListener("click", clearFilter);
 
-  window.BL = Object.assign(window.BL || {}, {
-    // null until data.json has loaded: board.js renders straight away only when B.D is set
+  window.BL = {
+    ...window.BL,
     get D() { return D0.generated ? D0 : null; }, get DET() { return DET; }, LABEL, KIND, LIVE, ROLE, STAGES,
     detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, xSearch, escape, hoursAgo,
-    setFilter, jumpTo: (id) => jumpTo(id), events: () => [...LIVE.extra, ...events(D0)],
-    pollAll: () => { pollLlama(); pollHIBP(); pollData(false); },
-  });
-  pollData(true);
+    renderReport, setReportRoute, jumpTo, closeReportEntry, events: () => [...LIVE.extra, ...events(D0)],
+    ensureDetails, ensureHistory,
+    get detailsLoaded() { return tierReady("details"); }, get historyLoaded() { return tierReady("history"); },
+    pollAll: () => { if (D0.generated) { pollLlama(); pollHIBP(); } return pollData(); },
+  };
+  pollData();
 })();

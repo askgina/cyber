@@ -1,0 +1,1053 @@
+<?xml version='1.0' encoding='utf-8'?>
+<schemamap>
+  <entity type="WebSite">
+    <loc>https://cyber.askgina.ai/</loc>
+    <id>https://cyber.askgina.ai/#website</id>
+    <lastmod>2026-11-24T19:12:13Z</lastmod>
+  </entity>
+  <entity type="Organization">
+    <loc>https://cyber.askgina.ai/</loc>
+    <id>https://cyber.askgina.ai/#organization</id>
+    <lastmod>2026-11-24T19:12:13Z</lastmod>
+  </entity>
+  <entity type="Dataset">
+    <loc>https://cyber.askgina.ai/</loc>
+    <id>https://cyber.askgina.ai/#dataset</id>
+    <lastmod>2026-11-24T19:12:13Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/</loc>
+    <id>https://cyber.askgina.ai/#record</id>
+    <lastmod>2026-11-24T19:12:13Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-08-27</loc>
+    <id>https://cyber.askgina.ai/daily/2026-08-27#record</id>
+    <lastmod>2026-09-04</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-08-28</loc>
+    <id>https://cyber.askgina.ai/daily/2026-08-28#record</id>
+    <lastmod>2026-08-28</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-08-29</loc>
+    <id>https://cyber.askgina.ai/daily/2026-08-29#record</id>
+    <lastmod>2026-08-29</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-08-30</loc>
+    <id>https://cyber.askgina.ai/daily/2026-08-30#record</id>
+    <lastmod>2026-08-30</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-08-31</loc>
+    <id>https://cyber.askgina.ai/daily/2026-08-31#record</id>
+    <lastmod>2026-08-31</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-01</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-01#record</id>
+    <lastmod>2026-11-20T01:48:18Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-02</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-02#record</id>
+    <lastmod>2026-09-02</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-03</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-03#record</id>
+    <lastmod>2026-09-03</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-04</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-04#record</id>
+    <lastmod>2026-09-04</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-05</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-05#record</id>
+    <lastmod>2026-09-05</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-06</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-06#record</id>
+    <lastmod>2026-09-06</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-07</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-07#record</id>
+    <lastmod>2026-09-07</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-08</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-08#record</id>
+    <lastmod>2026-09-08</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-09</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-09#record</id>
+    <lastmod>2026-09-09</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-10</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-10#record</id>
+    <lastmod>2026-09-10</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-11</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-11#record</id>
+    <lastmod>2026-11-21T19:48:17Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-12</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-12#record</id>
+    <lastmod>2026-11-24T05:59:03Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-13</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-13#record</id>
+    <lastmod>2026-09-13</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-14</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-14#record</id>
+    <lastmod>2026-09-14</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-15</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-15#record</id>
+    <lastmod>2026-09-15</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-16</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-16#record</id>
+    <lastmod>2026-11-24T18:16:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-17</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-17#record</id>
+    <lastmod>2026-09-17</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-18</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-18#record</id>
+    <lastmod>2026-09-18</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-19</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-19#record</id>
+    <lastmod>2026-09-19</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-20</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-20#record</id>
+    <lastmod>2026-11-14T12:00:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-21</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-21#record</id>
+    <lastmod>2026-09-21</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-22</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-22#record</id>
+    <lastmod>2026-09-22</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-23</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-23#record</id>
+    <lastmod>2026-09-23</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-24</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-24#record</id>
+    <lastmod>2026-11-23T06:36:04Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-25</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-25#record</id>
+    <lastmod>2026-11-24T18:34:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-26</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-26#record</id>
+    <lastmod>2026-11-24T10:39:35Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-27</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-27#record</id>
+    <lastmod>2026-09-27</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-28</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-28#record</id>
+    <lastmod>2026-11-24T06:33:37Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-29</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-29#record</id>
+    <lastmod>2026-10-29</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-09-30</loc>
+    <id>https://cyber.askgina.ai/daily/2026-09-30#record</id>
+    <lastmod>2026-09-30</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-01</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-01#record</id>
+    <lastmod>2026-10-01</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-02</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-02#record</id>
+    <lastmod>2026-10-02</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-03</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-03#record</id>
+    <lastmod>2026-10-03</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-04</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-04#record</id>
+    <lastmod>2026-10-04</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-05</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-05#record</id>
+    <lastmod>2026-11-21T21:29:57Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-06</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-06#record</id>
+    <lastmod>2026-11-19T21:36:59Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-07</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-07#record</id>
+    <lastmod>2026-11-18</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-08</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-08#record</id>
+    <lastmod>2026-10-08</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-09</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-09#record</id>
+    <lastmod>2026-11-20T22:44:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-10</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-10#record</id>
+    <lastmod>2026-10-10</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-11</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-11#record</id>
+    <lastmod>2026-10-11</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-12</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-12#record</id>
+    <lastmod>2026-10-12</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-13</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-13#record</id>
+    <lastmod>2026-10-13</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-14</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-14#record</id>
+    <lastmod>2026-10-14</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-15</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-15#record</id>
+    <lastmod>2026-11-19T16:03:16Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-16</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-16#record</id>
+    <lastmod>2026-11-19T23:05:09Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-17</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-17#record</id>
+    <lastmod>2026-11-19T04:16:31Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-18</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-18#record</id>
+    <lastmod>2026-11-22T04:16:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-19</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-19#record</id>
+    <lastmod>2026-11-21T09:35:57Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-20</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-20#record</id>
+    <lastmod>2026-11-22T11:19:51Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-21</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-21#record</id>
+    <lastmod>2026-11-24T10:30:38Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-22</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-22#record</id>
+    <lastmod>2026-11-20T15:20:26Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-23</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-23#record</id>
+    <lastmod>2026-11-24T02:23:05Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-24</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-24#record</id>
+    <lastmod>2026-11-21T08:52:40Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-25</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-25#record</id>
+    <lastmod>2026-10-25</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-26</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-26#record</id>
+    <lastmod>2026-11-22T03:55:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-27</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-27#record</id>
+    <lastmod>2026-11-20T19:34:06Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-28</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-28#record</id>
+    <lastmod>2026-11-21T17:27:38Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-29</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-29#record</id>
+    <lastmod>2026-11-23T19:20:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-30</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-30#record</id>
+    <lastmod>2026-11-19T09:15:59Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-10-31</loc>
+    <id>https://cyber.askgina.ai/daily/2026-10-31#record</id>
+    <lastmod>2026-10-31</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-01</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-01#record</id>
+    <lastmod>2026-11-24T08:12:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-02</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-02#record</id>
+    <lastmod>2026-11-24T14:01:07Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-03</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-03#record</id>
+    <lastmod>2026-11-03T07:24:50Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-04</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-04#record</id>
+    <lastmod>2026-11-20T21:08:31Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-05</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-05#record</id>
+    <lastmod>2026-11-24T01:36:04Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-06</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-06#record</id>
+    <lastmod>2026-11-20T22:07:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-07</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-07#record</id>
+    <lastmod>2026-11-23T22:15:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-08</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-08#record</id>
+    <lastmod>2026-11-23T04:21:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-09</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-09#record</id>
+    <lastmod>2026-11-24T16:25:23Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-10</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-10#record</id>
+    <lastmod>2026-11-23T20:15:54Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-11</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-11#record</id>
+    <lastmod>2026-11-22T04:37:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-12</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-12#record</id>
+    <lastmod>2026-11-24T05:59:03Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-13</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-13#record</id>
+    <lastmod>2026-11-24T08:57:02Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-14</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-14#record</id>
+    <lastmod>2026-11-23T13:58:07Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-15</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-15#record</id>
+    <lastmod>2026-11-24T06:50:12Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-16</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-16#record</id>
+    <lastmod>2026-11-24T13:28:26Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-17</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-17#record</id>
+    <lastmod>2026-11-24T16:38:20Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-18</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-18#record</id>
+    <lastmod>2026-11-24T14:36:30Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-19</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-19#record</id>
+    <lastmod>2026-11-24T17:12:47Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-20</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-20#record</id>
+    <lastmod>2026-11-24T17:48:34Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-21</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-21#record</id>
+    <lastmod>2026-11-24T18:27:08Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-22</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-22#record</id>
+    <lastmod>2026-11-24T18:13:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-23</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-23#record</id>
+    <lastmod>2026-11-24T17:45:03Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/daily/2026-11-24</loc>
+    <id>https://cyber.askgina.ai/daily/2026-11-24#record</id>
+    <lastmod>2026-11-24T18:11:04Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/leaderboard</loc>
+    <id>https://cyber.askgina.ai/leaderboard#record</id>
+    <lastmod>2026-11-24</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/ai</loc>
+    <id>https://cyber.askgina.ai/patterns/ai#record</id>
+    <lastmod>2026-11-24T17:41:29Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/bridge</loc>
+    <id>https://cyber.askgina.ai/patterns/bridge#record</id>
+    <lastmod>2026-11-24T13:52:48Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/contract-logic</loc>
+    <id>https://cyber.askgina.ai/patterns/contract-logic#record</id>
+    <lastmod>2026-11-24T16:34:11Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/data-exposure</loc>
+    <id>https://cyber.askgina.ai/patterns/data-exposure#record</id>
+    <lastmod>2026-11-24T18:34:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/edge-device</loc>
+    <id>https://cyber.askgina.ai/patterns/edge-device#record</id>
+    <lastmod>2026-11-24T17:49:05Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/enterprise-platform</loc>
+    <id>https://cyber.askgina.ai/patterns/enterprise-platform#record</id>
+    <lastmod>2026-11-24T16:15:13Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/injection-rce</loc>
+    <id>https://cyber.askgina.ai/patterns/injection-rce#record</id>
+    <lastmod>2026-11-24</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/key-compromise</loc>
+    <id>https://cyber.askgina.ai/patterns/key-compromise#record</id>
+    <lastmod>2026-11-24T18:34:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/memory</loc>
+    <id>https://cyber.askgina.ai/patterns/memory#record</id>
+    <lastmod>2026-11-10</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/outage</loc>
+    <id>https://cyber.askgina.ai/patterns/outage#record</id>
+    <lastmod>2026-11-24T18:16:00Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/phishing</loc>
+    <id>https://cyber.askgina.ai/patterns/phishing#record</id>
+    <lastmod>2026-11-24T18:27:08Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/ransomware</loc>
+    <id>https://cyber.askgina.ai/patterns/ransomware#record</id>
+    <lastmod>2026-11-24T17:34:23Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/state-linked</loc>
+    <id>https://cyber.askgina.ai/patterns/state-linked#record</id>
+    <lastmod>2026-11-24T18:27:08Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/patterns/supply-chain</loc>
+    <id>https://cyber.askgina.ai/patterns/supply-chain#record</id>
+    <lastmod>2026-11-24T17:19:47Z</lastmod>
+  </entity>
+  <entity type="CollectionPage">
+    <loc>https://cyber.askgina.ai/report</loc>
+    <id>https://cyber.askgina.ai/report#record</id>
+    <lastmod>2026-11-24T19:12:13Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-adb18ca6</loc>
+    <id>https://cyber.askgina.ai/incidents/n-adb18ca6#record</id>
+    <lastmod>2026-11-24T17:49:05Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-2db8a639</loc>
+    <id>https://cyber.askgina.ai/incidents/n-2db8a639#record</id>
+    <lastmod>2026-11-24T18:03:32Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-3127c44d</loc>
+    <id>https://cyber.askgina.ai/incidents/n-3127c44d#record</id>
+    <lastmod>2026-11-24T17:34:23Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-6b48789d</loc>
+    <id>https://cyber.askgina.ai/incidents/n-6b48789d#record</id>
+    <lastmod>2026-11-24T16:54:07Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-ecb734b1</loc>
+    <id>https://cyber.askgina.ai/incidents/n-ecb734b1#record</id>
+    <lastmod>2026-11-24T14:24:11Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-f11098c5</loc>
+    <id>https://cyber.askgina.ai/incidents/n-f11098c5#record</id>
+    <lastmod>2026-11-24T13:45:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-44f44f12</loc>
+    <id>https://cyber.askgina.ai/incidents/n-44f44f12#record</id>
+    <lastmod>2026-11-24T12:48:09Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-88747994</loc>
+    <id>https://cyber.askgina.ai/incidents/n-88747994#record</id>
+    <lastmod>2026-11-24T12:47:07Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-13211243</loc>
+    <id>https://cyber.askgina.ai/incidents/n-13211243#record</id>
+    <lastmod>2026-11-24T13:12:12Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-e94ac3e9</loc>
+    <id>https://cyber.askgina.ai/incidents/n-e94ac3e9#record</id>
+    <lastmod>2026-11-24T13:34:23Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-17faeada</loc>
+    <id>https://cyber.askgina.ai/incidents/n-17faeada#record</id>
+    <lastmod>2026-11-24T15:58:35Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-78138acb</loc>
+    <id>https://cyber.askgina.ai/incidents/n-78138acb#record</id>
+    <lastmod>2026-11-24T18:11:04Z</lastmod>
+  </entity>
+  <entity type="TechArticle">
+    <loc>https://cyber.askgina.ai/incidents/k-e4e8a8e0</loc>
+    <id>https://cyber.askgina.ai/incidents/k-e4e8a8e0#record</id>
+    <lastmod>2026-11-24</lastmod>
+  </entity>
+  <entity type="TechArticle">
+    <loc>https://cyber.askgina.ai/incidents/k-79d7bf35</loc>
+    <id>https://cyber.askgina.ai/incidents/k-79d7bf35#record</id>
+    <lastmod>2026-11-24</lastmod>
+  </entity>
+  <entity type="TechArticle">
+    <loc>https://cyber.askgina.ai/incidents/k-1a076dbe</loc>
+    <id>https://cyber.askgina.ai/incidents/k-1a076dbe#record</id>
+    <lastmod>2026-11-24</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/c-f4f7cd25</loc>
+    <id>https://cyber.askgina.ai/incidents/c-f4f7cd25#record</id>
+    <lastmod>2026-11-24</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-0af9a751</loc>
+    <id>https://cyber.askgina.ai/incidents/n-0af9a751#record</id>
+    <lastmod>2026-11-24T09:33:33Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-e101d52c</loc>
+    <id>https://cyber.askgina.ai/incidents/n-e101d52c#record</id>
+    <lastmod>2026-11-23T15:47:40Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-22bf6552</loc>
+    <id>https://cyber.askgina.ai/incidents/n-22bf6552#record</id>
+    <lastmod>2026-11-24T17:41:29Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-8476cf37</loc>
+    <id>https://cyber.askgina.ai/incidents/n-8476cf37#record</id>
+    <lastmod>2026-11-24T15:00:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-09fa056d</loc>
+    <id>https://cyber.askgina.ai/incidents/n-09fa056d#record</id>
+    <lastmod>2026-11-23T14:15:28Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-af17806b</loc>
+    <id>https://cyber.askgina.ai/incidents/n-af17806b#record</id>
+    <lastmod>2026-11-24T08:30:38Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-851d3d22</loc>
+    <id>https://cyber.askgina.ai/incidents/n-851d3d22#record</id>
+    <lastmod>2026-11-23T13:26:22Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-cb673b12</loc>
+    <id>https://cyber.askgina.ai/incidents/n-cb673b12#record</id>
+    <lastmod>2026-11-23T13:22:20Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-53716c44</loc>
+    <id>https://cyber.askgina.ai/incidents/n-53716c44#record</id>
+    <lastmod>2026-11-24T12:04:37Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-d2294fb1</loc>
+    <id>https://cyber.askgina.ai/incidents/n-d2294fb1#record</id>
+    <lastmod>2026-11-24T16:48:59Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-arobases-client-backup-server-breach</loc>
+    <id>https://cyber.askgina.ai/incidents/r-arobases-client-backup-server-breach#record</id>
+    <lastmod>2026-11-23T12:01:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-next-plc-online-supplier-incident</loc>
+    <id>https://cyber.askgina.ai/incidents/r-next-plc-online-supplier-incident#record</id>
+    <lastmod>2026-11-24T08:00:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-aurora-cannabis-osiris-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-aurora-cannabis-osiris-claim#record</id>
+    <lastmod>2026-11-23T10:17:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-uzbekistan-online-cash-register-operator-disclosure</loc>
+    <id>https://cyber.askgina.ai/incidents/r-uzbekistan-online-cash-register-operator-disclosure#record</id>
+    <lastmod>2026-11-23T15:01:08Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-snowys-outdoors-website-compromise</loc>
+    <id>https://cyber.askgina.ai/incidents/r-snowys-outdoors-website-compromise#record</id>
+    <lastmod>2026-11-23T09:43:24Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-jeongdok-library-survey-exposure</loc>
+    <id>https://cyber.askgina.ai/incidents/r-jeongdok-library-survey-exposure#record</id>
+    <lastmod>2026-11-23T09:40:55Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-laliga-fan-platform-data-breach</loc>
+    <id>https://cyber.askgina.ai/incidents/r-laliga-fan-platform-data-breach#record</id>
+    <lastmod>2026-11-23T12:00:53Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-d718c3ba</loc>
+    <id>https://cyber.askgina.ai/incidents/n-d718c3ba#record</id>
+    <lastmod>2026-11-23T08:25:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-d530b5a0</loc>
+    <id>https://cyber.askgina.ai/incidents/n-d530b5a0#record</id>
+    <lastmod>2026-11-24T10:04:42Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-f714b482</loc>
+    <id>https://cyber.askgina.ai/incidents/n-f714b482#record</id>
+    <lastmod>2026-11-24T17:45:03Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-5d81d809</loc>
+    <id>https://cyber.askgina.ai/incidents/n-5d81d809#record</id>
+    <lastmod>2026-11-23T07:44:19Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-university-medical-imaging-aoqin-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-university-medical-imaging-aoqin-claim#record</id>
+    <lastmod>2026-11-23T06:51:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-corrigan-moving-aoqin-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-corrigan-moving-aoqin-claim#record</id>
+    <lastmod>2026-11-23T06:50:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/b-cfe3cbcd</loc>
+    <id>https://cyber.askgina.ai/incidents/b-cfe3cbcd#record</id>
+    <lastmod>2026-11-23T06:36:04Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-kinki-sharyo-everstake-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-kinki-sharyo-everstake-claim#record</id>
+    <lastmod>2026-11-23T06:29:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-master-result-spacebears-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-master-result-spacebears-claim#record</id>
+    <lastmod>2026-11-23T04:44:15Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-dics-spacebears-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-dics-spacebears-claim#record</id>
+    <lastmod>2026-11-23T04:43:36Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-staufen-baumaschinen-spacebears-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-staufen-baumaschinen-spacebears-claim#record</id>
+    <lastmod>2026-11-23T04:42:57Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-suzlon-energy-blackout-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-suzlon-energy-blackout-claim#record</id>
+    <lastmod>2026-11-24T09:33:35Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-groupe-piment-spacebears-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-groupe-piment-spacebears-claim#record</id>
+    <lastmod>2026-11-23T04:17:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-fondation-des-femmes-petition-data-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-fondation-des-femmes-petition-data-claim#record</id>
+    <lastmod>2026-11-23T05:55:55Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-hd-hyundai-robotics-website-data-breach</loc>
+    <id>https://cyber.askgina.ai/incidents/r-hd-hyundai-robotics-website-data-breach#record</id>
+    <lastmod>2026-11-23T23:11:49Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-fisher-paykel-healthcare-falcon-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-fisher-paykel-healthcare-falcon-claim#record</id>
+    <lastmod>2026-11-23T02:39:09Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-decathlon-france-customer-delivery-data-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-decathlon-france-customer-delivery-data-claim#record</id>
+    <lastmod>2026-11-24T10:53:56Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-venezuela-intt-disclosure-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-venezuela-intt-disclosure-claim#record</id>
+    <lastmod>2026-11-23T01:53:17Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-rio-grande-municipal-disclosure-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-rio-grande-municipal-disclosure-claim#record</id>
+    <lastmod>2026-11-23T01:53:17Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-samsung-securities-voc-november-2026</loc>
+    <id>https://cyber.askgina.ai/incidents/r-samsung-securities-voc-november-2026#record</id>
+    <lastmod>2026-11-24T08:21:36Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-kenya-ecitizen-byte-to-breach-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-kenya-ecitizen-byte-to-breach-claim#record</id>
+    <lastmod>2026-11-23T01:08:20Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-42e5f99f</loc>
+    <id>https://cyber.askgina.ai/incidents/n-42e5f99f#record</id>
+    <lastmod>2026-11-24T07:19:09Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/o-874931a8</loc>
+    <id>https://cyber.askgina.ai/incidents/o-874931a8#record</id>
+    <lastmod>2026-11-23T00:00:00Z</lastmod>
+  </entity>
+  <entity type="TechArticle">
+    <loc>https://cyber.askgina.ai/incidents/k-ec15804f</loc>
+    <id>https://cyber.askgina.ai/incidents/k-ec15804f#record</id>
+    <lastmod>2026-11-23</lastmod>
+  </entity>
+  <entity type="TechArticle">
+    <loc>https://cyber.askgina.ai/incidents/k-4ab84f9c</loc>
+    <id>https://cyber.askgina.ai/incidents/k-4ab84f9c#record</id>
+    <lastmod>2026-11-23</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-cybage-software-inc-ransom</loc>
+    <id>https://cyber.askgina.ai/incidents/r-cybage-software-inc-ransom#record</id>
+    <lastmod>2026-11-22T23:19:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-bell-mts-third-party-email-cyberattack</loc>
+    <id>https://cyber.askgina.ai/incidents/r-bell-mts-third-party-email-cyberattack#record</id>
+    <lastmod>2026-11-22T23:11:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-bordeaux-university-hospital-scarlettgroup</loc>
+    <id>https://cyber.askgina.ai/incidents/r-bordeaux-university-hospital-scarlettgroup#record</id>
+    <lastmod>2026-11-24T16:46:02Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-agenzia-agora-panzer-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-agenzia-agora-panzer-claim#record</id>
+    <lastmod>2026-11-22T22:55:38Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-moreth-medusalocker-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-moreth-medusalocker-claim#record</id>
+    <lastmod>2026-11-22T22:41:43Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-l-and-t-technology-services-inc-ransom</loc>
+    <id>https://cyber.askgina.ai/incidents/r-l-and-t-technology-services-inc-ransom#record</id>
+    <lastmod>2026-11-22T22:34:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-peninsula-energy-lance-cyber-incident</loc>
+    <id>https://cyber.askgina.ai/incidents/r-peninsula-energy-lance-cyber-incident#record</id>
+    <lastmod>2026-11-24T11:55:11Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-wanda-collection-customer-data-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-wanda-collection-customer-data-claim#record</id>
+    <lastmod>2026-11-23</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-la-chouette-mauve-customer-data-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-la-chouette-mauve-customer-data-claim#record</id>
+    <lastmod>2026-11-23</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/x-cd2fd6b5</loc>
+    <id>https://cyber.askgina.ai/incidents/x-cd2fd6b5#record</id>
+    <lastmod>2026-11-22T20:25:28Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-bitbiashara-nostr-account-compromise</loc>
+    <id>https://cyber.askgina.ai/incidents/r-bitbiashara-nostr-account-compromise#record</id>
+    <lastmod>2026-11-22T20:25:28Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-lapsa-alduin-data-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-lapsa-alduin-data-claim#record</id>
+    <lastmod>2026-11-23T06:18:05Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-nesa-november-2026-bridge-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-nesa-november-2026-bridge-claim#record</id>
+    <lastmod>2026-11-22T19:57:46Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-viapan-group-qilin-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-viapan-group-qilin-claim#record</id>
+    <lastmod>2026-11-22T19:36:08Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-subtil-diamant-customer-data-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-subtil-diamant-customer-data-claim#record</id>
+    <lastmod>2026-11-24T13:47:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-fusionist-ace-bridge</loc>
+    <id>https://cyber.askgina.ai/incidents/r-fusionist-ace-bridge#record</id>
+    <lastmod>2026-11-22T23:17:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-netbeat-hosting-infrastructure-intrusion</loc>
+    <id>https://cyber.askgina.ai/incidents/r-netbeat-hosting-infrastructure-intrusion#record</id>
+    <lastmod>2026-11-24T07:43:01Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-guadeloupe-university-hospital-cyberattack</loc>
+    <id>https://cyber.askgina.ai/incidents/r-guadeloupe-university-hospital-cyberattack#record</id>
+    <lastmod>2026-11-24T18:13:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-cranston-police-suspected-intrusion</loc>
+    <id>https://cyber.askgina.ai/incidents/r-cranston-police-suspected-intrusion#record</id>
+    <lastmod>2026-11-23T07:00:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-persistent-systems-inc-ransom-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-persistent-systems-inc-ransom-claim#record</id>
+    <lastmod>2026-11-23T07:47:58Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-econsys-direwolf-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-econsys-direwolf-claim#record</id>
+    <lastmod>2026-11-22T15:07:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-samsung-hyflock-november-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-samsung-hyflock-november-claim#record</id>
+    <lastmod>2026-11-22T13:52:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-f1397973</loc>
+    <id>https://cyber.askgina.ai/incidents/n-f1397973#record</id>
+    <lastmod>2026-11-24T14:55:42Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-cynthia-de-petris-rhysida-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-cynthia-de-petris-rhysida-claim#record</id>
+    <lastmod>2026-11-22T10:43:39Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-dynamic-education-n0n-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-dynamic-education-n0n-claim#record</id>
+    <lastmod>2026-11-22T10:22:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-uca-general-endzone-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-uca-general-endzone-claim#record</id>
+    <lastmod>2026-11-22T09:21:28Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-f3a43b39</loc>
+    <id>https://cyber.askgina.ai/incidents/n-f3a43b39#record</id>
+    <lastmod>2026-11-24T17:19:47Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-kepco-on-procurement-data-breach</loc>
+    <id>https://cyber.askgina.ai/incidents/r-kepco-on-procurement-data-breach#record</id>
+    <lastmod>2026-11-24T14:55:42Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-dominicana-om-hyflock-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-dominicana-om-hyflock-claim#record</id>
+    <lastmod>2026-11-22T07:22:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-invicta-watch-qilin-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-invicta-watch-qilin-claim#record</id>
+    <lastmod>2026-11-22T07:13:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-sri-lanka-dmt-website</loc>
+    <id>https://cyber.askgina.ai/incidents/r-sri-lanka-dmt-website#record</id>
+    <lastmod>2026-11-22T09:59:05Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-npm-c1-ease-malicious-packages</loc>
+    <id>https://cyber.askgina.ai/incidents/r-npm-c1-ease-malicious-packages#record</id>
+    <lastmod>2026-11-22T02:35:58Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-balanz-capital-alleged-data-sale</loc>
+    <id>https://cyber.askgina.ai/incidents/r-balanz-capital-alleged-data-sale#record</id>
+    <lastmod>2026-11-22T00:19:41Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/c-31c40b98</loc>
+    <id>https://cyber.askgina.ai/incidents/c-31c40b98#record</id>
+    <lastmod>2026-11-22</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-aramid-bridge-voi-algorand-november</loc>
+    <id>https://cyber.askgina.ai/incidents/r-aramid-bridge-voi-algorand-november#record</id>
+    <lastmod>2026-11-22T17:08:29Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-together-ai-serverless-prompt-leak</loc>
+    <id>https://cyber.askgina.ai/incidents/r-together-ai-serverless-prompt-leak#record</id>
+    <lastmod>2026-11-21T23:27:18Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/x-eb428de0</loc>
+    <id>https://cyber.askgina.ai/incidents/x-eb428de0#record</id>
+    <lastmod>2026-11-22T17:39:15Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/n-07882a25</loc>
+    <id>https://cyber.askgina.ai/incidents/n-07882a25#record</id>
+    <lastmod>2026-11-24T09:46:04Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-rackspace-spot-kubernetes</loc>
+    <id>https://cyber.askgina.ai/incidents/r-rackspace-spot-kubernetes#record</id>
+    <lastmod>2026-11-24T06:00:13Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-fort-smith-ems-gentlemen-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-fort-smith-ems-gentlemen-claim#record</id>
+    <lastmod>2026-11-21T20:13:00Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-replo-precautionary-customer-notice</loc>
+    <id>https://cyber.askgina.ai/incidents/r-replo-precautionary-customer-notice#record</id>
+    <lastmod>2026-11-21T18:39:40Z</lastmod>
+  </entity>
+  <entity type="NewsArticle">
+    <loc>https://cyber.askgina.ai/incidents/r-treasure-island-industrial-safepay-claim</loc>
+    <id>https://cyber.askgina.ai/incidents/r-treasure-island-industrial-safepay-claim#record</id>
+    <lastmod>2026-11-21T18:34:09Z</lastmod>
+  </entity>
+</schemamap>

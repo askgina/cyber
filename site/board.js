@@ -3,12 +3,14 @@
   "use strict";
   const B = window.BL;
   if (!B) return;
+  const R = window.BLRoutes;
   const { el, fmtUSD, fmtDate } = B;
   const $ = (s, r = document) => r.querySelector(s);
 
   const S = { sort: "amount", dir: "desc", cat: null, q: "", rows: [], all: [], ready: false, err: null, generated: null, open: null };
   const FIRST_DIR = { amount: "desc", date: "desc", name: "asc", category: "asc" };
-  let archiveP = null;
+  let archiveP = null, archive = null, rowPick = 0;
+  const active = () => document.body.classList.contains("view-board");
 
   function parseScale(s) {
     if (s == null || s === "") return null;
@@ -45,12 +47,26 @@
   }
 
   function loadArchive() {
-    if (archiveP) return archiveP;
-    archiveP = fetch("./archive.json", { cache: "no-cache" }).then((r) => {
+    if (!active() || archiveP) return archiveP;
+    S.err = null;
+    archiveP = fetch("/archive.json", { cache: "no-cache" }).then((r) => {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
-    });
+    }).then((data) => {
+      archive = data;
+      if (active()) fill(B.D, archive);
+    }).catch(() => {
+      // Archive failed: still show the recent rows and retry on the next visit.
+      S.err = true;
+      if (active()) fill(B.D, null);
+    }).finally(() => { archiveP = null; });
     return archiveP;
+  }
+
+  function bootBoard() {
+    if (!active()) return;
+    if (archive) fill(B.D, archive);
+    else { loadArchive(); drawTable(); }
   }
 
   function buildRows(D, archive) {
@@ -60,7 +76,8 @@
 
     const used = new Set();
     const rows = [];
-    ((archive && archive.items) || []).filter((a) => a.k === "crypto").forEach((a) => {
+    ((archive && archive.items) || []).forEach((a, i) => {
+      if (a.k !== "crypto") return;
       const key = norm(a.o) + "|" + a.d;
       const hit = byKey.get(key);
       if (hit) used.add(key);
@@ -71,6 +88,7 @@
       rows.push({
         key: (hit && hit.eid) || ("arc-" + key),
         eid: hit && hit.eid,
+        archiveId: "a-" + i, // same snapshot-local lookup as the terminal archive
         name: (hit && hit.name) || a.o,
         date: (hit && hit.date) || a.d,
         amount,
@@ -236,18 +254,36 @@
       : "";
   }
 
-  function closeInsp(clearHash) {
+  function closeInsp(restoreRoute) {
     const box = $("#b-insp");
+    const selected = document.querySelectorAll("#b-tbl tbody tr.sel");
     if (box) box.hidden = true;
     S.open = null;
-    document.querySelectorAll("#b-tbl tbody tr.sel").forEach((n) => n.classList.remove("sel"));
-    if (clearHash && /^#e-/.test(location.hash)) history.replaceState(null, "", "#leaderboard");
+    selected.forEach((n) => n.classList.remove("sel"));
+    if (restoreRoute) {
+      B.dismissIncident();
+      (selected[0] || $("#board")).focus({ preventScroll: true });
+    }
   }
 
-  function openRow(r, setHash) {
+  function openRow(r, navigate) {
+    const id = r.eid || r.archiveId;
+    if (navigate && id) {
+      const pick = ++rowPick;
+      if (!r.eid && r.archiveId && B.D && !B.historyLoaded) {
+        const from = location.href;
+        return B.ensureHistory().then(() => {
+          if (!active() || location.href !== from || pick !== rowPick) return;
+          const liveId = S.all.find((row) => row.archiveId === r.archiveId)?.eid;
+          R.navigate(R.incidentPath(liveId || id));
+        });
+      }
+      return R.navigate(R.incidentPath(id));
+    }
     const box = $("#b-insp");
     const body = $("#b-ib");
     if (!box || !body) return;
+    const opening = box.hidden;
     S.open = r.key;
     document.querySelectorAll("#b-tbl tbody tr").forEach((n) => n.classList.toggle("sel", n.getAttribute("data-key") === r.key));
     $("#b-ik").textContent = r.name;
@@ -265,17 +301,21 @@
         ["Source", r.url ? el("a", { href: r.url, target: "_blank", rel: "noopener" }, "Open source") : null],
       ].filter((x) => x[1] != null && x[1] !== "");
       const dl = el("dl", { class: "facts" }, rows.map(([k, v]) => el("div", {}, el("dt", {}, k), el("dd", {}, v))));
-      body.append(dl, r.desc ? el("p", { class: "d" }, r.desc) : null);
+      body.append(dl);
+      if (r.desc) body.append(el("p", { class: "d" }, r.desc));
+      if (id) body.append(el("a", { href: R.incidentPath(id), class: "link" }, "Link to this entry"));
     }
     box.hidden = false;
-    if (setHash && r.eid && location.hash !== "#e-" + r.eid) history.replaceState(null, "", "#e-" + r.eid);
+    if (opening) $("#b-ix").focus({ preventScroll: true });
   }
 
   function inspectBoard(id) {
     if (!document.body.classList.contains("view-board")) return false;
-    const r = S.all.find((x) => x.eid === id || x.key === id);
+    const r = S.all.find((x) => x.eid === id || x.archiveId === id);
     if (!r) return false;
     openRow(r, false);
+    B.setIncidentTitle(id, r.name);
+    if (r.it && !B.detailsLoaded) B.ensureDetails();
     return true;
   }
 
@@ -285,7 +325,7 @@
     S.ready = true;
     drawCats();
     drawTable();
-    if (/^#e-/.test(location.hash)) inspectBoard(location.hash.slice(3));
+    B.showRoutedIncident();
   }
 
   function boot() {
@@ -297,7 +337,7 @@
     const ix = $("#b-ix");
     if (ix) ix.addEventListener("click", () => closeInsp(true));
     document.addEventListener("keydown", (e) => {
-      if (e.key !== "Escape") return;
+      if (e.defaultPrevented || e.key !== "Escape" || $("#pal").open) return;
       if (!document.body.classList.contains("view-board")) return;
       if ($("#b-insp") && !$("#b-insp").hidden) { e.preventDefault(); closeInsp(true); }
     });
@@ -305,21 +345,15 @@
     const prev = B.onRender;
     B.onRender = (D) => {
       if (prev) prev(D);
-      Promise.resolve(archiveP || loadArchive()).then((arc) => fill(D, arc), () => {
-        // Archive failed: still show the recent items from data.json.
-        S.err = true;
-        fill(D, { items: [], generated: D && D.generated });
-      });
+      if (active()) fill(D, archive);
     };
-    if (B.D) B.onRender(B.D);
-    else {
-      drawTable();
-      loadArchive().catch(() => { S.err = true; });
-    }
+    bootBoard();
   }
 
+  B.bootBoard = bootBoard;
   B.inspectBoard = inspectBoard;
   B.closeBoard = () => closeInsp(false);
+  B.boardRecordKind = (id) => R.isArchiveId(id) ? archive?.items?.[Number(id.slice(2))]?.k : null;
   B.parseScale = parseScale;
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
