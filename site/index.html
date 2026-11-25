@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <script src="/theme-init.js"></script>
-<title>Cyber — A daily record of cyber incidents</title>
+<title>Cyber: A daily record of cyber incidents</title>
 <meta name="description" content="An hourly-updated register of cyber security incidents: crypto exploits, ransomware leak-site claims, exploited vulnerabilities, news and early signals from X.">
 <meta name="site-origin" content="https://cyber.askgina.ai">
 <link rel="canonical" href="https://cyber.askgina.ai/">
@@ -116,7 +116,7 @@
   <div class="t-top">
     <a class="t-brand" href="/">Cyber</a>
     <button type="button" id="t-live" class="t-live" title="Refresh now (u)"><i class="dot" aria-hidden="true"></i>Live <span id="t-checked" aria-live="off"></span></button>
-    <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="t-q" type="search" placeholder="Filter by company, CVE, chain or pattern. Type ask … to ask Perplexity" autocomplete="off" aria-label="Filter the terminal"><kbd>/</kbd></label>
+    <label class="t-cmd"><span aria-hidden="true">&gt;</span><input id="t-q" type="search" placeholder="Filter by company, CVE, chain or pattern. Type ask … to ask an AI assistant" autocomplete="off" aria-label="Filter the terminal"><kbd>/</kbd></label>
     <span class="t-clock" id="t-clock" aria-label="Current time, UTC"></span>
     <nav class="t-views" aria-label="Views"><a href="/leaderboard">Leaderboard</a><a href="/" aria-current="page">Terminal</a><a href="/report">Report</a></nav>
     <button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
@@ -179,9 +179,11 @@
     <div class="abstract-wrap">
       <p class="abstract" id="abstract">Loading the latest record…</p>
       <div class="actions">
-        <a class="btn" id="ask-today" href="#" target="_blank" rel="noopener">Ask Perplexity about today</a>
+        <a class="btn" data-ask-today="perplexity" href="#" target="_blank" rel="noopener">Ask Perplexity about today</a>
+        <a class="btn" data-ask-today="chatgpt" href="#" target="_blank" rel="noopener">Ask ChatGPT about today</a>
+        <a class="btn" data-ask-today="claude" href="#" target="_blank" rel="noopener">Ask Claude about today</a>
         <a class="link" href="/method">Read the method</a>
-        <span class="hint">Select any text on this page to ask Perplexity about it.</span>
+        <span class="hint">Select any text on this page to ask Perplexity, ChatGPT or Claude about it.</span>
       </div>
     </div>
   </section>
@@ -344,10 +346,10 @@
     </article>
   </div>
 </main>
-<div class="t-foot"><span><kbd>⌘K</kbd> search · Select text to ask Perplexity <kbd>esc</kbd> dismiss</span><span><span id="foot-asof"></span>CISA KEV · ransomware.live · DefiLlama · SlowMist · HIBP · rekt · security press · X</span></div>
+<div class="t-foot"><span><kbd>⌘K</kbd> search · Select text to ask Perplexity, ChatGPT or Claude <kbd>esc</kbd> dismiss</span><span><span id="foot-asof"></span>CISA KEV · ransomware.live · DefiLlama · SlowMist · HIBP · rekt · security press · X</span></div>
 <div class="fbar" id="fbar" hidden><span id="fbar-text"></span><button type="button" id="fbar-clear">Clear</button></div>
 </div>
-<button class="ask-pop" id="ask-pop" type="button" hidden>Ask Perplexity</button>
+<div class="ask-pop" id="ask-pop" hidden><a href="#" data-ask="perplexity">Ask Perplexity</a><a href="#" data-ask="chatgpt">Ask ChatGPT</a><a href="#" data-ask="claude">Ask Claude</a></div>
 
 <dialog class="pal" id="pal" aria-label="Search and commands">
   <div class="pal-in"><span aria-hidden="true">&gt;</span><input id="pal-q" type="text" aria-label="Search incidents and commands" placeholder="Search incidents, CVEs, companies, or jump to a view…" autocomplete="off" spellcheck="false" role="combobox" aria-expanded="true" aria-controls="pal-list" aria-autocomplete="list"><kbd>esc</kbd></div>

@@ -752,7 +752,7 @@ def core_pages(data, records, generated, collections):
     counts = [(TYPES[k] if k in TYPES else "Ransomware leak-site claims", text(by_window.get("24h", {}).get("n")))
               for k, by_window in (windows.get("rows") or {}).items() if k in TYPES or k == "ransomware"]
     counts = [(name, value) for name, value in counts if value]
-    terminal = new_page("/", "view", "Cyber — A daily record of cyber incidents", DESCRIPTION, generated, [
+    terminal = new_page("/", "view", "Cyber: A daily record of cyber incidents", DESCRIPTION, generated, [
         section("Snapshot", ("facts", [("As of (UTC)", generated)]), ("table", (("Source type", "Last 24 hours"), counts))),
         section("Records dated in the last 24 hours", ("table", (RECORD_COLUMNS,
                 [record_row(r) for r in recent if at_utc(r["date"]) >= asof - timedelta(hours=24)][:16]))),

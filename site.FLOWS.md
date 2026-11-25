@@ -2,7 +2,7 @@
 
 ## Home: terminal
 - The default view (no hash, #terminal) is the terminal. Every view shares one top bar: Leaderboard / Terminal / Report, plus a Dark/Light toggle (light by default, choice remembered).
-- ⌘K (Ctrl+K off Mac) opens the command palette in any view: jump to a view or report section, switch theme, refresh data, search every incident, or ask Perplexity about the query.
+- ⌘K (Ctrl+K off Mac) opens the command palette in any view: jump to a view or report section, switch theme, refresh data, search every incident, or ask Perplexity, ChatGPT or Claude about the query.
 
 ## Leaderboard (#leaderboard, #top)
 - CoinGecko-style ranked table of year-to-date crypto hacks.
@@ -23,10 +23,11 @@
 - Ransomware: group/sector/country bar tables, group names link to ransomware.live.
 - KEV table with NVD / CISA KEV / X / Ask links.
 
-## Ask Perplexity
-- "Ask Perplexity about today" button opens perplexity search.
-- Select text in an entry -> "Ask Perplexity" pop button appears -> opens search with selection + section + entry + page URL.
-- Each entry note has "Ask Perplexity" link.
+## Ask
+- Every Ask control shows Perplexity, ChatGPT and Claude (inspector, report, notes, selection popup, ⌘K).
+- "Ask … about today" opens that assistant with today's summary prompt.
+- Select text in an entry -> popup with Ask Perplexity / ChatGPT / Claude -> opens with selection + section + entry + page URL.
+- ChatGPT and Claude prompts ask them to search the web; Perplexity already does.
 
 # Requested change checks
 - Every news / crypto / X / KEV item can be expanded to a detail panel: pattern, entry vector, technique, target, chains/vendor, CWE, loss, full text, sources.

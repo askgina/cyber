@@ -214,9 +214,13 @@ h3 { font-family: var(--serif); font-weight: 400; font-size: 1.75rem; line-heigh
 
 
 /* Ask popover */
-.ask-pop { position: absolute; z-index: 20; background: var(--navy); color: var(--off); border: 0; font: 400 .875rem/1.3 var(--sans); padding: .35em .6em; cursor: pointer; transform: translate(-50%, -100%); white-space: nowrap; }
+.ask-pop { position: absolute; z-index: 20; display: flex; background: var(--navy); color: var(--off); font: 400 .875rem/1.3 var(--sans); transform: translate(-50%, -100%); white-space: nowrap; }
+.ask-pop[hidden] { display: none; }
 .ask-pop::after { content: ""; position: absolute; left: 50%; bottom: -5px; margin-left: -5px; border: 5px solid transparent; border-bottom: 0; border-top-color: var(--navy); }
-.ask-pop:hover { background: var(--accent-hover); }
+.ask-pop a { color: var(--off); text-decoration: none; padding: .35em .6em; }
+.ask-pop a + a { border-left: 1px solid color-mix(in srgb, var(--off) 28%, transparent); }
+.ask-pop a:hover { background: var(--accent-hover); }
+.ask-row { display: inline-flex; flex-wrap: wrap; gap: .15rem .7rem; }
 
 /* Responsive */
 @media (max-width: 64rem) {

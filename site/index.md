@@ -1,5 +1,5 @@
 ---
-title: "Cyber — A daily record of cyber incidents"
+title: "Cyber: A daily record of cyber incidents"
 description: "A register of cyber incidents, crypto exploits, breach notices, exploited vulnerabilities and early signals from public sources."
 canonical: "https://cyber.askgina.ai/"
 lastmod: "2026-11-24T19:12:13Z"
@@ -7,7 +7,7 @@ kind: "view"
 index: true
 ---
 
-# Cyber — A daily record of cyber incidents
+# Cyber: A daily record of cyber incidents
 
 [HTML version](<https://cyber.askgina.ai/>)
 
