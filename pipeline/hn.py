@@ -48,14 +48,21 @@ def brand(h):
     return parts[-2] if len(parts) >= 2 else h
 
 
+def names(name, title):
+    """The title names the organisation as a word, or as two joined words ("GL.iNet" for gl-inet.com)."""
+    if len(name) < 3:
+        return False
+    w = re.findall(r"[a-z0-9]+", title.lower())
+    return name in w or name in {a + b for a, b in zip(w, w[1:])}
+
+
 def first_party(h, title):
     """The link is the affected organisation's own page (or its formal filing), not someone writing about it."""
     if any(h == f or h.endswith("." + f) for f in FILINGS):
         return True
     if any(h == d or h.endswith("." + d) for d in NOT_OWN):
         return False
-    b = re.sub(r"[^a-z0-9]", "", brand(h))
-    if len(b) >= 3 and b in re.sub(r"[^a-z0-9]", "", title.lower()):
+    if names(re.sub(r"[^a-z0-9]", "", brand(h)), title):
         return True
     return bool(DISCLOSURE_TITLE.search(title)) and (h.split(".")[0] in OWN_PAGE or h.count(".") == 1)
 
@@ -93,3 +100,28 @@ def collect(now, get, errors, hours=36):
                         "disclosure": True, "lang": "en"})
     out.sort(key=lambda x: x["date"])
     return out
+
+
+def merge(stories, disclosures):
+    """Attach each company's own notice to the press story that names the company, else keep it as its own story.
+
+    Disclosure titles are short and generic ("Security incident in November 2026"), so the press clustering
+    would glue them to unrelated headlines; matching on the company name avoids that.
+    """
+    by_site = {}
+    for d in sorted(disclosures, key=lambda d: d["date"]):
+        by_site.setdefault(d["source"], d)  # one notice per site: the earliest
+    for site, d in by_site.items():
+        name = re.sub(r"[^a-z0-9]", "", brand(site))
+        o = {"source": site, "url": d["url"], "date": d["date"], "title": d["title"]}
+        match = [s for s in stories if names(name, s["title"])]
+        if match:
+            s = min(match, key=lambda s: s["date"])
+            s["outlets"] = [o] + [x for x in s["outlets"] if x["source"] != site][:24]
+            s["n_outlets"] = len({x["source"] for x in s["outlets"]})
+            s["date"] = min(s["date"], d["date"])  # first seen: when the company said it
+            s["disclosure"] = d["url"]
+        else:
+            stories.append({**d, "latest": d["date"], "outlets": [o], "n_outlets": 1})
+    stories.sort(key=lambda s: s["date"], reverse=True)
+    return stories

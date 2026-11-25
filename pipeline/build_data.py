@@ -223,9 +223,8 @@ for v in sorted(ncache.values(), key=lambda v: v["date"], reverse=True):
 translate.save()
 json.dump(ncache, open(NC, "w"))
 headlines = [v for v in ncache.values() if days_ago(parse_iso(v["date"])) <= 7]
-# one row per story, with every outlet that covered it
-news = gnews.stories(headlines)
-news.sort(key=lambda x: x["date"], reverse=True)
+# one row per story, with every outlet that covered it; company notices join the story that names the company
+news = hn.merge(gnews.stories([v for v in headlines if not v.get("disclosure")]), [v for v in headlines if v.get("disclosure")])
 
 
 # ---- SlowMist Hacked (second crypto source; merged with DefiLlama)
