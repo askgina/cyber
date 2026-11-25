@@ -269,9 +269,10 @@ export async function serveDocumentRoute(req, env, url, { wantMarkdown = false }
       }), { robots: "noindex, nofollow", tokens: wantMarkdown ? markdownTokens(body) : undefined });
     }
     const entry = manifest.routes?.[pathname];
-    // A core page added by a deploy answers from its static baseline until a build publishes it.
+    // A core page added by a deploy answers from its static baseline until a build publishes it;
+    // a record newer than the published page set falls through to the live-incident check below.
     if (!entry) {
-      if (!isCoreDocumentRoute(pathname)) return { matched: false };
+      if (!isCoreDocumentRoute(pathname) && !INCIDENT_ROUTE.test(pathname)) return { matched: false };
       break;
     }
     const response = await readPage(req, env, wantMarkdown ? entry.md : entry.html, contentType, DOCUMENT_CACHE, wantMarkdown);
