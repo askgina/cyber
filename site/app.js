@@ -209,11 +209,11 @@
       if (navigator.share && matchMedia("(pointer: coarse)").matches) {
         try { await navigator.share({ title: title + " — Cyber", url }); } catch (e) { /* closed the sheet */ }
       } else {
-        try { await navigator.clipboard.writeText(url); b.textContent = "Link copied"; }
+        try { await navigator.clipboard.writeText(url); b.textContent = "Copied"; }
         catch (e) { window.prompt("Copy this link", url); }
         setTimeout(() => { b.textContent = "Share"; }, 2000);
       }
-      track("share", { kind: id.split("-")[0] });
+      if (window.cyberTrack) window.cyberTrack("share", { kind: id.split("-")[0] });
     });
     return b;
   }
