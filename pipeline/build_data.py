@@ -202,6 +202,13 @@ try:
         if g["url"] not in ncache: ncache[g["url"]] = g
 except Exception as e:
     errors.append(f"gnews: {e}")
+# ---- companies' own incident notices, found through Hacker News (usually hours before any press)
+import hn
+try:
+    for g in hn.collect(NOW, get, errors):
+        if g["url"] not in ncache: ncache[g["url"]] = g
+except Exception as e:
+    errors.append(f"hn: {e}")
 ncache = {k: v for k, v in ncache.items() if days_ago(parse_iso(v["date"])) <= 10}
 # ---- everything on the page is in English: translate non-English headlines once, keep the original for matching
 import translate
@@ -388,8 +395,8 @@ for c in [c for c in crypto if not c.get("offchain") and days_ago(parse_iso(c["d
     outs.sort(key=lambda o: o["date"])
     c["outlets"] = outs[:40]; c["n_outlets"] = len({o["source"] for o in outs}); c["first_press"] = outs[0]["date"]
 # claimed stories stay in the feed (developments are news) but open the crypto entry; the registry never sees them
-# keep every story covered by 2+ outlets or by the security trade press, then the newest single-outlet ones
-_keep = [n for n in news if n.get("n_outlets", 1) >= 2 or n["source"] in gnews.TRADE]
+# keep every story covered by 2+ outlets, by the security trade press or disclosed by the company itself, then the newest single-outlet ones
+_keep = [n for n in news if n.get("n_outlets", 1) >= 2 or n["source"] in gnews.TRADE or n.get("disclosure")]
 _rest = [n for n in news if n not in _keep][: max(0, 450 - len(_keep))]
 news_out = sorted(_keep + _rest, key=lambda n: n["date"], reverse=True)
 crypto_out, kev_out = crypto[:60], kev[:40]
