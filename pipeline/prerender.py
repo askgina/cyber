@@ -995,9 +995,30 @@ def trail_html(page):
         for i, (name, href) in enumerate(crumb)) + "</ol></nav>"
 
 
+def sec_id(sec):
+    return sec["anchor"] or re.sub(r"[^a-z0-9]+", "-", sec["title"].lower()).strip("-")
+
+
+def doc_sections_html(sections):
+    # Same panels as the report: full-bleed rules, mono uppercase headers, content inset below.
+    out = []
+    for sec in sections:
+        blocks = "\n".join(block_html(b) for b in sec["blocks"])
+        out.append(f'<section class="t-p" id="{escape(sec_id(sec))}">\n<header><h2>{escape(sec["title"])}</h2></header>\n{blocks}\n</section>')
+    return "\n".join(out)
+
+
+def jump_html(sections):
+    links = "".join(f'<a href="#{escape(sec_id(s))}">{escape(s["title"])}</a>' for s in sections)
+    return f'<nav class="t-cmd r-jump" aria-label="Sections"><span aria-hidden="true">&gt;</span>{links}</nav>' if links else '<span class="d-gap"></span>'
+
+
 def standalone_html(page):
+    # Method, API, record and pattern pages use the same shell as the terminal, leaderboard and report.
     confidence = page.get("confidence")
     stage = f'<p><strong>Confidence stage:</strong> {escape(confidence)}</p>\n' if confidence else ''
+    lastmod = page.get("lastmod")
+    updated = f'<span>Updated {escape(str(lastmod)[:10])}</span>' if lastmod else '<span></span>'
     return f'''<!doctype html>
 <html lang="en">
 <head>
@@ -1012,14 +1033,20 @@ def standalone_html(page):
 <body>
 <a class="skip" href="#content">Skip to content</a>
 <div class="doc-page">
-<header><a href="/">Cyber</a><nav aria-label="Views">{nav_html(page["path"])}</nav></header>
-<main id="content" tabindex="-1">
-{trail_html(page)}
-<h1>{escape(page["title"])}</h1>
-{stage}<p>{escape(page["description"])}</p>
-{sections_html(page["sections"])}
+<div class="t-top">
+<a class="t-brand" href="/">Cyber</a>
+{jump_html(page["sections"])}
+<nav class="t-views" aria-label="Views">{nav_html(page["path"])}</nav>
+<button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
+</div>
+<main id="content" class="d-main" tabindex="-1">
+<section class="t-p d-open">
+<header><h1>{escape(page["title"])}</h1>{trail_html(page)}</header>
+{stage}<p class="d-lede">{escape(page["description"])}</p>
+</section>
+{doc_sections_html(page["sections"])}
 </main>
-<footer><a href="/{file_key(page["path"])}.md">Markdown</a> · <a href="/feed.xml">RSS</a> · <a href="/method">Method and sources</a></footer>
+<footer class="t-foot"><span><a href="/{file_key(page["path"])}.md">Markdown</a> · <a href="/feed.xml">RSS</a> · <a href="/method">Method and sources</a></span>{updated}</footer>
 </div>
 </body>
 </html>

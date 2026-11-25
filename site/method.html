@@ -26,47 +26,53 @@
 <body>
 <a class="skip" href="#content">Skip to content</a>
 <div class="doc-page">
-<header><a href="/">Cyber</a><nav aria-label="Views"><a href="/">Terminal</a><a href="/leaderboard">Leaderboard</a><a href="/report">Report</a><a href="/method" aria-current="page">Method</a><a href="/api">API</a></nav></header>
-<main id="content" tabindex="-1">
-<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Cyber</a></li><li aria-current="page">Method and sources</li></ol></nav>
-<h1>Method and sources</h1>
-<p>How Cyber collects, deduplicates and classifies records, scores early signals, and reports uncertainty.</p>
-<section>
-<h2>Collection and scope</h2>
+<div class="t-top">
+<a class="t-brand" href="/">Cyber</a>
+<nav class="t-cmd r-jump" aria-label="Sections"><span aria-hidden="true">&gt;</span><a href="#collection-and-scope">Collection and scope</a><a href="#stages">Confidence stages</a><a href="#patterns-and-related-records">Patterns and related records</a><a href="#sources">Sources</a><a href="#elsewhere">Other trackers</a><a href="#agents">For agents and developers</a><a href="#limits">Limitations</a></nav>
+<nav class="t-views" aria-label="Views"><a href="/">Terminal</a><a href="/leaderboard">Leaderboard</a><a href="/report">Report</a><a href="/method" aria-current="page">Method</a><a href="/api">API</a></nav>
+<button type="button" class="t-theme" aria-pressed="false" aria-label="Dark mode"><span class="t-th-d">Dark</span><span class="t-th-l">Light</span></button>
+</div>
+<main id="content" class="d-main" tabindex="-1">
+<section class="t-p d-open">
+<header><h1>Method and sources</h1><nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Cyber</a></li><li aria-current="page">Method and sources</li></ol></nav></header>
+<p class="d-lede">How Cyber collects, deduplicates and classifies records, scores early signals, and reports uncertainty.</p>
+</section>
+<section class="t-p" id="collection-and-scope">
+<header><h2>Collection and scope</h2></header>
 <p>Cyber is rebuilt hourly from public feeds. The pipeline removes duplicates and recalculates counts for the last 24 hours, seven days and 30 days. An entry records what a source says and how far the claim has been corroborated; it is not a verdict.</p>
 <p>Curated incidents and eligible tracker, catalog, and disclosure records have durable pages. News and X signals have rolling 90-day coverage. Daily snapshots group eligible records by their UTC dates. Thin stubs, dynamic clusters and bare ransomware leak-site claims do not have standalone pages.</p>
 </section>
-<section id="stages">
-<h2>Confidence stages</h2>
+<section class="t-p" id="stages">
+<header><h2>Confidence stages</h2></header>
 <p>X signals are grouped by incident, not by account. Scoring combines independent evidence. Base weights are 1.0 for an affected party, 0.7 for security firms, 0.65 for investigators, 0.4 for media, 0.2 for aggregators, 0.12 for ordinary users and 0.08 for unverified accounts. Stronger evidence, such as an on-chain reference, can raise a weight. The recorded stage can change as posts, disclosures or database listings arrive.</p>
 <dl class="facts"><div><dt>Rumour</dt><dd>Only low-weight accounts have reported the claim.</dd></div><div><dt>Claimed</dt><dd>At least one credible account or enough independent reports clears the threshold.</dd></div><div><dt>Corroborated</dt><dd>Two credible accounts or a combined credibility score of at least 70.</dd></div><div><dt>Confirmed</dt><dd>An affected party acknowledges it or a monitored database lists it.</dd></div><div><dt>Post-mortem</dt><dd>An affected party or independent investigator published a root-cause account.</dd></div><div><dt>Unconfirmed</dt><dd>The signal stayed at Rumour or Claimed for at least 24 hours.</dd></div><div><dt>Disputed / False alarm</dt><dd>The affected party denies the claim, or the claim was withdrawn or disproved.</dd></div></dl>
 </section>
-<section>
-<h2>Patterns and related records</h2>
+<section class="t-p" id="patterns-and-related-records">
+<header><h2>Patterns and related records</h2></header>
 <p>Pattern tags use text rules, DefiLlama classifications and CISA weakness codes. Related records are grouped by overlapping text, tags, vendors or chains. Tags and clusters help browse records; neither confirms a shared cause. Editorial analysis may correct automatic tags.</p>
 </section>
-<section id="sources">
-<h2>Sources</h2>
+<section class="t-p" id="sources">
+<header><h2>Sources</h2></header>
 <ul class="sources"><li><a href="https://www.cisa.gov/known-exploited-vulnerabilities-catalog">CISA Known Exploited Vulnerabilities catalog</a></li><li><a href="https://defillama.com/hacks">DefiLlama hacks dataset</a></li><li><a href="https://hacked.slowmist.io/">SlowMist Hacked</a></li><li><a href="https://rekt.news/leaderboard">rekt analyses</a></li><li><a href="https://haveibeenpwned.com/">Have I Been Pwned</a></li><li><a href="https://www.ransomware.live/">ransomware.live leak-site index</a></li><li><a href="https://oag.ca.gov/privacy/databreach/list">California Attorney General breach notices</a></li><li><a href="https://ocrportal.hhs.gov/ocr/breach/breach_report.jsf">HHS Office for Civil Rights breach portal</a></li><li><a href="https://www.sec.gov/edgar/search/">SEC EDGAR filings</a></li><li><a href="https://therecord.media/">The Record</a></li><li><a href="https://thehackernews.com/">The Hacker News</a></li><li><a href="https://www.bleepingcomputer.com/">BleepingComputer</a></li><li><a href="https://databreaches.net/">DataBreaches.net</a></li><li><a href="https://krebsonsecurity.com/">Krebs on Security</a></li></ul>
 <p>The report also draws on state attorney general notices and selected posts on X. Individual records link to the sources used.</p>
 </section>
-<section id="elsewhere">
-<h2>Other trackers</h2>
+<section class="t-p" id="elsewhere">
+<header><h2>Other trackers</h2></header>
 <p>Threat maps show vendor detections, not confirmed incidents, so they are not counted.</p>
 <ul class="sources"><li><a href="https://smartcontractshacking.com/tools/web3-hacks-dashboard">Smart Contract Hacking dashboard</a></li><li><a href="https://securityalliance.org/">SEAL 911 (active crypto incidents)</a></li><li><a href="https://axis-intelligence.com/data-breach-tracker/">Axis Intelligence breach tracker</a></li><li><a href="https://cybermap.kaspersky.com/">Kaspersky Cybermap</a></li><li><a href="https://www.fortiguard.com/threat-map">FortiGuard Threat Map</a></li><li><a href="https://attackmap.sonicwall.com/">SonicWall Attack Map</a></li></ul>
 </section>
-<section id="agents">
-<h2>For agents and developers</h2>
+<section class="t-p" id="agents">
+<header><h2>For agents and developers</h2></header>
 <p>Every human page has a machine-readable form. Start with the site guide, then read a page&#x27;s Markdown twin or the combined corpus. Search and snapshots are public and read-only.</p>
 <ul class="sources"><li><a href="/llms.txt">Site guide for agents</a></li><li><a href="/incidents/llms.txt">Incident index</a></li><li><a href="/patterns/llms.txt">Pattern index</a></li><li><a href="/method/llms.txt">Method index</a></li><li><a href="/llms-full.txt">Combined corpus</a></li><li><a href="/openapi.json">Search API schema</a></li><li><a href="/.well-known/agent-skills/read-cyber/SKILL.md">Agent skill</a></li><li><a href="/feed.xml">RSS feed</a></li><li><a href="/feed.json">JSON Feed</a></li><li><a href="/data.json">Live JSON snapshot</a></li><li><a href="/archive.json">Archive snapshot</a></li></ul>
 </section>
-<section id="limits">
-<h2>Limitations</h2>
+<section class="t-p" id="limits">
+<header><h2>Limitations</h2></header>
 <p>Feeds can lag disclosures and vary in coverage. Losses and affected counts are as reported and can change. Some news records are advisories rather than incident accounts. X coverage uses curated signals and search, not the full feed.</p>
 <p>Ransomware leak-site figures count claims by criminal groups, not independently verified incidents. The report gives group, sector and country aggregates without victim names. A listing, filing, or publication date can differ from the date of compromise.</p>
 </section>
 </main>
-<footer><a href="/method.md">Markdown</a> · <a href="/feed.xml">RSS</a> · <a href="/method">Method and sources</a></footer>
+<footer class="t-foot"><span><a href="/method.md">Markdown</a> · <a href="/feed.xml">RSS</a> · <a href="/method">Method and sources</a></span><span>Updated 2026-11-25</span></footer>
 </div>
 </body>
 </html>

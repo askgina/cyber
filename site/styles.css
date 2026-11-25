@@ -740,33 +740,27 @@ body.view-report { overflow: hidden; }
 .pal-foot { display: flex; justify-content: space-between; padding: .4rem .9rem; border-top: 1px solid var(--line); font: .625rem var(--mono); color: var(--muted); }
 :root[data-theme="dark"] .pal::backdrop { background: rgba(0, 0, 0, .6); }
 
-/* Standalone documents share the workspace's type, rules and source markers. */
-/* The standalone 404 also uses a top-level main with the legacy .b-ib class. */
-.doc-page, body > main.b-ib {
-  max-width: 52rem;
-  margin: 0 auto;
-  padding: clamp(1.5rem, 4vmin, 3rem) var(--margin);
-  overflow-wrap: anywhere;
-}
-.doc-page > header {
-  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-  gap: .5rem 1rem; padding-bottom: .75rem; border-bottom: 1px solid var(--rule);
-}
-.doc-page > header > a:first-child { font-family: var(--serif); font-size: 1.5rem; }
-.doc-page > header nav { display: flex; flex-wrap: wrap; gap: .35rem 1rem; font: .8125rem/1.5 var(--mono); }
-.doc-page > main, .doc-page section { margin-top: 1.5rem; }
-.doc-page h1, .doc-page h2 { margin-bottom: .75rem; }
-.doc-page h2 { font-size: 1.5rem; }
-.doc-page p + p { margin-top: .75rem; }
-.doc-page :is(.breadcrumbs, nav[aria-label="Breadcrumb" i]) { margin-block: 1rem; color: var(--muted); font: .75rem/1.5 var(--mono); }
-.doc-page :is(.breadcrumbs, nav[aria-label="Breadcrumb" i]) ol { display: flex; flex-wrap: wrap; gap: .25rem .5rem; list-style: none; }
-.doc-page :is(.breadcrumbs, nav[aria-label="Breadcrumb" i]) li + li::before { content: "/" / ""; margin-right: .5rem; }
-.doc-page .facts > div { border-top: 1px solid var(--smoke); padding-block: .5rem; }
-.doc-page .facts dd { font-weight: 400; }
-.doc-page .sources { margin-top: .75rem; }
-.doc-page > footer {
-  margin-top: 2rem; padding-top: .75rem; border-top: 1px solid var(--rule);
-  color: var(--muted); font: .75rem/1.5 var(--mono);
+/* Standalone pages (method, API, records, patterns): same shell as the report view. */
+body > main.b-ib { max-width: 52rem; margin: 0 auto; padding: clamp(1.5rem, 4vmin, 3rem) var(--margin); overflow-wrap: anywhere; }
+.doc-page { --line: var(--smoke); min-height: 100vh; min-height: 100dvh; display: flex; flex-direction: column; }
+.doc-page > .t-top { position: sticky; top: 0; z-index: 6; font-size: .8125rem; line-height: 1.35; background: var(--paper); }
+.doc-page .d-gap { flex: 1; }
+.d-main { flex: 1; overflow-wrap: anywhere; }
+.d-main > .t-p { display: block; border: 0; border-bottom: 1px solid var(--line); padding-bottom: 1.25rem; scroll-margin-top: 3rem; }
+.d-main > .t-p > header { position: sticky; top: 2.875rem; z-index: 2; background: var(--paper); flex-wrap: wrap; }
+.d-main > .t-p > header :is(h1, h2) { font: inherit; letter-spacing: inherit; margin: 0; max-width: none; }
+.d-main > .t-p > :not(header) { margin: .9rem .75rem 0; max-width: 75ch; }
+.d-main > .t-p > table.tbl { max-width: none; width: calc(100% - 1.5rem); }
+.d-main .d-lede { font: 400 1.0625rem/1.5 var(--sans); }
+.d-main .breadcrumbs { margin: 0; font: 400 .6875rem var(--mono); text-transform: none; letter-spacing: 0; color: var(--muted); }
+.d-main .breadcrumbs ol { display: flex; flex-wrap: wrap; gap: .25rem .5rem; list-style: none; }
+.d-main .breadcrumbs li + li::before { content: "/" / ""; margin-right: .5rem; }
+.d-main .facts > div { border-top: 1px solid var(--smoke); padding-block: .5rem; }
+.d-main .facts dd { font-weight: 400; }
+.doc-page > .t-foot a { color: inherit; }
+@media (max-width: 60rem) {
+  .d-main > .t-p > header { position: static; }
+  .d-main > .t-p > table.tbl { display: block; overflow-x: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
