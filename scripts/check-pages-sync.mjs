@@ -56,19 +56,28 @@ function manifestFor(count) {
 }
 
 function fakeBuilder(manifest, { failAtCall } = {}) {
-  const counters = { bundleCalls: 0, keysRequested: [] };
+  const counters = { bundleCalls: 0, keysRequested: [], inFlight: 0, peak: 0 };
   return {
     get bundleCalls() { return counters.bundleCalls; },
     get keysRequested() { return counters.keysRequested; },
+    get peak() { return counters.peak; },
     async fetch(request) {
       const url = new URL(request.url);
       if (url.pathname === '/out/pages/manifest.json') return Response.json(manifest);
       if (url.pathname !== '/out/pages/bundle') throw new Error(`unexpected builder request ${url.pathname}`);
       counters.bundleCalls += 1;
-      if (failAtCall && counters.bundleCalls === failAtCall) return new Response('boom', { status: 500 });
-      const keys = JSON.parse(await request.text());
-      counters.keysRequested.push(...keys);
-      return Response.json(Object.fromEntries(keys.map((key) => [key, `<${key}>`])));
+      const call = counters.bundleCalls;
+      counters.inFlight += 1;
+      counters.peak = Math.max(counters.peak, counters.inFlight);
+      try {
+        await new Promise((resolve) => setTimeout(resolve, 5)); // Let lanes overlap.
+        if (failAtCall && call === failAtCall) return new Response('boom', { status: 500 });
+        const keys = JSON.parse(await request.text());
+        counters.keysRequested.push(...keys);
+        return Response.json(Object.fromEntries(keys.map((key) => [key, `<${key}>`])));
+      } finally {
+        counters.inFlight -= 1;
+      }
     },
   };
 }
@@ -82,9 +91,11 @@ const untracked = (state) => pageKeys(state).filter((key) => !state.store.get(ke
   const builder = fakeBuilder(manifestFor(250), { failAtCall: 2 });
   await assert.rejects(syncPages({ STATE: state }, builder), /pages bundle: 500/);
   assert.equal(state.store.has('pages-manifest.json'), false, 'a failed sync publishes no manifest');
-  assert.equal(pageKeys(state).length, 100, 'objects from the completed batch stay in R2');
+  // Three lanes run at once, so the batches that were already in flight also land.
+  const kept = pageKeys(state).length;
+  assert.ok(kept >= 100 && kept <= 300, `objects from completed batches stay in R2 (kept ${kept})`);
   assert.equal(untracked(state).length, 0, 'every uploaded object carries its manifest sha');
-  assert.equal(builder.bundleCalls, 2, 'the run stops at the failing batch');
+  assert.equal(builder.peak, 3, 'three bundle downloads overlap');
 }
 
 // 2. The next run uploads only what is missing, then publishes the manifest.
@@ -94,8 +105,8 @@ const untracked = (state) => pageKeys(state).filter((key) => !state.store.get(ke
 
   const builder = fakeBuilder(manifestFor(250));
   const result = await syncPages({ STATE: state }, builder);
-  assert.equal(builder.bundleCalls, 4, 'only the 400 missing objects are requested');
-  assert.equal(result.uploaded, 400, 'the resumed run reports the objects it uploaded');
+  assert.ok(builder.bundleCalls <= 4, `only the missing objects are requested (${builder.bundleCalls} batches)`);
+  assert.ok(result.uploaded <= 400, `the resumed run reports the objects it uploaded (${result.uploaded})`);
   assert.equal(pageKeys(state).length, 500, 'every manifest object is in R2');
   assert.ok(state.store.has('pages-manifest.json'), 'the manifest is published once all uploads succeed');
 }
