@@ -11,7 +11,7 @@ POST /out/{search,pages}/bundle         JSON list of relative keys -> {key: UTF-
 import io, json, os, re, shutil, subprocess, tarfile, threading, time, urllib.request
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 
-REPO_TARBALL = "https://codeload.github.com/askgina/breach-ledger/tar.gz/refs/heads/main"
+REPO_TARBALL = "https://codeload.github.com/askgina/cyber/tar.gz/refs/heads/main"
 WORK = "/work"
 OUT = "/work/out"
 # Files the build writes and reads back next run. Everything else (code, curated JSON) comes from git.

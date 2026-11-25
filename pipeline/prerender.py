@@ -856,7 +856,7 @@ def core_pages(data, records, generated, collections):
 
 PUBLISHER = {"@type": "Organization", "@id": HOME + "#organization", "name": "Ask Gina", "url": "https://askgina.ai/",
              # Verified profiles let a reader tie this publisher to one identity.
-             "sameAs": ["https://github.com/askgina/breach-ledger", "https://github.com/askgina", "https://askgina.ai/"]}
+             "sameAs": ["https://github.com/askgina/cyber", "https://github.com/askgina", "https://askgina.ai/"]}
 WEBSITE = {"@type": "WebSite", "@id": HOME + "#website", "name": SITE_NAME, "url": HOME,
            "description": DESCRIPTION, "publisher": {"@id": PUBLISHER["@id"]}}
 DATASET = {"@type": "Dataset", "@id": HOME + "#dataset", "name": "Cyber — Daily record of cyber incidents",
