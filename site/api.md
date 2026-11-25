@@ -48,6 +48,7 @@ Errors are JSON. A search error keeps the results key so one shape parses: \{"re
 
 | Status | Meaning |
 | --- | --- |
+| 400 | The limit or cursor parameter is malformed, out of range, or issued for another query |
 | 404 | No such API path, or a snapshot part that has not been built |
 | 405 | A method other than GET, or HEAD for snapshots; Allow names the accepted methods |
 | 429 | Rate limited; Retry-After gives the wait in seconds |
@@ -64,7 +65,11 @@ The public API changes additively: fields may be added, while existing paths and
 
 ## Pagination
 
-Search returns at most eight results in one response. Snapshots are complete documents, not pages: the archive lists items newest first from a start date and offers no cursor. Read a snapshot in full and filter locally instead of walking pages.
+Search ranks at most thirty records for a query and answers one page at a time: eight results by default, and limit accepts 1 to 20. The response carries nextCursor, an opaque string to send back as cursor for the following page, and null on the last page.
+
+A cursor belongs to the query that produced it and to the five-minute result cache. Expired, foreign or malformed cursors answer 400 invalid cursor, so repeat the first request instead of guessing an offset.
+
+Snapshots are complete documents, not pages: the archive lists items newest first from a start date and offers no cursor. Read a snapshot in full and filter locally instead of walking pages.
 
 ## Citing and reuse
 
