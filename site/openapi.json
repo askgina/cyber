@@ -3,7 +3,7 @@
   "info": {
     "title": "Cyber public API",
     "version": "1.0.0",
-    "description": "Search the public Breach Ledger and fetch its JSON snapshots. The hourly build cadence is a target, not a freshness guarantee. Live and archive coverage can overlap."
+    "description": "Search the public Breach Ledger and fetch its JSON snapshots. The hourly build cadence is a target, not a freshness guarantee. Live and archive coverage can overlap. Versioning and deprecation: the API changes additively, this document's info version is the current version, a breaking change would ship under a new path, deprecations are announced on /api and /method before removal, and retired record URLs answer 301 or 410. The human-readable guide is /api and /api.md."
   },
   "servers": [{ "url": "https://cyber.askgina.ai" }],
   "externalDocs": {
