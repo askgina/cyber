@@ -97,6 +97,20 @@ export async function syncPages(env, c) {
         throw new Error(`missing pages bundle object: ${key}`);
       }
     }
+  }
+
+  async function uploadBatch(keys) {
+    const bundle = await c.fetch(new Request("http://builder/out/pages/bundle", {
+      method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(keys),
+    }));
+    if (!bundle.ok) throw new Error(`could not read pages bundle: ${bundle.status}`);
+    const files = await bundle.json();
+    // The builder omits missing keys. Never publish a manifest with an incomplete bundle.
+    for (const key of keys) {
+      if (!files || !Object.hasOwn(files, key) || typeof files[key] !== "string") {
+        throw new Error(`missing pages bundle object: ${key}`);
+      }
+    }
     for (let j = 0; j < keys.length; j += 16) {
       const uploads = await Promise.allSettled(keys.slice(j, j + 16).map(async (key) => {
         await env.STATE.put(`pages/${key}`, files[key], {
@@ -104,10 +118,14 @@ export async function syncPages(env, c) {
           customMetadata: { sha: desired.get(key).sha },
         });
       }));
-      const failure = uploads.find((upload) => upload.status === "rejected");
-      if (failure) throw failure.reason;
+      const rejected = uploads.find((upload) => upload.status === "rejected");
+      if (rejected) throw rejected.reason;
     }
   }
+
+  // A full sync has thousands of objects to move and a build only gets a few minutes for
+  // it, so overlap bundle downloads with uploads instead of paying each round trip in turn.
+  await Promise.all(Array.from({ length: Math.min(BUNDLES, batches.length) }, drain));
 
   // Leave the current manifest untouched until every referenced upload has succeeded.
   await env.STATE.put(MANIFEST_KEY, JSON.stringify(manifest), { httpMetadata: { contentType: "application/json" } });
