@@ -686,3 +686,8 @@ body.view-report { overflow: hidden; }
 .pal-none { color: var(--muted); cursor: default; }
 .pal-foot { display: flex; justify-content: space-between; padding: .4rem .9rem; border-top: 1px solid var(--line); font: .625rem var(--mono); color: var(--muted); }
 :root[data-theme="dark"] .pal::backdrop { background: rgba(0, 0, 0, .6); }
+/* "Ask" assistant picker, next to the theme toggle */
+.t-ask { flex: none; font: 500 .6875rem var(--mono); text-transform: uppercase; letter-spacing: .04em; color: var(--muted); background: var(--paper); border: 1px solid var(--line, var(--smoke)); border-radius: 0; padding: .2rem .35rem; cursor: pointer; -webkit-appearance: none; appearance: none; }
+.t-ask:hover, .t-ask:focus { color: var(--ink); border-color: var(--ink); outline: none; }
+@media (max-width: 60rem) { .t-ask { order: 6; } }
+@media (max-width: 36rem) { .t-ask { display: none; } }  /* phones: ⌘K offers all three assistants */

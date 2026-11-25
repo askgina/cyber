@@ -1,8 +1,18 @@
 (() => {
   "use strict";
-  // Canonical public address of this page, used in "Ask Perplexity" prompts.
+  // Canonical public address of this page, used in "Ask" prompts.
   const PAGE_URL = "https://cyber.askgina.ai/";
-  const PPLX = "https://www.perplexity.ai/search?q=";
+  // Assistants for "Ask": the choice is remembered on this device (top bar picker); ⌘K offers all three.
+  const ASK = {
+    perplexity: { name: "Perplexity", url: "https://www.perplexity.ai/search?q=" },
+    chatgpt: { name: "ChatGPT", url: "https://chatgpt.com/?q=" },
+    claude: { name: "Claude", url: "https://claude.ai/new?q=" },
+  };
+  const WEB_HINT = "\n\nSearch the web for the latest reporting before answering.";
+  const askId = () => { try { const v = localStorage.getItem("cyber-ask"); return ASK[v] ? v : "perplexity"; } catch (e) { return "perplexity"; } };
+  const askName = (id = askId()) => ASK[id].name;
+  // ChatGPT and Claude only browse when asked, so their prompts say so; Perplexity always searches
+  const askHref = (q, id = askId()) => ASK[id].url + encodeURIComponent(id === "perplexity" ? q : q + WEB_HINT);
   const $ = (s, r = document) => r.querySelector(s);
   const el = (tag, attrs = {}, ...kids) => {
     const n = document.createElement(tag);
@@ -20,10 +30,28 @@
   const ago = (s) => { const h = hoursAgo(s); return h < 1 ? `${Math.max(1, Math.round(h * 60))}m ago` : h < 48 ? `${Math.round(h)}h ago` : fmtDate(s); };
   const xSearch = (q) => "https://x.com/search?f=live&q=" + encodeURIComponent(q);
 
-  function askURL(text, context) {
+  function askURL(text, context, id) {
     const q = `${text.trim()}\n\nContext: from Cyber, a daily cyber incident tracker (${PAGE_URL})${context ? `, ${context}` : ""}. Explain what happened, how credible the claim is, and summarise the latest reporting with sources.`;
-    return PPLX + encodeURIComponent(q);
+    return askHref(q, id);
   }
+  // "Ask <assistant>" label whose name follows the picker
+  const askLabel = (before = "Ask ", after = "") => [before, el("span", { class: "ask-name" }, askName()), after];
+  function setAsk(id) {
+    if (!ASK[id]) return;
+    try { localStorage.setItem("cyber-ask", id); } catch (e) {}
+    document.querySelectorAll(".ask-name").forEach((n) => { n.textContent = ASK[id].name; });
+    document.querySelectorAll("select.t-ask").forEach((s) => { s.value = id; });
+  }
+  // Ask links are rendered once; point them at the chosen assistant when clicked
+  document.addEventListener("click", (e) => {
+    const a = e.target.closest && e.target.closest("a[href]");
+    const m = a && a.href.match(/^https:\/\/(?:www\.perplexity\.ai\/search|chatgpt\.com\/|claude\.ai\/new)\?q=(.*)$/);
+    if (!m) return;
+    const q = decodeURIComponent(m[1]).replace(WEB_HINT, "");
+    a.href = askHref(q);
+  }, true);
+  document.addEventListener("change", (e) => { if (e.target.matches && e.target.matches("select.t-ask")) setAsk(e.target.value); });
+  document.addEventListener("DOMContentLoaded", () => setAsk(askId()));
 
   // Side note with numbered links (SID-style margin notes)
   let noteNo = 0;
@@ -34,7 +62,7 @@
       ol.append(el("li", {}, el("span", {}, String(noteNo)), el("a", { href: l.url, target: "_blank", rel: "noopener" }, l.label)));
     }
     noteNo++;
-    ol.append(el("li", {}, el("span", {}, String(noteNo)), el("a", { href: askURL(askText, askCtx), target: "_blank", rel: "noopener", class: "ask-link" }, "Ask Perplexity")));
+    ol.append(el("li", {}, el("span", {}, String(noteNo)), el("a", { href: askURL(askText, askCtx), target: "_blank", rel: "noopener", class: "ask-link" }, ...askLabel())));
     return el("aside", { class: "note", "aria-label": "Sources" }, ol);
   }
 
@@ -46,7 +74,7 @@
     const det = DET[id] || {};
     const rel = (det.related || []).slice(0, 3).map((r) => r.title).join("; ");
     const q = `Give a full technical breakdown of this incident: "${title}". ${(text || "").slice(0, 600)}\n\nCover: the attack chain step by step, MITRE ATT&CK techniques, indicators of compromise, who is affected, how confirmed it is, how it compares with similar incidents${rel ? ` (for example ${rel})` : ""}, and concrete mitigations for software teams. Cite sources.\n\nContext: from Cyber, a daily cyber incident tracker (${PAGE_URL}#e-${id}).`;
-    return PPLX + encodeURIComponent(q);
+    return askHref(q);
   }
 
   function facts(rows) {
@@ -179,7 +207,7 @@
         el("span", { class: "rs", title: "Text similarity" }, p.score.toFixed(2))))));
       box.append(sec);
     }
-    box.append(el("p", { class: "dask" }, el("a", { class: "btn", href: breakdownURL(title, text, id), target: "_blank", rel: "noopener" }, "Ask Perplexity for a full breakdown"),
+    box.append(el("p", { class: "dask" }, el("a", { class: "btn", href: breakdownURL(title, text, id), target: "_blank", rel: "noopener" }, ...askLabel("Ask ", " for a full breakdown")),
       " ", el("a", { class: "link", href: `#e-${id}` }, "Link to this entry")));
     return box;
   }
@@ -423,7 +451,7 @@
 
   function escape(s) { return String(s).replace(/[&<>"]/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[ch])); }
 
-  // Selection → Ask Perplexity
+  // Selection → Ask (chosen assistant)
   const pop = $("#ask-pop");
   let selText = "", selCtx = "";
   function sectionOf(node) {
@@ -715,7 +743,7 @@
   window.BL = Object.assign(window.BL || {}, {
     // null until data.json has loaded: board.js renders straight away only when B.D is set
     get D() { return D0.generated ? D0 : null; }, get DET() { return DET; }, LABEL, KIND, LIVE, ROLE, STAGES,
-    detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, xSearch, escape, hoursAgo,
+    detailPanel, track, el, fmtUSD, fmtDate, fmtLong, ago, compact, askURL, breakdownURL, askName, askLabel, setAsk, ASK, xSearch, escape, hoursAgo,
     setFilter, jumpTo: (id) => jumpTo(id), events: () => [...LIVE.extra, ...events(D0)],
     pollAll: () => { pollLlama(); pollHIBP(); pollData(false); },
   });

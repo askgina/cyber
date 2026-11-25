@@ -1,5 +1,5 @@
 // ⌘K / Ctrl+K command palette: jump to views and report sections, switch theme, refresh,
-// search every incident the terminal knows about, or ask Perplexity about the query.
+// search every incident the terminal knows about, or ask Perplexity, ChatGPT or Claude about the query.
 (() => {
   "use strict";
   const B = window.BL || (window.BL = {});
@@ -47,8 +47,14 @@
     // results by meaning (AI Search), loaded after the instant word matches; skip records already listed
     const listed = new Set(recs.map((r) => r.id));
     const sem = SEM.q === q.trim() ? SEM.rows.filter((r) => !listed.has(r.id)) : [];
-    const ask = { label: `Ask Perplexity: “${q.trim()}”`, hint: "Ask", run: () => window.open(B.askURL ? B.askURL(q.trim(), "Cyber") : "https://www.perplexity.ai/search?q=" + encodeURIComponent(q.trim()), "_blank", "noopener") };
-    return [...cmds.slice(0, 4), ...recs, ...sem, ask];
+    // one Ask row per assistant, the chosen one first
+    const ids = B.ASK ? Object.keys(B.ASK) : ["perplexity"];
+    const cur = ids.find((id) => B.askName && B.askName() === B.ASK[id].name) || ids[0];
+    const asks = [cur, ...ids.filter((id) => id !== cur)].map((id) => ({
+      label: `Ask ${B.ASK ? B.ASK[id].name : "Perplexity"}: “${q.trim()}”`, hint: "Ask", ask: id,
+      run: () => window.open(B.askURL(q.trim(), "Cyber", id), "_blank", "noopener"),
+    }));
+    return [...cmds.slice(0, 4), ...recs, ...sem, ...asks];
   }
 
   // ---- search by meaning: /api/search (Cloudflare AI Search) returns record headings; map them back to records
@@ -107,7 +113,7 @@
     const r = rows[i]; if (!r) return;
     // what kind of result was picked; the query text itself is never sent
     const via = r.hint === "Ask" ? "ask" : /^By meaning/.test(r.hint || "") ? "meaning" : r.id ? "word" : "command";
-    if (window.cyberTrack) window.cyberTrack("palette_pick", { via, qlen: input.value.trim().length, kind: (r.hint || "").replace("By meaning · ", "").slice(0, 24) });
+    if (window.cyberTrack) window.cyberTrack("palette_pick", { via, qlen: input.value.trim().length, kind: r.ask || (r.hint || "").replace("By meaning · ", "").slice(0, 24) });
     close(); r.run();
   }
 
