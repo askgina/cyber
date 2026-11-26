@@ -24,6 +24,7 @@ from search_docs import records as search_records
 ROOT = Path(__file__).resolve().parents[1]
 ORIGIN = "https://cyber.askgina.ai"
 HOME = ORIGIN + "/"
+SOCIAL_IMAGE = ORIGIN + "/og-default.png"  # 1200×630, the only card every page shares.
 SITE_NAME = "Cyber"
 DESCRIPTION = "A register of cyber incidents, crypto exploits, breach notices, exploited vulnerabilities and early signals from public sources."
 CISA = "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
@@ -893,8 +894,10 @@ def json_ld(page):
     elif page["kind"] == "incident":
         r = page["record"]
         sources = [u for _, u in r["sources"]]
+        # The publisher writes each summary; the reporting it rests on stays in isBasedOn.
         entity.update(headline=r["title"], datePublished=r["date"], isBasedOn=sources, citation=sources,
-                      mainEntityOfPage=url, articleSection=TYPES[r["type"]])
+                      mainEntityOfPage=url, articleSection=TYPES[r["type"]],
+                      author={"@id": PUBLISHER["@id"]}, image=[SOCIAL_IMAGE])
     if "members" in page:
         entity["mainEntity"] = {"@type": "ItemList", "@id": url + "#itemlist", "numberOfItems": len(page["members"]),
                                 "itemListElement": [{"@type": "ListItem", "position": i, "name": r["title"],
@@ -936,11 +939,11 @@ def metadata(page):
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:url" content="{escape(url)}">
-<meta property="og:image" content="{ORIGIN}/og-default.png">
+<meta property="og:image" content="{SOCIAL_IMAGE}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{title}">
 <meta name="twitter:description" content="{desc}">
-<meta name="twitter:image" content="{ORIGIN}/og-default.png">
+<meta name="twitter:image" content="{SOCIAL_IMAGE}">
 <script type="application/ld+json">{json_ld(page)}</script>'''
 
 
