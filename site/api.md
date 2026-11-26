@@ -2,7 +2,7 @@
 title: "Public API"
 description: "Read and search Cyber's public snapshots: read-only JSON endpoints, search by meaning, conditional requests, rate limits, JSON errors and a versioning policy."
 canonical: "https://cyber.askgina.ai/api"
-lastmod: "2026-11-25"
+lastmod: "2026-11-26"
 kind: "view"
 index: true
 ---
@@ -73,7 +73,7 @@ Snapshots are complete documents, not pages: the archive lists items newest firs
 
 ## Citing and reuse
 
-Each record links to the sources it came from; cite the record page and the original source. The compiled data is published under CC BY 4.0 with Ask Gina as the publisher.
+Cite the record page and the original source. CC BY 4.0 applies only to Cyber’s original analysis, labels and summaries. Third-party material, including sourced fields in the downloads, is not covered by Cyber’s licence and remains subject to its source’s terms.
 
 ## Agent entry points
 
