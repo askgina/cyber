@@ -7,7 +7,7 @@
   const { el, fmtUSD, fmtDate } = B;
   const $ = (s, r = document) => r.querySelector(s);
 
-  const S = { sort: "amount", dir: "desc", cat: null, q: "", rows: [], all: [], ready: false, err: null, generated: null, open: null };
+  const S = { sort: "amount", dir: "desc", cats: new Set(), q: "", rows: [], all: [], ready: false, err: null, generated: null, open: null };
   const FIRST_DIR = { amount: "desc", date: "desc", name: "asc", category: "asc" };
   let archiveP = null, archive = null, rowPick = 0;
   const active = () => document.body.classList.contains("view-board");
@@ -151,7 +151,7 @@
   function visible() {
     const q = S.q.toLowerCase();
     return S.all.filter((r) => {
-      if (S.cat && r.category !== S.cat) return false;
+      if (S.cats.size && !S.cats.has(r.category)) return false;
       if (!q) return true;
       if (r.name.toLowerCase().includes(q)) return true;
       // Only look at other fields when the query matches no names, so
@@ -175,10 +175,63 @@
     const box = $("#b-kpi");
     if (!box) return;
     box.replaceChildren(
-      el("div", { class: "b-k" }, el("span", {}, S.cat || "Year to date"), el("b", {}, String(n)), el("i", {}, n === 1 ? "hack" : "hacks")),
+      el("div", { class: "b-k" }, el("span", {}, !S.cats.size ? "Year to date" : S.cats.size === 1 ? [...S.cats][0] : S.cats.size + " categories"), el("b", {}, String(n)), el("i", {}, n === 1 ? "hack" : "hacks")),
       el("div", { class: "b-k" }, el("span", {}, "Lost"), el("b", {}, fmtUSD(usd)), el("i", {}, "gross, as reported")),
       el("div", { class: "b-k" }, el("span", {}, "As of"), el("b", {}, asof), el("i", {}, "rebuilt hourly")),
     );
+  }
+
+  let catOpen = false;
+
+  function catLabel() {
+    if (!S.cats.size) return "Category: All";
+    if (S.cats.size === 1) return "Category: " + [...S.cats][0];
+    return "Category: " + S.cats.size + " selected";
+  }
+
+  function closeCats(restore) {
+    const menu = $("#b-cat-menu");
+    const btn = $("#b-cat-btn");
+    if (!menu || menu.hidden) { catOpen = false; return; }
+    menu.hidden = true;
+    catOpen = false;
+    if (btn) {
+      btn.setAttribute("aria-expanded", "false");
+      if (restore) btn.focus({ preventScroll: true });
+    }
+  }
+
+  function openCats() {
+    const menu = $("#b-cat-menu");
+    const btn = $("#b-cat-btn");
+    if (!menu || !btn) return;
+    menu.hidden = false;
+    catOpen = true;
+    btn.setAttribute("aria-expanded", "true");
+    const first = menu.querySelector("input");
+    if (first) first.focus({ preventScroll: true });
+  }
+
+  function syncCatUi() {
+    const btn = $("#b-cat-btn");
+    if (btn) {
+      const label = catLabel();
+      btn.textContent = label;
+      btn.title = label;
+    }
+    const menu = $("#b-cat-menu");
+    if (!menu) return;
+    menu.querySelectorAll("input").forEach((inp) => {
+      inp.checked = inp.value === "" ? !S.cats.size : S.cats.has(inp.value);
+    });
+  }
+
+  function toggleCat(cat, on) {
+    if (!cat) S.cats.clear();
+    else if (on) S.cats.add(cat);
+    else S.cats.delete(cat);
+    syncCatUi();
+    drawTable();
   }
 
   function drawCats() {
@@ -187,13 +240,39 @@
     const counts = new Map();
     S.all.forEach((r) => counts.set(r.category, (counts.get(r.category) || 0) + 1));
     const cats = [...counts.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
-    const chip = (label, cat, n) => {
-      const b = el("button", { type: "button", class: "chip" + (S.cat === cat ? " on" : ""), "aria-pressed": S.cat === cat ? "true" : "false" },
-        label, n != null ? el("i", {}, " " + n) : null);
-      b.addEventListener("click", () => { S.cat = cat; drawCats(); drawTable(); });
-      return b;
+    for (const c of [...S.cats]) if (!counts.has(c)) S.cats.delete(c);
+    const wasOpen = catOpen;
+    const label = catLabel();
+    const btn = el("button", {
+      type: "button", class: "b-cat-btn", id: "b-cat-btn", title: label,
+      "aria-haspopup": "true", "aria-expanded": wasOpen ? "true" : "false", "aria-controls": "b-cat-menu",
+    }, label);
+    btn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      if ($("#b-cat-menu")?.hidden) openCats();
+      else closeCats(false);
+    });
+    const row = (name, value, n) => {
+      const id = "b-cat-" + (value ? value.replace(/[^a-z0-9]+/gi, "-").toLowerCase() : "all");
+      const inp = el("input", { type: "checkbox", id, value: value || "" });
+      inp.checked = value ? S.cats.has(value) : !S.cats.size;
+      inp.addEventListener("change", () => toggleCat(value || null, inp.checked));
+      return el("label", { class: "b-cat-opt" }, inp, el("span", {}, name), n != null ? el("i", {}, String(n)) : null);
     };
-    box.replaceChildren(chip("All", null, S.all.length), ...cats.map(([c, n]) => chip(c, c, n)));
+    const menu = el("div", {
+      class: "b-cat-menu", id: "b-cat-menu", role: "group", "aria-label": "Filter by category",
+      hidden: wasOpen ? null : "",
+    }, row("All", null, S.all.length), ...cats.map(([c, n]) => row(c, c, n)));
+    menu.addEventListener("keydown", (e) => {
+      if (e.key !== "Tab") return;
+      const items = [...menu.querySelectorAll("input")];
+      if (!items.length) return;
+      const atFirst = document.activeElement === items[0];
+      const atLast = document.activeElement === items[items.length - 1];
+      if ((e.shiftKey && atFirst) || (!e.shiftKey && atLast)) { e.preventDefault(); closeCats(true); }
+    });
+    box.replaceChildren(el("div", { class: "b-cat" }, btn, menu));
+    catOpen = wasOpen;
   }
 
   function th(label, key, cls) {
@@ -337,9 +416,13 @@
     const ix = $("#b-ix");
     if (ix) ix.addEventListener("click", () => closeInsp(true));
     document.addEventListener("keydown", (e) => {
-      if (e.defaultPrevented || e.key !== "Escape" || $("#pal").open) return;
+      if (e.defaultPrevented || e.key !== "Escape" || $("#pal")?.open) return;
       if (!document.body.classList.contains("view-board")) return;
+      if ($("#b-cat-menu") && !$("#b-cat-menu").hidden) { e.preventDefault(); closeCats(true); return; }
       if ($("#b-insp") && !$("#b-insp").hidden) { e.preventDefault(); closeInsp(true); }
+    });
+    document.addEventListener("pointerdown", (e) => {
+      if (!e.target.closest?.(".b-cat")) closeCats(false);
     });
 
     const prev = B.onRender;
