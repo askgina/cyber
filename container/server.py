@@ -19,7 +19,7 @@ STATE = ["pipeline/victims_cache.json", "pipeline/ransom_monthly.json", "pipelin
          "pipeline/first_seen.json", "pipeline/translate_cache.json", "pipeline/triage_queue.json",
          "pipeline/archive_cache", "pipeline/.prerender-state.json", "site/data.json", "site/archive.json"]
 LOCK = threading.Lock()
-SERVER_VERSION = "2026-11-25.4 repo-rename"  # bump on changes; the build response reports it
+SERVER_VERSION = "2026-11-26.1 timeout-log"  # bump on changes; the build response reports it
 SPLIT_OUTPUTS = ("data-hot.json", "data-details.json", "data-history.json")
 DATA_OUTPUTS = ("data.json", "archive.json") + SPLIT_OUTPUTS
 
@@ -75,7 +75,12 @@ def run(blob):
     t0 = time.time()
     fetch_repo(repo)
     restored = restore_state(repo, blob)
-    p = subprocess.run(["python3", "pipeline/build_data.py"], cwd=repo, capture_output=True, text=True, timeout=12 * 60)
+    try:
+        p = subprocess.run(["python3", "pipeline/build_data.py"], cwd=repo, capture_output=True, text=True, timeout=12 * 60)
+    except subprocess.TimeoutExpired as e:
+        # TimeoutExpired carries whatever the build printed before it died; without this the failure is opaque.
+        tail = "".join(x or "" for x in (e.stdout, e.stderr))[-4000:]
+        return 500, {"ok": False, "server": SERVER_VERSION, "error": repr(e), "log": tail, "path": None}
     log = (p.stdout + p.stderr)[-4000:]
     if p.returncode != 0:
         return 500, {"ok": False, "exit": p.returncode, "log": log}
