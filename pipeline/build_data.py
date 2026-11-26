@@ -27,7 +27,13 @@ def xsearch(q): return "https://x.com/search?f=live&q=" + urllib.parse.quote(q)
 
 errors = []
 
+# Stage progress for container logs: a timed-out build names the stage it died in.
+_T0 = time.time()
+def stage(name):
+    print(f"stage {name} t+{int(time.time() - _T0)}s", flush=True)
+
 # ---- CISA KEV
+stage("kev")
 kev = []
 kev_all = []
 kev_raw = hibp_raw = llama_raw = None  # raw pulls, reused by the year-to-date archive
