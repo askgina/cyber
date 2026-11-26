@@ -24,6 +24,10 @@ jobs:
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
+      - name: Validate curated inputs and test offline pipeline
+        run: |
+          python3 pipeline/check_curated.py
+          python3 pipeline/test_curated.py
       - name: Generate fixtures from committed data
         run: |
           python3 pipeline/split_data.py
