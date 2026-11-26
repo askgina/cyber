@@ -2,7 +2,7 @@
 
 > Source-linked records eligible for indexing. Live means the record is present in the current snapshot; archive means it is not.
 
-Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. License: CC BY 4.0.
+Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. Data reuse: https://cyber.askgina.ai/method#reuse (CC BY 4.0 applies only to Cyber’s original work).
 
 ## Curated incidents
 

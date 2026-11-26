@@ -2,7 +2,7 @@
 title: "Method and sources"
 description: "How Cyber collects, deduplicates and classifies records, scores early signals, and reports uncertainty."
 canonical: "https://cyber.askgina.ai/method"
-lastmod: "2026-11-25"
+lastmod: "2026-11-26"
 kind: "view"
 index: true
 ---
@@ -18,6 +18,12 @@ How Cyber collects, deduplicates and classifies records, scores early signals, a
 Cyber is rebuilt hourly from public feeds. The pipeline removes duplicates and recalculates counts for the last 24 hours, seven days and 30 days. An entry records what a source says and how far the claim has been corroborated; it is not a verdict.
 
 Curated incidents and eligible tracker, catalog, and disclosure records have durable pages. News and X signals have rolling 90-day coverage. Daily snapshots group eligible records by their UTC dates. Thin stubs, dynamic clusters and bare ransomware leak-site claims do not have standalone pages.
+
+## Data reuse
+
+CC BY 4.0 applies only to Cyber’s original analysis, labels and summaries. Third-party material, including sourced fields in the downloads, is not covered by Cyber’s licence and remains subject to its source’s terms.
+
+- [CC BY 4.0 licence text](https://creativecommons.org/licenses/by/4.0/)
 
 ## Confidence stages
 

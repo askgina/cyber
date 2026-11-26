@@ -2,7 +2,7 @@
 
 > A register of cyber incidents, crypto exploits, breach notices, exploited vulnerabilities and early signals from public sources.
 
-Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. License: CC BY 4.0.
+Snapshot (UTC): 2026-11-24T19:12:13Z. Rebuilt hourly. Data reuse: https://cyber.askgina.ai/method#reuse (CC BY 4.0 applies only to Cyber’s original work).
 
 ## Start here
 

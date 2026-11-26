@@ -48,8 +48,8 @@ AGENCIES = {"california": "California AG", "washington": "Washington AG", "orego
 SHARED_NOTICE_AGENCIES = {"HHS OCR", "Oregon DOJ"}
 X_HOSTS = {"x.com", "www.x.com", "twitter.com", "www.twitter.com", "mobile.twitter.com"}
 TAXONOMY_DATE = "2026-11-20"  # Revision of the bundled pattern definitions in enrich.py.
-METHOD_DATE = "2026-11-25"  # Revision of the method text below.
-API_DATE = "2026-11-25"  # Revision of the public API documentation below.
+METHOD_DATE = "2026-11-26"  # Revision of the method text below.
+API_DATE = "2026-11-26"  # Revision of the public API documentation below.
 
 
 def text(value):
@@ -678,6 +678,9 @@ def method_page():
         section("Collection and scope",
                 ("p", "Cyber is rebuilt hourly from public feeds. The pipeline removes duplicates and recalculates counts for the last 24 hours, seven days and 30 days. An entry records what a source says and how far the claim has been corroborated; it is not a verdict."),
                 ("p", "Curated incidents and eligible tracker, catalog, and disclosure records have durable pages. News and X signals have rolling 90-day coverage. Daily snapshots group eligible records by their UTC dates. Thin stubs, dynamic clusters and bare ransomware leak-site claims do not have standalone pages.")),
+        section("Data reuse",
+                ("p", "CC BY 4.0 applies only to Cyber’s original analysis, labels and summaries. Third-party material, including sourced fields in the downloads, is not covered by Cyber’s licence and remains subject to its source’s terms."),
+                ("list", [link("CC BY 4.0 licence text", "https://creativecommons.org/licenses/by/4.0/")]), anchor="reuse"),
         section("Confidence stages",
                 ("p", "X signals are grouped by incident, not by account. Scoring combines independent evidence. Base weights are 1.0 for an affected party, 0.7 for security firms, 0.65 for investigators, 0.4 for media, 0.2 for aggregators, 0.12 for ordinary users and 0.08 for unverified accounts. Stronger evidence, such as an on-chain reference, can raise a weight. The recorded stage can change as posts, disclosures or database listings arrive."),
                 ("facts", [("Rumour", "Only low-weight accounts have reported the claim."),
@@ -773,7 +776,7 @@ def api_page():
                 ("p", "A cursor belongs to the query that produced it and to the five-minute result cache. Expired, foreign or malformed cursors answer 400 invalid cursor, so repeat the first request instead of guessing an offset."),
                 ("p", "Snapshots are complete documents, not pages: the archive lists items newest first from a start date and offers no cursor. Read a snapshot in full and filter locally instead of walking pages."), anchor="pagination"),
         section("Citing and reuse",
-                ("p", "Each record links to the sources it came from; cite the record page and the original source. The compiled data is published under CC BY 4.0 with Ask Gina as the publisher."), anchor="reuse"),
+                ("p", "Cite the record page and the original source. CC BY 4.0 applies only to Cyber’s original analysis, labels and summaries. Third-party material, including sourced fields in the downloads, is not covered by Cyber’s licence and remains subject to its source’s terms."), anchor="reuse"),
         section("Agent entry points",
                 ("list", [link("OpenAPI description", "/openapi.json"),
                           link("API catalog linkset", "/.well-known/api-catalog"),
@@ -864,7 +867,7 @@ PUBLISHER = {"@type": "Organization", "@id": HOME + "#organization", "name": "As
 WEBSITE = {"@type": "WebSite", "@id": HOME + "#website", "name": SITE_NAME, "url": HOME,
            "description": DESCRIPTION, "publisher": {"@id": PUBLISHER["@id"]}}
 DATASET = {"@type": "Dataset", "@id": HOME + "#dataset", "name": "Cyber — Daily record of cyber incidents",
-           "url": HOME, "description": DESCRIPTION, "license": "https://creativecommons.org/licenses/by/4.0/",
+           "url": HOME, "description": DESCRIPTION + " CC BY 4.0 applies only to Cyber’s original analysis, labels and summaries. Third-party material, including sourced fields in the downloads, is not covered by Cyber’s licence and remains subject to its source’s terms.", "usageInfo": ORIGIN + "/method#reuse",
            "publisher": {"@id": PUBLISHER["@id"]}, "isAccessibleForFree": True,
            "distribution": [{"@type": "DataDownload", "contentUrl": ORIGIN + p, "encodingFormat": "application/json"}
                             for p in ("/data.json", "/archive.json")]}
@@ -1057,7 +1060,7 @@ def standalone_html(page):
 </section>
 {doc_sections_html(page["sections"])}
 </main>
-<footer class="t-foot"><span><a href="/{file_key(page["path"])}.md">Markdown</a> · <a href="/feed.xml">RSS</a> · <a href="/method">Method and sources</a></span>{updated}</footer>
+<footer class="t-foot"><span><a href="/{file_key(page["path"])}.md">Markdown</a> · <a href="/feed.xml">RSS</a> · <a href="/method">Method and sources</a> · <a href="/method#reuse">Data reuse</a></span>{updated}</footer>
 </div>
 </body>
 </html>
@@ -1190,7 +1193,7 @@ CORPUS_INCIDENT_BLOCKS = {
 
 
 def llms_header(title, summary, generated):
-    return f"# {title}\n\n> {summary}\n\nSnapshot (UTC): {generated}. Rebuilt hourly. License: CC BY 4.0."
+    return f"# {title}\n\n> {summary}\n\nSnapshot (UTC): {generated}. Rebuilt hourly. Data reuse: https://cyber.askgina.ai/method#reuse (CC BY 4.0 applies only to Cyber’s original work)."
 
 
 def llms_link(label, path, detail=""):
