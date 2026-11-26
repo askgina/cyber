@@ -1,0 +1,16 @@
+name: Bug report
+description: Report a public bug in Cyber’s code or site, not a security incident.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Cyber does not accept incident reports. Report incidents to the affected organization or relevant authority.
+        For vulnerabilities in Cyber itself, use [private vulnerability reporting](https://github.com/askgina/cyber/security/advisories/new).
+        Do not include credentials, personal data, or private incident evidence.
+  - type: textarea
+    id: bug
+    attributes:
+      label: What went wrong?
+      description: Include the public URL or component, what you expected, and how to reproduce the bug, if applicable.
+    validations:
+      required: true
