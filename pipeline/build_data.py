@@ -27,7 +27,13 @@ def xsearch(q): return "https://x.com/search?f=live&q=" + urllib.parse.quote(q)
 
 errors = []
 
+# Stage progress for container logs: a timed-out build names the stage it died in.
+_T0 = time.time()
+def stage(name):
+    print(f"stage {name} t+{int(time.time() - _T0)}s", flush=True)
+
 # ---- CISA KEV
+stage("kev")
 kev = []
 kev_all = []
 kev_raw = hibp_raw = llama_raw = None  # raw pulls, reused by the year-to-date archive
@@ -53,6 +59,7 @@ try:
 except Exception as e:
     errors.append(f"kev: {e}"); kev_total = None
 
+stage("ransomware-recent")
 # ---- ransomware.live: hourly recentvictims merged into a local 35-day cache;
 # monthly bulk endpoints are only tried when the cache is thin (they rate-limit hard).
 CACHE = os.path.join(ROOT, "pipeline", "victims_cache.json")
@@ -105,6 +112,7 @@ if victims:
                              for v in window(victims, 1)), key=lambda v: v["date"], reverse=True)[:200],
     }
 
+stage("ransomware-monthly")
 # ---- ransomware.live monthly totals (public stats page), for month-to-date and year-to-date
 RM = os.path.join(ROOT, "pipeline", "ransom_monthly.json")
 ransom_monthly = json.load(open(RM)) if os.path.exists(RM) else {}
@@ -117,6 +125,7 @@ try:
 except Exception as e:
     errors.append(f"ransomware stats: {e}")
 
+stage("defillama")
 # ---- DefiLlama hacks
 crypto = []
 crypto_hist = []
@@ -142,6 +151,7 @@ try:
 except Exception as e:
     errors.append(f"defillama: {e}")
 
+stage("news-feeds")
 # ---- News RSS/Atom. Feeds only carry their latest items, so every hit is kept in a 10-day cache;
 # otherwise stories drop out of the 7-day window as soon as the feed rolls over.
 FEEDS = [("The Record", "https://therecord.media/feed"),
@@ -194,6 +204,7 @@ for (name, url), (raw, ferr) in zip(FEEDS, _feeds):
             ncache[l] = {"date": iso(d0), "source": name, "title": t, "url": l, "summary": desc}
     except Exception as e:
         errors.append(f"news {name}: {e}")
+stage("gnews")
 # ---- mainstream, finance and non-English press via Google News search (security trade press misses many incidents)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gnews
@@ -202,6 +213,7 @@ try:
         if g["url"] not in ncache: ncache[g["url"]] = g
 except Exception as e:
     errors.append(f"gnews: {e}")
+stage("hn")
 # ---- companies' own incident notices, found through Hacker News (usually hours before any press)
 import hn
 try:
@@ -210,6 +222,7 @@ try:
 except Exception as e:
     errors.append(f"hn: {e}")
 ncache = {k: v for k, v in ncache.items() if days_ago(parse_iso(v["date"])) <= 10}
+stage("translate-news")
 # ---- everything on the page is in English: translate non-English headlines once, keep the original for matching
 import translate
 for _lg in {v.get("lang") for v in ncache.values()}:
@@ -227,6 +240,7 @@ headlines = [v for v in ncache.values() if days_ago(parse_iso(v["date"])) <= 7]
 news = hn.merge(gnews.stories([v for v in headlines if not v.get("disclosure")]), [v for v in headlines if v.get("disclosure")])
 
 
+stage("slowmist")
 # ---- SlowMist Hacked (second crypto source; merged with DefiLlama)
 def norm(n): return re.sub(r"[^a-z0-9]", "", re.sub(r"\(.*?\)", "", n.lower()))
 slow = []
@@ -282,6 +296,7 @@ for s_ in slow:
 for c in crypto: c.setdefault("sources", ["DefiLlama"])
 crypto.sort(key=lambda x: (x["date"], x["amount"] or 0), reverse=True)
 
+stage("rekt")
 # ---- link rekt.news post-mortems to matching crypto entries
 for n in [n for n in news if n["source"] == "rekt"]:
     for c in crypto:
@@ -290,6 +305,7 @@ for n in [n for n in news if n["source"] == "rekt"]:
                 c["links"].insert(0, {"label": "rekt post-mortem", "url": n["url"]})
                 c["sources"].append("rekt")
 
+stage("hibp")
 # ---- Have I Been Pwned: breaches added in the last 30 days (CC BY 4.0)
 breaches = []
 hibp_all = []
@@ -307,6 +323,7 @@ try:
 except Exception as e:
     errors.append(f"hibp: {e}")
 
+stage("first-seen")
 # ---- first-seen times: when each database first listed an entry (DefiLlama often lags X by hours)
 FS = os.path.join(ROOT, "pipeline", "first_seen.json")
 first_seen = json.load(open(FS)) if os.path.exists(FS) else None
@@ -324,6 +341,7 @@ for v in kev:
 first_seen = {k: v for k, v in first_seen.items() if k.rsplit(":", 1)[-1] >= iso(NOW - dt.timedelta(days=45))[:10]}
 json.dump(first_seen, open(FS, "w"), indent=0)
 
+stage("x-signals")
 # ---- X signals: one record per project with every post found; scored in xscore.py
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from xscore import score_signals, ROLE_LABEL
@@ -344,6 +362,7 @@ if os.path.exists(XFILE):
     except Exception as e:
         errors.append(f"x: {e}")
 
+stage("daily-series")
 # ---- daily series 30d
 def daily(rows, key):
     c = Counter(r[key][:10] for r in rows)
@@ -366,6 +385,7 @@ def hourly_bins():
 hourly = hourly_bins()
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from enrich import enrich
+stage("press-merge")
 # ---- press coverage of a crypto incident belongs on that incident, not as separate news rows
 # Aliases: the listed name, its parts, names the X signal uses, and a hand-kept list (pipeline/crypto_aliases.json)
 _CA = {k: v for k, v in crypto_alias_config.items() if not k.startswith("_")}
@@ -402,6 +422,7 @@ crypto_out, kev_out = crypto[:60], kev[:40]
 incidents, clusters, pattern_stats, pattern_defs = enrich(
     news_out, crypto_out, kev_out, xsig, history=crypto_hist, breaches=breaches,
     notes_path=os.path.join(ROOT, "pipeline", "analysis_notes.json"))
+stage("brief")
 # ---- curated brief for the top of the page, written by the hourly agent
 brief = None
 try:
@@ -441,6 +462,7 @@ if brief:
                 days_ago(parse_iso(d if len(d) > 10 else d + "T23:59:59Z")) > 3
                 for d in (d0, linked_date) if d
             )
+stage("notices")
 # ---- official breach notices (state AGs, HHS, SEC 8-K Item 1.05, press-reported attacks)
 notices = []
 try:
@@ -450,6 +472,7 @@ except ImportError:
     pass
 except Exception as e:
     errors.append(f"official: {e}")
+stage("registry")
 # ---- incident registry: curated records with every matching story and notice attached
 import registry
 REG = os.path.join(ROOT, "pipeline", "incidents.json")
@@ -462,6 +485,7 @@ tq = registry.triage_queue(unmatched, NOW)
 # outlets are kept in full for matching above; the page only needs the first few per story
 news_out = [dict(n, outlets=n.get("outlets", [])[:10]) if len(n.get("outlets", [])) > 10 else n for n in news_out]
 json.dump({"generated": iso(NOW), "queue": tq}, open(os.path.join(ROOT, "pipeline", "triage_queue.json"), "w"), indent=1, ensure_ascii=False)
+stage("windows")
 # ---- counts by window: last hour, 24h, 7d, month to date, year to date
 def win_bounds():
     som = NOW.replace(day=1, hour=0, minute=0, second=0, microsecond=0)
@@ -507,6 +531,7 @@ windows["rows"]["incidents"] = {w: {"n": sum(1 for r in reg_recs if parse_iso(r[
 windows["rows"]["notices"] = {w: {"n": sum(1 for o in notices if (parse_iso(o["date"]) + dt.timedelta(hours=23, minutes=59)) >= WB[w] and (w != "1h" or o["date"][11:19] != "00:00:00"))} for w in ("1h", "24h", "7d")}
 windows["rows"]["x"] = {w: {"n": sum(1 for x in xsig if parse_iso(x["first"]) >= WB[w])} for w in ("1h", "24h", "7d")}
 
+stage("archive")
 # ---- year-to-date archive (site/archive.json, lazily loaded by the page); incremental, cached in pipeline/archive_cache/
 try:
     import archive
@@ -563,6 +588,7 @@ data = {
     "brief": brief,
     "details": details, "clusters": clusters[:12], "patterns": pattern_stats, "pattern_defs": pattern_defs,
 }
+stage("translate-final")
 # ---- final English pass over every human-readable string on the page (headlines, outlet names, notices, X posts)
 _TXT = {"title", "summary", "desc", "text", "label", "titles", "why", "note", "headline", "also"}
 _NAME = {"source", "org", "outlet", "account_name", "name"}
