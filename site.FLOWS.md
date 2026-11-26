@@ -7,7 +7,7 @@
 ## Leaderboard (#leaderboard, #top)
 - CoinGecko-style ranked table of year-to-date crypto hacks.
 - Default sort is total amount lost, descending. Click Category or Amount lost (and Name or Date) to sort; click again to reverse.
-- Category chips filter the table; the search box filters by name, chain or technique.
+- A category dropdown checklist filters the table (multi-select, with counts); the search box filters by name, chain or technique.
 - Click a row to open a detail panel.
 
 ## Report section links
