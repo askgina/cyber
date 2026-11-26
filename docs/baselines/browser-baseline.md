@@ -1,6 +1,6 @@
 # Live browser baseline
 
-Baseline for [issue #4](https://github.com/t-y-b-b/breach-ledger/issues/4), measured on [cyber.askgina.ai](https://cyber.askgina.ai/) on 2026-11-25 UTC.
+Baseline for [issue #4](https://github.com/askgina/cyber/issues/4), measured on [cyber.askgina.ai](https://cyber.askgina.ai/) on 2026-11-25 UTC.
 
 - **Accessibility:** 16 of 20 axe-core scans reported violations. Text contrast failed in all four configurations of Terminal, Leaderboard, Report, and the open incident drawer. Dark mode also had one label-in-name failure in each of those views at both widths.
 - **Keyboard:** The skip link does not reach the active view's content. Enter on the sampled Terminal row opens and immediately closes its drawer. The command palette did return focus to its opener.
