@@ -1,6 +1,6 @@
 # Routes, CSP and payload baseline
 
-Baseline for [issue #9](https://github.com/t-y-b-b/breach-ledger/issues/9), at `a312f6c`. This report distinguishes checked-in code, observed public headers, and a proposed split measured offline. No routing, security policy, or payload has changed.
+Baseline for [issue #9](https://github.com/askgina/cyber/issues/9), at `a312f6c`. This report distinguishes checked-in code, observed public headers, and a proposed split measured offline. No routing, security policy, or payload has changed.
 
 ## 1. Route and header ownership
 

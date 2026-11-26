@@ -1,6 +1,6 @@
 # Ora / Is Agentic baseline
 
-Baseline for [GitHub issue #3](https://github.com/t-y-b-b/breach-ledger/issues/3).
+Baseline for [GitHub issue #3](https://github.com/askgina/cyber/issues/3).
 
 - **Target and final URL:** `https://cyber.askgina.ai/`. Ora reported the input as `https://cyber.askgina.ai`.
 - **Scan timestamp (UTC):** `2026-11-25T10:36:16.103Z` (`scannedAt` from Ora).
@@ -84,9 +84,9 @@ Warnings received partial credit and do not count as failures.
 
 | Map | Fail | Warning |
 | --- | ---: | ---: |
-| [Map 2: Static Foundations, Metadata, Security, Performance & Accessibility](https://github.com/t-y-b-b/breach-ledger/issues/8) | 6 | 1 |
-| [Map 3: Crawlable Architecture, Hourly Prerendering, Feeds & Route Analytics](https://github.com/t-y-b-b/breach-ledger/issues/15) | 2 | 0 |
-| [Map 4: Agent Readiness, Markdown Negotiation & API/WebMCP Discovery](https://github.com/t-y-b-b/breach-ledger/issues/23) | 37 | 3 |
+| [Map 2: Static Foundations, Metadata, Security, Performance & Accessibility](https://github.com/askgina/cyber/issues/8) | 6 | 1 |
+| [Map 3: Crawlable Architecture, Hourly Prerendering, Feeds & Route Analytics](https://github.com/askgina/cyber/issues/15) | 2 | 0 |
+| [Map 4: Agent Readiness, Markdown Negotiation & API/WebMCP Discovery](https://github.com/askgina/cyber/issues/23) | 37 | 3 |
 | **Total** | **45** | **4** |
 
 ### Map 2: Static Foundations, Metadata, Security, Performance & Accessibility
