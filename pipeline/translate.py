@@ -79,6 +79,7 @@ def prefetch(texts, lang=None):
             time.sleep(0.3)
         except Exception as e:
             if "429" in str(e): _blocked = True
+            print(f"translate: batch failed: {type(e).__name__}: {e} ({len(todo) - i} strings left)", flush=True)
             time.sleep(1)
     if _blocked:
         # shortest first so headlines win the small fallback quota
