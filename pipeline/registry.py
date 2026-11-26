@@ -26,7 +26,8 @@ def _rx(terms):
 
 def _load1(path):
     try:
-        return json.load(open(path))
+        with open(path, encoding="utf-8") as stream:
+            return json.load(stream)
     except Exception:
         return {"incidents": []}
 
