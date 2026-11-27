@@ -1,6 +1,6 @@
 # Operating the hosted Cyber instance
 
-This runbook is for maintainers with access to the hosted service. For a credential-free checkout, start with the [local quickstart](../README.md#local-quickstart).
+This runbook is for maintainers with access to the hosted service. For a credential-free checkout, start with the [local quickstart](../README.md#local-quickstart). For how the build and the Worker fit together, read [how Cyber works](architecture.md).
 
 ## Deploy and publish are separate
 
@@ -19,7 +19,7 @@ This runbook is for maintainers with access to the hosted service. For a credent
 
 ## Refresh live feeds in a maintainer checkout
 
-Use `python3 pipeline/build_data.py` only when intentionally refreshing from upstream feeds. Run it in a disposable worktree or separate clone: it makes network calls, can be slow or rate-limited, and rewrites tracked data and caches. Review the diff before committing any refreshed artifacts. This command is **not** required for a local preview or a PR check.
+Use `python3 pipeline/build_data.py` only when intentionally refreshing from upstream feeds. Run it in a disposable worktree or separate clone: it makes network calls, can be slow or rate-limited, and rewrites the tracked snapshots (`site/data.json`, `site/archive.json`), `pipeline/archive_cache/` and other build state. Review the diff before committing any refreshed artifacts. This command is **not** required for a local preview or a PR check.
 
 The news, translation and ransomware-victim caches (`pipeline/news_cache.json`, `translate_cache.json`, `victims_cache.json`) are not in Git. Production carries them between builds in `state.tar.gz`; a local refresh creates them, ignored, starting empty. `pipeline/archive_cache/` stays tracked because page generation and the checks read it.
 
