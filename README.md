@@ -31,7 +31,7 @@ npm run check
 
 `npm run check` starts and stops its own Worker; you don't need to leave the preview running. Regenerate fixtures after changing snapshots or the page generators. Browser and accessibility checks are separate: with Chromium installed, run `CHROME_PATH=/absolute/path/to/chromium npm run check:browser:local` (omit `CHROME_PATH` if Playwright's compatible Chromium is already installed).
 
-See [contributing](CONTRIBUTING.md) for PRs, [security](SECURITY.md) for vulnerabilities in Cyber itself, and [operations](docs/operations.md) for production and live feed refresh.
+See [how Cyber works](docs/architecture.md) for the build, the Worker and a map of this repository, [contributing](CONTRIBUTING.md) for PRs, [security](SECURITY.md) for vulnerabilities in Cyber itself, and [operations](docs/operations.md) for production and live feed refresh.
 
 ## JSON endpoints
 
@@ -49,8 +49,4 @@ Before the first split build, the details and history endpoints return `404` wit
 
 ## Data and license
 
-The code is released under the [MIT License](LICENSE). [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) applies only to Cyber’s original analysis, labels and summaries. Third-party material, including sourced fields in the downloads, is not covered by Cyber’s licence and remains subject to its source’s terms. Credit [Cyber](https://cyber.askgina.ai/) for its original work and retain any required upstream attribution. The breach catalog comes from [Have I Been Pwned](https://haveibeenpwned.com/) (CC BY 4.0).
-
-- `pipeline/build_data.py` pulls public feeds and writes the data in `site/`.
-- `pipeline/x_signals.json` contains facts and links curated by hand. Cyber does not collect posts from X automatically.
-- `pipeline/incidents.json` contains the curated incident registry. The build attaches matching press stories and notices.
+The code is released under the [MIT License](LICENSE). [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) applies only to Cyber’s original analysis, labels and summaries. Third-party material, including sourced fields in the downloads, is not covered by Cyber’s licence and remains subject to its source’s terms. Credit [Cyber](https://cyber.askgina.ai/) for its original work and retain any required upstream attribution. The breach catalog comes from [Have I Been Pwned](https://haveibeenpwned.com/) (CC BY 4.0). [Where records come from](docs/architecture.md#where-records-come-from) lists every source.
