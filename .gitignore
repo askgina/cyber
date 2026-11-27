@@ -10,6 +10,10 @@ node_modules/
 search_docs/
 pages/
 pipeline/.prerender-state.json
+# Feed caches: production keeps them in R2 state; a local refresh recreates them.
+pipeline/news_cache.json
+pipeline/translate_cache.json
+pipeline/victims_cache.json
 site/data-hot.json
 site/data-details.json
 site/data-history.json
